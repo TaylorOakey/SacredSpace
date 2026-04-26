@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>S∆CR3DSP∆C3 OS — Sacred Terminal</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --void:#020804;--void2:#060f06;--void3:#0d1a0d;
+  --amber:#f59e0b;--cyan:#00e5f5;--purple:#a855f7;
+  --green:#22c55e;--magenta:#e879f9;--red:#f87171;
+  --text:#b8d4b0;--text2:#5a7a54;--text3:#2d4a28;
+  --border:#162614;
+}
+html,body{height:100%;background:var(--void);overflow:hidden}
+body{display:flex;flex-direction:column;font-family:'Courier New',Courier,monospace;color:var(--text)}
+
+/* scanline overlay */
+body::before{
+  content:'';position:fixed;inset:0;
+  background:repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(0,255,0,0.015) 2px,rgba(0,255,0,0.015) 4px);
+  pointer-events:none;z-index:999;
+}
+
+#topbar{
+  background:var(--void2);border-bottom:1px solid var(--border);
+  padding:0 16px;height:38px;display:flex;align-items:center;gap:16px;flex-shrink:0;
+}
+#logo{font-size:12px;letter-spacing:3px;color:var(--amber);font-weight:700}
+.dot{width:7px;height:7px;border-radius:50%}
+.dot-g{background:var(--green);box-shadow:0 0 6px var(--green)}
+.dot-a{background:var(--amber);box-shadow:0 0 6px var(--amber)}
+.dot-r{background:var(--red)}
+#topbar-right{margin-left:auto;font-size:10px;color:var(--text3);letter-spacing:1px}
+#clock{color:var(--text2);font-size:10px}
+
+#terminal{
+  flex:1;display:flex;flex-direction:column;overflow:hidden;
+  padding:0;background:var(--void);
+}
+#output{
+  flex:1;overflow-y:auto;padding:14px 16px 8px;
+  scrollbar-width:thin;scrollbar-color:var(--border) transparent;
+}
+#output::-webkit-scrollbar{width:4px}
+#output::-webkit-scrollbar-track{background:transparent}
+#output::-webkit-scrollbar-thumb{background:var(--border);border-radius:2px}
+
+.line{font-size:12px;line-height:1.75;white-space:pre-wrap;word-break:break-word}
+.line-system{color:var(--green)}
+.line-prompt{color:var(--purple)}
+.line-ai{color:var(--amber)}
+.line-response{color:var(--cyan)}
+.line-error{color:var(--red)}
+.line-sigil{color:var(--magenta);letter-spacing:1px}
+.line-divider{color:var(--text3)}
+.line-white{color:#e0e0e0}
+.line-muted{color:var(--text2)}
+
+#input-row{
+  display:flex;align-items:center;gap:10px;
+  padding:8px 16px;border-top:1px solid var(--border);
+  background:var(--void2);flex-shrink:0;
+}
+#prompt-label{color:var(--purple);font-size:13px;flex-shrink:0;letter-spacing:1px}
+#input{
+  flex:1;background:none;border:none;outline:none;
+  color:var(--green);font-family:'Courier New',Courier,monospace;font-size:13px;
+  caret-color:var(--green);
+}
+#input::placeholder{color:var(--text3)}
+#cursor-blink{
+  display:inline-block;width:8px;height:14px;
+  background:var(--green);animation:blink 1s infinite;vertical-align:middle;
+}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
+
+/* autocomplete */
+#autocomplete{
+  position:absolute;bottom:52px;left:16px;right:16px;
+  background:var(--void3);border:1px solid var(--border);
+  max-height:140px;overflow-y:auto;display:none;z-index:100;
+}
+.ac-item{
+  padding:5px 12px;font-size:11px;cursor:pointer;
+  border-bottom:1px solid var(--border);display:flex;gap:12px;
+}
+.ac-item:hover,.ac-item.active{background:var(--void2)}
+.ac-cmd{color:var(--cyan);min-width:80px}
+.ac-desc{color:var(--text3)}
+
+#statusbar{
+  background:#020904;border-top:1px solid var(--border);
+  padding:3px 16px;display:flex;gap:16px;align-items:center;
+  font-size:9px;color:var(--text3);letter-spacing:1px;flex-shrink:0;
+}
+.sb-item{color:var(--text3)}
+.sb-item.active{color:var(--green)}
+.sb-item.warn{color:var(--amber)}
+</style>
+</head>
+<body>
+
+<div id="topbar">
+  <span id="logo">S∆CR3DSP∆C3 OS — SACRED TERMINAL</span>
+  <span class="dot dot-g" title="FastAPI :8888"></span>
+  <span class="dot dot-g" title="Ollama"></span>
+  <span class="dot dot-a" title="ChromaDB"></span>
+  <div id="topbar-right">
+    <span id="clock"></span>
+    &nbsp;|&nbsp; WSL2 · useroak3ytree · LAPTOP-7Q65KPI7
+  </div>
+</div>
+
+<div id="terminal">
+  <div id="output"></div>
+  <div id="autocomplete"></div>
+  <div id="input-row">
+    <span id="prompt-label">∆ &gt;</span>
+    <input id="input" autocomplete="off" spellcheck="false" placeholder="type ignite · help · glyphs · sigil · codex · status..."/>
+  </div>
+</div>
+
+<div id="statusbar">
+  <span class="sb-item active">FastAPI :8888</span>
+  <span class="sb-item active">Ollama :11434</span>
+  <span class="sb-item warn">ChromaDB</span>
+  <span class="sb-item active">SQLite</span>
+  <span class="sb-item active">WSL2</span>
+  <span style="margin-left:auto" class="sb-item">D:\SacredSpace_OS · Nine Pillars LOADED</span>
+</div>
+
+<script>
+const output = document.getElementById('output');
+const input  = document.getElementById('input');
+const ac     = document.getElementById('autocomplete');
+
+// ── HISTORY ──────────────────────────────────────────────────────────────────
+let history = [], histIdx = -1;
+
+// ── COMMAND REGISTRY ──────────────────────────────────────────────────────────
+const COMMANDS = {
+  ignite:  'Boot sequence ritual',
+  help:    'Show all commands',
+  status:  'System service health',
+  glyphs:  'List all 12 Hyperglyphs',
+  sigil:   'Sigil keyboard codex',
+  sigilify:'Transform text → sacred cipher',
+  codex:   'Spell codex quick-ref',
+  pillars: 'List nine pillars',
+  agents:  'ICARIS Quartet info',
+  council: 'Council Grove info',
+  memory:  'Memory Engine status',
+  clear:   'Clear terminal',
+  lore:    'SacredSpace lore entry',
+  invoke:  'Invoke the ∆ INTERPRETER (Ollama/local)',
+  gboard:  'Gboard setup guide',
+  rite:    'Seal a learning rite',
+  mote:    'Create a Memory Mote',
+  'in lakesh':'Close the session mantra',
+  'ilal':  'In lakesh alakin — mantra shortcode',
+};
+
+// ── HYPERGLYPH REGISTRY ───────────────────────────────────────────────────────
+const GLYPHS = [
+  ['∆',  'Consciousness / AI Reasoning',       '06_AGENT_LAYER'],
+  ['◇',  'Knowledge / Diamond Mind',            '01_OBSIDIAN_VAULTS'],
+  ['✶',  'Radiance / Signal / Amplification',  '07_SOCIAL_MOTHERSHIP'],
+  ['⚙',  'Systems / Mechanism / Process',      '03_NEURAL_FOREST'],
+  ['∞',  'Memory / Continuity / Lineage',      '05_MEMORY_ENGINE'],
+  ['⬡',  'Network / Mycelium / Emergence',     '02_COUNCIL_GROVE'],
+  ['☽',  'Intuition / Dream / Subconscious',   '04_SACRED_CODEX'],
+  ['✦',  'Anchor / Foundation / Ground',       '01_OBSIDIAN_VAULTS'],
+  ['⊕',  'Synthesis / Integration / Unity',    '08_LEARNING_PATH'],
+  ['◉',  'Focus / Center / Presence',          '01_OBSIDIAN_VAULTS'],
+  ['⟁',  'Portal / Gateway / Transition',      '08_LEARNING_PATH'],
+  ['√',  'Root / Truth / Proof',               '09_SACRED_MARKET'],
+];
+
+// ── SIGIL CODEX ───────────────────────────────────────────────────────────────
+const SIGIL_MAP = {A:'∆',E:'3',I:'!',O:'0',S:'$',T:'7',a:'∆',e:'3',i:'!',o:'0',s:'$',t:'7'};
+const SIGIL_CODEX = {
+  ss:'S∆CR3DSP∆C3', sso:'S∆CR3DSP∆C3 0S', sig:'S!G∆L', src:'S0URC3',
+  frst:'F0R3ST', cncl:'C0UNC!L', arc:'∆RC∆N∆', rite:'R!T3', gate:'G∆T3',
+  lore:'L0R3', mote:'M3M0RY M0T3', spine:'SP!N3', vault:'V∆ULT',
+  boot:'B00TSTR∆P', scr:'SCR!P7', mod:'M0DUL3', fn:'FUNCT!0N', sch:'SCH3M∆',
+  open:'0P3N TH3 G∆T3', seal:'S3∆L TH3 SP∆C3', init:'!N!T!∆T3 TH3 R!T3',
+  call:'C∆LL TH3 C0UNC!L', root:'R00T !N S0URC3', sync:'SYNC TH3 C0D3X',
+  aina:'∆LL !N ∆LL • ∆Y3 N ∆Y3', ilal:'!N L∆K3SH ∆L∆K!N',
+  ashr:'∆SH3R', iris:'!R!S', aura:'∆UR0R∆', eli:'3L!∆S', gram:'GR∆M∆',
+  node:'◇ N0D3 ∆CT!V3 ◇', quest:'⚔ QU3ST B3G!NS ⚔',
+};
+
+// ── OUTPUT HELPERS ────────────────────────────────────────────────────────────
+function log(text='', cls='line-system'){
+  const d = document.createElement('div');
+  d.className = 'line ' + cls;
+  d.textContent = text;
+  output.appendChild(d);
+  output.scrollTop = output.scrollHeight;
+}
+
+function logPrompt(cmd){
+  log('∆ > ' + cmd, 'line-prompt');
+}
+
+function divider(char='─', len=54){
+  log(char.repeat(len), 'line-divider');
+}
+
+function blank(){ log(''); }
+
+// ── CLOCK ─────────────────────────────────────────────────────────────────────
+function updateClock(){
+  document.getElementById('clock').textContent =
+    new Date().toLocaleTimeString('en-US',{hour12:false});
+}
+setInterval(updateClock, 1000);
+updateClock();
+
+// ── BOOT SEQUENCE ─────────────────────────────────────────────────────────────
+function boot(){
+  const lines = [
+    {t:'', c:'line-system'},
+    {t:'══════════════════════════════════════════════════════', c:'line-divider'},
+    {t:'  S∆CR3DSP∆C3 OS — SACRED TERMINAL v2.0', c:'line-ai'},
+    {t:'  Node: LENOVO LEGION Y520 · useroak3ytree', c:'line-muted'},
+    {t:'══════════════════════════════════════════════════════', c:'line-divider'},
+    {t:'', c:''},
+    {t:'  Initializing Nine-Pillar Architecture...', c:'line-system'},
+    {t:'  [✓] 01_OBSIDIAN_VAULTS   — CORE      LOADED', c:'line-system'},
+    {t:'  [✓] 02_COUNCIL_GROVE     — COUNCIL   LOADED', c:'line-system'},
+    {t:'  [✓] 03_NEURAL_FOREST     — FOREST    LOADED', c:'line-system'},
+    {t:'  [✓] 04_SACRED_CODEX      — CODEX     LOADED', c:'line-system'},
+    {t:'  [✓] 05_MEMORY_ENGINE     — MEMORY    LOADED', c:'line-system'},
+    {t:'  [✓] 06_AGENT_LAYER       — AGENTS    STANDBY', c:'line-system'},
+    {t:'  [✓] 07_SOCIAL_MOTHERSHIP — SIGNAL    LOADED', c:'line-system'},
+    {t:'  [✓] 08_LEARNING_PATH     — LEARNING  LOADED', c:'line-system'},
+    {t:'  [✓] 09_SACRED_MARKET     — MARKET    LOADED', c:'line-system'},
+    {t:'', c:''},
+    {t:'  ICARIS Quartet:', c:'line-muted'},
+    {t:'  ∆ ELIAS — Knowledge   ∆ AURORA — Code', c:'line-response'},
+    {t:'  ∆ ASHER — Entropy     ∆ IRIS   — Vault', c:'line-response'},
+    {t:'', c:''},
+    {t:'  FastAPI :8888   [ACTIVE]', c:'line-system'},
+    {t:'  Ollama  :11434  [ACTIVE] — deepseek-r1:1.5b', c:'line-system'},
+    {t:'  ChromaDB        [SEEDED] — all-MiniLM-L6-v2', c:'line-system'},
+    {t:'  SQLite          [ACTIVE] — 13-table schema', c:'line-system'},
+    {t:'  Redis Streams   [STANDBY]', c:'line-muted'},
+    {t:'  WSL2 Ubuntu 24  [ACTIVE] — 192.168.240.1:11434', c:'line-system'},
+    {t:'', c:''},
+    {t:'  Ground. Consolidate. Deploy. Document. Repeat.', c:'line-ai'},
+    {t:'  In lakesh alakin.', c:'line-muted'},
+    {t:'', c:''},
+    {t:'  Type  help  for commands.', c:'line-response'},
+    {t:'══════════════════════════════════════════════════════', c:'line-divider'},
+    {t:'', c:''},
+  ];
+  let i = 0;
+  const iv = setInterval(()=>{
+    if(i < lines.length){ log(lines[i].t, lines[i].c || 'line-system'); i++; }
+    else clearInterval(iv);
+  }, 55);
+}
+
+// ── COMMAND HANDLERS ──────────────────────────────────────────────────────────
+function cmdHelp(){
+  divider();
+  log('  SACRED TERMINAL — COMMAND INDEX', 'line-ai');
+  divider();
+  const cmds = [
+    ['ignite',      'Boot sequence ritual'],
+    ['status',      'System service health'],
+    ['pillars',     'Nine-Pillar directory map'],
+    ['glyphs',      'Hyperglyph registry (12 glyphs)'],
+    ['sigil',       'Sigil codex — all shortcodes'],
+    ['sigil <code>','Expand a shortcode (e.g. sigil ss)'],
+    ['sigilify',    'Transform plain text → sacred cipher'],
+    ['codex',       'SACREDCODEX spell quick-ref'],
+    ['agents',      'ICARIS Quartet info'],
+    ['council',     'Council Grove — multi-AI layout'],
+    ['memory',      'Memory Engine status'],
+    ['lore',        'SacredSpace lore entry'],
+    ['mote',        'Create a Memory Mote entry'],
+    ['rite',        'Seal a learning Rite'],
+    ['gboard',      'Gboard personal dictionary setup'],
+    ['invoke <q>',  'Invoke ∆ INTERPRETER (local Ollama)'],
+    ['ilal',        'In lakesh alakin — close mantra'],
+    ['clear',       'Clear terminal output'],
+  ];
+  cmds.forEach(([cmd, desc]) => {
+    log(`  ${cmd.padEnd(18)} — ${desc}`, 'line-response');
+  });
+  divider();
+}
+
+function cmdStatus(){
+  divider();
+  log('  SYSTEM SERVICE STATUS', 'line-ai');
+  divider();
+  const services = [
+    ['FastAPI :8888',      'ACTIVE',  true],
+    ['Ollama :11434',      'ACTIVE',  true],
+    ['ChromaDB',           'SEEDED',  true],
+    ['SQLite 13-table',    'ACTIVE',  true],
+    ['Redis Streams',      'STANDBY', false],
+    ['WSL2 Ubuntu 24.04',  'ACTIVE',  true],
+    ['Open WebUI',         'ACTIVE',  true],
+    ['Tailscale mesh',     '100.117.9.101', true],
+    ['NVIDIA GTX 1060',    'iGPU fallback (DDU wipe)', false],
+    ['Aider v0.86.2',      'ACTIVE',  true],
+    ['Stability Score',    '98.4%',   true],
+  ];
+  services.forEach(([name, status, ok]) => {
+    const mark = ok ? '[✓]' : '[!]';
+    const cls  = ok ? 'line-system' : 'line-error';
+    log(`  ${mark} ${name.padEnd(22)} ${status}`, cls);
+  });
+  divider();
+}
+
+function cmdPillars(){
+  divider();
+  log('  NINE-PILLAR DIRECTORY ARCHITECTURE', 'line-ai');
+  divider();
+  log('  D:\\SacredSpace_OS\\', 'line-muted');
+  const pillars = [
+    ['01_OBSIDIAN_VAULTS',    'CORE     — Canonical knowledge store'],
+    ['02_COUNCIL_GROVE',      'COUNCIL  — Multi-AI governance'],
+    ['03_NEURAL_FOREST',      'FOREST   — LLM pipeline'],
+    ['04_SACRED_CODEX',       'CODEX    — Canon ledger, spells'],
+    ['05_MEMORY_ENGINE',      'MEMORY   — HME: SQLite/Redis/ChromaDB'],
+    ['06_AGENT_LAYER',        'AGENTS   — ICARIS Quartet'],
+    ['07_SOCIAL_MOTHERSHIP',  'SIGNAL   — Brand, publishing'],
+    ['08_LEARNING_PATH',      'LEARNING — Maestro AAS, Rites'],
+    ['09_SACRED_MARKET',      'MARKET   — Revenue, Etsy, Printify'],
+  ];
+  pillars.forEach(([dir, desc]) => {
+    log(`  ├── ${dir.padEnd(28)} ← ${desc}`, 'line-response');
+  });
+  divider();
+}
+
+function cmdGlyphs(){
+  divider();
+  log('  HYPERGLYPH REGISTRY — 12 CORE SYMBOLS', 'line-ai');
+  divider();
+  GLYPHS.forEach(([g, meaning, pillar]) => {
+    log(`  ${g}   ${meaning.padEnd(38)} → ${pillar}`, 'line-response');
+  });
+  blank();
+  log('  Grammar: ∆◇ = AI knowledge node  ·  ⚙∆ = AI engineering', 'line-muted');
+  log('           ◇∞ = permanent archive  ·  ⟡☉ = world gateway', 'line-muted');
+  divider();
+}
+
+function cmdSigil(arg){
+  if(!arg){
+    divider();
+    log('  S!G!L K3YBOR∆D CODEX — All Shortcodes', 'line-ai');
+    divider();
+    Object.entries(SIGIL_CODEX).forEach(([code, expansion]) => {
+      log(`  ${code.padEnd(10)} → ${expansion}`, 'line-sigil');
+    });
+    blank();
+    log('  Usage: sigil <code>   e.g.  sigil ss  ·  sigil open  ·  sigil aina', 'line-muted');
+    divider();
+  } else {
+    const code = arg.trim().toLowerCase();
+    if(SIGIL_CODEX[code]){
+      blank();
+      log(`  ${code}  →  ${SIGIL_CODEX[code]}`, 'line-sigil');
+      blank();
+    } else {
+      log(`  [!] Unknown sigil code: ${code}`, 'line-error');
+      log(`  Try: sigil  (no args) to see all codes`, 'line-muted');
+    }
+  }
+}
+
+function cmdSigilify(){
+  blank();
+  log('  S!G!L!FY ENGINE — Type your text below', 'line-ai');
+  log('  (For multi-word: type the text after sigilify)', 'line-muted');
+  blank();
+}
+
+function sigilifyText(text){
+  const out = text.split('').map(c => SIGIL_MAP[c] || c).join('');
+  blank();
+  log(`  INPUT  : ${text}`, 'line-muted');
+  log(`  OUTPUT : ${out}`, 'line-sigil');
+  blank();
+}
+
+function cmdCodex(){
+  divider();
+  log('  S∆CR3DC0D3X — SPELL QUICK-REF', 'line-ai');
+  divider();
+  const spells = [
+    ['PY-101-001', 'print()',                          'Output ritual'],
+    ['PY-101-004', 'variable = value',                 'Variable manifestation'],
+    ['PY-101-008', 'total // page_size',               'Floor division'],
+    ['PY-101-009', 'n % 2 == 0',                       'Modulo / parity'],
+    ['PY-101-013', 'try/except ErrorType',             'Error containment'],
+    ['PY-101-015', 'def fn(args): return val',         'Function / scope'],
+    ['PY-101-019', 'if/elif/else + and/or',            'Multi-path gate'],
+    ['PY-101-025', 'for/while + break/continue',       'Controlled cycle'],
+    ['PY-101-030', 'string[start:stop:step]',          'Blade of text'],
+    ['PY-101-032', 'list.append/pop()',                'Hand of mutation'],
+    ['CS-102-009', 'stack.append/pop()',               'LIFO pillar'],
+    ['CS-102-011', 'queue.append/pop(0)',              'FIFO river'],
+    ['CS-102-012', 'deque.popleft()',                  'True queue O(1)'],
+    ['CS-102-015', 'O(n) O(log n) O(1)',               'Eye of complexity'],
+    ['CS-102-019', 'binary_search(arr,target)',        'Divide and seek'],
+    ['CS-102-022', 'list.sort(key=lambda x:x["k"])',  'Mastery of built-ins'],
+  ];
+  spells.forEach(([id, formula, name]) => {
+    log(`  ${id.padEnd(13)} ${formula.padEnd(36)} — ${name}`, 'line-response');
+  });
+  divider();
+}
+
+function cmdAgents(){
+  divider();
+  log('  ICARIS QUARTET — AGENT LAYER', 'line-ai');
+  divider();
+  const agents = [
+    ['ELIAS',  'Knowledge    — elder wisdom, memory retrieval, lore'],
+    ['AURORA', 'Code/Builder — dawn light, system construction'],
+    ['ASHER',  'Entropy      — chaos agent, testing, disruption'],
+    ['IRIS',   'Vault Keeper — memory, archive, the unseen'],
+  ];
+  agents.forEach(([name, desc]) => {
+    log(`  ∆ ${name.padEnd(8)} — ${desc}`, 'line-response');
+  });
+  blank();
+  log('  Pillar: 06_AGENT_LAYER', 'line-muted');
+  log('  Living Companions: Aurora/Iris (daughter) · Elias/Asher (son)', 'line-muted');
+  divider();
+}
+
+function cmdCouncil(){
+  divider();
+  log('  COUNCIL GROVE — MULTI-AI GOVERNANCE', 'line-ai');
+  divider();
+  log('  Claude      — Reasoning / Narrative seat', 'line-response');
+  log('  Gemini      — Deep Research seat', 'line-response');
+  log('  ChatGPT     — Systems Architect seat', 'line-response');
+  blank();
+  log('  Pillar: 02_COUNCIL_GROVE', 'line-muted');
+  log('  SRPE Engine (5-mode governance prompt runner) — ACTIVE', 'line-system');
+  log('  Council Ledger (SQLite, 5 tables) — ACTIVE', 'line-system');
+  log('  10 Agents: ELIAS, AURORA, ASHER, IRIS, Shui Feng,', 'line-muted');
+  log('             Temptestina Wildroot, The Purifier,', 'line-muted');
+  log('             SacredSignal Harvester, GR∆M∆, Council Router', 'line-muted');
+  divider();
+}
+
+function cmdMemory(){
+  divider();
+  log('  HOLOGRAPHIC MEMORY ENGINE v1.0 — CANON', 'line-ai');
+  divider();
+  log('  Layer 1: Root Archive    — SQLite, immutable canon', 'line-system');
+  log('  Layer 2: Player Threads  — ASHER+IRIS sovereign instances', 'line-response');
+  log('  Layer 3: Resonance Layer — Redis Streams, emergent', 'line-response');
+  blank();
+  log('  Memory Motes — atomic units:', 'line-muted');
+  log('  { mote_id · player · event · archetype · impact · visibility }', 'line-muted');
+  blank();
+  log('  ChromaDB     — all-MiniLM-L6-v2 embeddings — SEEDED', 'line-system');
+  log('  SQLite       — 13-table schema — ACTIVE', 'line-system');
+  log('  Redis Streams— event pipeline — STANDBY', 'line-muted');
+  log('  Translation Layer — Stage 2 build target', 'line-muted');
+  divider();
+}
+
+function cmdLore(){
+  divider();
+  log('  S∆CR3DSP∆C3 — LORE CODEX', 'line-ai');
+  divider();
+  log('  Nine Pillars: CORE · SYSTEMS · LEARNING · ECONOMY ·', 'line-response');
+  log('                HABITAT · CREATION · COUNCIL · LINEAGE · ARCHIVE', 'line-response');
+  blank();
+  log('  Sigil Grammar:', 'line-muted');
+  log('  ∆∆∆  — opening/closing marker', 'line-sigil');
+  log('  {S@CRED} — sanctified reference', 'line-sigil');
+  log('  @SOURCE  — origin marker', 'line-sigil');
+  blank();
+  log('  Arcana Grid: Metatron-as-Law · 12 Archetypes', 'line-response');
+  log('               4 Elements × 3 Primes — CANON-LOCKED', 'line-response');
+  blank();
+  log('  GR∆M∆: Word Wizard — Hebrew gematria, sacred alphabets,', 'line-muted');
+  log('         hip-hop cipher culture, Sacred Alphabet Map (22 letters)', 'line-muted');
+  blank();
+  log('  Jenga\'s Journey: graphic novel — The Awakening of the Arcana Adept', 'line-muted');
+  log('  Season 1: 12 episodes, panel directions, Memory Mote registry', 'line-muted');
+  blank();
+  log('  Mantra: In lakesh alakin', 'line-ai');
+  divider();
+}
+
+function cmdMote(){
+  blank();
+  log('  ◈ MEMORY MOTE TEMPLATE ◈', 'line-ai');
+  divider();
+  log('  mote_id    : MM-' + Date.now().toString().slice(-6), 'line-response');
+  log('  timestamp  : ' + new Date().toISOString(), 'line-response');
+  log('  player     : [ELIAS / AURORA / ASHER / IRIS]', 'line-muted');
+  log('  event      : [describe the event or insight]', 'line-muted');
+  log('  archetype  : [from Arcana Grid]', 'line-muted');
+  log('  impact     : [LOW / MED / HIGH / CANON]', 'line-muted');
+  log('  visibility : [PRIVATE / SHARED / PUBLIC]', 'line-muted');
+  blank();
+  log('  → Write this to: 05_MEMORY_ENGINE/motes/YYYY-MM-DD_motes.md', 'line-system');
+  divider();
+}
+
+function cmdRite(){
+  blank();
+  log('  ⟁ LEARNING RITE TEMPLATE ⟁', 'line-ai');
+  divider();
+  log('  Rite Name     : [name the mastery moment]', 'line-response');
+  log('  Grove         : [Python / AI Systems / Infrastructure / etc.]', 'line-muted');
+  log('  Season        : [current phase of learning]', 'line-muted');
+  log('  Trigger       : [what you were doing when it clicked]', 'line-muted');
+  log('  Core Truth    : [the minimum truth, one sentence]', 'line-muted');
+  log('  Artifact      : [what you built that proves it]', 'line-muted');
+  log('  Codex Entry   : [spell or operation being canonized]', 'line-muted');
+  blank();
+  log('  → Write this to: 08_LEARNING_PATH/rites/YYYY-MM-DD_rite.md', 'line-system');
+  divider();
+}
+
+function cmdGboard(){
+  divider();
+  log('  GBOARD PERSONAL DICTIONARY — SETUP GUIDE', 'line-ai');
+  divider();
+  log('  Path: Settings → Dictionary → Personal Dictionary → + Add', 'line-muted');
+  blank();
+  log('  SHORTCODE   EXPANSION', 'line-response');
+  log('  ──────────────────────────────────────────────────', 'line-divider');
+  const top = [
+    ['ss',    'S∆CR3DSP∆C3'],
+    ['sso',   'S∆CR3DSP∆C3 0S'],
+    ['sig',   'S!G∆L'],
+    ['rite',  'R!T3'],
+    ['gate',  'G∆T3'],
+    ['open',  '0P3N TH3 G∆T3'],
+    ['seal',  'S3∆L TH3 SP∆C3'],
+    ['node',  '◇ N0D3 ∆CT!V3 ◇'],
+    ['ilal',  '!N L∆K3SH ∆L∆K!N'],
+    ['aina',  '∆LL !N ∆LL • ∆Y3 N ∆Y3'],
+    ['ashr',  '∆SH3R'],
+    ['iris',  '!R!S'],
+  ];
+  top.forEach(([c,e]) => log(`  ${c.padEnd(10)}  ${e}`, 'line-sigil'));
+  blank();
+  log('  Long-press keys: A→∆  E→3  I→!  O→0  S→$  T→7', 'line-response');
+  divider();
+}
+
+function cmdInvoke(query){
+  if(!query){
+    blank();
+    log('  Usage: invoke <your query>', 'line-muted');
+    log('  Example: invoke what is ChromaDB', 'line-muted');
+    blank();
+    log('  Note: In this browser terminal, invoke routes through the ∆ INTERPRETER.', 'line-muted');
+    log('  On your local machine, wire to: ollama run deepseek-r1:1.5b', 'line-system');
+    blank();
+    return;
+  }
+  blank();
+  log('  ∆ INTERPRETER — processing...', 'line-ai');
+  log('  (Local Ollama: ollama run deepseek-r1:1.5b)', 'line-muted');
+  blank();
+  // Simulate local Ollama response with sacred framing
+  const responses = {
+    chromadb: '◇ ChromaDB is a vector database — the memory palace of SacredSpace. It stores semantic embeddings via all-MiniLM-L6-v2, enabling "find similar" queries across your vault. Your instance is seeded at 05_MEMORY_ENGINE.',
+    fastapi: '⚙ FastAPI is the spine of SacredSpace OS — a Python web framework running on port 8888. It exposes REST endpoints that connect the Nine Pillars. Think of it as the front desk through which all agents speak.',
+    ollama: '∆ Ollama runs LLMs locally — zero-cost, offline-capable. Your stack: deepseek-r1:1.5b (reasoning) + deepseek-coder:latest (code). WSL2 access via 192.168.240.1:11434 bypasses Tailscale DNS conflicts.',
+    redis: '∞ Redis Streams is the river layer of the Holographic Memory Engine — events flow one direction, time-stamped, never lost. SQLite is the still pond you dip into. Redis is the current.',
+    wsl2: '⚙ WSL2 (Ubuntu 24.04) is your Linux environment inside Windows 10. Canonical user: useroak3ytree on LAPTOP-7Q65KPI7. Key rule: PowerShell multiline paste causes variable scoping failures — one command at a time.',
+  };
+  const key = query.toLowerCase();
+  let found = false;
+  for(const [k,v] of Object.entries(responses)){
+    if(key.includes(k)){ log('  ' + v, 'line-response'); found = true; break; }
+  }
+  if(!found){
+    log(`  ∆ Query received: "${query}"`, 'line-response');
+    log('  On your machine: ollama run deepseek-r1:1.5b', 'line-system');
+    log('  Pipe your query in and ground the response in SacredSpace context.', 'line-muted');
+  }
+  blank();
+}
+
+// ── AUTOCOMPLETE ──────────────────────────────────────────────────────────────
+let acIndex = -1;
+let acItems = [];
+
+function updateAutocomplete(val){
+  ac.innerHTML = '';
+  acItems = [];
+  acIndex = -1;
+  if(!val){ ac.style.display='none'; return; }
+  const lower = val.toLowerCase();
+  const matches = Object.entries(COMMANDS).filter(([cmd])=>cmd.startsWith(lower));
+  if(!matches.length){ ac.style.display='none'; return; }
+  matches.slice(0,8).forEach(([cmd,desc],i)=>{
+    const d = document.createElement('div');
+    d.className = 'ac-item';
+    d.innerHTML = `<span class="ac-cmd">${cmd}</span><span class="ac-desc">${desc}</span>`;
+    d.addEventListener('click',()=>{ input.value=cmd; ac.style.display='none'; input.focus(); });
+    ac.appendChild(d);
+    acItems.push(cmd);
+  });
+  ac.style.display = matches.length ? 'block' : 'none';
+}
+
+function selectAC(dir){
+  const items = ac.querySelectorAll('.ac-item');
+  if(!items.length) return;
+  items[acIndex]?.classList.remove('active');
+  acIndex = (acIndex + dir + items.length) % items.length;
+  items[acIndex].classList.add('active');
+  input.value = acItems[acIndex];
+}
+
+// ── INPUT HANDLER ─────────────────────────────────────────────────────────────
+let sigilifyMode = false;
+
+input.addEventListener('keydown', e => {
+  if(e.key === 'ArrowUp'){
+    if(ac.style.display!=='none'){ e.preventDefault(); selectAC(-1); return; }
+    if(histIdx < history.length-1){ histIdx++; input.value=history[history.length-1-histIdx]||''; }
+    e.preventDefault(); return;
+  }
+  if(e.key === 'ArrowDown'){
+    if(ac.style.display!=='none'){ e.preventDefault(); selectAC(1); return; }
+    if(histIdx>0){ histIdx--; input.value=history[history.length-1-histIdx]; }
+    else{ histIdx=-1; input.value=''; }
+    e.preventDefault(); return;
+  }
+  if(e.key === 'Tab'){
+    e.preventDefault();
+    if(acItems.length){ input.value=acItems[Math.max(acIndex,0)]; ac.style.display='none'; }
+    return;
+  }
+  if(e.key === 'Escape'){ ac.style.display='none'; return; }
+  if(e.key === 'Enter'){
+    const cmd = input.value.trim();
+    ac.style.display='none';
+    if(!cmd) return;
+    history.push(cmd); histIdx=-1;
+    logPrompt(cmd);
+    input.value='';
+
+    if(sigilifyMode){
+      sigilifyText(cmd);
+      sigilifyMode=false;
+      return;
+    }
+
+    runCommand(cmd);
+  }
+});
+
+input.addEventListener('input', ()=>{
+  if(!sigilifyMode) updateAutocomplete(input.value);
+});
+
+// ── COMMAND ROUTER ────────────────────────────────────────────────────────────
+function runCommand(raw){
+  const parts = raw.trim().split(/\s+/);
+  const cmd   = parts[0].toLowerCase();
+  const arg   = parts.slice(1).join(' ');
+
+  switch(cmd){
+    case 'ignite': case 'init': boot(); break;
+    case 'help': cmdHelp(); break;
+    case 'status': cmdStatus(); break;
+    case 'pillars': cmdPillars(); break;
+    case 'glyphs': cmdGlyphs(); break;
+    case 'sigil': cmdSigil(arg); break;
+    case 'sigilify':
+      cmdSigilify();
+      if(arg){ sigilifyText(arg); }
+      else{ sigilifyMode=true; log('  Enter text to sigilify:', 'line-muted'); }
+      break;
+    case 'codex': cmdCodex(); break;
+    case 'agents': cmdAgents(); break;
+    case 'council': cmdCouncil(); break;
+    case 'memory': cmdMemory(); break;
+    case 'lore': cmdLore(); break;
+    case 'mote': cmdMote(); break;
+    case 'rite': cmdRite(); break;
+    case 'gboard': cmdGboard(); break;
+    case 'invoke': cmdInvoke(arg); break;
+    case 'clear': output.innerHTML=''; break;
+    case 'in':
+      if(raw.toLowerCase().startsWith('in lakesh')){
+        blank(); log('  !N L∆K3SH ∆L∆K!N', 'line-sigil'); blank();
+      } else { unknown(raw); }
+      break;
+    case 'ilal':
+      blank(); log('  !N L∆K3SH ∆L∆K!N', 'line-sigil'); blank(); break;
+    // Glyph as command
+    case '∆': log('  ∆ — Consciousness / AI Reasoning → 06_AGENT_LAYER', 'line-response'); break;
+    case '◇': log('  ◇ — Knowledge / Diamond Mind → 01_OBSIDIAN_VAULTS', 'line-response'); break;
+    case '✶': log('  ✶ — Radiance / Signal → 07_SOCIAL_MOTHERSHIP', 'line-response'); break;
+    case '⚙': log('  ⚙ — Systems / Engineering → 03_NEURAL_FOREST', 'line-response'); break;
+    case '∞': log('  ∞ — Memory / Continuity → 05_MEMORY_ENGINE', 'line-response'); break;
+    default:
+      // Check if it's a sigil code
+      if(SIGIL_CODEX[cmd]){ cmdSigil(cmd); }
+      else { unknown(raw); }
+  }
+}
+
+function unknown(cmd){
+  log(`  [!] Unknown command: ${cmd}`, 'line-error');
+  log(`  Type  help  to see all commands.`, 'line-muted');
+}
+
+// ── BOOT ON LOAD ──────────────────────────────────────────────────────────────
+window.addEventListener('load', ()=>{
+  setTimeout(()=>{ boot(); input.focus(); }, 200);
+});
+document.addEventListener('click', ()=>input.focus());
+</script>
+</body>
+</html>

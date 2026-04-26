@@ -1,0 +1,25 @@
+
+[2026-04-26 04:32:12] CRITICAL — UNSTABLE | 11/22
+  [PASS] pkg: fastapi -> FastAPI
+  [PASS] pkg: uvicorn -> ASGI
+  [PASS] pkg: chromadb -> ChromaDB
+  [FAIL] pkg: redis -> Redis
+  [FAIL] pkg: anthropic -> Anthropic SDK
+  [FAIL] pkg: sqlalchemy -> SQLAlchemy
+  [FAIL] pkg: apscheduler -> APScheduler
+  [PASS] pkg: rich -> Rich CLI
+  [PASS] pkg: aiohttp -> Async HTTP
+  [PASS] pkg: pydantic -> Pydantic
+  [PASS] pkg: requests -> Requests
+  [PASS] pkg: numpy -> NumPy
+  [FAIL] FastAPI (:8888) -> down
+  [PASS] Ollama (:11434) -> up
+  [FAIL] ChromaDB (:8000) -> down
+  [FAIL] Redis (:6379) -> down
+  [PASS] WebUI (:3000) -> up
+  [PASS] Ollama API -> 0 model(s)
+  [FAIL] SQLite DB -> not found
+  [FAIL] env: ANTHROPIC_API_KEY -> NOT SET
+  [FAIL] env: SACREDSPACE_ROOT -> NOT SET
+  [FAIL] env: OLLAMA_API_BASE -> NOT SET
+────────────────────────────────────────────────────────────

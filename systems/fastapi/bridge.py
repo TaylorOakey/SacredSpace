@@ -6,7 +6,7 @@ from pathlib import Path
 from datetime import datetime
 
 # Path Discovery
-ROOT = Path("D:/SacredSpace_OS")
+ROOT = Path("/mnt/d/SacredSpace_OS")
 sys.path.append(str(ROOT))
 
 # Import Local Logic
@@ -40,4 +40,4 @@ def process_signal(request: SignalRequest):
 
 if __name__ == "__main__":
     print("\n⟁ ZENITH TERMINAL IGNITED. THE VEIL IS OPEN. ⟁")
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    uvicorn.run(app, host="0.0.0.0", port=8888)
