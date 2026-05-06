@@ -67,9 +67,9 @@ Each pillar maps to a **canonical purpose** — do not move files across pillars
 | `lore_engine.py`  | Lore generation & archetype logic | Active ⚠️ |
 | `vault_watcher.py`| Obsidian vault monitor / sync     | Active    |
 
-> ⚠️ `lore_engine.py` has **5 duplicate versions** requiring cleanup (including loose copies at
-> D: root). Do not create additional copies. Resolve to a single canonical version in
-> `02_COUNCIL_GROVE/` before adding new functionality.
+> ⚠️ Canonical: `02_COUNCIL_GROVE/lore_engine.py` (794 lines, full engine).
+> `systems/fastapi/lore_engine.py` is a kept-in-sync copy required by `main.py`'s local import —
+> **do not edit it independently**. Always edit canonical, then `cp` to `systems/fastapi/`.
 
 ### ICARIS Quartet (06_AGENT_LAYER)
 | Handle | Domain         | Notes                                  |
