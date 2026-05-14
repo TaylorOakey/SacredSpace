@@ -140,14 +140,15 @@ else
 fi
 
 # ─── 3. OLLAMA ─────────────────────────────────────────────────────────────────
-log "Starting Ollama (local LLM inference)..."
-if is_running 11434; then
-    ok "Ollama already running on :11434"
+# Ollama runs on Windows — check Windows host IP, not localhost
+WINDOWS_IP=$(grep nameserver /etc/resolv.conf | awk '{print $2}')
+export OLLAMA_HOST="http://${WINDOWS_IP}:11434"
+log "Checking Ollama on Windows host ($OLLAMA_HOST)..."
+if curl -s --max-time 3 "$OLLAMA_HOST/" | grep -q "Ollama"; then
+    ok "Ollama reachable at $OLLAMA_HOST"
 else
-    nohup ollama serve \
-        >> "$LOG_DIR/ollama.log" 2>&1 &
-    echo $! > /tmp/sacred_ollama.pid
-    wait_for_port 11434 "Ollama"
+    warn "Ollama not reachable — start it on Windows: ollama serve"
+    warn "Spine will cascade to Gemini → mock until Ollama is up"
 fi
 
 # ─── 4. OPEN WEBUI ─────────────────────────────────────────────────────────────
@@ -177,7 +178,8 @@ else
     fi
 
     cd "$FASTAPI_APP_DIR"
-    nohup uvicorn "$FASTAPI_MODULE" \
+    nohup env SACREDSPACE_VAULT="/mnt/d/01_VAULT/SacredSpace_Vault" OLLAMA_HOST="$OLLAMA_HOST" \
+        uvicorn "$FASTAPI_MODULE" \
         --host 0.0.0.0 \
         --port "$FASTAPI_PORT" \
         --reload \

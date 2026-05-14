@@ -7,4 +7,4 @@ sleep 1
 echo "[SACRED OS] Clearing cache..."
 rm -rf "$FASTAPI_DIR/__pycache__"
 echo "[SACRED OS] Starting..."
-cd "$FASTAPI_DIR" && SACREDSPACE_VAULT="$VAULT" python3 main.py
+cd "$FASTAPI_DIR" && SACREDSPACE_VAULT="$VAULT" OLLAMA_HOST="http://192.168.240.1:11434" python3 main.py
