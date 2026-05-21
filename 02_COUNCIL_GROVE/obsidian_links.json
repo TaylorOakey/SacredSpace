@@ -1,0 +1,140 @@
+{
+  "version": "2.0",
+  "generated": "2026-05-21",
+  "description": "Communal Portal v2 — Taylor x Jeanie — Link Layer",
+  "governance": "CollabOS v3 — Fork -> Council -> Canon",
+  "portal": {
+    "index": "PORTAL/index.html",
+    "flash_path": "E:\\PORTAL\\index.html",
+    "browser_url": "file:///E:/PORTAL/index.html"
+  },
+  "operators": [
+    {
+      "name": "Taylor Wayne Oakey",
+      "handle": "OAK3YTREE",
+      "role": "Operator / Visionary",
+      "studio": "SacredArcana Studios"
+    },
+    {
+      "name": "Jeanie Leaf",
+      "handle": "barefootsunsets2723",
+      "email": "barefootsunsets2723@gmail.com",
+      "role": "Co-Creator / Heart",
+      "location": "Sacred Space NC"
+    }
+  ],
+  "council_seats": [
+    { "name": "Claude",  "role": "Reasoning / Narrative",  "url": "https://claude.ai",           "icon": "◈" },
+    { "name": "Gemini",  "role": "Deep Research",           "url": "https://gemini.google.com",   "icon": "✦" },
+    { "name": "ChatGPT", "role": "Systems Architect",       "url": "https://chatgpt.com",         "icon": "⚙" },
+    { "name": "Taylor",  "role": "Operator / Visionary",    "url": null,                           "icon": "∆" },
+    { "name": "Jeanie",  "role": "Co-Creator / Heart",      "url": null,                           "icon": "☽" }
+  ],
+  "pillars": [
+    {
+      "num": "01",
+      "name": "OBSIDIAN_VAULTS",
+      "flash_path": "E:\\01_VAULT\\SacredSpace_Vault",
+      "source_path": "D:\\SacredSpace_OS\\01_OBSIDIAN_VAULTS\\SacredSpace_Vault",
+      "obsidian_uri": "obsidian://open?vault=SacredSpace_Vault",
+      "key_files": ["00_INBOX\\vault_portal_sync.md", "00_CANON\\GAME_SYSTEM\\INDEX.md"]
+    },
+    {
+      "num": "02",
+      "name": "COUNCIL_GROVE",
+      "flash_path": "E:\\02_COUNCIL_GROVE",
+      "source_path": "D:\\SacredSpace_OS\\02_COUNCIL_GROVE",
+      "obsidian_uri": "obsidian://open?vault=SacredSpace_Vault&file=02_COUNCIL_GROVE",
+      "key_files": ["CLAUDE.md", "obsidian_links.json"]
+    },
+    {
+      "num": "03",
+      "name": "NEURAL_FOREST",
+      "flash_path": "E:\\03_NEURAL_FOREST",
+      "source_path": "D:\\SacredSpace_OS\\03_NEURAL_FOREST",
+      "obsidian_uri": "obsidian://open?vault=SacredSpace_Vault&file=03_NEURAL_FOREST",
+      "key_files": ["inference_cascade.py", "gardener.py", "scout.py"]
+    },
+    {
+      "num": "04",
+      "name": "SACRED_CODEX",
+      "flash_path": "E:\\04_SACRED_CODEX",
+      "source_path": "D:\\SacredSpace_OS\\04_SACRED_CODEX",
+      "obsidian_uri": "obsidian://open?vault=SacredSpace_Vault&file=04_SACRED_CODEX",
+      "key_files": [
+        "scripts\\SACRED_FLASH_SCAFFOLD.ps1",
+        "scripts\\SACRED_FLASH_POPULATE.ps1",
+        "scripts\\SACRED_ARCANA_POPULATE.ps1",
+        "scripts\\SACRED_LINK_CHECK.ps1"
+      ]
+    },
+    {
+      "num": "05",
+      "name": "MEMORY_ENGINE",
+      "flash_path": "E:\\05_MEMORY_ENGINE",
+      "source_path": "D:\\SacredSpace_OS\\05_MEMORY_ENGINE",
+      "obsidian_uri": "obsidian://open?vault=SacredSpace_Vault&file=05_MEMORY_ENGINE",
+      "key_files": ["sacred_memory.sqlite", "reconcile.py"]
+    },
+    {
+      "num": "06",
+      "name": "AGENT_LAYER",
+      "flash_path": "E:\\06_AGENT_LAYER",
+      "source_path": "D:\\SacredSpace_OS\\06_AGENT_LAYER",
+      "obsidian_uri": "obsidian://open?vault=SacredSpace_Vault&file=06_AGENT_LAYER",
+      "agents": ["ELIAS", "AURORA", "ASHER", "IRIS"],
+      "key_files": ["IRIS\\iris_agent.py", "hermes\\hermes_agent.py"]
+    },
+    {
+      "num": "07",
+      "name": "SOCIAL_MOTHERSHIP",
+      "flash_path": "E:\\07_SOCIAL_MOTHERSHIP",
+      "source_path": "D:\\SacredSpace_OS\\07_SOCIAL_MOTHERSHIP",
+      "obsidian_uri": "obsidian://open?vault=SacredSpace_Vault&file=07_SOCIAL_MOTHERSHIP",
+      "key_files": ["brand_assets\\Brand_Bible_v2.md", "GRAMA\\grammar_cipher.json"]
+    },
+    {
+      "num": "08",
+      "name": "LEARNING_PATH",
+      "flash_path": "E:\\08_LEARNING_PATH",
+      "source_path": "D:\\SacredSpace_OS\\08_LEARNING_PATH",
+      "obsidian_uri": "obsidian://open?vault=SacredSpace_Vault&file=08_LEARNING_PATH",
+      "key_files": ["MAESTRO_AAS\\", "PYTHON_CODEX\\", "SACRED_FORGE\\"]
+    },
+    {
+      "num": "09",
+      "name": "SACRED_MARKET",
+      "flash_path": "E:\\09_SACRED_MARKET",
+      "source_path": "D:\\SacredSpace_OS\\09_SACRED_MARKET",
+      "obsidian_uri": "obsidian://open?vault=SacredSpace_Vault&file=09_SACRED_MARKET",
+      "key_files": ["ETSY\\", "PRINTIFY\\", "GELATO\\"]
+    }
+  ],
+  "arcana_landscapes": {
+    "root": "E:\\ARCANA_LANDSCAPES",
+    "categories": [
+      { "id": "SIGILS",            "prefix": "SIG_",   "description": "Sacred sigil artwork — Metatron, ICARIS, agent glyphs" },
+      { "id": "CHARACTERS",        "prefix": "CHAR_",  "description": "NPC and archetype character art" },
+      { "id": "ENVIRONMENTS",      "prefix": "ENV_",   "description": "World environments — The Threshold, Neural Forest, Void Gate" },
+      { "id": "ARCANA_GRID",       "prefix": "GRID_",  "description": "Arcana Grid — 12 archetypes × 4 elements × 3 primes" },
+      { "id": "BRAND",             "prefix": "BRAND_", "description": "SacredArcana Studios brand assets" },
+      { "id": "GRAMA",             "prefix": "GRAMA_", "description": "GR∆M∆ cipher and Hermes identity art" },
+      { "id": "PORTAL_WALLPAPERS", "prefix": "WP_",    "description": "Portal wallpapers and backgrounds" }
+    ],
+    "gallery_json": "E:\\PORTAL\\images.json"
+  },
+  "shared_space": {
+    "root": "E:\\SHARED_SPACE",
+    "active":  "E:\\SHARED_SPACE\\ACTIVE",
+    "canon":   "E:\\SHARED_SPACE\\CANON",
+    "letters": "E:\\SHARED_SPACE\\LETTERS",
+    "note": "Taylor x Jeanie collaborative workspace. North Star: Sacred Little Forest Sanctuary."
+  },
+  "gematria": {
+    "HERMES": 68,
+    "GRAMA":  40,
+    "SUM":    108,
+    "reduces_to": 9,
+    "meaning": "Nine Pillars"
+  }
+}

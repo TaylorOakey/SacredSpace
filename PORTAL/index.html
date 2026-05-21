@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>S∆CR3D SP∆CE — Communal Portal</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Share+Tech+Mono&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg:#04080f; --bg-card:#08101e; --bg-card2:#0c1628;
+  --gold:#FFD700; --gold-dim:rgba(255,215,0,0.6);
+  --teal:#00D4AA; --teal-dim:rgba(0,212,170,0.55);
+  --purple:#a78bfa; --text:#c8b89a; --text-bright:#e8d5b7;
+  --border:rgba(255,215,0,0.18); --border-hi:rgba(255,215,0,0.5);
+  --shadow:0 4px 24px rgba(0,0,0,0.7);
+  --glow-gold:0 0 20px rgba(255,215,0,0.25);
+  --glow-teal:0 0 20px rgba(0,212,170,0.25);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+body{background:var(--bg);color:var(--text);font-family:'Crimson Pro',Georgia,serif;font-size:16px;line-height:1.65;overflow-x:hidden;}
+h1,h2,h3,h4{font-family:'Cinzel',serif;color:var(--gold);}
+h2{font-size:1.5rem;letter-spacing:0.2em;text-transform:uppercase;}
+code,.mono{font-family:'Share Tech Mono',monospace;}
+::-webkit-scrollbar{width:5px;} ::-webkit-scrollbar-track{background:var(--bg);}
+::-webkit-scrollbar-thumb{background:var(--border);border-radius:3px;}
+::-webkit-scrollbar-thumb:hover{background:var(--gold-dim);}
+header{text-align:center;padding:3rem 1rem 2.5rem;background:linear-gradient(180deg,#000508 0%,var(--bg) 100%);border-bottom:1px solid var(--border);position:relative;overflow:hidden;}
+header::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 0%,rgba(255,215,0,0.06) 0%,transparent 65%);pointer-events:none;}
+.metatron-wrap{display:flex;justify-content:center;margin-bottom:1.75rem;}
+#metatron-canvas{filter:drop-shadow(0 0 14px rgba(255,215,0,0.35));}
+.portal-title{font-size:clamp(2rem,6vw,3.8rem);font-weight:900;letter-spacing:0.35em;color:var(--gold);text-shadow:0 0 40px rgba(255,215,0,0.45);margin-bottom:0.5rem;}
+.portal-subtitle{font-size:1.1rem;font-style:italic;color:var(--teal);letter-spacing:0.08em;margin-bottom:1.25rem;}
+.status-bar{font-family:'Share Tech Mono',monospace;font-size:0.78rem;color:rgba(200,184,154,0.5);display:flex;justify-content:center;gap:2.5rem;flex-wrap:wrap;}
+.status-bar span::before{content:'// ';}
+.section-wrap{max-width:1380px;margin:0 auto;padding:3.5rem 1.5rem;}
+.section-wrap+.section-wrap{border-top:1px solid var(--border);}
+.section-head{text-align:center;margin-bottom:2.5rem;}
+.section-head h2{margin-bottom:0.4rem;} .section-head p{color:var(--text);font-size:0.9rem;font-style:italic;}
+.sep{height:1px;background:linear-gradient(90deg,transparent,var(--border-hi),transparent);margin:1.5rem 0;}
+.pillars-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:1.2rem;}
+.pillar-card{background:var(--bg-card);border:1px solid var(--border);border-radius:10px;padding:1.4rem 1.5rem;cursor:pointer;transition:border-color 0.22s,box-shadow 0.22s,transform 0.18s;position:relative;overflow:hidden;}
+.pillar-card::after{content:'';position:absolute;inset:0;background:linear-gradient(145deg,rgba(255,215,0,0.035) 0%,transparent 55%);pointer-events:none;}
+.pillar-card:hover{border-color:var(--border-hi);box-shadow:var(--glow-gold);transform:translateY(-3px);}
+.pillar-num{font-family:'Share Tech Mono',monospace;font-size:0.7rem;color:var(--teal);letter-spacing:0.12em;margin-bottom:0.2rem;}
+.pillar-icon{font-size:2rem;display:block;margin-bottom:0.45rem;line-height:1;}
+.pillar-name{font-family:'Cinzel',serif;font-size:0.88rem;color:var(--gold);letter-spacing:0.12em;margin-bottom:0.45rem;}
+.pillar-purpose{font-size:0.82rem;color:var(--text);font-style:italic;margin-bottom:0.75rem;}
+.pillar-artifact{font-family:'Share Tech Mono',monospace;font-size:0.68rem;color:var(--teal-dim);background:rgba(0,212,170,0.06);border:1px solid rgba(0,212,170,0.18);border-radius:4px;padding:0.28rem 0.55rem;}
+.pillar-artifact::before{content:'◈ ';}
+.modal-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.88);z-index:1000;align-items:center;justify-content:center;padding:1.5rem;backdrop-filter:blur(5px);}
+.modal-overlay.open{display:flex;}
+.modal-box{background:var(--bg-card2);border:1px solid var(--border-hi);border-radius:12px;padding:2rem;max-width:580px;width:100%;max-height:88vh;overflow-y:auto;position:relative;box-shadow:var(--glow-gold),var(--shadow);}
+.modal-close{position:absolute;top:1rem;right:1rem;background:none;border:1px solid var(--border);color:var(--text);cursor:pointer;font-size:1rem;padding:0.2rem 0.55rem;border-radius:4px;transition:all 0.18s;}
+.modal-close:hover{border-color:var(--gold);color:var(--gold);}
+.modal-title{font-size:1.15rem;letter-spacing:0.12em;padding-right:3rem;margin-bottom:0.9rem;}
+.modal-desc{margin-bottom:1.2rem;font-size:0.92rem;line-height:1.6;}
+.modal-files-head{font-family:'Share Tech Mono',monospace;font-size:0.72rem;color:var(--teal);letter-spacing:0.12em;margin-bottom:0.45rem;}
+.modal-files-list{list-style:none;margin-bottom:1.2rem;}
+.modal-files-list li{font-family:'Share Tech Mono',monospace;font-size:0.72rem;color:var(--gold-dim);padding:0.18rem 0;}
+.modal-files-list li::before{content:'  ├─ ';color:var(--teal-dim);}
+.modal-btns{display:flex;gap:0.65rem;flex-wrap:wrap;}
+.mbtn{font-family:'Share Tech Mono',monospace;font-size:0.72rem;padding:0.45rem 0.9rem;border-radius:5px;text-decoration:none;display:inline-block;transition:all 0.18s;cursor:pointer;}
+.mbtn-obsidian{background:rgba(124,58,237,0.12);border:1px solid rgba(124,58,237,0.4);color:var(--purple);}
+.mbtn-obsidian:hover{background:rgba(124,58,237,0.28);}
+.mbtn-folder{background:rgba(255,215,0,0.07);border:1px solid rgba(255,215,0,0.3);color:var(--gold);}
+.mbtn-folder:hover{background:rgba(255,215,0,0.15);}
+.gov-badge{background:var(--bg-card);border:1px solid var(--border);border-radius:8px;padding:1.2rem;text-align:center;margin-bottom:1.75rem;}
+.gov-badge .gov-tag{font-family:'Share Tech Mono',monospace;font-size:0.7rem;color:var(--teal);letter-spacing:0.12em;margin-bottom:0.35rem;}
+.gov-flow{font-family:'Cinzel',serif;font-size:1.2rem;color:var(--gold);letter-spacing:0.25em;}
+.op-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin-bottom:1.5rem;}
+@media(max-width:560px){.op-grid{grid-template-columns:1fr;}}
+.op-card{background:var(--bg-card);border:1px solid var(--border);border-radius:8px;padding:1.4rem;text-align:center;}
+.op-sigil{font-size:2.2rem;display:block;margin-bottom:0.4rem;}
+.op-name{font-family:'Cinzel',serif;font-size:0.95rem;color:var(--gold);margin-bottom:0.2rem;}
+.op-handle{font-family:'Share Tech Mono',monospace;font-size:0.72rem;color:var(--teal);}
+.op-role{font-size:0.82rem;color:var(--text);font-style:italic;margin-top:0.4rem;}
+.mission-strip{font-style:italic;font-size:0.95rem;color:var(--text-bright);text-align:center;padding:1rem;border-top:1px solid var(--border);border-bottom:1px solid var(--border);margin:1.5rem 0;}
+.quick-links{display:flex;gap:0.65rem;flex-wrap:wrap;margin-bottom:1.5rem;}
+.ql{font-family:'Share Tech Mono',monospace;font-size:0.72rem;}
+.canon-label{font-family:'Share Tech Mono',monospace;font-size:0.7rem;color:var(--teal);letter-spacing:0.1em;display:block;margin-bottom:0.4rem;}
+.canon-ta{width:100%;min-height:110px;background:rgba(0,0,0,0.5);border:1px solid var(--border);border-radius:6px;color:var(--text-bright);font-family:'Share Tech Mono',monospace;font-size:0.78rem;padding:0.7rem;resize:vertical;transition:border-color 0.18s;}
+.canon-ta:focus{outline:none;border-color:var(--gold-dim);}
+.save-hint{font-family:'Share Tech Mono',monospace;font-size:0.62rem;color:rgba(200,184,154,0.35);margin-top:0.3rem;}
+.diamond-outer{display:flex;justify-content:center;align-items:center;padding:2rem 0;}
+.diamond-grid{display:grid;grid-template-columns:200px 90px 200px;grid-template-rows:150px 150px 150px;gap:0;}
+.lcard{background:var(--bg-card);border:1px solid var(--border);border-radius:10px;padding:1rem;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center;transition:all 0.22s;text-decoration:none;color:inherit;}
+.lcard:hover{border-color:var(--border-hi);box-shadow:var(--glow-gold);transform:scale(1.04);}
+.lcard.top{grid-column:2;grid-row:1;} .lcard.left{grid-column:1;grid-row:2;}
+.lcard.right{grid-column:3;grid-row:2;} .lcard.bottom{grid-column:2;grid-row:3;}
+.lcenter{grid-column:2;grid-row:2;display:flex;align-items:center;justify-content:center;}
+.licon{font-size:1.6rem;margin-bottom:0.3rem;}
+.lname{font-family:'Cinzel',serif;font-size:0.72rem;color:var(--gold);letter-spacing:0.1em;margin-bottom:0.2rem;}
+.lpurp{font-size:0.68rem;color:var(--text);font-style:italic;margin-bottom:0.35rem;}
+.lstat{font-family:'Share Tech Mono',monospace;font-size:0.62rem;color:var(--teal);}
+.lbtn{display:inline-block;margin-top:0.35rem;font-family:'Share Tech Mono',monospace;font-size:0.62rem;padding:0.18rem 0.5rem;background:rgba(255,215,0,0.07);border:1px solid rgba(255,215,0,0.25);color:var(--gold);border-radius:3px;text-decoration:none;transition:all 0.18s;}
+.lbtn:hover{background:rgba(255,215,0,0.16);}
+@media(max-width:700px){.diamond-grid{grid-template-columns:1fr 1fr;grid-template-rows:auto;}.lcard.top,.lcard.left,.lcard.right,.lcard.bottom{grid-column:auto;grid-row:auto;}.lcenter{display:none;}}
+.seats-panel{background:var(--bg-card);border:1px solid var(--border);border-radius:8px;padding:1.4rem;margin-top:2rem;}
+.seats-panel h3{font-size:0.82rem;letter-spacing:0.14em;margin-bottom:1rem;}
+.seats-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:0.7rem;}
+.seat{background:rgba(0,0,0,0.35);border:1px solid var(--border);border-radius:6px;padding:0.7rem;text-align:center;}
+.seat-name{font-family:'Cinzel',serif;font-size:0.78rem;color:var(--gold);margin-bottom:0.2rem;}
+.seat-role{font-size:0.72rem;color:var(--text);font-style:italic;}
+.seat-link{display:inline-block;margin-top:0.35rem;font-family:'Share Tech Mono',monospace;font-size:0.62rem;padding:0.15rem 0.45rem;background:rgba(255,215,0,0.06);border:1px solid rgba(255,215,0,0.22);color:var(--gold);border-radius:3px;text-decoration:none;}
+.filter-row{display:flex;gap:0.45rem;flex-wrap:wrap;justify-content:center;margin-bottom:2rem;}
+.fbtn{font-family:'Share Tech Mono',monospace;font-size:0.72rem;padding:0.35rem 0.9rem;background:transparent;border:1px solid var(--border);color:var(--text);border-radius:20px;cursor:pointer;transition:all 0.18s;}
+.fbtn:hover,.fbtn.active{border-color:var(--gold);color:var(--gold);background:rgba(255,215,0,0.07);}
+.gallery-grid{columns:3 200px;gap:0.9rem;}
+.gitem{break-inside:avoid;margin-bottom:0.9rem;cursor:pointer;border-radius:7px;overflow:hidden;border:1px solid var(--border);transition:all 0.22s;position:relative;background:var(--bg-card);}
+.gitem:hover{border-color:var(--border-hi);box-shadow:var(--glow-gold);}
+.gitem img,.gitem svg{width:100%;height:auto;display:block;}
+.gitem-label{position:absolute;bottom:0;left:0;right:0;background:rgba(0,0,0,0.75);font-family:'Share Tech Mono',monospace;font-size:0.62rem;color:var(--gold-dim);padding:0.25rem 0.5rem;opacity:0;transition:opacity 0.18s;}
+.gitem:hover .gitem-label{opacity:1;}
+.gallery-empty{text-align:center;padding:3rem 1rem;color:var(--text);font-style:italic;}
+.gallery-empty code{color:var(--teal);font-size:0.8rem;}
+.lightbox{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.96);z-index:2000;align-items:center;justify-content:center;padding:2rem;cursor:zoom-out;}
+.lightbox.open{display:flex;}
+.lightbox img{max-width:90vw;max-height:86vh;border:1px solid var(--border-hi);border-radius:6px;box-shadow:var(--glow-gold);cursor:default;}
+.lb-close{position:absolute;top:1rem;right:1.5rem;font-size:2.2rem;color:var(--gold);cursor:pointer;background:none;border:none;line-height:1;}
+.term-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(380px,1fr));gap:1rem;}
+@media(max-width:600px){.term-grid{grid-template-columns:1fr;}}
+.tblock{background:#000810;border:1px solid var(--border);border-radius:8px;overflow:hidden;}
+.tblock-head{background:rgba(255,215,0,0.07);padding:0.5rem 1rem;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--border);}
+.tlabel{font-family:'Share Tech Mono',monospace;font-size:0.72rem;color:var(--gold);letter-spacing:0.1em;}
+.cbtn{font-family:'Share Tech Mono',monospace;font-size:0.62rem;padding:0.18rem 0.55rem;background:transparent;border:1px solid var(--border);color:var(--text);border-radius:3px;cursor:pointer;transition:all 0.18s;}
+.cbtn:hover{border-color:var(--gold);color:var(--gold);} .cbtn.copied{border-color:var(--teal);color:var(--teal);}
+.tcode{font-family:'Share Tech Mono',monospace;font-size:0.73rem;color:#7cf07c;padding:1rem;white-space:pre-wrap;word-break:break-all;line-height:1.55;}
+.tc-prompt{color:var(--gold-dim);} .tc-comment{color:rgba(200,184,154,0.38);}
+footer{text-align:center;padding:2.5rem 1rem;border-top:1px solid var(--border);background:linear-gradient(0deg,#000508 0%,var(--bg) 100%);}
+.footer-title{font-family:'Cinzel',serif;font-size:1rem;color:var(--gold);letter-spacing:0.22em;margin-bottom:0.45rem;}
+.footer-mantra{font-style:italic;color:var(--teal);font-size:0.95rem;margin-bottom:0.65rem;}
+.footer-meta{font-family:'Share Tech Mono',monospace;font-size:0.62rem;color:rgba(200,184,154,0.32);}
+</style>
+</head>
+<body>
+<header>
+  <div class="metatron-wrap"><canvas id="metatron-canvas" width="230" height="230"></canvas></div>
+  <h1 class="portal-title">S∆CR3D SP∆CE</h1>
+  <p class="portal-subtitle">A Shared Sovereign Space — Taylor × Jeanie</p>
+  <div class="status-bar">
+    <span>Flash Drive: E:\</span><span id="hdr-date">—</span><span>In Lakesh Alakin. ∆</span>
+  </div>
+</header>
+
+<div class="section-wrap" id="foundations">
+  <div class="section-head"><h2>◈ Core Foundations</h2><p>Nine Pillars of SacredSpace OS — click any pillar to explore</p></div>
+  <div class="pillars-grid" id="pillars-grid"></div>
+</div>
+
+<div class="section-wrap" id="council">
+  <div class="section-head"><h2>◈ Shared Council Space</h2><p>Taylor × Jeanie — CollabOS v3</p></div>
+  <div class="gov-badge">
+    <div class="gov-tag">COLLAB OS v3 — GOVERNANCE PROTOCOL</div>
+    <div class="gov-flow">Fork &nbsp;→&nbsp; Council &nbsp;→&nbsp; Canon</div>
+  </div>
+  <div class="op-grid">
+    <div class="op-card"><span class="op-sigil">∆</span><div class="op-name">Taylor Wayne Oakey</div><div class="op-handle">∆∆∆O∆K3YTREE∆∆∆</div><div class="op-role">Operator / Visionary · SacredArcana Studios</div></div>
+    <div class="op-card"><span class="op-sigil">☽</span><div class="op-name">Jeanie Leaf</div><div class="op-handle">barefootsunsets2723</div><div class="op-role">Co-Creator / Heart · Sacred Space NC</div></div>
+  </div>
+  <div class="mission-strip">Sacred Space NC — Five-Year North Star: Acquisition of the Sacred Little Forest Sanctuary</div>
+  <div class="quick-links">
+    <a href="file:///E:/00_HANDOFF/" class="mbtn mbtn-folder ql">📦 Handoff Capsules</a>
+    <a href="file:///E:/SHARED_SPACE/ACTIVE/" class="mbtn mbtn-folder ql">✏️ Active Workspace</a>
+    <a href="file:///E:/SHARED_SPACE/CANON/" class="mbtn mbtn-obsidian ql">◈ Canon-Sealed</a>
+    <a href="file:///E:/SHARED_SPACE/LETTERS/" class="mbtn mbtn-folder ql">💌 Sacred Letters</a>
+  </div>
+  <div class="sep"></div>
+  <label class="canon-label" for="canon-ta">▸ ACTIVE CANON ITEMS — auto-saved to localStorage</label>
+  <textarea class="canon-ta" id="canon-ta" placeholder="Record active canon decisions here. Saves locally to this browser."></textarea>
+  <div class="save-hint">// Saved in localStorage · not synced to drive · quick reference only</div>
+</div>
+
+<div class="section-wrap" id="links">
+  <div class="section-head"><h2>◈ Link Layer</h2><p>The Four Connections — Google Drive · Google Docs · Obsidian · Council Grove</p></div>
+  <div class="diamond-outer"><div class="diamond-grid">
+    <a href="https://drive.google.com/drive/folders/1MSfrRipnQXrj5MIPRqW_O-15wKt8zg9Z" target="_blank" class="lcard top">
+      <div class="licon">☁️</div><div class="lname">GOOGLE DRIVE</div><div class="lpurp">SacredSpace OS Cloud Layer</div><div class="lstat">SacredSpace_OS_CLOUD</div><span class="lbtn">Open Drive ↗</span>
+    </a>
+    <a href="obsidian://open?vault=SacredSpace_Vault" class="lcard left">
+      <div class="licon">🔮</div><div class="lname">OBSIDIAN</div><div class="lpurp">Living Canon Vault — 176+ notes</div><div class="lstat">SacredSpace_Vault</div><span class="lbtn">Open Vault ↗</span>
+    </a>
+    <div class="lcenter"><canvas id="center-node" width="80" height="80" style="filter:drop-shadow(0 0 8px var(--teal))"></canvas></div>
+    <a href="https://drive.google.com/drive/folders/1MSfrRipnQXrj5MIPRqW_O-15wKt8zg9Z" target="_blank" class="lcard right">
+      <div class="licon">📄</div><div class="lname">GOOGLE DOCS</div><div class="lpurp">Key Living Documents</div><div class="lstat">Brand Bible · Scripts · Canon</div><span class="lbtn">Open Docs ↗</span>
+    </a>
+    <a href="file:///E:/02_COUNCIL_GROVE/CLAUDE.md" class="lcard bottom">
+      <div class="licon">🌳</div><div class="lname">COUNCIL GROVE</div><div class="lpurp">CLAUDE.md — 5-seat governance</div><div class="lstat">5 Seats Active</div><span class="lbtn">Open Grove ↗</span>
+    </a>
+  </div></div>
+  <div class="seats-panel"><h3>◈ Council Seat Assignments</h3><div class="seats-grid" id="seats-grid"></div></div>
+</div>
+
+<div class="section-wrap" id="gallery-section">
+  <div class="section-head"><h2>◈ Sacred Arcana Landscapes</h2><p>Art assets from E:\ARCANA_LANDSCAPES\ — click to enlarge</p></div>
+  <div class="filter-row">
+    <button class="fbtn active" data-cat="ALL">ALL</button>
+    <button class="fbtn" data-cat="SIGILS">SIGILS</button>
+    <button class="fbtn" data-cat="CHARACTERS">CHARACTERS</button>
+    <button class="fbtn" data-cat="ENVIRONMENTS">ENVIRONMENTS</button>
+    <button class="fbtn" data-cat="ARCANA_GRID">ARCANA GRID</button>
+    <button class="fbtn" data-cat="BRAND">BRAND</button>
+    <button class="fbtn" data-cat="GRAMA">GR∆M∆</button>
+  </div>
+  <div class="gallery-grid" id="gallery-grid"></div>
+</div>
+
+<div class="section-wrap" id="terminal-section">
+  <div class="section-head"><h2>◈ Quick Launch</h2><p>Boot commands — click ⧉ to copy to clipboard</p></div>
+  <div class="term-grid" id="term-grid"></div>
+</div>
+
+<footer>
+  <div class="footer-title">S∆CR3D SP∆CE OS — Taylor × Jeanie × ICARIS</div>
+  <div class="footer-mantra">In Lakesh Alakin. ∆∆∆</div>
+  <div class="footer-meta" id="footer-meta">v2.0 — Communal Portal — Flash Drive E:\</div>
+</footer>
+
+<div class="modal-overlay" id="pillar-modal">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal()">✕</button>
+    <h3 class="modal-title" id="m-title"></h3>
+    <p class="modal-desc" id="m-desc"></p>
+    <div class="modal-files-head">KEY FILES</div>
+    <ul class="modal-files-list" id="m-files"></ul>
+    <div class="modal-btns" id="m-btns"></div>
+  </div>
+</div>
+
+<div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
+  <button class="lb-close" onclick="closeLightbox(event)">✕</button>
+  <img id="lb-img" src="" alt="">
+</div>
+
+<script>
+const PILLARS = [
+  {num:'01',icon:'📓',name:'OBSIDIAN_VAULTS',purpose:'Human-readable canon layer — 176+ living Obsidian notes.',artifact:'SacredSpace_Vault (root)',desc:'The Obsidian vault is the heart of all SacredSpace knowledge. Taylor and Jeanie keep the living record of canon here.',files:['SacredSpace_Vault\\','00_INBOX\\vault_portal_sync.md','00_CANON\\GAME_SYSTEM\\'],obsidian:'obsidian://open?vault=SacredSpace_Vault',path:'E:\\01_VAULT\\SacredSpace_Vault'},
+  {num:'02',icon:'🌳',name:'COUNCIL_GROVE',purpose:'Tri-model AI governance — Claude · Gemini · ChatGPT.',artifact:'CLAUDE.md (governance doc)',desc:'CLAUDE.md defines rules of engagement between human operators and AI co-creators. Fork → Council → Canon.',files:['CLAUDE.md','lore_engine.py','obsidian_links.json','kethras.py'],obsidian:'obsidian://open?vault=SacredSpace_Vault&file=02_COUNCIL_GROVE',path:'E:\\02_COUNCIL_GROVE'},
+  {num:'03',icon:'🌲',name:'NEURAL_FOREST',purpose:'Scout/Gardener LLM pipeline — Ollama → Gemini → Mock.',artifact:'inference_cascade.py',desc:'Inference cascade: Ollama (primary) → Gemini (fallback) → Mock (offline). Scout searches; Gardener synthesises.',files:['inference_cascade.py','gardener.py','scout.py','systems\\fastapi\\main.py'],obsidian:'obsidian://open?vault=SacredSpace_Vault&file=03_NEURAL_FOREST',path:'E:\\03_NEURAL_FOREST'},
+  {num:'04',icon:'📜',name:'SACRED_CODEX',purpose:'Canon ledger, identity locks, GR∆M∆ cipher.',artifact:'GR∆M∆ JSON + ARCANA GRID',desc:'The Arcana Grid maps 12 archetypes to 4 Elements × 3 Primes. GR∆M∆ is the sacred alphabet cipher. All scripts live here.',files:['SACREDCODEX_Invocation_Ledger_v2.md','scripts\\SACRED_FLASH_SCAFFOLD.ps1','scripts\\SACRED_ARCANA_POPULATE.ps1'],obsidian:'obsidian://open?vault=SacredSpace_Vault&file=04_SACRED_CODEX',path:'E:\\04_SACRED_CODEX'},
+  {num:'05',icon:'🧠',name:'MEMORY_ENGINE',purpose:'SQLite + Redis Streams + ChromaDB memory stack.',artifact:'sacred_memory.sqlite',desc:'Memory Motes are atomic units of remembrance. Ebbinghaus decay model governs weight. reconcile.py keeps SQLite and ChromaDB in sync.',files:['sacred_memory.sqlite','reconcile.py','memory_motes\\','redis_streams\\'],obsidian:'obsidian://open?vault=SacredSpace_Vault&file=05_MEMORY_ENGINE',path:'E:\\05_MEMORY_ENGINE'},
+  {num:'06',icon:'🤖',name:'AGENT_LAYER',purpose:'ICARIS Quartet — ELIAS · AURORA · ASHER · IRIS.',artifact:'ICARIS Quartet agents',desc:'ELIAS (Knowledge), AURORA (Code), ASHER (Entropy/Decay), IRIS (Vault guardian, 4/15/15 Succession Seal).',files:['ELIAS\\','AURORA\\','ASHER\\','IRIS\\','agent_router.py'],obsidian:'obsidian://open?vault=SacredSpace_Vault&file=06_AGENT_LAYER',path:'E:\\06_AGENT_LAYER'},
+  {num:'07',icon:'✨',name:'SOCIAL_MOTHERSHIP',purpose:'Brand content, GR∆M∆ identity, POD-ready art.',artifact:'Brand Bible v2.0',desc:'SacredArcana Studios brand assets and GR∆M∆ visual identity. @SacredSpaceStudios. Human-first, AI-enhanced.',files:['brand_assets\\Brand_Bible_v2.md','brand_assets\\logos\\','GRAMA\\grammar_cipher.json'],obsidian:'obsidian://open?vault=SacredSpace_Vault&file=07_SOCIAL_MOTHERSHIP',path:'E:\\07_SOCIAL_MOTHERSHIP'},
+  {num:'08',icon:'📚',name:'LEARNING_PATH',purpose:'Maestro AAS coursework + Python Codex (PY-STR-001+).',artifact:'Maestro AAS + Python Codex',desc:'Structured learning: Maestro AAS coursework, Python spell ledger (PY-STR-001 → PY-THREAD-016+).',files:['MAESTRO_AAS\\','PYTHON_CODEX\\','SACRED_FORGE\\'],obsidian:'obsidian://open?vault=SacredSpace_Vault&file=08_LEARNING_PATH',path:'E:\\08_LEARNING_PATH'},
+  {num:'09',icon:'🛍️',name:'SACRED_MARKET',purpose:'Etsy + Printify + Gelato — Sacred Bazaar.',artifact:'SacredArcana Studios product files',desc:'Artwork flows through Printify/Gelato to Etsy. Schema maps gematria values, soul tones (Hz), pillar, price.',files:['ETSY\\','PRINTIFY\\','GELATO\\','products\\schema.json'],obsidian:'obsidian://open?vault=SacredSpace_Vault&file=09_SACRED_MARKET',path:'E:\\09_SACRED_MARKET'}
+];
+
+const SEATS = [
+  {name:'Claude',role:'Reasoning / Narrative',url:'https://claude.ai',icon:'◈'},
+  {name:'Gemini',role:'Deep Research',url:'https://gemini.google.com',icon:'✦'},
+  {name:'ChatGPT',role:'Systems Architect',url:'https://chatgpt.com',icon:'⚙'},
+  {name:'Taylor',role:'Operator / Visionary',url:null,icon:'∆'},
+  {name:'Jeanie',role:'Co-Creator / Heart',url:null,icon:'☽'}
+];
+
+const COMMANDS = [
+  {label:'SCAFFOLD',desc:'Create E:\\ directory structure',cmd:'powershell.exe -ExecutionPolicy Bypass -File "E:\\04_SACRED_CODEX\\scripts\\SACRED_FLASH_SCAFFOLD.ps1"'},
+  {label:'POPULATE',desc:'Copy core files from D:\\ to E:\\',cmd:'powershell.exe -ExecutionPolicy Bypass -File "E:\\04_SACRED_CODEX\\scripts\\SACRED_FLASH_POPULATE.ps1"'},
+  {label:'ARCANA POPULATE',desc:'Sort art assets into ARCANA_LANDSCAPES\\',cmd:'powershell.exe -ExecutionPolicy Bypass -File "E:\\04_SACRED_CODEX\\scripts\\SACRED_ARCANA_POPULATE.ps1"'},
+  {label:'HEALTH CHECK',desc:'Verify all drive paths and links',cmd:'powershell.exe -ExecutionPolicy Bypass -File "E:\\04_SACRED_CODEX\\scripts\\SACRED_LINK_CHECK.ps1"'},
+  {label:'BOOT FASTAPI',desc:'Start FastAPI spine on :8888 (WSL)',cmd:'cd /mnt/d/SacredSpace_OS && uvicorn systems.fastapi.main:app --host 0.0.0.0 --port 8888 --reload'},
+  {label:'BOOT SACRED (WSL)',desc:'Full sacred stack via boot script',cmd:'wsl bash /mnt/d/SacredSpace_OS/boot_sacred.sh'}
+];
+
+// ══════════════════════════════════════════════════════
+// METATRON CANVAS
+// ══════════════════════════════════════════════════════
+function initMetatron(id, size, r1, r2) {
+  const canvas = document.getElementById(id);
+  if (!canvas) return;
+  const ctx = canvas.getContext('2d');
+  let t = 0;
+  function pts(a1, a2) {
+    const cx = size/2, cy = size/2, out = [[cx,cy]];
+    for (let i=0;i<6;i++){const a=(i*60+a1)*Math.PI/180; out.push([cx+r1*Math.cos(a),cy+r1*Math.sin(a)]);}
+    for (let i=0;i<6;i++){const a=(i*60+30+a2)*Math.PI/180; out.push([cx+r2*Math.cos(a),cy+r2*Math.sin(a)]);}
+    return out;
+  }
+  function frame() {
+    ctx.clearRect(0,0,size,size);
+    const p = pts(t*0.14, t*-0.09), cr = r1*0.47;
+    p.forEach((pt,i) => {
+      ctx.beginPath(); ctx.arc(pt[0],pt[1],cr,0,Math.PI*2);
+      ctx.strokeStyle = i===0?'rgba(0,212,170,0.4)':i<=6?'rgba(255,215,0,0.28)':'rgba(255,215,0,0.14)';
+      ctx.lineWidth = 0.75; ctx.stroke();
+    });
+    ctx.lineWidth = 0.35;
+    for (let i=0;i<p.length;i++) {
+      for (let j=i+1;j<p.length;j++) {
+        const dx=p[i][0]-p[j][0], dy=p[i][1]-p[j][1], dist=Math.sqrt(dx*dx+dy*dy);
+        const a = Math.max(0.025, 0.2-dist/(size*1.1));
+        ctx.strokeStyle = `rgba(255,215,0,${a.toFixed(3)})`;
+        ctx.beginPath(); ctx.moveTo(p[i][0],p[i][1]); ctx.lineTo(p[j][0],p[j][1]); ctx.stroke();
+      }
+    }
+    ctx.beginPath(); ctx.arc(size/2,size/2,3.5,0,Math.PI*2);
+    ctx.fillStyle = 'rgba(0,212,170,0.95)'; ctx.fill();
+    t++; requestAnimationFrame(frame);
+  }
+  frame();
+}
+
+function initCenterNode() {
+  const canvas = document.getElementById('center-node');
+  if (!canvas) return;
+  const ctx = canvas.getContext('2d'); let t = 0;
+  function frame() {
+    ctx.clearRect(0,0,80,80);
+    const cx=40, cy=40;
+    ctx.beginPath(); ctx.arc(cx,cy,30,0,Math.PI*2);
+    ctx.strokeStyle='rgba(0,212,170,0.35)'; ctx.lineWidth=1; ctx.stroke();
+    for (let i=0;i<6;i++) {
+      const a=(i*60+t*0.28)*Math.PI/180, x=cx+22*Math.cos(a), y=cy+22*Math.sin(a);
+      ctx.beginPath(); ctx.arc(x,y,2.8,0,Math.PI*2);
+      ctx.fillStyle=`rgba(255,215,0,${0.45+0.4*Math.sin(t*0.05+i)})`; ctx.fill();
+    }
+    ctx.beginPath(); ctx.arc(cx,cy,5,0,Math.PI*2);
+    ctx.strokeStyle='rgba(0,212,170,0.85)'; ctx.lineWidth=1.5; ctx.stroke();
+    t++; requestAnimationFrame(frame);
+  }
+  frame();
+}
+
+// ══════════════════════════════════════════════════════
+// PILLARS
+// ══════════════════════════════════════════════════════
+function renderPillars() {
+  document.getElementById('pillars-grid').innerHTML = PILLARS.map((p,i) => `
+    <div class="pillar-card" onclick="openModal(${i})" role="button" tabindex="0" onkeydown="if(event.key==='Enter')openModal(${i})">
+      <div class="pillar-num">PILLAR ${p.num}</div>
+      <span class="pillar-icon">${p.icon}</span>
+      <div class="pillar-name">${p.name}</div>
+      <div class="pillar-purpose">${p.purpose}</div>
+      <div class="pillar-artifact">${p.artifact}</div>
+    </div>`).join('');
+}
+
+function openModal(i) {
+  const p = PILLARS[i];
+  document.getElementById('m-title').textContent = `${p.icon} ${p.num} — ${p.name}`;
+  document.getElementById('m-desc').textContent = p.desc;
+  document.getElementById('m-files').innerHTML = p.files.map(f=>`<li>${f}</li>`).join('');
+  document.getElementById('m-btns').innerHTML = `<a href="${p.obsidian}" class="mbtn mbtn-obsidian">🔮 Open in Obsidian</a><a href="file:///${p.path.replace(/\\/g,'/')}" class="mbtn mbtn-folder">📁 Open Folder</a>`;
+  document.getElementById('pillar-modal').classList.add('open');
+}
+
+function closeModal() { document.getElementById('pillar-modal').classList.remove('open'); }
+document.getElementById('pillar-modal').addEventListener('click', e => { if(e.target===e.currentTarget) closeModal(); });
+
+// ══════════════════════════════════════════════════════
+// COUNCIL SEATS
+// ══════════════════════════════════════════════════════
+function renderSeats() {
+  document.getElementById('seats-grid').innerHTML = SEATS.map(s => `
+    <div class="seat">
+      <div class="seat-name">${s.icon} ${s.name}</div>
+      <div class="seat-role">${s.role}</div>
+      ${s.url ? `<a href="${s.url}" target="_blank" class="seat-link">→ Open</a>` : ''}
+    </div>`).join('');
+}
+
+// ══════════════════════════════════════════════════════
+// GALLERY
+// ══════════════════════════════════════════════════════
+const PLACEHOLDER_SIGILS = (function() {
+  function hex(cx, cy, r) {
+    return Array.from({length:6}, (_,i) => {
+      const a = (i*60-30)*Math.PI/180;
+      return `${cx+r*Math.cos(a)},${cy+r*Math.sin(a)}`;
+    }).join(' ');
+  }
+  return [
+    { name:'Metatron Sigil', cat:'SIGILS', svg:`<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" style="background:#04080f"><circle cx="100" cy="100" r="78" fill="none" stroke="#FFD700" stroke-width="0.5" opacity="0.35"/>${[0,60,120,180,240,300].map(a=>`<circle cx="${(100+40*Math.cos(a*Math.PI/180)).toFixed(1)}" cy="${(100+40*Math.sin(a*Math.PI/180)).toFixed(1)}" r="40" fill="none" stroke="#FFD700" stroke-width="0.4" opacity="0.25"/>`).join('')}<circle cx="100" cy="100" r="40" fill="none" stroke="#00D4AA" stroke-width="0.6" opacity="0.5"/><circle cx="100" cy="100" r="3.5" fill="#00D4AA"/><text x="100" y="178" text-anchor="middle" font-family="serif" font-size="9" fill="#FFD700" opacity="0.55">METATRON</text></svg>` },
+    { name:'AURORA Sigil', cat:'SIGILS', svg:`<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" style="background:#04080f">${[0,45,90,135,180,225,270,315].map(a=>`<line x1="100" y1="100" x2="${(100+78*Math.cos(a*Math.PI/180)).toFixed(1)}" y2="${(100+78*Math.sin(a*Math.PI/180)).toFixed(1)}" stroke="#00D4AA" stroke-width="0.7" opacity="0.45"/>`).join('')}<circle cx="100" cy="100" r="56" fill="none" stroke="#00D4AA" stroke-width="0.7" opacity="0.4"/><circle cx="100" cy="100" r="4" fill="#00D4AA"/><text x="100" y="178" text-anchor="middle" font-family="serif" font-size="9" fill="#00D4AA" opacity="0.6">AURORA</text></svg>` },
+    { name:'IRIS Sigil', cat:'SIGILS', svg:`<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" style="background:#04080f"><circle cx="100" cy="100" r="68" fill="none" stroke="#a78bfa" stroke-width="0.7" opacity="0.45"/>${[0,60,120].map(a=>`<ellipse cx="100" cy="100" rx="68" ry="24" fill="none" stroke="#a78bfa" stroke-width="0.5" opacity="0.3" transform="rotate(${a} 100 100)"/>`).join('')}<circle cx="100" cy="100" r="4" fill="#a78bfa"/><text x="100" y="178" text-anchor="middle" font-family="serif" font-size="9" fill="#a78bfa" opacity="0.6">IRIS</text></svg>` },
+    { name:'Arcana Grid', cat:'ARCANA_GRID', svg:`<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" style="background:#04080f">${Array.from({length:12},(_,i)=>`<circle cx="${(100+72*Math.cos(i*30*Math.PI/180)).toFixed(1)}" cy="${(100+72*Math.sin(i*30*Math.PI/180)).toFixed(1)}" r="8" fill="none" stroke="#FFD700" stroke-width="0.6" opacity="${0.25+0.08*(i%4)}"/>`).join('')}<circle cx="100" cy="100" r="18" fill="none" stroke="#FFD700" stroke-width="0.7" opacity="0.55"/><circle cx="100" cy="100" r="5" fill="#FFD700"/><text x="100" y="178" text-anchor="middle" font-family="serif" font-size="9" fill="#FFD700" opacity="0.55">ARCANA GRID</text></svg>` },
+    { name:'Sacred Forest', cat:'ENVIRONMENTS', svg:`<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" style="background:#04080f"><polygon points="100,22 138,78 62,78" fill="none" stroke="#2D6A4F" stroke-width="1.4"/><polygon points="100,50 144,116 56,116" fill="none" stroke="#2D6A4F" stroke-width="1.4"/><polygon points="100,78 150,155 50,155" fill="none" stroke="#2D6A4F" stroke-width="1.4"/><rect x="93" y="155" width="14" height="18" fill="none" stroke="#2D6A4F" stroke-width="1"/><text x="100" y="192" text-anchor="middle" font-family="serif" font-size="9" fill="#2D6A4F" opacity="0.8">SACRED FOREST</text></svg>` },
+    { name:'SacredArcana Brand', cat:'BRAND', svg:`<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" style="background:#04080f"><polygon points="${hex(100,100,68)}" fill="none" stroke="#FFD700" stroke-width="1" opacity="0.5"/><polygon points="${hex(100,100,45)}" fill="none" stroke="#FFD700" stroke-width="0.7" opacity="0.35"/><polygon points="${hex(100,100,22)}" fill="none" stroke="#FFD700" stroke-width="0.6" opacity="0.25"/><circle cx="100" cy="100" r="5" fill="#FFD700"/><text x="100" y="178" text-anchor="middle" font-family="serif" font-size="9" fill="#FFD700" opacity="0.55">SACRED∆RC∆N∆</text></svg>` }
+  ];
+})();
+
+let activeFilter = 'ALL';
+let galleryData = [];
+
+async function loadGallery() {
+  try {
+    const r = await fetch('images.json');
+    if (r.ok) galleryData = await r.json();
+  } catch(_) { galleryData = []; }
+  renderGallery();
+}
+
+function renderGallery() {
+  const grid = document.getElementById('gallery-grid');
+  if (galleryData.length === 0) {
+    const items = activeFilter === 'ALL' ? PLACEHOLDER_SIGILS : PLACEHOLDER_SIGILS.filter(s => s.cat === activeFilter);
+    if (items.length === 0) {
+      grid.innerHTML = `<div class="gallery-empty">No items in this category. Run <code>SACRED_ARCANA_POPULATE.ps1</code> to populate.</div>`;
+      return;
+    }
+    grid.innerHTML = items.map(s => `<div class="gitem" title="${s.name}">${s.svg}<div class="gitem-label">${s.name}</div></div>`).join('');
+    return;
+  }
+  const items = activeFilter === 'ALL' ? galleryData : galleryData.filter(img => img.category === activeFilter);
+  if (items.length === 0) {
+    grid.innerHTML = `<div class="gallery-empty">No items in this category.</div>`;
+    return;
+  }
+  grid.innerHTML = items.map(img => `
+    <div class="gitem" onclick="openLightbox('../ARCANA_LANDSCAPES/${img.path}')" title="${img.name}">
+      <img src="../ARCANA_LANDSCAPES/${img.path}" alt="${img.name}" loading="lazy">
+      <div class="gitem-label">${img.name}</div>
+    </div>`).join('');
+}
+
+document.querySelectorAll('.fbtn').forEach(btn => {
+  btn.addEventListener('click', function() {
+    document.querySelectorAll('.fbtn').forEach(b => b.classList.remove('active'));
+    this.classList.add('active');
+    activeFilter = this.dataset.cat;
+    renderGallery();
+  });
+});
+
+function openLightbox(src) {
+  document.getElementById('lb-img').src = src;
+  document.getElementById('lightbox').classList.add('open');
+}
+function closeLightbox(e) {
+  if (!e || e.target !== document.getElementById('lb-img')) {
+    document.getElementById('lightbox').classList.remove('open');
+    document.getElementById('lb-img').src = '';
+  }
+}
+
+// ══════════════════════════════════════════════════════
+// TERMINAL BLOCKS
+// ══════════════════════════════════════════════════════
+function esc(s) { return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+
+function renderTerminal() {
+  document.getElementById('term-grid').innerHTML = COMMANDS.map((c,i) => `
+    <div class="tblock">
+      <div class="tblock-head">
+        <span class="tlabel">⟩ ${c.label}</span>
+        <button class="cbtn" id="cb${i}" onclick="copyCmd(${i})">⧉ COPY</button>
+      </div>
+      <div class="tcode"><span class="tc-comment">// ${c.desc}</span>\n<span class="tc-prompt">PS&gt;</span> ${esc(c.cmd)}</div>
+    </div>`).join('');
+}
+
+function copyCmd(i) {
+  const done = () => {
+    const btn = document.getElementById('cb'+i);
+    btn.textContent = '✓ COPIED'; btn.classList.add('copied');
+    setTimeout(()=>{ btn.textContent='⧉ COPY'; btn.classList.remove('copied'); }, 2200);
+  };
+  if (navigator.clipboard) {
+    navigator.clipboard.writeText(COMMANDS[i].cmd).then(done).catch(()=>{
+      const ta = document.createElement('textarea'); ta.value = COMMANDS[i].cmd;
+      document.body.appendChild(ta); ta.select(); document.execCommand('copy'); document.body.removeChild(ta); done();
+    });
+  } else {
+    const ta = document.createElement('textarea'); ta.value = COMMANDS[i].cmd;
+    document.body.appendChild(ta); ta.select(); document.execCommand('copy'); document.body.removeChild(ta); done();
+  }
+}
+
+// ══════════════════════════════════════════════════════
+// CANON ITEMS — localStorage
+// ══════════════════════════════════════════════════════
+function initCanon() {
+  const ta = document.getElementById('canon-ta');
+  const saved = localStorage.getItem('sacredspace_canon_v2');
+  if (saved) ta.value = saved;
+  ta.addEventListener('input', function() {
+    localStorage.setItem('sacredspace_canon_v2', this.value);
+  });
+}
+
+// ══════════════════════════════════════════════════════
+// DATE
+// ══════════════════════════════════════════════════════
+function updateDate() {
+  const now = new Date();
+  const d = now.toLocaleDateString('en-US',{year:'numeric',month:'long',day:'numeric'});
+  document.getElementById('hdr-date').textContent = d;
+  const iso = `${now.getFullYear()}-${String(now.getMonth()+1).padStart(2,'0')}-${String(now.getDate()).padStart(2,'0')}`;
+  document.getElementById('footer-meta').textContent = `v2.0 — Communal Portal — ${iso} — Flash Drive E:\\`;
+}
+
+document.addEventListener('keydown', e => { if (e.key === 'Escape') { closeModal(); closeLightbox(); } });
+
+document.addEventListener('DOMContentLoaded', () => {
+  updateDate();
+  initMetatron('metatron-canvas', 230, 52, 96);
+  initCenterNode();
+  renderPillars();
+  renderSeats();
+  renderTerminal();
+  loadGallery();
+  initCanon();
+});
+</script>
+</body>
+</html>
