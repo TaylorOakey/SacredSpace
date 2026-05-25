@@ -1,0 +1,48 @@
+---
+title: "LEARNING_Overview"
+source: "/mnt/d/01_VAULT/SacredSpace_Vault/ARCHIVE/sacredspace_os_2026_docs/01_OBSIDIAN_VAULT/01_VAULT/SacredSpace_Vault/2_LEARNING/LEARNING_Overview.md"
+keyword_count: 4
+keywords_found: []
+pillar: "01_VAULT"
+date_indexed: "2026-05-21"
+cashflow_rank: 68
+---
+
+
+# âœ¶ LEARNING â€” Education & Curriculum
+
+> Status: SEEDING â€” This pillar is currently the lowest-coverage pillar in the vault.
+> Priority: Create canonical curriculum map before Q2 2026.
+
+## What LEARNING contains
+
+- Maestro School AAS in AI Software Engineering curriculum
+- Sacred Arcana narrative framework (maps to curriculum)
+- Study guides, course notes, project documentation
+- The principle: every lesson is a mythic quest
+
+## Maestro School
+
+OakeyTree is pursuing an AAS in AI Software Engineering through Maestro School. The curriculum is being actively mapped to the Sacred Arcana narrative framework so that academic progress and SacredSpace OS development reinforce each other.
+
+## Sacred Arcana Framework
+
+The Sacred Arcana maps academic subjects to mythic archetypes:
+
+| Arcana | Academic Domain | SacredSpace Artifact |
+|--------|----------------|---------------------|
+| The Fool | Python fundamentals | First scripts, explorations |
+| The Magician | APIs + tool use | LangGraph / FastAPI |
+| The High Priestess | Memory systems | RAW â†’ DISTILLED â†’ CANON |
+| The Emperor | System architecture | Codexium vâˆž |
+| The Hierophant | ML theory | ICARIS agents |
+| The Chariot | Deployment | SacredBootstrap |
+| Strength | Security + integrity | Canon Gate Protocol |
+| The Hermit | Solo research | Deep work sessions |
+
+*Full mapping document to be created.*
+
+## See also
+
+- [[0_CORE/Activation_Sequences|Activation Sequences]] (study ritual)
+- [[6_COUNCIL/ICARIS_Quartet|ICARIS Quartet]] (agents as teachers)

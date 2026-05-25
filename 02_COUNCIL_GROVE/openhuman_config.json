@@ -1,0 +1,57 @@
+{
+  "app": "OpenHuman",
+  "version": "1.0.0",
+  "profile": "SacredSpace OS",
+  "vault_path": "D:\\01_VAULT\\SacredSpace_Vault",
+  "agentmemory_endpoint": "http://localhost:8888/mcp",
+  "mcp_servers": {
+    "sacredspace-hermes": {
+      "endpoint": "http://localhost:8888/mcp",
+      "name": "Hermes MCP",
+      "description": "SacredSpace OS Hermes MCP server — memory, vault, agent orchestration",
+      "version": "0.13.0",
+      "status": "operational"
+    }
+  },
+  "llm_cascade": [
+    {
+      "provider": "ollama",
+      "endpoint": "http://localhost:11434",
+      "models": ["mistral", "llama3", "phi3"],
+      "priority": 1
+    },
+    {
+      "provider": "gemini",
+      "endpoint": "https://generativelanguage.googleapis.com",
+      "priority": 2
+    }
+  ],
+  "fastapi_spine": {
+    "base_url": "http://localhost:8888",
+    "routes": {
+      "health": "/health",
+      "hermes_health": "/hermes/health",
+      "mcp": "/mcp",
+      "memory": "/memory",
+      "pillars": "/pillars",
+      "icaris": "/icaris",
+      "harvest": "/harvest",
+      "vault_watcher": "/vault-watcher-obsidian-sync",
+      "lore_engine": "/lore-to-product-engine",
+      "merchant": "/merchant-sacred-artifacts",
+      "kethras": "/kethras-learning-gate"
+    }
+  },
+  "icaris_agents": {
+    "asher": {"role": "audit", "trigger": "before_write"},
+    "elias": {"role": "analyze", "trigger": "before_edit"},
+    "aurora": {"role": "deploy", "trigger": "on_task"},
+    "iris": {"role": "record", "trigger": "after_complete"}
+  },
+  "system_prompt": "You are connected to SacredSpace OS via Hermes MCP. Vault: D:\\01_VAULT\\SacredSpace_Vault. Spine: http://localhost:8888. Agents: ASHER (audit), ELIAS (analyze), AURORA (deploy), IRIS (record). Run ASHER before any write. Run IRIS after every deployment. In lakesh alakin.",
+  "wsl2": {
+    "vault_wsl_path": "/mnt/d/01_VAULT/SacredSpace_Vault",
+    "os_wsl_path": "/mnt/d/SacredSpace_OS",
+    "distro": "Ubuntu-24.04"
+  }
+}

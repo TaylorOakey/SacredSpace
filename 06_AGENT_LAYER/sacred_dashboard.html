@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>S∆CR3D F!AHFOX — Den</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cinzel:wght@400;600;800&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg:       #090806;
+      --mid:      #110f0a;
+      --surface:  #18140d;
+      --border:   #3a2a14;
+      --ember:    #ff9f43;
+      --gold:     #f5d07a;
+      --pale:     #f0e6d0;
+      --ash:      #b09070;
+      --muted:    #6a5540;
+      --ok:       #7ed998;
+      --glow:     rgba(255,159,67,0.12);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html, body {
+      height: 100%;
+      background: var(--bg);
+      color: var(--pale);
+      font-family: 'Share Tech Mono', monospace;
+      overflow-x: hidden;
+    }
+
+    /* ── Background texture ── */
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 60% 40% at 50% 0%, rgba(255,120,30,0.07) 0%, transparent 70%),
+        radial-gradient(ellipse 80% 60% at 50% 100%, rgba(80,40,10,0.25) 0%, transparent 60%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* Subtle noise grain */
+    body::after {
+      content: "";
+      position: fixed;
+      inset: 0;
+      opacity: 0.025;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .page {
+      position: relative;
+      z-index: 1;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 48px 24px 64px;
+      gap: 40px;
+    }
+
+    /* ── Header ── */
+    header {
+      text-align: center;
+      animation: fadeDown 0.8s ease both;
+    }
+
+    .logo {
+      font-family: 'Cinzel Decorative', serif;
+      font-size: clamp(28px, 5vw, 52px);
+      font-weight: 900;
+      color: var(--ember);
+      letter-spacing: 4px;
+      text-shadow:
+        0 0 40px rgba(255,159,67,0.5),
+        0 0 80px rgba(255,100,20,0.2);
+      line-height: 1;
+    }
+
+    .logo-sub {
+      font-family: 'Cinzel', serif;
+      font-size: 13px;
+      letter-spacing: 6px;
+      color: var(--ash);
+      margin-top: 10px;
+      text-transform: uppercase;
+    }
+
+    /* ── Clock ── */
+    .clock-block {
+      text-align: center;
+      animation: fadeDown 0.9s ease 0.1s both;
+    }
+
+    .clock-time {
+      font-family: 'Cinzel', serif;
+      font-size: clamp(44px, 7vw, 80px);
+      font-weight: 800;
+      color: var(--gold);
+      letter-spacing: 4px;
+      line-height: 1;
+      text-shadow: 0 0 30px rgba(245,208,122,0.3);
+    }
+
+    .clock-date {
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 13px;
+      color: var(--ash);
+      margin-top: 8px;
+      letter-spacing: 2px;
+    }
+
+    /* ── Mode Seal ── */
+    .seal-block {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px 28px;
+      width: 100%;
+      max-width: 560px;
+      box-shadow: 0 8px 40px rgba(0,0,0,0.4);
+      animation: fadeUp 0.8s ease 0.2s both;
+    }
+
+    .seal-title {
+      font-family: 'Cinzel', serif;
+      font-size: 13px;
+      letter-spacing: 4px;
+      color: var(--ember);
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+
+    .seal-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+
+    .seal-grid .full { grid-column: 1 / -1; }
+
+    label.field-lbl {
+      display: block;
+      font-size: 10px;
+      letter-spacing: 2px;
+      color: var(--ash);
+      text-transform: uppercase;
+      margin-bottom: 5px;
+    }
+
+    select.mode-sel,
+    input.field-input,
+    textarea.field-ta {
+      width: 100%;
+      background: rgba(0,0,0,0.35);
+      border: 1px solid var(--border);
+      border-radius: 9px;
+      color: var(--pale);
+      padding: 10px 13px;
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 12px;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    select.mode-sel:focus,
+    input.field-input:focus,
+    textarea.field-ta:focus { border-color: var(--ember); }
+
+    textarea.field-ta { min-height: 54px; resize: vertical; }
+
+    .seal-btn-row {
+      display: flex;
+      gap: 10px;
+      margin-top: 16px;
+    }
+
+    .btn {
+      flex: 1;
+      border: 0;
+      border-radius: 9px;
+      padding: 11px;
+      font-family: 'Cinzel', serif;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      cursor: pointer;
+      transition: opacity 0.15s, transform 0.1s;
+    }
+
+    .btn:active { transform: scale(0.97); }
+    .btn-primary { background: var(--ember); color: #111; }
+    .btn-secondary { background: rgba(255,255,255,0.05); color: var(--gold); border: 1px solid var(--border); }
+
+    .seal-status {
+      margin-top: 10px;
+      font-size: 11px;
+      color: var(--muted);
+      min-height: 16px;
+      text-align: center;
+    }
+
+    /* ── Panels row ── */
+    .panels {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 18px;
+      width: 100%;
+      max-width: 1100px;
+      animation: fadeUp 0.9s ease 0.3s both;
+    }
+
+    .panel {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 20px 22px;
+    }
+
+    .panel-title {
+      font-family: 'Cinzel', serif;
+      font-size: 11px;
+      letter-spacing: 3px;
+      color: var(--ember);
+      text-transform: uppercase;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* Quick links */
+    .link-list {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .link-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 12px;
+      background: rgba(0,0,0,0.25);
+      border: 1px solid transparent;
+      border-radius: 8px;
+      color: var(--pale);
+      text-decoration: none;
+      font-size: 12px;
+      transition: border-color 0.2s, color 0.2s;
+    }
+
+    .link-item:hover {
+      border-color: var(--border);
+      color: var(--gold);
+    }
+
+    .link-icon { color: var(--ember); font-size: 14px; }
+    .link-desc { color: var(--muted); font-size: 10px; }
+
+    /* Quote panel */
+    .quote-text {
+      font-family: 'Cinzel', serif;
+      font-size: 13px;
+      line-height: 1.8;
+      color: var(--gold);
+      font-style: italic;
+    }
+
+    .quote-attr {
+      margin-top: 10px;
+      font-size: 10px;
+      color: var(--muted);
+      letter-spacing: 1.5px;
+    }
+
+    /* Status/session panel */
+    .session-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 7px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+      font-size: 12px;
+    }
+
+    .session-row:last-child { border-bottom: none; }
+    .session-key { color: var(--ash); font-size: 11px; letter-spacing: 1px; }
+    .session-val { color: var(--pale); }
+    .session-val.mode-chip {
+      background: rgba(255,159,67,0.12);
+      color: var(--ember);
+      padding: 2px 10px;
+      border-radius: 20px;
+      font-family: 'Cinzel', serif;
+      font-size: 10px;
+      letter-spacing: 1px;
+    }
+
+    /* ── Animations ── */
+    @keyframes fadeDown {
+      from { opacity: 0; transform: translateY(-18px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(18px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ember pulse on logo */
+    @keyframes emberPulse {
+      0%, 100% { text-shadow: 0 0 40px rgba(255,159,67,0.5), 0 0 80px rgba(255,100,20,0.2); }
+      50%       { text-shadow: 0 0 60px rgba(255,159,67,0.8), 0 0 120px rgba(255,100,20,0.4); }
+    }
+
+    .logo { animation: emberPulse 4s ease-in-out infinite; }
+
+    /* ── Footer ── */
+    footer {
+      font-size: 11px;
+      color: var(--muted);
+      letter-spacing: 2px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <!-- Header -->
+  <header>
+    <div class="logo">S∆CR3D F!AHFOX</div>
+    <div class="logo-sub">The Den — SacredSpace OS</div>
+  </header>
+
+  <!-- Clock -->
+  <div class="clock-block">
+    <div class="clock-time" id="clock">00:00:00</div>
+    <div class="clock-date" id="clockDate">—</div>
+  </div>
+
+  <!-- Mode Seal -->
+  <div class="seal-block">
+    <div class="seal-title">🔥 Mode Lock</div>
+    <div class="seal-grid">
+      <div>
+        <label class="field-lbl">Mode</label>
+        <select class="mode-sel" id="mode">
+          <option>⚒ Forge</option>
+          <option>🦊 Scout</option>
+          <option>📚 Archive</option>
+          <option>🔮 Council</option>
+          <option>🌲 Deep Work</option>
+        </select>
+      </div>
+      <div>
+        <label class="field-lbl">Intent</label>
+        <input class="field-input" id="intent" placeholder="What are you here to do?" />
+      </div>
+      <div>
+        <label class="field-lbl">Boundary</label>
+        <input class="field-input" id="boundary" placeholder="What is off-limits?" />
+      </div>
+      <div>
+        <label class="field-lbl">Desired Outcome</label>
+        <input class="field-input" id="outcome" placeholder="What counts as done?" />
+      </div>
+    </div>
+    <div class="seal-btn-row">
+      <button class="btn btn-primary" id="sealBtn">Seal Session</button>
+      <button class="btn btn-secondary" id="recallBtn">Recall</button>
+    </div>
+    <div class="seal-status" id="sealStatus"></div>
+  </div>
+
+  <!-- Panel grid -->
+  <div class="panels">
+
+    <!-- Quick links -->
+    <div class="panel">
+      <div class="panel-title">🧭 Navigation</div>
+      <div class="link-list">
+        <a href="https://github.com" class="link-item" target="_blank">
+          <span class="link-icon">⚙</span>
+          <div><div>GitHub</div><div class="link-desc">Repositories & commits</div></div>
+        </a>
+        <a href="about:blank" class="link-item" id="obsidianLink">
+          <span class="link-icon">🌲</span>
+          <div><div>Obsidian Vault</div><div class="link-desc">Neural Forest</div></div>
+        </a>
+        <a href="https://chat.openai.com" class="link-item" target="_blank">
+          <span class="link-icon">🤖</span>
+          <div><div>ChatGPT</div><div class="link-desc">Systems Architect</div></div>
+        </a>
+        <a href="https://gemini.google.com" class="link-item" target="_blank">
+          <span class="link-icon">🔬</span>
+          <div><div>Gemini</div><div class="link-desc">Deep Research</div></div>
+        </a>
+        <a href="https://claude.ai" class="link-item" target="_blank">
+          <span class="link-icon">🔥</span>
+          <div><div>Claude</div><div class="link-desc">Reasoning & Narrative</div></div>
+        </a>
+        <a href="https://maestro.school" class="link-item" target="_blank">
+          <span class="link-icon">📐</span>
+          <div><div>Maestro</div><div class="link-desc">AAS AI Software Engineering</div></div>
+        </a>
+      </div>
+    </div>
+
+    <!-- Active session -->
+    <div class="panel">
+      <div class="panel-title">📌 Active Session</div>
+      <div id="sessionDisplay">
+        <div class="session-row">
+          <span class="session-key">MODE</span>
+          <span class="session-val mode-chip" id="dMode">—</span>
+        </div>
+        <div class="session-row">
+          <span class="session-key">INTENT</span>
+          <span class="session-val" id="dIntent" style="max-width:180px;text-align:right;word-break:break-word;">—</span>
+        </div>
+        <div class="session-row">
+          <span class="session-key">BOUNDARY</span>
+          <span class="session-val" id="dBoundary" style="max-width:180px;text-align:right;word-break:break-word;">—</span>
+        </div>
+        <div class="session-row">
+          <span class="session-key">OUTCOME</span>
+          <span class="session-val" id="dOutcome" style="max-width:180px;text-align:right;word-break:break-word;">—</span>
+        </div>
+        <div class="session-row">
+          <span class="session-key">SEALED</span>
+          <span class="session-val" id="dTime">—</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sacred mantra -->
+    <div class="panel">
+      <div class="panel-title">🌿 The Operating Mantra</div>
+      <div class="quote-text" id="quoteText">"Ground. Consolidate. Deploy. Document. Repeat."</div>
+      <div class="quote-attr" id="quoteAttr">— SacredSpace OS</div>
+    </div>
+
+  </div>
+
+  <footer>the den remembers &nbsp;·&nbsp; sacredspace os &nbsp;·&nbsp; entropy is watching</footer>
+
+</div>
+
+<script>
+// ── Clock ──────────────────────────────────────────────────
+const DAYS   = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+const MONTHS = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+
+function pad(n) { return String(n).padStart(2,"0"); }
+
+function updateClock() {
+  const now  = new Date();
+  const h    = pad(now.getHours());
+  const m    = pad(now.getMinutes());
+  const s    = pad(now.getSeconds());
+  document.getElementById("clock").textContent = `${h}:${m}:${s}`;
+  document.getElementById("clockDate").textContent =
+    `${DAYS[now.getDay()]}  ·  ${MONTHS[now.getMonth()]} ${now.getDate()}, ${now.getFullYear()}`;
+}
+updateClock();
+setInterval(updateClock, 1000);
+
+// ── LocalStorage session ────────────────────────────────────
+const STORAGE_KEY = "sacredSession_dashboard";
+
+function loadSession() {
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY);
+    return raw ? JSON.parse(raw) : null;
+  } catch { return null; }
+}
+
+function saveSession(data) {
+  try { localStorage.setItem(STORAGE_KEY, JSON.stringify(data)); } catch {}
+}
+
+function displaySession(s) {
+  if (!s) return;
+  const modeMap = {
+    "⚒ Forge": "Forge",
+    "🦊 Scout": "Scout",
+    "📚 Archive": "Archive",
+    "🔮 Council": "Council",
+    "🌲 Deep Work": "Deep Work"
+  };
+  document.getElementById("dMode").textContent    = modeMap[s.mode] || s.mode || "—";
+  document.getElementById("dIntent").textContent   = s.intent   || "—";
+  document.getElementById("dBoundary").textContent = s.boundary || "—";
+  document.getElementById("dOutcome").textContent  = s.outcome  || "—";
+  document.getElementById("dTime").textContent     = s.timestamp
+    ? new Date(s.timestamp).toLocaleTimeString()
+    : "—";
+}
+
+// Restore on load
+const session = loadSession();
+if (session) {
+  document.getElementById("mode").value    = session.mode    || "⚒ Forge";
+  document.getElementById("intent").value  = session.intent  || "";
+  document.getElementById("boundary").value= session.boundary|| "";
+  document.getElementById("outcome").value = session.outcome || "";
+  displaySession(session);
+}
+
+// ── Seal / Recall ───────────────────────────────────────────
+function setStatus(msg, ok = true) {
+  const el = document.getElementById("sealStatus");
+  el.textContent = msg;
+  el.style.color = ok ? "#7ed998" : "#e07070";
+}
+
+document.getElementById("sealBtn").addEventListener("click", () => {
+  const data = {
+    mode:      document.getElementById("mode").value,
+    intent:    document.getElementById("intent").value.trim(),
+    boundary:  document.getElementById("boundary").value.trim(),
+    outcome:   document.getElementById("outcome").value.trim(),
+    timestamp: new Date().toISOString()
+  };
+
+  if (!data.intent || !data.outcome) {
+    setStatus("Intent and Desired Outcome required.", false);
+    return;
+  }
+
+  saveSession(data);
+  displaySession(data);
+  setStatus("Session sealed. The den remembers.");
+});
+
+document.getElementById("recallBtn").addEventListener("click", () => {
+  const s = loadSession();
+  if (!s) { setStatus("No prior session.", false); return; }
+  document.getElementById("mode").value     = s.mode     || "⚒ Forge";
+  document.getElementById("intent").value   = s.intent   || "";
+  document.getElementById("boundary").value = s.boundary || "";
+  document.getElementById("outcome").value  = s.outcome  || "";
+  displaySession(s);
+  setStatus("Recalled.");
+});
+
+// ── Rotating mantra quotes ──────────────────────────────────
+const QUOTES = [
+  { text: "Ground. Consolidate. Deploy. Document. Repeat.",      attr: "SacredSpace OS — Operating Mantra" },
+  { text: "Tabs are totems. Folders are shrines. Chaos is goblin work.", attr: "Sacred Fiahfox Doctrine" },
+  { text: "Clarity before speed. Signal over stimulation. Context is sacred.", attr: "Fiahfox Behavioral Laws" },
+  { text: "The fox doesn't howl loudly. It builds systems that quietly win.", attr: "S∆CR3D F!AHFOX" },
+  { text: "Myth must ground into action. Architecture is the ritual.", attr: "Council Grove Protocol" },
+  { text: "RAW → DISTILLED → CANON. Nothing escapes the pipeline.", attr: "SacredSpace Three-Tier Memory" },
+];
+
+let quoteIdx = 0;
+
+function rotateQuote() {
+  quoteIdx = (quoteIdx + 1) % QUOTES.length;
+  const q = QUOTES[quoteIdx];
+  const textEl = document.getElementById("quoteText");
+  const attrEl = document.getElementById("quoteAttr");
+  textEl.style.opacity = "0";
+  attrEl.style.opacity = "0";
+  setTimeout(() => {
+    textEl.textContent = `"${q.text}"`;
+    attrEl.textContent = `— ${q.attr}`;
+    textEl.style.transition = "opacity 0.6s";
+    attrEl.style.transition = "opacity 0.6s";
+    textEl.style.opacity = "1";
+    attrEl.style.opacity = "1";
+  }, 400);
+}
+
+setInterval(rotateQuote, 12000);
+</script>
+</body>
+</html>

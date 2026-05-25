@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>S∆CR3DSP∆CE NODE v1.1</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;900&family=Share+Tech+Mono&family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --void: #020508;
+    --deep: #040c10;
+    --bark: #0a1a14;
+    --moss: #0f2d1f;
+    --canopy: #0d3d28;
+    --ember: #c8762a;
+    --gold: #d4a841;
+    --glyph: #7fe0a0;
+    --mist: #a8d4b8;
+    --fog:  #4a8a6a;
+    --ghost: rgba(200,220,210,0.06);
+    --border: rgba(127,224,160,0.15);
+    --border-hot: rgba(200,118,42,0.5);
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--void); color: var(--mist); font-family: 'Share Tech Mono', monospace; min-height: 100vh; overflow-x: hidden; cursor: crosshair; }
+  #cosmos { position: fixed; inset: 0; z-index: 0; opacity: 0.55; }
+  body::after { content:''; position:fixed; inset:0; z-index:1; background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E"); pointer-events:none; }
+  .shell { position:relative; z-index:2; max-width:1280px; margin:0 auto; padding:2rem 2.5rem 4rem; }
+  header { display:flex; align-items:flex-end; justify-content:space-between; padding:2.5rem 0 2rem; border-bottom:1px solid var(--border); margin-bottom:3rem; }
+  .sigil { font-family:'Cinzel',serif; font-size:clamp(2.2rem,5vw,3.8rem); font-weight:900; letter-spacing:0.12em; line-height:1; color:var(--glyph); text-shadow:0 0 40px rgba(127,224,160,0.4),0 0 80px rgba(127,224,160,0.15); animation:breathe 4s ease-in-out infinite; }
+  @keyframes breathe { 0%,100%{text-shadow:0 0 30px rgba(127,224,160,0.35),0 0 60px rgba(127,224,160,0.12)} 50%{text-shadow:0 0 60px rgba(127,224,160,0.6),0 0 120px rgba(127,224,160,0.25)} }
+  .subtitle { font-family:'IM Fell English SC',serif; font-size:0.75rem; letter-spacing:0.3em; color:var(--fog); margin-top:0.4rem; }
+  .sys-time { text-align:right; font-size:0.7rem; color:var(--fog); letter-spacing:0.12em; }
+  .sys-time .clock { font-size:1.6rem; color:var(--ember); display:block; letter-spacing:0.08em; margin-bottom:0.2rem; }
+  .section-label { font-family:'IM Fell English SC',serif; font-size:0.65rem; letter-spacing:0.4em; color:var(--ember); margin-bottom:1rem; display:flex; align-items:center; gap:0.8rem; }
+  .section-label::before,.section-label::after { content:''; flex:1; height:1px; background:linear-gradient(90deg,transparent,var(--border-hot),transparent); }
+  .node-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1.2rem; margin-bottom:3rem; }
+  .node-card { position:relative; background:var(--ghost); border:1px solid var(--border); padding:1.6rem; overflow:hidden; transition:border-color 0.3s,transform 0.3s; cursor:pointer; }
+  .node-card::before { content:''; position:absolute; inset:0; background:linear-gradient(135deg,rgba(127,224,160,0.04) 0%,transparent 60%); pointer-events:none; }
+  .node-card:hover { border-color:rgba(127,224,160,0.4); transform:translateY(-2px); }
+  .node-card.offline { border-color:rgba(180,60,60,0.3); }
+  .node-card.offline .node-status-dot { background:#e05555; box-shadow:0 0 8px rgba(224,85,85,0.7); }
+  .node-card.checking .node-status-dot { background:var(--gold); box-shadow:0 0 8px rgba(212,168,65,0.7); animation:pulse-dot 1s ease-in-out infinite; }
+  .node-card.online .node-status-dot { background:var(--glyph); box-shadow:0 0 8px rgba(127,224,160,0.8); }
+  @keyframes pulse-dot { 0%,100%{opacity:1} 50%{opacity:0.3} }
+  .node-header { display:flex; align-items:center; justify-content:space-between; margin-bottom:1rem; }
+  .node-name { font-family:'Cinzel',serif; font-size:0.9rem; letter-spacing:0.15em; color:var(--glyph); }
+  .node-status-dot { width:8px; height:8px; border-radius:50%; background:var(--fog); }
+  .node-role { font-size:0.65rem; color:var(--fog); letter-spacing:0.15em; margin-bottom:1.2rem; }
+  .node-port { font-size:0.75rem; color:var(--ember); letter-spacing:0.08em; margin-bottom:1.2rem; }
+  .node-btn { display:inline-block; padding:0.45rem 1rem; font-family:'Share Tech Mono',monospace; font-size:0.65rem; letter-spacing:0.2em; color:var(--glyph); background:transparent; border:1px solid var(--border); cursor:pointer; transition:all 0.25s; text-decoration:none; }
+  .node-btn:hover { background:rgba(127,224,160,0.08); border-color:var(--glyph); color:#fff; }
+  .node-glyph { position:absolute; bottom:-0.5rem; right:0.8rem; font-size:4rem; opacity:0.04; font-family:'Cinzel',serif; pointer-events:none; line-height:1; }
+  .console-grid { display:grid; grid-template-columns:1fr 1fr; gap:1.2rem; margin-bottom:3rem; }
+  .console-panel { background:var(--ghost); border:1px solid var(--border); padding:1.5rem; }
+  .console-title { font-family:'Cinzel',serif; font-size:0.78rem; letter-spacing:0.2em; color:var(--gold); margin-bottom:1.2rem; }
+  .model-list { display:flex; flex-direction:column; gap:0.5rem; }
+  .model-item { display:flex; align-items:center; justify-content:space-between; padding:0.6rem 0.8rem; border:1px solid rgba(127,224,160,0.1); font-size:0.72rem; transition:border-color 0.2s; }
+  .model-item:hover { border-color:var(--border-hot); }
+  .model-name { color:var(--mist); letter-spacing:0.08em; }
+  .model-size { color:var(--fog); font-size:0.62rem; }
+  .model-pull-btn { padding:0.3rem 0.7rem; font-family:'Share Tech Mono',monospace; font-size:0.6rem; letter-spacing:0.15em; color:var(--ember); background:transparent; border:1px solid rgba(200,118,42,0.3); cursor:pointer; transition:all 0.2s; }
+  .model-pull-btn:hover { background:rgba(200,118,42,0.1); border-color:var(--ember); }
+  .cmd-list { display:flex; flex-direction:column; gap:0.4rem; }
+  .cmd-item { display:flex; align-items:center; gap:0.8rem; padding:0.55rem 0.8rem; border:1px solid rgba(127,224,160,0.08); font-size:0.68rem; cursor:pointer; transition:all 0.2s; }
+  .cmd-item:hover { background:rgba(127,224,160,0.05); border-color:var(--border); }
+  .cmd-prefix { color:var(--glyph); opacity:0.6; }
+  .cmd-text { color:var(--mist); font-size:0.66rem; flex:1; }
+  .cmd-desc { color:var(--fog); font-size:0.58rem; letter-spacing:0.1em; }
+  .forest-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:0.6rem; margin-bottom:3rem; }
+  .forest-dir { padding:0.8rem 1rem; border:1px solid rgba(127,224,160,0.08); display:flex; align-items:center; gap:0.8rem; font-size:0.68rem; transition:all 0.2s; cursor:pointer; }
+  .forest-dir:hover { border-color:var(--border); background:var(--ghost); }
+  .dir-icon { font-size:0.9rem; }
+  .dir-name { color:var(--mist); }
+  .dir-num { color:var(--fog); font-size:0.58rem; margin-left:auto; }
+  .feed-panel { background:var(--ghost); border:1px solid var(--border); padding:1.5rem; margin-bottom:3rem; }
+  .feed-entries { display:flex; flex-direction:column; gap:0.4rem; max-height:180px; overflow-y:auto; }
+  .feed-entry { display:flex; gap:1rem; font-size:0.66rem; padding:0.4rem 0; border-bottom:1px solid rgba(127,224,160,0.05); animation:feed-in 0.4s ease both; }
+  @keyframes feed-in { from{opacity:0;transform:translateX(-8px)} to{opacity:1;transform:translateX(0)} }
+  .feed-ts { color:var(--fog); width:5rem; flex-shrink:0; }
+  .feed-tag { padding:0.1rem 0.4rem; font-size:0.55rem; letter-spacing:0.1em; flex-shrink:0; align-self:flex-start; margin-top:0.1rem; }
+  .tag-ok   { background:rgba(127,224,160,0.15); color:var(--glyph); border:1px solid rgba(127,224,160,0.3); }
+  .tag-warn { background:rgba(200,118,42,0.15); color:var(--ember); border:1px solid rgba(200,118,42,0.3); }
+  .tag-info { background:rgba(74,138,106,0.15); color:var(--fog); border:1px solid rgba(74,138,106,0.3); }
+  .feed-msg { color:var(--mist); }
+  .oracle-panel { background:var(--ghost); border:1px solid var(--border-hot); padding:1.8rem; position:relative; margin-bottom:3rem; }
+  .oracle-panel::before { content:'⚡'; position:absolute; top:-0.8rem; left:50%; transform:translateX(-50%); background:var(--void); padding:0 0.8rem; font-size:1rem; }
+  .oracle-row { display:flex; gap:0.8rem; align-items:stretch; }
+  .oracle-input { flex:1; background:rgba(0,0,0,0.4); border:1px solid var(--border); color:var(--mist); font-family:'Share Tech Mono',monospace; font-size:0.78rem; padding:0.8rem 1rem; letter-spacing:0.05em; outline:none; transition:border-color 0.2s; }
+  .oracle-input:focus { border-color:var(--glyph); }
+  .oracle-input::placeholder { color:var(--fog); }
+  .oracle-submit { padding:0.8rem 1.5rem; background:transparent; border:1px solid var(--ember); color:var(--ember); font-family:'Cinzel',serif; font-size:0.7rem; letter-spacing:0.2em; cursor:pointer; transition:all 0.25s; }
+  .oracle-submit:hover { background:rgba(200,118,42,0.1); color:var(--gold); }
+  .oracle-response { margin-top:1.2rem; font-size:0.72rem; color:var(--mist); line-height:1.7; min-height:2rem; border-left:2px solid var(--glyph); padding-left:1rem; display:none; }
+  .status-bar { position:fixed; bottom:0; left:0; right:0; z-index:10; background:rgba(2,5,8,0.92); border-top:1px solid var(--border); padding:0.5rem 2.5rem; display:flex; align-items:center; justify-content:space-between; font-size:0.62rem; letter-spacing:0.15em; backdrop-filter:blur(8px); }
+  .status-left { display:flex; gap:2rem; align-items:center; }
+  .status-item { display:flex; gap:0.5rem; align-items:center; color:var(--fog); }
+  .status-dot { width:5px; height:5px; border-radius:50%; }
+  .s-green { background:var(--glyph); box-shadow:0 0 4px rgba(127,224,160,0.8); }
+  .s-amber { background:var(--gold); }
+  .s-red   { background:#e05555; }
+  .status-right { color:var(--fog); }
+  .status-brand { font-family:'Cinzel',serif; color:rgba(127,224,160,0.3); letter-spacing:0.3em; font-size:0.6rem; }
+  ::-webkit-scrollbar { width:4px; }
+  ::-webkit-scrollbar-track { background:transparent; }
+  ::-webkit-scrollbar-thumb { background:var(--canopy); }
+  .toast { position:fixed; bottom:3.5rem; left:50%; transform:translateX(-50%); background:var(--canopy); border:1px solid var(--glyph); color:var(--glyph); padding:0.5rem 1.2rem; font-size:0.68rem; letter-spacing:0.2em; z-index:100; opacity:0; pointer-events:none; transition:opacity 0.3s; }
+  .toast.show { opacity:1; }
+  @media(max-width:900px){.node-grid,.forest-grid{grid-template-columns:1fr 1fr}.console-grid{grid-template-columns:1fr}}
+  @media(max-width:600px){.node-grid,.forest-grid{grid-template-columns:1fr}.shell{padding:1rem 1.2rem 4rem}.sigil{font-size:1.8rem}}
+</style>
+</head>
+<body>
+<canvas id="cosmos"></canvas>
+<div class="shell">
+  <header>
+    <div>
+      <div class="sigil">S∆CR3DSP∆CE</div>
+      <div class="subtitle">Intelligence Node · v1.1 · Local AI Stack</div>
+    </div>
+    <div class="sys-time">
+      <span class="clock" id="clock">--:--:--</span>
+      <span id="datestr">--</span><br>
+      <span style="color:var(--glyph);font-size:0.65rem">NODE: LAPTOP-7Q65KPI7</span>
+    </div>
+  </header>
+
+  <div class="section-label">∆ Active Nodes</div>
+  <div class="node-grid">
+    <div class="node-card checking" id="card-ollama">
+      <div class="node-glyph">◎</div>
+      <div class="node-header"><span class="node-name">OLLAMA</span><span class="node-status-dot" id="dot-ollama"></span></div>
+      <div class="node-role">Model Engine · Local Inference</div>
+      <div class="node-port">:11434</div>
+      <a class="node-btn" href="http://localhost:11434" target="_blank">↗ OPEN</a>
+    </div>
+    <div class="node-card checking" id="card-webui">
+      <div class="node-glyph">◈</div>
+      <div class="node-header"><span class="node-name">OPEN WEBUI</span><span class="node-status-dot" id="dot-webui"></span></div>
+      <div class="node-role">Workbench · Chat Interface</div>
+      <div class="node-port">:3000</div>
+      <a class="node-btn" href="http://localhost:3000" target="_blank">↗ OPEN</a>
+    </div>
+    <div class="node-card checking" id="card-chroma">
+      <div class="node-glyph">◬</div>
+      <div class="node-header"><span class="node-name">CHROMADB</span><span class="node-status-dot" id="dot-chroma"></span></div>
+      <div class="node-role">Vector Memory · Knowledge Base</div>
+      <div class="node-port">:8000</div>
+      <a class="node-btn" href="http://localhost:8000" target="_blank">↗ OPEN</a>
+    </div>
+  </div>
+
+  <div class="section-label">∆ Command Intelligence</div>
+  <div class="console-grid">
+    <div class="console-panel">
+      <div class="console-title">⬡ Model Arsenal</div>
+      <div class="model-list">
+        <div class="model-item"><div><div class="model-name">llama3.2</div><div class="model-size">~2.0 GB · Fast · General</div></div><button class="model-pull-btn" onclick="copyCmd('docker exec -it sacredspace_ollama ollama pull llama3.2')">PULL</button></div>
+        <div class="model-item"><div><div class="model-name">mistral</div><div class="model-size">~4.1 GB · Reasoning · Code</div></div><button class="model-pull-btn" onclick="copyCmd('docker exec -it sacredspace_ollama ollama pull mistral')">PULL</button></div>
+        <div class="model-item"><div><div class="model-name">nomic-embed-text</div><div class="model-size">~274 MB · Embeddings · RAG</div></div><button class="model-pull-btn" onclick="copyCmd('docker exec -it sacredspace_ollama ollama pull nomic-embed-text')">PULL</button></div>
+        <div class="model-item"><div><div class="model-name">deepseek-r1:7b</div><div class="model-size">~4.7 GB · Deep Reasoning</div></div><button class="model-pull-btn" onclick="copyCmd('docker exec -it sacredspace_ollama ollama pull deepseek-r1:7b')">PULL</button></div>
+        <div class="model-item"><div><div class="model-name">phi4</div><div class="model-size">~9.1 GB · Advanced · Research</div></div><button class="model-pull-btn" onclick="copyCmd('docker exec -it sacredspace_ollama ollama pull phi4')">PULL</button></div>
+      </div>
+    </div>
+    <div class="console-panel">
+      <div class="console-title">⚡ Quick Commands</div>
+      <div class="cmd-list">
+        <div class="cmd-item" onclick="copyCmd('docker ps')"><span class="cmd-prefix">$</span><span class="cmd-text">docker ps</span><span class="cmd-desc">STATUS</span></div>
+        <div class="cmd-item" onclick="copyCmd('cd /mnt/c/Users/USER/sacredspace-os && docker compose up -d')"><span class="cmd-prefix">$</span><span class="cmd-text">compose up -d</span><span class="cmd-desc">LAUNCH</span></div>
+        <div class="cmd-item" onclick="copyCmd('cd /mnt/c/Users/USER/sacredspace-os && docker compose down')"><span class="cmd-prefix">$</span><span class="cmd-text">compose down</span><span class="cmd-desc">HALT</span></div>
+        <div class="cmd-item" onclick="copyCmd('docker exec -it sacredspace_ollama ollama list')"><span class="cmd-prefix">$</span><span class="cmd-text">ollama list</span><span class="cmd-desc">MODELS</span></div>
+        <div class="cmd-item" onclick="copyCmd('docker logs sacredspace_ollama --tail 50')"><span class="cmd-prefix">$</span><span class="cmd-text">logs ollama --tail 50</span><span class="cmd-desc">DEBUG</span></div>
+        <div class="cmd-item" onclick="copyCmd('docker logs sacredspace_ui --tail 50')"><span class="cmd-prefix">$</span><span class="cmd-text">logs webui --tail 50</span><span class="cmd-desc">DEBUG</span></div>
+        <div class="cmd-item" onclick="copyCmd('sudo tailscale up')"><span class="cmd-prefix">$</span><span class="cmd-text">tailscale up</span><span class="cmd-desc">NETWORK</span></div>
+        <div class="cmd-item" onclick="copyCmd('tailscale ip -4')"><span class="cmd-prefix">$</span><span class="cmd-text">tailscale ip -4</span><span class="cmd-desc">MY IP</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-label">∆ Sacred Filesystem</div>
+  <div class="forest-grid">
+    <div class="forest-dir" onclick="copyCmd('mkdir -p ~/SacredSpace/{00_Inbox,01_Canon,02_Projects,03_Knowledge,04_Agent_Output,05_Notebooks,06_Databases,07_Exports,99_Backups}')"><span class="dir-icon">📥</span><span class="dir-name">00_Inbox</span><span class="dir-num">RAW</span></div>
+    <div class="forest-dir" onclick="copyCmd('mkdir -p ~/SacredSpace/{00_Inbox,01_Canon,02_Projects,03_Knowledge,04_Agent_Output,05_Notebooks,06_Databases,07_Exports,99_Backups}')"><span class="dir-icon">📜</span><span class="dir-name">01_Canon</span><span class="dir-num">TRUTH</span></div>
+    <div class="forest-dir" onclick="copyCmd('mkdir -p ~/SacredSpace/{00_Inbox,01_Canon,02_Projects,03_Knowledge,04_Agent_Output,05_Notebooks,06_Databases,07_Exports,99_Backups}')"><span class="dir-icon">⚙️</span><span class="dir-name">02_Projects</span><span class="dir-num">ACTIVE</span></div>
+    <div class="forest-dir" onclick="copyCmd('mkdir -p ~/SacredSpace/{00_Inbox,01_Canon,02_Projects,03_Knowledge,04_Agent_Output,05_Notebooks,06_Databases,07_Exports,99_Backups}')"><span class="dir-icon">🧠</span><span class="dir-name">03_Knowledge</span><span class="dir-num">INDEX</span></div>
+    <div class="forest-dir" onclick="copyCmd('mkdir -p ~/SacredSpace/{00_Inbox,01_Canon,02_Projects,03_Knowledge,04_Agent_Output,05_Notebooks,06_Databases,07_Exports,99_Backups}')"><span class="dir-icon">🤖</span><span class="dir-name">04_Agent_Output</span><span class="dir-num">EMIT</span></div>
+    <div class="forest-dir" onclick="copyCmd('mkdir -p ~/SacredSpace/{00_Inbox,01_Canon,02_Projects,03_Knowledge,04_Agent_Output,05_Notebooks,06_Databases,07_Exports,99_Backups}')"><span class="dir-icon">🔬</span><span class="dir-name">05_Notebooks</span><span class="dir-num">LAB</span></div>
+    <div class="forest-dir" onclick="copyCmd('mkdir -p ~/SacredSpace/{00_Inbox,01_Canon,02_Projects,03_Knowledge,04_Agent_Output,05_Notebooks,06_Databases,07_Exports,99_Backups}')"><span class="dir-icon">🗄️</span><span class="dir-name">06_Databases</span><span class="dir-num">MEM</span></div>
+    <div class="forest-dir" onclick="copyCmd('mkdir -p ~/SacredSpace/{00_Inbox,01_Canon,02_Projects,03_Knowledge,04_Agent_Output,05_Notebooks,06_Databases,07_Exports,99_Backups}')"><span class="dir-icon">📤</span><span class="dir-name">07_Exports</span><span class="dir-num">OUT</span></div>
+    <div class="forest-dir" onclick="copyCmd('mkdir -p ~/SacredSpace/{00_Inbox,01_Canon,02_Projects,03_Knowledge,04_Agent_Output,05_Notebooks,06_Databases,07_Exports,99_Backups}')"><span class="dir-icon">🌿</span><span class="dir-name">99_Backups</span><span class="dir-num">SAFE</span></div>
+  </div>
+
+  <div class="section-label">∆ System Intelligence</div>
+  <div class="feed-panel">
+    <div class="console-title">⬡ Live Feed</div>
+    <div class="feed-entries" id="feed"></div>
+  </div>
+
+  <div class="section-label">∆ Oracle · GR∆M∆</div>
+  <div class="oracle-panel">
+    <div class="oracle-row">
+      <input class="oracle-input" id="oracle-in" placeholder="Ask the Oracle anything about your stack..." onkeydown="if(event.key==='Enter') callOracle()"/>
+      <button class="oracle-submit" onclick="callOracle()">INVOKE</button>
+    </div>
+    <div class="oracle-response" id="oracle-out"></div>
+  </div>
+</div>
+
+<div class="status-bar">
+  <div class="status-left">
+    <div class="status-item"><div class="status-dot s-green" id="sb-ollama"></div>OLLAMA</div>
+    <div class="status-item"><div class="status-dot s-green" id="sb-webui"></div>WEBUI</div>
+    <div class="status-item"><div class="status-dot s-green" id="sb-chroma"></div>CHROMA</div>
+  </div>
+  <div class="status-brand">S∆CR3DSP∆CE · NODE ACTIVE</div>
+  <div class="status-right" id="uptime">UPTIME: --</div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+const cvs=document.getElementById('cosmos'),ctx=cvs.getContext('2d');
+let W,H,particles=[],t=0;
+function resize(){W=cvs.width=window.innerWidth;H=cvs.height=window.innerHeight;}
+resize();window.addEventListener('resize',resize);
+const PTS_F=[[.5,.5],[.5,.15],[.85,.38],[.85,.62],[.5,.85],[.15,.62],[.15,.38]];
+function draw(){
+  ctx.clearRect(0,0,W,H);
+  const rad=ctx.createRadialGradient(W*.5,H*.5,0,W*.5,H*.5,W*.6);
+  rad.addColorStop(0,'rgba(13,61,40,0.18)');rad.addColorStop(.5,'rgba(4,12,16,0.1)');rad.addColorStop(1,'rgba(2,5,8,0)');
+  ctx.fillStyle=rad;ctx.fillRect(0,0,W,H);
+  const pts=PTS_F.map(([fx,fy])=>({x:W*fx+Math.sin(t*.3+fx*3)*12,y:H*fy+Math.cos(t*.25+fy*2)*10}));
+  ctx.strokeStyle='rgba(127,224,160,0.07)';ctx.lineWidth=0.8;
+  for(let i=0;i<pts.length;i++)for(let j=i+1;j<pts.length;j++){
+    const d=Math.hypot(pts[j].x-pts[i].x,pts[j].y-pts[i].y);
+    if(d<W*.55){ctx.beginPath();ctx.moveTo(pts[i].x,pts[i].y);ctx.lineTo(pts[j].x,pts[j].y);ctx.globalAlpha=.4*(1-d/(W*.55));ctx.stroke();}
+  }
+  pts.forEach((p,i)=>{
+    const pulse=.5+.5*Math.sin(t*.8+i*1.3),r=(i===0?6:3.5)+pulse*2;
+    ctx.globalAlpha=1;
+    const g=ctx.createRadialGradient(p.x,p.y,0,p.x,p.y,r*4);
+    g.addColorStop(0,`rgba(127,224,160,${.25+pulse*.2})`);g.addColorStop(.5,'rgba(127,224,160,0.06)');g.addColorStop(1,'rgba(127,224,160,0)');
+    ctx.fillStyle=g;ctx.beginPath();ctx.arc(p.x,p.y,r*4,0,Math.PI*2);ctx.fill();
+    ctx.fillStyle=i===0?`rgba(212,168,65,${.6+pulse*.4})`:`rgba(127,224,160,${.5+pulse*.5})`;
+    ctx.beginPath();ctx.arc(p.x,p.y,r,0,Math.PI*2);ctx.fill();
+  });
+  if(Math.random()<.15&&particles.length<60)particles.push({x:Math.random()*W,y:H+5,vx:(Math.random()-.5)*.4,vy:-(0.3+Math.random()*.6),life:1,size:.5+Math.random()*1.5});
+  particles=particles.filter(p=>p.life>0);
+  particles.forEach(p=>{p.x+=p.vx;p.y+=p.vy;p.life-=.004;ctx.globalAlpha=p.life*.5;ctx.fillStyle='rgba(127,224,160,1)';ctx.beginPath();ctx.arc(p.x,p.y,p.size,0,Math.PI*2);ctx.fill();});
+  ctx.globalAlpha=1;t+=.012;requestAnimationFrame(draw);
+}
+draw();
+
+const startTime=Date.now();
+function tick(){
+  const now=new Date();
+  document.getElementById('clock').textContent=now.toTimeString().slice(0,8);
+  document.getElementById('datestr').textContent=now.toLocaleDateString('en-US',{weekday:'long',month:'long',day:'numeric'});
+  const up=Math.floor((Date.now()-startTime)/1000),m=Math.floor(up/60),s=up%60;
+  document.getElementById('uptime').textContent=`UPTIME: ${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
+}
+tick();setInterval(tick,1000);
+
+const SVCS=[{id:'ollama',url:'http://localhost:11434',sb:'sb-ollama'},{id:'webui',url:'http://localhost:3000',sb:'sb-webui'},{id:'chroma',url:'http://localhost:8000',sb:'sb-chroma'}];
+async function checkSvc(s){
+  const card=document.getElementById('card-'+s.id),sb=document.getElementById(s.sb);
+  try{
+    await fetch(s.url,{method:'GET',mode:'no-cors',signal:AbortSignal.timeout(3000)});
+    card.classList.remove('checking','offline');card.classList.add('online');
+    sb.className='status-dot s-green';addFeed('ok',s.id.toUpperCase(),'responding normally');
+  }catch{
+    card.classList.remove('checking','online');card.classList.add('offline');
+    sb.className='status-dot s-red';addFeed('warn',s.id.toUpperCase(),'no response — check docker ps');
+  }
+}
+function checkAll(){SVCS.forEach(checkSvc);}
+checkAll();setInterval(checkAll,30000);
+
+const feedEl=document.getElementById('feed');
+[['info','BOOT','SacredSpace Node initializing...'],['info','COSMOS','Sacred geometry canvas active'],['info','SCAN','Probing service endpoints...']].forEach((m,i)=>setTimeout(()=>addFeed(...m),i*600));
+function addFeed(type,tag,msg){
+  const el=document.createElement('div');el.className='feed-entry';
+  el.innerHTML=`<span class="feed-ts">${new Date().toTimeString().slice(0,8)}</span><span class="feed-tag tag-${type}">${tag}</span><span class="feed-msg">${msg}</span>`;
+  feedEl.prepend(el);if(feedEl.children.length>30)feedEl.lastChild.remove();
+}
+
+function copyCmd(cmd){
+  navigator.clipboard.writeText(cmd).then(()=>{
+    const t=document.getElementById('toast');
+    t.textContent='✓ '+cmd.slice(0,52)+(cmd.length>52?'…':'');
+    t.classList.add('show');setTimeout(()=>t.classList.remove('show'),2200);
+    addFeed('info','COPY',cmd.slice(0,60));
+  });
+}
+
+async function callOracle(){
+  const inp=document.getElementById('oracle-in'),out=document.getElementById('oracle-out'),q=inp.value.trim();
+  if(!q)return;
+  out.style.display='block';out.textContent='⟳ Consulting the Oracle...';
+  addFeed('info','ORACLE',q.slice(0,60));
+  try{
+    const res=await fetch('https://api.anthropic.com/v1/messages',{
+      method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({model:'claude-sonnet-4-20250514',max_tokens:1000,
+        system:`You are GR∆M∆, the Oracle of SacredSpace — an AI infrastructure specialist. The user runs Ollama (11434), Open WebUI (3000), ChromaDB (8000) via Docker on Windows/WSL2. Their system is SacredSpace Node v1.1. Answer concisely and technically. Weave in sacred/mystical framing naturally. Under 150 words.`,
+        messages:[{role:'user',content:q}]})
+    });
+    const data=await res.json();
+    out.textContent=data.content?.[0]?.text||'The Oracle is silent.';
+    addFeed('ok','ORACLE','response received');
+  }catch(e){
+    out.textContent='⚠ Oracle unreachable. Check network.';
+    addFeed('warn','ORACLE','API call failed');
+  }
+  inp.value='';
+}
+</script>
+</body>
+</html>
