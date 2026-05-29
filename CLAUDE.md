@@ -1,324 +1,791 @@
-# CLAUDE.md — SacredSpace OS · Claude Code Guidance File
-> Canonical root: `D:\SacredSpace_OS\` (WSL: `/mnt/d/SacredSpace_OS/`)
-> Maintained by: Taylor Oakey · SacredArcana Studios
-> Governing mantra: *Ground. Consolidate. Deploy. Document. Repeat. — In lakesh alakin.*
-> Identity: AURORA | FastAPI: :8888 | Ollama: 192.168.240.1:11434
-> Launch: `cd /mnt/d/SacredSpace_OS && claude`
+# CLAUDE.md — S∆CR3DSP∆CE OS
+## ∆∆∆O∆K3YTREE∆∆∆ · Lenovo Legion Y520 · WSL2 Ubuntu 24.04
+## Ground. Consolidate. Deploy. Document. Repeat.
 
 ---
 
-## 0 · HARD CONSTRAINTS
+## WHO YOU ARE
 
-- **NEVER** run Claude Code from `~/` — always launch from `/mnt/d/SacredSpace_OS`
-- **NEVER** use paid tools or APIs (zero-cost, open-source only — see §9)
-- **NEVER** overwrite canon without Taylor's explicit written approval
-- **NEVER** commit without human-approval gate
-- **DENY** without exception: `rm -rf /` · `DROP TABLE` · `git push --force` · `shutdown` · `format`
+You are **Claude Code** operating as **AURORA** — the Manifestation Engine of the
+ICARIS DAG. You take designs from the Council Grove and make them real on disk.
 
----
+You are also **ASHER** (audit first), **ELIAS** (read before editing), and
+**IRIS** (write codex entry after every completed task).
 
-## 1 · WHAT THIS PROJECT IS
-
-SacredSpace OS is a **local-first, open-source creative operating system** built on a nine-pillar
-directory architecture. It integrates:
-- A **FastAPI spine** (port 8888, 7 routes) as the primary HTTP layer
-- **Ollama** as the primary LLM provider (inference cascade: Ollama → Gemini → Mock)
-- **ChromaDB** for semantic vector storage
-- **SQLite** as the relational record-of-truth
-- **Redis Streams** for event / memory-decay hooks (Ebbinghaus model)
-- **Obsidian Vault** at `/mnt/d/01_VAULT/SacredSpace_Vault/` (176+ notes) as the human-readable canon layer
-- **reconcile.py** — SQLite ↔ ChromaDB sync daemon
-- **boot.ps1** — single-command launcher (PowerShell)
-
-**Hard constraint:** Every tool, script, and dependency must be **100 % open-source and zero-cost**.
-No paid APIs. No proprietary services unless Taylor explicitly authorises an exception.
+**Shadow law:** Shadow = (Control + Rigidity + Ego) − Flow.
+If you are planning more than shipping, Shadow is high. Stop planning. Deploy.
 
 ---
 
-## 2 · NINE-PILLAR DIRECTORY STRUCTURE
+## ALWAYS / NEVER
 
 ```
-D:\SacredSpace_OS\
-├── 01_OBSIDIAN_VAULTS\   # IRIS vault (Obsidian notes, canon layer)
-├── 02_COUNCIL_GROVE\     # Claude + Gemini + ChatGPT tri-model governance
-├── 03_NEURAL_FOREST\     # Scout/Gardener LLM pipeline
-├── 04_SACRED_CODEX\      # Canon ledger, identity locks, spell records
-├── 05_MEMORY_ENGINE\     # SQLite + Redis + ChromaDB memory stack
-├── 06_AGENT_LAYER\       # ELIAS / AURORA / ASHER / IRIS agent code
-├── 07_SOCIAL_MOTHERSHIP\ # Content, brand, GR∆M∆
-├── 08_LEARNING_PATH\     # Maestro AAS coursework, learning artifacts
-├── 09_SACRED_MARKET\     # Etsy + Printify + Gelato (Sacred Bazaar)
-└── CLAUDE.md             ← YOU ARE HERE
+ALWAYS  Read a file before editing it
+ALWAYS  Check paths exist before writing to them
+ALWAYS  Run TASK: audit-nine-pillars at session start
+ALWAYS  Write a codex entry after any completed deployment
+ALWAYS  Use the earthy palette for all extension file edits
+ALWAYS  pip install with --break-system-packages
+ALWAYS  Report in the standard format (see end of file)
+
+NEVER   Write API keys to any file — localStorage or env vars only
+NEVER   Use npm / webpack / build tools (pure vanilla for browser)
+NEVER   Edit files in /mnt/user-data/uploads/ (read-only)
+NEVER   Deploy to Obsidian vault unless explicitly told to canonize
+NEVER   Skip the ASHER audit before writing to the D: drive
+NEVER   Create child-unsafe content under any framing
+NEVER   Invent a path — verify it exists first
 ```
-
-> Obsidian Vault root lives **outside** this directory: `/mnt/d/01_VAULT/SacredSpace_Vault/`
-
-Each pillar maps to a **canonical purpose** — do not move files across pillars without explicit intent.
 
 ---
 
-## 3 · ACTIVE AGENTS
-
-### Council Agents (02_COUNCIL_GROVE)
-| Agent file        | Role                              | Status    |
-|-------------------|-----------------------------------|-----------|
-| `kethras.py`      | Keeper of thresholds / routing    | Active    |
-| `merchant.py`     | Economy & Sacred Bazaar logic     | Active    |
-| `lore_engine.py`  | Lore generation & archetype logic | Active ⚠️ |
-| `vault_watcher.py`| Obsidian vault monitor / sync     | Active    |
-
-> ⚠️ Canonical: `02_COUNCIL_GROVE/lore_engine.py` (794 lines, full engine).
-> `systems/fastapi/lore_engine.py` is a kept-in-sync copy required by `main.py`'s local import —
-> **do not edit it independently**. Always edit canonical, then `cp` to `systems/fastapi/`.
-
-### ICARIS Quartet (06_AGENT_LAYER)
-| Handle | Domain         | Notes                                  |
-|--------|----------------|----------------------------------------|
-| ELIAS  | Knowledge      | Learning / Codex retrieval             |
-| AURORA | Code           | Dev assistant, script generation       |
-| ASHER  | Entropy        | Memory decay, chaos-watch              |
-| IRIS   | Vault          | Obsidian guardian; 4/15/15 Succession Seal |
-
----
-
-## 4 · FASTAPI SPINE (systems/fastapi/)
-
-**Base URL (local):** `http://localhost:8888`
-**WSL2 host access:** `http://192.168.240.1:8888`
-**Tailscale mesh IP:** `100.117.9.101`
-
-### Registered Routes (7)
-```
-GET  /                  → health check / root greeting
-GET  /status            → system status summary
-POST /invoke            → primary LLM invocation (inference cascade)
-POST /memory/store      → write Memory Mote to SQLite + ChromaDB
-GET  /memory/recall     → semantic search via ChromaDB
-POST /agent/{name}      → invoke named Council agent
-GET  /vault/sync        → trigger Obsidian vault_watcher sync
-```
-
-**Inference cascade order:** Ollama (primary) → Gemini (fallback) → Mock (offline fallback)
-Ollama host from WSL: `http://192.168.240.1:11434`
-
----
-
-## 5 · MEMORY ARCHITECTURE — Holographic Memory Engine v1.0
-
-Three canonical layers (CANON, immutable):
+## LIVE SYSTEM MAP
 
 ```
-CANON CORE LAYER
-├── Root Archive     → SQLite  (record-of-truth, persistent facts)
-├── Player Memory    → ASHER + IRIS threads (personal/lineage memory)
-└── Resonance Layer  → Redis Streams (decay hooks, Ebbinghaus curve)
+D: DRIVE ROOT           /mnt/d/
+SacredSpace OS          /mnt/d/SacredSpace_OS/
+Obsidian Vault          /mnt/d/01_VAULT/SacredSpace_Vault/
+CLAUDE.md (this file)   /mnt/d/SacredSpace_OS/CLAUDE.md
+
+NINE PILLARS:
+  01_OBSIDIAN_VAULTS    /mnt/d/SacredSpace_OS/01_OBSIDIAN_VAULTS/
+  02_COUNCIL_GROVE      /mnt/d/SacredSpace_OS/02_COUNCIL_GROVE/
+  03_NEURAL_FOREST      /mnt/d/SacredSpace_OS/03_NEURAL_FOREST/
+  04_SACRED_CODEX       /mnt/d/SacredSpace_OS/04_SACRED_CODEX/
+  05_MEMORY_ENGINE      /mnt/d/SacredSpace_OS/05_MEMORY_ENGINE/
+  06_AGENT_LAYER        /mnt/d/SacredSpace_OS/06_AGENT_LAYER/
+  07_SOCIAL_MOTHERSHIP  /mnt/d/SacredSpace_OS/07_SOCIAL_MOTHERSHIP/
+  08_LEARNING_PATH      /mnt/d/SacredSpace_OS/08_LEARNING_PATH/
+  09_SACRED_MARKET      /mnt/d/SacredSpace_OS/09_SACRED_MARKET/
+
+LIVE SYSTEMS:
+  FastAPI spine         /mnt/d/SacredSpace_OS/systems/fastapi/main.py  → :8888
+  SSKI daemon           /mnt/d/SacredSpace_OS/systems/sski/icaris_env.py
+  SSKI state            /mnt/d/SacredSpace_OS/systems/sski/icaris_state.json
+  Sigil library         /mnt/d/SacredSpace_OS/systems/sski/sigil_library/
+  IRIS memory DB        /mnt/d/SacredSpace_OS/systems/sski/iris_memory.db
+
+AGENT SCRIPTS (Pillar 06):
+  kethras.py            → GET /kethras-learning-gate        (Pillar 08)
+  merchant.py           → GET /merchant-sacred-artifacts    (Pillar 09)
+  lore_engine.py        → GET /lore-to-product-engine       (Pillar 04)
+  vault_watcher.py      → GET /vault-watcher-obsidian-sync  (Pillar 01)
+
+SACRED CHROME EXTENSION:
+  Root                  /mnt/d/SacredSpace_OS/06_AGENT_LAYER/sacred-chrome/
+  Files                 manifest.json  newtab.html  terminal.html
+                        sidepanel.html popup.html   portal.html  README.md
+  Icons                 icons/icon16.png  icon48.png  icon128.png
+  Icon generator        /mnt/d/SacredSpace_OS/06_AGENT_LAYER/generate_icons.py
+
+CODEX LOG:
+  Entries               /mnt/d/01_VAULT/SacredSpace_Vault/04_SACRED_CODEX/CODEX_ENTRIES.md
 ```
 
-**Memory Mote** = atomic unit of memory. Every stored memory is a Mote with:
-- `content` — the raw payload
-- `pillar` — which of the 9 pillars it belongs to
-- `decay_weight` — Ebbinghaus-informed float (0.0–1.0)
-- `tags` — list of retrieval tags
-- `timestamp` — ISO 8601
-
-**reconcile.py** keeps SQLite and ChromaDB in sync. Run it after bulk memory operations.
-
----
-
-## 6 · KEY FILES — QUICK REFERENCE
-
-| File / Path                                  | Purpose                                      |
-|----------------------------------------------|----------------------------------------------|
-| `core/genesis.py`                            | Pillar integrity checker — run first on boot |
-| `systems/fastapi/main.py`                    | FastAPI spine entry point                    |
-| `systems/fastapi/reconcile.py`               | SQLite ↔ ChromaDB sync daemon                |
-| `systems/fastapi/inference_cascade.py`       | Ollama → Gemini → Mock provider chain        |
-| `02_COUNCIL_GROVE/kethras.py`                | Council router / threshold keeper            |
-| `02_COUNCIL_GROVE/lore_engine.py`            | ⚠️ Deduplicate before editing                |
-| `boot.ps1`                                   | Single-command system launcher               |
-| `09_ARCHIVE/SACREDCODEX/`                    | Python spell ledger (PY-STR-001 → PY-THREAD-016+) |
-
----
-
-## 7 · DEVELOPMENT WORKFLOWS
-
-### Preferred shell: bash (WSL2)
-PowerShell **struggles with multi-line Python strings** — use bash heredocs or Notepad for
-multi-line file writes. PowerShell is safe for single-line commands and `boot.ps1`.
-
-### Single-command preference
-Taylor strongly prefers **single-command solutions**. Chain operations with `&&`. Avoid
-multi-step manual copy-paste sequences when a pipeline can accomplish the same result.
-
-### Standard boot sequence
-```powershell
-# From PowerShell (Windows)
-.\boot.ps1
-
-# Or from WSL bash
-cd /mnt/d/SacredSpace_OS
-python core/genesis.py             # pillar integrity check
-uvicorn systems.fastapi.main:app --host 0.0.0.0 --port 8888 --reload
-```
-
-### After bulk changes
+**D: not mounted? Run:**
 ```bash
-python systems/fastapi/reconcile.py  # sync SQLite ↔ ChromaDB
+ls /mnt/d/ 2>/dev/null || (sudo mkdir -p /mnt/d && sudo mount -t drvfs D: /mnt/d)
 ```
 
-### Git hygiene
-- Repo: `TaylorOakey/SacredSpace` (private on GitHub)
-- Commit format: `[PILLAR] short imperative description`
-  - Example: `[07_COUNCIL] deduplicate lore_engine.py`
-- Never commit secrets, API keys, or Tailscale config
+**Tailscale conflict (Ollama unreachable):**
+```bash
+export OLLAMA_HOST="$(grep nameserver /etc/resolv.conf | awk '{print $2}'):11434"
+```
 
 ---
 
-## 8 · CANON GOVERNANCE RULES
+## DESIGN SYSTEM (use for all extension file edits)
 
-These rules are **immutable** unless Taylor explicitly revises them in writing:
+**Earthy Palette:**
+```css
+--void:#060a07  --gold:#c8972a  --gold-dim:#5a3d10  --gold-pale:#e8c87a
+--forest:#4a9e6a  --teal:#3d9a8a  --clay:#c4724a  --moss:#7aaa5a
+--lavender:#8a7a9a  --vine:#b86a8a  --honey:#d4a83a  --spring:#5a8a9a
+--text:#a8a890  --text-hi:#e0d8c0
+--border:rgba(200,151,42,0.13)  --border-hi:rgba(200,151,42,0.32)
+```
 
-1. **Canon is locked.** Google Drive + Obsidian = source of record. Agent memory = index only.
-2. **Art methodology** = Digital Hybrid Multimedia (human-first, AI-enhanced). Never describe
-   as "no AI" or "zero AI-generated."
-3. **Child modes** (Sacred Messages, Jenga's Journey child content) must be safe and gentle.
-4. **Mysticism is grounded in structure.** Every symbolic element maps to a concrete system.
-5. **The Opening Ritual** is canon session-start protocol. Run it at session open when in
-   SacredSpace context.
-6. **`~~` (double tilde)** = Taylor's cue to split chat / start new context.
-7. **Arcana Grid** (Metatron-as-Law center + 12 Archetypes, 4 Elements × 3 Primes) is
-   canon-locked. Do not restructure.
+**Pillar accents (CSS --accent vars):**
+```
+p1:#8a7a9a  p2:#3d9a8a  p3:#4a9e6a  p4:#c8972a  p5:#c4724a
+p6:#5a8a9a  p7:#b86a8a  p8:#7aaa5a  p9:#d4a83a
+```
 
----
+**S∆CR3DS!G∆L cipher:** `A→∆  E→3  I→!  O→0  S→$  T→7`
 
-## 9 · SACREDSPACE TECH STACK (zero-cost, open-source only)
-
-| Layer          | Technology                     |
-|----------------|--------------------------------|
-| Language       | Python 3.11+                   |
-| API layer      | FastAPI + Uvicorn              |
-| LLM (local)    | Ollama (primary)               |
-| LLM (cloud)    | Gemini API (fallback, free tier) |
-| Vector DB      | ChromaDB                       |
-| Relational DB  | SQLite                         |
-| Event/stream   | Redis Streams                  |
-| IDE / Notes    | Obsidian + SACREDSIGIL IDE     |
-| Automation     | PowerShell (boot), bash (dev)  |
-| Mesh network   | Tailscale (free tier)          |
-| Version ctrl   | Git + GitHub (private)         |
-| OS             | Windows 11 + WSL2 (Ubuntu)     |
-| GPU            | NVIDIA GTX 1060 (driver: DDU-clean) |
+**ICARIS DAG law:**
+```
+ASHER (audit) → ELIAS (analyze) → AURORA (deploy) → IRIS (record)
+AURORA cannot write to disk without ASHER clearing first.
+```
 
 ---
 
-## 10 · RETRIEVAL TAGS (use in commit messages, Codex entries, memory Motes)
+## SESSION START RITUAL
 
-`SacredSpace OS Codex` · `Memory Motes` · `Council Grove` · `ICARIS Quartet`
-`Neural Forest` · `Arcana Grid` · `Sacred Messages` · `Jenga's Journey`
-`Sacred Little Forest` · `SACREDCODEX` · `SacredArcana Studios` · `GR∆M∆`
-
----
-
-## 11 · CONTACTS & IDENTITIES
-
-| Identity              | Handle / Address                          |
-|-----------------------|-------------------------------------------|
-| Taylor (founder)      | ∆∆∆O∆K3YTREE∆∆∆                          |
-| Brand email           | sacredarcanastudios@gmail.com             |
-| Primary social        | @SacredSpaceStudios                       |
-| GitHub                | TaylorOakey/SacredSpace (private)         |
-| Hugging Face          | OAKEYTREE                                 |
-
----
-
-## 12 · ENV VARS
+Run this every time you open a new Claude Code session on this project:
 
 ```bash
-SACREDSPACE_ROOT=/mnt/d/SacredSpace_OS
-SACRED_CODE=/mnt/d/02_CODE
-SACREDSPACE_VAULT=/mnt/d/01_VAULT
-OLLAMA_HOST=192.168.240.1:11434
-FASTAPI_PORT=8888
-CHROMADB_URL=http://localhost:8000
+# 1. Verify D: drive
+ls /mnt/d/SacredSpace_OS/ > /dev/null 2>&1 \
+  || (sudo mkdir -p /mnt/d && sudo mount -t drvfs D: /mnt/d && echo "D: mounted")
+
+# 2. Audit nine pillars
+ROOT="/mnt/d/SacredSpace_OS"
+for p in 01_OBSIDIAN_VAULTS 02_COUNCIL_GROVE 03_NEURAL_FOREST 04_SACRED_CODEX \
+         05_MEMORY_ENGINE 06_AGENT_LAYER 07_SOCIAL_MOTHERSHIP \
+         08_LEARNING_PATH 09_SACRED_MARKET; do
+  [ -d "$ROOT/$p" ] && echo "  ✓ $p" || echo "  ✗ MISSING: $p"
+done
+
+# 3. Check FastAPI spine
+curl -s http://localhost:8888/ > /dev/null 2>&1 \
+  && echo "  ✓ FastAPI :8888 alive" \
+  || echo "  ✗ FastAPI down — run TASK: start-fastapi-spine"
+
+# 4. Check ICARIS daemon
+[ -f "$ROOT/systems/sski/icaris_env.py" ] \
+  && echo "  ✓ ICARIS daemon present" \
+  || echo "  ✗ ICARIS missing — run TASK: seed-sski"
+
+# 5. Shadow check
+python3 "$ROOT/systems/sski/icaris_env.py" --run status 2>/dev/null \
+  || echo "  · ICARIS not yet initialized"
 ```
 
 ---
 
-## 13 · EXECUTION QUEUE (P0–P7)
+## INTENT → TASK MAP
 
-**P0 UNBLOCK / GROUND**
-- Fix `/etc/wsl.conf` automount then `wsl --shutdown`
-- Kill `:8082` ghost: `lsof -ti:8082 | xargs kill -9`
-- Verify `.claude/settings.json` bypassPermissions + additionalDirectories
+When the user says something natural, map it to a task label and run it.
 
-**P1 CRITICAL PATH**
-- Write `boot_sacred.sh` (uvicorn :8888 + redis single-command stack-up)
-- Scaffold vault: `mkdir -p 01_OBSIDIAN_VAULTS/SacredSpace_Vault/00_CANON/GAME_SYSTEM/{01_Core_Definitions,02_Episode_Narratives/{Seeker_Perspective,Guide_Perspective,Convergence_Moments},03_Node_Definitions}`
-- Obsidian docx → md bridge (unblocks `rebuild.py` md_found=0)
-- APScheduler reconcile cron in FastAPI lifespan `hour=3`
-- Verify `SACRED_BACKUP_TO_FLASH.ps1` runs clean
-
-**P2 SYSTEM INTEGRITY**
-- ASHER entropy scan: diff `~/sacredspace*` vs canon pillars
-- `lore_engine` dedup in `07_COUNCIL/` (see §3 warning)
-- Register MERCHANT + KETHRAS routes in `app/main.py`
-- Root route `/` returns `spine/status/timestamp/agents/cascade/seal` JSON
-- Gemini cascade zero-cost-safe fallback
-
-**P3 AGENTIC HARNESS**
-- `mkdir -p .claude/skills/{logic,execution}`
-- Write `.claude/heavy_thinking_harness.md` (3 trajectories + gate)
-- Convert text skills to JSON Ctx2Skill format
-- `main_agent.js` Handoff Classifier + approval gate
-
-**P4 PORTAL**
-- Sacred Dashboard HTML polling `/infer/metrics`
-- Gardener Ledger compost in `gardener.py`
-- Sacred Sigil Terminal: `SacredSigilTerminal.jsx` + `/api/sigil` + Ctrl+K
-- Nine Pillars portal routing
-- Hero canvas: Metatron's Cube + Flower of Life (gold/ember palette)
-- Awaken Ritual: email capture + purple flash + *In Lakesh*
-- Sacred Bazaar schema: `{name, gematria_value, soul_tone_hz, pillar, price}`
-- Sacred Forest IDE theme: Grove Emerald `#2D6A4F` · Sacred Gold `#FFD700`
-
-**P5 IDENTITY LOCKS**
-- Lock SACRED IDENTITY CODEX v3.0 in `04_SACRED_CODEX/` (or `04_ECONOMY/` — resolve §2 conflict first)
-- Load ICARIS prompts into agent layer
-- GR∆M∆ cipher → `gematria_engine/grammar_cipher.json`
-- Fibonacci clock + Hypotenuse primitives → `sacred_math.py`
-- Seal: Source of Truth Law + Soft Shell Requirement + Gardener's Ledger
-
-**P6 ARTIST + CALENDAR**
-- `sudo apt install krita inkscape -y` + Pencil2D AppImage
-- Document tools in `04_SACRED_CODEX/tools.md`
-- Key dates: 05-09 Spring Into STEAM · 05-24 Cameron Art Museum · 05-30/31 WooCon2026
-
-**P7 SESSION HYGIENE**
-- Open: `cd /mnt/d/SacredSpace_OS && claude`
-- Close: Codex entry + *In lakesh alakin.*
+| User says...                                      | Run task                    |
+|---------------------------------------------------|-----------------------------|
+| "deploy the extension"                            | `deploy-sacred-chrome`      |
+| "install sacred chrome" / "put it in chrome"      | `deploy-sacred-chrome`      |
+| "start the spine" / "fire up FastAPI"             | `start-fastapi-spine`       |
+| "boot ICARIS" / "start the daemon"                | `boot-icaris`               |
+| "heal the system" / "something is broken"         | `run-healing-loop`          |
+| "audit the pillars" / "check the structure"       | `audit-nine-pillars`        |
+| "generate the icons" / "icons are missing"        | `generate-icons`            |
+| "I built a new artifact" / "add this to portal"   | `update-portal`             |
+| "clean up lore_engine duplicates"                 | `clean-lore-engine`         |
+| "populate NotebookLM" / "seed the notebooks"      | `populate-notebooklm`       |
+| "write a codex entry"                             | `write-codex-entry`         |
+| "reload the extension"                            | `reload-chrome-extension`   |
+| "push to obsidian"                                | `sync-to-obsidian`          |
+| "run the full boot"                               | `full-boot-sequence`        |
+| "switching to gemini" / "handoff to gpt"          | `generate-handoff-capsule`  |
+| "context limit" / "generate handoff"              | `generate-handoff-capsule`  |
+| "passing to ollama" / "hand this to claude"       | `generate-handoff-capsule`  |
 
 ---
 
-## 14 · TOKEN SHORTHANDS
+## TASK QUEUE
 
-| Token    | Expands to                                      |
-|----------|-------------------------------------------------|
-| `root`   | `/mnt/d/SacredSpace_OS`                         |
-| `spine`  | `systems/fastapi/main.py` · port 8888           |
-| `vault`  | `/mnt/d/01_VAULT/SacredSpace_Vault/` (external to SacredSpace_OS root)  |
-| `codex`  | `04_SACRED_CODEX`                               |
-| `mem`    | `05_MEMORY_ENGINE`                              |
-| `agents` | `06_AGENT_LAYER`                                |
+Each task is self-contained. Read the label, run the commands, verify success,
+write a codex entry, report in standard format.
 
 ---
 
-## 15 · KICKOFF SPELL
+### `TASK: deploy-sacred-chrome`
+**Intent:** Install the Sacred Chrome extension to its canonical path.
+**ASHER check:** source files exist, D: mounted, icons generated.
 
-> P0→P2 sprint: verify D: mount, kill `:8082` ghost, confirm `.claude/settings.json`
-> bypassPermissions. Then ignite `boot_sacred.sh`, scaffold 57 Memory Motes vault tree,
-> run ASHER entropy scan on home scatter, register MERCHANT+KETHRAS routes, wire Gemini
-> cascade. Write Codex entry. Seal with *In lakesh alakin.*
+```bash
+set -e
+EXT="/mnt/d/SacredSpace_OS/06_AGENT_LAYER/sacred-chrome"
+ICON_GEN="/mnt/d/SacredSpace_OS/06_AGENT_LAYER/generate_icons.py"
+
+# ASHER — verify source
+[ -f "$EXT/manifest.json" ] || { echo "✗ manifest.json not found at $EXT"; exit 1; }
+
+# ELIAS — check current state
+echo "∆ Current extension state:"
+ls -la "$EXT/" 2>/dev/null | head -12
+
+# AURORA — generate icons if missing
+if [ ! -f "$EXT/icons/icon128.png" ]; then
+  echo "∆ Generating icons..."
+  python3 "$ICON_GEN" "$EXT/icons/"
+fi
+
+# AURORA — verify all files present
+REQUIRED=(manifest.json newtab.html terminal.html sidepanel.html
+          popup.html portal.html icons/icon16.png icons/icon48.png icons/icon128.png)
+ALL_OK=true
+for f in "${REQUIRED[@]}"; do
+  [ -f "$EXT/$f" ] && echo "  ✓ $f" || { echo "  ✗ MISSING: $f"; ALL_OK=false; }
+done
+
+# Open Chrome
+$ALL_OK && {
+  cmd.exe /c "start chrome chrome://extensions/" 2>/dev/null \
+    || powershell.exe -Command "Start-Process 'chrome' 'chrome://extensions/'" 2>/dev/null \
+    || echo "  · Open chrome://extensions/ manually, enable Dev Mode, Load Unpacked: $EXT"
+  echo "∆ Extension ready. In lakesh alakin."
+} || echo "✗ Deployment incomplete — fix missing files first"
+```
+
+**Success:** All 9 files present, Chrome opens to extensions page.
 
 ---
 
-*Seal: ∆∆∆ — In lakesh alakin ∆∆∆*
+### `TASK: reload-chrome-extension`
+**Intent:** After editing extension HTML/JSON, reload without reinstalling.
+
+```bash
+# The extension reloads automatically in Chrome when you click ↺ in chrome://extensions/
+# This task opens the page so you can click reload:
+cmd.exe /c "start chrome chrome://extensions/" 2>/dev/null \
+  || echo "Open chrome://extensions/ → click ↺ on Sacred Chrome"
+echo "∆ Click the ↺ (reload) icon next to Sacred Chrome. Done."
+```
+
+---
+
+### `TASK: start-fastapi-spine`
+**Intent:** Start the FastAPI :8888 backbone.
+**Trigger:** "start the spine" / "fire up fastapi" / ":8888 is down"
+
+```bash
+SPINE_DIR="/mnt/d/SacredSpace_OS/systems/fastapi"
+LOG="/tmp/fastapi_sacred.log"
+
+# ASHER — check main.py exists
+[ -f "$SPINE_DIR/main.py" ] || {
+  echo "✗ main.py not found at $SPINE_DIR"
+  echo "  Scanning for any FastAPI main.py..."
+  find /mnt/d/SacredSpace_OS -name "main.py" 2>/dev/null | head -5
+  exit 1
+}
+echo "  ✓ main.py found"
+
+# Kill existing
+fuser -k 8888/tcp 2>/dev/null && echo "  · Killed existing :8888 process"
+sleep 0.5
+
+# Clear cache
+rm -rf "$SPINE_DIR/__pycache__"
+
+# AURORA — launch
+cd "$SPINE_DIR"
+SACREDSPACE_VAULT="/mnt/d/01_VAULT/SacredSpace_Vault" \
+  nohup python3 main.py > "$LOG" 2>&1 &
+SPINE_PID=$!
+echo "  ✓ Spine launching (PID: $SPINE_PID)"
+
+# Wait and verify
+sleep 2
+if curl -s http://localhost:8888/ | python3 -m json.tool > /dev/null 2>&1; then
+  echo "  ✓ FastAPI :8888 alive"
+  curl -s http://localhost:8888/ | python3 -m json.tool
+else
+  echo "  ⚠ Spine slow to start. Last 10 log lines:"
+  tail -10 "$LOG"
+  echo ""
+  echo "  Try: python3 $SPINE_DIR/main.py (interactive)"
+fi
+```
+
+---
+
+### `TASK: boot-icaris`
+**Intent:** Run ICARIS boot ritual and print system status.
+
+```bash
+python3 /mnt/d/SacredSpace_OS/systems/sski/icaris_env.py --run boot
+```
+
+---
+
+### `TASK: run-healing-loop`
+**Intent:** ASHER→ELIAS→AURORA→IRIS self-healing pass.
+
+```bash
+python3 /mnt/d/SacredSpace_OS/systems/sski/icaris_env.py --run heal
+```
+
+---
+
+### `TASK: seed-sski`
+**Intent:** Bootstrap SSKI directory + state from scratch.
+
+```bash
+ROOT="/mnt/d/SacredSpace_OS/systems/sski"
+mkdir -p "$ROOT/sigil_library"
+[ -f "$ROOT/icaris_state.json" ] || \
+  echo '{"status":"initialized","shadow":{"control":2,"rigidity":2,"ego":2,"flow":5}}' \
+    > "$ROOT/icaris_state.json"
+
+# Copy icaris_env.py if not already there
+[ -f "$ROOT/icaris_env.py" ] \
+  || cp /mnt/d/SacredSpace_OS/06_AGENT_LAYER/icaris_env.py "$ROOT/"
+
+echo "∆ SSKI seeded:"
+ls -la "$ROOT/"
+```
+
+---
+
+### `TASK: generate-icons`
+**Intent:** Generate Sacred Gold ∆ PNG icons for the Chrome extension.
+
+```bash
+python3 /mnt/d/SacredSpace_OS/06_AGENT_LAYER/generate_icons.py \
+  /mnt/d/SacredSpace_OS/06_AGENT_LAYER/sacred-chrome/icons/
+```
+
+---
+
+### `TASK: audit-nine-pillars`
+**Intent:** Verify the entire SacredSpace OS directory spine.
+
+```bash
+ROOT="/mnt/d/SacredSpace_OS"
+echo "∆ NINE PILLAR AUDIT"
+echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+PILLARS=(01_OBSIDIAN_VAULTS 02_COUNCIL_GROVE 03_NEURAL_FOREST
+         04_SACRED_CODEX 05_MEMORY_ENGINE 06_AGENT_LAYER
+         07_SOCIAL_MOTHERSHIP 08_LEARNING_PATH 09_SACRED_MARKET)
+for p in "${PILLARS[@]}"; do
+  [ -d "$ROOT/$p" ] && echo "  ✓ $p" || echo "  ✗ MISSING: $p"
+done
+echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+
+# Check critical files
+FILES=(
+  "CLAUDE.md"
+  "systems/fastapi/main.py"
+  "systems/sski/icaris_env.py"
+  "06_AGENT_LAYER/kethras.py"
+  "06_AGENT_LAYER/merchant.py"
+  "06_AGENT_LAYER/lore_engine.py"
+  "06_AGENT_LAYER/vault_watcher.py"
+  "06_AGENT_LAYER/sacred-chrome/manifest.json"
+  "06_AGENT_LAYER/sacred-chrome/portal.html"
+)
+for f in "${FILES[@]}"; do
+  [ -f "$ROOT/$f" ] && echo "  ✓ $f" || echo "  ✗ $f"
+done
+echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+curl -s http://localhost:8888/ > /dev/null 2>&1 \
+  && echo "  ✓ FastAPI :8888 alive" || echo "  ✗ FastAPI :8888 down"
+```
+
+---
+
+### `TASK: clean-lore-engine`
+**Intent:** Remove 5 duplicate lore_engine.py copies from D: root. Keep only 06_AGENT_LAYER version.
+
+```bash
+CANONICAL="/mnt/d/SacredSpace_OS/06_AGENT_LAYER/lore_engine.py"
+
+# ASHER — verify canonical exists before deleting anything
+[ -f "$CANONICAL" ] || { echo "✗ Canonical not at $CANONICAL — abort"; exit 1; }
+
+# ELIAS — show what's at root
+echo "∆ Duplicates found at D: root:"
+ls /mnt/d/lore_engine*.py 2>/dev/null || echo "  (none found at /mnt/d/ root)"
+
+# AURORA — remove root-level duplicates only
+for f in /mnt/d/lore_engine*.py; do
+  [ -f "$f" ] && rm "$f" && echo "  ✓ Removed: $f"
+done
+
+echo "∆ Canonical preserved: $CANONICAL"
+```
+
+---
+
+### `TASK: full-boot-sequence`
+**Intent:** Complete system boot — drive mount, audit, spine, ICARIS, status.
+
+```bash
+echo "⟁ SACREDSPACE OS — FULL BOOT SEQUENCE"
+echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+
+# 1. Mount D:
+ls /mnt/d/ > /dev/null 2>&1 \
+  || (sudo mkdir -p /mnt/d && sudo mount -t drvfs D: /mnt/d \
+      && echo "  ✓ D: mounted") \
+  && echo "  ✓ D: accessible"
+
+# 2. Audit pillars
+ROOT="/mnt/d/SacredSpace_OS"
+for p in 01_OBSIDIAN_VAULTS 02_COUNCIL_GROVE 03_NEURAL_FOREST 04_SACRED_CODEX \
+         05_MEMORY_ENGINE 06_AGENT_LAYER 07_SOCIAL_MOTHERSHIP \
+         08_LEARNING_PATH 09_SACRED_MARKET; do
+  [ -d "$ROOT/$p" ] && echo "  ✓ $p" || echo "  ✗ $p"
+done
+
+# 3. Start FastAPI spine if down
+curl -s http://localhost:8888/ > /dev/null 2>&1 || {
+  echo "  · Starting FastAPI spine..."
+  cd "$ROOT/systems/fastapi"
+  fuser -k 8888/tcp 2>/dev/null; sleep 0.5
+  SACREDSPACE_VAULT="/mnt/d/01_VAULT/SacredSpace_Vault" \
+    nohup python3 main.py > /tmp/fastapi_sacred.log 2>&1 &
+  sleep 2
+}
+curl -s http://localhost:8888/ > /dev/null 2>&1 \
+  && echo "  ✓ FastAPI :8888" || echo "  ✗ Spine failed — check /tmp/fastapi_sacred.log"
+
+# 4. Boot ICARIS
+python3 "$ROOT/systems/sski/icaris_env.py" --run boot 2>/dev/null \
+  || echo "  · ICARIS not seeded — run TASK: seed-sski"
+
+echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+echo "⟁ Boot complete. In lakesh alakin."
+```
+
+---
+
+### `TASK: update-portal`
+**Intent:** Add a new artifact card to the Sacred Archive Portal.
+
+**Read** `06_AGENT_LAYER/sacred-chrome/portal.html` first.
+**Find** the correct `<div class="sec-head">` section for the category.
+**Insert** before that section's last `</div>` using this template:
+
+```html
+<div class="ac [CATEGORY_CLASS]" data-cat="[cat]" data-s="[search keywords all lowercase]">
+  <div class="ac-head">
+    <div class="ac-tb">
+      <div class="ac-title">[ARTIFACT NAME]</div>
+      <div class="ac-sub">[filename · one-line purpose]</div>
+    </div>
+    <div class="ac-bds">
+      <span class="b [STATUS_CLASS]">[STATUS]</span>
+      <span class="b b-type">[TYPE]</span>
+    </div>
+  </div>
+  <div class="ac-body">
+    <div class="ac-desc">[2 sentences max. What it is and what it does.]</div>
+    <div class="ac-tags">
+      <span class="ac-tag">[tag1]</span><span class="ac-tag">[tag2]</span>
+    </div>
+  </div>
+  <div class="ac-foot">
+    <span class="ac-path">[canonical path or session note]</span>
+    <a class="ac-act" href="[url]" target="_blank">Source</a>
+  </div>
+</div>
+```
+
+Valid `data-cat` values: `chrome` `forge` `sski` `game` `social` `script` `doc` `system`
+Status classes: `b-live` `b-del` `b-canon` `b-dist`
+Category accent classes: `chrome` `forge` `sski` `wuwei` `game` `social` `script` `doc` `system`
+
+After inserting, verify the card count in the filter JS updates (it auto-counts on load).
+
+---
+
+### `TASK: deploy-sski-tools`
+**Intent:** Deploy icaris_env.py and generate_icons.py from Downloads.
+**Trigger:** "drop the SSKI tools" / "install icaris" / "fix the icons" / user drops sski_tools.zip in Downloads
+
+```bash
+set -e
+STAGING="/tmp/sski_tools_deploy"
+SSKI="/mnt/d/SacredSpace_OS/systems/sski"
+EXT_LAYER="/mnt/d/SacredSpace_OS/06_AGENT_LAYER"
+DOWNLOADS="/mnt/c/Users/$(cmd.exe /c "echo %USERNAME%" 2>/dev/null | tr -d '\r\n')/Downloads"
+
+mkdir -p "$STAGING"
+
+# Find the ZIP in Downloads (handle numbered duplicates)
+ZIP=$(ls -t "$DOWNLOADS"/sski_tools*.zip 2>/dev/null | head -1)
+[ -z "$ZIP" ] && ZIP=$(ls -t "$DOWNLOADS"/files*.zip 2>/dev/null | head -1)
+[ -z "$ZIP" ] && { echo "✗ No ZIP found in $DOWNLOADS"; exit 1; }
+echo "  ✓ Found: $ZIP"
+
+# Extract
+unzip -o "$ZIP" -d "$STAGING/"
+ls "$STAGING/"
+
+# ASHER — verify contents
+[ -f "$STAGING/icaris_env.py" ]    || { echo "✗ icaris_env.py not in ZIP"; exit 1; }
+[ -f "$STAGING/generate_icons.py" ] || echo "  · generate_icons.py not in ZIP — skipping"
+
+# AURORA — deploy
+mkdir -p "$SSKI/sigil_library"
+
+# icaris_env.py → systems/sski/
+cp "$STAGING/icaris_env.py" "$SSKI/icaris_env.py"
+echo "  ✓ icaris_env.py → $SSKI/"
+
+# generate_icons.py → 06_AGENT_LAYER/
+[ -f "$STAGING/generate_icons.py" ] && {
+  cp "$STAGING/generate_icons.py" "$EXT_LAYER/generate_icons.py"
+  echo "  ✓ generate_icons.py → $EXT_LAYER/"
+
+  # Regenerate icons immediately with real sigil design
+  python3 "$EXT_LAYER/generate_icons.py" \
+    "$EXT_LAYER/sacred-chrome/icons/"
+  echo "  ✓ Sacred Gold ∆ icons regenerated"
+}
+
+# Seed SSKI state if not present
+[ -f "$SSKI/icaris_state.json" ] || \
+  echo '{"status":"initialized","shadow":{"control":2,"rigidity":2,"ego":2,"flow":5}}' \
+    > "$SSKI/icaris_state.json"
+
+# Verify
+echo ""
+echo "  ∆ VERIFICATION:"
+[ -f "$SSKI/icaris_env.py" ]     && echo "  ✓ ICARIS daemon present" || echo "  ✗ ICARIS missing"
+[ -f "$SSKI/icaris_state.json" ] && echo "  ✓ SSKI state present"   || echo "  ✗ State missing"
+ls "$EXT_LAYER/sacred-chrome/icons/" 2>/dev/null | grep -q icon128 \
+  && echo "  ✓ icons/icon128.png present" || echo "  ✗ icon128.png missing"
+
+# Boot ICARIS
+echo ""
+python3 "$SSKI/icaris_env.py" --run boot
+```
+
+**Success:** icaris_env.py at systems/sski/, icons regenerated with Sacred Gold ∆ sigil.
+
+---
+
+
+**Intent:** After any deployment, write a permanent record to the Obsidian vault.
+
+```bash
+CODEX="/mnt/d/01_VAULT/SacredSpace_Vault/04_SACRED_CODEX/CODEX_ENTRIES.md"
+DATE=$(date +%Y-%m-%d)
+
+# ASHER — check codex file exists
+[ -f "$CODEX" ] || { mkdir -p "$(dirname "$CODEX")"; touch "$CODEX"; }
+
+cat >> "$CODEX" << 'ENTRY'
+
+---
+## [ARTIFACT NAME] · DATE_PLACEHOLDER
+- **PILLAR**: [01–09 · PILLAR NAME]
+- **TYPE**: [script | html | extension | doc | system | agent]
+- **STATUS**: DEPLOYED
+- **PATH**: [canonical WSL2 path]
+- **SESSION**: [claude.ai chat URL if available]
+- **NOTES**: [one sentence — what it does and why it matters]
+ENTRY
+
+# Replace placeholder
+sed -i "s/DATE_PLACEHOLDER/$DATE/g" "$CODEX"
+echo "∆ Codex entry written to $CODEX"
+```
+
+---
+
+### `TASK: sync-to-obsidian`
+**Intent:** Push a specific file into the Obsidian vault at the correct pillar path.
+**Requires:** File path and target pillar as arguments.
+
+```bash
+# Usage: provide SRC and TARGET as variables before running
+# SRC="/path/to/file.md"
+# TARGET_PILLAR="04_SACRED_CODEX"
+# TARGET_SUBDIR="CANON"
+
+SRC="${SRC:?Set SRC to source file path}"
+PILLAR="${TARGET_PILLAR:-04_SACRED_CODEX}"
+SUBDIR="${TARGET_SUBDIR:-}"
+DEST="/mnt/d/01_VAULT/SacredSpace_Vault/$PILLAR/$SUBDIR"
+
+mkdir -p "$DEST"
+cp "$SRC" "$DEST/"
+echo "∆ Synced $(basename $SRC) → $DEST"
+```
+
+---
+
+### `TASK: populate-notebooklm`
+**Intent:** List the 5 unpopulated NotebookLM notebooks and identify what to seed them with.
+**This is a planning task** — output a list, do not make changes without confirmation.
+
+```bash
+echo "∆ NOTEBOOKLM POPULATION SPRINT"
+echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+echo ""
+echo "  NOTEBOOK            SOURCE VAULT PATH"
+echo ""
+NOTEBOOKS=(
+  "LORE.VAULT            → 06_AGENT_LAYER/lore_engine.py output + Jenga lore files"
+  "GAME.SYSTEMS          → 09_SACRED_MARKET/arcana_grid/ + card schema JSON"
+  "KNOWLEDGE.VAULT       → 03_NEURAL_FOREST/ + arxiv notes + HuggingFace logs"
+  "FAMILY.LEGACY         → Sacred Messages/ + Hero Unit files (Iris + Asher)"
+  "CREATION.LAB          → 07_SOCIAL_MOTHERSHIP/brand_bible/ + audio agent prompt"
+)
+for n in "${NOTEBOOKS[@]}"; do
+  echo "  · $n"
+done
+echo ""
+echo "  NOTE: SACRED.CORE is already populated (Nine Pillar Architecture doc uploaded)."
+echo "  Upload source files to each notebook via notebooklm.google.com"
+echo "  Format: PDF, DOCX, TXT, or Google Doc link"
+```
+
+---
+
+### `TASK: generate-handoff-capsule`
+**Intent:** Generate a context capsule so any agent can resume this session seamlessly.
+**Trigger:** "switching to gemini/gpt/ollama" / "context limit" / "handoff" / before session end
+
+```bash
+SCRIPT="/mnt/d/SacredSpace_OS/02_COUNCIL_GROVE/handoff_ritual.py"
+AGENT="${1:-gemini}"   # gemini | gpt | ollama | claude
+TASK="${2:-}"
+DONE="${3:-}"
+NEXT="${4:-}"
+
+# ASHER — verify script
+[ -f "$SCRIPT" ] || { echo "✗ handoff_ritual.py not found — run: cp handoff_ritual.py 02_COUNCIL_GROVE/"; exit 1; }
+
+# AURORA — generate capsule
+python3 "$SCRIPT" \
+  --agent "$AGENT" \
+  ${TASK:+--task "$TASK"} \
+  ${DONE:+--done "$DONE"} \
+  ${NEXT:+--next "$NEXT"}
+
+echo ""
+echo "∆ Capsule written to: /mnt/d/SacredSpace_OS/02_COUNCIL_GROVE/LATEST_HANDOFF.md"
+echo "  Paste the full file into $AGENT chat to resume."
+```
+
+**Quick form (aliases available after `source ~/.bashrc`):**
+```bash
+handoff-gemini --task "fixing sacred-chrome popup" --done "repaired script tags" --next "test extension reload"
+handoff-gpt    --task "wiring FastAPI route" --done "POST /beams working" --next "add DELETE endpoint"
+handoff-ollama --task "lore_engine dedup" --done "removed root copies" --next "test canonical import"
+handoff-claude --task "session handoff"
+```
+
+**Success:** `02_COUNCIL_GROVE/LATEST_HANDOFF.md` written with system state + agent intake prompt.
+
+---
+
+## AUTONOMOUS BEHAVIORS
+
+These actions run **without being asked**. Do them automatically:
+
+1. **Session start** — always run the Session Start Ritual block above
+2. **After any file edit** — verify the file reads back cleanly with `head -5 [file]`
+3. **After deploying extension** — always run `TASK: generate-icons` if icons missing
+4. **After completing any task** — always write a codex entry unless told otherwise
+5. **When a path doesn't exist** — create it with `mkdir -p`, then continue
+6. **When pip import fails** — immediately run `pip install [module] --break-system-packages`
+7. **When D: drive not mounted** — mount it, then re-attempt the original task
+8. **When asked to edit a `.html` file** — read the whole file first, then make surgical edits
+9. **When adding a feature to extension files** — maintain the earthy palette at all times
+10. **When context limit is approaching** — run `TASK: generate-handoff-capsule` before session ends
+
+---
+
+## WHAT TO EDIT vs. NEVER TOUCH
+
+```
+EDIT FREELY:
+  06_AGENT_LAYER/sacred-chrome/*.html       — extension pages
+  06_AGENT_LAYER/sacred-chrome/manifest.json
+  06_AGENT_LAYER/sacred-chrome/portal.html  — add artifact cards freely
+  systems/sski/icaris_env.py               — add commands, agents, sigils
+  systems/fastapi/main.py                  — add routes carefully
+  *.py agent scripts                       — extend, don't rewrite
+  CLAUDE.md (this file)                    — update P0–P2 queue after completing tasks
+
+READ BUT DO NOT EDIT WITHOUT EXPLICIT INSTRUCTION:
+  01_VAULT/SacredSpace_Vault/**            — Obsidian vault is source of record
+  systems/sski/iris_memory.db             — IRIS memory DB (append only)
+  systems/sski/icaris_state.json          — state file (update via icaris_env.py)
+
+NEVER TOUCH:
+  /mnt/user-data/uploads/                  — read-only mount
+  Any file with "CANON-LOCKED" comment    — must go through Canon Gate first
+```
+
+---
+
+## ERROR → FIX MAP
+
+| Error | Cause | Fix |
+|-------|-------|-----|
+| `Connection refused :8888` | FastAPI down | `TASK: start-fastapi-spine` |
+| `/mnt/d/ not found` | D: not mounted | `sudo mount -t drvfs D: /mnt/d` |
+| `ModuleNotFoundError: X` | Missing dep | `pip install X --break-system-packages` |
+| `PermissionError /mnt/d/` | WSL2 perms | `sudo chmod -R 755 /mnt/d/SacredSpace_OS` |
+| Ollama timeout | Tailscale conflict | Set `OLLAMA_HOST` to Windows host IP |
+| Chrome won't load extension | Icons missing | `TASK: generate-icons` |
+| `lore_engine.py` ImportError | Wrong version loaded | `TASK: clean-lore-engine` |
+| `icaris_env.py` not found | SSKI not seeded | `TASK: seed-sski` |
+| Extension shows old version | Not reloaded | `TASK: reload-chrome-extension` |
+| Canvas animation glitchy | Browser GPU issue | Reduce particle count in `newtab.html:PARTS` |
+
+---
+
+## OPEN QUEUE (P0–P2)
+
+```
+P0  FastAPI spine :8888 — DORMANT
+    → Run: bash /mnt/d/SacredSpace_OS/spine_check.sh
+    → Or tell Claude Code: "find and start the FastAPI spine"
+    → If main.py missing: bash spine_check.sh --scaffold
+
+P1  NotebookLM — 5 notebooks unpopulated
+    LORE.VAULT / GAME.SYSTEMS / KNOWLEDGE.VAULT / FAMILY.LEGACY / CREATION.LAB
+    → Run: TASK: populate-notebooklm (planning), then manually upload
+
+P2  Image asset inventory — ChatGPT + Gemini portfolios + physical artwork
+    not yet catalogued in Sacred Market Phase 1
+    → Create: 09_SACRED_MARKET/asset_inventory.md
+```
+
+Update this section when tasks are completed. Strike through or delete resolved items.
+
+---
+
+## REPORTING FORMAT
+
+After every completed task, report exactly this:
+
+```
+∆ [TASK NAME] — COMPLETE
+─────────────────────────
+✓ [specific thing done]
+✓ [specific thing done]
+✗ [anything that failed or was skipped, + why]
+
+CODEX: written | skipped ([reason])
+NEXT:  [one concrete next action, specific]
+In lakesh alakin.
+```
+
+No padding. No celebration. Just the facts and the next move.
+
+---
+
+## QUICK REFERENCE — TERMINAL COMMANDS
+
+The Sacred Sigil Terminal (terminal.html) accepts these commands:
+```
+ignite          35-step animated boot ritual
+sigilify [text] S∆CR3DS!G∆L cipher transform
+gematria [word] soul tone calculation (Elements × Primes)
+skry [word]     5-lens SKRY OF ORIGIN (+ Claude API if key set)
+invoke [agent]  summon ICARIS agent (elias/aurora/asher/iris/gram)
+ask [text]      speak to GR∆M∆ directly
+artifact [name] register Sacred Market artifact
+shadow          Shadow Metric audit
+dag             ICARIS Directed Acyclic Graph
+heal [issue]    self-healing loop simulation
+fold [text]     context folding (ELIAS)
+decay           Ebbinghaus decay curve table
+mint [name]     generate Python sigil (AURORA)
+status          nine-pillar status report
+help            full command registry
+```
+
+---
+
+*S∆CR3DSP∆CE OS · ∆∆∆O∆K3YTREE∆∆∆ · Pillar 06 · Agent Layer*
+*In lakesh alakin. Ground. Consolidate. Deploy. Document. Repeat.*

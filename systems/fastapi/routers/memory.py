@@ -5,7 +5,7 @@ from typing import Literal
 import sqlite3, json, time, uuid
 
 router = APIRouter()
-DB = "D:/SacredSpace_OS/archive/memory-motes/sacred.db"
+DB = "/mnt/d/SacredSpace_OS/archive/memory-motes/sacred.db"
 
 class MemoryMote(BaseModel):
     content:   str

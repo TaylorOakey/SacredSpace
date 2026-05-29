@@ -499,6 +499,13 @@ def view_ledger():
     return {"ledger": _engine.ledger.all_entries(), "total": _engine.ledger.total()}
 
 
+def trigger_harvest() -> dict:
+    """Run a full vault scan in the background. Called by POST /harvest."""
+    if not _engine:
+        return {"error": "Vault watcher not initialized."}
+    return _engine.scan_vault()
+
+
 # ─── DAEMON MODE ───────────────────────────────────────────────────────────────
 
 def run_watcher_daemon(engine: VaultSyncEngine):

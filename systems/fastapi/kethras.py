@@ -26,7 +26,7 @@ from pydantic import BaseModel
 
 # ─── CONFIG ────────────────────────────────────────────────────────────────────
 
-DB_PATH = Path("D:/SacredSpace_OS/05_MEMORY_ENGINE/kethras.db")
+DB_PATH = Path("/mnt/d/SacredSpace_OS/05_MEMORY_ENGINE/kethras.db")
 DB_PATH.parent.mkdir(parents=True, exist_ok=True)
 
 # Spell progression states — in order of advancement

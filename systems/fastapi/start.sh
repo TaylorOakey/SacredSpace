@@ -7,4 +7,5 @@ sleep 1
 echo "[SACRED OS] Clearing cache..."
 rm -rf "$FASTAPI_DIR/__pycache__"
 echo "[SACRED OS] Starting..."
-cd "$FASTAPI_DIR" && SACREDSPACE_VAULT="$VAULT" OLLAMA_HOST="http://192.168.240.1:11434" python3 main.py
+cd "$FASTAPI_DIR" && SACREDSPACE_VAULT="$VAULT" OLLAMA_HOST="http://localhost:11434" \
+  uvicorn main:app --host 0.0.0.0 --port 8888

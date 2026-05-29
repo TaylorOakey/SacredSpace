@@ -26,7 +26,7 @@ from pydantic import BaseModel
 
 # ─── CONFIG ────────────────────────────────────────────────────────────────────
 
-DB_PATH = Path("D:/SacredSpace_OS/05_MEMORY_ENGINE/merchant.db")
+DB_PATH = Path("/mnt/d/SacredSpace_OS/05_MEMORY_ENGINE/merchant.db")
 DB_PATH.parent.mkdir(parents=True, exist_ok=True)
 
 PLATFORMS = ["ETSY", "PRINTIFY", "GELATO", "SACRED_MARKET", "INTERNAL"]
@@ -132,9 +132,27 @@ def _get_conn() -> sqlite3.Connection:
     return conn
 
 
+VAAS_STATUSES = ["PROSPECT", "ONBOARDING", "ACTIVE", "PAUSED", "CHURNED"]
+
+
 def init_merchant_db():
     conn = _get_conn()
     conn.executescript("""
+        CREATE TABLE IF NOT EXISTS vaas_clients (
+            client_id        INTEGER PRIMARY KEY AUTOINCREMENT,
+            name             TEXT NOT NULL,
+            email            TEXT,
+            vault_name       TEXT NOT NULL,
+            setup_fee        REAL DEFAULT 5000.0,
+            monthly_retainer REAL DEFAULT 500.0,
+            status           TEXT NOT NULL DEFAULT 'PROSPECT',
+            months_active    INTEGER DEFAULT 0,
+            notes            TEXT,
+            deployed_at      TEXT,
+            last_invoice     TEXT,
+            created_at       TEXT DEFAULT (datetime('now'))
+        );
+
         CREATE TABLE IF NOT EXISTS artifacts (
             artifact_id   INTEGER PRIMARY KEY AUTOINCREMENT,
             true_name     TEXT NOT NULL,
@@ -380,6 +398,65 @@ offerings rather than products.
         conn.close()
         return {"listing": listing, "artifact": artifact}
 
+    def get_vaas_clients(self, status: Optional[str] = None) -> dict:
+        """VaaS client registry + revenue summary."""
+        conn = _get_conn()
+        q = "SELECT * FROM vaas_clients"
+        params = []
+        if status:
+            q += " WHERE status=?"
+            params.append(status.upper())
+        q += " ORDER BY client_id DESC"
+        rows = conn.execute(q, params).fetchall()
+
+        clients = [dict(r) for r in rows]
+        active = [c for c in clients if c["status"] == "ACTIVE"]
+        mrr = sum(c["monthly_retainer"] for c in active)
+        setup_total = sum(c["setup_fee"] for c in clients if c["status"] != "PROSPECT")
+        arr = mrr * 12
+
+        conn.close()
+        return {
+            "service":          "Vault-as-a-Service (VaaS)",
+            "model":            "$5,000 setup · $500/mo retainer",
+            "pillar":           "09_SACRED_MARKET",
+            "clients":          clients,
+            "summary": {
+                "total":        len(clients),
+                "active":       len(active),
+                "prospects":    sum(1 for c in clients if c["status"] == "PROSPECT"),
+                "mrr_usd":      round(mrr, 2),
+                "arr_usd":      round(arr, 2),
+                "setup_revenue": round(setup_total, 2),
+                "ltv_estimate": round(setup_total + arr, 2),
+            },
+            "timestamp": datetime.now(timezone.utc).isoformat(),
+        }
+
+    def add_vaas_client(
+        self,
+        name: str,
+        vault_name: str,
+        email: Optional[str] = None,
+        setup_fee: float = 5000.0,
+        monthly_retainer: float = 500.0,
+        notes: Optional[str] = None,
+    ) -> dict:
+        """Register a new VaaS client."""
+        now = datetime.now(timezone.utc).isoformat()
+        conn = _get_conn()
+        c = conn.cursor()
+        c.execute("""
+            INSERT INTO vaas_clients
+            (name, email, vault_name, setup_fee, monthly_retainer, status, notes, created_at)
+            VALUES (?,?,?,?,?,'PROSPECT',?,?)
+        """, (name, email, vault_name, setup_fee, monthly_retainer, notes, now))
+        client_id = c.lastrowid
+        conn.commit()
+        row = dict(conn.execute("SELECT * FROM vaas_clients WHERE client_id=?", (client_id,)).fetchone())
+        conn.close()
+        return row
+
     def get_market_summary(self) -> dict:
         """Full market status — the merchant's ledger."""
         conn = _get_conn()
@@ -430,6 +507,14 @@ class AdvanceArtifactRequest(BaseModel):
 
 class GenerateListingRequest(BaseModel):
     platform: Optional[str] = None
+
+class AddVaasClientRequest(BaseModel):
+    name: str
+    vault_name: str
+    email: Optional[str] = None
+    setup_fee: float = 5000.0
+    monthly_retainer: float = 500.0
+    notes: Optional[str] = None
 
 
 # ─── FASTAPI ROUTER ────────────────────────────────────────────────────────────
@@ -500,6 +585,22 @@ def gematria_decode(word: str):
     Returns full breakdown, soul tone, and interpretation.
     """
     return calculate_gematria(word)
+
+
+@router.get("/vaas")
+def vaas_clients(status: Optional[str] = None):
+    """
+    VaaS — Vault-as-a-Service client registry.
+    $5,000 setup + $500/mo retainer model.
+    Filter by status: PROSPECT | ONBOARDING | ACTIVE | PAUSED | CHURNED
+    """
+    return engine.get_vaas_clients(status=status)
+
+
+@router.post("/vaas")
+def add_vaas_client(body: AddVaasClientRequest):
+    """Register a new VaaS client prospect."""
+    return engine.add_vaas_client(**body.model_dump())
 
 
 @router.get("/sigil")
