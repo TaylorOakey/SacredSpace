@@ -1,5 +1,7 @@
 # Python
 .venv/
+*.so
+*.abi3.so
 venv/
 __pycache__/
 *.pyc
