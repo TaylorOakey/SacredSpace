@@ -1,0 +1,31 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" style="background:#0d0d14">
+  <!-- Outer ring -->
+  <circle cx="200" cy="200" r="185" stroke="#7c6fcd" stroke-width="1.5" fill="none" opacity="0.5"/>
+  <!-- Flower of Life - 6 petals -->
+  <circle cx="200" cy="110" r="90" stroke="#5c8a6f" stroke-width="1" fill="none" opacity="0.35"/>
+  <circle cx="200" cy="290" r="90" stroke="#5c8a6f" stroke-width="1" fill="none" opacity="0.35"/>
+  <circle cx="122" cy="155" r="90" stroke="#5c8a6f" stroke-width="1" fill="none" opacity="0.35"/>
+  <circle cx="278" cy="155" r="90" stroke="#5c8a6f" stroke-width="1" fill="none" opacity="0.35"/>
+  <circle cx="122" cy="245" r="90" stroke="#5c8a6f" stroke-width="1" fill="none" opacity="0.35"/>
+  <circle cx="278" cy="245" r="90" stroke="#5c8a6f" stroke-width="1" fill="none" opacity="0.35"/>
+  <!-- Center circle -->
+  <circle cx="200" cy="200" r="90" stroke="#7c6fcd" stroke-width="1.5" fill="none" opacity="0.7"/>
+  <!-- Star of David -->
+  <polygon points="200,40 344,280 56,280" stroke="#c9a84c" stroke-width="1.5" fill="none" opacity="0.85"/>
+  <polygon points="200,360 56,120 344,120" stroke="#c9a84c" stroke-width="1.5" fill="none" opacity="0.85"/>
+  <!-- Inner hexagon -->
+  <polygon points="200,110 278,155 278,245 200,290 122,245 122,155" stroke="#7c6fcd" stroke-width="1" fill="none" opacity="0.6"/>
+  <!-- Nine pillar nodes -->
+  <circle cx="200" cy="15"  r="6" fill="#7c6fcd"/>
+  <circle cx="344" cy="108" r="6" fill="#7c6fcd"/>
+  <circle cx="344" cy="292" r="6" fill="#7c6fcd"/>
+  <circle cx="200" cy="385" r="6" fill="#7c6fcd"/>
+  <circle cx="56"  cy="292" r="6" fill="#7c6fcd"/>
+  <circle cx="56"  cy="108" r="6" fill="#7c6fcd"/>
+  <circle cx="200" cy="110" r="5" fill="#5c8a6f"/>
+  <circle cx="278" cy="155" r="5" fill="#5c8a6f"/>
+  <circle cx="278" cy="245" r="5" fill="#5c8a6f"/>
+  <!-- Center -->
+  <circle cx="200" cy="200" r="10" fill="#c9a84c" opacity="0.9"/>
+  <circle cx="200" cy="200" r="24" stroke="#c9a84c" stroke-width="1" fill="none" opacity="0.5"/>
+</svg>

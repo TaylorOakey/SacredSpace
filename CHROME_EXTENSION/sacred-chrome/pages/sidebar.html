@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Council Grove</title>
+  <style>
+    :root {
+      --bg: #0d0d14; --bg2: #13131f; --border: #2a2a40;
+      --accent: #7c6fcd; --gold: #c9a84c; --text: #e0ddf5;
+      --muted: #7a7898; --online: #4caf78; --offline: #8a3d3d;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--bg); color: var(--text); font-family: 'Courier New', monospace; font-size: 12px; padding: 12px; }
+    h2 { color: var(--gold); font-size: 13px; letter-spacing: 1px; margin-bottom: 12px; }
+    .seat-btn {
+      display: block; width: 100%; padding: 10px 12px;
+      background: var(--bg2); border: 1px solid var(--border);
+      border-radius: 6px; color: var(--text); font-family: inherit;
+      font-size: 11px; text-align: left; cursor: pointer; margin-bottom: 8px;
+      transition: border-color 0.2s;
+    }
+    .seat-btn:hover { border-color: var(--accent); }
+    .seat-icon { margin-right: 8px; font-size: 14px; }
+    .divider { border: none; border-top: 1px solid var(--border); margin: 12px 0; }
+    .spine-row { display: flex; align-items: center; gap: 6px; font-size: 10px; color: var(--muted); }
+    .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--offline); }
+    .dot.online { background: var(--online); }
+  </style>
+</head>
+<body>
+  <h2>⚖ Council Grove</h2>
+
+  <button class="seat-btn" data-url="https://claude.ai">
+    <span class="seat-icon">🧿</span>Claude — Reasoning &amp; Narrative
+  </button>
+  <button class="seat-btn" data-url="https://gemini.google.com">
+    <span class="seat-icon">💎</span>Gemini — Deep Research
+  </button>
+  <button class="seat-btn" data-url="https://chatgpt.com">
+    <span class="seat-icon">⚙️</span>ChatGPT — Systems Architecture
+  </button>
+
+  <hr class="divider"/>
+
+  <button class="seat-btn" data-url="http://localhost:8888/docs">
+    <span class="seat-icon">📚</span>API Docs (port 8888)
+  </button>
+  <button class="seat-btn" data-url="http://localhost:8888/graph">
+    <span class="seat-icon">🕸</span>Knowledge Graph
+  </button>
+  <button class="seat-btn" data-url="obsidian://open?vault=SacredSpace_Vault">
+    <span class="seat-icon">📖</span>Open Obsidian Vault
+  </button>
+
+  <hr class="divider"/>
+
+  <div class="spine-row">
+    <div class="dot" id="dot"></div>
+    <span id="spineLabel">checking spine...</span>
+  </div>
+
+  <script src="../config.js"></script>
+  <script>
+    document.querySelectorAll(".seat-btn[data-url]").forEach(btn => {
+      btn.addEventListener("click", () => chrome.tabs.create({ url: btn.dataset.url }));
+    });
+
+    spineGet("/health").then(r => {
+      const dot = document.getElementById("dot");
+      const label = document.getElementById("spineLabel");
+      if (r.ok) { dot.classList.add("online"); label.textContent = "spine online ∆"; }
+      else { label.textContent = "spine offline — run SACRED_LAUNCH.ps1"; }
+    });
+  </script>
+</body>
+</html>

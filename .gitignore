@@ -1,0 +1,55 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Node
+node_modules/
+.pnpm-store/
+
+# Vector DB / runtime data
+chroma/
+chroma_db/
+*.db
+*.sqlite
+*.sqlite3
+
+# Media / large archives
+archives/
+07_SOCIAL_MOTHERSHIP/CREATION_LAB/IMAGE_ARCHIVE/
+_RAW/
+
+# Binary tools
+02_COUNCIL_GROVE/tools/copyq/
+
+# Logs
+*.log
+02_COUNCIL_GROVE/logs/
+
+# Environment / secrets
+.env
+*.env
+.env.local
+.env.*.local
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Public repo clones (exist on GitHub — not our code)
+02_COUNCIL_GROVE/mission-control/
+03_NEURAL_FOREST/omniparse/

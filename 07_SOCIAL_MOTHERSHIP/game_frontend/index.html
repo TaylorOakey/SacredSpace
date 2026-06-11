@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>SacredSpace OS — Jenga's Journey</title>
+<script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<style>
+  :root {
+    --gold: #c9a227;
+    --gold-dim: #7a611a;
+    --bg: #05050a;
+    --panel: #0d0d1a;
+    --panel2: #12122a;
+    --border: #2a2a4a;
+    --text: #e8e0d0;
+    --dim: #7a7a9a;
+    --danger: #8b2222;
+    --success: #1a5c3a;
+    --initiation: #c44b1a;
+    --courage: #6b4c2a;
+    --mystery: #1a3a6b;
+    --creation: #2a4a2a;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--text); font-family: 'Courier New', monospace; min-height: 100vh; }
+  #root { min-height: 100vh; }
+
+  /* ── Layout ── */
+  .screen { min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 2rem; }
+  .panel { background: var(--panel); border: 1px solid var(--border); border-radius: 4px; padding: 2rem; width: 100%; max-width: 640px; }
+  .panel-wide { max-width: 900px; }
+  .row { display: flex; gap: 1rem; flex-wrap: wrap; }
+  .col { display: flex; flex-direction: column; gap: 1rem; }
+
+  /* ── Typography ── */
+  .sigil { color: var(--gold); font-size: 0.7rem; letter-spacing: 0.3rem; text-transform: uppercase; opacity: 0.7; }
+  h1 { color: var(--gold); font-size: 1.8rem; font-weight: normal; letter-spacing: 0.15rem; }
+  h2 { color: var(--gold); font-size: 1.2rem; font-weight: normal; letter-spacing: 0.1rem; }
+  h3 { color: var(--text); font-size: 1rem; font-weight: normal; }
+  p { color: var(--dim); line-height: 1.7; font-size: 0.9rem; }
+  .gold { color: var(--gold); }
+  .dim { color: var(--dim); font-size: 0.85rem; }
+  .narrative { color: var(--text); line-height: 1.8; font-size: 0.9rem; white-space: pre-wrap; }
+
+  /* ── Divider ── */
+  .divider { border: none; border-top: 1px solid var(--border); margin: 1.5rem 0; }
+  .divider-gold { border-color: var(--gold-dim); }
+
+  /* ── Buttons ── */
+  .btn { background: transparent; border: 1px solid var(--gold-dim); color: var(--gold); padding: 0.6rem 1.4rem; font-family: inherit; font-size: 0.85rem; letter-spacing: 0.1rem; cursor: pointer; text-transform: uppercase; transition: all 0.2s; }
+  .btn:hover { background: var(--gold-dim); border-color: var(--gold); }
+  .btn-primary { border-color: var(--gold); background: rgba(201,162,39,0.1); }
+  .btn-primary:hover { background: rgba(201,162,39,0.25); }
+  .btn-danger { border-color: #8b2222; color: #c44444; }
+  .btn-danger:hover { background: rgba(139,34,34,0.2); }
+  .btn-sm { padding: 0.4rem 0.8rem; font-size: 0.75rem; }
+  .btn:disabled { opacity: 0.4; cursor: not-allowed; }
+
+  /* ── Inputs ── */
+  input, textarea, select {
+    background: var(--panel2); border: 1px solid var(--border); color: var(--text);
+    padding: 0.6rem 0.8rem; font-family: inherit; font-size: 0.9rem; width: 100%;
+    outline: none; border-radius: 2px;
+  }
+  input:focus, textarea:focus, select:focus { border-color: var(--gold-dim); }
+  label { color: var(--dim); font-size: 0.8rem; letter-spacing: 0.05rem; margin-bottom: 0.3rem; display: block; }
+
+  /* ── Nav ── */
+  .nav { display: flex; gap: 0.5rem; flex-wrap: wrap; padding: 1rem; background: var(--panel); border-bottom: 1px solid var(--border); justify-content: center; }
+  .nav-btn { background: transparent; border: 1px solid transparent; color: var(--dim); padding: 0.4rem 0.8rem; font-family: inherit; font-size: 0.75rem; letter-spacing: 0.08rem; cursor: pointer; text-transform: uppercase; transition: all 0.2s; }
+  .nav-btn:hover, .nav-btn.active { color: var(--gold); border-color: var(--gold-dim); }
+
+  /* ── Card ── */
+  .card { background: var(--panel2); border: 1px solid var(--border); padding: 1.5rem; border-radius: 2px; }
+  .card-gold { border-color: var(--gold-dim); }
+  .card-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1rem; }
+
+  /* ── Tarot Card ── */
+  .tarot-wrap { perspective: 1000px; width: 220px; height: 320px; cursor: pointer; }
+  .tarot-inner { width: 100%; height: 100%; transform-style: preserve-3d; transition: transform 0.7s; position: relative; }
+  .tarot-inner.flipped { transform: rotateY(180deg); }
+  .tarot-face, .tarot-back { position: absolute; width: 100%; height: 100%; backface-visibility: hidden; border: 1px solid var(--gold-dim); border-radius: 4px; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 1rem; padding: 1.5rem; }
+  .tarot-back { background: var(--panel2); background-image: repeating-linear-gradient(45deg, rgba(201,162,39,0.03) 0px, rgba(201,162,39,0.03) 1px, transparent 1px, transparent 10px); }
+  .tarot-face { background: var(--panel); transform: rotateY(180deg); }
+  .tarot-glyph { font-size: 3rem; color: var(--gold); opacity: 0.7; }
+  .tarot-card-name { color: var(--gold); font-size: 1rem; letter-spacing: 0.1rem; text-align: center; }
+  .tarot-npc { color: var(--dim); font-size: 0.8rem; }
+
+  /* ── Spell Terminal ── */
+  .terminal { background: #010105; border: 1px solid var(--gold-dim); padding: 1.5rem; font-family: 'Courier New', monospace; }
+  .terminal-line { color: var(--gold); font-size: 0.85rem; margin-bottom: 0.3rem; }
+  .terminal-prompt { display: flex; align-items: center; gap: 0.5rem; margin-top: 1rem; }
+  .terminal-prompt span { color: var(--gold); }
+  .terminal-input { background: transparent; border: none; color: var(--text); font-family: inherit; font-size: 0.9rem; flex: 1; outline: none; caret-color: var(--gold); }
+  .terminal-output { color: #8080ff; font-size: 0.85rem; line-height: 1.6; margin-top: 1rem; white-space: pre-wrap; }
+  .terminal-success { color: #40c060; }
+  .terminal-school { display: inline-block; padding: 0.1rem 0.5rem; font-size: 0.75rem; margin-right: 0.5rem; }
+  .school-initiation { background: rgba(196,75,26,0.2); color: #c44b1a; border: 1px solid #c44b1a; }
+  .school-courage { background: rgba(107,76,42,0.2); color: #c48a3a; border: 1px solid #c48a3a; }
+  .school-mystery { background: rgba(26,58,107,0.2); color: #5a80c0; border: 1px solid #5a80c0; }
+  .school-creation { background: rgba(42,74,42,0.2); color: #4a9a4a; border: 1px solid #4a9a4a; }
+
+  /* ── Nodes ── */
+  .nodes-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.8rem; }
+  .node-card { background: var(--panel2); border: 1px solid var(--border); padding: 1rem; cursor: pointer; transition: all 0.2s; text-align: center; }
+  .node-card:hover, .node-card.active { border-color: var(--gold-dim); background: var(--panel); }
+  .node-icon { font-size: 1.5rem; margin-bottom: 0.5rem; }
+  .node-label { color: var(--text); font-size: 0.75rem; letter-spacing: 0.05rem; }
+  .node-locked { opacity: 0.4; cursor: default; }
+  .node-unlocked { border-color: var(--gold-dim); }
+
+  /* ── Bazaar ── */
+  .artifact-card { background: var(--panel2); border: 1px solid var(--border); padding: 1rem; }
+  .gematria-price { color: var(--gold); font-size: 1.2rem; font-weight: bold; }
+
+  /* ── Leaderboard ── */
+  .lb-row { display: flex; align-items: center; gap: 1rem; padding: 0.6rem 0; border-bottom: 1px solid var(--border); }
+  .lb-rank { color: var(--gold-dim); width: 2rem; font-size: 0.85rem; }
+  .lb-name { flex: 1; }
+  .lb-school { width: 6rem; }
+  .lb-score { color: var(--gold); width: 4rem; text-align: right; }
+
+  /* ── Loading / Status ── */
+  .spinner { display: inline-block; width: 1rem; height: 1rem; border: 2px solid var(--gold-dim); border-top-color: var(--gold); border-radius: 50%; animation: spin 0.8s linear infinite; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .status-bar { display: flex; align-items: center; gap: 0.5rem; font-size: 0.8rem; color: var(--dim); padding: 0.5rem 0; }
+  .dot-live { width: 6px; height: 6px; border-radius: 50%; background: #40c060; display: inline-block; animation: pulse 2s infinite; }
+  .dot-dead { background: var(--danger); animation: none; }
+  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
+
+  /* ── Scry ── */
+  .scry-result { background: var(--panel2); border-left: 3px solid var(--gold-dim); padding: 1rem; margin-bottom: 1rem; }
+  .scry-source { color: var(--gold-dim); font-size: 0.75rem; margin-bottom: 0.5rem; }
+  .scry-text { color: var(--text); font-size: 0.85rem; line-height: 1.7; }
+  .relevance { color: var(--dim); font-size: 0.75rem; }
+
+  /* ── Scrollbar ── */
+  ::-webkit-scrollbar { width: 4px; }
+  ::-webkit-scrollbar-track { background: var(--bg); }
+  ::-webkit-scrollbar-thumb { background: var(--gold-dim); }
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script type="text/babel">
+const { useState, useEffect, useRef, useCallback } = React;
+
+const API = 'http://127.0.0.1:8888/api/game';
+
+const SCHOOLS = ['initiation','courage','mystery','creation'];
+const SCHOOL_COLORS = { initiation:'school-initiation', courage:'school-courage', mystery:'school-mystery', creation:'school-creation' };
+
+const NODES = [
+  { id:'threshold',      icon:'🌅', label:'The Threshold' },
+  { id:'fools-bridge',   icon:'🌉', label:"Fool's Bridge" },
+  { id:'oracle-archive', icon:'📚', label:'Oracle Archive' },
+  { id:'void-gate',      icon:'🕳️', label:'Void Gate' },
+  { id:'council-grove',  icon:'🌿', label:'Council Grove' },
+  { id:'sigil-forge',    icon:'🔥', label:'Sigil Forge' },
+  { id:'neural-forest',  icon:'🌳', label:'Neural Forest' },
+  { id:'convergence',    icon:'⭕', label:'Convergence' },
+];
+
+const KNOWN_SPELLS = [
+  'FIRST STEP','IGNITE','CATALYZE','FORGE',
+  'ANCHOR','FORTIFY','FACE','STAND FIRM',
+  'SCRY','VEIL','FATHOM','DREAM-WALK',
+  'WEAVE','MANIFEST','SING INTO BEING','BIRTH',
+];
+
+// ── API helpers ────────────────────────────────────────────────────────────
+
+async function api(path, opts = {}) {
+  try {
+    const r = await fetch(API + path, {
+      headers: { 'Content-Type': 'application/json' },
+      ...opts,
+    });
+    if (!r.ok) throw new Error(`${r.status}`);
+    return await r.json();
+  } catch (e) {
+    return { error: e.message };
+  }
+}
+
+// ── Store (localStorage) ──────────────────────────────────────────────────
+
+const store = {
+  get: k => { try { return JSON.parse(localStorage.getItem('ss_' + k)) } catch { return null } },
+  set: (k, v) => localStorage.setItem('ss_' + k, JSON.stringify(v)),
+  del: k => localStorage.removeItem('ss_' + k),
+};
+
+// ── Screen: Register ───────────────────────────────────────────────────────
+
+function RegisterScreen({ onRegister }) {
+  const [name, setName] = useState('');
+  const [school, setSchool] = useState('');
+
+  function submit() {
+    if (!name.trim() || !school) return;
+    const player = { name: name.trim(), school, draws: [], spells: [], artifacts: [], joined: new Date().toISOString() };
+    store.set('player', player);
+    onRegister(player);
+  }
+
+  return (
+    <div className="screen">
+      <div className="panel">
+        <div className="sigil" style={{textAlign:'center',marginBottom:'1rem'}}>∆ SacredSpace OS ∆</div>
+        <h1 style={{textAlign:'center',marginBottom:'0.3rem'}}>Jenga's Journey</h1>
+        <p style={{textAlign:'center',marginBottom:'2rem'}}>Season 1 — The Twelve Encounters</p>
+        <hr className="divider"/>
+        <div className="col">
+          <div>
+            <label>Your Name</label>
+            <input value={name} onChange={e=>setName(e.target.value)} placeholder="Enter your name..." onKeyDown={e=>e.key==='Enter'&&submit()} autoFocus/>
+          </div>
+          <div>
+            <label>Choose Your School</label>
+            <div className="row" style={{marginTop:'0.5rem'}}>
+              {SCHOOLS.map(s => (
+                <button key={s} className={`btn ${school===s?'btn-primary':''}`} onClick={()=>setSchool(s)} style={{flex:1,textTransform:'capitalize'}}>
+                  {s}
+                </button>
+              ))}
+            </div>
+            {school && (
+              <div style={{marginTop:'0.8rem'}}>
+                <span className={`terminal-school ${SCHOOL_COLORS[school]}`}>{school.toUpperCase()}</span>
+                <span className="dim">
+                  {school==='initiation' && '• Fire • ELIAS • The courage to begin'}
+                  {school==='courage'    && '• Earth • ASHER • Facing what is real'}
+                  {school==='mystery'    && '• Water • IRIS • Wisdom in the hidden'}
+                  {school==='creation'   && '• Air • AURORA • Making the invisible visible'}
+                </span>
+              </div>
+            )}
+          </div>
+          <button className="btn btn-primary" onClick={submit} disabled={!name.trim()||!school}>
+            Enter the SacredSpace →
+          </button>
+          <p style={{textAlign:'center'}}>In Lakesh — Alakin.</p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// ── Screen: Tarot Draw ─────────────────────────────────────────────────────
+
+function TarotScreen({ player, setPlayer }) {
+  const [loading, setLoading] = useState(false);
+  const [card, setCard] = useState(null);
+  const [flipped, setFlipped] = useState(false);
+  const [history, setHistory] = useState(player.draws || []);
+
+  async function draw() {
+    setLoading(true); setCard(null); setFlipped(false);
+    const data = await api('/tarot/draw', { method:'POST', body: JSON.stringify({}) });
+    setLoading(false);
+    if (data.error) return;
+    setCard(data);
+    setTimeout(() => setFlipped(true), 100);
+    const updated = { ...player, draws: [...(player.draws||[]), { card: data.card, npc: data.npc, at: new Date().toISOString() }] };
+    store.set('player', updated);
+    setPlayer(updated);
+    setHistory(updated.draws);
+  }
+
+  function cleanNarrative(text) {
+    return text ? text.replace(/^#.*\n?/gm,'').replace(/\*\*/g,'').replace(/\n{3,}/g,'\n\n').trim() : '';
+  }
+
+  return (
+    <div className="screen" style={{paddingTop:'2rem'}}>
+      <div className="panel panel-wide">
+        <h2 style={{marginBottom:'1.5rem'}}>∆ Tarot Draw — The Arcana Grid</h2>
+        <div className="row" style={{alignItems:'flex-start',gap:'2rem'}}>
+          <div className="col" style={{alignItems:'center',flex:'0 0 auto'}}>
+            <div className="tarot-wrap" onClick={()=>!loading&&!card&&draw()}>
+              <div className={`tarot-inner ${flipped?'flipped':''}`}>
+                <div className="tarot-back">
+                  {loading ? <div className="spinner"/> : <>
+                    <div className="tarot-glyph">∆</div>
+                    <div className="dim" style={{fontSize:'0.75rem',textAlign:'center'}}>
+                      {card ? 'revealed' : 'click to draw'}
+                    </div>
+                  </>}
+                </div>
+                <div className="tarot-face">
+                  {card && <>
+                    <div className="tarot-glyph">{card.soul_tone}</div>
+                    <div className="tarot-card-name">{card.card}</div>
+                    <div className="tarot-npc">{card.npc}</div>
+                    <span className={`terminal-school ${SCHOOL_COLORS[card.school]}`}>{card.school}</span>
+                  </>}
+                </div>
+              </div>
+            </div>
+            <button className="btn btn-primary" style={{marginTop:'1rem',width:'100%'}} onClick={draw} disabled={loading}>
+              {loading ? 'Drawing...' : 'Draw Card'}
+            </button>
+          </div>
+          <div className="col" style={{flex:1}}>
+            {card ? <>
+              <h3 className="gold">{card.card} — Episode {card.episode}</h3>
+              <div className="dim">Guardian NPC: {card.npc} · Soul Tone: {card.soul_tone}</div>
+              <div>Spell Unlocked: <span className="gold">{card.spell_unlocked}</span></div>
+              <hr className="divider"/>
+              <div className="narrative">{cleanNarrative(card.narrative)}</div>
+            </> : (
+              <div className="col" style={{justifyContent:'center',height:'100%'}}>
+                <p>Draw a card to reveal your archetype encounter for this turn.</p>
+                <p>Each card summons an NPC and unlocks a spell from one of the four schools.</p>
+              </div>
+            )}
+          </div>
+        </div>
+        {history.length > 0 && <>
+          <hr className="divider"/>
+          <div className="dim">Draw history ({history.length} total):</div>
+          <div style={{display:'flex',flexWrap:'wrap',gap:'0.5rem',marginTop:'0.5rem'}}>
+            {history.slice(-8).map((d,i) => (
+              <span key={i} className="dim" style={{fontSize:'0.75rem',border:'1px solid var(--border)',padding:'0.2rem 0.4rem'}}>
+                {d.card}
+              </span>
+            ))}
+          </div>
+        </>}
+      </div>
+    </div>
+  );
+}
+
+// ── Screen: Spell Terminal ─────────────────────────────────────────────────
+
+function SpellScreen({ player, setPlayer }) {
+  const [input, setInput] = useState('');
+  const [lines, setLines] = useState([
+    '> IRIS SPELL TERMINAL v1.0',
+    '> Connected to sacredspace_canon',
+    '> Type a spell name and press ENTER to cast',
+    '> Known spells: FIRST STEP, ANCHOR, SCRY, WEAVE, FACE, MANIFEST...',
+    '',
+  ]);
+  const [casting, setCasting] = useState(false);
+  const bottomRef = useRef(null);
+
+  useEffect(() => { bottomRef.current?.scrollIntoView({ behavior:'smooth' }); }, [lines]);
+
+  async function cast() {
+    const spell = input.trim().toUpperCase();
+    if (!spell) return;
+    setInput('');
+    setLines(l => [...l, `∆ CAST: ${spell}`, '']);
+    setCasting(true);
+    const data = await api('/spell/cast', { method:'POST', body: JSON.stringify({ spell, context: `player ${player.name} school ${player.school}` }) });
+    setCasting(false);
+    if (data.error) {
+      setLines(l => [...l, `✗ SPELL NOT FOUND: ${spell}`, `  Known spells: ${KNOWN_SPELLS.join(', ')}`, '']);
+      return;
+    }
+    const clean = data.mechanics.replace(/###\s*/g,'').replace(/\*\*/g,'').replace(/^\s*\n/gm,'');
+    setLines(l => [...l,
+      `✓ ${spell} — ${data.school.toUpperCase()} SCHOOL`,
+      `  Cast status: ${data.cast_status}`,
+      '',
+      clean,
+      '',
+    ]);
+    const updated = { ...player, spells: [...(player.spells||[]), { spell, school: data.school, at: new Date().toISOString() }] };
+    store.set('player', updated);
+    setPlayer(updated);
+  }
+
+  return (
+    <div className="screen" style={{paddingTop:'2rem'}}>
+      <div className="panel panel-wide">
+        <h2 style={{marginBottom:'1.5rem'}}>∆ Sacred Sigil Terminal</h2>
+        <div className="terminal" style={{minHeight:'360px',maxHeight:'480px',overflowY:'auto',display:'flex',flexDirection:'column'}}>
+          <div style={{flex:1}}>
+            {lines.map((l,i) => (
+              <div key={i} className={`terminal-line ${l.startsWith('✓')?'terminal-success':''}`}>{l}</div>
+            ))}
+            {casting && <div className="terminal-line"><span className="spinner" style={{width:'0.6rem',height:'0.6rem'}}/> casting...</div>}
+            <div ref={bottomRef}/>
+          </div>
+          <div className="terminal-prompt">
+            <span>∆</span>
+            <input
+              className="terminal-input"
+              value={input}
+              onChange={e=>setInput(e.target.value)}
+              onKeyDown={e=>e.key==='Enter'&&!casting&&cast()}
+              placeholder="FIRST STEP | ANCHOR | SCRY | FACE | WEAVE | MANIFEST..."
+              disabled={casting}
+              autoFocus
+            />
+          </div>
+        </div>
+        <div style={{marginTop:'1rem',display:'flex',flexWrap:'wrap',gap:'0.4rem'}}>
+          {KNOWN_SPELLS.map(s => (
+            <button key={s} className="btn btn-sm" onClick={()=>{ setInput(s); }}>{s}</button>
+          ))}
+        </div>
+        {(player.spells||[]).length > 0 && (
+          <div style={{marginTop:'1rem'}}>
+            <div className="dim">Spells cast this session: {player.spells.length}</div>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}
+
+// ── Screen: Sacred Nodes ───────────────────────────────────────────────────
+
+function NodesScreen({ player }) {
+  const [selected, setSelected] = useState(null);
+  const [nodeData, setNodeData] = useState({});
+  const [loading, setLoading] = useState(false);
+  const visited = player.draws ? new Set(player.draws.map(d => d.card)) : new Set();
+
+  async function selectNode(node) {
+    setSelected(node.id);
+    if (nodeData[node.id]) return;
+    setLoading(true);
+    const data = await api('/node/' + node.id);
+    setLoading(false);
+    if (!data.error) setNodeData(n => ({...n, [node.id]: data}));
+  }
+
+  function cleanNarrative(text) {
+    return text ? text.replace(/^#.*\n?/gm,'').replace(/\*\*/g,'').replace(/\n{3,}/g,'\n\n').trim() : '';
+  }
+
+  const current = selected && nodeData[selected];
+
+  return (
+    <div className="screen" style={{paddingTop:'2rem',justifyContent:'flex-start'}}>
+      <div className="panel panel-wide">
+        <h2 style={{marginBottom:'1.5rem'}}>∆ Sacred Nodes — The Eight Convergences</h2>
+        <div className="nodes-grid">
+          {NODES.map(n => (
+            <div
+              key={n.id}
+              className={`node-card ${selected===n.id?'active':''}`}
+              onClick={()=>selectNode(n)}
+            >
+              <div className="node-icon">{n.icon}</div>
+              <div className="node-label">{n.label}</div>
+            </div>
+          ))}
+        </div>
+        {selected && (
+          <>
+            <hr className="divider divider-gold"/>
+            {loading ? (
+              <div style={{textAlign:'center',padding:'2rem'}}><div className="spinner"/></div>
+            ) : current ? (
+              <div>
+                <h3 className="gold" style={{marginBottom:'0.5rem'}}>{current.label}</h3>
+                <div className="narrative">{cleanNarrative(current.narrative)}</div>
+              </div>
+            ) : null}
+          </>
+        )}
+      </div>
+    </div>
+  );
+}
+
+// ── Screen: Scry ───────────────────────────────────────────────────────────
+
+function ScryScreen() {
+  const [query, setQuery] = useState('');
+  const [results, setResults] = useState(null);
+  const [loading, setLoading] = useState(false);
+
+  async function scry() {
+    if (!query.trim()) return;
+    setLoading(true); setResults(null);
+    const data = await api('/scry', { method:'POST', body: JSON.stringify({ query: query.trim(), n_results: 3 }) });
+    setLoading(false);
+    if (!data.error) setResults(data.results);
+  }
+
+  const EXAMPLES = [
+    "What is the Courage school failure mechanic?",
+    "How does Jenga enter the Void Gate?",
+    "What spells does IRIS guard?",
+    "Tell me about Meridian and the Fool's Bridge",
+    "What happens at The Convergence?",
+  ];
+
+  return (
+    <div className="screen" style={{paddingTop:'2rem',justifyContent:'flex-start'}}>
+      <div className="panel panel-wide">
+        <h2 style={{marginBottom:'0.5rem'}}>∆ Scry the Codex</h2>
+        <p style={{marginBottom:'1.5rem'}}>Query IRIS directly. She searches 169 semantic chunks of living canon.</p>
+        <div style={{display:'flex',gap:'0.5rem',marginBottom:'1rem'}}>
+          <input value={query} onChange={e=>setQuery(e.target.value)} placeholder="Ask anything about the SacredSpace..." onKeyDown={e=>e.key==='Enter'&&!loading&&scry()}/>
+          <button className="btn btn-primary" onClick={scry} disabled={loading||!query.trim()} style={{whiteSpace:'nowrap'}}>
+            {loading ? <span className="spinner"/> : 'Scry'}
+          </button>
+        </div>
+        <div style={{display:'flex',flexWrap:'wrap',gap:'0.4rem',marginBottom:'1.5rem'}}>
+          {EXAMPLES.map((e,i) => (
+            <button key={i} className="btn btn-sm" onClick={()=>setQuery(e)}>{e.substring(0,40)}...</button>
+          ))}
+        </div>
+        {results && results.map((r,i) => (
+          <div key={i} className="scry-result">
+            <div className="scry-source">{r.source} · <span className="relevance">{r.relevance}% relevance</span></div>
+            <div className="scry-text">{r.text.replace(/##+ /g,'').replace(/\*\*/g,'')}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+// ── Screen: Bazaar ─────────────────────────────────────────────────────────
+
+function BazaarScreen({ player, setPlayer }) {
+  const [title, setTitle] = useState('');
+  const [desc, setDesc] = useState('');
+  const [artifacts, setArtifacts] = useState(player.artifacts || []);
+
+  function gematriaPrice(text) {
+    const val = text.split('').reduce((acc,c) => acc + (c.charCodeAt(0) % 22), 0);
+    return Math.max(1, val % 111 + 11);
+  }
+
+  function mint() {
+    if (!title.trim() || !desc.trim()) return;
+    const artifact = {
+      id: Date.now(),
+      title: title.trim(),
+      desc: desc.trim(),
+      price: gematriaPrice(title + desc),
+      by: player.name,
+      school: player.school,
+      at: new Date().toISOString(),
+    };
+    const updated = { ...player, artifacts: [...(player.artifacts||[]), artifact] };
+    store.set('player', updated);
+    setPlayer(updated);
+    setArtifacts(updated.artifacts);
+    setTitle(''); setDesc('');
+  }
+
+  return (
+    <div className="screen" style={{paddingTop:'2rem',justifyContent:'flex-start'}}>
+      <div className="panel panel-wide">
+        <h2 style={{marginBottom:'0.5rem'}}>∆ Sacred Bazaar</h2>
+        <p style={{marginBottom:'1.5rem'}}>Mint artifacts from your journey. Price is computed via gematria soul-tone mapping.</p>
+        <div className="card card-gold" style={{marginBottom:'1.5rem'}}>
+          <h3 style={{marginBottom:'1rem'}}>Mint New Artifact</h3>
+          <div className="col">
+            <div>
+              <label>Artifact Title</label>
+              <input value={title} onChange={e=>setTitle(e.target.value)} placeholder="Name your creation..."/>
+            </div>
+            <div>
+              <label>Description / Lore</label>
+              <textarea value={desc} onChange={e=>setDesc(e.target.value)} placeholder="What is this artifact? What power does it hold?" rows={3}/>
+            </div>
+            {title && desc && (
+              <div className="dim">Gematria Price: <span className="gold">{gematriaPrice(title+desc)} soul-tones</span></div>
+            )}
+            <button className="btn btn-primary" onClick={mint} disabled={!title.trim()||!desc.trim()}>
+              Mint Artifact →
+            </button>
+          </div>
+        </div>
+        {artifacts.length > 0 && (
+          <>
+            <h3 style={{marginBottom:'1rem'}}>Your Artifacts ({artifacts.length})</h3>
+            <div className="card-grid">
+              {artifacts.map(a => (
+                <div key={a.id} className="artifact-card">
+                  <div className="gold" style={{marginBottom:'0.3rem'}}>{a.title}</div>
+                  <div className="dim" style={{fontSize:'0.8rem',marginBottom:'0.5rem'}}>{a.desc.substring(0,80)}...</div>
+                  <div className="gematria-price">{a.price} ✦</div>
+                  <div className="dim" style={{fontSize:'0.75rem'}}>by {a.by} · {a.school}</div>
+                </div>
+              ))}
+            </div>
+          </>
+        )}
+        {artifacts.length === 0 && (
+          <p>No artifacts yet. Complete encounters and mint the wisdom you carry.</p>
+        )}
+      </div>
+    </div>
+  );
+}
+
+// ── Screen: Profile ────────────────────────────────────────────────────────
+
+function ProfileScreen({ player, onReset }) {
+  const draws = player.draws || [];
+  const spells = player.spells || [];
+  const artifacts = player.artifacts || [];
+  const schoolCounts = spells.reduce((acc,s) => ({ ...acc, [s.school]: (acc[s.school]||0)+1 }), {});
+
+  return (
+    <div className="screen" style={{paddingTop:'2rem',justifyContent:'flex-start'}}>
+      <div className="panel">
+        <div className="sigil" style={{marginBottom:'0.5rem'}}>Player Record</div>
+        <h1 style={{marginBottom:'0.3rem'}}>{player.name}</h1>
+        <div style={{marginBottom:'1.5rem'}}>
+          <span className={`terminal-school ${SCHOOL_COLORS[player.school]}`}>{player.school.toUpperCase()}</span>
+          <span className="dim"> · Joined {new Date(player.joined).toLocaleDateString()}</span>
+        </div>
+        <hr className="divider"/>
+        <div className="card-grid" style={{gridTemplateColumns:'repeat(3,1fr)',marginBottom:'1.5rem'}}>
+          <div className="card" style={{textAlign:'center'}}>
+            <div className="gold" style={{fontSize:'2rem'}}>{draws.length}</div>
+            <div className="dim">Cards Drawn</div>
+          </div>
+          <div className="card" style={{textAlign:'center'}}>
+            <div className="gold" style={{fontSize:'2rem'}}>{spells.length}</div>
+            <div className="dim">Spells Cast</div>
+          </div>
+          <div className="card" style={{textAlign:'center'}}>
+            <div className="gold" style={{fontSize:'2rem'}}>{artifacts.length}</div>
+            <div className="dim">Artifacts</div>
+          </div>
+        </div>
+        {Object.keys(schoolCounts).length > 0 && (
+          <>
+            <h3 style={{marginBottom:'0.8rem'}}>School Affinity</h3>
+            {Object.entries(schoolCounts).sort((a,b)=>b[1]-a[1]).map(([s,c]) => (
+              <div key={s} style={{display:'flex',alignItems:'center',gap:'1rem',marginBottom:'0.5rem'}}>
+                <span className={`terminal-school ${SCHOOL_COLORS[s]}`}>{s}</span>
+                <div style={{flex:1,height:'4px',background:'var(--border)',borderRadius:'2px'}}>
+                  <div style={{width:`${Math.min(100,(c/spells.length)*100)}%`,height:'100%',background:'var(--gold)',borderRadius:'2px'}}/>
+                </div>
+                <span className="dim">{c}</span>
+              </div>
+            ))}
+          </>
+        )}
+        {draws.length > 0 && <>
+          <hr className="divider"/>
+          <h3 style={{marginBottom:'0.8rem'}}>Recent Encounters</h3>
+          {draws.slice(-5).reverse().map((d,i) => (
+            <div key={i} className="lb-row">
+              <div className="lb-name">{d.card}</div>
+              <div className="dim" style={{fontSize:'0.75rem'}}>{d.npc}</div>
+            </div>
+          ))}
+        </>}
+        <hr className="divider"/>
+        <button className="btn btn-danger btn-sm" onClick={onReset}>Reset Journey</button>
+      </div>
+    </div>
+  );
+}
+
+// ── App Shell ──────────────────────────────────────────────────────────────
+
+function App() {
+  const [player, setPlayer] = useState(() => store.get('player'));
+  const [screen, setScreen] = useState('tarot');
+  const [apiAlive, setApiAlive] = useState(null);
+
+  useEffect(() => {
+    fetch('http://127.0.0.1:8888/health')
+      .then(r => setApiAlive(r.ok))
+      .catch(() => setApiAlive(false));
+  }, []);
+
+  function handleReset() {
+    store.del('player');
+    setPlayer(null);
+  }
+
+  function updatePlayer(p) {
+    setPlayer(p);
+  }
+
+  if (!player) return <RegisterScreen onRegister={setPlayer}/>;
+
+  const SCREENS = [
+    { id:'tarot',   label:'∆ Draw' },
+    { id:'spell',   label:'⚡ Spell' },
+    { id:'nodes',   label:'🗺 Nodes' },
+    { id:'scry',    label:'🔮 Scry' },
+    { id:'bazaar',  label:'✦ Bazaar' },
+    { id:'profile', label:'◈ Profile' },
+  ];
+
+  return (
+    <div style={{minHeight:'100vh',display:'flex',flexDirection:'column'}}>
+      <div className="nav">
+        <div className="sigil" style={{marginRight:'1rem',alignSelf:'center'}}>SacredSpace OS</div>
+        {SCREENS.map(s => (
+          <button key={s.id} className={`nav-btn ${screen===s.id?'active':''}`} onClick={()=>setScreen(s.id)}>
+            {s.label}
+          </button>
+        ))}
+        <div className="status-bar" style={{marginLeft:'auto'}}>
+          <span className={`dot-live ${apiAlive===false?'dot-dead':''}`}/>
+          <span>{apiAlive===null?'checking...' : apiAlive?'API LIVE':'API OFFLINE'}</span>
+        </div>
+      </div>
+      <div style={{flex:1}}>
+        {screen==='tarot'   && <TarotScreen   player={player} setPlayer={updatePlayer}/>}
+        {screen==='spell'   && <SpellScreen   player={player} setPlayer={updatePlayer}/>}
+        {screen==='nodes'   && <NodesScreen   player={player}/>}
+        {screen==='scry'    && <ScryScreen/>}
+        {screen==='bazaar'  && <BazaarScreen  player={player} setPlayer={updatePlayer}/>}
+        {screen==='profile' && <ProfileScreen player={player} onReset={handleReset}/>}
+      </div>
+    </div>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById('root')).render(<App/>);
+</script>
+</body>
+</html>

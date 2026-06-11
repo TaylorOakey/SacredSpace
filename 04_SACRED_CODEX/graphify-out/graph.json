@@ -1,0 +1,2051 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {
+    "hyperedges": [
+      {
+        "id": "sacred_council_system",
+        "label": "The Sacred Council (AI Seats)",
+        "nodes": [
+          "council_the_forge",
+          "council_the_anvil",
+          "council_sacred_smith",
+          "council_deep_well",
+          "council_the_architect",
+          "council_grama"
+        ],
+        "relation": "form",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": "SACREDSPACE_OS_BRIEFING.md"
+      },
+      {
+        "id": "agent_layer_agents",
+        "label": "Agent Layer Implementation Agents",
+        "nodes": [
+          "agent_iris",
+          "agent_aurora",
+          "agent_elias",
+          "agent_asher",
+          "agent_hermes"
+        ],
+        "relation": "form",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": "SACREDSPACE_OS_BRIEFING.md"
+      },
+      {
+        "id": "sst_frontend_stack",
+        "label": "Sacred Sigil Terminal Frontend",
+        "nodes": [
+          "sst_react_component",
+          "sst_pwa",
+          "sst_chrome_extension",
+          "sst_cmdk"
+        ],
+        "relation": "form",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": "SACRED_SIGIL_TERMINAL_COMPLETE_OVERVIEW.md"
+      },
+      {
+        "id": "game_layer_components",
+        "label": "Game Layer Core Mechanics",
+        "nodes": [
+          "sacred_path_tarot",
+          "arcana_grid",
+          "silent_echo",
+          "nine_gates",
+          "the_serpent",
+          "memory_motes",
+          "nameless_door"
+        ],
+        "relation": "form",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": "SACREDSPACE_OS_BRIEFING.md"
+      },
+      {
+        "id": "flash_drive_protocol",
+        "label": "Flash Drive Infrastructure Protocol",
+        "nodes": [
+          "flash_drive_scaffold",
+          "flash_drive_populate",
+          "flash_drive_backup",
+          "flash_arcana_populate",
+          "flash_link_check"
+        ],
+        "relation": "form",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": "scripts/SACRED_FLASH_SCAFFOLD.ps1"
+      },
+      {
+        "id": "data_persistence_layer",
+        "label": "Data Persistence Layer",
+        "nodes": [
+          "supabase_schema",
+          "chromadb_vector",
+          "sqlite_memory",
+          "sacredspace_canon_collection",
+          "chroma_ingestion"
+        ],
+        "relation": "form",
+        "confidence": "INFERRED",
+        "confidence_score": 0.85,
+        "source_file": "supabase_schema.sql"
+      },
+      {
+        "id": "copyq_pillar_tabs",
+        "label": "CopyQ Pillar-Mapped Tab System",
+        "nodes": [
+          "copyq_tab_forge",
+          "copyq_tab_codex",
+          "copyq_tab_vault",
+          "copyq_tab_council",
+          "copyq_tab_market",
+          "copyq_tab_learning",
+          "copyq_tab_memory",
+          "copyq_tab_inbox"
+        ],
+        "relation": "form",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": "COPYQ_WIRE.md"
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "label": "SacredSpace OS",
+      "file_type": "concept",
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "id": "sacredspace_os",
+      "community": 1,
+      "norm_label": "sacredspace os"
+    },
+    {
+      "label": "Nine Pillars",
+      "file_type": "concept",
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "id": "system_nine_pillars",
+      "community": 0,
+      "norm_label": "nine pillars"
+    },
+    {
+      "label": "01 OBSIDIAN_VAULTS",
+      "file_type": "concept",
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "id": "pillar_01_obsidian_vaults",
+      "community": 0,
+      "norm_label": "01 obsidian_vaults"
+    },
+    {
+      "label": "02 COUNCIL_GROVE",
+      "file_type": "concept",
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "id": "pillar_02_council_grove",
+      "community": 6,
+      "norm_label": "02 council_grove"
+    },
+    {
+      "label": "03 NEURAL_FOREST",
+      "file_type": "concept",
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "id": "pillar_03_neural_forest",
+      "community": 6,
+      "norm_label": "03 neural_forest"
+    },
+    {
+      "label": "04 SACRED_CODEX",
+      "file_type": "concept",
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "id": "pillar_04_sacred_codex",
+      "community": 0,
+      "norm_label": "04 sacred_codex"
+    },
+    {
+      "label": "05 MEMORY_ENGINE",
+      "file_type": "concept",
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "id": "pillar_05_memory_engine",
+      "community": 1,
+      "norm_label": "05 memory_engine"
+    },
+    {
+      "label": "06 AGENT_LAYER",
+      "file_type": "concept",
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "id": "pillar_06_agent_layer",
+      "community": 0,
+      "norm_label": "06 agent_layer"
+    },
+    {
+      "label": "07 SOCIAL_MOTHERSHIP",
+      "file_type": "concept",
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "id": "pillar_07_social_mothership",
+      "community": 0,
+      "norm_label": "07 social_mothership"
+    },
+    {
+      "label": "08 LEARNING_PATH",
+      "file_type": "concept",
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "id": "pillar_08_learning_path",
+      "community": 0,
+      "norm_label": "08 learning_path"
+    },
+    {
+      "label": "09 SACRED_MARKET",
+      "file_type": "concept",
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "id": "pillar_09_sacred_market",
+      "community": 0,
+      "norm_label": "09 sacred_market"
+    },
+    {
+      "label": "Local-First Architecture (Zero Paid APIs)",
+      "file_type": "rationale",
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "id": "local_first_architecture",
+      "community": 1,
+      "norm_label": "local-first architecture (zero paid apis)"
+    },
+    {
+      "label": "WSL2 Ubuntu on Lenovo Legion Y520",
+      "file_type": "concept",
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "id": "wsl2_ubuntu",
+      "community": 1,
+      "norm_label": "wsl2 ubuntu on lenovo legion y520"
+    },
+    {
+      "label": "FastAPI Spine (port 8888)",
+      "file_type": "code",
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "id": "fastapi_spine",
+      "community": 4,
+      "norm_label": "fastapi spine (port 8888)"
+    },
+    {
+      "label": "Ollama Local LLM Orchestration",
+      "file_type": "code",
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "id": "ollama_llm",
+      "community": 6,
+      "norm_label": "ollama local llm orchestration"
+    },
+    {
+      "label": "ChromaDB Vector Search",
+      "file_type": "code",
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "id": "chromadb_vector",
+      "community": 1,
+      "norm_label": "chromadb vector search"
+    },
+    {
+      "label": "SQLite Memory (sacred_memory.db)",
+      "file_type": "code",
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "id": "sqlite_memory",
+      "community": 1,
+      "norm_label": "sqlite memory (sacred_memory.db)"
+    },
+    {
+      "label": "Mission Control Dashboard (port 3001)",
+      "file_type": "code",
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "id": "mission_control",
+      "community": 1,
+      "norm_label": "mission control dashboard (port 3001)"
+    },
+    {
+      "label": "OmniParse Document Parser (port 8001)",
+      "file_type": "code",
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "id": "omniparse",
+      "community": 1,
+      "norm_label": "omniparse document parser (port 8001)"
+    },
+    {
+      "label": "In Lakesh Alakin (Canon Closing)",
+      "file_type": "concept",
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "id": "canon_close",
+      "community": 9,
+      "norm_label": "in lakesh alakin (canon closing)"
+    },
+    {
+      "label": "The Forge (Claude)",
+      "file_type": "concept",
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "id": "council_the_forge",
+      "community": 10,
+      "norm_label": "the forge (claude)"
+    },
+    {
+      "label": "The Anvil (Claude Code)",
+      "file_type": "concept",
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "id": "council_the_anvil",
+      "community": 1,
+      "norm_label": "the anvil (claude code)"
+    },
+    {
+      "label": "The Sacred Smith (Claude Desktop + Hermes MCP)",
+      "file_type": "concept",
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "id": "council_sacred_smith",
+      "community": 7,
+      "norm_label": "the sacred smith (claude desktop + hermes mcp)"
+    },
+    {
+      "label": "The Deep Well (Gemini)",
+      "file_type": "concept",
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "id": "council_deep_well",
+      "community": 11,
+      "norm_label": "the deep well (gemini)"
+    },
+    {
+      "label": "The Architect (ChatGPT)",
+      "file_type": "concept",
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "id": "council_the_architect",
+      "community": 12,
+      "norm_label": "the architect (chatgpt)"
+    },
+    {
+      "label": "GR\u2206M\u2206 (Hermes Cipher Sage)",
+      "file_type": "concept",
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "id": "council_grama",
+      "community": 7,
+      "norm_label": "gr\u2206m\u2206 (hermes cipher sage)"
+    },
+    {
+      "label": "IRIS Agent",
+      "file_type": "code",
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "id": "agent_iris",
+      "community": 1,
+      "norm_label": "iris agent"
+    },
+    {
+      "label": "AURORA Agent",
+      "file_type": "code",
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "id": "agent_aurora",
+      "community": 8,
+      "norm_label": "aurora agent"
+    },
+    {
+      "label": "ELIAS Agent",
+      "file_type": "code",
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "id": "agent_elias",
+      "community": 13,
+      "norm_label": "elias agent"
+    },
+    {
+      "label": "ASHER Agent",
+      "file_type": "code",
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "id": "agent_asher",
+      "community": 14,
+      "norm_label": "asher agent"
+    },
+    {
+      "label": "Hermes Agent",
+      "file_type": "code",
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "id": "agent_hermes",
+      "community": 7,
+      "norm_label": "hermes agent"
+    },
+    {
+      "label": "Jeanie (Council Member)",
+      "file_type": "concept",
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "id": "jeanie_council",
+      "community": 1,
+      "norm_label": "jeanie (council member)"
+    },
+    {
+      "label": "Taylor \u2206\u2206\u2206O\u2206K3YTREE\u2206\u2206\u2206",
+      "file_type": "concept",
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "id": "taylor_creator",
+      "community": 1,
+      "norm_label": "taylor \u2206\u2206\u2206o\u2206k3ytree\u2206\u2206\u2206"
+    },
+    {
+      "label": "Game Layer (Board/Card Game)",
+      "file_type": "concept",
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "id": "game_layer",
+      "community": 2,
+      "norm_label": "game layer (board/card game)"
+    },
+    {
+      "label": "Sacred Path Tarot (78-card)",
+      "file_type": "concept",
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "id": "sacred_path_tarot",
+      "community": 2,
+      "norm_label": "sacred path tarot (78-card)"
+    },
+    {
+      "label": "Arcana Grid (4x3 Board, 9x9 Grid, Metatron's Node)",
+      "file_type": "concept",
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "id": "arcana_grid",
+      "community": 2,
+      "norm_label": "arcana grid (4x3 board, 9x9 grid, metatron's node)"
+    },
+    {
+      "label": "Silent Echo Gematria Engine",
+      "file_type": "concept",
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "id": "silent_echo",
+      "community": 2,
+      "norm_label": "silent echo gematria engine"
+    },
+    {
+      "label": "Nine Gates Progression System",
+      "file_type": "concept",
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "id": "nine_gates",
+      "community": 2,
+      "norm_label": "nine gates progression system"
+    },
+    {
+      "label": "The Serpent (Antagonist)",
+      "file_type": "concept",
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "id": "the_serpent",
+      "community": 2,
+      "norm_label": "the serpent (antagonist)"
+    },
+    {
+      "label": "Memory Motes (Knowledge Units)",
+      "file_type": "concept",
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "id": "memory_motes",
+      "community": 1,
+      "norm_label": "memory motes (knowledge units)"
+    },
+    {
+      "label": "Nameless Door (Trial of Silence)",
+      "file_type": "concept",
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "id": "nameless_door",
+      "community": 2,
+      "norm_label": "nameless door (trial of silence)"
+    },
+    {
+      "label": "Sacred Sigil Terminal v2.0",
+      "file_type": "code",
+      "source_file": "SACRED_SIGIL_TERMINAL_COMPLETE_OVERVIEW.md",
+      "id": "sacred_sigil_terminal",
+      "community": 4,
+      "norm_label": "sacred sigil terminal v2.0"
+    },
+    {
+      "label": "SacredSigilTerminal React Component",
+      "file_type": "code",
+      "source_file": "SACRED_SIGIL_TERMINAL_COMPLETE_OVERVIEW.md",
+      "id": "sst_react_component",
+      "community": 4,
+      "norm_label": "sacredsigilterminal react component"
+    },
+    {
+      "label": "sigil_terminal_backend FastAPI",
+      "file_type": "code",
+      "source_file": "SACRED_SIGIL_TERMINAL_COMPLETE_OVERVIEW.md",
+      "id": "sst_backend",
+      "community": 4,
+      "norm_label": "sigil_terminal_backend fastapi"
+    },
+    {
+      "label": "Nine Dimensions (VAULT, GROVE, FOREST, CODEX, MEMORY, AGENT, SOCIAL, MARKET, PATH)",
+      "file_type": "concept",
+      "source_file": "SACRED_SIGIL_TERMINAL_COMPLETE_OVERVIEW.md",
+      "id": "sst_nine_dimensions",
+      "community": 0,
+      "norm_label": "nine dimensions (vault, grove, forest, codex, memory, agent, social, market, path)"
+    },
+    {
+      "label": "Query Parser (Keyword-Based NLP)",
+      "file_type": "code",
+      "source_file": "SACRED_SIGIL_TERMINAL_COMPLETE_OVERVIEW.md",
+      "id": "sst_query_parser",
+      "community": 4,
+      "norm_label": "query parser (keyword-based nlp)"
+    },
+    {
+      "label": "Weaver Engine (Spell Execution)",
+      "file_type": "code",
+      "source_file": "SACRED_SIGIL_TERMINAL_COMPLETE_OVERVIEW.md",
+      "id": "sst_weaver_engine",
+      "community": 2,
+      "norm_label": "weaver engine (spell execution)"
+    },
+    {
+      "label": "PWA (Service Worker + Manifest)",
+      "file_type": "code",
+      "source_file": "SACRED_SIGIL_TERMINAL_QUICK_START.md",
+      "id": "sst_pwa",
+      "community": 4,
+      "norm_label": "pwa (service worker + manifest)"
+    },
+    {
+      "label": "Chrome Extension (v3)",
+      "file_type": "code",
+      "source_file": "SACRED_SIGIL_TERMINAL_QUICK_START.md",
+      "id": "sst_chrome_extension",
+      "community": 4,
+      "norm_label": "chrome extension (v3)"
+    },
+    {
+      "label": "Cmd+K Keyboard Shortcut",
+      "file_type": "code",
+      "source_file": "SACRED_SIGIL_TERMINAL_COMPLETE_OVERVIEW.md",
+      "id": "sst_cmdk",
+      "community": 4,
+      "norm_label": "cmd+k keyboard shortcut"
+    },
+    {
+      "label": "Dimension: VAULT (Obsidian)",
+      "file_type": "code",
+      "source_file": "SACRED_SIGIL_TERMINAL_COMPLETE_OVERVIEW.md",
+      "id": "sst_dimension_vault",
+      "community": 0,
+      "norm_label": "dimension: vault (obsidian)"
+    },
+    {
+      "label": "Dimension: GROVE (Council)",
+      "file_type": "code",
+      "source_file": "SACRED_SIGIL_TERMINAL_COMPLETE_OVERVIEW.md",
+      "id": "sst_dimension_grove",
+      "community": 6,
+      "norm_label": "dimension: grove (council)"
+    },
+    {
+      "label": "Dimension: FOREST (Neural)",
+      "file_type": "code",
+      "source_file": "SACRED_SIGIL_TERMINAL_COMPLETE_OVERVIEW.md",
+      "id": "sst_dimension_forest",
+      "community": 6,
+      "norm_label": "dimension: forest (neural)"
+    },
+    {
+      "label": "Dimension: CODEX (Sacred)",
+      "file_type": "code",
+      "source_file": "SACRED_SIGIL_TERMINAL_COMPLETE_OVERVIEW.md",
+      "id": "sst_dimension_codex",
+      "community": 0,
+      "norm_label": "dimension: codex (sacred)"
+    },
+    {
+      "label": "Dimension: MEMORY (Engine)",
+      "file_type": "code",
+      "source_file": "SACRED_SIGIL_TERMINAL_COMPLETE_OVERVIEW.md",
+      "id": "sst_dimension_memory",
+      "community": 1,
+      "norm_label": "dimension: memory (engine)"
+    },
+    {
+      "label": "Dimension: AGENT (Spells)",
+      "file_type": "code",
+      "source_file": "SACRED_SIGIL_TERMINAL_COMPLETE_OVERVIEW.md",
+      "id": "sst_dimension_agent",
+      "community": 0,
+      "norm_label": "dimension: agent (spells)"
+    },
+    {
+      "label": "Dimension: SOCIAL (Mothership)",
+      "file_type": "code",
+      "source_file": "SACRED_SIGIL_TERMINAL_COMPLETE_OVERVIEW.md",
+      "id": "sst_dimension_social",
+      "community": 0,
+      "norm_label": "dimension: social (mothership)"
+    },
+    {
+      "label": "Dimension: MARKET (Sacred)",
+      "file_type": "code",
+      "source_file": "SACRED_SIGIL_TERMINAL_COMPLETE_OVERVIEW.md",
+      "id": "sst_dimension_market",
+      "community": 0,
+      "norm_label": "dimension: market (sacred)"
+    },
+    {
+      "label": "Dimension: PATH (Learning)",
+      "file_type": "code",
+      "source_file": "SACRED_SIGIL_TERMINAL_COMPLETE_OVERVIEW.md",
+      "id": "sst_dimension_path",
+      "community": 0,
+      "norm_label": "dimension: path (learning)"
+    },
+    {
+      "label": "CopyQ Clipboard Integration",
+      "file_type": "code",
+      "source_file": "COPYQ_WIRE.md",
+      "id": "copyq_integration",
+      "community": 8,
+      "norm_label": "copyq clipboard integration"
+    },
+    {
+      "label": "copyq_bridge.py",
+      "file_type": "code",
+      "source_file": "COPYQ_WIRE.md",
+      "id": "copyq_bridge",
+      "community": 15,
+      "norm_label": "copyq_bridge.py"
+    },
+    {
+      "label": "copyq_routes.py",
+      "file_type": "code",
+      "source_file": "COPYQ_WIRE.md",
+      "id": "copyq_routes",
+      "community": 4,
+      "norm_label": "copyq_routes.py"
+    },
+    {
+      "label": "CopyQ Tab System (FORGE, CODEX, VAULT, COUNCIL, MARKET, LEARNING, MEMORY, INBOX)",
+      "file_type": "code",
+      "source_file": "COPYQ_WIRE.md",
+      "id": "copyq_tabs",
+      "community": 0,
+      "norm_label": "copyq tab system (forge, codex, vault, council, market, learning, memory, inbox)"
+    },
+    {
+      "label": "Tab: FORGE (Active Session)",
+      "file_type": "code",
+      "source_file": "COPYQ_WIRE.md",
+      "id": "copyq_tab_forge",
+      "community": 0,
+      "norm_label": "tab: forge (active session)"
+    },
+    {
+      "label": "Tab: CODEX (Canon/Spells)",
+      "file_type": "code",
+      "source_file": "COPYQ_WIRE.md",
+      "id": "copyq_tab_codex",
+      "community": 0,
+      "norm_label": "tab: codex (canon/spells)"
+    },
+    {
+      "label": "Tab: VAULT (Obsidian Clips)",
+      "file_type": "code",
+      "source_file": "COPYQ_WIRE.md",
+      "id": "copyq_tab_vault",
+      "community": 0,
+      "norm_label": "tab: vault (obsidian clips)"
+    },
+    {
+      "label": "Tab: COUNCIL (AI Outputs)",
+      "file_type": "code",
+      "source_file": "COPYQ_WIRE.md",
+      "id": "copyq_tab_council",
+      "community": 6,
+      "norm_label": "tab: council (ai outputs)"
+    },
+    {
+      "label": "Tab: MARKET (Social/Listings)",
+      "file_type": "code",
+      "source_file": "COPYQ_WIRE.md",
+      "id": "copyq_tab_market",
+      "community": 0,
+      "norm_label": "tab: market (social/listings)"
+    },
+    {
+      "label": "Tab: LEARNING (Study Notes)",
+      "file_type": "code",
+      "source_file": "COPYQ_WIRE.md",
+      "id": "copyq_tab_learning",
+      "community": 0,
+      "norm_label": "tab: learning (study notes)"
+    },
+    {
+      "label": "Tab: MEMORY (Mote Candidates)",
+      "file_type": "code",
+      "source_file": "COPYQ_WIRE.md",
+      "id": "copyq_tab_memory",
+      "community": 0,
+      "norm_label": "tab: memory (mote candidates)"
+    },
+    {
+      "label": "Tab: INBOX (Raw Catch-All)",
+      "file_type": "code",
+      "source_file": "COPYQ_WIRE.md",
+      "id": "copyq_tab_inbox",
+      "community": 0,
+      "norm_label": "tab: inbox (raw catch-all)"
+    },
+    {
+      "label": "Supabase Schema (Players, Tarot, Spells, Artifacts)",
+      "file_type": "code",
+      "source_file": "supabase_schema.sql",
+      "id": "supabase_schema",
+      "community": 2,
+      "norm_label": "supabase schema (players, tarot, spells, artifacts)"
+    },
+    {
+      "label": "players table",
+      "file_type": "code",
+      "source_file": "supabase_schema.sql",
+      "id": "supabase_players",
+      "community": 2,
+      "norm_label": "players table"
+    },
+    {
+      "label": "tarot_draws table",
+      "file_type": "code",
+      "source_file": "supabase_schema.sql",
+      "id": "supabase_tarot_draws",
+      "community": 2,
+      "norm_label": "tarot_draws table"
+    },
+    {
+      "label": "spell_casts table",
+      "file_type": "code",
+      "source_file": "supabase_schema.sql",
+      "id": "supabase_spell_casts",
+      "community": 2,
+      "norm_label": "spell_casts table"
+    },
+    {
+      "label": "node_visits table",
+      "file_type": "code",
+      "source_file": "supabase_schema.sql",
+      "id": "supabase_node_visits",
+      "community": 2,
+      "norm_label": "node_visits table"
+    },
+    {
+      "label": "artifacts table (Sacred Bazaar)",
+      "file_type": "code",
+      "source_file": "supabase_schema.sql",
+      "id": "supabase_artifacts",
+      "community": 2,
+      "norm_label": "artifacts table (sacred bazaar)"
+    },
+    {
+      "label": "leaderboard view",
+      "file_type": "code",
+      "source_file": "supabase_schema.sql",
+      "id": "supabase_leaderboard",
+      "community": 2,
+      "norm_label": "leaderboard view"
+    },
+    {
+      "label": "Row Level Security Policies",
+      "file_type": "code",
+      "source_file": "supabase_schema.sql",
+      "id": "supabase_row_security",
+      "community": 2,
+      "norm_label": "row level security policies"
+    },
+    {
+      "label": "ChromaDB Ingestion Pipeline (ingest_game_system.py)",
+      "file_type": "code",
+      "source_file": "ingest_game_system.py",
+      "id": "chroma_ingestion",
+      "community": 1,
+      "norm_label": "chromadb ingestion pipeline (ingest_game_system.py)"
+    },
+    {
+      "label": "Markdown Section Chunking Strategy",
+      "file_type": "code",
+      "source_file": "ingest_game_system.py",
+      "id": "chroma_chunking",
+      "community": 1,
+      "norm_label": "markdown section chunking strategy"
+    },
+    {
+      "label": "YAML Frontmatter Parser",
+      "file_type": "code",
+      "source_file": "ingest_game_system.py",
+      "id": "chroma_frontmatter",
+      "community": 1,
+      "norm_label": "yaml frontmatter parser"
+    },
+    {
+      "label": "sacredspace_canon ChromaDB Collection",
+      "file_type": "code",
+      "source_file": "ingest_game_system.py",
+      "id": "sacredspace_canon_collection",
+      "community": 1,
+      "norm_label": "sacredspace_canon chromadb collection"
+    },
+    {
+      "label": "NotebookLM Canon Migration (prep_notebooklm.py)",
+      "file_type": "code",
+      "source_file": "scripts/prep_notebooklm.py",
+      "id": "notebooklm_migration",
+      "community": 5,
+      "norm_label": "notebooklm canon migration (prep_notebooklm.py)"
+    },
+    {
+      "label": "NOTEBOOKLM_STAGING Directory",
+      "file_type": "code",
+      "source_file": "scripts/prep_notebooklm.py",
+      "id": "notebooklm_staging",
+      "community": 5,
+      "norm_label": "notebooklm_staging directory"
+    },
+    {
+      "label": "Notebook Routing Rules (6 notebooks)",
+      "file_type": "code",
+      "source_file": "scripts/prep_notebooklm.py",
+      "id": "notebooklm_routing",
+      "community": 5,
+      "norm_label": "notebook routing rules (6 notebooks)"
+    },
+    {
+      "label": "Notebook: 01_SACRED_CORE",
+      "file_type": "code",
+      "source_file": "scripts/prep_notebooklm.py",
+      "id": "notebook_01_sacred_core",
+      "community": 5,
+      "norm_label": "notebook: 01_sacred_core"
+    },
+    {
+      "label": "Notebook: 02_LORE_VAULT",
+      "file_type": "code",
+      "source_file": "scripts/prep_notebooklm.py",
+      "id": "notebook_02_lore_vault",
+      "community": 5,
+      "norm_label": "notebook: 02_lore_vault"
+    },
+    {
+      "label": "Notebook: 03_GAME_SYSTEMS",
+      "file_type": "code",
+      "source_file": "scripts/prep_notebooklm.py",
+      "id": "notebook_03_game_systems",
+      "community": 5,
+      "norm_label": "notebook: 03_game_systems"
+    },
+    {
+      "label": "Notebook: 04_KNOWLEDGE_VAULT",
+      "file_type": "code",
+      "source_file": "scripts/prep_notebooklm.py",
+      "id": "notebook_04_knowledge_vault",
+      "community": 5,
+      "norm_label": "notebook: 04_knowledge_vault"
+    },
+    {
+      "label": "Notebook: 05_FAMILY_LEGACY",
+      "file_type": "code",
+      "source_file": "scripts/prep_notebooklm.py",
+      "id": "notebook_05_family_legacy",
+      "community": 5,
+      "norm_label": "notebook: 05_family_legacy"
+    },
+    {
+      "label": "Notebook: 06_CREATION_LAB",
+      "file_type": "code",
+      "source_file": "scripts/prep_notebooklm.py",
+      "id": "notebook_06_creation_lab",
+      "community": 5,
+      "norm_label": "notebook: 06_creation_lab"
+    },
+    {
+      "label": "SACRED_FLASH_SCAFFOLD.ps1",
+      "file_type": "code",
+      "source_file": "scripts/SACRED_FLASH_SCAFFOLD.ps1",
+      "id": "flash_drive_scaffold",
+      "community": 3,
+      "norm_label": "sacred_flash_scaffold.ps1"
+    },
+    {
+      "label": "SACRED_FLASH_POPULATE.ps1",
+      "file_type": "code",
+      "source_file": "scripts/SACRED_FLASH_POPULATE.ps1",
+      "id": "flash_drive_populate",
+      "community": 3,
+      "norm_label": "sacred_flash_populate.ps1"
+    },
+    {
+      "label": "SACRED_BACKUP_TO_FLASH.ps1",
+      "file_type": "code",
+      "source_file": "scripts/SACRED_BACKUP_TO_FLASH.ps1",
+      "id": "flash_drive_backup",
+      "community": 3,
+      "norm_label": "sacred_backup_to_flash.ps1"
+    },
+    {
+      "label": "SACRED_ARCANA_POPULATE.ps1",
+      "file_type": "code",
+      "source_file": "scripts/SACRED_ARCANA_POPULATE.ps1",
+      "id": "flash_arcana_populate",
+      "community": 3,
+      "norm_label": "sacred_arcana_populate.ps1"
+    },
+    {
+      "label": "SACRED_LINK_CHECK.ps1",
+      "file_type": "code",
+      "source_file": "scripts/SACRED_LINK_CHECK.ps1",
+      "id": "flash_link_check",
+      "community": 3,
+      "norm_label": "sacred_link_check.ps1"
+    },
+    {
+      "label": "Communal Portal (PORTAL/)",
+      "file_type": "concept",
+      "source_file": "scripts/SACRED_FLASH_POPULATE.ps1",
+      "id": "flash_communal_portal",
+      "community": 3,
+      "norm_label": "communal portal (portal/)"
+    },
+    {
+      "label": "SHARED_SPACE (Taylor x Jeanie)",
+      "file_type": "concept",
+      "source_file": "scripts/SACRED_FLASH_SCAFFOLD.ps1",
+      "id": "flash_shared_space",
+      "community": 3,
+      "norm_label": "shared_space (taylor x jeanie)"
+    },
+    {
+      "label": "ARCANA_LANDSCAPES Art Asset Directory",
+      "file_type": "concept",
+      "source_file": "scripts/SACRED_ARCANA_POPULATE.ps1",
+      "id": "flash_arcana_landscapes",
+      "community": 3,
+      "norm_label": "arcana_landscapes art asset directory"
+    },
+    {
+      "label": "SACRED_ENV.env Configuration",
+      "file_type": "code",
+      "source_file": "scripts/SACRED_FLASH_SCAFFOLD.ps1",
+      "id": "flash_sacred_env",
+      "community": 3,
+      "norm_label": "sacred_env.env configuration"
+    },
+    {
+      "label": "Nine-Pillar Directory Tree on Flash Drive",
+      "file_type": "concept",
+      "source_file": "scripts/SACRED_FLASH_SCAFFOLD.ps1",
+      "id": "flash_nine_pillar_tree",
+      "community": 3,
+      "norm_label": "nine-pillar directory tree on flash drive"
+    },
+    {
+      "label": "Asset Prefix Mapping (SIG_, CHAR_, ENV_, etc)",
+      "file_type": "code",
+      "source_file": "scripts/SACRED_ARCANA_POPULATE.ps1",
+      "id": "flash_asset_prefix_map",
+      "community": 3,
+      "norm_label": "asset prefix mapping (sig_, char_, env_, etc)"
+    },
+    {
+      "label": "Flash Drive Link Health Check Protocol",
+      "file_type": "code",
+      "source_file": "scripts/SACRED_LINK_CHECK.ps1",
+      "id": "flash_link_health",
+      "community": 3,
+      "norm_label": "flash drive link health check protocol"
+    }
+  ],
+  "links": [
+    {
+      "relation": "composed_of",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "source": "sacredspace_os",
+      "target": "system_nine_pillars"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "source": "sacredspace_os",
+      "target": "local_first_architecture"
+    },
+    {
+      "relation": "runs_on",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "source": "sacredspace_os",
+      "target": "wsl2_ubuntu"
+    },
+    {
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "source": "sacredspace_os",
+      "target": "fastapi_spine"
+    },
+    {
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "source": "sacredspace_os",
+      "target": "ollama_llm"
+    },
+    {
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "source": "sacredspace_os",
+      "target": "chromadb_vector"
+    },
+    {
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "source": "sacredspace_os",
+      "target": "sqlite_memory"
+    },
+    {
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "source": "sacredspace_os",
+      "target": "mission_control"
+    },
+    {
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "source": "sacredspace_os",
+      "target": "omniparse"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "source": "sacredspace_os",
+      "target": "jeanie_council"
+    },
+    {
+      "relation": "created_by",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "source": "sacredspace_os",
+      "target": "taylor_creator"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "source": "sacredspace_os",
+      "target": "game_layer"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "source": "system_nine_pillars",
+      "target": "pillar_01_obsidian_vaults"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "source": "system_nine_pillars",
+      "target": "pillar_02_council_grove"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "source": "system_nine_pillars",
+      "target": "pillar_03_neural_forest"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "source": "system_nine_pillars",
+      "target": "pillar_04_sacred_codex"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "source": "system_nine_pillars",
+      "target": "pillar_05_memory_engine"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "source": "system_nine_pillars",
+      "target": "pillar_06_agent_layer"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "source": "system_nine_pillars",
+      "target": "pillar_07_social_mothership"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "source": "system_nine_pillars",
+      "target": "pillar_08_learning_path"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "source": "system_nine_pillars",
+      "target": "pillar_09_sacred_market"
+    },
+    {
+      "relation": "mirrors",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACRED_SIGIL_TERMINAL_COMPLETE_OVERVIEW.md",
+      "source": "sacred_sigil_terminal",
+      "target": "system_nine_pillars"
+    },
+    {
+      "relation": "mirrors",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/SACRED_FLASH_SCAFFOLD.ps1",
+      "source": "flash_nine_pillar_tree",
+      "target": "system_nine_pillars"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACRED_SIGIL_TERMINAL_COMPLETE_OVERVIEW.md",
+      "source": "sst_dimension_vault",
+      "target": "pillar_01_obsidian_vaults"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "COPYQ_WIRE.md",
+      "source": "copyq_tab_vault",
+      "target": "pillar_01_obsidian_vaults"
+    },
+    {
+      "relation": "reads_from",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ingest_game_system.py",
+      "source": "chroma_ingestion",
+      "target": "pillar_01_obsidian_vaults"
+    },
+    {
+      "relation": "reads_from",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/prep_notebooklm.py",
+      "source": "notebooklm_migration",
+      "target": "pillar_01_obsidian_vaults"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACRED_SIGIL_TERMINAL_COMPLETE_OVERVIEW.md",
+      "source": "sst_dimension_grove",
+      "target": "pillar_02_council_grove"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "COPYQ_WIRE.md",
+      "source": "copyq_tab_council",
+      "target": "pillar_02_council_grove"
+    },
+    {
+      "relation": "hosts",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "source": "pillar_03_neural_forest",
+      "target": "ollama_llm"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACRED_SIGIL_TERMINAL_COMPLETE_OVERVIEW.md",
+      "source": "sst_dimension_forest",
+      "target": "pillar_03_neural_forest"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "COPYQ_WIRE.md",
+      "source": "copyq_tab_council",
+      "target": "pillar_03_neural_forest"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACRED_SIGIL_TERMINAL_COMPLETE_OVERVIEW.md",
+      "source": "sst_dimension_codex",
+      "target": "pillar_04_sacred_codex"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "COPYQ_WIRE.md",
+      "source": "copyq_tab_codex",
+      "target": "pillar_04_sacred_codex"
+    },
+    {
+      "relation": "reads_from",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/prep_notebooklm.py",
+      "source": "notebooklm_migration",
+      "target": "pillar_04_sacred_codex"
+    },
+    {
+      "relation": "hosts",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "source": "pillar_05_memory_engine",
+      "target": "chromadb_vector"
+    },
+    {
+      "relation": "hosts",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "source": "pillar_05_memory_engine",
+      "target": "sqlite_memory"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "source": "memory_motes",
+      "target": "pillar_05_memory_engine"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACRED_SIGIL_TERMINAL_COMPLETE_OVERVIEW.md",
+      "source": "sst_dimension_memory",
+      "target": "pillar_05_memory_engine"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "COPYQ_WIRE.md",
+      "source": "copyq_tab_memory",
+      "target": "pillar_05_memory_engine"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACRED_SIGIL_TERMINAL_COMPLETE_OVERVIEW.md",
+      "source": "sst_dimension_agent",
+      "target": "pillar_06_agent_layer"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "COPYQ_WIRE.md",
+      "source": "copyq_tab_vault",
+      "target": "pillar_06_agent_layer"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACRED_SIGIL_TERMINAL_COMPLETE_OVERVIEW.md",
+      "source": "sst_dimension_social",
+      "target": "pillar_07_social_mothership"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "COPYQ_WIRE.md",
+      "source": "copyq_tab_market",
+      "target": "pillar_07_social_mothership"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACRED_SIGIL_TERMINAL_COMPLETE_OVERVIEW.md",
+      "source": "sst_dimension_path",
+      "target": "pillar_08_learning_path"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACRED_SIGIL_TERMINAL_COMPLETE_OVERVIEW.md",
+      "source": "sst_dimension_market",
+      "target": "pillar_09_sacred_market"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "COPYQ_WIRE.md",
+      "source": "copyq_tab_market",
+      "target": "pillar_09_sacred_market"
+    },
+    {
+      "relation": "hosts",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACRED_SIGIL_TERMINAL_COMPLETE_OVERVIEW.md",
+      "source": "fastapi_spine",
+      "target": "sst_backend"
+    },
+    {
+      "relation": "hosts",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "COPYQ_WIRE.md",
+      "source": "fastapi_spine",
+      "target": "copyq_routes"
+    },
+    {
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ingest_game_system.py",
+      "source": "chroma_ingestion",
+      "target": "chromadb_vector"
+    },
+    {
+      "relation": "manages",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "source": "council_the_anvil",
+      "target": "agent_iris"
+    },
+    {
+      "relation": "manages",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "source": "council_sacred_smith",
+      "target": "agent_hermes"
+    },
+    {
+      "relation": "is_identity_of",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "source": "council_grama",
+      "target": "agent_hermes"
+    },
+    {
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ingest_game_system.py",
+      "source": "chroma_ingestion",
+      "target": "agent_iris"
+    },
+    {
+      "relation": "manages",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "COPYQ_WIRE.md",
+      "source": "agent_aurora",
+      "target": "copyq_integration"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "source": "game_layer",
+      "target": "sacred_path_tarot"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "source": "game_layer",
+      "target": "arcana_grid"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "source": "game_layer",
+      "target": "silent_echo"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "source": "game_layer",
+      "target": "nine_gates"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "source": "game_layer",
+      "target": "the_serpent"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "source": "game_layer",
+      "target": "memory_motes"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "source": "game_layer",
+      "target": "nameless_door"
+    },
+    {
+      "relation": "persists",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "supabase_schema.sql",
+      "source": "supabase_schema",
+      "target": "game_layer"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "SACRED_SIGIL_TERMINAL_COMPLETE_OVERVIEW.md",
+      "source": "sst_weaver_engine",
+      "target": "game_layer"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "supabase_schema.sql",
+      "source": "sacred_path_tarot",
+      "target": "supabase_tarot_draws"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACRED_SIGIL_TERMINAL_COMPLETE_OVERVIEW.md",
+      "source": "sacred_sigil_terminal",
+      "target": "sst_react_component"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACRED_SIGIL_TERMINAL_COMPLETE_OVERVIEW.md",
+      "source": "sacred_sigil_terminal",
+      "target": "sst_backend"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACRED_SIGIL_TERMINAL_COMPLETE_OVERVIEW.md",
+      "source": "sacred_sigil_terminal",
+      "target": "sst_nine_dimensions"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACRED_SIGIL_TERMINAL_COMPLETE_OVERVIEW.md",
+      "source": "sacred_sigil_terminal",
+      "target": "sst_query_parser"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACRED_SIGIL_TERMINAL_COMPLETE_OVERVIEW.md",
+      "source": "sacred_sigil_terminal",
+      "target": "sst_weaver_engine"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACRED_SIGIL_TERMINAL_QUICK_START.md",
+      "source": "sacred_sigil_terminal",
+      "target": "sst_pwa"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACRED_SIGIL_TERMINAL_QUICK_START.md",
+      "source": "sacred_sigil_terminal",
+      "target": "sst_chrome_extension"
+    },
+    {
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACRED_SIGIL_TERMINAL_COMPLETE_OVERVIEW.md",
+      "source": "sacred_sigil_terminal",
+      "target": "sst_cmdk"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACRED_SIGIL_TERMINAL_COMPLETE_OVERVIEW.md",
+      "source": "sst_nine_dimensions",
+      "target": "sst_dimension_vault"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACRED_SIGIL_TERMINAL_COMPLETE_OVERVIEW.md",
+      "source": "sst_nine_dimensions",
+      "target": "sst_dimension_grove"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACRED_SIGIL_TERMINAL_COMPLETE_OVERVIEW.md",
+      "source": "sst_nine_dimensions",
+      "target": "sst_dimension_forest"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACRED_SIGIL_TERMINAL_COMPLETE_OVERVIEW.md",
+      "source": "sst_nine_dimensions",
+      "target": "sst_dimension_codex"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACRED_SIGIL_TERMINAL_COMPLETE_OVERVIEW.md",
+      "source": "sst_nine_dimensions",
+      "target": "sst_dimension_memory"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACRED_SIGIL_TERMINAL_COMPLETE_OVERVIEW.md",
+      "source": "sst_nine_dimensions",
+      "target": "sst_dimension_agent"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACRED_SIGIL_TERMINAL_COMPLETE_OVERVIEW.md",
+      "source": "sst_nine_dimensions",
+      "target": "sst_dimension_social"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACRED_SIGIL_TERMINAL_COMPLETE_OVERVIEW.md",
+      "source": "sst_nine_dimensions",
+      "target": "sst_dimension_market"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACRED_SIGIL_TERMINAL_COMPLETE_OVERVIEW.md",
+      "source": "sst_nine_dimensions",
+      "target": "sst_dimension_path"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "COPYQ_WIRE.md",
+      "source": "copyq_tabs",
+      "target": "sst_nine_dimensions"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "supabase_schema.sql",
+      "source": "sst_weaver_engine",
+      "target": "supabase_spell_casts"
+    },
+    {
+      "relation": "belongs_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACRED_SIGIL_TERMINAL_COMPLETE_OVERVIEW.md",
+      "source": "sst_weaver_engine",
+      "target": "sst_dimension_agent"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "COPYQ_WIRE.md",
+      "source": "copyq_tabs",
+      "target": "copyq_tab_forge"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "COPYQ_WIRE.md",
+      "source": "copyq_tabs",
+      "target": "copyq_tab_codex"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "COPYQ_WIRE.md",
+      "source": "copyq_tabs",
+      "target": "copyq_tab_vault"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "COPYQ_WIRE.md",
+      "source": "copyq_tabs",
+      "target": "copyq_tab_council"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "COPYQ_WIRE.md",
+      "source": "copyq_tabs",
+      "target": "copyq_tab_market"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "COPYQ_WIRE.md",
+      "source": "copyq_tabs",
+      "target": "copyq_tab_learning"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "COPYQ_WIRE.md",
+      "source": "copyq_tabs",
+      "target": "copyq_tab_memory"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "COPYQ_WIRE.md",
+      "source": "copyq_tabs",
+      "target": "copyq_tab_inbox"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "supabase_schema.sql",
+      "source": "supabase_schema",
+      "target": "supabase_players"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "supabase_schema.sql",
+      "source": "supabase_schema",
+      "target": "supabase_tarot_draws"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "supabase_schema.sql",
+      "source": "supabase_schema",
+      "target": "supabase_spell_casts"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "supabase_schema.sql",
+      "source": "supabase_schema",
+      "target": "supabase_node_visits"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "supabase_schema.sql",
+      "source": "supabase_schema",
+      "target": "supabase_artifacts"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "supabase_schema.sql",
+      "source": "supabase_schema",
+      "target": "supabase_leaderboard"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "supabase_schema.sql",
+      "source": "supabase_schema",
+      "target": "supabase_row_security"
+    },
+    {
+      "relation": "writes_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ingest_game_system.py",
+      "source": "chroma_ingestion",
+      "target": "sacredspace_canon_collection"
+    },
+    {
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ingest_game_system.py",
+      "source": "chroma_ingestion",
+      "target": "chroma_chunking"
+    },
+    {
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ingest_game_system.py",
+      "source": "chroma_ingestion",
+      "target": "chroma_frontmatter"
+    },
+    {
+      "relation": "writes_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/prep_notebooklm.py",
+      "source": "notebooklm_migration",
+      "target": "notebooklm_staging"
+    },
+    {
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/prep_notebooklm.py",
+      "source": "notebooklm_migration",
+      "target": "notebooklm_routing"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/prep_notebooklm.py",
+      "source": "notebooklm_routing",
+      "target": "notebook_01_sacred_core"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/prep_notebooklm.py",
+      "source": "notebooklm_routing",
+      "target": "notebook_02_lore_vault"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/prep_notebooklm.py",
+      "source": "notebooklm_routing",
+      "target": "notebook_03_game_systems"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/prep_notebooklm.py",
+      "source": "notebooklm_routing",
+      "target": "notebook_04_knowledge_vault"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/prep_notebooklm.py",
+      "source": "notebooklm_routing",
+      "target": "notebook_05_family_legacy"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/prep_notebooklm.py",
+      "source": "notebooklm_routing",
+      "target": "notebook_06_creation_lab"
+    },
+    {
+      "relation": "creates",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/SACRED_FLASH_SCAFFOLD.ps1",
+      "source": "flash_drive_scaffold",
+      "target": "flash_nine_pillar_tree"
+    },
+    {
+      "relation": "writes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/SACRED_FLASH_SCAFFOLD.ps1",
+      "source": "flash_drive_scaffold",
+      "target": "flash_sacred_env"
+    },
+    {
+      "relation": "creates",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/SACRED_FLASH_SCAFFOLD.ps1",
+      "source": "flash_drive_scaffold",
+      "target": "flash_shared_space"
+    },
+    {
+      "relation": "creates",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/SACRED_FLASH_SCAFFOLD.ps1",
+      "source": "flash_drive_scaffold",
+      "target": "flash_arcana_landscapes"
+    },
+    {
+      "relation": "copies",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/SACRED_FLASH_POPULATE.ps1",
+      "source": "flash_drive_populate",
+      "target": "flash_communal_portal"
+    },
+    {
+      "relation": "populates",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/SACRED_FLASH_POPULATE.ps1",
+      "source": "flash_drive_populate",
+      "target": "flash_shared_space"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/SACRED_FLASH_POPULATE.ps1",
+      "source": "flash_drive_populate",
+      "target": "flash_arcana_populate"
+    },
+    {
+      "relation": "backs_up",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/SACRED_BACKUP_TO_FLASH.ps1",
+      "source": "flash_drive_backup",
+      "target": "flash_nine_pillar_tree"
+    },
+    {
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/SACRED_ARCANA_POPULATE.ps1",
+      "source": "flash_arcana_populate",
+      "target": "flash_asset_prefix_map"
+    },
+    {
+      "relation": "populates",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/SACRED_ARCANA_POPULATE.ps1",
+      "source": "flash_arcana_populate",
+      "target": "flash_arcana_landscapes"
+    },
+    {
+      "relation": "verifies",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/SACRED_LINK_CHECK.ps1",
+      "source": "flash_link_check",
+      "target": "flash_nine_pillar_tree"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/SACRED_LINK_CHECK.ps1",
+      "source": "flash_link_check",
+      "target": "flash_link_health"
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "sacred_council_system",
+      "label": "The Sacred Council (AI Seats)",
+      "nodes": [
+        "council_the_forge",
+        "council_the_anvil",
+        "council_sacred_smith",
+        "council_deep_well",
+        "council_the_architect",
+        "council_grama"
+      ],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACREDSPACE_OS_BRIEFING.md"
+    },
+    {
+      "id": "agent_layer_agents",
+      "label": "Agent Layer Implementation Agents",
+      "nodes": [
+        "agent_iris",
+        "agent_aurora",
+        "agent_elias",
+        "agent_asher",
+        "agent_hermes"
+      ],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACREDSPACE_OS_BRIEFING.md"
+    },
+    {
+      "id": "sst_frontend_stack",
+      "label": "Sacred Sigil Terminal Frontend",
+      "nodes": [
+        "sst_react_component",
+        "sst_pwa",
+        "sst_chrome_extension",
+        "sst_cmdk"
+      ],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACRED_SIGIL_TERMINAL_COMPLETE_OVERVIEW.md"
+    },
+    {
+      "id": "game_layer_components",
+      "label": "Game Layer Core Mechanics",
+      "nodes": [
+        "sacred_path_tarot",
+        "arcana_grid",
+        "silent_echo",
+        "nine_gates",
+        "the_serpent",
+        "memory_motes",
+        "nameless_door"
+      ],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACREDSPACE_OS_BRIEFING.md"
+    },
+    {
+      "id": "flash_drive_protocol",
+      "label": "Flash Drive Infrastructure Protocol",
+      "nodes": [
+        "flash_drive_scaffold",
+        "flash_drive_populate",
+        "flash_drive_backup",
+        "flash_arcana_populate",
+        "flash_link_check"
+      ],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/SACRED_FLASH_SCAFFOLD.ps1"
+    },
+    {
+      "id": "data_persistence_layer",
+      "label": "Data Persistence Layer",
+      "nodes": [
+        "supabase_schema",
+        "chromadb_vector",
+        "sqlite_memory",
+        "sacredspace_canon_collection",
+        "chroma_ingestion"
+      ],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "supabase_schema.sql"
+    },
+    {
+      "id": "copyq_pillar_tabs",
+      "label": "CopyQ Pillar-Mapped Tab System",
+      "nodes": [
+        "copyq_tab_forge",
+        "copyq_tab_codex",
+        "copyq_tab_vault",
+        "copyq_tab_council",
+        "copyq_tab_market",
+        "copyq_tab_learning",
+        "copyq_tab_memory",
+        "copyq_tab_inbox"
+      ],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "COPYQ_WIRE.md"
+    }
+  ],
+  "built_at_commit": "6c828d0675a6abed6f11fce52c85e153c2447349"
+}

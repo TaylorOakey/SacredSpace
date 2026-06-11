@@ -1,0 +1,500 @@
+/* ∆ SACRED SIGIL TERMINAL v2.0 ∆
+   CSS Styling for cross-platform terminal interface
+   Works on: Desktop (Cmd+K modal), Mobile (PWA), Embedded (iframe)
+*/
+
+:root {
+  --sigil-primary: #8B5A8F;      /* Purple - Core magic */
+  --sigil-dark: #1a1a2e;         /* Deep dark - Night sky */
+  --sigil-light: #f5f5f5;        /* Light text */
+  --sigil-accent: #00d4ff;       /* Cyan - Active state */
+  --sigil-shadow: rgba(0, 0, 0, 0.5);
+  
+  /* Dimension colors */
+  --dim-vault: #8B5A8F;
+  --dim-grove: #2D5016;
+  --dim-forest: #3A5C3A;
+  --dim-codex: #8B7355;
+  --dim-memory: #5A5A8F;
+  --dim-agent: #8F5A5A;
+  --dim-social: #5A8F8F;
+  --dim-market: #8F8F5A;
+  --dim-path: #5A8F5A;
+  
+  --font-mono: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  --font-sans: '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', sans-serif;
+}
+
+/* ∆ BASE STYLES */
+* {
+  box-sizing: border-box;
+}
+
+.sigil-terminal {
+  font-family: var(--font-sans);
+  color: var(--sigil-light);
+  background: var(--sigil-dark);
+}
+
+/* ∆ TRIGGER BUTTON (Always visible when terminal is closed) */
+.sigil-trigger-button {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--sigil-primary) 0%, #6B3A6F 100%);
+  border: 2px solid var(--sigil-accent);
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 4px 20px var(--sigil-shadow);
+  transition: all 0.3s ease;
+  z-index: 999;
+}
+
+.sigil-trigger-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 30px rgba(139, 90, 143, 0.6);
+}
+
+.sigil-trigger-button:active {
+  transform: scale(0.95);
+}
+
+/* ∆ DESKTOP: MODAL OVERLAY */
+.sigil-terminal.desktop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10000;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 100px;
+}
+
+.sigil-backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(4px);
+  animation: fadeIn 0.2s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.sigil-container {
+  position: relative;
+  z-index: 10001;
+  width: 90%;
+  max-width: 600px;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  border: 1px solid rgba(139, 90, 143, 0.3);
+  border-radius: 12px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  max-height: 80vh;
+  animation: slideUp 0.3s ease;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ∆ MOBILE: BOTTOM SHEET */
+.sigil-terminal.mobile {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10000;
+}
+
+.sigil-terminal.mobile .sigil-backdrop {
+  display: none;
+}
+
+.sigil-terminal.mobile .sigil-container {
+  width: 100%;
+  max-width: none;
+  border-radius: 24px 24px 0 0;
+  border-bottom: none;
+  max-height: 90vh;
+  animation: slideUpFromBottom 0.3s ease;
+}
+
+@keyframes slideUpFromBottom {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* ∆ EMBEDDED: IFRAME MODE */
+.sigil-terminal.embedded {
+  position: relative !important;
+  z-index: auto !important;
+  bottom: auto !important;
+  left: auto !important;
+  right: auto !important;
+  top: auto !important;
+}
+
+.sigil-terminal.embedded .sigil-container {
+  position: relative;
+  border-radius: 8px;
+  max-height: 400px;
+}
+
+/* ∆ HEADER */
+.sigil-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  background: rgba(139, 90, 143, 0.1);
+  border-bottom: 1px solid rgba(139, 90, 143, 0.2);
+}
+
+.sigil-title {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--sigil-accent);
+}
+
+.sigil-close {
+  background: none;
+  border: none;
+  color: var(--sigil-light);
+  font-size: 20px;
+  cursor: pointer;
+  padding: 4px 8px;
+  opacity: 0.6;
+  transition: opacity 0.2s;
+}
+
+.sigil-close:hover {
+  opacity: 1;
+}
+
+/* ∆ INPUT WRAPPER */
+.sigil-input-wrapper {
+  padding: 16px;
+  border-bottom: 1px solid rgba(139, 90, 143, 0.2);
+  position: relative;
+}
+
+.sigil-input {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(139, 90, 143, 0.3);
+  border-radius: 6px;
+  padding: 12px 16px;
+  color: var(--sigil-light);
+  font-size: 14px;
+  font-family: var(--font-sans);
+  transition: all 0.2s;
+}
+
+.sigil-input:focus {
+  outline: none;
+  border-color: var(--sigil-accent);
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 0 0 3px rgba(0, 212, 255, 0.1);
+}
+
+.sigil-input::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.sigil-hint {
+  display: block;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.4);
+  margin-top: 8px;
+  font-style: italic;
+}
+
+/* ∆ RESULTS */
+.sigil-results {
+  flex: 1;
+  overflow-y: auto;
+  min-height: 200px;
+  max-height: 400px;
+}
+
+.sigil-results::-webkit-scrollbar {
+  width: 6px;
+}
+
+.sigil-results::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.sigil-results::-webkit-scrollbar-thumb {
+  background: rgba(139, 90, 143, 0.3);
+  border-radius: 3px;
+}
+
+.sigil-results::-webkit-scrollbar-thumb:hover {
+  background: rgba(139, 90, 143, 0.5);
+}
+
+/* ∆ RESULTS LIST */
+.results-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.result-item {
+  padding: 12px 16px;
+  border-bottom: 1px solid rgba(139, 90, 143, 0.1);
+  cursor: pointer;
+  transition: all 0.15s;
+  position: relative;
+}
+
+.result-item:hover,
+.result-item.selected {
+  background: rgba(139, 90, 143, 0.15);
+}
+
+.result-item.selected {
+  background: rgba(139, 90, 143, 0.25);
+  border-left: 3px solid var(--sigil-accent);
+  padding-left: 13px;
+}
+
+.result-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.result-dimension {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--sigil-accent);
+  background: rgba(139, 90, 143, 0.2);
+  padding: 2px 6px;
+  border-radius: 3px;
+}
+
+.result-title {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--sigil-light);
+}
+
+.result-preview {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* ∆ QUICK ACTIONS */
+.sigil-quick-actions {
+  padding: 24px 16px;
+}
+
+.sigil-quick-actions h3 {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.4);
+  margin: 0 0 16px 0;
+}
+
+.action-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  gap: 12px;
+}
+
+.action-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px;
+  background: rgba(139, 90, 143, 0.1);
+  border: 1px solid rgba(139, 90, 143, 0.2);
+  border-left: 3px solid var(--sigil-primary);
+  border-radius: 6px;
+  color: var(--sigil-light);
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-weight: 500;
+}
+
+.action-button:hover {
+  background: rgba(139, 90, 143, 0.2);
+  transform: translateY(-2px);
+}
+
+.action-icon {
+  font-size: 20px;
+}
+
+.action-name {
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 0.5px;
+}
+
+/* ∆ LOADING */
+.loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  gap: 16px;
+}
+
+.spinner {
+  font-size: 24px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.loading p {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0;
+}
+
+/* ∆ NO RESULTS */
+.no-results {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  gap: 8px;
+  text-align: center;
+}
+
+.no-results p {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0;
+}
+
+.no-results .hint {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/* ∆ FOOTER */
+.sigil-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 12px 16px;
+  background: rgba(139, 90, 143, 0.05);
+  border-top: 1px solid rgba(139, 90, 143, 0.2);
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.kbd {
+  background: rgba(139, 90, 143, 0.2);
+  border: 1px solid rgba(139, 90, 143, 0.3);
+  border-radius: 3px;
+  padding: 2px 6px;
+  font-family: var(--font-mono);
+  font-size: 10px;
+}
+
+/* ∆ RESPONSIVE ADJUSTMENTS */
+@media (max-width: 640px) {
+  .sigil-terminal.desktop .sigil-container {
+    width: 95%;
+    max-width: none;
+  }
+  
+  .action-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .sigil-footer {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+}
+
+/* ∆ DARK MODE ADJUSTMENTS */
+@media (prefers-color-scheme: dark) {
+  .sigil-input {
+    background: rgba(255, 255, 255, 0.03);
+  }
+}
+
+/* ∆ ACCESSIBILITY */
+@media (prefers-reduced-motion: reduce) {
+  .sigil-terminal,
+  .sigil-container,
+  .result-item,
+  .action-button {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+/* ∆ VOICE INPUT INDICATOR (for mobile) */
+.sigil-input.voice-active {
+  border-color: #ff6b6b;
+  background: rgba(255, 107, 107, 0.1);
+}
+
+.voice-indicator {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 8px;
+  background: #ff6b6b;
+  border-radius: 50%;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}

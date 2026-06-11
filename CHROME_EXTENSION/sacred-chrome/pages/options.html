@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SacredSpace OS — Options</title>
+  <style>
+    body { font-family: 'Courier New', monospace; background: #0d0d14; color: #e0ddf5; padding: 30px; max-width: 600px; }
+    h1 { color: #c9a84c; font-size: 16px; letter-spacing: 2px; margin-bottom: 4px; }
+    .subtitle { color: #7a7898; font-size: 11px; margin-bottom: 24px; }
+    label { display: block; font-size: 11px; color: #7c6fcd; margin-bottom: 4px; margin-top: 16px; }
+    input[type=text] {
+      width: 100%; padding: 8px 10px;
+      background: #13131f; border: 1px solid #2a2a40;
+      color: #e0ddf5; font-family: inherit; font-size: 12px;
+      border-radius: 4px; outline: none;
+    }
+    input[type=text]:focus { border-color: #7c6fcd; }
+    .hint { font-size: 10px; color: #5a5878; margin-top: 3px; }
+    button {
+      margin-top: 20px; padding: 9px 20px;
+      background: #1a1a30; border: 1px solid #7c6fcd;
+      color: #7c6fcd; font-family: inherit; font-size: 12px;
+      border-radius: 4px; cursor: pointer;
+    }
+    button:hover { background: #2a2a50; color: #a090ff; }
+    #saved { color: #4caf78; font-size: 11px; margin-left: 10px; display: none; }
+    .divider { border: none; border-top: 1px solid #2a2a40; margin: 20px 0; }
+    .field-group { margin-bottom: 4px; }
+    pre { background: #080810; padding: 10px; border-radius: 4px; font-size: 10px; color: #7cfc7c; border: 1px solid #1a3a1a; }
+  </style>
+</head>
+<body>
+  <h1>∆ SACREDSPACE OS — OPTIONS</h1>
+  <div class="subtitle">Configure spine URL and extension behavior</div>
+
+  <div class="field-group">
+    <label>Spine URL (FastAPI port 8888)</label>
+    <input type="text" id="spineUrl" placeholder="http://localhost:8888"/>
+    <div class="hint">Default: http://localhost:8888 | Tailscale: https://sacredspace-wsl.sacredspace.ts.net:8888</div>
+  </div>
+
+  <button id="saveBtn">∆ Save Settings</button>
+  <span id="saved">Saved ✓</span>
+
+  <hr class="divider"/>
+  <div style="font-size:11px; color:#7a7898;">
+    <strong style="color:#c9a84c;">Load Extension (any machine):</strong><br>
+    1. Open Chrome → <code style="color:#7cfc7c">chrome://extensions</code><br>
+    2. Enable Developer Mode (top right toggle)<br>
+    3. Click "Load unpacked" → select the <code style="color:#7cfc7c">sacred-chrome\</code> folder<br>
+    4. Pin the extension from the puzzle piece menu<br><br>
+    <strong style="color:#c9a84c;">Flash Drive Path:</strong><br>
+    <code style="color:#7cfc7c">E:\CHROME_EXTENSION\sacred-chrome\</code>
+  </div>
+
+  <script src="../config.js"></script>
+  <script src="options.js"></script>
+</body>
+</html>

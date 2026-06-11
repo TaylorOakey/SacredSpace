@@ -1,0 +1,62 @@
+{
+  "/mnt/d/SacredSpace_OS/04_SACRED_CODEX/supabase_schema.sql": {
+    "mtime": 1777802999.4190214,
+    "ast_hash": "250d253130769ee1fc88c168be1ee00a",
+    "semantic_hash": "250d253130769ee1fc88c168be1ee00a"
+  },
+  "/mnt/d/SacredSpace_OS/04_SACRED_CODEX/ingest_game_system.py": {
+    "mtime": 1777795448.1630237,
+    "ast_hash": "eaf2fb7bca0462d8511fdb82a3acd14f",
+    "semantic_hash": "eaf2fb7bca0462d8511fdb82a3acd14f"
+  },
+  "/mnt/d/SacredSpace_OS/04_SACRED_CODEX/scripts/SACRED_FLASH_SCAFFOLD.ps1": {
+    "mtime": 1779349260.112707,
+    "ast_hash": "098d8f77c7fa7272cd68ec2638434f1e",
+    "semantic_hash": "098d8f77c7fa7272cd68ec2638434f1e"
+  },
+  "/mnt/d/SacredSpace_OS/04_SACRED_CODEX/scripts/SACRED_BACKUP_TO_FLASH.ps1": {
+    "mtime": 1777819975.7853568,
+    "ast_hash": "8ac58a9d573144b024cc8dafd4c000ac",
+    "semantic_hash": "8ac58a9d573144b024cc8dafd4c000ac"
+  },
+  "/mnt/d/SacredSpace_OS/04_SACRED_CODEX/scripts/SACRED_FLASH_POPULATE.ps1": {
+    "mtime": 1779349202.4833894,
+    "ast_hash": "395ff27ce6243e80b8e05c9c0a94f125",
+    "semantic_hash": "395ff27ce6243e80b8e05c9c0a94f125"
+  },
+  "/mnt/d/SacredSpace_OS/04_SACRED_CODEX/scripts/prep_notebooklm.py": {
+    "mtime": 1777847245.7786195,
+    "ast_hash": "d2e5303787112530d920a03a7ece1460",
+    "semantic_hash": "d2e5303787112530d920a03a7ece1460"
+  },
+  "/mnt/d/SacredSpace_OS/04_SACRED_CODEX/scripts/SACRED_ARCANA_POPULATE.ps1": {
+    "mtime": 1779349243.5128906,
+    "ast_hash": "e75afcd808d99d1387a13ba2c2a66148",
+    "semantic_hash": "e75afcd808d99d1387a13ba2c2a66148"
+  },
+  "/mnt/d/SacredSpace_OS/04_SACRED_CODEX/scripts/SACRED_LINK_CHECK.ps1": {
+    "mtime": 1779349297.5857327,
+    "ast_hash": "d198aad28be6113b325f4943fda2945f",
+    "semantic_hash": "d198aad28be6113b325f4943fda2945f"
+  },
+  "/mnt/d/SacredSpace_OS/04_SACRED_CODEX/SACRED_SIGIL_TERMINAL_COMPLETE_OVERVIEW.md": {
+    "mtime": 1777804397.6350229,
+    "ast_hash": "f8b3d52e3de2ad27caf30d614109f21f",
+    "semantic_hash": "f8b3d52e3de2ad27caf30d614109f21f"
+  },
+  "/mnt/d/SacredSpace_OS/04_SACRED_CODEX/COPYQ_WIRE.md": {
+    "mtime": 1780978922.9884372,
+    "ast_hash": "0b98c30d2d994e729c702a5018adf34a",
+    "semantic_hash": "0b98c30d2d994e729c702a5018adf34a"
+  },
+  "/mnt/d/SacredSpace_OS/04_SACRED_CODEX/SACRED_SIGIL_TERMINAL_QUICK_START.md": {
+    "mtime": 1777804397.6350229,
+    "ast_hash": "1374ded0f8f972048107f33832522d80",
+    "semantic_hash": "1374ded0f8f972048107f33832522d80"
+  },
+  "/mnt/d/SacredSpace_OS/04_SACRED_CODEX/SACREDSPACE_OS_BRIEFING.md": {
+    "mtime": 1781012730.4429634,
+    "ast_hash": "a310c892394fa0bd876680b89b8ffda6",
+    "semantic_hash": "a310c892394fa0bd876680b89b8ffda6"
+  }
+}

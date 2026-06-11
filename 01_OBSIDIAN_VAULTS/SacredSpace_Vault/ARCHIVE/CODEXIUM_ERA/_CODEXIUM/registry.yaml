@@ -1,0 +1,65 @@
+---
+tags:
+  - codexium
+  - registry
+  - yaml
+  - nodes
+pillar: SYSTEMS
+status: EXPERIMENTAL
+created: 2026-03-15
+session: 2026-03-15 23:44
+---
+
+# Codexium Registry
+
+> This is the YAML registry for Universal Nodes in SacredSpace OS.
+> Append new nodes below. Never delete entries.
+
+```yaml
+# Codexium vâˆž Registry
+# SacredSpace OS â€” Canon Node Store
+# Generated: 2026-03-15
+# Operator: OakeyTree (âˆ†âˆ†âˆ†Oâˆ†K3YTREEâˆ†âˆ†âˆ†)
+
+nodes:
+
+  - id: PY.DATA.function.0001.v1
+    type: code
+    state: stable
+    language: PY
+    domain: DATA
+    abstraction: function
+    complexity_score: 5
+    entropy_score: 5
+    runtime_profile: CPU
+    version_major: 1
+    version_minor: 0
+    parent_id: null
+    created_at: 2026-03-15T00:00:00Z
+    metadata:
+      purpose: "Transform raw CSV to normalized JSON structures"
+      inputs: ["CSV path or raw CSV string"]
+      outputs: ["List of normalized dictionaries"]
+      tags: ["csv", "data-processing", "normalization", "python"]
+      evolution_suggestions:
+        - "Use pathlib consistently"
+        - "Add unit tests"
+        - "Vectorize CSV parsing for large datasets (>1M rows)"
+      abstraction_upgrade: "Candidate to become part of data processing module"
+    relations:
+      derives_from: []
+      overlaps_with: []
+      improves: []
+      conflicts_with: []
+    evolution:
+      parent: null
+      supersedes: null
+      children: []
+      changelog:
+        - version: v1
+          date: 2026-03-15
+          note: "Initial ingestion from ChatGPT Codexium session"
+
+# Add new nodes below this line
+# Format: copy node template above, increment SERIAL
+```

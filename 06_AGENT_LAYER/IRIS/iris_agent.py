@@ -36,13 +36,13 @@ import frontmatter
 from pathlib import Path
 from datetime import datetime
 
-from smolagents import CodeAgent, LiteLLMModel, tool
+import sys
+import os
+sys.path.insert(0, os.path.expanduser("~/sacredspace_core"))
+
+from smolagents import CodeAgent, tool
 
 # ─── CONFIGURATION ────────────────────────────────────────────────────────────
-
-# Ollama model — change to any model you have pulled locally
-# Good options: mistral, llama3, phi3, qwen2, deepseek-r1
-OLLAMA_MODEL = "ollama_chat/mistral"
 
 # ChromaDB — connects to your running local instance
 CHROMA_HOST = "localhost"
@@ -268,18 +268,14 @@ In lakesh alakin."""
 # ─── AGENT INITIALIZATION ─────────────────────────────────────────────────────
 
 def build_iris_agent() -> CodeAgent:
-    """Initialize IRIS as a smolagents CodeAgent backed by local Ollama."""
-
-    model = LiteLLMModel(
-        model_id=OLLAMA_MODEL,
-        api_base="http://localhost:11434",  # Ollama default
-        api_key="ollama",                   # LiteLLM requires a key string; Ollama ignores it
-    )
+    """Initialize IRIS as a smolagents CodeAgent — Ollama primary, Gemini fallback."""
+    from app.llm_cascade import get_model, active_provider
+    model = get_model()
+    print(f"[IRIS] LLM provider: {active_provider()}")
 
     agent = CodeAgent(
         tools=[query_vault, ingest_note, list_inbox, write_codex_entry],
         model=model,
-        system_prompt=IRIS_SYSTEM_PROMPT,
         max_steps=8,           # cap iterations to prevent runaway loops
         verbosity_level=1,     # 0=silent, 1=steps, 2=full code output
     )

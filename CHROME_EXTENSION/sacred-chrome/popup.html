@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SacredSpace OS</title>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+  <!-- Council Header -->
+  <header class="council-header">
+    <div class="sigil-row">
+      <span class="delta">&#x2206;&#x2206;&#x2206;</span>
+      <h1 class="title">GR&#x2206;M&#x2206;</h1>
+      <span class="delta">&#x2206;&#x2206;&#x2206;</span>
+    </div>
+    <div class="subtitle">SacredSpace OS &mdash; Council Interface</div>
+    <div class="status-bar">
+      <span id="spine-status" class="status-dot offline" title="Spine status"></span>
+      <span id="spine-label">Spine: checking&hellip;</span>
+      <button class="icon-btn" id="refresh-status" title="Refresh connection">&#x21BB;</button>
+      <button class="icon-btn" id="open-options" title="Settings">&#x2699;</button>
+    </div>
+  </header>
+
+  <!-- Metatron Sigil -->
+  <div class="metatron-container">
+    <svg class="metatron" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="50" cy="50" r="45" fill="none" stroke="#FFD700" stroke-width="0.5" opacity="0.35"/>
+      <circle cx="50" cy="20" r="15" fill="none" stroke="#C8A400" stroke-width="0.3" opacity="0.3"/>
+      <circle cx="76" cy="35" r="15" fill="none" stroke="#C8A400" stroke-width="0.3" opacity="0.3"/>
+      <circle cx="76" cy="65" r="15" fill="none" stroke="#C8A400" stroke-width="0.3" opacity="0.3"/>
+      <circle cx="50" cy="80" r="15" fill="none" stroke="#C8A400" stroke-width="0.3" opacity="0.3"/>
+      <circle cx="24" cy="65" r="15" fill="none" stroke="#C8A400" stroke-width="0.3" opacity="0.3"/>
+      <circle cx="24" cy="35" r="15" fill="none" stroke="#C8A400" stroke-width="0.3" opacity="0.3"/>
+      <circle cx="50" cy="50" r="15" fill="none" stroke="#FFD700" stroke-width="0.5" opacity="0.5"/>
+      <line x1="50" y1="5" x2="50" y2="95" stroke="#FFD700" stroke-width="0.25" opacity="0.2"/>
+      <line x1="5" y1="50" x2="95" y2="50" stroke="#FFD700" stroke-width="0.25" opacity="0.2"/>
+      <line x1="17" y1="17" x2="83" y2="83" stroke="#FFD700" stroke-width="0.25" opacity="0.2"/>
+      <line x1="83" y1="17" x2="17" y2="83" stroke="#FFD700" stroke-width="0.25" opacity="0.2"/>
+      <polygon points="50,18 74,63 26,63" fill="none" stroke="#FFD700" stroke-width="0.9" opacity="0.65"/>
+      <polygon points="50,82 26,37 74,37" fill="none" stroke="#FFD700" stroke-width="0.9" opacity="0.65"/>
+      <circle cx="50" cy="50" r="2.5" fill="#FFD700" opacity="0.85"/>
+      <circle cx="50" cy="50" r="5" fill="none" stroke="#FFD700" stroke-width="0.4" opacity="0.4"/>
+    </svg>
+  </div>
+
+  <!-- Nine Pillars Grid -->
+  <section class="pillars-section">
+    <h2 class="section-title">Nine Pillars</h2>
+    <div class="pillars-grid" id="pillars-grid"></div>
+  </section>
+
+  <!-- Sacred Sigil Terminal -->
+  <section class="terminal-section">
+    <h2 class="section-title">&#x2206; Sacred Sigil Terminal</h2>
+    <div class="terminal-box">
+      <div class="terminal-output" id="terminal-output">
+        <div class="terminal-line system">&#x2206; SacredSpace OS &mdash; Awaiting Query&hellip;</div>
+      </div>
+      <div class="terminal-input-row">
+        <span class="prompt">&#x2206;&gt;</span>
+        <input type="text" id="terminal-input" class="terminal-input"
+               placeholder="Query the spine&hellip;" autocomplete="off" spellcheck="false">
+        <button class="query-btn" id="query-btn">SCRY</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Action Buttons -->
+  <section class="actions-section">
+    <button class="gem-btn" id="gemini-btn">
+      <span class="gem-icon">&#x25C8;</span> Gemini Gem
+    </button>
+    <button class="council-btn" id="hermes-btn">
+      <span>&#x26A1;</span> GR&#x2206;M&#x2206; Oracle
+    </button>
+    <button class="council-btn secondary" id="vault-btn">
+      <span>&#x1F4D6;</span> Open Vault
+    </button>
+  </section>
+
+  <!-- Footer -->
+  <footer class="sacred-footer">
+    <span>In Lakesh &mdash; Alakin</span>
+    <span class="footer-seal">S&#x2206;CR3DS!G&#x2206;L</span>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

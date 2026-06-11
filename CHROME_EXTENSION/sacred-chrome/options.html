@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SacredSpace OS — Settings</title>
+  <style>
+    :root {
+      --bg: #0d0d1a; --bg2: #12122b; --card: #1a1a35;
+      --gold: #FFD700; --gold-dim: #C8A400; --accent: #7c6fcd;
+      --text: #e8e4d0; --muted: #7a7890; --border: #2a2a4a; --radius: 6px;
+      --mono: 'Courier New', monospace;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', sans-serif;
+           font-size: 13px; padding: 30px; max-width: 560px; margin: 0 auto; }
+    h1 { font-family: var(--mono); color: var(--gold); font-size: 18px;
+         letter-spacing: 3px; margin-bottom: 6px; }
+    .sub { color: var(--muted); font-size: 11px; margin-bottom: 24px; letter-spacing: 1px; }
+    .card { background: var(--card); border: 1px solid var(--border);
+            border-radius: var(--radius); padding: 16px; margin-bottom: 16px; }
+    .card h2 { font-size: 11px; color: var(--gold-dim); letter-spacing: 2px;
+               text-transform: uppercase; margin-bottom: 10px; }
+    label { display: block; color: var(--muted); font-size: 11px; margin-bottom: 5px; }
+    input[type=text], input[type=password] {
+      width: 100%; background: #090914; border: 1px solid var(--border);
+      border-radius: 4px; color: var(--text); padding: 8px 10px;
+      font-family: var(--mono); font-size: 12px; outline: none;
+      transition: border-color 0.2s; }
+    input:focus { border-color: var(--accent); }
+    .hint { font-size: 10px; color: var(--muted); margin-top: 4px; line-height: 1.5; }
+    .hint code { color: #7cfc7c; background: #080810; padding: 0 3px; border-radius: 2px; }
+    .row { display: flex; gap: 8px; margin-top: 16px; align-items: center; }
+    button { padding: 8px 16px; border-radius: var(--radius); font-size: 12px;
+             cursor: pointer; font-weight: 600; border: none; transition: all 0.2s; }
+    .save-btn { background: var(--gold-dim); color: #000; }
+    .save-btn:hover { background: var(--gold); }
+    .reset-btn { background: var(--card); color: var(--muted); border: 1px solid var(--border); }
+    .reset-btn:hover { color: var(--text); border-color: var(--muted); }
+    #status { font-size: 11px; color: #00ff88; }
+    .instr { font-size: 11px; color: var(--muted); line-height: 1.8; }
+    .instr strong { color: var(--gold-dim); }
+    .footer { text-align: center; color: var(--muted); font-size: 10px;
+              margin-top: 24px; letter-spacing: 1px; }
+    .delta { color: var(--gold-dim); }
+  </style>
+</head>
+<body>
+  <h1><span class="delta">∆∆∆</span> GR∆M∆ <span class="delta">∆∆∆</span></h1>
+  <div class="sub">SacredSpace OS — Extension Settings</div>
+
+  <div class="card">
+    <h2>Spine Connection</h2>
+    <label for="spine-url">FastAPI Spine URL</label>
+    <input type="text" id="spine-url" placeholder="http://localhost:8888">
+    <div class="hint">
+      Default (local): <code>http://localhost:8888</code><br>
+      Tailscale mesh: <code>https://sacredspace-wsl.sacredspace.ts.net:8888</code><br>
+      Leave as default; Tailscale is tried automatically if local spine is offline.
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Optional API Keys</h2>
+    <label for="gemini-key">Gemini API Key (optional)</label>
+    <input type="password" id="gemini-key" placeholder="AIza...">
+    <div class="hint">Leave blank to open gemini.google.com instead of calling the API directly.</div>
+  </div>
+
+  <div class="row">
+    <button class="save-btn" id="save-btn">∆ Save</button>
+    <button class="reset-btn" id="reset-btn">Reset Defaults</button>
+    <span id="status"></span>
+  </div>
+
+  <div class="card" style="margin-top:20px;">
+    <h2>Load Extension on a New Machine</h2>
+    <div class="instr">
+      <strong>1.</strong> Open Chrome → <code>chrome://extensions</code><br>
+      <strong>2.</strong> Enable <strong>Developer mode</strong> (top-right toggle)<br>
+      <strong>3.</strong> Click <strong>Load unpacked</strong> → select <code>E:\CHROME_EXTENSION\sacred-chrome\</code><br>
+      <strong>4.</strong> Pin from the puzzle-piece icon in the toolbar<br>
+      <strong>5.</strong> Run <code>E:\CHROME_EXTENSION\LOAD_EXTENSION.bat</code> for guided steps
+    </div>
+  </div>
+
+  <div class="footer">In Lakesh — Alakin &nbsp; ∆ &nbsp; S∆CR3DS!G∆L</div>
+
+  <script src="config.js"></script>
+  <script src="options.js"></script>
+</body>
+</html>
