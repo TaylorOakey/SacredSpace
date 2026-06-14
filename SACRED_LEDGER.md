@@ -140,6 +140,8 @@ sudo apt-get install chromium-browser chromium-driver
 ### Actions
 - **_PENDING_REVIEW/SACREDSPACE_OS_INBOX** — all 12 stub items routed to correct pillars (see inbox table above). Inbox now empty.
 - All files were s14 watcher test stubs (placeholder text, 16–45 bytes). Real content routing logic validated against actual pillar structure.
+- **ICARIS agent lock protocol applied** — `# Status: LOCKED` inserted as YAML comment in first 10 lines of ASHER, AURORA, ELIAS, IRIS at `~/.config/opencode/agents/`. D6 cron watcher will now skip all four on sync runs.
+- **Rollback branch closed** — `sacred-d3-d6-rollback` no longer exists (lost across WSL restarts, never pushed). D3–D6 work is already on master from s14. Item removed from queue.
 
 ---
 
@@ -183,7 +185,7 @@ Fresh WSL2 session (uptime ~2 min). Three core services offline that were live i
 Note: all were watcher stubs (16–45 bytes of placeholder text from s14 test run), not real content.
 
 ### Git
-- `sacred-d3-d6-rollback` branch exists
+- `sacred-d3-d6-rollback` branch — ❌ no longer exists (lost across WSL restarts, was never pushed; D3–D6 work already on master)
 - 17,411 uncommitted changes (old long-name paths shown as deleted)
 - HEAD: `021ee65d chore: exclude compiled .so binaries from future commits`
 
@@ -329,7 +331,7 @@ OpenCode — use Google Drive MCP (`search_files` / `get_file_metadata`) to loca
 | 🟡 MED | **ChatGPT export — re-download real ZIP** | Current file is Cloudflare challenge page; download manually from chatgpt.com/settings |
 | 🟡 MED | **Claude export — locate HTML** | No Claude HTML found in Drive yet |
 | 🟡 MED | **Agent lock protocol on ICARIS Quartet** | Write Status: LOCKED to agent prompt headers; watcher will respect |
-| 🟡 MED | **Rollback branch merge** | Phase F confirmed — merge `sacred-d3-d6-rollback` |
+| ~~🟡 MED~~ | ~~**Rollback branch merge**~~ | ✅ CLOSED — branch lost across WSL restarts (never pushed); D3–D6 already on master |
 | 🟡 MED | **NotebookLM source verification** | Verify each notebook points to correct Drive pillar per routing table |
 | 🟢 LOW | **CopyQ Windows server launch** | Manual — launch CopyQ.exe on Windows |
 | 🟢 LOW | **Sigil Terminal build** | Docs in 04_CODEX; boot_sacred.sh stubs ready |
@@ -610,6 +612,8 @@ Explored 31 root-level items in Google Drive:
 
 ## Recent Wins
 
+- 2026-06-14 (s17): **ICARIS agent lock protocol applied** — `# Status: LOCKED` in first 10 lines of ASHER, AURORA, ELIAS, IRIS; D6 cron watcher now skips all four
+- 2026-06-14 (s17): **Rollback branch closed** — `sacred-d3-d6-rollback` lost across WSL restarts (never pushed); D3–D6 already on master; item removed from queue
 - 2026-06-14 (s17): **_PENDING_REVIEW inbox cleared** — 12 watcher stubs from s14 routed to correct pillars (arcana→04_CODEX, vehicle notes→05_MEMORY/VEHICLE_LOGS, nursery proposal→09_MARKET, school supplies→_PERSONAL, audio/sigil→07_SOCIAL/CREATION_LAB, unclassified→_ARCHIVE); inbox now empty
 - 2026-06-11 (s12): **SACRED_THEMES_COMPONENTS subsystem deployed** — Word Bank (307 lines, 8 layers, 48-row connection map), Manifest (116 lines), 6 subdirectory skeleton
 - 2026-06-11 (s12): **Neural Forest knowledge graph planted** — 185 nodes, 200 edges, 22 communities unified from CODEX seed + new extraction; interactive HTML at `03_NEURAL/graphify-out/graph.html`
