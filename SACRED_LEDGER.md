@@ -1,6 +1,6 @@
 # S∆CR3DSP∆CE OS — SACRED LEDGER
 
-**Last updated:** 2026-06-14 (session 17)
+**Last updated:** 2026-06-15 (session 17b)
 **Seat:** AURORA — Claude Code
 **Canon:** In lakesh alakin. ∆
 
@@ -10,18 +10,18 @@
 
 | Service | Port | Status | Notes |
 |---------|------|--------|-------|
-| FastAPI Spine | :8888 | ✅ LIVE | v2.0.0 — 14 routes incl. /mcp; restart resolved Content-Length crash |
+| FastAPI Spine | :8888 | ✅ LIVE | v2.0.0 — 14 routes, all 9 pillars reporting; config.py pillar paths fixed (s17b) |
 | MCP Server (Hermes) | :8888/mcp | ✅ LIVE | 8 tools active — system_health, query_memory, store_mote, read_ledger, pillar_status, run_inference, vault_search, list_anvil_missions |
 | Mission Control | :3001 | ✅ LIVE | v2.0.1 — Node v24.16.0 + pnpm; login page responding |
 | OmniParse | :8001 | ⚠️ DOWN (dormant) | Not started; parse endpoints dormant — `--web` blocked (no Chrome), `--documents` deferred (Florence-2 ~1GB not cached) |
-| ChromaDB (embedded) | — | ⚠️ STANDALONE | Two .sqlite3 stores present (1.7MB chroma_db/ + 184K chroma/) but embedded server not running |
-| SQLite Memory | — | ✅ 12KB | `05_MEMORY/sacred_memory.db` |
-| Ollama | :11434 | ⚠️ 1 model | llama3.2 (3.2B, Q4_K_M) only — sacred-coder, qwen2.5-coder, moondream not found in WSL2 Ollama |
-| FastAPI→Ollama bridge | — | ⚠️ PARTIAL | Spine is up, Ollama at localhost:11434 (llama3.2) — boot script checks Tailscale DNS (100.100.100.100) instead of localhost |
-| free-claude-code proxy | :8082 | ✅ Running | uvicorn pid 419 — routes to local NIM |
-| Obsidian REST | :27123 | ❌ NOT DETECTED | Windows host not reachable from fresh WSL2 session (tailscale host offline 22d) |
-| Redis | :6379 | ✅ LIVE | Now running on fresh WSL2 session — improvement since last ledger |
-| CopyQ | — | ⚠️ INSTALLED | v16.0.0 binary at 02_SYSTEMS/tools/copyq/, bridge+routes built, server not running |
+| ChromaDB (embedded) | — | ✅ ONLINE | 1.7MB store at 06_AGENTS/IRIS/chroma_db/ — spine confirmed reading correct path |
+| SQLite Memory | — | ✅ 12KB | `05_MEMORY/sacred_memory.db` — 0 motes |
+| Ollama | :11434 | ⚠️ 1 model | llama3.2 only — sacred-coder, qwen2.5-coder, moondream on offline Windows host |
+| FastAPI→Ollama bridge | — | ✅ ONLINE | localhost:11434 confirmed live via /health/ollama |
+| free-claude-code proxy | :8082 | ✅ Running | already live on boot |
+| Obsidian REST | :27123 | ❌ NOT DETECTED | sacredspace-host offline 22d+ |
+| Redis | :6379 | ✅ LIVE | auto-starts on WSL2 boot |
+| CopyQ | — | ⚠️ INSTALLED | v16.0.0 binary confirmed, Windows server still needed |
 | Intelligent Terminal | — | ❌ BLOCKED | Win10 Build 19045 — requires Windows 11 |
 | OpenCode Plugins | — | ✅ 10 active | 11 packages in npm registry (see OpenCode Plugin Inventory) |
 
@@ -32,12 +32,12 @@
 | 01_CORE | 113 | SacredSpace_Vault + COMMAND/ + MASTER FOLDER content |
 | 02_SYSTEMS | 68,625 | mission-control, CONFIGS, scripts, tools, AUDITS, TEMPLATES, council docs |
 | 03_NEURAL | 1,182 | graphify-out, omniparse, codebase archives, game engine HTML |
-| 04_CODEX | 52 | Canon docs, LORE, sigil terminal, ingest scripts, SACREDSPACE_OS briefing |
-| 05_MEMORY | 8 | sacred_memory.db + garden/vehicle logs from MASTER FOLDER |
-| 06_AGENTS | 20,020 | Hermes, IRIS, chroma_db, full SACREDSPACE_OS codebase (Python/SQL/Docker) |
-| 07_SOCIAL | 6,420 | CREATION_LAB, SIGNAL, SACRED_THEMES_COMPONENTS, game_frontend, mobile_ide |
-| 08_LEARNING | 301 | YouTube Takeout (2011-2026), RESEARCH/ |
-| 09_MARKET | 4 | sprouts content from MASTER FOLDER, commercial strategy docs |
+| 04_CODEX | 55 | Canon docs, LORE, sigil terminal, ingest scripts, SACREDSPACE_OS briefing (+3 from inbox triage) |
+| 05_MEMORY | 10 | sacred_memory.db + garden/vehicle logs (+2 vehicle notes from inbox triage) |
+| 06_AGENTS | 20,023 | Hermes, IRIS, chroma_db, full SACREDSPACE_OS codebase (Python/SQL/Docker) |
+| 07_SOCIAL | 6,437 | CREATION_LAB, SIGNAL, SACRED_THEMES_COMPONENTS, game_frontend, mobile_ide (+audio/sigil from inbox) |
+| 08_LEARNING | 303 | YouTube Takeout (2011-2026), RESEARCH/ (+2 from inbox triage) |
+| 09_MARKET | 5 | sprouts content from MASTER FOLDER, commercial strategy docs (+1 from inbox triage) |
 
 ## FastAPI Spine Routes
 
@@ -134,6 +134,29 @@ sudo apt-get install chromium-browser chromium-driver
 | open-browser-control | latest | ✅ ACTIVE | Chrome browser control via MCP — WebSocket bridge on :9334, verified Gmail + Google Docs |
 | opencode-supermemory | 2.0.6 | 🔲 INSTALLED | Cloud memory — requires SUPERMEMORY_API_KEY |
 | ~~opencode-antigravity-auth~~ | — | ❌ REMOVED | ToS risk, uninstalled per user direction |
+
+## Session 17b — Health Check + Config Fix (2026-06-15)
+
+### Actions
+- **Full boot executed** — `boot_sacred.sh` brought up all 5 services cleanly.
+- **Health check revealed** — FastAPI spine reporting only 1 pillar (`02_COUNCIL_GROVE`). Root cause: `config.py` and `hermes.py` still using old long pillar names from pre-s14.
+- **config.py fixed** — `NINE_PILLARS` updated to short names; `CHROMA_PATH` → `06_AGENTS/IRIS/chroma_db`; `SQLITE_PATH` → `05_MEMORY/sacred_memory.db`.
+- **hermes.py fixed** — path updated to `06_AGENTS/hermes`.
+- **Spine restarted** — all 9 pillars now live and reporting correct file counts.
+- **Ghost directories noted** — `02_COUNCIL_GROVE`, `05_MEMORY_ENGINE`, `06_AGENT_LAYER` still exist at root with old db files. Not deleted — safe to clean up anytime.
+- **Committed + pushed** — `3c94c9ee`.
+
+### Live Health (2026-06-15)
+| Check | Result |
+|-------|--------|
+| /health/ — pillars | ✅ All 9 present |
+| /pillars/status | ✅ 01_CORE:113, 02_SYSTEMS:68642, 03_NEURAL:1185, 04_CODEX:55, 05_MEMORY:10, 06_AGENTS:20023, 07_SOCIAL:6437, 08_LEARNING:303, 09_MARKET:5 |
+| /memory/status | ✅ SQLite online, ChromaDB online, 0 motes |
+| /health/ollama | ✅ llama3.2:latest |
+| /hermes/status | ✅ exists: true |
+| Redis | ✅ PONG |
+
+---
 
 ## Session 17 — _PENDING_REVIEW Inbox Clear (2026-06-14)
 
@@ -612,6 +635,7 @@ Explored 31 root-level items in Google Drive:
 
 ## Recent Wins
 
+- 2026-06-15 (s17b): **FastAPI spine pillar path fix** — config.py + hermes.py updated from old long names to short names; all 9 pillars now live and reporting; ghost dirs noted (02_COUNCIL_GROVE, 05_MEMORY_ENGINE, 06_AGENT_LAYER)
 - 2026-06-14 (s17): **ICARIS agent lock protocol applied** — `# Status: LOCKED` in first 10 lines of ASHER, AURORA, ELIAS, IRIS; D6 cron watcher now skips all four
 - 2026-06-14 (s17): **Rollback branch closed** — `sacred-d3-d6-rollback` lost across WSL restarts (never pushed); D3–D6 already on master; item removed from queue
 - 2026-06-14 (s17): **_PENDING_REVIEW inbox cleared** — 12 watcher stubs from s14 routed to correct pillars (arcana→04_CODEX, vehicle notes→05_MEMORY/VEHICLE_LOGS, nursery proposal→09_MARKET, school supplies→_PERSONAL, audio/sigil→07_SOCIAL/CREATION_LAB, unclassified→_ARCHIVE); inbox now empty
