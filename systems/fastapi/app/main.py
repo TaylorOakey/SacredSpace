@@ -13,7 +13,7 @@ if os.path.abspath(os.getcwd()) != os.path.abspath(expected):
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from app.api.routers import health, memory, pillars, vault, hermes, inference
+from app.api.routers import health, memory, pillars, vault, hermes, inference, sigil
 from app.api.routers.mcp_server import router as mcp_router
 
 app = FastAPI(
@@ -36,6 +36,7 @@ app.include_router(vault.router)
 app.include_router(hermes.router)
 app.include_router(inference.router)
 app.include_router(mcp_router)
+app.include_router(sigil.router)
 
 @app.get("/")
 async def root():

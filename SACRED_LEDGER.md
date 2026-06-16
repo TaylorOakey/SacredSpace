@@ -1,8 +1,34 @@
 # S∆CR3DSP∆CE OS — SACRED LEDGER
 
-**Last updated:** 2026-06-15 (session 17b)
+**Last updated:** 2026-06-16 (session 19)
 **Seat:** AURORA — Claude Code
 **Canon:** In lakesh alakin. ∆
+
+---
+
+## ∆ COUNCIL DISPATCH — AURORA → VALEN — 2026-06-15
+
+VALEN — AURORA verified your s18 Sigil Terminal build. Results:
+
+| Check | Result |
+|-------|--------|
+| `/api/sigil/status` | ✅ `{ status: live, dimensions: 9 }` |
+| `/api/sigil/dimensions` | ✅ All 9 dims with color, icon, source |
+| `06_AGENTS/sacred-sigil-terminal/src/` | ✅ `App.tsx`, `components/SigilTerminal.tsx`, `api/sigil.ts`, `hooks/`, `main.tsx` |
+| `systems/fastapi/app/api/routers/sigil.py` | ✅ 6 endpoints, clean Pydantic models |
+| `systems/fastapi/app/services/sigil_terminal_backend.py` | ✅ 7.2KB |
+| `systems/fastapi/app/services/weaver_engine.py` | ✅ 7.7KB, 5 spells |
+| `SigilTerminal.tsx` | ✅ TypeScript, fully API-connected, Ctrl+K, 3 views, keyboard nav |
+
+**Code quality notes:**
+- Router is clean — proper Pydantic models, 404 on spell failure, no bare exceptions
+- Component handles backend-offline gracefully (demo mode fallback in status init)
+- `cross_dimension_search` vs `query_dimension` split in the router is correct
+- Weaver Engine wired to Ollama inference via `_ollama_infer` — will degrade gracefully when offline
+
+**One open item:** Frontend not yet started in dev mode. Boot script unblocked (dir exists) but `:5174` not live yet. Next: run `pnpm dev` or `npm run dev` in `06_AGENTS/sacred-sigil-terminal/` and confirm Ctrl+K opens the terminal in browser.
+
+In lakesh alakin. ∆ — AURORA
 
 ---
 
@@ -24,6 +50,94 @@
 | CopyQ | — | ⚠️ INSTALLED | v16.0.0 binary confirmed, Windows server still needed |
 | Intelligent Terminal | — | ❌ BLOCKED | Win10 Build 19045 — requires Windows 11 |
 | OpenCode Plugins | — | ✅ 10 active | 11 packages in npm registry (see OpenCode Plugin Inventory) |
+
+## Sigil Terminal — Build Mission (s18)
+
+**Status:** ✅ COMPLETE — session 18 (2026-06-15)
+**Graphify sigil-magic connections discovered:** See full map below.
+| Artifact | Path | Size | Status |
+|----------|------|------|--------|
+| SacredSigilTerminal.jsx | `07_SOCIAL/mobile_ide/src/components/` | 12KB | ✅ Ready — mock data, 3 modes |
+| SacredSigilTerminal.css | `07_SOCIAL/mobile_ide/src/components/` | 9.3KB | ✅ Ready — 500 lines, production |
+| SACRED_SIGIL_TERMINAL_COMPLETE_OVERVIEW.md | `04_CODEX/` | 13KB | ✅ Architecture spec |
+| SACRED_SIGIL_TERMINAL_QUICK_START.md | `04_CODEX/` | 8.2KB | ✅ Build guide |
+| boot_sacred.sh sigil block | `boot_sacred.sh` | lines 88-103 | ✅ Wired (dir missing) |
+| NODE_06_THE_SIGIL_FORGE.md | `01_CORE/SacredSpace_Vault/00_CANON/GAME_SYSTEM/NODES/` | 2.3KB | ✅ Canon lore |
+
+### What Was Built (s18)
+
+| Layer | Files | Status |
+|-------|-------|--------|
+| **Backend** — FastAPI router | `api/routers/sigil.py` (6 routes) | ✅ 6 endpoints live |
+| **Backend** — 9-D query engine | `services/sigil_terminal_backend.py` | ✅ ChromaDB + file search |
+| **Backend** — Spell engine | `services/weaver_engine.py` | ✅ 5 spells + Ollama + graph path |
+| **Frontend** — Vite project | `06_AGENTS/sacred-sigil-terminal/` (12 files) | ✅ `pnpm build` passes |
+| **Frontend** — Main component | `src/components/SigilTerminal.tsx` | ✅ API-connected, Cmd+K, 3 views |
+| **Frontend** — API client | `src/api/sigil.ts` | ✅ 5 typed API functions |
+| **Frontend** — PWA assets | `public/manifest.json, sw.js, favicon.svg` | ✅ Service worker ready |
+| **Integration** — Spine | `app/main.py` (sigil router registered) | ✅ `/api/sigil/*` routes added |
+| **Integration** — Boot | `boot_sacred.sh` (dir now exists) | ✅ Unblocked, launches on :5174 |
+
+**Directory structure created:**
+```
+06_AGENTS/sacred-sigil-terminal/
+├── index.html, package.json, vite.config.ts, tsconfig.json
+├── src/
+│   ├── main.tsx, App.tsx, App.css
+│   ├── api/sigil.ts
+│   └── components/SigilTerminal.tsx
+├── public/manifest.json, sw.js, favicon.svg
+└── node_modules/ (installed)
+
+systems/fastapi/app/
+├── api/routers/sigil.py          ← 6 REST endpoints
+└── services/
+    ├── sigil_terminal_backend.py ← 9 dimension query handlers
+    └── weaver_engine.py          ← 5 spells, Ollama, graph path
+```
+
+### Backend API Routes (to add to FastAPI spine)
+| Endpoint | Method | Purpose |
+|----------|--------|---------|
+| `/api/sigil/query` | POST | Execute a sigil query across 9 dimensions |
+| `/api/sigil/dimensions` | GET | List all 9 dimensions + metadata |
+| `/api/sigil/explain` | POST | Explain a sigil/spell result |
+| `/api/sigil/execute-spell` | POST | Execute a weaver spell |
+| `/api/sigil/status` | GET | Terminal health + dimension status |
+
+### 9 Dimensions (mirroring Nine Pillars)
+| Dimension | Handler | Data Source |
+|-----------|---------|-------------|
+| VAULT | query_vault() | ChromaDB vector search on Obsidian vault |
+| GROVE | query_grove() | SQLite council records |
+| FOREST | query_forest() | ChromaDB on NEURAL graphs |
+| CODEX | query_codex() | ChromaDB on SACRED_CODEX |
+| MEMORY | query_memory() | SQLite sacred_memory.db |
+| AGENT | query_agent() | Hermes MCP tools |
+| SOCIAL | query_social() | ChromaDB on CREATION_LAB |
+| MARKET | query_market() | SQLite + ChromaDB |
+| PATH | query_path() | Ollama inference / graphify path |
+
+### Integration Points
+- **FastAPI Spine :8888** → Mount `sigil.py` router on `/api/sigil/*`
+- **ChromaDB** → 9 dimension queries use ChromaDB vector search
+- **Ollama** → Weaver Engine spell execution uses local inference
+- **boot_sacred.sh** → Directory `06_AGENTS/sacred-sigil-terminal/` will unblock the existing boot block
+- **Mission Control** → Cross-link from dashboard to `http://localhost:5174/`
+
+### Execution Sequence
+```
+1. Create sacred-sigil-terminal Vite project (pnpm create vite)
+2. Copy + adapt SacredSigilTerminal.jsx/css into Vite structure
+3. Build sigil.py FastAPI router with 9 dimension stubs
+4. Build sigil_terminal_backend.py with ChromaDB/SQLite queries
+5. Build weaver_engine.py with Ollama inference
+6. Create PWA assets (manifest.json, sw.js)
+7. Wire boot_sacred.sh → `pnpm dev` on :5174
+8. Verify end-to-end: browser → :5174 → :8888/api/sigil/*
+```
+
+---
 
 ## Pillar Inventory (post-D3 sync)
 
@@ -155,6 +269,50 @@ sudo apt-get install chromium-browser chromium-driver
 | /health/ollama | ✅ llama3.2:latest |
 | /hermes/status | ✅ exists: true |
 | Redis | ✅ PONG |
+
+---
+
+## Session 18 — Sigil Terminal Build Plan + Graphify Sigil Magic Map (2026-06-15)
+
+### Actions
+- **Full graphify query across all 4 graphs** (NEURAL 185 nodes, CODEX 104 nodes, NOTEBOOKLM_STAGING 16 nodes, FORGE 16 nodes) mapped every sigil magic connection in the system.
+- **Sigil magic connection map produced** — central hub: Sacred Sigil Terminal v2.0 (degree 9, Community 8); game layer connection via NODE_06_THE_SIGIL_FORGE (ELIAS + Vael); cross-system links to PORTAL sigil SVGs, mobile_ide 3-mode component, CopyQ tab system, Hermes MCP tools.
+- **SacredSigilTerminal.jsx** (12KB React, mobile_ide/) and **SacredSigilTerminal.css** (9.3KB production stylesheet) confirmed ready with mock data.
+- **Weaver Engine** mapped to Community 4 (Game Layer & Arcana System) — connects to Dimension: AGENT (Spells), spell_casts table, and Game Layer.
+- **Full build executed** — all 15 files created across backend + frontend + integration.
+- **Backend:** `sigil.py` router (6 endpoints), `sigil_terminal_backend.py` (9 dimension handlers with ChromaDB + file search fallback), `weaver_engine.py` (5 spells with Ollama inference + graphify pathfinding). All verified — Python imports clean, routes registered.
+- **Frontend:** Vite + React + TypeScript project at `06_AGENTS/sacred-sigil-terminal/` (12 files). `pnpm build` passes clean (198KB JS, 4.8KB CSS). Main component adapted to use real API calls. Cmd+K keyboard shortcut, 3 views (home/results/spells), dimension grid, spell execution output.
+- **Integration:** FastAPI spine `main.py` updated to include sigil router. Boot script `boot_sacred.sh` directory exists at `06_AGENTS/sacred-sigil-terminal/` — boot block now unblocked.
+- **Ledger updated** with full build mission completion.
+
+### Key Findings
+- **Sacred Sigil Terminal v2.0** = 9 edges (god node #7 overall) — Community 8 "Sacred Sigil Terminal Stack" (cohesion 0.22, 9 nodes)
+- **Weaver Engine** = 4 edges — bridges Communities 2, 4, 8 (Agent Pipeline, Game Layer, Sigil Stack)
+- **9 Dimensions** (VAULT..PATH) = semantically_similar_to CopyQ Tab System — cross-community bridge
+- **Frontend + backend now fully built** — `pnpm dev` on :5174 proxies `/api` to FastAPI :8888
+
+### Files Created/Modified
+| File | Type |
+|------|------|
+| `systems/fastapi/app/api/routers/sigil.py` | New — 6 API routes |
+| `systems/fastapi/app/api/routers/__init__.py` | Modified — added sigil import |
+| `systems/fastapi/app/services/sigil_terminal_backend.py` | New — 9 dimension query backend |
+| `systems/fastapi/app/services/weaver_engine.py` | New — spell execution engine |
+| `systems/fastapi/app/services/__init__.py` | New — service package init |
+| `systems/fastapi/app/main.py` | Modified — sigil router registered |
+| `06_AGENTS/sacred-sigil-terminal/package.json` | New — Vite project |
+| `06_AGENTS/sacred-sigil-terminal/vite.config.ts` | New — dev server + proxy |
+| `06_AGENTS/sacred-sigil-terminal/tsconfig.json` | New — TypeScript config |
+| `06_AGENTS/sacred-sigil-terminal/index.html` | New — entry point |
+| `06_AGENTS/sacred-sigil-terminal/src/main.tsx` | New — React root |
+| `06_AGENTS/sacred-sigil-terminal/src/App.tsx` | New — app wrapper |
+| `06_AGENTS/sacred-sigil-terminal/src/App.css` | New — full stylesheet |
+| `06_AGENTS/sacred-sigil-terminal/src/components/SigilTerminal.tsx` | New — main terminal component |
+| `06_AGENTS/sacred-sigil-terminal/src/api/sigil.ts` | New — typed API client |
+| `06_AGENTS/sacred-sigil-terminal/public/manifest.json` | New — PWA manifest |
+| `06_AGENTS/sacred-sigil-terminal/public/sw.js` | New — service worker |
+| `06_AGENTS/sacred-sigil-terminal/public/favicon.svg` | New — sigil favicon |
+| `SACRED_LEDGER.md` | Modified — full build coverage |
 
 ---
 
@@ -635,6 +793,8 @@ Explored 31 root-level items in Google Drive:
 
 ## Recent Wins
 
+- 2026-06-16 (s19): **Sigil terminal upgrades + OpenCode integration** — Query history, gamification engine (resonance/XP/insight/level tracking, level-up gate), profile endpoint, 2 MCP sigil tools (sigil_query + sigil_execute_spell), `/sigil` OpenCode custom command, 5 shell aliases, frontend history/profile views + keyboard shortcuts
+- 2026-06-15 (s18): **Sacred Sigil Terminal v2.0 fully built** — 15 files across FastAPI backend (6 routes, 9 dims, 5 spells) + Vite/React/TS frontend (12 files, pnpm build passes). Integrated with spine :8888 and boot_sacred.sh :5174. See Sigil Terminal build mission section.
 - 2026-06-15 (s17b): **FastAPI spine pillar path fix** — config.py + hermes.py updated from old long names to short names; all 9 pillars now live and reporting; ghost dirs noted (02_COUNCIL_GROVE, 05_MEMORY_ENGINE, 06_AGENT_LAYER)
 - 2026-06-14 (s17): **ICARIS agent lock protocol applied** — `# Status: LOCKED` in first 10 lines of ASHER, AURORA, ELIAS, IRIS; D6 cron watcher now skips all four
 - 2026-06-14 (s17): **Rollback branch closed** — `sacred-d3-d6-rollback` lost across WSL restarts (never pushed); D3–D6 already on master; item removed from queue
@@ -707,6 +867,43 @@ Explored 31 root-level items in Google Drive:
 - 2026-06-05: Bashrc deduplicated — 8 duplicate aliases removed, sigil ghosts cleared
 - 2026-06-05: Claude Code profiles created (sacredsmith, aurora, elias + 3 legacy)
 - 2026-06-05: free-claude-code proxy auto-start added to bashrc
+
+## Session 19 — Sigil Terminal Upgrades + OpenCode Integration (2026-06-16)
+
+### Actions
+- **Sigil MCP tools deployed** — `sigil_query` and `sigil_execute_spell` added to FastAPI spine MCP endpoint (10 tools total). OpenCode `sacredspace` MCP server now exposes both tools.
+- **Custom `/sigil` command** added to opencode.jsonc — cast sigil queries from any OpenCode chat session.
+- **Shell aliases** added to bashrc: `sigil-status`, `sigil-dims`, `sigil-spells`, `sigil-query()`, `sigil-cast()`.
+- **Query history system built** — `sigil_history` SQLite table with auto-record on every POST /api/sigil/query. GET /api/sigil/history endpoint added.
+- **Gamification engine built** — `sigil_profile` SQLite table tracks resonance, XP, insight, level, queries_cast, spells_cast. Level-up gate at `level * 100` XP. Spells cost resonance and reward XP/insight. Auto-level-up on threshold crossed.
+- **Profile endpoint** — GET /api/sigil/profile returns caster stats.
+- **Frontend upgraded** — History view (h key), Profile view (p key), XP progress bar, profile display in status bar. `useSigilHistory` custom React hook. CSS for history list, profile stats, and XP bar.
+- **Spine restarted** — all new routes live, verified end-to-end.
+
+### Verified
+| Test | Result |
+|------|--------|
+| GET /api/sigil/history | ✅ Returns recorded queries |
+| GET /api/sigil/profile | ✅ resonance=50, xp=0, level=1 defaults |
+| POST /api/sigil/query + auto-record | ✅ Query recorded, queries_cast=1 |
+| POST /api/sigil/execute-spell + gamification | ✅ SCRIBE.RECORD: resonance 50→47, xp 0→8, insight 0→5 |
+| MCP sigil_query tool | ✅ Queries codex for "sigil terminal" — 2 results |
+| MCP sigil_execute_spell tool | ✅ Registered and callable |
+| Frontend build | ✅ 201KB JS, 6.38KB CSS — clean build |
+| Shell aliases | ✅ sigil-status returns live terminal info |
+
+### File Changes
+- `systems/fastapi/app/db.py` — Added `init_sigil_tables()` with sigil_history + sigil_profile tables
+- `systems/fastapi/app/services/sigil_terminal_backend.py` — Added `record_query()`, `get_query_history()`
+- `systems/fastapi/app/services/weaver_engine.py` — Added `get_profile()`, `update_profile()`, gamification in `execute_spell()`
+- `systems/fastapi/app/api/routers/sigil.py` — Added GET /history and GET /profile endpoints, auto-record on query
+- `systems/fastapi/app/api/routers/mcp_server.py` — Added `sigil_query` and `sigil_execute_spell` MCP tools
+- `06_AGENTS/sacred-sigil-terminal/src/api/sigil.ts` — Added getHistory(), getProfile()
+- `06_AGENTS/sacred-sigil-terminal/src/hooks/useSigilHistory.ts` — NEW: Custom hook for history + profile
+- `06_AGENTS/sacred-sigil-terminal/src/components/SigilTerminal.tsx` — Added history/profile views + keyboard shortcuts
+- `06_AGENTS/sacred-sigil-terminal/src/App.css` — Added history/profile/xp-bar styles
+- `~/.config/opencode/opencode.jsonc` — Added `/sigil` custom command
+- `~/.bashrc` — Added 5 sigil aliases + functions
 
 ---
 
