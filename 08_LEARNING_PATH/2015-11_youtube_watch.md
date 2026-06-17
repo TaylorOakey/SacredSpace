@@ -1,0 +1,146 @@
+---
+title: "YouTube Watch History — 2015-11"
+source: youtube
+created: 2015-11-01
+pillar: 08_LEARNING_PATH
+stage: RAW
+tags: [takeout, youtube, watch-history]
+---
+
+# YouTube Watch History — 2015-11
+> 132 videos watched
+
+## Videos
+
+- [Wilderness Crew - Super Dave](https://www.youtube.com/watch?v=2dHTEJ9nVv4) — Diecast Garage UK — Nov 30, 2015, 9:40:51 PM EDT
+- [Wilderness Crew - Perfect Match](https://www.youtube.com/watch?v=JEZLpceryQo) — Diecast Garage UK — Nov 30, 2015, 9:37:33 PM EDT
+- [Wilderness Crew - People](https://www.youtube.com/watch?v=QQOeW5RYSdU) — Diecast Garage UK — Nov 30, 2015, 9:33:20 PM EDT
+- [Wilderness Crew - I&#39;m Coming Home](https://www.youtube.com/watch?v=CDmvlkhjecQ) — Diecast Garage UK — Nov 30, 2015, 9:28:51 PM EDT
+- [Wilderness Crew - Widen Your Eyelids](https://www.youtube.com/watch?v=tZ0tPV1StoM) — Diecast Garage UK — Nov 30, 2015, 9:24:08 PM EDT
+- [Wilderness Crew - The Push](https://www.youtube.com/watch?v=5luBS3Om83M) — Diecast Garage UK — Nov 30, 2015, 9:19:58 PM EDT
+- [Peter Frampton Do You Feel Like We Do Midnight Special 1975 FULL](https://www.youtube.com/watch?v=y7rFYbMhcG8) — fraudiay — Nov 30, 2015, 9:09:10 PM EDT
+- [Funkadelic - Maggot Brain (full album)](https://www.youtube.com/watch?v=21sP7orRS3c) — renanbono — Nov 30, 2015, 9:04:12 PM EDT
+- [Kinetik Groove - Only Time Can Tell [Full Album] ✦║Fυהk Nʌtiøη║✦](https://www.youtube.com/watch?v=0owrolYT3eA) — Funk Nation — Nov 30, 2015, 8:59:29 PM EDT
+- [The Floozies - Do Your Thing Full Album HD ✦║Fυהk Nʌtiøη║✦](https://www.youtube.com/watch?v=I7h3vkzfV4M) — Funk Nation — Nov 30, 2015, 8:58:28 PM EDT
+- [Dimitri from Paris - Monsieur Funky Mix (deep House)](https://www.youtube.com/watch?v=3N4mIoV3U84) — Robert K — Nov 30, 2015, 8:57:27 PM EDT
+- [ST GERMAIN  - Boulevard](https://www.youtube.com/watch?v=H_F3FOcnQ3Y) — lorenzo f — Nov 30, 2015, 8:47:43 PM EDT
+- [Meditation Music, Yoga Music, Zen, Yoga Workout, Sleep, Relaxing Music, Healing, Study, Yoga, ✿2416C](https://www.youtube.com/watch?v=uRfUItCc3e4) — Yellow Brick Cinema - Relaxing Music — Nov 30, 2015, 8:38:21 AM EDT
+- [&quot;Black Ops 3 Zombies&quot; PHD 2.0, Stamin-Up 2.0, Deadshot 2.0 and Mule Kick 2.0](https://www.youtube.com/watch?v=jr7PFTlqUAQ) — ToProForuGames - Atom — Nov 26, 2015, 7:57:27 PM EDT
+- [&quot;Dance of the Sugar Plum Fairy&quot; on the Glass Armonica](https://www.youtube.com/watch?v=eQemvyyJ--g) — GrailHeart — Nov 26, 2015, 3:07:37 PM EDT
+- [Slightly Stoopid - Wiseman](https://www.youtube.com/watch?v=OMeICpLVF2Q) — WassupBRanG — Nov 25, 2015, 5:45:50 PM EDT
+- [Joe Rogan Experience #725 - Graham Hancock &amp; Randall Carlson](https://www.youtube.com/watch?v=aDejwCGdUV8) — PowerfulJRE — Nov 25, 2015, 3:28:59 PM EDT
+- [The Floozies - Do Your Thing Full Album HD ✦║Fυהk Nʌtiøη║✦](https://www.youtube.com/watch?v=I7h3vkzfV4M) — Funk Nation — Nov 25, 2015, 12:23:33 PM EDT
+- [Brief Synthoponia](https://www.youtube.com/watch?v=jYrqszMDSf4) — Sopwith Camel - Topic — Nov 25, 2015, 1:26:27 AM EDT
+- [Sopwith Camel - Cellophane Woman](https://www.youtube.com/watch?v=tHlhP1MoRwI) — woxmusic — Nov 25, 2015, 1:22:09 AM EDT
+- [Sopwith Camel - Saga of the low down let down](https://www.youtube.com/watch?v=KdcMbtkQxaQ) — Burrempie — Nov 25, 2015, 1:20:14 AM EDT
+- [Astronaut Food](https://www.youtube.com/watch?v=QnlGLcUbyxE) — Sopwith Camel - Topic — Nov 25, 2015, 1:17:01 AM EDT
+- [Sneaky Smith](https://www.youtube.com/watch?v=6lGJJ4WN2qs) — Sopwith Camel - Topic — Nov 25, 2015, 1:12:22 AM EDT
+- [Sopwith Camel - Monkeys on the Moon](https://www.youtube.com/watch?v=853c1pdg_JY) — Zack — Nov 25, 2015, 1:04:09 AM EDT
+- [Walk in the Park - Sopwith Camel](https://www.youtube.com/watch?v=3CIG6Xc-GFc) — Yurilopsy — Nov 25, 2015, 1:01:37 AM EDT
+- [The Sopwith &quot;Camel&quot; Treadin&#39;](https://www.youtube.com/watch?v=bHakohY_u1o) — Orion — Nov 25, 2015, 12:56:45 AM EDT
+- [Sopwith Camel - Coke, Suede, and  Waterbeds](https://www.youtube.com/watch?v=uIh67qaNI7c) — Neonanism — Nov 25, 2015, 12:53:14 AM EDT
+- [Sopwith Camel -- Dancin&#39; Wizard](https://www.youtube.com/watch?v=OX9exOkQAFE) — duxxxian — Nov 25, 2015, 12:42:23 AM EDT
+- [Sopwith Camel  -Orange Peel (1973)](https://www.youtube.com/watch?v=1VCHgMJtTPE) — Giannis Pachidis — Nov 25, 2015, 12:36:12 AM EDT
+- [Bassnectar - Bass Head (King Fantastic Remix)](https://www.youtube.com/watch?v=LgOAb84flyg) — sisigwithrice — Nov 25, 2015, 12:30:42 AM EDT
+- [The Rolling Stones - Shelter Dubstep Remix (Zeds Dead Official)](https://www.youtube.com/watch?v=MzM1KUrOlv4) — Better Play — Nov 23, 2015, 11:05:53 PM EDT
+- [Zeds Dead - &quot;Demons&quot; (Official Video) Directed by Benjamin Millepied](https://www.youtube.com/watch?v=iGXB3rEndN8) — Noisey — Nov 23, 2015, 11:02:39 PM EDT
+- [Zeds Dead &amp; Oliver Heldens - You Know (Official Music Video)](https://www.youtube.com/watch?v=9a_spSAjUmg) — Spinnin&#39; Records — Nov 23, 2015, 10:59:42 PM EDT
+- [★ Amazing Female Vocal Liquid Dubstep Mix! ★](https://www.youtube.com/watch?v=UaMoRM-cyIM) — ⛧𝔉𝔞𝔗𝔞𝔩 — Nov 23, 2015, 10:58:44 PM EDT
+- [►Most Epic Euphoric Chillstep/Liquid Dubstep 1Hour Gaming Music Mix 2014-2015◄ [Moonlight&#39;s Embrace]](https://www.youtube.com/watch?v=X727AYHiNLM) — xXMostEpicGamingXx — Nov 23, 2015, 10:58:16 PM EDT
+- [Shaolin Afronauts - Follow The Path (2014)](https://www.youtube.com/watch?v=rp2VBpUDrts) — yabmeks — Nov 23, 2015, 10:55:30 PM EDT
+- [Causa Sui - Euporie Tide (2013)](https://www.youtube.com/watch?v=NWMwcSXxALY) — Enter. Enter — Nov 23, 2015, 10:40:25 PM EDT
+- [The Kilimanjaro Darkjazz Ensemble - Here Be Dragons (Full Album)](https://www.youtube.com/watch?v=AyORieDhpkg) — Ivica Stojkov — Nov 23, 2015, 10:38:51 PM EDT
+- [Samsara Blues Experiment - Long Distance Trip - Full album](https://www.youtube.com/watch?v=6vpOHq8bkzA) — ｓｕｎｃｈｙｌｄｅ — Nov 23, 2015, 10:12:34 PM EDT
+- [Baba Soul &amp; the professors of funk&quot; I GOT SOUL&quot; Promo Video&quot;](https://www.youtube.com/watch?v=MOLpvJvpJL4) — Baba Soul — Nov 23, 2015, 10:10:52 PM EDT
+- [Sister Sledge - He&#39;s The Greatest Dancer](https://www.youtube.com/watch?v=TDwutKpVyas) — Koplinskiy — Nov 23, 2015, 9:13:31 PM EDT
+- [The Undisputed Truth Smokin&#39; (Album face1)](https://www.youtube.com/watch?v=5kggfu2H3pI) — Ter Gui — Nov 23, 2015, 8:31:06 PM EDT
+- [Kero One - Groovin&#39; (Mushroom Jazz 6)](https://www.youtube.com/watch?v=4cfu6RLehvs) — Derlan Paz — Nov 23, 2015, 8:28:47 PM EDT
+- [Mark Farina - Mushroom Jazz 6 [Full Mixtape]](https://www.youtube.com/watch?v=YuTDP7IPAbA) — Matt Katar — Nov 23, 2015, 8:07:04 PM EDT
+- [Jamiroquai DJ Mix by JaBig Acid Jazz Funk Music Rock Deep House Lounge Compilation Playlist   YouTub](https://www.youtube.com/watch?v=qr7wYkgogOw) — maGenta piXie — Nov 23, 2015, 8:06:26 PM EDT
+- [Explosions In The Sky Live at AB - Ancienne Belgique](https://www.youtube.com/watch?v=VUuz68zkJu8) — AB - Ancienne Belgique — Nov 23, 2015, 6:56:35 PM EDT
+- [All Day - Girl Talk (Full Album)](https://www.youtube.com/watch?v=uWzkK7tUjaU) — Girl Talk — Nov 23, 2015, 6:35:14 PM EDT
+- [John Butler Trio - Live At Red Rocks (Complet)](https://www.youtube.com/watch?v=3ZzvyTwHAUA) — Rasta Punk — Nov 22, 2015, 8:29:46 PM EDT
+- [om mani padme hum](https://www.youtube.com/watch?v=iG_lNuNUVd4) — batesaurio — Nov 20, 2015, 9:01:42 AM EDT
+- [yeah so... i&#39;m gonna take a hit of salvia, so this is my mom and dad here, partaking of salvia divin](https://www.youtube.com/watch?v=vuzv4QjSQLw) — FreePercussion — Nov 19, 2015, 8:41:50 PM EDT
+- [John Mayer - Free Fallin&#39; (Live at the Nokia Theatre)](https://www.youtube.com/watch?v=20Ov0cDPZy8) — johnmayerVEVO — Nov 18, 2015, 11:01:56 PM EDT
+- [Ben Harper &amp; Jack Johnson -  Please Me Like You Want To](https://www.youtube.com/watch?v=03Z5Ai3J1ug) — chernobilski — Nov 18, 2015, 8:53:08 PM EDT
+- [Ben Harper - Steal my kisses](https://www.youtube.com/watch?v=BSTBs3IEVQs) — Aideen Stack — Nov 18, 2015, 8:46:04 PM EDT
+- [Ben Harper - Burn One Down](https://www.youtube.com/watch?v=7nXH_6o-X7U) — MisterDudeManGuySir — Nov 18, 2015, 8:40:54 PM EDT
+- [Ben Harper - Paris Sunrise #7](https://www.youtube.com/watch?v=a6Gby3rYvas) — Vincenzo Greco — Nov 18, 2015, 8:32:19 PM EDT
+- [A-F-R-O - Code #829 (Official Music Video)](https://www.youtube.com/watch?v=547DlGNUnMA) — RAtheRuggedManTV — Nov 18, 2015, 6:11:39 PM EDT
+- [The Silent Forest - Chillstep Mix](https://www.youtube.com/watch?v=18NHV4nJLQc) — Mixomnia — Nov 18, 2015, 1:38:03 PM EDT
+- [King Fantastic - Isla de la Juventud](https://www.youtube.com/watch?v=81XXbQc7TcY) — thekingfantastic — Nov 18, 2015, 1:10:14 PM EDT
+- [King Fantastic - Joshua Tree](https://www.youtube.com/watch?v=xsJaoKM6W6Q) — thekingfantastic — Nov 18, 2015, 1:06:39 PM EDT
+- [King Fantastic - Rad Racer](https://www.youtube.com/watch?v=Eu5dnVei3WM) — thekingfantastic — Nov 18, 2015, 1:01:14 PM EDT
+- [King Fantastic - The Hardest Song Ever](https://www.youtube.com/watch?v=PvfUNGlyZSs) — thekingfantastic — Nov 18, 2015, 12:56:08 PM EDT
+- [King Fantastic - Sewer Surfer](https://www.youtube.com/watch?v=0xoFy79vJeE) — thekingfantastic — Nov 18, 2015, 12:52:56 PM EDT
+- [King Fantastic - Spooky Spooks and the Trouble with Capitalism](https://www.youtube.com/watch?v=vHsqb2U1lMI) — thekingfantastic — Nov 18, 2015, 12:49:58 PM EDT
+- [King Fantastic - Sands Through the Hourglass](https://www.youtube.com/watch?v=wxI0C6kbEiM) — thekingfantastic — Nov 18, 2015, 12:47:33 PM EDT
+- [TOM SAWYER - RUSH (7 year old Drummer) /\ Avery Drummer](https://www.youtube.com/watch?v=MR_x_vrSZBM) — Avery Drummer Molek — Nov 18, 2015, 12:29:03 PM EDT
+- [Earth - The Bees Made Honey In The Lion&#39;s Skull](https://www.youtube.com/watch?v=wEiRKpflgQA) — TurkeyFriction — Nov 18, 2015, 12:19:51 PM EDT
+- [Acid Mothers Temple &amp; The Cosmic Inferno - Anthem of the Space](https://www.youtube.com/watch?v=N5I01D05ak0) — patbateman26 — Nov 18, 2015, 12:17:29 PM EDT
+- [Sweet Smoke - Just A Poke (Full Album)](https://www.youtube.com/watch?v=Qsgj0rFUOC4) — unwariesthail — Nov 18, 2015, 12:07:24 PM EDT
+- [om mani padme hum](https://www.youtube.com/watch?v=iG_lNuNUVd4) — batesaurio — Nov 15, 2015, 11:25:59 PM EDT
+- [Concave earth hoax - glass domes vs reverse aberration](https://www.youtube.com/watch?v=xKPigO6whW4) — freeanergy — Nov 15, 2015, 11:16:51 PM EDT
+- [Ram Mantra Chanting | Shri Ram Jai Ram Jai Jai Ram | Anandmurti Gurumaa](https://www.youtube.com/watch?v=QFhV4W0ugHQ) — Anandmurti Gurumaa — Nov 15, 2015, 10:55:33 PM EDT
+- [Beyond Success - Ram Dass Full Lecture 1987](https://www.youtube.com/watch?v=Orb8cGSqS-A) — Baba Ram Dass — Nov 15, 2015, 10:45:50 PM EDT
+- [Run The Jewels - Rubble Kings Theme (Dynamite)](https://www.youtube.com/watch?v=0XboRkCEqKo) — RunTheJewels — Nov 15, 2015, 9:26:38 PM EDT
+- [Creown (3D of Massive Attack Remix) - Meow The Jewels](https://www.youtube.com/watch?v=faPjIeTVPEQ) — Mass Appeal Records — Nov 15, 2015, 9:26:17 PM EDT
+- [Snug Again (Little Shalimar Remix) - Meow The Jewels](https://www.youtube.com/watch?v=kQbveAtzzTk) — Mass Appeal Records — Nov 15, 2015, 9:25:40 PM EDT
+- [Meowpurrdy (El-P Remix) - Meow The Jewels](https://www.youtube.com/watch?v=eOvzllwBJQg) — Mass Appeal Records — Nov 15, 2015, 9:21:42 PM EDT
+- [Crack Head Talking Total Jibberish.](https://www.youtube.com/watch?v=hDDrc36PSj0) — Kevin Hendrie — Nov 15, 2015, 12:07:34 AM EDT
+- [om mani padme hum](https://www.youtube.com/watch?v=iG_lNuNUVd4) — batesaurio — Nov 14, 2015, 12:56:47 AM EDT
+- [Sopwith Camel - Coke, Suede, and  Waterbeds](https://www.youtube.com/watch?v=uIh67qaNI7c) — Neonanism — Nov 13, 2015, 6:36:34 PM EDT
+- [Sopwith Camel -- Dancin&#39; Wizard](https://www.youtube.com/watch?v=OX9exOkQAFE) — duxxxian — Nov 13, 2015, 6:24:48 PM EDT
+- [Sopwith Camel  -Orange Peel (1973)](https://www.youtube.com/watch?v=1VCHgMJtTPE) — Giannis Pachidis — Nov 13, 2015, 6:18:57 PM EDT
+- [Fat Freddys Drop - Based On A True Story (Full Album)](https://www.youtube.com/watch?v=Y7QQS5V3cnI) — SnoopDoggyTosh — Nov 13, 2015, 10:32:27 AM EDT
+- [The Richest Man In Babylon - Thievery Corporation [Full Album]](https://www.youtube.com/watch?v=uN9tulBHr8Y) — Rata Analytics — Nov 13, 2015, 10:01:45 AM EDT
+- [Dub Funk (Various Artists)Full Album.](https://www.youtube.com/watch?v=GnUGKCF351Y) — trippy malc — Nov 13, 2015, 9:57:48 AM EDT
+- [The Soul Investigators - Fat Slice O&#39;Funk (Full Album) 2006](https://www.youtube.com/watch?v=ZpOA89mGDlo) — Funkheads — Nov 13, 2015, 9:57:23 AM EDT
+- [GNUF Sessions 2015   Dead Mans Uke](https://www.youtube.com/watch?v=2Yk8NMpysbI) — GNUF Grand Northern Ukulele Festival — Nov 13, 2015, 9:49:26 AM EDT
+- [Dead Mans Uke &amp; The Mersey Belles - Uptown Funk (Live in a Lift #1)](https://www.youtube.com/watch?v=9_6FiDnNgxY) — Tim Smithies — Nov 13, 2015, 9:48:04 AM EDT
+- [Wonderful Tonight - Bariuke Ukulele Cover Lesson with Lyrics/Chords](https://www.youtube.com/watch?v=Jni2oBFaeEg) — MunsonCovers — Nov 13, 2015, 9:41:14 AM EDT
+- [Earl Sweatshirt - EARL](https://www.youtube.com/watch?v=78_loMbmKJ8) — OFWGKTA — Nov 12, 2015, 1:53:13 AM EDT
+- [The Undisputed Truth - Method to the Madness](https://www.youtube.com/watch?v=lWD1qBHZ8jQ) — Thomas laffing — Nov 11, 2015, 10:58:39 AM EDT
+- [The Polish Ambassador - Let the Rhythm Just ft Mr Lif &amp; Ayla Nereo (Jumpsuit Records)](https://www.youtube.com/watch?v=B7-0ULhk4w0) — The Polish Ambassador — Nov 10, 2015, 6:27:31 PM EDT
+- [The Polish Ambassador - New Funk Millennium](https://www.youtube.com/watch?v=HhE9hblOScc) — The Polish Ambassador — Nov 10, 2015, 6:14:43 PM EDT
+- [Otonoha - New Age Funk](https://www.youtube.com/watch?v=i3nz1DWu8CM) — Glitch Hop Community — Nov 10, 2015, 6:08:51 PM EDT
+- [Popo](https://www.youtube.com/watch?v=i0VL4SZODpI) — Midnight Spaghetti &amp; The Chocolate G-Strings - Topic — Nov 10, 2015, 5:58:01 PM EDT
+- [The Catering Blues](https://www.youtube.com/watch?v=aRNUvHoJdSs) — Midnight Spaghetti &amp; The Chocolate G-Strings - Topic — Nov 10, 2015, 5:49:29 PM EDT
+- [Rat Fight](https://www.youtube.com/watch?v=ofq4WSy1O2Q) — Midnight Spaghetti &amp; The Chocolate G-Strings - Topic — Nov 10, 2015, 5:43:55 PM EDT
+- [MAKING A BONG!](https://www.youtube.com/watch?v=hcmVoV0JGXw) — High Rise TV — Nov 10, 2015, 5:18:58 PM EDT
+- [Earphunk - Groove Festival 7-19-14 Georgetown, CO HD tripod](https://www.youtube.com/watch?v=m3qF2HhsvP0) — evenstev — Nov 10, 2015, 4:02:25 PM EDT
+- [RATATAT - DRUGS](https://www.youtube.com/watch?v=KhrteSZXFzM) — ratatatmusic — Nov 10, 2015, 10:20:55 AM EDT
+- [DESPOT - HOUSE OF BRICKS (OFFICIAL VIDEO)](https://www.youtube.com/watch?v=nT5B9NnSN6A) — ratatatmusic — Nov 10, 2015, 10:16:49 AM EDT
+- [The Polish Ambassador - Invisible Frontiers](https://www.youtube.com/watch?v=NwaiphBGIkc) — The Polish Ambassador — Nov 10, 2015, 10:11:37 AM EDT
+- [Torus Fun (Sacred Geometry by ieoie)](https://www.youtube.com/watch?v=u0eOuxJX36g) — ieoie — Nov 10, 2015, 9:14:51 AM EDT
+- [MASSIVE BLUE UFO OVER LOS ANGELES 11-7-15 [HD]](https://www.youtube.com/watch?v=yu7mNmqJJ10) — julien solomita — Nov 10, 2015, 12:15:12 AM EDT
+- [Cake - i will survive](https://www.youtube.com/watch?v=7KJjVMqNIgA) — Francisco Cusi  — Nov 8, 2015, 6:11:04 PM EDT
+- [Chip Tha Ripper feat. Curren$y &amp; Big Sean - Fat Raps (prod. Chuck Inglish)](https://www.youtube.com/watch?v=peII1Y_iY1w) — Jorge Hall — Nov 8, 2015, 3:52:17 PM EDT
+- [King Fantastic - Drive It Like You Stole It (Live at The Viper Room - May 3, 2014)](https://www.youtube.com/watch?v=g1tpQZ0Iasg) — thekingfantastic — Nov 8, 2015, 3:41:00 PM EDT
+- [Transforming emotions | Guided Meditation By Gurudev Sri Sri Ravi Shankar](https://www.youtube.com/watch?v=NEPzjZt2EGU) — Gurudev Sri Sri Ravi Shankar — Nov 5, 2015, 8:59:06 PM EDT
+- [om mani padme hum](https://www.youtube.com/watch?v=iG_lNuNUVd4) — batesaurio — Nov 3, 2015, 8:54:06 AM EDT
+- [Reggie Watts Conan June 2011](https://www.youtube.com/watch?v=8e9l8Usa_pE) — Kyle Tibz — Nov 3, 2015, 8:53:44 AM EDT
+- [Reggie Watts Conan June 2011](https://www.youtube.com/watch?v=8e9l8Usa_pE) — Kyle Tibz — Nov 2, 2015, 9:54:54 PM EDT
+- [THePETEBOX Future Loops - Panther Dance - Beatbox Loop Pedal](https://www.youtube.com/watch?v=2ji6sJLFc8A) — THePETEBOX — Nov 2, 2015, 9:51:54 PM EDT
+- [Armonica - SOPLE USTED AQUÍ - (BLUES HARMONICA) -](https://www.youtube.com/watch?v=aoKiuKn7kv4) — Miguel Angel Oliva — Nov 2, 2015, 9:45:43 PM EDT
+- [▬ Sad But True ▬ Bumm-Guitar ▬ Pensen Paletti ▬ ( Insane drum+guitar-mod )](https://www.youtube.com/watch?v=U9DqRBGiBo8) — Pensen Paletti — Nov 2, 2015, 9:30:46 PM EDT
+- [▬ Highway To Hell ▬ Bumm-Guitar ▬ Pensen Paletti ▬ ( Insane drum+guitar-mod )](https://www.youtube.com/watch?v=IRZN8tP1m-Y) — Pensen Paletti — Nov 2, 2015, 9:28:18 PM EDT
+- [▬ Bumm-Guitar ▬ Pensen Paletti ▬  ( SongTitel: &quot;Bumm die Welt&quot;)](https://www.youtube.com/watch?v=mOF4iUmMYRE) — DasPackHamburg — Nov 2, 2015, 9:27:15 PM EDT
+- [Jake Shimabukuro &quot;Let&#39;s Dance&quot;](https://www.youtube.com/watch?v=ZqaYmQZgrB4) — Corporate Country Sucks — Nov 2, 2015, 9:22:36 PM EDT
+- [While My Guitar (Ukulele) Gently Weeps-Jake Shimabukuro](https://www.youtube.com/watch?v=qw6YL_l2YxA) — Paiste42 — Nov 2, 2015, 9:16:10 PM EDT
+- [TAUK - Full Set - Orlando FL 05/06/2015](https://www.youtube.com/watch?v=Y0xCHg9hMRw) — TheSoberGoat — Nov 1, 2015, 12:55:04 PM EDT
+- [Warren Haynes ­with Joe Bonamassa | Guitar Center&#39;s King of the Blues 2011](https://www.youtube.com/watch?v=KX14smq21HE) — Guitar Center — Nov 1, 2015, 12:42:28 PM EDT
+- [Stevie Ray Vaughan &amp; Double Trouble - Warm Up](https://www.youtube.com/watch?v=grBmQwLSlDw) — Rare Music and Band Videos — Nov 1, 2015, 12:37:43 PM EDT
+- [Grateful Dead 10-8-89 Hampton Coliseum Hampton VA](https://www.youtube.com/watch?v=459QWNmg0FU) — voodoonola — Nov 1, 2015, 12:29:16 PM EDT
+- [Guitar World&#39;s - Best Guitar Solo Ever](https://www.youtube.com/watch?v=5e4i4dSdEAI) — BestGuitarWorldSolo — Nov 1, 2015, 12:15:19 PM EDT
+- [Top 10 Guitar Solos](https://www.youtube.com/watch?v=f4NOJ42-BKM) — WatchMojo.com — Nov 1, 2015, 12:14:18 PM EDT
+- [Guitar Funk Solo - Jairus Mozee Sound Check Funk Groove (Behind the scenes)](https://www.youtube.com/watch?v=ApO8r4vsi40) — hearandplay — Nov 1, 2015, 12:11:50 PM EDT
+- [Crazy funk solo!](https://www.youtube.com/watch?v=ezNmmT_k6Qo) — Rob Scallon — Nov 1, 2015, 12:08:52 PM EDT
+- [TNT Solo by AC/DC - Guitar Lesson](https://www.youtube.com/watch?v=V1KZGNYPnIE) — Guitar Lessons Bobby Crispy    — Nov 1, 2015, 11:57:37 AM EDT
+- [Top 10 EASIEST Guitar Solos!](https://www.youtube.com/watch?v=oN8bi551VuA) — Steve Terreberry — Nov 1, 2015, 11:56:57 AM EDT
+- [C Major: Backing Track / Jam Track for Guitarists](https://www.youtube.com/watch?v=cWen0u6YPZA) — LeadCatPress — Nov 1, 2015, 11:55:45 AM EDT
+- [An Easy Guitar Solo in the Major Pentatonic Scale (Key of E)](https://www.youtube.com/watch?v=801zq6ZKyJQ) — Active Melody — Nov 1, 2015, 10:01:08 AM EDT
+- [The CAGED SYSTEM explained - A simple explanation of this powerful mindset.](https://www.youtube.com/watch?v=LhrGeolItvw) — Kirk Lorange — Nov 1, 2015, 9:45:00 AM EDT
+- [How to Play Beginner Lead Guitar in TEN BASIC MOVES!](https://www.youtube.com/watch?v=D7jV50wt-e0) — Jim Bowley — Nov 1, 2015, 9:27:53 AM EDT
+- [Learn 2 solo lead blues rock  guitar major pentatonic scales](https://www.youtube.com/watch?v=YOXfqTACUiA) — rockongoodpeople — Nov 1, 2015, 9:20:30 AM EDT

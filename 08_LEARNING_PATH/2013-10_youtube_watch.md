@@ -1,0 +1,127 @@
+---
+title: "YouTube Watch History — 2013-10"
+source: youtube
+created: 2013-10-01
+pillar: 08_LEARNING_PATH
+stage: RAW
+tags: [takeout, youtube, watch-history]
+---
+
+# YouTube Watch History — 2013-10
+> 113 videos watched
+
+## Videos
+
+- [Railroad Earth playing Grateful Dead&#39;s Casey Jones](https://www.youtube.com/watch?v=iReM5ay0Ots) — EncoreAlbums — Oct 30, 2013, 10:27:37 AM EDT
+- [&quot;Seven Story Mountain&quot; by Railroad Earth](https://www.youtube.com/watch?v=Q5dgbjWnlFk) — markpantsari — Oct 30, 2013, 10:27:31 AM EDT
+- [Railroad Earth - Bird In A House (3-21-11)](https://www.youtube.com/watch?v=Rms2_01ocnU) — LongStrangeTrip710 — Oct 30, 2013, 10:26:51 AM EDT
+- [Railroad Earth - The Hunting Song](https://www.youtube.com/watch?v=0Uf_hYskL4c) — wallisblud — Oct 30, 2013, 10:25:34 AM EDT
+- [The Werks - Golden Shore](https://www.youtube.com/watch?v=dRpGMgDRjOg) — Dylan Powell — Oct 30, 2013, 10:19:18 AM EDT
+- [The Werks - Hard to Find](https://www.youtube.com/watch?v=DGcfhaxP-bI) — Dylan Powell — Oct 30, 2013, 10:17:48 AM EDT
+- [The Werks - Duck Farm](https://www.youtube.com/watch?v=o_7jryEwsmU) — Dylan Powell — Oct 30, 2013, 10:16:54 AM EDT
+- [Aer - Won&#39;t Laugh](https://www.youtube.com/watch?v=rtybr8_IaNM) — theAerWeBreathe — Oct 30, 2013, 10:09:45 AM EDT
+- [introduction to kundalini yoga, third eye chakra meditation, kundalini yoga meditation beginners,](https://www.youtube.com/watch?v=9kL5mS7MD4I) — SaveTheWeave — Oct 28, 2013, 11:28:21 AM EDT
+- [Pineal Gland Awakening,DMT, DNA Upgrade, Activating the Astral Body. Evolution, Enlightenment.](https://www.youtube.com/watch?v=eBKYIIdxpTg) — Gnostradamus Jacob Cox — Oct 28, 2013, 10:11:26 AM EDT
+- [How to See an Aura: Learn to See the Human Aura in 5 Minutes](https://www.youtube.com/watch?v=aYlb_XtNP7c) — Higher Balance Institute — Oct 28, 2013, 10:09:51 AM EDT
+- [ᴴᴰ 98.7% Proven Meditation Technique | EMDR Audio](https://www.youtube.com/watch?v=CvME_EylPXU) — Meditational State • Healing Music — Oct 28, 2013, 9:50:55 AM EDT
+- [Honda Civic. Easy CV joint removal and refit, left side.](https://www.youtube.com/watch?v=DQktkhPj3yg) — backstreetmechanic — Oct 26, 2013, 9:59:31 AM EDT
+- [Lower ball joint replacement](https://www.youtube.com/watch?v=vb__1EEoFyo) — SimplyThinkDreams — Oct 26, 2013, 8:45:16 AM EDT
+- [Yi Peng (ยี่เป็ง โคมลอย เชียงใหม่) Festival Chiang Mai (10000+ Sky Lanterns)](https://www.youtube.com/watch?v=37cfai0-dhE) — 8 Miles from Home — Oct 25, 2013, 3:20:01 PM EDT
+- [The Polish Ambassador Live at Lightning In A Bottle 2013 by Viral Punk TV](https://www.youtube.com/watch?v=Lp9nUiqwiyE) — The Polish Ambassador — Oct 25, 2013, 9:19:48 AM EDT
+- [Samsung Galaxy Note 3 Unboxing: iPhone 5S vs Note 3 Review &amp; Comparison](https://www.youtube.com/watch?v=N7dujvYV-ew) — iCrackUriDevice — Oct 25, 2013, 7:52:00 AM EDT
+- [Doctor to Doctor with Dr. Boden | Check It Out! With Dr. Steve Brule | Adult Swim](https://www.youtube.com/watch?v=tzSEd7e6tdc) — Adult Swim — Oct 24, 2013, 8:12:19 PM EDT
+- [King Fantastic - Appreciation (feat. Truth in Fiction)](https://www.youtube.com/watch?v=oECG4VMR7vI) — thekingfantastic — Oct 24, 2013, 4:06:05 PM EDT
+- [King Fantastic - On Q](https://www.youtube.com/watch?v=RuyQfGHrmfI) — thekingfantastic — Oct 24, 2013, 4:05:48 PM EDT
+- [King Fantastic - D Boy Stance (feat. Anacron)](https://www.youtube.com/watch?v=9mtEHJVCCOE) — thekingfantastic — Oct 24, 2013, 4:05:33 PM EDT
+- [King Fantastic - Stop Fucking Playing](https://www.youtube.com/watch?v=EG48hIKJ0Gs) — thekingfantastic — Oct 24, 2013, 4:05:20 PM EDT
+- [King Fantastic - On Q (Official Music Video)](https://www.youtube.com/watch?v=iO9kcNOcX18) — thekingfantastic — Oct 24, 2013, 4:02:20 PM EDT
+- [The Do LaB&#39;s Lightning in a Bottle | LIB Official Video 2010](https://www.youtube.com/watch?v=95jfk624rRs) — Do LaB — Oct 24, 2013, 3:59:55 PM EDT
+- [Ayla Nereo and The Polish Ambassador - Live Inside A Dream | HD](https://www.youtube.com/watch?v=MEIvViUoFYk) — The Groove Panda — Oct 24, 2013, 3:58:58 PM EDT
+- [The Polish Ambassador -  Waterhome](https://www.youtube.com/watch?v=meHzKyOP0Bo) — The Polish Ambassador — Oct 24, 2013, 3:58:19 PM EDT
+- [The Polish Ambassador - Kids Music For Adults](https://www.youtube.com/watch?v=eavMsKUJciQ) — The Polish Ambassador — Oct 24, 2013, 3:46:29 PM EDT
+- [The Polish Ambassador - Sundrops](https://www.youtube.com/watch?v=BK9pr98ZE-0) — The Polish Ambassador — Oct 24, 2013, 3:45:37 PM EDT
+- [The Polish Ambassador - Conversations Between ft Ayla Nereo](https://www.youtube.com/watch?v=TXA3IJQLDkQ) — The Polish Ambassador — Oct 24, 2013, 3:45:23 PM EDT
+- [The Polish Ambassador - Rise ft. Ayla Nereo](https://www.youtube.com/watch?v=fT1qPwHdXHA) — The Polish Ambassador — Oct 24, 2013, 3:45:05 PM EDT
+- [Railroad Earth playing Grateful Dead&#39;s Casey Jones](https://www.youtube.com/watch?v=iReM5ay0Ots) — EncoreAlbums — Oct 24, 2013, 3:43:49 PM EDT
+- [Like A Buddha - Railroad Earth - Bird In A House](https://www.youtube.com/watch?v=kxlJ5nEowCM) — SavarnaAnne — Oct 24, 2013, 3:43:08 PM EDT
+- [Railroad Earth - &quot;Little Bit of Me&quot;](https://www.youtube.com/watch?v=Hwz6zkr7OL0) — Railroad Earth — Oct 24, 2013, 3:42:35 PM EDT
+- [Railroad Earth - &quot;Lovin&#39; You&quot;](https://www.youtube.com/watch?v=h4xF1H9enBk) — Railroad Earth — Oct 24, 2013, 3:38:10 PM EDT
+- [Railroad Earth - Storms](https://www.youtube.com/watch?v=yWJ1VLctByQ) — ufuckedupthegenepool — Oct 24, 2013, 3:37:33 PM EDT
+- [Grateful Dead - Fire On The Mountain (Studio Version)](https://www.youtube.com/watch?v=YAhEi7W1ib0) — LongStrangeTrip710 — Oct 24, 2013, 3:36:59 PM EDT
+- [Grateful Dead - Eyes of the World (Studio Version)](https://www.youtube.com/watch?v=vCy9k_RWlvA) — LongStrangeTrip710 — Oct 24, 2013, 3:36:40 PM EDT
+- [Grateful Dead - Estimated Prophet - Studio Version](https://www.youtube.com/watch?v=MQs22Kt-vZk) — OldHippy1956 — Oct 24, 2013, 3:36:07 PM EDT
+- [Grateful Dead - Sugaree 1972 (Studio Version)](https://www.youtube.com/watch?v=GikGnKuehms) — TheAlucard — Oct 24, 2013, 3:34:57 PM EDT
+- [Grateful Dead - Friend of The Devil](https://www.youtube.com/watch?v=XacvydVrhuI) — FictionalMink — Oct 24, 2013, 3:34:17 PM EDT
+- [The Grateful Dead - Ripple (Studio Version)](https://www.youtube.com/watch?v=671AgW9xSiA) — Nicky G — Oct 24, 2013, 3:33:38 PM EDT
+- [Grateful Dead - Uncle John&#39;s Band (Studio Version)](https://www.youtube.com/watch?v=TSIajKGHZRk) — LongStrangeTrip710 — Oct 24, 2013, 3:33:00 PM EDT
+- [Grateful Dead - Truckin&#39; (Studio Version)](https://www.youtube.com/watch?v=RPQAbBI7E38) — LongStrangeTrip710 — Oct 24, 2013, 3:31:15 PM EDT
+- [The Grateful Dead - Touch of Grey (Studio Version)](https://www.youtube.com/watch?v=1uby6jFCDjE) — Dead937 — Oct 24, 2013, 3:30:06 PM EDT
+- [Lightning in a bottle - Woogie Stage 2012 (Watch in HD)](https://www.youtube.com/watch?v=hemPQTnjhl4) — pocketunderground — Oct 24, 2013, 11:57:59 AM EDT
+- [Gramatik - A Bright Day](https://www.youtube.com/watch?v=Eoyh8YaL-5k) — Drops152 — Oct 24, 2013, 11:57:06 AM EDT
+- [Gramatik - Chillaxin&#39; by the Sea](https://www.youtube.com/watch?v=kyhgmmBx9Rw) — Stereophile1isback — Oct 24, 2013, 11:56:30 AM EDT
+- [Gramatik - Funk It Down (Original Mix)](https://www.youtube.com/watch?v=t1gwCBIRJ4U) — Topiotrelo10 — Oct 24, 2013, 11:54:25 AM EDT
+- [Gramatik - Ass Kickin&#39; Bass](https://www.youtube.com/watch?v=QN7UAPOJZxM) — YazourAU — Oct 24, 2013, 11:54:03 AM EDT
+- [Grateful Dead - Scarlet Begonias](https://www.youtube.com/watch?v=Kj_kK1j3CV0) — Ben Tenney — Oct 24, 2013, 10:50:35 AM EDT
+- [Guitar Lessons - Your First Chords And Strum](https://www.youtube.com/watch?v=hqTsAZjbDIU) — nutshell0052 — Oct 24, 2013, 9:17:26 AM EDT
+- [String Cheese Incident with Greensky Blue Grass - Atlantic City @ Electric Forest Festival 2013](https://www.youtube.com/watch?v=hClaNK8kLos) — B-Tosh — Oct 23, 2013, 2:01:54 PM EDT
+- [String Cheese Incident &quot;This Must Be the Place&quot; Electric Forest 2012](https://www.youtube.com/watch?v=RQZeSC7NdA0) — Winston Murray — Oct 22, 2013, 2:11:29 PM EDT
+- [2001 HONDA CIVIC FRONT BRAKE JOB  PART 2](https://www.youtube.com/watch?v=tXxwJ278X2E) — Curt Thomas — Oct 22, 2013, 10:29:07 AM EDT
+- [The Ultimate Subwoofer test song](https://www.youtube.com/watch?v=HTYleDzHzf0) — Jsims91 — Oct 21, 2013, 11:25:25 AM EDT
+- [Reggie Watts Conan June 2011](https://www.youtube.com/watch?v=8e9l8Usa_pE) — Kyle Tibz — Oct 20, 2013, 11:28:58 AM EDT
+- [(HD) Lotus @ Electric Forest 2013 &quot;What Did I Do Wrong&quot;](https://www.youtube.com/watch?v=p2fFj8i9-BA) — Dubarco — Oct 19, 2013, 3:10:29 PM EDT
+- [Tower Of Power  -  Soul Vaccination](https://www.youtube.com/watch?v=46hd6DZS0ww) — AuntieSoul34 — Oct 19, 2013, 3:08:16 PM EDT
+- [String Cheese Incident - Jellyfish](https://www.youtube.com/watch?v=XKpwBIVP6ew) — Strangeblackclouds — Oct 19, 2013, 1:49:28 PM EDT
+- [String Cheese Incident- Best Feeling w/ Keller (HD) 7/3/2009](https://www.youtube.com/watch?v=V73sKxSXjDE) — John Williams — Oct 19, 2013, 12:46:43 PM EDT
+- [String Cheese Incident - Joyful Sound](https://www.youtube.com/watch?v=l4rbbS2hhRY) — Strangeblackclouds — Oct 19, 2013, 12:41:20 PM EDT
+- [Tower Of Power - I Like Your Style - with lyrics](https://www.youtube.com/watch?v=OX8ur4inyYU) — Simon Bjerg — Oct 19, 2013, 12:04:41 PM EDT
+- [Tower Of Power - Diggin&#39; On James Brown](https://www.youtube.com/watch?v=hfj8zxGos10) — MrBuckWoody126 — Oct 19, 2013, 11:59:21 AM EDT
+- [Friend of the Devil - uke lesson](https://www.youtube.com/watch?v=iO6oLxUdays) — smircOpus — Oct 19, 2013, 10:09:38 AM EDT
+- [RAILROAD EARTH - &quot;Pickin&#39; Medley&quot;](https://www.youtube.com/watch?v=lsLQVYkkYgo) — MoBoogie — Oct 16, 2013, 12:17:59 AM EDT
+- [Tower Of Power - Diggin&#39; On James Brown](https://www.youtube.com/watch?v=hfj8zxGos10) — MrBuckWoody126 — Oct 16, 2013, 12:11:32 AM EDT
+- [String Cheese Incident - Joyful Sound](https://www.youtube.com/watch?v=l4rbbS2hhRY) — Strangeblackclouds — Oct 15, 2013, 11:11:52 PM EDT
+- [Bela Fleck and the Flecktones - Over The Wall](https://www.youtube.com/watch?v=gQfaNzrQz4M) — Freddy Hernandez — Oct 15, 2013, 11:05:00 PM EDT
+- [Bela Fleck &amp; The Flecktones - Big Country](https://www.youtube.com/watch?v=WbGsiuZ3L6o) — bzeljn — Oct 15, 2013, 10:34:46 PM EDT
+- [Grateful Dead - China Cat Sunflower / I Know You Rider (5-3-72)](https://www.youtube.com/watch?v=xCgZxrf8nrU) — LongStrangeTrip710 — Oct 15, 2013, 9:18:03 PM EDT
+- [Grateful Dead - Scarlet Begonias](https://www.youtube.com/watch?v=Kj_kK1j3CV0) — Ben Tenney — Oct 15, 2013, 9:06:47 PM EDT
+- [Umphrey&#39;s McGee: &quot;Ocean Billy&quot; Live at Red Rocks](https://www.youtube.com/watch?v=9B1vJpOn1so) — Umphrey&#39;s McGee — Oct 15, 2013, 1:27:45 PM EDT
+- [Deadmau5 - Animal Rights (4x4=12)](https://www.youtube.com/watch?v=NBp9mNOFDLk) — BOLANentertainment — Oct 15, 2013, 12:16:07 PM EDT
+- [Pretty Lights - Pink Floyd Time Remix](https://www.youtube.com/watch?v=eca6i_yy_HE) — Pretty Lights — Oct 14, 2013, 4:41:05 PM EDT
+- [Sublime - Doin Time (Zeds Dead Remix)](https://www.youtube.com/watch?v=wasYeJDESAE) — chrisss1577 — Oct 14, 2013, 4:35:06 PM EDT
+- [Sublime - Doin&#39; Time (Zeds Dead Remix - The Killabits Bassline Rework)](https://www.youtube.com/watch?v=Kjm4ba5yWZY) — ZedsDeadFan — Oct 14, 2013, 4:33:29 PM EDT
+- [Zeds Dead - White Satin](https://www.youtube.com/watch?v=wWC_WZ7gd6g) — UKF Dubstep — Oct 14, 2013, 4:27:48 PM EDT
+- [Gimme Shelter (Zeds Dead Remix)](https://www.youtube.com/watch?v=4PYeE8BbcZs) — SICKASSDUBSTEP — Oct 14, 2013, 4:23:37 PM EDT
+- [Tritonal feat. Cristina Soto - Still With Me (Seven Lions Remix)](https://www.youtube.com/watch?v=z6RylZqjwmk) — Beyond Radio — Oct 14, 2013, 2:44:12 PM EDT
+- [Afrojack and Steve Aoki featuring Miss Palmer - No Beef (Official Video)](https://www.youtube.com/watch?v=ksocjhxX_DQ) — Ultra Records — Oct 14, 2013, 2:36:46 PM EDT
+- [Phish plays Dark Side Of The Moon (2 of 4)](https://www.youtube.com/watch?v=7bEuXk-f0Bk) — RPB412 — Oct 12, 2013, 10:15:10 PM EDT
+- [Phish - Time (Dark Side of the Moon)](https://www.youtube.com/watch?v=7GtvTWr8xUo) — Jon Kendall — Oct 12, 2013, 10:14:13 PM EDT
+- [DMB &amp; Warren Haynes - Jimi Thing Jam in Central Park](https://www.youtube.com/watch?v=HKagSJrHhYM) — DiegoB — Oct 12, 2013, 10:07:55 PM EDT
+- [Phish - Terrapin Station](https://www.youtube.com/watch?v=fhd7MXwpLec) — Character_Zer0 — Oct 12, 2013, 9:41:39 PM EDT
+- [The Werks &quot;Hard To Find&quot; jam 12/31/2011 LC pavillion](https://www.youtube.com/watch?v=HwAdsllFUbY) — Jeremy Sewell — Oct 12, 2013, 9:34:25 PM EDT
+- [Reggie Watts Conan June 2011](https://www.youtube.com/watch?v=8e9l8Usa_pE) — Kyle Tibz — Oct 10, 2013, 2:37:40 PM EDT
+- [Finale: Reggie Watts at TEDxUSC 2012](https://www.youtube.com/watch?v=cVqN9bP28HQ) — TEDx Talks — Oct 10, 2013, 10:06:02 AM EDT
+- [Allman Brothers, &quot;Mt. Jam - Smokestack Lightning - Mt. Jam,&quot; 12/3/2011](https://www.youtube.com/watch?v=qVTfERboqT4) — Less Than Face Productions — Oct 9, 2013, 11:29:07 PM EDT
+- [Lotus * SPIRITUALIZE NYE 2010 HD](https://www.youtube.com/watch?v=Abu6eTwTXWQ) — Chris Lonergan — Oct 9, 2013, 10:57:39 PM EDT
+- [The Werks &quot;Hard To Find&quot; jam 12/31/2011 LC pavillion](https://www.youtube.com/watch?v=HwAdsllFUbY) — Jeremy Sewell — Oct 9, 2013, 10:51:09 PM EDT
+- [Reggie Watts disorients you in the most entertaining way | TED](https://www.youtube.com/watch?v=BdHK_r9RXTc) — TED — Oct 9, 2013, 4:31:43 PM EDT
+- [Reggie Watts - We Live On A Island](https://www.youtube.com/watch?v=GzezameYg58) — Kyle Tibz — Oct 9, 2013, 4:27:02 PM EDT
+- [Reggie Watts Conan June 2011](https://www.youtube.com/watch?v=8e9l8Usa_pE) — Kyle Tibz — Oct 9, 2013, 4:20:59 PM EDT
+- [Terence McKenna - The DMT Experience (1)](https://www.youtube.com/watch?v=iGKF85mAPeo) — MakeItEmphatic — Oct 8, 2013, 11:06:15 PM EDT
+- [Terence McKenna - Mushrooms are an Extraterrestrial Probe?](https://www.youtube.com/watch?v=ljy3TH1T0jk) — MakeItEmphatic — Oct 8, 2013, 11:03:40 PM EDT
+- [Terence McKenna - Reclaim your mind](https://www.youtube.com/watch?v=-eu9GfHCpVo) — Olivier Ferland — Oct 8, 2013, 11:01:20 PM EDT
+- [Joe Rogan talks about DMT](https://www.youtube.com/watch?v=grcqs9cDuN8) — TxJake — Oct 8, 2013, 10:40:06 PM EDT
+- [The Indonesian Mimic Octopus](https://www.youtube.com/watch?v=H8oQBYw6xxc) — marcelnad — Oct 8, 2013, 10:36:15 PM EDT
+- [Amazing Water &amp; Sound Experiment #2](https://www.youtube.com/watch?v=uENITui5_jU) — brusspup — Oct 8, 2013, 10:33:15 PM EDT
+- [King Chip (Chip Tha Ripper) - Light One Up (Gift Raps)](https://www.youtube.com/watch?v=EBFPURcWrmg) — CLEVELANDmusic — Oct 8, 2013, 1:06:17 PM EDT
+- [Chip Tha Ripper - Boomshakalaka (Feat. Bun B)](https://www.youtube.com/watch?v=YSYGfiz91lY) — MuzikAroe — Oct 8, 2013, 12:04:23 AM EDT
+- [Reggie Watts Conan June 2011](https://www.youtube.com/watch?v=8e9l8Usa_pE) — Kyle Tibz — Oct 7, 2013, 10:52:18 PM EDT
+- [Dat New &quot;New&quot; -- Kid Cudi](https://www.youtube.com/watch?v=6dtMI96zc0s) — pyroguy56011 — Oct 7, 2013, 6:24:45 PM EDT
+- [King Chip (Chip Tha Ripper) - Plural (Gift Raps)](https://www.youtube.com/watch?v=NemzFAEzdr8) — CLEVELANDmusic — Oct 7, 2013, 6:15:38 PM EDT
+- [Chip tha ripper- Feel Good](https://www.youtube.com/watch?v=epYcWImmpJU) — bcostello1256 — Oct 7, 2013, 6:13:22 PM EDT
+- [Grateful Dead - Eyes of the World](https://www.youtube.com/watch?v=8KbW6UWFrCk) — Park Lots — Oct 6, 2013, 9:30:52 PM EDT
+- [Grateful Dead - Scarlet Begonias / Fire on the Mountain 5/8/77](https://www.youtube.com/watch?v=luAqu8VX5wo) — Bill Gray — Oct 6, 2013, 9:04:04 PM EDT
+- [Reggie Makes Music | Jack Black &amp; Kyle Gass (Tenacious D) | IFC](https://www.youtube.com/watch?v=DI3ljwIwwmI) — IFC — Oct 6, 2013, 9:00:18 PM EDT
+- [Reggie Watts - Radiohead parody](https://www.youtube.com/watch?v=DfkPmbg1ymM) — Roy Howdy! — Oct 6, 2013, 8:57:59 PM EDT
+- [Reggie Watts Conan June 2011](https://www.youtube.com/watch?v=8e9l8Usa_pE) — Kyle Tibz — Oct 6, 2013, 8:48:53 PM EDT
+- [Pikachu on Acid](https://www.youtube.com/watch?v=X5Izm1LQfw4) — high5toons — Oct 6, 2013, 5:13:16 PM EDT
+- [Beginner Bass Lesson Video Number 4 - Easily Create Your Own Lines (This video is from my website)](https://www.youtube.com/watch?v=KKIO1qED4KI) — BassLessonsOnline — Oct 5, 2013, 7:35:27 PM EDT
+- [Beginner Bass Guitar Lesson: Blues Basics](https://www.youtube.com/watch?v=u_GMPbdermI) — Guitar Compass — Oct 5, 2013, 7:11:12 PM EDT

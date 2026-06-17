@@ -32,56 +32,56 @@ from pathlib import Path
 # ─────────────────────────────────────────────
 
 PILLAR_MAP = {
-    "01_OBSIDIAN_VAULTS": [
+    "01_CORE": [
         "obsidian vault", "obsidian note", "obsidian plugin", "obsidian canvas",
         "obsidian graph", "vault note", "vault file", "vault folder",
         "daily note", "backlink", "wikilink", "[[", "obsidian rest",
         "vault search", "dataview", "templater",
     ],
-    "02_COUNCIL_GROVE": [
+    "02_SYSTEMS": [
         "council grove", "mission control", "council session", "handoff ritual",
         "sacred ledger", "icaris quartet", "council seat", "agent quartet",
         "asher", "elias", "aurora", "iris", "multi-agent", "ai workflow",
         "opencode",
     ],
-    "03_NEURAL_FOREST": [
+    "03_NEURAL": [
         "neural forest", "omniparse", "neural network", "machine learning",
         "florence", "whisper model", "torch", "pytorch", "hugging face",
         "transformer", "embedding model", "fine-tune", "training run",
         "model weights", "inference engine", "cuda", "gpu training",
     ],
-    "04_SACRED_CODEX": [
+    "04_CODEX": [
         "sacred codex", "codex entry", "canon gate", "canon entry",
         "source of truth", "lock in", "make official", "make this official",
         "canonize", "is confirmed", "final decision", "we decided",
         "architecture decision", "sacredspace os", "nine pillar",
         "system design", "immutable", "icaris",
     ],
-    "05_MEMORY_ENGINE": [
+    "05_MEMORY": [
         "memory engine", "memory mote", "chromadb", "chroma db",
         "sqlite", "sacred memory", "vector store", "rag pipeline",
         "long-term memory", "mote", "store memory", "memory system",
         "chroma collection",
     ],
-    "06_AGENT_LAYER": [
+    "06_AGENTS": [
         "agent layer", "hermes", "fastapi", "api route", "api endpoint",
         "claude code", "agent config", "mcp server", "tool use",
         "bash script", "python script", "deploy script",
         "wsl2 setup", "docker", "uvicorn", "sacred spine",
     ],
-    "07_SOCIAL_MOTHERSHIP": [
+    "07_SOCIAL": [
         "social mothership", "instagram", "twitter", "tiktok",
         "discord", "telegram", "social media", "content strategy",
         "broadcast", "audience", "community building", "sacred sounds",
         "platform strategy",
     ],
-    "08_LEARNING_PATH": [
+    "08_LEARNING": [
         "learning path", "notebooklm", "study plan", "course outline",
         "curriculum", "lesson plan", "tutorial", "ai engineering",
         "how does", "what is", "explain this", "maestro", "aas",
         "learning spine", "study session",
     ],
-    "09_SACRED_MARKET": [
+    "09_MARKET": [
         "sacred market", "revenue", "crowdfund", "pricing model",
         "etsy", "printify", "gelato", "business model", "product listing",
         "market strategy", "kickstarter", "indiegogo", "storefront",
@@ -103,20 +103,20 @@ RAW_TRIGGER_WORDS = [
 
 # Drive folders that map directly to a pillar (checked before keyword scoring)
 DRIVE_FOLDER_OVERRIDES = {
-    "01_obsidian": "01_OBSIDIAN_VAULTS",
-    "obsidian":    "01_OBSIDIAN_VAULTS",
-    "02_council":  "02_COUNCIL_GROVE",
-    "council":     "02_COUNCIL_GROVE",
-    "03_neural":   "03_NEURAL_FOREST",
-    "neural":      "03_NEURAL_FOREST",
-    "04_codex":    "04_SACRED_CODEX",
-    "codex":       "04_SACRED_CODEX",
-    "05_memory":   "05_MEMORY_ENGINE",
-    "06_agent":    "06_AGENT_LAYER",
-    "07_social":   "07_SOCIAL_MOTHERSHIP",
-    "08_learning": "08_LEARNING_PATH",
-    "09_market":   "09_SACRED_MARKET",
-    "sacred market": "09_SACRED_MARKET",
+    "01_obsidian": "01_CORE",
+    "obsidian":    "01_CORE",
+    "02_council":  "02_SYSTEMS",
+    "council":     "02_SYSTEMS",
+    "03_neural":   "03_NEURAL",
+    "neural":      "03_NEURAL",
+    "04_codex":    "04_CODEX",
+    "codex":       "04_CODEX",
+    "05_memory":   "05_MEMORY",
+    "06_agent":    "06_AGENTS",
+    "07_social":   "07_SOCIAL",
+    "08_learning": "08_LEARNING",
+    "09_market":   "09_MARKET",
+    "sacred market": "09_MARKET",
 }
 
 
@@ -139,7 +139,7 @@ def detect_pillar(text: str, folder_hint: str = "") -> str:
         if score > 0:
             scores[pillar] = score
     if not scores:
-        return "04_SACRED_CODEX"
+        return "04_CODEX"
     return max(scores, key=scores.get)
 
 
@@ -360,77 +360,191 @@ def parse_gmail(takeout_dir: Path, out_root: Path) -> dict:
 
 def parse_youtube(takeout_dir: Path, out_root: Path) -> dict:
     """
-    YouTube: parse watch-history.json and search-history.json.
-    Groups by month. Defaults to 08_LEARNING_PATH; social content → 07.
+    YouTube: handles HTML watch/search history, CSV playlists, CSV subscriptions.
+    Routing: history + subs → 08_LEARNING; agent-named playlists → 02_SYSTEMS.
     """
+    import csv as _csv
+
     print("\n[∆] YOUTUBE — scanning...")
-    yt_root = takeout_dir / "YouTube and YouTube Music" / "history"
-    if not yt_root.exists():
-        # Try alternate path
-        yt_root = takeout_dir / "YouTube" / "history"
-    if not yt_root.exists():
-        print("  ⚠ YouTube history folder not found — skipping")
+    for candidate in ("YouTube and YouTube Music", "YouTube"):
+        yt_root = takeout_dir / candidate
+        if yt_root.exists():
+            break
+    else:
+        print("  ⚠ YouTube folder not found — skipping")
         return {}
 
     counts = {p: 0 for p in PILLAR_MAP}
     processed = 0
 
-    for hist_file in yt_root.glob("*.json"):
-        try:
-            with open(hist_file, encoding="utf-8", errors="replace") as f:
-                entries = json.load(f)
-        except Exception:
-            continue
+    MONTH_MAP = {"Jan":"01","Feb":"02","Mar":"03","Apr":"04","May":"05","Jun":"06",
+                 "Jul":"07","Aug":"08","Sep":"09","Oct":"10","Nov":"11","Dec":"12"}
+    AGENT_NAMES = {"asher","iris","elias","aurora","kethras","merchant","hermes","grama"}
 
-        if not isinstance(entries, list):
-            continue
+    def _parse_month(date_str: str) -> str:
+        m = re.match(r'(\w+)\s+\d+,\s+(\d{4})', date_str.strip())
+        if m:
+            num = MONTH_MAP.get(m.group(1), "00")
+            return f"{m.group(2)}-{num}"
+        return "0000-00"
 
-        hist_type = "watch" if "watch" in hist_file.name.lower() else "search"
+    # ── 1. HTML watch history ──
+    hist_dir = yt_root / "history"
+    if hist_dir.exists():
+        watch_file = hist_dir / "watch-history.html"
+        if watch_file.exists():
+            print("  Parsing watch-history.html …")
+            content = watch_file.read_text(encoding="utf-8", errors="replace")
+            entries = re.findall(
+                r'Watched[\xa0\s]<a href="([^"]+)">([^<]+)</a><br>'
+                r'<a href="[^"]+">([^<]*)</a><br>([^<]+)<br>',
+                content
+            )
+            by_month: dict[str, list] = {}
+            for url, title, channel, date_str in entries:
+                month = _parse_month(date_str)
+                by_month.setdefault(month, []).append((title, url, channel, date_str.strip()))
 
-        # Group entries by month
-        by_month: dict[str, list] = {}
-        for entry in entries:
-            ts = entry.get("time", "")
-            month = ts[:7] if ts else "0000-00"
-            by_month.setdefault(month, []).append(entry)
+            for month, items in sorted(by_month.items()):
+                lines = [
+                    "---",
+                    f'title: "YouTube Watch History — {month}"',
+                    "source: youtube",
+                    f"created: {month}-01",
+                    "pillar: 08_LEARNING",
+                    "stage: RAW",
+                    "tags: [takeout, youtube, watch-history]",
+                    "---",
+                    "",
+                    f"# YouTube Watch History — {month}",
+                    f"> {len(items)} videos watched",
+                    "",
+                    "## Videos",
+                    "",
+                ]
+                for title, url, channel, date_str in items:
+                    lines.append(f"- [{title}]({url}) — {channel} — {date_str}")
+                out_file = out_root / "08_LEARNING" / f"{month}_youtube_watch.md"
+                write_md(out_file, "\n".join(lines))
+                counts["08_LEARNING"] += 1
+                processed += 1
+            print(f"  Watch history: {len(entries):,} entries → {len(by_month)} monthly files")
 
-        for month, items in sorted(by_month.items()):
-            titles = [e.get("title", "") or e.get("titleUrl", "") for e in items[:50]]
-            combined = " ".join(titles)
-            pillar = detect_pillar(combined) if combined.strip() else "08_LEARNING_PATH"
-            # YouTube defaults to learning unless content signals social
-            if pillar == "04_SACRED_CODEX":
-                pillar = "08_LEARNING_PATH"
+        # Search / activity history
+        search_file = hist_dir / "search-history.html"
+        if search_file.exists():
+            print("  Parsing search-history.html …")
+            content = search_file.read_text(encoding="utf-8", errors="replace")
+            cells = re.findall(
+                r'class="content-cell[^"]*"[^>]*>((?:Searched|Visited).+?)<br>([^<]+)<br>',
+                content, re.DOTALL
+            )
+            by_month = {}
+            for cell_text, date_str in cells:
+                month = _parse_month(date_str)
+                query = re.sub(r'<[^>]+>', '', cell_text).strip()
+                by_month.setdefault(month, []).append((query, date_str.strip()))
 
-            stage = "RAW"
+            for month, items in sorted(by_month.items()):
+                lines = [
+                    "---",
+                    f'title: "YouTube Activity History — {month}"',
+                    "source: youtube",
+                    f"created: {month}-01",
+                    "pillar: 08_LEARNING",
+                    "stage: RAW",
+                    "tags: [takeout, youtube, activity-history]",
+                    "---",
+                    "",
+                    f"# YouTube Activity History — {month}",
+                    f"> {len(items)} entries",
+                    "",
+                    "## Entries",
+                    "",
+                ]
+                for query, date_str in items:
+                    lines.append(f"- {query} — {date_str}")
+                out_file = out_root / "08_LEARNING" / f"{month}_youtube_activity.md"
+                write_md(out_file, "\n".join(lines))
+                counts["08_LEARNING"] += 1
+                processed += 1
+            print(f"  Activity history: {len(cells):,} entries → {len(by_month)} monthly files")
+
+    # ── 2. CSV Playlists ──
+    playlists_dir = yt_root / "playlists"
+    if playlists_dir.exists():
+        for pl_file in playlists_dir.glob("*-videos.csv"):
+            pl_name = pl_file.stem.replace("-videos", "")
+            if pl_name.lower() in AGENT_NAMES:
+                pillar = "02_SYSTEMS"
+            else:
+                pillar = "08_LEARNING"
+
+            with open(pl_file, encoding="utf-8", errors="replace") as f:
+                rows = list(_csv.DictReader(f))
+
             lines = [
-                f"---",
-                f"title: \"YouTube {hist_type.title()} History — {month}\"",
-                f"source: youtube",
-                f"created: {month}-01",
+                "---",
+                f'title: "YouTube Playlist — {pl_name}"',
+                "source: youtube",
+                "created: unknown",
                 f"pillar: {pillar}",
-                f"stage: {stage}",
-                f"tags: [takeout, youtube, {hist_type}]",
-                f"---",
-                f"",
-                f"# YouTube {hist_type.title()} History — {month}",
-                f"> {len(items)} entries",
-                f"",
-                f"## Entries",
-                f"",
+                "stage: DISTILLED_CANDIDATE",
+                "tags: [takeout, youtube, playlist]",
+                "---",
+                "",
+                f"# YouTube Playlist — {pl_name}",
+                f"> {len(rows)} videos",
+                "",
+                "## Videos",
+                "",
             ]
-            for e in items:
-                title = e.get("title", e.get("titleUrl", "Unknown"))
-                url = e.get("titleUrl", "")
-                time = e.get("time", "")[:16].replace("T", " ")
-                lines.append(f"- [{title}]({url}) — {time}")
+            for row in rows:
+                vid_id = row.get("Video ID", "")
+                ts = row.get("Playlist Video Creation Timestamp", "")[:10]
+                url = f"https://www.youtube.com/watch?v={vid_id}" if vid_id else ""
+                lines.append(f"- [{vid_id}]({url}) — added {ts}")
 
-            out_file = out_root / pillar / f"{month}_youtube_{hist_type}.md"
+            out_file = out_root / pillar / f"youtube_playlist_{sanitize(pl_name)}.md"
             write_md(out_file, "\n".join(lines))
             counts[pillar] += 1
             processed += 1
 
-    print(f"  Processed: {processed} monthly bundles")
+        if playlists_dir.exists():
+            print(f"  Playlists: {processed} playlist files written")
+
+    # ── 3. CSV Subscriptions ──
+    subs_file = yt_root / "subscriptions" / "subscriptions.csv"
+    if subs_file.exists():
+        with open(subs_file, encoding="utf-8", errors="replace") as f:
+            rows = list(_csv.DictReader(f))
+        lines = [
+            "---",
+            'title: "YouTube Subscriptions"',
+            "source: youtube",
+            "created: unknown",
+            "pillar: 08_LEARNING",
+            "stage: DISTILLED_CANDIDATE",
+            "tags: [takeout, youtube, subscriptions]",
+            "---",
+            "",
+            "# YouTube Subscriptions",
+            f"> {len(rows)} channels",
+            "",
+            "## Channels",
+            "",
+        ]
+        for row in rows:
+            channel = row.get("Channel Title", "")
+            url = row.get("Channel Url", "")
+            lines.append(f"- [{channel}]({url})")
+        out_file = out_root / "08_LEARNING" / "youtube_subscriptions.md"
+        write_md(out_file, "\n".join(lines))
+        counts["08_LEARNING"] += 1
+        processed += 1
+        print(f"  Subscriptions: {len(rows)} channels")
+
+    print(f"  Processed: {processed} total files")
     return counts
 
 
@@ -550,8 +664,8 @@ def parse_photos(takeout_dir: Path, out_root: Path) -> dict:
         score_text = album_name + " " + " ".join(p["description"] for p in photo_meta[:10])
         pillar = detect_pillar(score_text)
         # Photos with no strong signal → archive under 01 (vault imagery)
-        if pillar == "04_SACRED_CODEX":
-            pillar = "01_OBSIDIAN_VAULTS"
+        if pillar == "04_CODEX":
+            pillar = "01_CORE"
 
         lines = [
             "---",

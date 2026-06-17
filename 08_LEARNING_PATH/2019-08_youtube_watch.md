@@ -1,0 +1,155 @@
+---
+title: "YouTube Watch History — 2019-08"
+source: youtube
+created: 2019-08-01
+pillar: 08_LEARNING_PATH
+stage: RAW
+tags: [takeout, youtube, watch-history]
+---
+
+# YouTube Watch History — 2019-08
+> 141 videos watched
+
+## Videos
+
+- [Sacred G Breath Meditation Station   DMT Releasing Pineal Activation](https://www.youtube.com/watch?v=97gSeQY2IZg) — falconflylow — Aug 30, 2019, 10:29:26 PM EDT
+- [Bajinn - Sounds Present A new meditative musical instrument](https://www.youtube.com/watch?v=z9RJs3cJTiQ) — Bajinn — Aug 29, 2019, 6:05:43 PM EDT
+- [Seductive Blues Funk Guitar Backing Track Jam in D Minor](https://www.youtube.com/watch?v=tWOsXCKAG60) — Elevated Jam Tracks — Aug 28, 2019, 8:53:32 PM EDT
+- [Soulful Chill Groove Guitar Backing Track Jam in G](https://www.youtube.com/watch?v=ms4gOcSwFMQ) — Elevated Jam Tracks — Aug 28, 2019, 8:43:02 PM EDT
+- [Epic Ballad Backing Track! ONE HOUR! Key of G - Rock/Pop](https://www.youtube.com/watch?v=XbJEYBxvrxw) — Best Backing Tracks — Aug 28, 2019, 8:29:33 PM EDT
+- [UnwRapper](https://www.youtube.com/watch?v=hevmwvHDDBE) — Illuminati Congo - Topic — Aug 27, 2019, 7:48:20 PM EDT
+- [Open the Way (Legba)](https://www.youtube.com/watch?v=Us7I2jvLaeU) — Illuminati Congo - Topic — Aug 27, 2019, 7:44:48 PM EDT
+- [Illuminate](https://www.youtube.com/watch?v=EBL_chfXl3k) — Illuminati Congo - Topic — Aug 27, 2019, 7:41:56 PM EDT
+- [Ascension](https://www.youtube.com/watch?v=iZaOkgu5NpQ) — Illuminati Congo - Topic — Aug 27, 2019, 7:38:35 PM EDT
+- [InnerGalactic  (full album) Diles x Illuminati Congo](https://www.youtube.com/watch?v=Hyqszi5C2qc) — illuminaticongo — Aug 27, 2019, 7:35:34 PM EDT
+- [Sacred G Breath Meditation Station   DMT Releasing Pineal Activation](https://www.youtube.com/watch?v=97gSeQY2IZg) — falconflylow — Aug 26, 2019, 10:07:54 PM EDT
+- [Butt Naked Wonda, Big Brotha Thunda and The Masta Blasta](https://www.youtube.com/watch?v=Dv7iVqouHuc) — Booshka Creations — Aug 26, 2019, 9:13:02 PM EDT
+- [These exoskeletons can help prevent worker injury](https://www.youtube.com/watch?v=5cvYKWHa2oM) — The Verge — Aug 25, 2019, 4:21:31 PM EDT
+- [Ford&#39;s exoskeleton demo at the Canadian International Auto Show - All Hands on Tech](https://www.youtube.com/watch?v=NTl5f7Xudso) — Tech Newsday — Aug 25, 2019, 4:19:19 PM EDT
+- [Iron Man Becoming Real (Richard Browning, Gravity Industries) | DLD 18](https://www.youtube.com/watch?v=ADscM9VFxsA) — DLD Conference — Aug 25, 2019, 4:16:05 PM EDT
+- [UPGRADE Your BRAIN | Brain Surgeon Rahul Jandial PhD](https://www.youtube.com/watch?v=KH7RQhev_hI) — Video Advice — Aug 25, 2019, 2:13:31 PM EDT
+- [741HZ to DISSOLVE TOXINS, CLEANSE INFECTIONS | Full Body Cell Level Detox](https://www.youtube.com/watch?v=jK2hS40pr-g) — Meditative Mind — Aug 25, 2019, 8:56:05 AM EDT
+- [KUNDALINI RISING - ACTIVATION &amp; MATT MONACO](https://www.youtube.com/watch?v=IMuadElWypo) — Activation Vibration — Aug 25, 2019, 8:49:20 AM EDT
+- [In the Mouth of Madness: Who Writes Reality?](https://www.youtube.com/watch?v=RST8VOlT9H8) — RDP — Aug 25, 2019, 8:47:15 AM EDT
+- [Shpongle - The God Particle [Full EP]](https://www.youtube.com/watch?v=oX1luH4K-PQ) — The Psychedelic Muse — Aug 25, 2019, 2:01:56 AM EDT
+- [Shaman&#39;s Haze (hindu-arab dubs,downtempo,psychill)](https://www.youtube.com/watch?v=PmKe5NDVtLo) — dubabylon — Aug 25, 2019, 1:49:20 AM EDT
+- [Shpongle - Tales Of The Inexpressible (Remastered) [Full Album]](https://www.youtube.com/watch?v=S99IKbu8eyE) — The Psychedelic Muse — Aug 25, 2019, 12:40:24 AM EDT
+- [Clear Your Mind: Music Therapy for Removing Negative Patterns &amp; Boosting Positivity](https://www.youtube.com/watch?v=l5WVtZJUr_0) — Brainwave Music — Aug 24, 2019, 11:53:22 PM EDT
+- [100 BPM - Metronome](https://www.youtube.com/watch?v=6oz0ivczNSY) — Drumset Fundamentals — Aug 24, 2019, 10:30:53 AM EDT
+- [Ain&#39;t Nobody Got Time For That (Original + AutoTune)](https://www.youtube.com/watch?v=waEC-8GFTP4) — NobodyGotTimeForThis — Aug 23, 2019, 5:58:47 PM EDT
+- [Sweet Brown - Ain&#39;t Nobody Got Time for That (Autotune Remix)](https://www.youtube.com/watch?v=bFEoMO0pc7k) — The Parody Factory — Aug 23, 2019, 5:57:15 PM EDT
+- [Subconscious Reprogramming, Powerful Meditation Music](https://www.youtube.com/watch?v=W6pnby0InEY) — Anthony Sommer — Aug 21, 2019, 3:30:43 AM EDT
+- [Subconscious Reprogramming, Powerful Meditation Music](https://www.youtube.com/watch?v=W6pnby0InEY) — Anthony Sommer — Aug 20, 2019, 9:44:48 PM EDT
+- [Takashi Kokubo (小久保隆) - Jamaica ～ Waves And Light And Earth (ジャマイカ～波と光と大地) (1993) [Full Album]](https://www.youtube.com/watch?v=oi6qRw4Ry_8) — should be asleep — Aug 18, 2019, 7:24:59 PM EDT
+- [NTR Podium: Lavinia Meijer speelt Philip Glass](https://www.youtube.com/watch?v=hV2-zFh3tAU) — MatineeTV — Aug 18, 2019, 6:59:26 PM EDT
+- [Bohemian Rhapsody (Queen) on Harpejji G16 by Mathieu Terrade.](https://www.youtube.com/watch?v=Wr87Z7rZiWE) — Mathieu Terrade — Aug 18, 2019, 6:52:16 PM EDT
+- [The Ultimate Model Of Human Knowledge - All Knowledge Explained!](https://www.youtube.com/watch?v=y_bs-W_xON4) — Actualized.org — Aug 18, 2019, 6:21:06 PM EDT
+- [The Madness of Creativity - Charlie Kaufman On Facing Your True Self](https://www.youtube.com/watch?v=V2BrmsAYpI0) — Pursuit of Wonder — Aug 18, 2019, 6:20:14 PM EDT
+- [Hiroki Kamei IJA 2016 World Championships Gold Medal 1st place](https://www.youtube.com/watch?v=h43vmAyzTgs) — Hiroki Kamei — Aug 18, 2019, 6:20:01 PM EDT
+- [Delvon Lamarr Organ Trio - Warm-up Set (Live on KEXP)](https://www.youtube.com/watch?v=jhicDUgXyNg) — KEXP — Aug 18, 2019, 6:19:41 PM EDT
+- [Jinsang-Life (Full BeatTape)](https://www.youtube.com/watch?v=1YfMm7dbls0) — Mr. Spade — Aug 18, 2019, 12:29:15 PM EDT
+- [Psalm Trees &amp; Moose Dawa - Dreams From The Shore [Full BeatTape]](https://www.youtube.com/watch?v=ZCZvWIj8FHs) — STEEZYASFUCK — Aug 18, 2019, 11:51:40 AM EDT
+- [Cymande - Listen (1972)](https://www.youtube.com/watch?v=90A2pi239gc) — toniojadetto — Aug 18, 2019, 11:51:11 AM EDT
+- [Cymande - Bra](https://www.youtube.com/watch?v=SuLnxjVo6bk) — Ewan Bruce — Aug 18, 2019, 11:44:52 AM EDT
+- [Cymande - Dove](https://www.youtube.com/watch?v=YcL8SvyKtE4) — EgregiousViolations — Aug 18, 2019, 11:33:25 AM EDT
+- [Flying Lotus - 1983 [FULL ALBUM]](https://www.youtube.com/watch?v=jY9wzoJvqYs) — Aleroj — Aug 18, 2019, 11:04:55 AM EDT
+- [Miles Davis - Miles In The Sky (1968) full album](https://www.youtube.com/watch?v=S6eZHnIA__A) — sipsun8 — Aug 18, 2019, 10:19:18 AM EDT
+- [Chakra Sleep Music: 7 Chakras Balancing &amp; Healing Sleep Meditation Music, Sleeping Music](https://www.youtube.com/watch?v=bd7zQzOdwzg) — Meditative Mind — Aug 18, 2019, 3:50:49 AM EDT
+- [Lord Ganesha Mix](https://www.youtube.com/watch?v=emENMmsTeQw) — dubabylon — Aug 17, 2019, 11:43:21 PM EDT
+- [Mose ft. Suyana - Live at Heart Culture](https://www.youtube.com/watch?v=b5H3b_Hh0Lw) — Mose — Aug 17, 2019, 11:43:04 PM EDT
+- [Chet Baker Quartet ‎– No Problem (1980) [CD edition]](https://www.youtube.com/watch?v=E95STK2tnoM) — Pedro Nóbrega — Aug 17, 2019, 11:42:31 PM EDT
+- [Psalm Trees &amp; Moose Dawa - Dreams From The Shore [Full BeatTape]](https://www.youtube.com/watch?v=ZCZvWIj8FHs) — STEEZYASFUCK — Aug 17, 2019, 7:44:26 PM EDT
+- [Flying Lotus - 1983 [FULL ALBUM]](https://www.youtube.com/watch?v=jY9wzoJvqYs) — Aleroj — Aug 17, 2019, 7:43:42 PM EDT
+- [Cherub - Doses &amp; Mimosas (Official Video)](https://www.youtube.com/watch?v=E45fogGN_Y8) — CHERUBVEVO — Aug 17, 2019, 7:39:33 PM EDT
+- [Gil Scott Heron - We almost Lost Detroit](https://www.youtube.com/watch?v=cpNUqNe0U5g) — HoraceIsaac SoWhatSessions — Aug 17, 2019, 7:31:35 PM EDT
+- [Cymande - The Message (1970) [HQ]](https://www.youtube.com/watch?v=yigLMKMt_Ws) — Oldschoollover J.Nicholson — Aug 17, 2019, 7:27:04 PM EDT
+- [Cymande - Promised Heights](https://www.youtube.com/watch?v=44nLLY9iUEY) — supermfvillain — Aug 17, 2019, 7:16:31 PM EDT
+- [Cymande - Getting It Back - Cymande - 1972](https://www.youtube.com/watch?v=CdnHrnh7uyE) — MaryJaneLouiseBowers — Aug 17, 2019, 7:16:27 PM EDT
+- [Cymande - Bra](https://www.youtube.com/watch?v=SuLnxjVo6bk) — Ewan Bruce — Aug 17, 2019, 7:09:02 PM EDT
+- [Tripping + Borderline Personality Disorder (BPD) goes horribly wrong | Story](https://www.youtube.com/watch?v=zXTb0z1iuXU) — Psyched Substance — Aug 17, 2019, 7:04:36 PM EDT
+- [Aura Cleansing Sleep Meditation: 7 Chakras cleansing meditation music, sleep meditation](https://www.youtube.com/watch?v=w6sbrmcrSuo) — Nu Meditation Music — Aug 17, 2019, 12:01:28 AM EDT
+- [Sacred G Breath Meditation Station   DMT Releasing Pineal Activation](https://www.youtube.com/watch?v=97gSeQY2IZg) — falconflylow — Aug 16, 2019, 11:54:00 PM EDT
+- [Life as One](https://www.youtube.com/watch?v=9D7cgbaYMFI) — Skinshape - Topic — Aug 16, 2019, 8:33:48 PM EDT
+- [ZHU, Tame Impala - My Life (Audio)](https://www.youtube.com/watch?v=cFRcabr9Etg) — ZHUVEVO — Aug 16, 2019, 8:24:10 PM EDT
+- [Cherub - Doses &amp; Mimosas (Official Video)](https://www.youtube.com/watch?v=E45fogGN_Y8) — CHERUBVEVO — Aug 16, 2019, 8:18:16 PM EDT
+- [Cymande - Getting It Back - Cymande - 1972](https://www.youtube.com/watch?v=CdnHrnh7uyE) — MaryJaneLouiseBowers — Aug 16, 2019, 8:13:54 PM EDT
+- [Cymande - Bra](https://www.youtube.com/watch?v=SuLnxjVo6bk) — Ewan Bruce — Aug 16, 2019, 8:08:30 PM EDT
+- [Little Girl Regrets Trying Wasabi -  984907](https://www.youtube.com/watch?v=VCKg_tbYjgs) — RM Videos — Aug 16, 2019, 6:39:22 PM EDT
+- [I Won Every Prize At A Theme Park](https://www.youtube.com/watch?v=UQtltNZ_pjs) — MrBeast — Aug 16, 2019, 6:39:08 PM EDT
+- [Grateful Dead - 5/26/77 - Soundboard - Complete show](https://www.youtube.com/watch?v=lT0X_EdAuR8) — Wall of Sound — Aug 16, 2019, 6:27:29 PM EDT
+- [Shuggie Otis_Slow Goonbash Blues](https://www.youtube.com/watch?v=dGli1Jrmxx0) — rapitroy — Aug 16, 2019, 12:58:11 PM EDT
+- [Shuggie Otis_Purple](https://www.youtube.com/watch?v=iv1OuZ0_0iM) — rapitroy — Aug 16, 2019, 12:50:53 PM EDT
+- [Shuggie Otis 08 Gospel Groove](https://www.youtube.com/watch?v=NVCIQDQ0BXQ) — Chavee49 — Aug 16, 2019, 12:46:26 PM EDT
+- [Oxford Gray Shuggie Otis](https://www.youtube.com/watch?v=DZsgJ1gTryg) — MonikerAddict — Aug 16, 2019, 12:39:22 PM EDT
+- [Shuggie Otis - 12-15 Slow Goonbash Blues](https://www.youtube.com/watch?v=oMQeJ03aMtg) — Frau Hoppmann — Aug 16, 2019, 12:29:36 PM EDT
+- [Shuggie Otis - Purple (1971)](https://www.youtube.com/watch?v=dBhZNwj5RJQ) — aquarianrealm — Aug 16, 2019, 12:20:06 PM EDT
+- [Like It Is - Yusef Lateef (The Blue Yusef Lateef).wmv](https://www.youtube.com/watch?v=MAxdTSc_fts) — MrJoatman — Aug 16, 2019, 12:11:25 PM EDT
+- [Hiroshi Suzuki-Romance](https://www.youtube.com/watch?v=BFmH7moCL2c) — Cagri Yalcin — Aug 16, 2019, 12:04:43 PM EDT
+- [Shuggie Otis - Sweet Thang](https://www.youtube.com/watch?v=oR1nf9NUlpY) — Periecos Brechó — Aug 16, 2019, 12:00:16 PM EDT
+- [Live By The Day - Skinshape (2014)](https://www.youtube.com/watch?v=Zw19MMErlR0) — Skinshape — Aug 15, 2019, 10:55:39 PM EDT
+- [Skinshape - The Mandala](https://www.youtube.com/watch?v=9TYKDwEnM8k) — Everything Will Be OK — Aug 15, 2019, 10:49:44 PM EDT
+- [Skinshape -  Stabo (feat. Anina)](https://www.youtube.com/watch?v=vKYRdmg7lzk) — The Good Listener — Aug 15, 2019, 10:44:18 PM EDT
+- [I Won&#39;t Be There](https://www.youtube.com/watch?v=Gte3m_-jyCw) — Skinshape - Topic — Aug 15, 2019, 10:37:07 PM EDT
+- [Kevin Morby - Beautiful Strangers (Official Audio)](https://www.youtube.com/watch?v=OedxVySrU7Q) — Dead Oceans — Aug 15, 2019, 10:30:34 PM EDT
+- [Yussef Kamaal - Calligraphy // Brownswood Basement Session](https://www.youtube.com/watch?v=1g826StJhLk) — Gilles Peterson — Aug 15, 2019, 10:20:43 PM EDT
+- [Cymande - Dove](https://www.youtube.com/watch?v=YcL8SvyKtE4) — EgregiousViolations — Aug 15, 2019, 10:09:39 PM EDT
+- [Takashi Kokubo (小久保隆) - Oasis Of The Wind II ～ A Story Of Forest And Water ～ (1993) [Full Album]](https://www.youtube.com/watch?v=rWEI9y6PElo) — should be asleep — Aug 15, 2019, 10:08:55 PM EDT
+- [Miles Davis - Miles In The Sky (1968) full album](https://www.youtube.com/watch?v=S6eZHnIA__A) — sipsun8 — Aug 15, 2019, 9:52:12 PM EDT
+- [Tipper Shambhala downtempo set](https://www.youtube.com/watch?v=MVHAQRe3frE) — FrizcosFlavors — Aug 15, 2019, 9:51:55 PM EDT
+- [Flying Lotus - 1983 [FULL ALBUM]](https://www.youtube.com/watch?v=jY9wzoJvqYs) — Aleroj — Aug 15, 2019, 9:45:28 PM EDT
+- [Psalm Trees &amp; Moose Dawa - Dreams From The Shore [Full BeatTape]](https://www.youtube.com/watch?v=ZCZvWIj8FHs) — STEEZYASFUCK — Aug 15, 2019, 9:37:22 PM EDT
+- [Herb Ellis &amp; Remo Palmier ‎– Windflower (1978)](https://www.youtube.com/watch?v=fAi7IeJG-6Y) — Pedro Nóbrega — Aug 15, 2019, 9:32:11 PM EDT
+- [Yussef Dayes X Alfa Mist - Love Is The Message (Live @ Abbey Road) ft.Mansur Brown &amp; Rocco Palladino](https://www.youtube.com/watch?v=NwVtIPeYIeQ) — Yussef Dayes — Aug 15, 2019, 8:09:54 PM EDT
+- [Jacob Collier - Time To Rest Your Weary Head (Visualiser)](https://www.youtube.com/watch?v=gQiFyZ2-6Js) — JacobCollierVEVO — Aug 15, 2019, 8:03:33 PM EDT
+- [How Jacob Collier Uses Microtonality and Temperament](https://www.youtube.com/watch?v=NHC2XNGerW4) — Listening In — Aug 15, 2019, 8:02:28 PM EDT
+- [Jacob Collier | Microtonal scales](https://www.youtube.com/watch?v=pFf1ggI7WFA) — ignasi camps — Aug 15, 2019, 8:02:10 PM EDT
+- [So Sure I Could Handle It.. (LSD Trip Report)](https://www.youtube.com/watch?v=NbgOQB_fHsM) — Incandescently — Aug 13, 2019, 12:28:37 PM EDT
+- [Grateful Dead - China Cat Sunflower / I Know You Rider (5-3-72)](https://www.youtube.com/watch?v=xCgZxrf8nrU) — LongStrangeTrip710 — Aug 13, 2019, 11:58:33 AM EDT
+- [Rock history 6 - Byrdes, LSD, Grateful Dead](https://www.youtube.com/watch?v=s6jhNZ_bLFI) — MoodyJill3 — Aug 13, 2019, 11:19:57 AM EDT
+- [When the Wind Talks | Malte Marten | Atlas Handpan](https://www.youtube.com/watch?v=Gx8Fn3Qq_ag) — Malte Marten Music — Aug 11, 2019, 12:27:34 AM EDT
+- [If Names Were Farts - Key &amp; Peele](https://www.youtube.com/watch?v=i54TF13kBZk) — Key &amp; Peele — Aug 11, 2019, 12:21:30 AM EDT
+- [Samurai Jack (intro)](https://www.youtube.com/watch?v=4iBU_D36-AA) — Nostalgia&#39;s World — Aug 10, 2019, 9:39:50 PM EDT
+- [Ott - Jack&#39;s Cheese and Bread Snack (HD)](https://www.youtube.com/watch?v=5m8jD0itiPM) — Transmutagenic — Aug 9, 2019, 11:20:48 PM EDT
+- [Shpongle - Divine Moments Of Truth](https://www.youtube.com/watch?v=8qt2WbfotkU) — TeppoM — Aug 9, 2019, 11:10:02 PM EDT
+- [Sacred G Breath Meditation Station   DMT Releasing Pineal Activation](https://www.youtube.com/watch?v=97gSeQY2IZg) — falconflylow — Aug 9, 2019, 8:16:07 PM EDT
+- [FIX PS4 NO VIDEO SIGNAL &amp; EASY BLACK SCREEN HDMI RESOLUTION RESET (BEST METHOD)](https://www.youtube.com/watch?v=nE-Dk2W425Q) — YourSixStudios — Aug 8, 2019, 12:42:31 PM EDT
+- [HOW TO FIX PS4 NO VIDEO SIGNAL BLACK SCREEN HDMI RESOLUTION RESET](https://www.youtube.com/watch?v=0SMgDDztjiU) — TampaTec — Aug 8, 2019, 12:40:37 PM EDT
+- [Dave chappelle-baby in the corne](https://www.youtube.com/watch?v=fzn55RGAvuA) — mo2478 — Aug 6, 2019, 5:57:57 PM EDT
+- [TAOISM | The Philosophy Of Flow](https://www.youtube.com/watch?v=JtGtqmC5wU4) — Einzelgänger — Aug 5, 2019, 9:31:26 PM EDT
+- [Adam &amp; Mike Try Poppy Seed Tea | VITAL EDUCATIONAL CONTENT](https://www.youtube.com/watch?v=-NgWOXkoGjw) — Psyched Substance — Aug 5, 2019, 9:31:18 PM EDT
+- [The People Who Take Psychedelics at Music Festivals | Shambhala Interviews](https://www.youtube.com/watch?v=O3kVU8sEA_I) — Psyched Substance — Aug 5, 2019, 9:13:56 PM EDT
+- [The Surprising Truth About Drugs At Psychedelic Festivals | Shambhala](https://www.youtube.com/watch?v=Ega9oDRJYsI) — Psyched Substance — Aug 5, 2019, 9:11:02 PM EDT
+- [What It&#39;s Like to Make Art on DMT | HAMILTON&#39;S PHARMACOPEIA](https://www.youtube.com/watch?v=4ONm-r1d2Mg) — VICE TV — Aug 5, 2019, 9:06:55 PM EDT
+- [Underground LSD Lab | National Geographic](https://www.youtube.com/watch?v=yXAKijc1Vmc) — National Geographic — Aug 5, 2019, 9:01:41 PM EDT
+- [Inside a Gang Initiation with the Silent Murder Crips](https://www.youtube.com/watch?v=H0iSh9A7rLI) — VICE — Aug 5, 2019, 8:58:49 PM EDT
+- [Man on PCP challenges police vehicle in South Los Angeles before being arrested](https://www.youtube.com/watch?v=0QgyNjCPWQ8) — StreetTV — Aug 5, 2019, 8:55:04 PM EDT
+- [Talking to PCP Advocate Timothy Wyllie | HAMILTON&#39;S PHARMACOPEIA](https://www.youtube.com/watch?v=ehUKmZjlZOY) — VICE TV — Aug 5, 2019, 8:49:50 PM EDT
+- [Gundam wing Battle against Epyon [AMV]](https://www.youtube.com/watch?v=J5NO1FdVcSo) — dbzexile — Aug 5, 2019, 11:40:13 AM EDT
+- [Boneknapper vs. Armourwing (Dragon Tournament Episode #2)](https://www.youtube.com/watch?v=O5yYbI4jX50) — Hello Future Me — Aug 5, 2019, 11:39:49 AM EDT
+- [wow unbelievable! a REAL Giant Gundam robot in Tokyo](https://www.youtube.com/watch?v=5q0M2cbhq3k) — MrLifeYou — Aug 5, 2019, 11:35:18 AM EDT
+- [100 BPM - Metronome](https://www.youtube.com/watch?v=6oz0ivczNSY) — Drumset Fundamentals — Aug 3, 2019, 8:57:46 PM EDT
+- [Sacred G Breath Meditation Station   DMT Releasing Pineal Activation](https://www.youtube.com/watch?v=97gSeQY2IZg) — falconflylow — Aug 3, 2019, 4:33:34 PM EDT
+- [Pepper - Sugar (808 Remix) [OFFICIAL AUDIO]](https://www.youtube.com/watch?v=bgVUIz4sQb4) — Pepper — Aug 3, 2019, 2:42:18 PM EDT
+- [Neighborhood](https://www.youtube.com/watch?v=4_k2qAP-yNo) — Pepper - Topic — Aug 3, 2019, 2:41:03 PM EDT
+- [Pepper - Carnaval (feat. Henry Fong and Jinco) [OFFICIAL AUDIO]](https://www.youtube.com/watch?v=O9fxAy0QEEQ) — Pepper — Aug 3, 2019, 2:37:13 PM EDT
+- [Pepper feat. Stick Figure - Warning](https://www.youtube.com/watch?v=uknmXYEzNN4) — Stick Figure — Aug 3, 2019, 2:33:29 PM EDT
+- [Mike Love - Permanent Holiday (HiSessions.com Acoustic Live!)](https://www.youtube.com/watch?v=fU7hZ3smj0g) — HI*Sessions — Aug 3, 2019, 2:29:36 PM EDT
+- [Pepper - Warning (feat. @StickFigure ) [OFFICIAL AUDIO]](https://www.youtube.com/watch?v=64tHmb7Iyvo) — Pepper — Aug 3, 2019, 2:25:31 PM EDT
+- [Rainbow Road](https://www.youtube.com/watch?v=P18rEaFTO4I) — Iya Terra - Topic — Aug 3, 2019, 12:46:47 PM EDT
+- [Hold Ah Vibes](https://www.youtube.com/watch?v=lZFm1Jtl_bw) — Iya Terra - Topic — Aug 3, 2019, 12:42:37 PM EDT
+- [Follow Your Heart (feat. Zion Thompson from The Green)](https://www.youtube.com/watch?v=IfZa8ofB5vU) — Iya Terra - Topic — Aug 3, 2019, 12:38:16 PM EDT
+- [Tried &amp; True](https://www.youtube.com/watch?v=NKjSc7UPUYQ) — Iya Terra - Topic — Aug 3, 2019, 12:34:27 PM EDT
+- [IYA TERRA- Stars [Official Lyric Video]](https://www.youtube.com/watch?v=NKzWsdpiIRQ) — Iya Terra — Aug 3, 2019, 12:29:04 PM EDT
+- [Burn For You](https://www.youtube.com/watch?v=7NRW19iO4yo) — Iya Terra - Topic — Aug 3, 2019, 12:25:27 PM EDT
+- [Ganja Must Burn](https://www.youtube.com/watch?v=dS56M2PAuL0) — Iya Terra - Topic — Aug 3, 2019, 12:05:47 PM EDT
+- [One Life (feat. Satsang &amp; Cas Haley)](https://www.youtube.com/watch?v=FDTkkhFNG0M) — Iya Terra - Topic — Aug 3, 2019, 12:00:49 PM EDT
+- [Carry The Weight](https://www.youtube.com/watch?v=hhZ091UlZ9Q) — Iya Terra - Topic — Aug 3, 2019, 11:56:05 AM EDT
+- [IYA TERRA - Marching On feat. Jesse Royal [OFFICIAL VIDEO]](https://www.youtube.com/watch?v=GamTjY-4y-c) — Iya Terra — Aug 3, 2019, 11:52:19 AM EDT
+- [Many Rhythms One Sound](https://www.youtube.com/watch?v=5simaAKQ48Y) — Iya Terra - Topic — Aug 3, 2019, 11:47:46 AM EDT
+- [Break Down The Walls (feat. The Movement)](https://www.youtube.com/watch?v=GHp76ROkUXE) — Iya Terra - Topic — Aug 3, 2019, 11:42:36 AM EDT
+- [Iya Terra - Wash Away](https://www.youtube.com/watch?v=t6GX3AElMmc) — Iya Terra — Aug 3, 2019, 11:38:49 AM EDT
+- [Arthur M. Young: Casual discussion with Arthur Bloch: Part 5](https://www.youtube.com/watch?v=Zzv2rDtmSTA) — ArthurMYoung — Aug 2, 2019, 10:34:40 PM EDT
+- [Arthur Young: The Ubiquity of Light](https://www.youtube.com/watch?v=UTCjVz5WNTA) — ArthurMYoung — Aug 2, 2019, 10:21:16 PM EDT
+- [Pi, the Torus and Consciousness: Arthur Young](https://www.youtube.com/watch?v=8gu7c70t9pc) — ArthurMYoung — Aug 2, 2019, 9:39:32 PM EDT
+- [Torus Energy &amp; The Power of the Heart](https://www.youtube.com/watch?v=mHexF4Ck-t4) — Jai Gopal — Aug 2, 2019, 9:35:48 PM EDT
+- [epic conway&#39;s game of life](https://www.youtube.com/watch?v=C2vgICfQawE) — Rational Animations — Aug 1, 2019, 11:28:51 AM EDT

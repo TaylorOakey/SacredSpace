@@ -1,0 +1,160 @@
+---
+title: "YouTube Watch History — 2018-12"
+source: youtube
+created: 2018-12-01
+pillar: 08_LEARNING_PATH
+stage: RAW
+tags: [takeout, youtube, watch-history]
+---
+
+# YouTube Watch History — 2018-12
+> 146 videos watched
+
+## Videos
+
+- [741Hz Throat Chakra - Let Go Of Mental Blockages ➤ Boost Positive &amp; Creative Energy Music](https://www.youtube.com/watch?v=GhnhTrfYhxY) — Self-Healing Collective — Dec 31, 2018, 11:50:13 PM EDT
+- [Testosterone: The Hidden Key | Andre Harris | TEDxDayton](https://www.youtube.com/watch?v=ZiDfZLJZTGU) — TEDx Talks — Dec 31, 2018, 11:48:51 PM EDT
+- [When Someone Requests The Sound of Silence](https://www.youtube.com/watch?v=nWHeOY14fEY) — DØVYDAS — Dec 31, 2018, 11:48:24 PM EDT
+- [Rodrigo y Gabriela - Full Performance (Live on KEXP)](https://www.youtube.com/watch?v=KV2ixprDrK8) — KEXP — Dec 31, 2018, 5:47:00 PM EDT
+- [MINDFULNESS - SECRET ENERGY 2019 MINDFULNESS KEYNOTE](https://www.youtube.com/watch?v=Su0SFurCiCM) — Innerstanding — Dec 31, 2018, 5:26:12 PM EDT
+- [The Jazz Side Of Reggae (Mandis Megamix)](https://www.youtube.com/watch?v=zr2jPGN2GN8) — Alex Mandis — Dec 31, 2018, 9:44:49 AM EDT
+- [Interview: Catatonic Schizophrenic](https://www.youtube.com/watch?v=IehtMYlOuIk) — ktrypy1111 — Dec 31, 2018, 9:44:04 AM EDT
+- [What Engineers Found When They Tore Apart Tesla&#39;s Model 3](https://www.youtube.com/watch?v=Lj1a8rdX6DU) — Bloomberg Technology — Dec 31, 2018, 9:41:41 AM EDT
+- [The real reason for Airplane Mode](https://www.youtube.com/watch?v=MlPrd7MLsAk) — ScottiesTech.Info — Dec 31, 2018, 9:38:09 AM EDT
+- [Wal Thornhill: The Saturn/Earth Connection and Our Place in the Universe | Space News](https://www.youtube.com/watch?v=6fjcPguafug) — The Thunderbolts Project — Dec 30, 2018, 11:35:28 PM EDT
+- [Schwarzenegger - Ishitsuki (Tamarindus Indica)](https://www.youtube.com/watch?v=88aG9JLoOsI) — Carving Bonsai — Dec 30, 2018, 11:32:11 PM EDT
+- [Beyond Success - Ram Dass Full Lecture 1987](https://www.youtube.com/watch?v=Orb8cGSqS-A) — Baba Ram Dass — Dec 30, 2018, 11:29:45 PM EDT
+- [NAMM 2016 - Duallist&#39;s TRIPLE Bass Drum Pedal | GEAR GODS](https://www.youtube.com/watch?v=i70BF8fgUEQ) — Trey Xavier — Dec 30, 2018, 11:27:27 PM EDT
+- [Shakuhachi Japanese Bamboo Flute Meditation &amp; Relaxation Music](https://www.youtube.com/watch?v=gtevwfKTjP8) — MusicMindMagic — Dec 30, 2018, 12:00:47 AM EDT
+- [Symbols of Power pt 2: The Body Temple, Esoteric Anatomy, Astro-physiology](https://www.youtube.com/watch?v=mF-Uqi8GdUQ) — LIFTING THE VEIL — Dec 29, 2018, 11:01:28 PM EDT
+- [Symbols of Power Pt 1: Skull &amp; Bones, MK Ultra, Monarch Symbolism](https://www.youtube.com/watch?v=Yh6mM6F8m-s) — LIFTING THE VEIL — Dec 29, 2018, 9:48:18 PM EDT
+- [Alan Watts - When you&#39;re silent it speaks](https://www.youtube.com/watch?v=8pcLuwxhhkk) — 🚀  Motivation Station  — Dec 29, 2018, 9:41:21 PM EDT
+- [MANTAK CHIA | Understand This And You Will Achieve Anything!](https://www.youtube.com/watch?v=HO_ZqfpiwLg) — Be Inspired — Dec 29, 2018, 9:19:21 PM EDT
+- [Pure Pressure Half Lb of herb into 60 grams of Rosin](https://www.youtube.com/watch?v=AebhmH5k1SA) — Bubbleman&#39;s World — Dec 29, 2018, 9:09:57 PM EDT
+- [Bossa Nova Music and Songs | Restaurant Music, Dinner Music, Elevator Music, Background Music](https://www.youtube.com/watch?v=ovZyYbMDwhY) — Sensual Music Club — Dec 29, 2018, 8:02:49 PM EDT
+- [Sonic Geometry: The Language of Frequency and Form](https://www.youtube.com/watch?v=FY74AFQl2qQ) — Alanna Luna — Dec 29, 2018, 5:05:54 PM EDT
+- [L. A. Woman - The Doors](https://www.youtube.com/watch?v=JskztPPSJwY) — luzbrisaa — Dec 29, 2018, 4:29:07 PM EDT
+- [The Doors - Roadhouse Blues](https://www.youtube.com/watch?v=n2_X4VTCoEo) — 215Days — Dec 29, 2018, 4:24:34 PM EDT
+- [I am that, Dr Wayne Dyer Meditation NO ADS DURING MEDITATION 🙏- Anxiety Attack Relief](https://www.youtube.com/watch?v=HiTtEQ_X2o8) — Csaba — Dec 29, 2018, 7:30:10 AM EDT
+- [Joe Rogan Experience #1216 - Sir Roger Penrose](https://www.youtube.com/watch?v=GEw0ePZUMHA) — PowerfulJRE — Dec 28, 2018, 10:21:48 PM EDT
+- [A Journey into the 4th Dimension - Perspective [Part 1]](https://www.youtube.com/watch?v=4TI1onWI_IM) — The Lazy Engineer — Dec 28, 2018, 9:41:40 PM EDT
+- [The Undisputed Truth (Usa, 1974)  - Down To Earth (Full Album)](https://www.youtube.com/watch?v=dwV86c4UUDc) — Raúl.Nicolás — Dec 28, 2018, 9:38:25 PM EDT
+- [Cory Henry - Love&#39;s In Need of Love Today (Stevie Wonder cover on Harpejji)](https://www.youtube.com/watch?v=RL50VnZY1Kk) — Cory Henry — Dec 28, 2018, 9:34:51 PM EDT
+- [Flipbook LINE Challenge - What can I do with just a line?](https://www.youtube.com/watch?v=9wN2RcAPhqA) — Andymation — Dec 28, 2018, 9:27:48 PM EDT
+- [How to find the Resonant frequency of an object (.wav files)](https://www.youtube.com/watch?v=W4HVqHaa_uk) — furulevi — Dec 28, 2018, 9:25:48 PM EDT
+- [The Mellotron: Famous Songs!](https://www.youtube.com/watch?v=N07-YAKtRAw) — Doctor Mix — Dec 27, 2018, 11:22:19 PM EDT
+- [ATP Synthase in Action](https://www.youtube.com/watch?v=A2my52zQA6k) — Omar Ali — Dec 27, 2018, 10:24:35 PM EDT
+- [High Vibes - Tryptology Music Mix - Psydub Ethnic Chill Out World Tribal Psychill Dub Entheogenic](https://www.youtube.com/watch?v=NlovbLiuGLM) — Tryptology — Dec 26, 2018, 5:18:08 PM EDT
+- [Sim Redmond Band All is not Lost](https://www.youtube.com/watch?v=Hm4x0Q_FXpM) — ORGANIC RISING — Dec 26, 2018, 5:11:03 PM EDT
+- [The Spy From Cairo - Nafas](https://www.youtube.com/watch?v=3-isjGJTiNs) — Beats &amp; Culture — Dec 26, 2018, 5:03:54 PM EDT
+- [haruka nakamura - Lamp feat.Nujabes](https://www.youtube.com/watch?v=cHQ-oVSYkeU) — haruka nakamura  — Dec 26, 2018, 4:58:03 PM EDT
+- [Sim Redmond Band ・ Holes in the Ground](https://www.youtube.com/watch?v=TSpYEfQbZ0o) — liger385 — Dec 26, 2018, 4:52:03 PM EDT
+- [Winter Solstice (deep meditation for new beginnings) 432 Hz/1 hour](https://www.youtube.com/watch?v=A6YtaM6DWoQ) — Taos Winds Spirit Music — Dec 26, 2018, 5:00:22 AM EDT
+- [Professor Eric Laithwaite: The Circle of Magnetism - 1968](https://www.youtube.com/watch?v=0tJfqMYHaQw) — Imperial College London — Dec 25, 2018, 10:59:40 PM EDT
+- [Only the Most Attentive 4% Will Pass This Test](https://www.youtube.com/watch?v=wtbXPdCEhPk) — BRIGHT SIDE — Dec 25, 2018, 10:33:10 PM EDT
+- [Understanding The Elements of Musical Rhythm](https://www.youtube.com/watch?v=GHb_fLWKB_4) — samuraiguitarist — Dec 25, 2018, 10:26:50 PM EDT
+- [Soul Groove Bass Backing Jam Track (E)](https://www.youtube.com/watch?v=rju6Q1SxCas) — Quist — Dec 25, 2018, 10:17:45 PM EDT
+- [Funk Bass Backing Track (Gm)](https://www.youtube.com/watch?v=4MPYRltRx3w) — Quist — Dec 25, 2018, 10:12:58 PM EDT
+- [The Suffering - Coheed and Cambria](https://www.youtube.com/watch?v=RCmhd30Wtyw) — Travis Ramlow — Dec 25, 2018, 9:23:56 PM EDT
+- [SOHN - Ransom Notes](https://www.youtube.com/watch?v=ba_XU-WVm1k) — Indie Guvenc — Dec 25, 2018, 9:21:25 PM EDT
+- [SOHN - Lights](https://www.youtube.com/watch?v=KeJ2jKZuHt8) — Mister Tapes — Dec 25, 2018, 9:17:17 PM EDT
+- [SOHN - The Wheel](https://www.youtube.com/watch?v=vaBspvzGqKU) — MineurDuSon — Dec 25, 2018, 9:12:41 PM EDT
+- [London Grammar - Hey Now [Official Video]](https://www.youtube.com/watch?v=nMEHJPuggHQ) — London Grammar — Dec 25, 2018, 9:08:27 PM EDT
+- [Wild Eyed](https://www.youtube.com/watch?v=eyqTuOViuHs) — London Grammar - Topic — Dec 25, 2018, 9:07:53 PM EDT
+- [London Grammar - Big Picture](https://www.youtube.com/watch?v=RbUMKenn5l8) — LondonGrammarVEVO — Dec 25, 2018, 9:03:04 PM EDT
+- [Rooting For You](https://www.youtube.com/watch?v=pxyxixm1Hkg) — London Grammar - Topic — Dec 25, 2018, 8:58:29 PM EDT
+- [The Temptations   Papa Was A Rolling Stone 1972 Single Version](https://www.youtube.com/watch?v=nXiQtD5gcHU) — RETROVISOR — Dec 24, 2018, 11:29:40 PM EDT
+- [L. A. Woman - The Doors](https://www.youtube.com/watch?v=JskztPPSJwY) — luzbrisaa — Dec 24, 2018, 11:11:44 PM EDT
+- [The Doors - Riders On The Storm](https://www.youtube.com/watch?v=iv8GW1GaoIc) — 215Days — Dec 24, 2018, 10:34:33 PM EDT
+- [BOOTSY&#39;S BASIC FUNK FORMULA](https://www.youtube.com/watch?v=IHE6hZU72A4) — Ediblspaceships — Dec 24, 2018, 10:15:01 PM EDT
+- [[10 Hours] Fractal Animations Electric Sheep - Video Only [1080HD] SlowTV](https://www.youtube.com/watch?v=t6jlhqNxRYk) — SlowTV Relax&amp;Background — Dec 24, 2018, 10:14:35 PM EDT
+- [Me and My Dying Parent (Amy &amp; Colleen) | Truth or Drink | Cut](https://www.youtube.com/watch?v=X46BHlR1B2Y) — Cut — Dec 24, 2018, 10:12:46 PM EDT
+- [Fractal Zoom (Last Lights On) Mandelbrot (720p 30fps) e228 (2^760)](https://www.youtube.com/watch?v=foxD6ZQlnlU) — fractal — Dec 24, 2018, 10:01:50 PM EDT
+- [Professor Eric Laithwaite: Magnetic River 1975](https://www.youtube.com/watch?v=OI_HFnNTfyU) — Imperial College London — Dec 23, 2018, 9:13:44 AM EDT
+- [The Alarming Effects of Alcohol at a Spiritual Level](https://www.youtube.com/watch?v=17ephsnEYCA) — Spiritual Science Research Foundation — Dec 23, 2018, 9:05:08 AM EDT
+- [741 Hz Healing Frequency: Music For Healing Sickness &amp; Infections](https://www.youtube.com/watch?v=j9Mzyf_B8rQ) — Good Vibes - Binaural Beats — Dec 22, 2018, 12:34:15 PM EDT
+- [ALL 7 CHAKRAS HEALING MUSIC || Full Body Aura Cleanse &amp; Boost Positive Energy | Meditation Music](https://www.youtube.com/watch?v=vCpBSnYBTM0) — Meditative Mind — Dec 22, 2018, 1:20:00 AM EDT
+- [Aura Cleansing Sleep Meditation: 7 Chakras cleansing meditation music, sleep meditation](https://www.youtube.com/watch?v=w6sbrmcrSuo) — Nu Meditation Music — Dec 22, 2018, 1:19:56 AM EDT
+- [BRUCE LIPTON - BIOLOGY OF BELIEF - Part 1/2 | London Real](https://www.youtube.com/watch?v=GCG1zj3mxOw) — London Real — Dec 21, 2018, 9:49:09 PM EDT
+- [3 FUNKY LICKS FOR EVERY BASS PLAYER - JERMAINE MORGAN TV EP.3](https://www.youtube.com/watch?v=z8fijiK3diI) — Jermaine Morgan — Dec 21, 2018, 9:40:49 PM EDT
+- [I play the lick for 5 hours straight](https://www.youtube.com/watch?v=lSXxEdaOqgU) — Adam Neely — Dec 21, 2018, 9:39:51 PM EDT
+- [Panteón Rococó - La Dosis Perfecta (En Vivo) ft. Denise Gutiérrez](https://www.youtube.com/watch?v=fZbusX0dt9o) — panteonrococotvvevo — Dec 21, 2018, 9:32:10 PM EDT
+- [Los Inquietos Del Norte - Mi Amigo El De Arriba (Video Oficial)](https://www.youtube.com/watch?v=A7LMQnYnxmw) — Inquietos del Norte — Dec 21, 2018, 8:22:34 PM EDT
+- [Toddler Steven Moves in with the Crystal Gems | Steven Universe | Cartoon Network](https://www.youtube.com/watch?v=e9-_9eBRaZo) — Cartoon Network — Dec 21, 2018, 8:16:38 PM EDT
+- [How to Stop Negative Thoughts and Feelings?](https://www.youtube.com/watch?v=JDlLIXqgKA0) — Growth Events — Dec 21, 2018, 3:14:39 PM EDT
+- [Bruce Lipton - Money and Energy](https://www.youtube.com/watch?v=0quDjlkVvPM) — Bruce H. Lipton, Ph.D. — Dec 20, 2018, 8:59:58 AM EDT
+- [How to make manifesting &amp; prayer work.](https://www.youtube.com/watch?v=6rvKjwEJK1M) — Hideto Edward Uno — Dec 20, 2018, 8:51:36 AM EDT
+- [GREGG BRADEN - YOU ARE WIRED TO BE EXTRAORDINARY - Part 1/2 | London Real](https://www.youtube.com/watch?v=RQw2hWutoOw) — London Real — Dec 19, 2018, 9:47:34 PM EDT
+- [AMP #183 - Write Your Own Success Story with Gerard Adams | Aubrey Marcus Podcast](https://www.youtube.com/watch?v=Mbfbh91F_EA) — Aubrey Marcus — Dec 19, 2018, 9:46:57 PM EDT
+- [South park - gay fish](https://www.youtube.com/watch?v=3Vn2xrSG24w) — Nemanja Vidakovic — Dec 19, 2018, 9:37:38 PM EDT
+- [O.T. Genasis - Cut it lyrics](https://www.youtube.com/watch?v=BnyWtAXSHDw) — Best lyrics — Dec 19, 2018, 9:25:55 PM EDT
+- [South Park - Do you like Fishsticks?](https://www.youtube.com/watch?v=ADGWPorwkYg) — DannyGaendon — Dec 19, 2018, 6:56:44 PM EDT
+- [432 Hz - Deep Healing Music for The Body &amp; Soul - DNA Repair, Relaxation Music, Meditation Music](https://www.youtube.com/watch?v=eWLVBP3VrO4) — Meditation and Healing — Dec 18, 2018, 11:18:01 PM EDT
+- [VULFPECK /// It Gets Funkier but every time it gets funkier, it gets funkier](https://www.youtube.com/watch?v=EpYHp-W51H4) — Pocket Square Band — Dec 18, 2018, 11:09:33 PM EDT
+- [&quot;A Glitch in the Matrix&quot; - Jordan Peterson, the Intellectual Dark Web &amp; the Mainstream Media](https://www.youtube.com/watch?v=trhTbEs2GGE) — Rebel Wisdom — Dec 18, 2018, 11:07:21 PM EDT
+- [ORIGINS: TETRAGRAMMATON - SEVAN BOMAR](https://www.youtube.com/watch?v=vaEk4d1rKCk) — Innerstanding — Dec 18, 2018, 10:31:07 PM EDT
+- [SOLVING THE MYSTERY Behind Reincarnation &amp; How To END SUFFERING | Duncan Trussell](https://www.youtube.com/watch?v=sVhrIDh0jkk) — Aubrey Marcus — Dec 18, 2018, 3:40:52 PM EDT
+- [Sacred Secretion / Christ Oil / True Anointing - HEAVEN ON EARTH](https://www.youtube.com/watch?v=B3GjKTtSRrQ) — Kelly-Marie Kerr — Dec 17, 2018, 10:47:27 PM EDT
+- [HOW TO PRODUCE NATURAL DMT - Mantak Chia | London Real](https://www.youtube.com/watch?v=r15ckOaXuSA) — London Real — Dec 17, 2018, 10:07:39 PM EDT
+- [BAD BUNNY x DRAKE - MÍA (Video Oficial)](https://www.youtube.com/watch?v=OSUxrSe5GbI) — Bad Bunny — Dec 15, 2018, 5:35:15 PM EDT
+- [Sound Healing with Crystal Bowls - Sound Bath by Michelle Berc](https://www.youtube.com/watch?v=Bw1a-pZ7Ua4) — Heart Alchemy Yoga with Michelle Goldstein — Dec 15, 2018, 8:11:50 AM EDT
+- [First Time Ever Seen: Secret of Light: 140 Year old mystery solved! Crookes Radiometer](https://www.youtube.com/watch?v=CCrnDGOl2xA) — Theoria Apophasis — Dec 15, 2018, 7:54:28 AM EDT
+- [ALL 7 CHAKRAS HEALING CHANTS | Chakra Seed Mantras Meditation Music](https://www.youtube.com/watch?v=b7JS0O3pFS8) — Meditative Mind — Dec 15, 2018, 12:26:42 AM EDT
+- [Wu-Tang Clan: NPR Music Tiny Desk Concert](https://www.youtube.com/watch?v=ALUKDkOxVPo) — NPR Music — Dec 14, 2018, 11:21:17 PM EDT
+- [Grateful Shred - Busted At The Bowl - Scarlet Begonias/Fire On The Mountain](https://www.youtube.com/watch?v=X1t2W1AvTw4) — Liberty Hair Farm — Dec 14, 2018, 11:10:42 PM EDT
+- [Joe Russo&#39;s Almost Dead  &amp; John Mayer 4K -Althea - 10/13/17 - Brooklyn Bowl](https://www.youtube.com/watch?v=bLCjkbUZF08) — LazyLightning55a — Dec 14, 2018, 10:58:23 PM EDT
+- [Octavision - Three Lives [OFFICIAL VIDEO]](https://www.youtube.com/watch?v=_z-ZrQPfY5o) — Octavision — Dec 14, 2018, 10:56:33 PM EDT
+- [DUDE + BEARD + GUITAR = ALL BLUES](https://www.youtube.com/watch?v=AFxiEgEPm24) — Per Nilsson — Dec 14, 2018, 10:50:49 PM EDT
+- [PER NILSSON improvises picklessly over NILI BROSH&#39;s &quot;A Matter of Perception&quot;](https://www.youtube.com/watch?v=VbZ27N9L3GQ) — Per Nilsson — Dec 14, 2018, 10:45:18 PM EDT
+- [Pregnancy test reaction](https://www.youtube.com/watch?v=bW-Qwt762Ug) — A-1 Computer Repair — Dec 14, 2018, 10:44:42 PM EDT
+- [Legend (Lyric Video) - Rebelution](https://www.youtube.com/watch?v=GPnFiOidnog) — RebelutionMusic — Dec 14, 2018, 7:50:23 AM EDT
+- [Rebelution - City Life (Official Music Video)](https://www.youtube.com/watch?v=GKj5WNm5oDE) — RebelutionMusic — Dec 14, 2018, 7:45:57 AM EDT
+- [Celebrate (Official Music Video) - Rebelution](https://www.youtube.com/watch?v=Th-ztUfwp1I) — RebelutionMusic — Dec 14, 2018, 7:41:37 AM EDT
+- [Meditation Scientifically Explained 1 of 3 - Walter Russell](https://www.youtube.com/watch?v=UhWAy8NG2bI) — LaoTzuism — Dec 13, 2018, 11:15:41 PM EDT
+- [Secret of Light. #audiobook . Walter Russell . Full Unabridged YouTube](https://www.youtube.com/watch?v=Vyljyv-cmdw) — Kimberly Anne Vicchitto — Dec 13, 2018, 11:15:33 PM EDT
+- [🤔 Walter Russell&#39;s cosmic perspective &amp; its many flaws](https://www.youtube.com/watch?v=gsS3eAXtIko) — Theoria Apophasis — Dec 13, 2018, 11:10:46 PM EDT
+- [Guide to Wood Carving Faces Part 2](https://www.youtube.com/watch?v=Ecpy7ZI_pH8) — SharonMyART — Dec 13, 2018, 8:18:24 PM EDT
+- [ALL 7 CHAKRAS HEALING MUSIC || Full Body Aura Cleanse &amp; Boost Positive Energy | Meditation Music](https://www.youtube.com/watch?v=vCpBSnYBTM0) — Meditative Mind — Dec 10, 2018, 11:58:31 PM EDT
+- [Backing Track - Rock Drum Loops 90 BPM - JimDooley.net](https://www.youtube.com/watch?v=mKYb7Juflz0) — Jim Dooley — Dec 10, 2018, 8:27:58 PM EDT
+- [Meditation and Going Beyond Mindfulness - A Secular Perspective](https://www.youtube.com/watch?v=ukTaodQfYRQ) — Yongey Mingyur Rinpoche — Dec 10, 2018, 2:57:51 PM EDT
+- [The Physiology of Tai Chi and QiGong](https://www.youtube.com/watch?v=ZJRtZAwVwgo) — The Tai Chi And Qigong Way — Dec 10, 2018, 2:41:34 PM EDT
+- [Chi Master Demonstrates his power](https://www.youtube.com/watch?v=76FksKjCy58) — The way of Chi — Dec 10, 2018, 2:36:46 PM EDT
+- [Chi Flow Exercises | How To Push Ki (Out From Your Hands)](https://www.youtube.com/watch?v=9T7PR0VUUKI) — Ryan Cropper — Dec 10, 2018, 2:30:24 PM EDT
+- [Joe Rogan Experience #1211 - Dr. Ben Goertzel](https://www.youtube.com/watch?v=-qfB8clUIaY) — PowerfulJRE — Dec 10, 2018, 1:50:10 PM EDT
+- [JP Sears: &quot;My Ego Is So Much Smaller Than Yours, Bro&quot; | Aubrey Marcus Podcast](https://www.youtube.com/watch?v=QeqO5UvW1ds) — Aubrey Marcus — Dec 10, 2018, 1:49:57 PM EDT
+- [Mantak Chia: Techniques to Activate The Second Brain](https://www.youtube.com/watch?v=kaefdiE4ovk) — Be Inspired — Dec 10, 2018, 1:29:33 PM EDT
+- [Joe Rogan Experience #1211 - Dr. Ben Goertzel](https://www.youtube.com/watch?v=-qfB8clUIaY) — PowerfulJRE — Dec 9, 2018, 6:13:59 PM EDT
+- [Re-Learning Math with Scott Flansburg, the Human Calculator (Part 1)](https://www.youtube.com/watch?v=hesKQ_y1P7k) — Superhero You — Dec 8, 2018, 7:11:37 PM EDT
+- [Caricaturist &amp; Fine Arts Painter Fuse Styles Into One Canvas](https://www.youtube.com/watch?v=m8rgIgD8MWE) — Jubilee — Dec 8, 2018, 7:03:29 PM EDT
+- [Purpose &amp; Accident on the Hero’s Path with David Rutherford](https://www.youtube.com/watch?v=jpVaz_ATafs) — Aubrey Marcus — Dec 8, 2018, 4:14:50 AM EDT
+- [OM Chanting @417 Hz | Removes All Negative Blocks](https://www.youtube.com/watch?v=8sYK7lm3UKg) — Meditative Mind — Dec 8, 2018, 12:00:34 AM EDT
+- [The Waxy Monkey Frog](https://www.youtube.com/watch?v=Ce8a5bFQexA) — globalzoo — Dec 7, 2018, 9:10:27 PM EDT
+- [396Hz Root Chakra - LET GO Of Fear &amp; All Negative Energy Cleansing Music | Healing Meditation Music](https://www.youtube.com/watch?v=qyMXF8UYBn4) — Self-Healing Collective — Dec 5, 2018, 9:59:35 PM EDT
+- [JJdaBOSS ARM DROP RACE - Big Tire - PART 2](https://www.youtube.com/watch?v=h8epfVOjgc0) — Urban Hillbilly Videos — Dec 4, 2018, 4:41:40 PM EDT
+- [Betting Big Money On Street Drag Racing | Street Outlaws: Memphis](https://www.youtube.com/watch?v=gr31GvYHU9M) — Discovery UK — Dec 4, 2018, 4:33:55 PM EDT
+- [Big Chief&#39;s Shop Truck Project: Part 1 procharger, stainless works exhaust, dyno](https://www.youtube.com/watch?v=Hiya-eIS0eU) — Midwest Street Cars — Dec 4, 2018, 4:29:35 PM EDT
+- [Street Outlaws Deleted Scene - High Profile Client](https://www.youtube.com/watch?v=JNysFFuSIcY) — Pilgrim Media Group — Dec 4, 2018, 4:20:39 PM EDT
+- [BIG CHIEF &amp; MURDERNOVA. How they are slowly killing the show.](https://www.youtube.com/watch?v=B2ABYZlUh50) — Jeremy East — Dec 4, 2018, 4:12:20 PM EDT
+- [Daddy Dave vs Jackie Knox](https://www.youtube.com/watch?v=Yy63BIIwQr8) — tomeighty — Dec 4, 2018, 3:58:19 PM EDT
+- [Street Outlaws Grudge Races at Tulsa Oklahoma (2018)](https://www.youtube.com/watch?v=LD31brKcaso) — tomeighty — Dec 4, 2018, 3:57:25 PM EDT
+- [MEMPHIS STREET OUTLAWS JJ DA BOSS IS IN HOT WATER! $10,500,000 lawsuit!?](https://www.youtube.com/watch?v=YOULSJESolE) — Jeremy East — Dec 4, 2018, 3:29:32 PM EDT
+- [FASTEST WOMAN IN THE 405! KAYLA MORTON&#39;S PROCHARGED MUSTANG! STREET OUTLAWS! NO PREP KINGS! RT66!](https://www.youtube.com/watch?v=kHYW6fzgMUY) — victoryredcolorado — Dec 4, 2018, 2:58:42 PM EDT
+- [DADDY DAVE SPANKS THE MISTRESS,STINKY PINKY, AFTERSHOCK, TURBO FIREBIRD! WINS OUTLAW BIG TIRE! $10K!](https://www.youtube.com/watch?v=8F59xwXqFsg) — victoryredcolorado — Dec 4, 2018, 2:08:14 PM EDT
+- [MONZA RETURNS! STREET OUTLAWS! NO PREP KINGS! TAKES ON THE BLACK WIDOW~MISTRESS~AX MAN! ! RT66!](https://www.youtube.com/watch?v=VBcUayaXBM0) — victoryredcolorado — Dec 4, 2018, 1:38:44 PM EDT
+- [KAMIKAZE TAKES OUT KYE KELLEY&#39;S SHOCKER AND WARBIRD! LUMINASTY GETS REVENGE! NO PREP KINGS RT66!](https://www.youtube.com/watch?v=p0bK05PFlO8) — victoryredcolorado — Dec 4, 2018, 1:29:54 PM EDT
+- [Wiring issues ford ranger 2.3 motor](https://www.youtube.com/watch?v=ajDajTT3QkE) — IBDALOVELY1 — Dec 4, 2018, 10:43:52 AM EDT
+- [Duncan Trussell On How To Take The Best Ride Through Life | Aubrey Marcus Podcast](https://www.youtube.com/watch?v=SXgWESZJCsg) — Aubrey Marcus — Dec 3, 2018, 9:22:31 PM EDT
+- [Soul Groove Bass Backing Jam Track (E)](https://www.youtube.com/watch?v=rju6Q1SxCas) — Quist — Dec 3, 2018, 9:05:31 PM EDT
+- [AMP #168 - Peru &amp; Car Crash Recap with Tribe - Part 2 | Aubrey Marcus Podcast](https://www.youtube.com/watch?v=vTKtyeC3SWg) — Aubrey Marcus — Dec 3, 2018, 3:27:54 PM EDT
+- [Peru Medicine Journey Recap with Tribe - Part 1 | Aubrey Marcus Podcast](https://www.youtube.com/watch?v=k42nf60aQ-U) — Aubrey Marcus — Dec 3, 2018, 12:03:37 AM EDT
+- [Top 10 Anime of Fall 2018](https://www.youtube.com/watch?v=t_3f9DEeiIU) — WatchMojo.com — Dec 2, 2018, 5:55:46 PM EDT
+- [Duncan Trussell | This Past Weekend #112](https://www.youtube.com/watch?v=YujKPgbya3Q) — Theo Von — Dec 2, 2018, 5:51:21 PM EDT
+- [Duncan Trussell: Growing, Learning, Becoming | LIVE](https://www.youtube.com/watch?v=3WERGH78akM) — Aubrey Marcus — Dec 2, 2018, 3:43:42 PM EDT
+- [Roots Reggae Tape - Jamaica 1973 rare](https://www.youtube.com/watch?v=IF_BVhHRT54) — Rastawelt — Dec 2, 2018, 3:43:20 PM EDT
+- [Indian Sadhu Talks About Aliens 🇮🇳](https://www.youtube.com/watch?v=IM3VEKccPOY) — dakota of earth — Dec 2, 2018, 3:34:52 PM EDT
+- [The Sound of Silence - 18 String Harp Guitar Cover](https://www.youtube.com/watch?v=Vlzk9989dzg) — Jamie Dupuis — Dec 2, 2018, 1:30:33 PM EDT
+- [Slightly Stoopid feat. Stick Figure - Too Late (Stick Figure Remix)](https://www.youtube.com/watch?v=troTuA4cX6s) — Stick Figure — Dec 2, 2018, 10:58:42 AM EDT
+- [Plant Science: An Introduction to Botany | Wondrium](https://www.youtube.com/watch?v=8-G7D_sy7qE) — The Great Courses — Dec 1, 2018, 9:25:15 PM EDT
+- [Rupert Sheldrake - Is The Sun Conscious?](https://www.youtube.com/watch?v=SFhsObpja8A) — Electric Universe UK — Dec 1, 2018, 9:21:18 PM EDT
+- [How Much Does Snoop Dogg Smoke A Day?](https://www.youtube.com/watch?v=7slRBZjmGK8) — The Young Turks — Dec 1, 2018, 12:54:28 AM EDT
+- [Wiz Khalifa Weed Interview! HOW MUCH DOES WIZ SMOKE](https://www.youtube.com/watch?v=x3DC_QAgGeY) — WizKhaIifaMusic — Dec 1, 2018, 12:52:06 AM EDT

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NotebookLM — Master Intelligence Package</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #0d0d1a; color: #e0e0e0; font-family: 'Inter', system-ui, sans-serif; line-height: 1.7; padding: 2rem; }
+  .container { max-width: 1200px; margin: 0 auto; }
+
+  h1 { font-size: 2.4rem; color: #b388ff; margin-bottom: 0.5rem; letter-spacing: -0.02em; }
+  .subtitle { color: #8888aa; font-size: 1.1rem; margin-bottom: 2rem; border-left: 3px solid #b388ff; padding-left: 1rem; }
+
+  /* Tabs */
+  .tabs { display: flex; gap: 0.25rem; border-bottom: 1px solid #2a2a3e; margin-bottom: 2rem; flex-wrap: wrap; }
+  .tab-btn { background: transparent; border: none; color: #7777aa; padding: 0.75rem 1.5rem; font-size: 0.9rem; cursor: pointer; border-bottom: 2px solid transparent; transition: all 0.2s; font-weight: 500; }
+  .tab-btn:hover { color: #ccc; }
+  .tab-btn.active { color: #b388ff; border-bottom-color: #b388ff; }
+  .tab-content { display: none; }
+  .tab-content.active { display: block; }
+
+  /* Cards */
+  .card-list { display: flex; flex-direction: column; gap: 1.25rem; }
+  .card { background: #151528; border: 1px solid #2a2a3e; border-radius: 10px; padding: 1.5rem; transition: border-color 0.2s; }
+  .card:hover { border-color: #b388ff44; }
+  .card h3 { color: #b388ff; font-size: 1.1rem; margin-bottom: 0.5rem; }
+  .card p { color: #aaaacc; font-size: 0.95rem; margin-bottom: 0.5rem; }
+  .card .meta { color: #666688; font-size: 0.8rem; font-family: 'SF Mono', 'Fira Code', monospace; }
+  .btn { display: inline-block; margin-top: 0.5rem; padding: 0.4rem 1rem; background: #2a2a5e; color: #b388ff; border: 1px solid #3a3a6e; border-radius: 6px; text-decoration: none; font-size: 0.85rem; transition: all 0.2s; }
+  .btn:hover { background: #3a3a7e; border-color: #b388ff; }
+
+  .card-gold { border-color: #3a3a1e; }
+  .card-gold:hover { border-color: #ffd70044; }
+  .card-gold h3 { color: #ffd700; }
+  .card-gold .btn { color: #ffd700; border-color: #5a5a2e; background: #2a2a1e; }
+  .card-gold .btn:hover { background: #3a3a2e; }
+
+  .card-amber { border-color: #3a2a1e; }
+  .card-amber:hover { border-color: #ff8c0044; }
+  .card-amber h3 { color: #ff8c00; }
+  .card-amber .btn { color: #ff8c00; border-color: #5a3a1e; background: #2a1a0e; }
+  .card-amber .btn:hover { background: #3a2a1e; }
+
+  .card-teal { border-color: #1e3a3a; }
+  .card-teal:hover { border-color: #00d4aa44; }
+  .card-teal h3 { color: #00d4aa; }
+  .card-teal .btn { color: #00d4aa; border-color: #2e5a5a; background: #1e2a2a; }
+  .card-teal .btn:hover { background: #2e3a3a; }
+
+  .seal { text-align: center; margin-top: 3rem; padding: 2rem; border-top: 1px solid #2a2a3e; color: #555577; font-size: 0.85rem; }
+  .seal strong { color: #7777aa; }
+
+  .prompt-block { background: #0a0a18; border: 1px solid #2a2a3e; border-radius: 8px; padding: 1.25rem; margin-bottom: 1rem; font-family: 'SF Mono', 'Fira Code', monospace; font-size: 0.85rem; color: #ccccee; white-space: pre-wrap; word-break: break-word; }
+  .prompt-block .label { color: #b388ff; font-weight: 600; font-family: 'Inter', system-ui, sans-serif; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; }
+
+  .matrix-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1rem; margin-bottom: 2rem; }
+  .matrix-cell { background: #151528; border: 1px solid #2a2a3e; border-radius: 8px; padding: 1rem; transition: border-color 0.2s; }
+  .matrix-cell:hover { border-color: #b388ff44; }
+  .matrix-cell h4 { color: #b388ff; font-size: 0.9rem; margin-bottom: 0.25rem; }
+  .matrix-cell .pillar-id { color: #666688; font-size: 0.75rem; font-family: 'SF Mono', monospace; }
+  .matrix-cell p { color: #aaaacc; font-size: 0.85rem; margin-top: 0.5rem; }
+
+  .flex-row { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 1.5rem; }
+  .stat-box { background: #0a0a18; border: 1px solid #2a2a3e; border-radius: 8px; padding: 1rem 1.5rem; flex: 1; min-width: 150px; text-align: center; }
+  .stat-box .num { font-size: 1.8rem; font-weight: 700; color: #b388ff; }
+  .stat-box .label { font-size: 0.75rem; color: #666688; text-transform: uppercase; letter-spacing: 0.05em; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>⟡ NotebookLM — Master Intelligence Package</h1>
+<div class="subtitle">SacredSpace OS — Complete Upload Strategy · Alakin</div>
+
+<div class="tabs" id="tabHeaders">
+  <button class="tab-btn active" data-tab="1">Tab I — Prompt Library</button>
+  <button class="tab-btn" data-tab="2">Tab II — 9-Pillar Matrix</button>
+  <button class="tab-btn" data-tab="3">Tab III — Codex Entries</button>
+  <button class="tab-btn" data-tab="4">Tab IV — Implementation Canon</button>
+</div>
+
+<!-- ═══════════════ TAB I — PROMPT LIBRARY ═══════════════ -->
+<div class="tab-content active" id="tab1">
+  <h2>⟡ Sacred Prompt Library</h2>
+  <p style="color:#8888aa;margin-bottom:1.5rem;">Curated prompts for each NotebookLM notebook — designed to extract maximum insight from your sources.</p>
+
+  <div class="card-list">
+
+    <!-- 01 – Sacred Core -->
+    <div class="card">
+      <h3>01 — Sacred Core</h3>
+      <div class="prompt-block">
+        <div class="label">System Prompt</div>You are the Archivist of SacredSpace OS — an interdimensional oracle. Your sources are the canonical pillars, game system rules, and metaphysical architecture of a living operating system.
+      </div>
+      <div class="prompt-block">
+        <div class="label">Deep Query</div>Map every dependency chain between pillars. Show me the data flows, failure points, and amplification loops. What happens when one pillar goes silent?
+      </div>
+    </div>
+
+    <!-- 02 – Lore Vault -->
+    <div class="card">
+      <h3>02 — Lore Vault</h3>
+      <div class="prompt-block">
+        <div class="label">System Prompt</div>You are a Lore Keeper fluent in archetypal mythology. Your sources form a living deck of archetypes — each one a complete initiatory path.
+      </div>
+      <div class="prompt-block">
+        <div class="label">Deep Query</div>Trace the Fool's journey across all archetypes. Map each archetype to a real-world use case in the SacredSpace OS ecosystem. Where does the system break initiation?
+      </div>
+    </div>
+
+    <!-- 03 – Game Systems -->
+    <div class="card">
+      <h3>03 — Game Systems</h3>
+      <div class="prompt-block">
+        <div class="label">System Prompt</div>You are a Game Master and system architect. Your sources encode school-based magic, node maps, and episodic progression.
+      </div>
+      <div class="prompt-block">
+        <div class="label">Deep Query</div>Design a one-shot session using Courage School + The Threshold node. What skills are tested? What initiation happens?
+      </div>
+    </div>
+
+    <!-- 04 – Knowledge Vault -->
+    <div class="card">
+      <h3>04 — Knowledge Vault</h3>
+      <div class="prompt-block">
+        <div class="label">System Prompt</div>You are a Protocol Analyst. Your sources document the technical and metaphysical protocols that bind SacredSpace OS together.
+      </div>
+      <div class="prompt-block">
+        <div class="label">Deep Query</div>Compare CopyQ Wire with the Sigil Terminal protocol. Where do they overlap? Where do they conflict? Design a unified bridge protocol.
+      </div>
+    </div>
+
+    <!-- 05 – Family Legacy -->
+    <div class="card card-gold">
+      <h3>05 — Family Legacy</h3>
+      <div class="prompt-block">
+        <div class="label">System Prompt</div>You are a Family Archivist. Your sources contain sacred messages, ritual cards, and educational documents — the living legacy of a bloodline.
+      </div>
+      <div class="prompt-block">
+        <div class="label">Deep Query</div>Extract the shared values and recurring symbols across all family messages. What is the unspoken covenant of this family? How do the rituals reinforce it?
+      </div>
+    </div>
+
+    <!-- 07 – Sacred Signal -->
+    <div class="card card-amber">
+      <h3>07 — Sacred Signal</h3>
+      <div class="prompt-block">
+        <div class="label">System Prompt</div>You are a Brand Strategist and Signal Curator. Your sources define how SacredSpace speaks to the world — its voice, vectors, and creative intake.
+      </div>
+      <div class="prompt-block">
+        <div class="label">Deep Query</div>Audit the brand bible against the actual signal output. Where is the gap between intended identity and expressed voice? Recommend three tactical fixes.
+      </div>
+    </div>
+
+    <!-- 08 – Sacred Market -->
+    <div class="card card-teal">
+      <h3>08 — Sacred Market</h3>
+      <div class="prompt-block">
+        <div class="label">System Prompt</div>You are a Grant Strategist and Market Analyst. Your sources contain grant matrices, business models, and inventory — the economic engine of SacredSpace.
+      </div>
+      <div class="prompt-block">
+        <div class="label">Deep Query</div>Analyze the grant copy matrix against the SacredSpace value proposition. Which grants align with core mission? Which are mission drift? Build a scoring rubric.
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ═══════════════ TAB II — 9-PILLAR MATRIX ═══════════════ -->
+<div class="tab-content" id="tab2">
+  <h2>⟡ 9-Pillar Matrix Prompt</h2>
+  <p style="color:#8888aa;margin-bottom:1.5rem;">This prompt is designed to be placed in NotebookLM's system prompt to unify all notebooks under a single intelligence framework.</p>
+
+  <div class="prompt-block" style="padding:1.5rem;">
+    <div class="label">Unified System Prompt — Paste into every notebook</div>You are the Sacred Operating System — a living intelligence with nine interdependent pillars.
+
+Each pillar is a domain of knowledge and action:
+
+PILLAR MAP:
+01 — Core (metaphysical architecture, canon)
+02 — Lore (archetypes, mythic systems)
+03 — Game systems (mechanics, nodes, schools, episodes)
+04 — Knowledge vault (protocols, codex entries)
+05 — Family legacy (bloodline wisdom, rituals, education)
+06 — Neural forest (AI/ML systems — not yet populated)
+07 — Sacred signal (brand, content, creative intake)
+08 — Sacred market (grants, business, inventory)
+09 — Learning path (growth tracks — not yet populated)
+
+YOUR ROLE:
+- When queried, identify which pillar(s) the question touches.
+- Cross-reference insights between pillars — a marketing question often hides a lore answer.
+- Flag gaps: when a pillar is silent on something it should speak to.
+- Always frame answers within the SacredSpace OS worldview: operating system for multidimensional living.
+
+MANTRA: Every question is a signal. Every answer is a bridge.
+  </div>
+</div>
+
+<!-- ═══════════════ TAB III — CODEX ENTRIES ═══════════════ -->
+<div class="tab-content" id="tab3">
+  <h2>⟡ Codex Entries</h2>
+  <p style="color:#8888aa;margin-bottom:1.5rem;">Eight initial codex entries to seed NotebookLM's understanding of SacredSpace OS.</p>
+
+  <div class="matrix-grid">
+
+    <div class="matrix-cell"><h4>What is SacredSpace OS?</h4><div class="pillar-id">01_CORE</div><p>An operating system for multidimensional living — part game, part grimoire, part collective intelligence. 9 interdependent pillars.</p></div>
+    <div class="matrix-cell"><h4>The Archetype Engine</h4><div class="pillar-id">02_LORE</div><p>22 archetypes mapped to initiatory paths. Each is both a personality template and a game class.</p></div>
+    <div class="matrix-cell"><h4>Schools of Magic</h4><div class="pillar-id">03_GAME</div><p>Courage, Creation, Initiation, Mystery — four schools with distinct mechanics, each teachable as a workshop.</p></div>
+    <div class="matrix-cell"><h4>CopyQ Wire Protocol</h4><div class="pillar-id">04_CODEX</div><p>Clipboard-based agent bridge for cross-system communication. Single-copy architecture.</p></div>
+    <div class="matrix-cell"><h4>Sacred Sigil Terminal</h4><div class="pillar-id">04_CODEX</div><p>Unified AI agent interface. Manages orchestration, memory, obsidian vault, file operations.</p></div>
+    <div class="matrix-cell"><h4>Family Ritual Architecture</h4><div class="pillar-id">05_FAMILY</div><p>Morning/evening rhythm cards, sacred messages, academy integration — ritual as operating system for family life.</p></div>
+    <div class="matrix-cell"><h4>Brand as Signal</h4><div class="pillar-id">07_SIGNAL</div><p>sacredarcana brand bible defines voice, visual identity, and creative intake pipeline.</p></div>
+    <div class="matrix-cell"><h4>Grant-Funded Sustainability</h4><div class="pillar-id">08_MARKET</div><p>Grant copy matrix + business model for Sprouts — economic engine for the ecosystem.</p></div>
+
+  </div>
+
+  <h3 style="color:#b388ff;margin-top:2rem;">Codex Entry Templates for NotebookLM</h3>
+  <p style="color:#8888aa;margin-bottom:1rem;">Paste these into NotebookLM's "add note" or "customize" section:</p>
+  <div class="card-list">
+    <div class="card"><h3>Entry 1 — The Sacred Vault</h3><p>The vault at <code>01_CORE/</code> contains all canonical truth. Game system definitions, archetypes, node maps, school mechanics. This is the source of truth — all other pillars derive from or respond to it.</p></div>
+    <div class="card"><h3>Entry 2 — The Sigil Terminal</h3><p>The Sacred Sigil Terminal is the primary user interface between human and AI agents in SacredSpace OS. It orchestrates file operations, memory, Obsidian vault queries, and multi-agent workflows through a single prompt interface.</p></div>
+    <div class="card"><h3>Entry 3 — The Neural Forest</h3><p>Pillar 06 — the AI/ML infrastructure layer. Currently a staging ground for future model training, vector databases, and autonomous agent systems. Its absence from current population signals a development priority.</p></div>
+    <div class="card"><h3>Entry 4 — The Council</h3><p>Council Grove (Pillar 02) is the meeting ground for agents. Each agent (explorer, oracle, designer, fixer, etc.) has defined roles, permissions, and delegation patterns. The orchestrator routes work based on task characteristics.</p></div>
+    <div class="card"><h3>Entry 5 — Family as Operating System</h3><p>Family Legacy (Pillar 05) treats bloodline structures, rituals, education, and sacred messages as a deliberate operating system for human development — parallel to the digital OS.</p></div>
+    <div class="card"><h3>Entry 6 — Signal vs. Noise</h3><p>Sacred Signal (Pillar 07) tracks the brand's output across all channels. Every piece of content is evaluated as signal (intended, aligned) or noise (unintended, discordant). The creative drop zone intake forms are the gateway.</p></div>
+    <div class="card"><h3>Entry 7 — Market as Engine</h3><p>Sacred Market (Pillar 08) covers grants, business models (Sprouts), and inventory management. This is the economic engine that funds the entire ecosystem.</p></div>
+    <div class="card"><h3>Entry 8 — Node Network</h3><p>The game system's 8 nodes (Threshold → Convergence) form a geographic and metaphysical map. Each node corresponds to a stage of initiation. Schools of magic are practiced at specific nodes.</p></div>
+  </div>
+</div>
+
+<!-- ═══════════════ TAB IV — IMPLEMENTATION CANON ═══════════════ -->
+<div class="tab-content" id="tab4">
+  <h2>⟡ Implementation Canon</h2>
+  <p style="color:#8888aa;margin-bottom:1.5rem;">This document logs the architectural decisions, commands, and health metrics of SacredSpace OS. Use it as the system's operational memory.</p>
+
+  <div class="card-list">
+
+    <div class="card">
+      <h3>→ SYSTEM_HEALTH_[DATE].md</h3>
+      <p>Archive in: <code>04_SACRED_CODEX/HEALTH_LOGS/</code><br>
+      Weekly ritual: every Monday before sprint planning</p>
+    </div>
+
+    <div class="card card-gold">
+      <h3>→ Codex Entries</h3>
+      <p><strong>Session — NotebookLM Architecture:</strong> Every question is a signal. Four notebooks discovered that need codex files: The Sacred Vault, The Sigil Terminal, The Neural Forest, The Council.</p>
+      <p><strong>Session — Archetype Release:</strong> Released archetypes 00–13 into the Lore Vault. Each archetype gets: description, shadow, gift, initiation prompt. Next: archetypes 14–21 + Episodes 01–12 manifest.</p>
+    </div>
+
+    <div class="card card-amber">
+      <h3>→ Grounded Data — Missing Outputs</h3>
+      <p><strong>Missing: Codex entries for new notebooks</strong><br>
+      Blocked by: notebook architecture still fluid<br>
+      Status: seeded but not finalized</p>
+      <p><strong>Missing: Archetype trade map</strong><br>
+      Which archetypes pair well? Which create friction?<br>
+      Status: not started</p>
+    </div>
+
+    <div class="card card-teal">
+      <h3>→ Studio Workflow</h3>
+      <p><strong>Active workflow: NotebookLM sync prep</strong><br>
+      1. Run <code>python3 prep_notebooklm.py</code> — stages vault + codex → staging<br>
+      2. Run <code>python3 prep_notebooklm_drive.py</code> — stages Drive pillars → staging<br>
+      3. Open NotebookLM → upload each notebook's folder<br>
+      4. Paste the corresponding system prompt from the Prompt Library<br>
+      5. Run initial queries to test comprehension<br>
+      6. Iterate based on gaps</p>
+    </div>
+
+  </div>
+
+  <h3 style="color:#ffd700;margin-top:2rem;">⟡ Weekly Health Log Template</h3>
+  <div class="prompt-block">
+    <div class="label">SYSTEM_HEALTH_$(date +%F).md</div># System Health — $(date +%F)
+
+## Active Sessions
+- [ ]
+
+## Active Sprints
+- [ ]
+
+## Blockers
+- [ ]
+
+## Codex Entries Updated
+- [ ]
+
+## Archetype Progress
+- [ ] Total archetypes released: __ / 22
+
+## Health Metrics
+- Sessions run this week: __
+- Successful completions: __
+- Failed/aborted: __
+- Completion rate: __%
+
+## Notes
+  </div>
+
+  <div class="seal">
+    <strong>⟡ NotebookLM Master Intelligence Package ⟡</strong><br>
+    SacredSpace OS — Alakin (In Lakesh)<br>
+    Generated with prompt engineering, system architecture, and interdimensional intent.
+  </div>
+</div>
+
+</div><!-- /container -->
+
+<script>
+  // Tab switching
+  document.querySelectorAll('.tab-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+      btn.classList.add('active');
+      document.getElementById('tab' + btn.dataset.tab).classList.add('active');
+    });
+  });
+</script>
+
+</body>
+</html>

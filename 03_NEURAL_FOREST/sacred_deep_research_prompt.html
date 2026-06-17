@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>S∆CR3D — Deep Research Prompt Engine</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Syne+Mono&family=Syne:wght@400;700;800&display=swap');
+
+  :root {
+    --bg: #050a07;
+    --surface: #0c150e;
+    --border: #1c3022;
+    --accent: #00ff6a;
+    --accent2: #00c4a7;
+    --accent3: #7fff00;
+    --muted: #3a5440;
+    --text: #c8dfc9;
+    --dim: #607a63;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Syne', sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+  }
+
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: 
+      radial-gradient(ellipse 60% 40% at 20% 10%, rgba(0,255,106,0.06) 0%, transparent 70%),
+      radial-gradient(ellipse 40% 60% at 80% 90%, rgba(0,196,167,0.05) 0%, transparent 70%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  /* Scanlines */
+  body::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(0,0,0,0.15) 2px,
+      rgba(0,0,0,0.15) 4px
+    );
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.4;
+  }
+
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+    position: relative;
+    z-index: 1;
+  }
+
+  header {
+    text-align: center;
+    margin-bottom: 3.5rem;
+    animation: fadeDown 0.8s ease both;
+  }
+
+  .sigil {
+    font-family: 'Syne Mono', monospace;
+    font-size: 0.75rem;
+    color: var(--accent);
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    opacity: 0.8;
+  }
+
+  h1 {
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    font-weight: 800;
+    line-height: 1.05;
+    background: linear-gradient(135deg, var(--accent), var(--accent2), var(--accent3));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 0.5rem;
+  }
+
+  .subtitle {
+    color: var(--dim);
+    font-size: 0.9rem;
+    letter-spacing: 0.1em;
+  }
+
+  .prompt-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 2px;
+    padding: 2.5rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    animation: fadeUp 0.8s ease both;
+  }
+
+  .prompt-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--accent), var(--accent2), transparent);
+  }
+
+  .section-label {
+    font-family: 'Syne Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.3em;
+    color: var(--accent);
+    text-transform: uppercase;
+    margin-bottom: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+  }
+
+  .section-label::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+  }
+
+  .prompt-text {
+    font-family: 'Syne Mono', monospace;
+    font-size: 0.85rem;
+    line-height: 1.85;
+    color: var(--text);
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+
+  .prompt-text .kw { color: var(--accent); font-weight: 700; }
+  .prompt-text .tag { color: var(--accent2); }
+  .prompt-text .comment { color: var(--muted); font-style: italic; }
+  .prompt-text .val { color: var(--accent3); }
+
+  .copy-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+    padding: 0.7rem 1.4rem;
+    background: transparent;
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    font-family: 'Syne Mono', monospace;
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.2s;
+    border-radius: 1px;
+  }
+
+  .copy-btn:hover {
+    background: var(--accent);
+    color: var(--bg);
+    box-shadow: 0 0 20px rgba(0,255,106,0.3);
+  }
+
+  .copy-btn.copied {
+    background: var(--accent2);
+    border-color: var(--accent2);
+    color: var(--bg);
+  }
+
+  .architecture-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    animation: fadeUp 1s ease 0.2s both;
+  }
+
+  .arch-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 2px;
+    padding: 1.3rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .arch-card::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--accent2);
+    opacity: 0.4;
+  }
+
+  .arch-title {
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+    color: var(--accent2);
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    font-family: 'Syne Mono', monospace;
+  }
+
+  .arch-desc {
+    font-size: 0.78rem;
+    color: var(--dim);
+    line-height: 1.6;
+  }
+
+  .footer-note {
+    text-align: center;
+    margin-top: 3rem;
+    font-family: 'Syne Mono', monospace;
+    font-size: 0.65rem;
+    color: var(--muted);
+    letter-spacing: 0.2em;
+    animation: fadeUp 1s ease 0.4s both;
+  }
+
+  @keyframes fadeDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .pulse-dot {
+    display: inline-block;
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: var(--accent);
+    margin-right: 0.4rem;
+    animation: pulse 2s infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(0,255,106,0.4); }
+    50% { opacity: 0.6; box-shadow: 0 0 0 4px rgba(0,255,106,0); }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <div class="sigil">∆ // Neural Forest // Research Protocol ∆</div>
+    <h1>S∆CR3D Deep Research Prompt</h1>
+    <p class="subtitle">Self-Regulating Internet Ingestion System — Gemini Deep Research</p>
+  </header>
+
+  <div class="architecture-grid">
+    <div class="arch-card">
+      <div class="arch-title">🕸 Web Scout</div>
+      <div class="arch-desc">Autonomous search agents that surface relevant repos, papers, tools, and ideas across GitHub, ArXiv, HuggingFace & beyond.</div>
+    </div>
+    <div class="arch-card">
+      <div class="arch-title">🌱 Seed Ingestor</div>
+      <div class="arch-desc">Parses, evaluates and formats discovered resources into Node-compatible JSON seeds for the Forest data model.</div>
+    </div>
+    <div class="arch-card">
+      <div class="arch-title">🔗 Mycelium Linker</div>
+      <div class="arch-desc">Auto-generates Edge relationships between ingested nodes based on semantic similarity and tag overlap.</div>
+    </div>
+    <div class="arch-card">
+      <div class="arch-title">🛡 Entropy Guard</div>
+      <div class="arch-desc">Runs Librarian audits on a schedule, flags orphans, and triggers pulse reports to Discord/Telegram.</div>
+    </div>
+  </div>
+
+  <div class="prompt-card" id="main-prompt">
+    <div class="section-label"><span class="pulse-dot"></span>Gemini Deep Research Prompt — Copy &amp; Paste This</div>
+    <div class="prompt-text" id="prompt-content">
+<span class="comment"># ============================================================
+# S∆CR3D NEURAL FOREST — DEEP RESEARCH PROTOCOL v1.0
+# Objective: Design a self-regulating system for autonomous
+# internet ingestion into a Python-based Forest OS node graph.
+# ============================================================</span>
+
+<span class="kw">RESEARCH MISSION:</span>
+
+I am building an AI-native operating system called the <span class="val">S∆CR3D Neural Forest</span>. 
+Its core is a Python node graph (Nodes + Edges stored in JSON) where 
+each "Node" represents an idea, project, codebase, or ritual. I need 
+you to research and design a <span class="kw">complete, self-regulating pipeline</span> that 
+automatically discovers, evaluates, and ingests open-source tools, 
+codebases, research papers, and AI enhancements from the internet into 
+this living system.
+
+<span class="kw">RESEARCH THESE FIVE SYSTEM LAYERS IN DEPTH:</span>
+
+<span class="tag">LAYER 1 — AUTONOMOUS WEB SCOUT (Discovery)</span>
+Research the best current methods (2024–2025) for:
+- Scheduled GitHub topic/repo search via GitHub API (no key required 
+  endpoints) filtering by stars, recency, and topic tags like 
+  "multi-agent", "llm-tools", "knowledge-graph", "self-healing-systems"
+- ArXiv + Semantic Scholar API querying for papers on autonomous agents,  
+  neural OS design, and AI self-improvement
+- HuggingFace Hub API for model cards and Space apps matching a query
+- RSS feed parsing (Planet Python, ML subreddits via RSS, Hacker News 
+  Algolia API) for real-time discovery
+- How to combine all these into one unified Python "Scout" class that 
+  runs on a cron/APScheduler schedule
+
+<span class="tag">LAYER 2 — INTELLIGENT SCRAPING + PARSING (Ingestion)</span>
+Research and compare:
+- ScrapeGraphAI vs. Firecrawl vs. Playwright+BeautifulSoup for reading 
+  README files, documentation pages, and landing pages of discovered tools
+- Using an LLM (Claude/Gemini/local Ollama) to extract structured 
+  metadata: name, description, category, key_capabilities[], 
+  potential_integrations[], complexity_score (1-10), license
+- How to detect and skip duplicate or low-quality sources automatically
+- Converting extracted metadata directly into the Forest Node JSON schema:
+  {id, title, type, state, energy, tags, drive, body, created_at}
+
+<span class="tag">LAYER 3 — SEMANTIC LINKING (Mycelium Edge Generation)</span>
+Research:
+- Using sentence-transformers (local, free) or an embedding API to 
+  generate vector embeddings for each Node's title+tags+body
+- Cosine similarity thresholding to auto-generate Edge relationships 
+  between new and existing Nodes in forest.json
+- Graph density self-regulation: prevent over-linking by setting a 
+  maximum edges-per-node cap and a minimum similarity threshold
+- Storing embeddings alongside the JSON forest for fast re-use
+
+<span class="tag">LAYER 4 — SELF-REGULATION + ENTROPY DEFENSE (Forest Health)</span>
+Research:
+- How to implement a "Forest Gardener" daemon that runs the Librarian 
+  audit on a schedule, auto-archives stale nodes (no updates in 90 days), 
+  and promotes high-connectivity nodes to "flowing" energy state
+- Scoring formula for a Sacred Progress Index (SPI) that weights: 
+  node count, edge density, energy state distribution, recency of updates
+- Automated Discord/Telegram pulse reports with embedded SPI graph using 
+  matplotlib saved as PNG and attached to webhook
+- Dead-link detection: pinging stored URLs in nodes and marking broken 
+  sources as state="dormant"
+
+<span class="tag">LAYER 5 — MULTI-AGENT ORCHESTRATION (Intelligence Layer)</span>
+Research:
+- How to implement this as a lightweight multi-agent system using Python 
+  (NOT LangChain — prefer raw API calls or CrewAI/AutoGen minimal setup)
+- Agent roles: Scout Agent, Ingestor Agent, Linker Agent, Gardener Agent
+- How agents communicate via a shared JSON task queue (no external broker)
+- Containerizing the entire system with Docker Compose so each agent 
+  runs as its own service with shared volume access to forest.json
+- Reference the architecture in: https://www.freecodecamp.org/news/build-and-deploy-multi-agent-ai-with-python-and-docker/
+
+<span class="kw">DELIVERABLES REQUESTED FROM YOUR RESEARCH:</span>
+
+1. A <span class="val">complete system architecture diagram</span> (described textually with 
+   ASCII or Mermaid syntax) showing all agents, data flows, and storage
+2. A <span class="val">recommended tech stack</span> table with: tool name, purpose, free/paid, 
+   local/cloud, and integration complexity rating
+3. A <span class="val">Python implementation skeleton</span> for each of the 5 layers above, 
+   compatible with the existing Forest class structure (nodes dict + 
+   edges list + Node/Edge dataclasses)
+4. A <span class="val">Docker Compose configuration</span> that runs all agents as services 
+   sharing a mounted volume for forest.json
+5. A <span class="val">self-regulation ruleset</span>: the exact conditions, thresholds, and 
+   automated actions the Gardener agent should enforce
+6. A <span class="val">risk + ethics checklist</span> for responsible automated scraping: 
+   robots.txt compliance, rate limiting, attribution in node body field, 
+   license-awareness filtering (prefer MIT/Apache/GPL sources)
+
+<span class="kw">CONSTRAINTS + CONTEXT:</span>
+- Primary language: <span class="val">Python 3.11+</span>
+- Existing data model: Nodes (dataclass) + Edges (dataclass) in JSON
+- Existing integrations: Discord webhook (DISCORD_WEBHOOK env var)
+- Must work <span class="val">offline-capable</span>: local Ollama fallback when no API key set
+- Prefer <span class="val">zero-cost or open-source</span> tools where possible
+- System must be <span class="val">additive only</span>: never auto-delete nodes, only archive
+- All ingested nodes must carry a <span class="val">source_url</span> field and <span class="val">license</span> tag
+
+<span class="comment"># Begin your deep research now. Produce exhaustive findings 
+# for each layer with working code examples where possible.</span>
+    </div>
+    <button class="copy-btn" id="copyBtn" onclick="copyPrompt()">
+      ◈ Copy Full Prompt
+    </button>
+  </div>
+
+  <div class="footer-note">
+    <span class="pulse-dot"></span>
+    S∆CR3D NEURAL FOREST ∙ RESEARCH PROTOCOL v1.0 ∙ PASTE INTO GEMINI DEEP RESEARCH
+  </div>
+
+</div>
+
+<script>
+function copyPrompt() {
+  const raw = document.getElementById('prompt-content').innerText;
+  navigator.clipboard.writeText(raw.trim()).then(() => {
+    const btn = document.getElementById('copyBtn');
+    btn.textContent = '✓ Copied to Clipboard';
+    btn.classList.add('copied');
+    setTimeout(() => {
+      btn.textContent = '◈ Copy Full Prompt';
+      btn.classList.remove('copied');
+    }, 2500);
+  });
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+---
+title: "YouTube Watch History — 2020-12"
+source: youtube
+created: 2020-12-01
+pillar: 08_LEARNING_PATH
+stage: RAW
+tags: [takeout, youtube, watch-history]
+---
+
+# YouTube Watch History — 2020-12
+> 107 videos watched
+
+## Videos
+
+- [INDUBIOUS - Live Performance and Q&amp;A - ROOTFIRE TV](https://www.youtube.com/watch?v=X7qezwgqAkU) — Indubious Music — Dec 30, 2020, 12:57:38 AM EDT
+- [Living Indubiously Podcast - #10 - Skip&#39;s Iboga Pre-Initiation](https://www.youtube.com/watch?v=tEWFHTB5G5I) — Indubious Music — Dec 29, 2020, 11:37:52 PM EDT
+- [THE HUMP live w/ Evton B of Indubious](https://www.youtube.com/watch?v=ndMavLTy2sI) — Indubious Music — Dec 29, 2020, 11:37:40 PM EDT
+- [Living Indubiously Podcast   #13 Brother&#39;s Episode and Question Time](https://www.youtube.com/watch?v=5na7rrhA0Wc) — Indubious Music — Dec 29, 2020, 11:35:21 PM EDT
+- [Here We Are](https://www.youtube.com/watch?v=hNqMiE_ldww) — Indubious - Topic — Dec 28, 2020, 6:45:32 PM EDT
+- [Blessings Run](https://www.youtube.com/watch?v=7_6XfY1dezs) — Indubious - Topic — Dec 28, 2020, 6:39:52 PM EDT
+- [Hocus Focus](https://www.youtube.com/watch?v=IcsPzCt3W-U) — Indubious - Topic — Dec 28, 2020, 6:35:51 PM EDT
+- [Shuffle the Deck](https://www.youtube.com/watch?v=nyHCLcKdNPs) — Indubious - Topic — Dec 28, 2020, 6:18:37 PM EDT
+- [Indubious - Frequent See (HD) (OFFICIAL) Music Video w/ Lyrics](https://www.youtube.com/watch?v=qH25sLVRqZ4) — Indubious Music — Dec 28, 2020, 6:13:22 PM EDT
+- [Here We Go](https://www.youtube.com/watch?v=8hZByx3BEjI) — Indubious - Topic — Dec 28, 2020, 6:08:35 PM EDT
+- [One by One](https://www.youtube.com/watch?v=r-zYq5_HFZs) — Indubious - Topic — Dec 28, 2020, 6:03:43 PM EDT
+- [Strong End](https://www.youtube.com/watch?v=_rMZZgo8wt0) — Indubious - Topic — Dec 28, 2020, 5:58:23 PM EDT
+- [Years](https://www.youtube.com/watch?v=QTiFhidXqb0) — Indubious - Topic — Dec 28, 2020, 5:52:38 PM EDT
+- [Do the Best You Can](https://www.youtube.com/watch?v=0fH-t2aF9hk) — Indubious - Topic — Dec 28, 2020, 5:48:06 PM EDT
+- [Indubious - Fabric Of Creation (HD) (OFFICIAL) Lyrics](https://www.youtube.com/watch?v=7x9H5W_1Vms) — Indubious Music — Dec 28, 2020, 5:42:06 PM EDT
+- [Here We Come](https://www.youtube.com/watch?v=yxEnVJOoWtA) — Indubious - Topic — Dec 28, 2020, 5:39:11 PM EDT
+- [Mushroom Man](https://www.youtube.com/watch?v=oWdcR8lIUIg) — Indubious - Topic — Dec 27, 2020, 6:17:07 PM EDT
+- [Arrow](https://www.youtube.com/watch?v=JJRpbYANgl8) — Indubious - Topic — Dec 27, 2020, 6:12:37 PM EDT
+- [One by One](https://www.youtube.com/watch?v=r-zYq5_HFZs) — Indubious - Topic — Dec 27, 2020, 6:07:46 PM EDT
+- [Indubious - Neva Bow (feat. Zion I) - HD 1080p (OFFICIAL) Music Video w/ Lyrics](https://www.youtube.com/watch?v=I1eWsUClNtc) — Indubious Music — Dec 27, 2020, 6:02:50 PM EDT
+- [Shady Grove (Pizza Tapes)](https://www.youtube.com/watch?v=InFhhtN78Ck) — anonymoose711 — Dec 27, 2020, 3:14:50 AM EDT
+- [Tony Rice ~ Nine Pound Hammer](https://www.youtube.com/watch?v=BsV3MW3cSMU) — BluegrassTonyRice — Dec 27, 2020, 3:13:42 AM EDT
+- [Facing My Shadow on Mushrooms | Trip Story](https://www.youtube.com/watch?v=jkO_kcXD6XY) — Psyched Substance — Dec 21, 2020, 2:09:24 AM EDT
+- [King Fantastic - Westcoastsynthesizerbeachbumgangstermusic](https://www.youtube.com/watch?v=2fIHlfyLvdw) — thekingfantastic — Dec 20, 2020, 8:33:30 PM EDT
+- [King Fantastic - Joshua Tree (Official Music Video)](https://www.youtube.com/watch?v=pGCGPcfsZQo) — thekingfantastic — Dec 20, 2020, 8:31:08 PM EDT
+- [Mushroom Man](https://www.youtube.com/watch?v=oWdcR8lIUIg) — Indubious - Topic — Dec 20, 2020, 8:18:05 PM EDT
+- [Do the Best You Can](https://www.youtube.com/watch?v=0fH-t2aF9hk) — Indubious - Topic — Dec 20, 2020, 8:13:20 PM EDT
+- [Indubious - Neva Bow (feat. Zion I) - HD 1080p (OFFICIAL) Music Video w/ Lyrics](https://www.youtube.com/watch?v=I1eWsUClNtc) — Indubious Music — Dec 20, 2020, 8:06:51 PM EDT
+- [Raging Fyah on Audiotree Live (Full Session)](https://www.youtube.com/watch?v=1TQoSrDEYq0) — Audiotree — Dec 20, 2020, 1:26:48 AM EDT
+- [Dub Hall of Fame - Roots Reggae Dub Mix Highest Quality](https://www.youtube.com/watch?v=XC4qz-lxPbw) — Tablesaw — Dec 20, 2020, 1:26:12 AM EDT
+- [Buddha meets Techno [dance/meditation/mindfulness/yoga/sleep/concentration] Loop Station RC-505](https://www.youtube.com/watch?v=KuOMMJKgPbk) — Yogetsu Akasaka — Dec 20, 2020, 12:37:16 AM EDT
+- [Ganja White Night - Lost Lands 2019 (Full set) | Concert | Music Festival](https://www.youtube.com/watch?v=KIyXN9iRbr4) — Ganja White Night — Dec 16, 2020, 11:16:09 AM EDT
+- [Ganja White Night | Unreleased | Live Music | Chicago | Drive-in Concert | Part 1](https://www.youtube.com/watch?v=ULkNp9IfSJY) — Ganja White Night — Dec 16, 2020, 11:06:06 AM EDT
+- [&quot;It Goes Straight to Your Subconscious Mind&quot; - &quot;I AM&quot; Affirmations For Success, Wealth &amp; Happiness](https://www.youtube.com/watch?v=hKqjSiM38uM) — Be Inspired — Dec 16, 2020, 1:29:59 AM EDT
+- [How To BRAINWASH Yourself For Success &amp; Destroy NEGATIVE THOUGHTS! | Dr. Joe Dispenza](https://www.youtube.com/watch?v=La9oLLoI5Rc) — Tom Bilyeu — Dec 15, 2020, 8:16:33 AM EDT
+- [Dr Joe Dispenza 2022 |DMT| Activating The Pineal Gland (THE FASTEST WAY)](https://www.youtube.com/watch?v=Pd0jLITYn28) — Forever Motivate_ — Dec 15, 2020, 8:03:31 AM EDT
+- [DO THIS To Control Your Mind In MINUTES! (Unlock Your Mind)| Dr Joe Dispenza &amp; Lewis Howes](https://www.youtube.com/watch?v=D8C3HZpWKAM) — Lewis Howes — Dec 15, 2020, 8:03:05 AM EDT
+- [How To Boost Your Immunity &amp; Heal Your Body Through Meditation | Dr. Joe Dispenza](https://www.youtube.com/watch?v=GY3uI-xStUI) — Mindvalley Talks — Dec 15, 2020, 7:09:02 AM EDT
+- [HIDDEN MATHEMATICS - Randall Carlson - Ancient Knowledge of Space, Time &amp; Cosmic Cycles](https://www.youtube.com/watch?v=R7oyZGW99os) — After Skool — Dec 15, 2020, 7:00:45 AM EDT
+- [Ram Dass – Here and Now – Ep. 128 – Become Impeccable](https://www.youtube.com/watch?v=TsiSRDCIWho) — Be Here Now Network — Dec 14, 2020, 5:44:42 PM EDT
+- [Sacred in the Everyday - Ram Dass Full Lecture](https://www.youtube.com/watch?v=kjh1BAG5Pfs) — Baba Ram Dass — Dec 14, 2020, 4:04:13 PM EDT
+- [Skinshape - Arrogance is the Death of Men (Full Album)](https://www.youtube.com/watch?v=cQ_cHzU2sM8) — Nice Guys — Dec 14, 2020, 1:22:29 PM EDT
+- [Years](https://www.youtube.com/watch?v=QTiFhidXqb0) — Indubious - Topic — Dec 14, 2020, 12:05:40 AM EDT
+- [INDUBIOUS- JAMMY (OFFICIAL) (HD)](https://www.youtube.com/watch?v=RH-ITKWMEe8) — Indubious Music — Dec 14, 2020, 12:00:39 AM EDT
+- [11/11/20 INDUBIOUS Live at the Hivve, Full Band Live Stream.](https://www.youtube.com/watch?v=1wXnw2KiRvM) — Indubious Music — Dec 13, 2020, 11:53:36 PM EDT
+- [Good Ol’ Days](https://www.youtube.com/watch?v=DaNdXrGrZWs) — Indubious - Topic — Dec 13, 2020, 11:48:42 PM EDT
+- [Hocus Focus](https://www.youtube.com/watch?v=IcsPzCt3W-U) — Indubious - Topic — Dec 13, 2020, 11:44:16 PM EDT
+- [Do the Best You Can](https://www.youtube.com/watch?v=0fH-t2aF9hk) — Indubious - Topic — Dec 13, 2020, 11:39:37 PM EDT
+- [Frequent See](https://www.youtube.com/watch?v=ALkh-aOZoXM) — Indubious - Topic — Dec 13, 2020, 11:35:29 PM EDT
+- [Blessings Run](https://www.youtube.com/watch?v=7_6XfY1dezs) — Indubious - Topic — Dec 13, 2020, 11:29:33 PM EDT
+- [INDUBIOUS - COSMIC SEED (2009) full album](https://www.youtube.com/watch?v=nKNDIMKohic) — Indubious Music — Dec 13, 2020, 11:29:16 PM EDT
+- [Indubious performs Neva Bow live at Pretty Sweet Studios](https://www.youtube.com/watch?v=ZvlqRDLFdbY) — Indubious Music — Dec 13, 2020, 11:15:18 PM EDT
+- [The Werks - “Magic”](https://www.youtube.com/watch?v=BSbU9jqFvYg) — The Werks Official — Dec 13, 2020, 8:06:30 PM EDT
+- [The Werks - “Wide Awake”](https://www.youtube.com/watch?v=7Sd3M8NomDw) — The Werks Official — Dec 13, 2020, 8:02:44 PM EDT
+- [No Prisoners](https://www.youtube.com/watch?v=eyKVSu2-qow) — The Werks - Topic — Dec 13, 2020, 8:01:06 PM EDT
+- [Strong End](https://www.youtube.com/watch?v=_rMZZgo8wt0) — Indubious - Topic — Dec 13, 2020, 7:57:05 PM EDT
+- [One by One](https://www.youtube.com/watch?v=r-zYq5_HFZs) — Indubious - Topic — Dec 13, 2020, 7:49:29 PM EDT
+- [Arrow](https://www.youtube.com/watch?v=JJRpbYANgl8) — Indubious - Topic — Dec 13, 2020, 7:44:47 PM EDT
+- [Indubious - Fabric Of Creation (HD) (OFFICIAL) Lyrics](https://www.youtube.com/watch?v=7x9H5W_1Vms) — Indubious Music — Dec 13, 2020, 7:39:42 PM EDT
+- [Indubious - Neva Bow (feat. Zion I) - HD 1080p (OFFICIAL) Music Video w/ Lyrics](https://www.youtube.com/watch?v=I1eWsUClNtc) — Indubious Music — Dec 13, 2020, 7:34:47 PM EDT
+- [Rocket Bicycle World Record ǀ 333 km/h (207 mph) ǀ Rider: François Gissy](https://www.youtube.com/watch?v=HJgMObLsUdE) — François Gissy — Dec 10, 2020, 5:19:54 PM EDT
+- [Ganja White Night - Dirty Girl | Music Video | Animation](https://www.youtube.com/watch?v=OKa3Ly1egQ4) — Ganja White Night — Dec 8, 2020, 5:11:47 PM EDT
+- [3rd Eye Indigo - Master Peace Feat. SPXTRM, CrewZ (Official Music Video)](https://www.youtube.com/watch?v=4cbwH2n-y6o) — 3rd Eye Indigo — Dec 8, 2020, 5:06:27 PM EDT
+- [How To Crochet | VERY SLOW DEMONSTRATION | Single Crochet Stitch](https://www.youtube.com/watch?v=jUIfV-Qcq2c) — Kristin&#39;s Crochet Tutorials — Dec 7, 2020, 3:10:24 PM EDT
+- [Raging Fyah on Audiotree Live (Full Session)](https://www.youtube.com/watch?v=1TQoSrDEYq0) — Audiotree — Dec 7, 2020, 12:14:55 AM EDT
+- [Arrow](https://www.youtube.com/watch?v=JJRpbYANgl8) — Indubious - Topic — Dec 7, 2020, 12:09:43 AM EDT
+- [3rd Eye Indigo - Master Peace Feat. SPXTRM, CrewZ (Official Music Video)](https://www.youtube.com/watch?v=4cbwH2n-y6o) — 3rd Eye Indigo — Dec 7, 2020, 12:05:18 AM EDT
+- [3rd Eye Indigo - Vibrations Feat. Fr33sol (Official Music Video)](https://www.youtube.com/watch?v=L_CSQKfWmYk) — 3rd Eye Indigo — Dec 7, 2020, 12:00:14 AM EDT
+- [Indigo Cypher](https://www.youtube.com/watch?v=ym4752upUlA) — 3rd Eye Indigo - Topic — Dec 6, 2020, 6:45:38 PM EDT
+- [Slightly Stoopid &amp; Friends - Live at Roberto&#39;s TRI Studios 9.13.11 (Full Live Performance)](https://www.youtube.com/watch?v=AVnqYZKXt-c) — Slightly Stoopid — Dec 6, 2020, 6:45:10 PM EDT
+- [He Who Has Ears, Free Up, live in Ashland OR 4-20-19](https://www.youtube.com/watch?v=4lMgqr5Jajw) — Indubious Music — Dec 6, 2020, 6:35:43 PM EDT
+- [Indubious - Disillusionize](https://www.youtube.com/watch?v=_TIJJ6OQkiM) — Indubious Music — Dec 6, 2020, 6:34:50 PM EDT
+- [Indubious - Neva Bow (feat. Zion I) - HD 1080p (OFFICIAL) Music Video w/ Lyrics](https://www.youtube.com/watch?v=I1eWsUClNtc) — Indubious Music — Dec 6, 2020, 6:30:02 PM EDT
+- [11/11/20 INDUBIOUS Live at the Hivve, Full Band Live Stream.](https://www.youtube.com/watch?v=1wXnw2KiRvM) — Indubious Music — Dec 6, 2020, 6:30:01 PM EDT
+- [Fr33sol - Blue Flame (Feat. Aura Da Prophet)](https://www.youtube.com/watch?v=7ehwAV-SM04) — Aura Da Prophet — Dec 6, 2020, 6:26:41 PM EDT
+- [LED Fans Flow &amp; Dancing / Crystals FX Fans - Demo](https://www.youtube.com/watch?v=ERq3nVRrqZo) — NeoFlowArt — Dec 6, 2020, 3:20:37 PM EDT
+- [FKJ &amp; Masego - Tadow](https://www.youtube.com/watch?v=hC8CH0Z3L54) — Fkj — Dec 6, 2020, 2:48:26 PM EDT
+- [Indubious - Fabric Of Creation (HD) (OFFICIAL) Lyrics](https://www.youtube.com/watch?v=7x9H5W_1Vms) — Indubious Music — Dec 6, 2020, 1:59:47 PM EDT
+- [Blessings Run](https://www.youtube.com/watch?v=7_6XfY1dezs) — Indubious - Topic — Dec 6, 2020, 1:48:56 PM EDT
+- [Strong End](https://www.youtube.com/watch?v=_rMZZgo8wt0) — Indubious - Topic — Dec 6, 2020, 1:44:30 PM EDT
+- [Stick Figure – &quot;World on Fire&quot; (Full Album)](https://www.youtube.com/watch?v=l30SXoUcXUE) — Stick Figure — Dec 6, 2020, 1:34:07 PM EDT
+- [One by One](https://www.youtube.com/watch?v=r-zYq5_HFZs) — Indubious - Topic — Dec 6, 2020, 1:28:50 PM EDT
+- [INDUBIOUS - COSMIC SEED (2009) full album](https://www.youtube.com/watch?v=nKNDIMKohic) — Indubious Music — Dec 6, 2020, 12:34:27 PM EDT
+- [Mushroom Man](https://www.youtube.com/watch?v=oWdcR8lIUIg) — Indubious - Topic — Dec 6, 2020, 12:29:00 PM EDT
+- [Here We Are](https://www.youtube.com/watch?v=hNqMiE_ldww) — Indubious - Topic — Dec 6, 2020, 11:51:28 AM EDT
+- [Hocus Focus](https://www.youtube.com/watch?v=IcsPzCt3W-U) — Indubious - Topic — Dec 6, 2020, 11:41:42 AM EDT
+- [Good Ol’ Days](https://www.youtube.com/watch?v=DaNdXrGrZWs) — Indubious - Topic — Dec 6, 2020, 11:36:57 AM EDT
+- [Shuffle the Deck](https://www.youtube.com/watch?v=nyHCLcKdNPs) — Indubious - Topic — Dec 6, 2020, 11:32:16 AM EDT
+- [Indubious - Frequent See (HD) (OFFICIAL) Music Video w/ Lyrics](https://www.youtube.com/watch?v=qH25sLVRqZ4) — Indubious Music — Dec 6, 2020, 11:25:09 AM EDT
+- [Years](https://www.youtube.com/watch?v=QTiFhidXqb0) — Indubious - Topic — Dec 6, 2020, 11:21:45 AM EDT
+- [Do the Best You Can](https://www.youtube.com/watch?v=0fH-t2aF9hk) — Indubious - Topic — Dec 6, 2020, 11:16:14 AM EDT
+- [Here We Come](https://www.youtube.com/watch?v=yxEnVJOoWtA) — Indubious - Topic — Dec 6, 2020, 10:51:55 AM EDT
+- [Is Our World a Matrix Made of WordTrix?](https://www.youtube.com/watch?v=IIWIueAooi8) — Laurel Airica — Dec 3, 2020, 7:26:06 PM EDT
+- [Evidence - Throw It All Away (Prod. By Alchemist) [Official Video]](https://www.youtube.com/watch?v=ow0dlCS2HH4) — Rhymesayers Entertainment — Dec 3, 2020, 9:32:59 AM EDT
+- [Evidence - Unlearning (Official Video)](https://www.youtube.com/watch?v=8JqJzvUB6SQ) — Rhymesayers Entertainment — Dec 3, 2020, 9:27:01 AM EDT
+- [3rd Eye Indigo - Master Peace Feat. SPXTRM, CrewZ (Official Music Video)](https://www.youtube.com/watch?v=4cbwH2n-y6o) — 3rd Eye Indigo — Dec 3, 2020, 9:21:48 AM EDT
+- [Indubious - Frequent See (HD) (OFFICIAL) Music Video w/ Lyrics](https://www.youtube.com/watch?v=qH25sLVRqZ4) — Indubious Music — Dec 1, 2020, 4:50:02 PM EDT
+- [Arrow](https://www.youtube.com/watch?v=JJRpbYANgl8) — Indubious - Topic — Dec 1, 2020, 4:45:44 PM EDT
+- [Here We Go](https://www.youtube.com/watch?v=8hZByx3BEjI) — Indubious - Topic — Dec 1, 2020, 4:45:11 PM EDT
+- [One by One](https://www.youtube.com/watch?v=r-zYq5_HFZs) — Indubious - Topic — Dec 1, 2020, 4:40:14 PM EDT
+- [Strong End](https://www.youtube.com/watch?v=_rMZZgo8wt0) — Indubious - Topic — Dec 1, 2020, 4:36:21 PM EDT
+- [Years](https://www.youtube.com/watch?v=QTiFhidXqb0) — Indubious - Topic — Dec 1, 2020, 4:31:38 PM EDT
+- [Do the Best You Can](https://www.youtube.com/watch?v=0fH-t2aF9hk) — Indubious - Topic — Dec 1, 2020, 4:26:18 PM EDT
+- [Indubious - Fabric Of Creation (HD) (OFFICIAL) Lyrics](https://www.youtube.com/watch?v=7x9H5W_1Vms) — Indubious Music — Dec 1, 2020, 4:21:06 PM EDT
+- [Here We Come](https://www.youtube.com/watch?v=yxEnVJOoWtA) — Indubious - Topic — Dec 1, 2020, 4:18:59 PM EDT
+- [SPXTRM - Eclipse/Middle-Man (Music Video)](https://www.youtube.com/watch?v=nMABzP_3_0w) — SPXTRM — Dec 1, 2020, 10:05:58 AM EDT
+- [Indubious - Neva Bow (feat. Zion I) - HD 1080p (OFFICIAL) Music Video w/ Lyrics](https://www.youtube.com/watch?v=I1eWsUClNtc) — Indubious Music — Dec 1, 2020, 10:01:13 AM EDT

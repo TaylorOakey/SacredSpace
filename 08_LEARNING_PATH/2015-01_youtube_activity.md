@@ -1,0 +1,123 @@
+---
+title: "YouTube Activity History — 2015-01"
+source: youtube
+created: 2015-01-01
+pillar: 08_LEARNING_PATH
+stage: RAW
+tags: [takeout, youtube, activity-history]
+---
+
+# YouTube Activity History — 2015-01
+> 109 entries
+
+## Entries
+
+- Searched for avatar the legend of korra — Jan 31, 2015, 6:30:16 PM EDT
+- Searched for sacred geometry — Jan 31, 2015, 5:02:00 PM EDT
+- Searched for ram dass — Jan 31, 2015, 3:52:45 PM EDT
+- Searched for bashar — Jan 31, 2015, 12:54:35 PM EDT
+- Searched for levels of consciousness — Jan 31, 2015, 12:53:49 PM EDT
+- Searched for xxyyxx — Jan 30, 2015, 5:53:15 PM EDT
+- Searched for the flaming lips yoshimi battles the pink robots — Jan 30, 2015, 5:01:02 PM EDT
+- Searched for the flaming lips do you realize — Jan 30, 2015, 5:00:52 PM EDT
+- Searched for cyhi da prynce black history — Jan 30, 2015, 4:55:08 PM EDT
+- Searched for smoking dmt — Jan 30, 2015, 4:38:52 PM EDT
+- Searched for big dipper she&#39;s fetching — Jan 27, 2015, 3:04:25 PM EDT
+- Searched for get smart because of green — Jan 27, 2015, 3:01:06 PM EDT
+- Searched for the micronotz — Jan 27, 2015, 2:47:42 PM EDT
+- Searched for the fall frightened — Jan 27, 2015, 2:44:30 PM EDT
+- Searched for silkworm live — Jan 27, 2015, 2:42:35 PM EDT
+- Searched for silkworm nerves — Jan 27, 2015, 2:39:10 PM EDT
+- Searched for silkworm there is a party in warsaw tonight — Jan 27, 2015, 2:35:08 PM EDT
+- Searched for silkworm garden city blues — Jan 27, 2015, 2:18:44 PM EDT
+- Searched for volcano suns — Jan 27, 2015, 2:10:12 PM EDT
+- Searched for blue cheer live — Jan 27, 2015, 2:04:18 PM EDT
+- Searched for sleep live — Jan 27, 2015, 1:57:53 PM EDT
+- Searched for electric wizard live — Jan 27, 2015, 1:56:29 PM EDT
+- Searched for electric wizard — Jan 27, 2015, 1:55:29 PM EDT
+- Searched for leaf hound — Jan 27, 2015, 1:53:46 PM EDT
+- Searched for sir lord baltimore — Jan 27, 2015, 1:52:45 PM EDT
+- Searched for the other half — Jan 27, 2015, 1:51:30 PM EDT
+- Searched for monster magnet — Jan 27, 2015, 1:44:30 PM EDT
+- Searched for kyuss — Jan 27, 2015, 1:43:10 PM EDT
+- Searched for trouble live — Jan 27, 2015, 1:42:57 PM EDT
+- Searched for blue cheer — Jan 27, 2015, 11:48:08 AM EDT
+- Searched for holotope — Jan 27, 2015, 10:04:52 AM EDT
+- Searched for the xx — Jan 27, 2015, 10:04:27 AM EDT
+- Searched for causi sui — Jan 27, 2015, 9:42:01 AM EDT
+- Searched for samurai champloo — Jan 27, 2015, 9:19:18 AM EDT
+- Searched for armand hammer — Jan 26, 2015, 11:24:53 PM EDT
+- Searched for cannibal ox — Jan 26, 2015, 11:23:58 PM EDT
+- Searched for run the jewels live — Jan 26, 2015, 10:27:06 PM EDT
+- Searched for run the jewels — Jan 26, 2015, 10:26:54 PM EDT
+- Searched for mushroom terence mckenna — Jan 25, 2015, 3:40:20 PM EDT
+- Searched for mushroom jesus — Jan 25, 2015, 3:36:46 PM EDT
+- Searched for causi sui — Jan 24, 2015, 8:55:58 AM EDT
+- Searched for fantastic max season 1 episode 1 — Jan 23, 2015, 2:40:02 PM EDT
+- Searched for built to spill — Jan 22, 2015, 8:05:21 PM EDT
+- Searched for the toadies — Jan 22, 2015, 7:59:58 PM EDT
+- Searched for ra the rugged man — Jan 22, 2015, 7:54:09 PM EDT
+- Searched for mission of burma live — Jan 22, 2015, 7:50:36 PM EDT
+- Searched for husker du — Jan 22, 2015, 7:45:48 PM EDT
+- Searched for sonic youth live — Jan 22, 2015, 7:43:15 PM EDT
+- Searched for guided by voices live — Jan 22, 2015, 7:38:29 PM EDT
+- Searched for townes van zandt — Jan 22, 2015, 7:34:53 PM EDT
+- Searched for archer conan — Jan 22, 2015, 7:29:03 PM EDT
+- Searched for sleater kinney — Jan 22, 2015, 7:24:56 PM EDT
+- Searched for causi sui — Jan 21, 2015, 10:29:15 PM EDT
+- Searched for the xx crystalised — Jan 21, 2015, 10:28:44 PM EDT
+- Searched for the xx — Jan 21, 2015, 9:48:41 PM EDT
+- Searched for prince — Jan 21, 2015, 9:43:29 PM EDT
+- Searched for tower of power james brown — Jan 21, 2015, 9:35:24 PM EDT
+- Searched for funkadelic — Jan 21, 2015, 9:30:28 PM EDT
+- Searched for caravan palace — Jan 21, 2015, 9:26:10 PM EDT
+- Searched for nu jazz — Jan 21, 2015, 9:15:58 PM EDT
+- Searched for nu jazz — Jan 21, 2015, 8:41:33 PM EDT
+- Searched for joga bonito ronaldinho — Jan 20, 2015, 11:01:42 PM EDT
+- Searched for joga bonito henry — Jan 20, 2015, 11:00:21 PM EDT
+- Searched for nu jazz — Jan 20, 2015, 9:39:07 PM EDT
+- Searched for nu pogodi — Jan 20, 2015, 9:38:49 PM EDT
+- Searched for holotope — Jan 13, 2015, 8:06:39 PM EDT
+- Searched for egyptian initiation — Jan 10, 2015, 9:47:26 PM EDT
+- Searched for eye of ra initiation — Jan 10, 2015, 9:46:55 PM EDT
+- Searched for how music works collegehumor — Jan 9, 2015, 3:13:09 PM EDT
+- Searched for how music works college humor — Jan 9, 2015, 3:12:46 PM EDT
+- Searched for how music works — Jan 9, 2015, 3:12:27 PM EDT
+- Searched for holotope — Jan 9, 2015, 3:04:20 PM EDT
+- Searched for explosions in the sky — Jan 7, 2015, 7:41:23 PM EDT
+- Searched for wish you were here — Jan 6, 2015, 9:11:46 AM EDT
+- Searched for chakra meditation — Jan 4, 2015, 8:34:54 PM EDT
+- Searched for rosicrucianism — Jan 4, 2015, 8:11:15 AM EDT
+- Searched for rosicrucianism — Jan 3, 2015, 11:41:13 PM EDT
+- Searched for rosicrucianism — Jan 3, 2015, 8:22:01 PM EDT
+- Searched for chakra meditation — Jan 3, 2015, 7:45:37 PM EDT
+- Searched for mozart — Jan 3, 2015, 5:21:52 PM EDT
+- Searched for mozart — Jan 3, 2015, 3:57:29 PM EDT
+- Searched for major pentatonic scale — Jan 3, 2015, 3:17:16 PM EDT
+- Searched for learning guitar — Jan 3, 2015, 3:16:55 PM EDT
+- Searched for music theory — Jan 3, 2015, 3:16:43 PM EDT
+- Searched for music theory — Jan 3, 2015, 1:30:39 PM EDT
+- Searched for guitar scales — Jan 3, 2015, 1:06:30 PM EDT
+- Searched for learning guitar — Jan 3, 2015, 12:56:58 PM EDT
+- Searched for learning guitar fretboard — Jan 3, 2015, 12:54:18 PM EDT
+- Searched for chakra meditation — Jan 3, 2015, 12:53:55 PM EDT
+- Searched for chakra meditation — Jan 3, 2015, 10:59:54 AM EDT
+- Searched for yoga routine — Jan 3, 2015, 10:33:34 AM EDT
+- Searched for king crimson — Jan 2, 2015, 9:08:30 PM EDT
+- Searched for chakra meditation — Jan 2, 2015, 9:08:09 PM EDT
+- Searched for chakra meditation — Jan 2, 2015, 6:07:07 PM EDT
+- Searched for balkan beat box — Jan 2, 2015, 3:23:19 AM EDT
+- Searched for hermetico — Jan 2, 2015, 3:16:22 AM EDT
+- Searched for mushroom jazz 6 — Jan 2, 2015, 2:18:00 AM EDT
+- Searched for virtual boy — Jan 2, 2015, 2:17:57 AM EDT
+- Searched for virtual boy mass — Jan 2, 2015, 2:17:25 AM EDT
+- Searched for beats antique — Jan 2, 2015, 1:14:59 AM EDT
+- Searched for virtual boy mass — Jan 2, 2015, 1:05:07 AM EDT
+- Searched for sopwith camel — Jan 2, 2015, 1:04:41 AM EDT
+- Searched for mozart — Jan 2, 2015, 12:12:12 AM EDT
+- Searched for mushroom jazz 6 — Jan 1, 2015, 7:10:28 PM EDT
+- Searched for mushroom jazz 4 — Jan 1, 2015, 7:10:20 PM EDT
+- Searched for mushroom jazz — Jan 1, 2015, 7:10:01 PM EDT
+- Searched for easy acoustic guitar songs — Jan 1, 2015, 2:07:24 PM EDT
+- Searched for easy acoustic guitar songs pink — Jan 1, 2015, 2:06:06 PM EDT
+- Searched for chakra meditation — Jan 1, 2015, 11:29:06 AM EDT

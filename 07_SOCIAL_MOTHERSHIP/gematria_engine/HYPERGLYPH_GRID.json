@@ -1,0 +1,28 @@
+{
+  "version": "1.0",
+  "description": "12-Glyph Base Grid — atomic symbol alphabet of SacredSpace OS",
+  "status": "CANON",
+  "glyphs": [
+    { "symbol": "∆", "id": "DELTA", "domain": "Consciousness", "meaning": "thought, awareness, AI dialogue", "shortcut": ":ai", "espanso_trigger": ":ai" },
+    { "symbol": "◇", "id": "DIAMOND", "domain": "Knowledge", "meaning": "vaults, memory, archives", "shortcut": ":kn", "espanso_trigger": ":kn" },
+    { "symbol": "✶", "id": "STAR", "domain": "Ritual", "meaning": "journaling, actions, practices", "shortcut": ":rt", "espanso_trigger": ":rt" },
+    { "symbol": "⚙", "id": "GEAR", "domain": "Engineering", "meaning": "building, coding, systems", "shortcut": ":en", "espanso_trigger": ":en" },
+    { "symbol": "☉", "id": "SUN", "domain": "World", "meaning": "story, environment, universe", "shortcut": ":wb", "espanso_trigger": ":wb" },
+    { "symbol": "☽", "id": "MOON", "domain": "Mystery", "meaning": "hidden knowledge, intuition", "shortcut": ":my", "espanso_trigger": ":my" },
+    { "symbol": "⚔", "id": "SWORDS", "domain": "Conflict", "meaning": "quests, challenges", "shortcut": ":qu", "espanso_trigger": ":qu" },
+    { "symbol": "⟡", "id": "GATEWAY", "domain": "Gateway", "meaning": "portals, transitions", "shortcut": ":gw", "espanso_trigger": ":gw" },
+    { "symbol": "∞", "id": "INFINITY", "domain": "Continuity", "meaning": "time, lineage, persistence", "shortcut": ":ct", "espanso_trigger": ":ct" },
+    { "symbol": "⌘", "id": "COMMAND", "domain": "Command", "meaning": "control signals, automation", "shortcut": ":cmd", "espanso_trigger": ":cmd" },
+    { "symbol": "⟠", "id": "NETWORK", "domain": "Network", "meaning": "connections, relationships, graph", "shortcut": ":net", "espanso_trigger": ":net" },
+    { "symbol": "☍", "id": "POLARITY", "domain": "Polarity", "meaning": "balance, duality, philosophy", "shortcut": ":pl", "espanso_trigger": ":pl" }
+  ],
+  "combinations": [
+    { "glyphs": ["∆", "◇"], "meaning": "AI knowledge node — research mode" },
+    { "glyphs": ["⚙", "∆"], "meaning": "AI engineering — code generation" },
+    { "glyphs": ["◇", "∞"], "meaning": "Permanent archive — canonical memory" },
+    { "glyphs": ["⟡", "☉"], "meaning": "Gateway into world lore" },
+    { "glyphs": ["✶", "∞"], "meaning": "Ritual cycle — daily practice" },
+    { "glyphs": ["⚔", "☉"], "meaning": "World conflict — narrative arc" }
+  ],
+  "seal": "In lakesh alakin. ∆"
+}

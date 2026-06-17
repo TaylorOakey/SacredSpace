@@ -1,0 +1,131 @@
+---
+title: "YouTube Watch History — 2019-07"
+source: youtube
+created: 2019-07-01
+pillar: 08_LEARNING_PATH
+stage: RAW
+tags: [takeout, youtube, watch-history]
+---
+
+# YouTube Watch History — 2019-07
+> 117 videos watched
+
+## Videos
+
+- [Jordan Maxwell on the Power of Symbols and The Way the World really Works](https://www.youtube.com/watch?v=vT7Aq4iACOM) — NewRealities — Jul 29, 2019, 12:51:56 PM EDT
+- [The Most Unexpected Acoustic Guitar Performance | The Showhawk Duo  | TEDxKlagenfurt](https://www.youtube.com/watch?v=FIrkhJut4Ew) — TEDx Talks — Jul 28, 2019, 6:57:07 PM EDT
+- [Nassim Haramein • &quot;Black Whole&quot; Film • The 64 Tetrahedron Grid](https://www.youtube.com/watch?v=wRppPU5dbHU) — Nassim Haramein — Jul 28, 2019, 6:11:09 PM EDT
+- [So You Want To Be Enlightened? w/ Martin Ball ~ ATTMind Ep 32](https://www.youtube.com/watch?v=X4qDheRLqlM) — Adventures Through The Mind | James W. Jesso — Jul 27, 2019, 2:57:25 PM EDT
+- [(여자)아이들((G)I-DLE) - &#39;한(一)(HANN(Alone))&#39; Official Music Video](https://www.youtube.com/watch?v=OKNXn2qCEws) — i-dle (아이들) — Jul 27, 2019, 2:55:05 PM EDT
+- [Fraggle Rock | You Can&#39;t Do That Without a Hat | The Jim Henson Company](https://www.youtube.com/watch?v=p4dZ2jDP_k4) — The Jim Henson Company — Jul 27, 2019, 12:19:26 PM EDT
+- [Fraggle Rock | Opening Theme | The Jim Henson Company](https://www.youtube.com/watch?v=KLQS6xo40kI) — The Jim Henson Company — Jul 27, 2019, 12:18:17 PM EDT
+- [He-Man - Visitors From Earth - FULL episode](https://www.youtube.com/watch?v=gmfzKotk2hE) — Masters of the Universe: He-Man &amp; She-Ra — Jul 27, 2019, 12:17:55 PM EDT
+- [Thundercats opening [HD]](https://www.youtube.com/watch?v=HcGNqrAtsgg) — leopard9751 — Jul 27, 2019, 12:16:27 PM EDT
+- [5-MEO-DMT + What&#39;s Really Real with Martin Ball](https://www.youtube.com/watch?v=dkdPVGMiU34) — Noah Lampert — Jul 26, 2019, 8:05:12 PM EDT
+- [Chris Brown - No Guidance (Official Video) ft. Drake](https://www.youtube.com/watch?v=6L_k74BOLag) — ChrisBrownVEVO — Jul 26, 2019, 7:56:01 PM EDT
+- [5-MeO-DMT Therapy and Integration | Rafael Lancelotta ~ ATTMind 71](https://www.youtube.com/watch?v=_P-oPo8qEfs) — Adventures Through The Mind | James W. Jesso — Jul 26, 2019, 7:51:56 PM EDT
+- [How To Express MYSTICAL Truth Through ART w/ Alex &amp; Allyson Grey](https://www.youtube.com/watch?v=0pS_0ejRBi4) — Aubrey Marcus — Jul 26, 2019, 4:32:42 PM EDT
+- [Joe Rogan Experience #1314 - Charlamagne tha God &amp; Andrew Schulz](https://www.youtube.com/watch?v=tiOFmHOjXH0) — PowerfulJRE — Jul 26, 2019, 4:23:28 PM EDT
+- [Joe Rogan Experience #1325 - Dr. Cornel West](https://www.youtube.com/watch?v=ViWvAnvT17c) — PowerfulJRE — Jul 26, 2019, 4:19:05 PM EDT
+- [Joe Rogan Experience #1325 - Dr. Cornel West](https://www.youtube.com/watch?v=ViWvAnvT17c) — PowerfulJRE — Jul 25, 2019, 8:18:57 PM EDT
+- [5-MeO-DMT Full Energetic Embodiment with Martin Ball](https://www.youtube.com/watch?v=JftMZ3zERNw) — The Entheogenic Evolution — Jul 25, 2019, 7:44:04 PM EDT
+- [5-MeO-DMT EEG Scan with Martin Ball](https://www.youtube.com/watch?v=bKdvO57ve4o) — The Entheogenic Evolution — Jul 25, 2019, 7:41:42 PM EDT
+- [Liberation Through Unknowing | 5-MeO-DMT | Interview with Martin Ball Ph.D. | ATTMind Ep.5](https://www.youtube.com/watch?v=APpyrmx3rM0) — Adventures Through The Mind | James W. Jesso — Jul 25, 2019, 7:40:03 PM EDT
+- [Entheogenic Liberation - Introduction](https://www.youtube.com/watch?v=CjMy6Q7D47g) — The Entheogenic Evolution — Jul 25, 2019, 7:33:49 PM EDT
+- [Martin Ball- Come To The Throne (Full) (1996)](https://www.youtube.com/watch?v=QBxcyi6ph80) — Trax Play Music — Jul 25, 2019, 7:31:40 PM EDT
+- [Sleep Chakra Meditation Music: Healing Deep Sleep Meditation &amp; Sacral Chakra Meditation Balancing](https://www.youtube.com/watch?v=V3u7mNTG09g) — Nu Meditation Music — Jul 23, 2019, 10:54:36 PM EDT
+- [16 Levels of Piano Composition: Easy to Complex | WIRED](https://www.youtube.com/watch?v=m6buIdQacoM) — WIRED — Jul 23, 2019, 10:24:43 PM EDT
+- [Alef  • &quot;Sol&quot; [1 Hour Loop]](https://www.youtube.com/watch?v=30dTTJPRf94) — Pacho — Jul 23, 2019, 10:23:18 PM EDT
+- [Fingerstyle Guitar Champion Christie Lenée: Acoustic Guitar Session](https://www.youtube.com/watch?v=Aaipnxrdd78) — Acoustic Guitar Magazine — Jul 23, 2019, 10:15:18 PM EDT
+- [A&#39;an - The Tablets of Thoth (Psychedelic Reading)](https://www.youtube.com/watch?v=1QtEF0lucr4) — Gavrilo. — Jul 23, 2019, 9:06:50 PM EDT
+- [Challenger VS Deere](https://www.youtube.com/watch?v=KSndEZ_ocps) — Millennial Farmer — Jul 22, 2019, 11:01:48 AM EDT
+- [The world&#39;s largest tractors !!! Monster tractors](https://www.youtube.com/watch?v=S1TVR5juLsU) — Black Team — Jul 22, 2019, 10:59:46 AM EDT
+- [The Miracle of Consciousness - Ram Dass Full Lecture 1996](https://www.youtube.com/watch?v=LCiB9oMnIbI) — Baba Ram Dass — Jul 20, 2019, 2:17:15 PM EDT
+- [How Karma Works - 33 Degree Freemason Manly P. Hall [Full Lecture / Clean Audio]](https://www.youtube.com/watch?v=BDvBL8s-5Mk) — MindPodNetwork — Jul 20, 2019, 2:14:43 PM EDT
+- [Lord Ganesha Mix](https://www.youtube.com/watch?v=emENMmsTeQw) — dubabylon — Jul 19, 2019, 11:04:58 PM EDT
+- [Stairway to Heaven (Jimmy Page/Robert Plant) - Danish Guitar Performance - Soren Madsen](https://www.youtube.com/watch?v=7wqQqv-euRU) — sorenmadsen.com — Jul 19, 2019, 10:55:20 PM EDT
+- [Nothing Else Matters by Metallica - Danish Guitar Performance - Soren Madsen](https://www.youtube.com/watch?v=WlGiOiRQNhI) — sorenmadsen.com — Jul 19, 2019, 10:51:54 PM EDT
+- [The Power of Nonverbal Communications | Joe Navarro (Keynote) | CMX Summit West 2015](https://www.youtube.com/watch?v=HRl0dvPRkSI) — CMX — Jul 19, 2019, 10:51:18 PM EDT
+- [Former FBI Agent Explains How to Read Body Language | Tradecraft | WIRED](https://www.youtube.com/watch?v=4jwUXV4QaTw) — WIRED — Jul 19, 2019, 10:32:01 PM EDT
+- [An Intimate Sharing with Jordan Maxwell 2018](https://www.youtube.com/watch?v=91ielq_KTnU) — Mohammed Kilani — Jul 19, 2019, 10:26:05 PM EDT
+- [David Bowie - Space Oddity (Official Video)](https://www.youtube.com/watch?v=iYYRH4apXDo) — David Bowie — Jul 18, 2019, 6:32:30 PM EDT
+- [Jordan Maxwell - Keys to Understanding Hidden Symbols in the Bible](https://www.youtube.com/watch?v=1u8ZRWmJmzk) — The Internationale — Jul 18, 2019, 6:16:20 PM EDT
+- [Strawman police &amp; courts pt1](https://www.youtube.com/watch?v=HFxJoOl8Oz0) — johnnybconspiracy — Jul 18, 2019, 6:15:24 PM EDT
+- [The Amazing Hidden Meanings Of Everyday Words - Jordan Maxwell](https://www.youtube.com/watch?v=nfZwqTy5Fqw) — marndin — Jul 18, 2019, 2:56:54 PM EDT
+- [How to Use a Japanese-Style Pull Saw](https://www.youtube.com/watch?v=EzEm2ymA5ds) — Fine Homebuilding — Jul 18, 2019, 1:08:37 PM EDT
+- [Should David Icke be judged for his Wogan appearance?](https://www.youtube.com/watch?v=pyNrwfDVzeI) — TalkTV — Jul 18, 2019, 12:34:23 PM EDT
+- [David Icke and Jordan Maxwell   Future of Planet Earth(Subtitles)](https://www.youtube.com/watch?v=VV1jJnfOj30) — hlipy — Jul 18, 2019, 10:21:52 AM EDT
+- [Jordan Maxwell - Occult &amp; Esoteric Business Laws](https://www.youtube.com/watch?v=3C6Ei8f5qgA) — The Internationale — Jul 17, 2019, 6:26:34 PM EDT
+- [341Hz 》HEART CHAKRA HEALING SOUND BATH  》Open Yourself To Love &amp; Kindness  》Chakra Cleansing Music](https://www.youtube.com/watch?v=ywgifA_dOPM) — Meditative Mind — Jul 17, 2019, 4:29:27 PM EDT
+- [Jordan Maxwell - Water of Grace,  Water of Life](https://www.youtube.com/watch?v=q_O5svEGSLo) — truthoutmedia — Jul 17, 2019, 3:36:33 PM EDT
+- [The Rise Of Mankind In Nature - 33 Degree Freemason Manly P. Hall [Full Lecture / Clean Audio]](https://www.youtube.com/watch?v=OPmAHcFv3ho) — MindPodNetwork — Jul 17, 2019, 1:27:26 PM EDT
+- [Unveiling the Forbidden: The Dark Secrets of 33 Degree Freemason Manly P. Hall](https://www.youtube.com/watch?v=y7XfLW8xW-0) — MindPodNetwork — Jul 17, 2019, 1:25:01 PM EDT
+- [Secret Societies In The World - 33 Degree Freemason Manly P. Hall [Full Lecture / Clean Audio]](https://www.youtube.com/watch?v=wqP6K4giH6s) — MindPodNetwork — Jul 17, 2019, 10:06:34 AM EDT
+- [Mahamaya, Mother Of The Buddha - 33 Degree Freemason Manly P. Hall [Full Lecture / Clean Audio]](https://www.youtube.com/watch?v=OnX6b2uYrIw) — MindPodNetwork — Jul 17, 2019, 9:11:06 AM EDT
+- [The Planets And The Ancient Gods // 33 Degree Freemason Manly P. Hall [Full Lecture / Clean Audio]](https://www.youtube.com/watch?v=jd6qQjTuCgg) — MindPodNetwork — Jul 17, 2019, 8:14:28 AM EDT
+- [The Self That Thinks // Manly P. Hall [Full Lecture / Clean Audio]](https://www.youtube.com/watch?v=hZECC-2C4fg) — MindPodNetwork — Jul 17, 2019, 7:47:06 AM EDT
+- [Brain Synchronisation | &quot;This Will Activate 100% Of Your Brain&quot; - Dr. Bruce Lipton](https://www.youtube.com/watch?v=HJ2x-4ZV-Pg) — Video Advice — Jul 16, 2019, 6:29:23 PM EDT
+- [Unveiling the Forbidden: The Dark Secrets of 33 Degree Freemason Manly P. Hall](https://www.youtube.com/watch?v=y7XfLW8xW-0) — MindPodNetwork — Jul 16, 2019, 1:05:24 PM EDT
+- [The Initiation of The Pyramid - 33 Degree Freemason Manly P. Hall [Full Lecture / Clean Audio]](https://www.youtube.com/watch?v=hGn4nYJjWNM) — MindPodNetwork — Jul 16, 2019, 10:42:23 AM EDT
+- [Manly P. Hall - Secret Powers and Why We Should Not Use Them](https://www.youtube.com/watch?v=w3WiuG6uTJQ) — Promienie Gwiazd (promienie) — Jul 16, 2019, 10:41:25 AM EDT
+- [How To Open Doors To The Invisible - 33 Degree Freemason Manly P. Hall [Full Lecture / Clean Audio]](https://www.youtube.com/watch?v=EpqjPNclR04) — MindPodNetwork — Jul 16, 2019, 9:02:42 AM EDT
+- [MASTER NETWORKING: 7 Steps You NEED to Know to Connect with ANYONE | Christopher McDonald](https://www.youtube.com/watch?v=U5TrrSks77E) — Tom Bilyeu — Jul 16, 2019, 8:23:39 AM EDT
+- [Learn to Play Bluegrass Banjo - Lesson 1](https://www.youtube.com/watch?v=XswGppdJs_c) — Jim Pankey — Jul 15, 2019, 7:44:07 PM EDT
+- [Beginning Bluegrass Banjo - Lesson 01 - For absolute beginners](https://www.youtube.com/watch?v=fn4YhHdhhUU) — markwardle — Jul 15, 2019, 7:39:34 PM EDT
+- [banjo tuning](https://www.youtube.com/watch?v=H_w5X41ZZPs) — Ruben De Anda — Jul 15, 2019, 7:33:19 PM EDT
+- [5 String Banjo Tuner](https://www.youtube.com/watch?v=EORCCF_Fqdc) — Acoustic Tools — Jul 15, 2019, 7:32:06 PM EDT
+- [&quot;Cripple Creek&quot; with Tracy Newman on the 5-string banjo](https://www.youtube.com/watch?v=Ew6DS2bXYmk) — Tracy Newman — Jul 15, 2019, 7:31:28 PM EDT
+- [The Secrets Of The 33 Degree Freemason | Manly P. Hall [Full Lecture / Clean Audio]](https://www.youtube.com/watch?v=N44LQu7R_l0) — MindPodNetwork — Jul 15, 2019, 3:00:35 PM EDT
+- [Jordan Maxwell - Our Hidden Creators](https://www.youtube.com/watch?v=4PcPbf34PoE) — The Internationale — Jul 15, 2019, 3:00:26 PM EDT
+- [Four Years of Wim Hof Method | How It Changed My Life](https://www.youtube.com/watch?v=DDDd0g4ajDU) — The Breathwork Channel — Jul 15, 2019, 2:39:37 PM EDT
+- [DMT - The Hidden Truth (2019)](https://www.youtube.com/watch?v=v0yCElwexjg) — Jason A — Jul 15, 2019, 2:24:02 PM EDT
+- [Extreme Ownership - Jocko Willink](https://www.youtube.com/watch?v=qKwkcWLe_Yc) — London Real — Jul 15, 2019, 8:23:14 AM EDT
+- [Root Chakra Healing Chants ⁂ LET GO OF FEARS &amp; INSECURITIES ⁂ Seed Mantra &quot;LAM&quot; Chanting Meditation](https://www.youtube.com/watch?v=XXEezpaWo_M) — Meditative Mind — Jul 14, 2019, 11:04:12 PM EDT
+- [Appalachian English](https://www.youtube.com/watch?v=03iwAY4KlIU) — The Language &amp; Life Project — Jul 14, 2019, 11:02:23 PM EDT
+- [The Disappearing American Dialect of North Carolina](https://www.youtube.com/watch?v=x7MvtQp2-UA) — Great Big Story — Jul 14, 2019, 10:59:01 PM EDT
+- [Aura Da Prophet - Metamorphosis Ft. AKTHESAVIOR (Official Lyric Video)](https://www.youtube.com/watch?v=ADhKaZ4XhmQ) — Aura Da Prophet — Jul 14, 2019, 10:57:46 PM EDT
+- [Jordan Maxwell - Our Hidden Creators](https://www.youtube.com/watch?v=4PcPbf34PoE) — The Internationale — Jul 14, 2019, 10:33:17 PM EDT
+- [Four Years of Wim Hof Method | How It Changed My Life](https://www.youtube.com/watch?v=DDDd0g4ajDU) — The Breathwork Channel — Jul 14, 2019, 9:26:31 AM EDT
+- [Doctor Dissects the Wim Hof Method - Cold Hard Science Analysis](https://www.youtube.com/watch?v=D6EPuUdIC1E) — Medlife Crisis — Jul 14, 2019, 8:35:37 AM EDT
+- [Real MAN Talk: Are Your Lifestyle Habits and Mindset Holding You Back?](https://www.youtube.com/watch?v=L4ONHL0zS70) — certifiedhealthnut — Jul 14, 2019, 8:34:59 AM EDT
+- [The Real God Within](https://www.youtube.com/watch?v=kqLdCVyKzlk) — Innerstanding — Jul 13, 2019, 10:22:00 PM EDT
+- [Klangnomad - I am what I am](https://www.youtube.com/watch?v=9q2h6oGD6UA) — Klangnomad Music — Jul 13, 2019, 10:21:56 PM EDT
+- [Joe Rogan Experience #1322 - Reggie Watts](https://www.youtube.com/watch?v=GW2si8__T7c) — PowerfulJRE — Jul 13, 2019, 10:21:40 PM EDT
+- [Indigo Cypher Ft. 3rd Eye Indigo, Illuminati Congo, Aura Da Prophet, Drok The Menace, Kyle Bent](https://www.youtube.com/watch?v=UH4JxQXAfxc) — 3rd Eye Indigo — Jul 13, 2019, 5:47:52 PM EDT
+- [Wanna Be A Baller Lyrics](https://www.youtube.com/watch?v=1-wDXpzU_Gg) — Taylor — Jul 13, 2019, 5:41:47 PM EDT
+- [Lil&#39; Troy - Wanna Be A Baller (Official Music Video)](https://www.youtube.com/watch?v=InGtiEXQyF0) — LilTroyVEVO — Jul 13, 2019, 5:41:13 PM EDT
+- [To Scale: THE SOLAR SYSTEM](https://www.youtube.com/watch?v=zR3Igc3Rhfg) — To Scale: — Jul 12, 2019, 10:34:02 PM EDT
+- [Ben Harper - Full Performance (Live on KEXP)](https://www.youtube.com/watch?v=6Y4tEymZPw4) — KEXP — Jul 12, 2019, 10:19:14 PM EDT
+- [639 Hz ❯ Attract Love ❯ Raise Positive Energy ❯ Marimba Meditation Music](https://www.youtube.com/watch?v=yiGweP--BRs) — Meditative Mind — Jul 12, 2019, 6:53:35 PM EDT
+- [Sacred G Breath Meditation Station   DMT Releasing Pineal Activation](https://www.youtube.com/watch?v=97gSeQY2IZg) — falconflylow — Jul 12, 2019, 6:40:45 PM EDT
+- [WORLD’S GREATEST DRAG RACE 8!](https://www.youtube.com/watch?v=iQGg9NRun08) — MotorTrend Channel — Jul 11, 2019, 8:00:43 PM EDT
+- [Top 10 RAREST &amp; MOST EXPENSIVE Cars In The World](https://www.youtube.com/watch?v=qvuvjEkeDAw) — Top Trending — Jul 11, 2019, 7:50:45 PM EDT
+- [Real Hot Dog Precision](https://www.youtube.com/watch?v=QoJb4QjO82U) — Circle K Sverige — Jul 11, 2019, 7:48:19 PM EDT
+- [Caterpillar 6015B Excavator Loading Trucks - Sotiriadis SA](https://www.youtube.com/watch?v=-Yy8IDWS2Zo) — Mega Machines Channel — Jul 11, 2019, 7:44:31 PM EDT
+- [Caterpillar 6015B Excavator Loading Trucks - Sotiriadis Brothers](https://www.youtube.com/watch?v=0gBOMS-ftHw) — Mega Machines Channel — Jul 11, 2019, 7:35:42 PM EDT
+- [Best of Padma Purana | Trip-Hop &amp; Abstract Hip-Hop &amp; Instrumental](https://www.youtube.com/watch?v=ODTk29E7QZc) — S!X - Music — Jul 9, 2019, 9:54:00 PM EDT
+- [Isaac Chambers &#39; Smoked Mood [Mixed by Take It Easy]](https://www.youtube.com/watch?v=e-GqvWZKvq0) — CDA Mag — Jul 9, 2019, 9:16:16 PM EDT
+- [On the difference between observing and thinking about oneself | J. Krishnamurti](https://www.youtube.com/watch?v=kswDO60A3h8) — J. Krishnamurti - Official Channel — Jul 9, 2019, 8:56:11 PM EDT
+- [Joe Rogan Experience #1321 - Robert Oberst](https://www.youtube.com/watch?v=pTZm0Y_G78M) — PowerfulJRE — Jul 9, 2019, 8:38:15 PM EDT
+- [How Authority Works - Where Does Truth Come From?](https://www.youtube.com/watch?v=xyzYKVL5CB0) — Actualized.org — Jul 8, 2019, 8:59:46 PM EDT
+- [The Real Lucifer and Satan Part 1](https://www.youtube.com/watch?v=R78Z3AK-PDs) — Innerstanding — Jul 7, 2019, 12:55:05 AM EDT
+- [Joe Rogan Experience #1284 - Graham Hancock](https://www.youtube.com/watch?v=Rxmw9eizOAo) — PowerfulJRE — Jul 6, 2019, 10:29:08 PM EDT
+- [Tummo Breathing Technique - Inner Fire (Full Tutorial)](https://www.youtube.com/watch?v=3XtDgQZbiFc) — Noble Movement Academy — Jul 6, 2019, 10:08:08 PM EDT
+- [Secrets of the Cosmos: Defining TIME by knowing what it actually IS. Is time-travel possible?](https://www.youtube.com/watch?v=C6LRx5Z8QiA) — Theoria Apophasis — Jul 6, 2019, 6:56:45 PM EDT
+- [Understanding Awareness - The Staggering Depth Of Your Unawareness Revealed](https://www.youtube.com/watch?v=ugvMqHkUO-0) — Actualized.org — Jul 6, 2019, 12:01:21 AM EDT
+- [What Is Reality? - A Radical Explanation](https://www.youtube.com/watch?v=jmBQRb5iuMg) — Actualized.org — Jul 5, 2019, 10:48:09 PM EDT
+- [John Baldry &amp; Elton John - Flying (1971)](https://www.youtube.com/watch?v=Dpa_V649KSE) — Ronnie Friend — Jul 5, 2019, 6:05:20 PM EDT
+- [Joe Rogan Experience #1035 - Paul Stamets](https://www.youtube.com/watch?v=mPqWstVnRjQ) — PowerfulJRE — Jul 5, 2019, 1:01:25 PM EDT
+- [5MEO DMT mindbending body exploding experience](https://www.youtube.com/watch?v=_qSQK2CTl_E) — certifiedhealthnut — Jul 5, 2019, 12:54:54 PM EDT
+- [Jerry Garcia Solo Acoustic 04.10.1982 (Late Show) Passaic, NJ SBD-MTX](https://www.youtube.com/watch?v=vMHXMRd1KTI) — nognuisagoodgnu — Jul 4, 2019, 10:00:44 PM EDT
+- [Yatao | Atlas&#39; Hands | Atlas Handpan and Calabash](https://www.youtube.com/watch?v=RiA9QxzrwuU) — Malte Marten Music — Jul 4, 2019, 8:21:55 PM EDT
+- [Cyr Wheel of Fortune](https://www.youtube.com/watch?v=iQmWYzLb368) — Kuma Films — Jul 4, 2019, 8:17:58 PM EDT
+- [How the World Got Weird, Erik Davis](https://www.youtube.com/watch?v=J1QMUUn5ays) — Rebel Wisdom — Jul 4, 2019, 8:17:08 PM EDT
+- [The Secret to Poi Polyrhythm Hybrids (Intermediate Tutorial)](https://www.youtube.com/watch?v=8qMvaqfYJuI) — DrexFactor Poi — Jul 4, 2019, 8:17:02 PM EDT
+- [Aldous Huxley interviewed by Mike Wallace : 1958 (Full)](https://www.youtube.com/watch?v=alasBxZsb40) — someoddstuff — Jul 4, 2019, 8:16:07 PM EDT
+- [Tripping on “Aladdin” is as WEIRD as it sounds | UGLIEST PSYCH EVER](https://www.youtube.com/watch?v=jjUaWso3h60) — Psyched Substance — Jul 4, 2019, 7:53:08 PM EDT
+- [Joe Rogan Experience #1319 - Joey Diaz](https://www.youtube.com/watch?v=J1H8vYEi128) — PowerfulJRE — Jul 2, 2019, 10:17:15 PM EDT
+- [Grading And Back Dragging With A Loader To Clear A Building Site](https://www.youtube.com/watch?v=72pro5REnA0) — Country Living Experience: A Homesteading Journey — Jul 2, 2019, 7:59:44 PM EDT
+- [The Basics: Back Dragging with Loader Bucket](https://www.youtube.com/watch?v=FOS2IZGOGoI) — Vahrenberg Implement — Jul 2, 2019, 7:55:38 PM EDT
+- [Kubota L3200 box blade and grading techniques!](https://www.youtube.com/watch?v=o2ULuZJZ7sc) — Daniel Woodell — Jul 2, 2019, 7:53:11 PM EDT
+- [TIPS on using your front and loader to get things done](https://www.youtube.com/watch?v=9iuWIqwShHI) — Live Free — Jul 2, 2019, 7:51:54 PM EDT

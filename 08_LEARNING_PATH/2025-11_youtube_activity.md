@@ -1,0 +1,263 @@
+---
+title: "YouTube Activity History — 2025-11"
+source: youtube
+created: 2025-11-01
+pillar: 08_LEARNING_PATH
+stage: RAW
+tags: [takeout, youtube, activity-history]
+---
+
+# YouTube Activity History — 2025-11
+> 249 entries
+
+## Entries
+
+- Searched for kissing in real movies — Nov 29, 2025, 6:54:46 PM EDT
+- Searched for Dragon Ball music — Nov 29, 2025, 6:38:23 PM EDT
+- Searched for kissing — Nov 29, 2025, 5:30:30 PM EDT
+- Searched for dress up dolls — Nov 29, 2025, 5:30:21 PM EDT
+- Searched for dress up — Nov 29, 2025, 5:12:57 PM EDT
+- Visited https://ad.doubleclick.net/ddm/trackclk/N5295.5087813DEMANDGEN/B33016980.431423031;dc_trk_aid=624278101;dc_trk_cid=231467203;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ltd=;dc_tdv=1;dc_rui=1;dc_eps=AHas8cBSdVmN1YH72RsyY3a5IxULd48JLITZD6bOaaLHVXcwVXSPrUDWYfhRKDsDJz2lHXkCHOkOrttf2hKCDA;dc_pubid=6?gad_source=2&amp;gad_campaignid=22851142927&amp;wbraid={wbraid} — Nov 29, 2025, 2:22:21 PM EDT
+- Searched for jam session — Nov 29, 2025, 2:21:36 PM EDT
+- Visited https://www.mintmobile.com/unlimited-data-phone-plans/?utm_source=youtube&amp;utm_medium=video&amp;utm_campaign=DemandGen_Prospect-YTInfeed_CV_BAU&amp;utm_content=InFeed_CIA_Brand_A18_US&amp;gad_source=2&amp;gad_campaignid=21758687199&amp;wbraid={wbraid} — Nov 29, 2025, 2:07:13 PM EDT
+- Searched for dragon ball z music — Nov 29, 2025, 2:06:40 PM EDT
+- Searched for rumi video — Nov 29, 2025, 1:03:44 PM EDT
+- Searched for mermaid videos — Nov 29, 2025, 1:03:14 PM EDT
+- Searched for show me videos — Nov 29, 2025, 1:02:55 PM EDT
+- Searched for bugs bunny elmer fudd — Nov 28, 2025, 6:39:35 PM EDT
+- Searched for tom and jerry — Nov 28, 2025, 6:36:43 PM EDT
+- Searched for ton — Nov 28, 2025, 6:36:32 PM EDT
+- Searched for sylvester and tweety — Nov 28, 2025, 6:35:41 PM EDT
+- Visited https://tubitv.com/movies/100045220/sidelined-2-intercepted?utm_source=youtube&amp;utm_medium=paid_social&amp;utm_campaign=titlemarketingsdl2&amp;utm_content=DraytonFootball&amp;gad_source=2&amp;gad_campaignid=23253961390&amp;wbraid={wbraid} — Nov 28, 2025, 6:24:51 PM EDT
+- Visited https://ad.doubleclick.net/ddm/trackclk/N410001.3651862YOUTUBEDV360/B34441913.434916414;dc_trk_aid=627635580;dc_trk_cid=243544979;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;ltd=;dc_tdv=1;dc_rui=1;dc_eps=AHas8cCSPKHTB50GOXFA9jfMxUDhnmCyhzjtOXE1TA4pQLb_b9d8l0dk6SRVyVIj06Fy6eutSBIWM_WsuC2D1g;dc_pubid=6?gad_source=2&amp;gad_campaignid=23241517912&amp;wbraid={wbraid} — Nov 28, 2025, 6:08:42 PM EDT
+- Visited https://ad.doubleclick.net/ddm/trackclk/N5295.5087813DEMANDGEN/B33016980.431050808;dc_trk_aid=624681023;dc_trk_cid=231467203;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ltd=;dc_tdv=1;dc_rui=1;dc_eps=AHas8cCmtiw-_aKTGKC4JSM5qE7phkT5PCJfwQky4rHqmVhDvYoVH-f3FR3iXTz6uZ_TORwPAdnt9KzSdeUgiA;dc_pubid=6?gad_source=2&amp;gad_campaignid=22851142927&amp;wbraid={wbraid} — Nov 28, 2025, 5:10:38 PM EDT
+- Searched for Sonic — Nov 28, 2025, 4:27:50 PM EDT
+- Searched for movie sonic song — Nov 28, 2025, 4:27:45 PM EDT
+- Searched for kissing in jail — Nov 28, 2025, 4:19:18 PM EDT
+- Searched for sing in jail — Nov 28, 2025, 4:18:33 PM EDT
+- Visited https://www.mintmobile.com/?utm_source=youtube&amp;utm_medium=video&amp;utm_campaign=DemandGen_Prospect-YTInfeed_CV_BAU&amp;utm_content=InFeed_CIA_Brand_A18_US&amp;gad_source=2&amp;gad_campaignid=21758687199&amp;wbraid={wbraid} — Nov 28, 2025, 4:14:17 PM EDT
+- Visited https://23294747258-en.apksmap.com/DemonDetector/com.GamePalette.DemonDetector?utm_source=google&amp;adgid=187484868885&amp;cid=23294747258&amp;utm_content=&amp;utm_id=187484868885&amp;gad_source=2&amp;gad_campaignid=23294747258&amp;wbraid={wbraid} — Nov 28, 2025, 4:10:18 PM EDT
+- Visited https://www.amazon.com/stores/page/CECE9D14-D42B-4B6C-ABB2-C9BAEE866BEE?maas=maas_adg_C1B804ACD801848C202B66C69210E916_afap_abs&amp;ref_=aa_maas&amp;tag=maas&amp;utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=23272613954&amp;utm_content=188079606439&amp;utm_term=&amp;tw_source=google&amp;tw_adid=784844522084&amp;gad_campaignid=23272613954&amp;wbraid={wbraid} — Nov 28, 2025, 4:07:40 PM EDT
+- Searched for sonic — Nov 28, 2025, 4:05:00 PM EDT
+- Searched for dress up — Nov 28, 2025, 2:31:42 PM EDT
+- Searched for google doc auto organize — Nov 28, 2025, 2:31:33 PM EDT
+- Searched for easy folders — Nov 28, 2025, 5:22:55 AM EDT
+- Searched for google doc auto organize — Nov 28, 2025, 5:20:39 AM EDT
+- Searched for google docs on android phone — Nov 28, 2025, 5:20:10 AM EDT
+- Searched for google docs on android phone secrets — Nov 28, 2025, 5:15:26 AM EDT
+- Searched for google docs on android phone organization — Nov 28, 2025, 5:13:15 AM EDT
+- Visited https://ad.doubleclick.net/searchads/link/click?lid=58700008943759240&amp;ds_a_cid=272908699&amp;ds_a_caid=22891319712&amp;ds_a_agid=&amp;ds_a_fiid=&amp;ds_a_lid=&amp;ds_a_extid=&amp;&amp;ds_e_adid=&amp;ds_e_matchtype=&amp;ds_e_device=m&amp;ds_e_network=x&amp;&amp;ds_url_v=2&amp;ds_dest_url=https://one.google.com/ai-student?utm_source=gemini&amp;utm_medium=paid_media&amp;utm_campaign=students_pmax_bts-slap&amp;gclsrc=aw.ds&amp;gad_source=2&amp;gad_campaignid=22922534600&amp;wbraid={wbraid}&amp;wbraid={wbraid} — Nov 27, 2025, 7:39:27 PM EDT
+- Searched for flow music — Nov 27, 2025, 7:31:11 PM EDT
+- Visited https://ad.doubleclick.net/searchads/link/click?lid=58700008803437441&amp;ds_a_cid=76027536&amp;ds_a_caid=21861444371&amp;ds_a_agid=&amp;ds_a_fiid=&amp;ds_a_lid=&amp;ds_a_extid=&amp;&amp;ds_e_adid=&amp;ds_e_matchtype=&amp;ds_e_device=m&amp;ds_e_network=x&amp;&amp;ds_url_v=2&amp;ds_dest_url=https://www.ugg.com/women-boots/classic-streetscape/1173990.html?dwvar_1173990_color=DDG&amp;utm_source=google&amp;utm_medium=pla&amp;cq_src=google_ads&amp;cq_cmp=21861444371&amp;cq_con=&amp;cq_term=&amp;cq_med=&amp;cq_plac=&amp;cq_net=x&amp;cq_pos=&amp;cq_plt=gp&amp;gclsrc=aw.ds&amp;gad_source=2&amp;gad_campaignid=21854908275&amp;wbraid={wbraid}&amp;wbraid={wbraid} — Nov 27, 2025, 6:53:39 PM EDT
+- Searched for dress up dolls — Nov 27, 2025, 6:49:57 PM EDT
+- Searched for Barbie Sophia Dress Up — Nov 27, 2025, 6:48:22 PM EDT
+- Searched for sophia dress up — Nov 27, 2025, 6:46:57 PM EDT
+- Searched for dress Sophia — Nov 27, 2025, 6:46:44 PM EDT
+- Searched for Sophia — Nov 27, 2025, 6:46:33 PM EDT
+- Searched for dress up — Nov 27, 2025, 6:46:22 PM EDT
+- Searched for people dressing up eating magazine dressed up — Nov 27, 2025, 6:45:29 PM EDT
+- Searched for Spider-Man videos — Nov 27, 2025, 6:44:50 PM EDT
+- Searched for real people definition — Nov 27, 2025, 6:44:16 PM EDT
+- Searched for fashion show kissing — Nov 27, 2025, 6:39:50 PM EDT
+- Searched for fashion show — Nov 27, 2025, 6:39:43 PM EDT
+- Searched for kissing on the lips — Nov 27, 2025, 6:37:01 PM EDT
+- Searched for eyelashes has lips and lips kiss the eyelash lips — Nov 27, 2025, 6:35:37 PM EDT
+- Searched for eyelashes but they kiss the eyelashes when they have hair — Nov 27, 2025, 6:35:16 PM EDT
+- Searched for kissing anime — Nov 27, 2025, 6:17:12 PM EDT
+- Searched for kissing kpop demon hunters — Nov 27, 2025, 6:15:40 PM EDT
+- Searched for kiss — Nov 27, 2025, 6:14:43 PM EDT
+- Searched for kissing — Nov 27, 2025, 6:11:58 PM EDT
+- Searched for eyes song — Nov 27, 2025, 6:11:32 PM EDT
+- Searched for eyes kissing eyeballs — Nov 27, 2025, 6:11:05 PM EDT
+- Searched for I have lips kissing in the lips with eyes — Nov 27, 2025, 6:10:25 PM EDT
+- Searched for lips inside of eyes kissing — Nov 27, 2025, 6:10:05 PM EDT
+- Searched for lips inside of — Nov 27, 2025, 6:09:18 PM EDT
+- Searched for best way to use chat gpt data export for organization — Nov 27, 2025, 9:20:20 AM EDT
+- Searched for best way to use chat gpt data export — Nov 27, 2025, 9:11:54 AM EDT
+- Searched for best way to use chat gpt data explorer for free — Nov 27, 2025, 9:11:40 AM EDT
+- Searched for remoding  hp stream — Nov 27, 2025, 12:23:18 AM EDT
+- Searched for hacking hp stream — Nov 27, 2025, 12:23:01 AM EDT
+- Visited http://www.beehiiv.com/splash?utm_marketing_tactic=prospecting&amp;utm_id=23258800941&amp;utm_adgroup=194190478492&amp;utm_source_platform=&amp;utm_creative_format=&amp;utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=Prospecting-DemandGen-UnitedStates-Relaunch1&amp;utm_term=&amp;utm_content=785077063864&amp;hsa_acc=2054248193&amp;hsa_cam=23258800941&amp;hsa_grp=194190478492&amp;hsa_ad=785077063864&amp;hsa_src=&amp;hsa_tgt=&amp;hsa_kw=&amp;hsa_mt=&amp;hsa_net=adwords&amp;hsa_ver=3&amp;gad_source=2&amp;gad_campaignid=23258800941&amp;wbraid={wbraid} — Nov 26, 2025, 7:37:48 PM EDT
+- Searched for homemade 1 and 1/2 inch socket — Nov 26, 2025, 4:40:58 PM EDT
+- Searched for substitute for a 1 and 1/2 in socket — Nov 26, 2025, 4:39:33 PM EDT
+- Searched for bottom bolt on spindle tiger cat two 2 bump start — Nov 26, 2025, 4:36:24 PM EDT
+- Searched for bottom bolt on spindle tiger cat two 2 — Nov 26, 2025, 4:31:06 PM EDT
+- Searched for flow music — Nov 26, 2025, 12:58:36 PM EDT
+- Searched for rv living full time — Nov 26, 2025, 12:43:07 PM EDT
+- Searched for use agent mode in chat gpt every time — Nov 26, 2025, 12:41:41 PM EDT
+- Searched for organizing too much stuff living in a camper — Nov 26, 2025, 12:41:31 PM EDT
+- Searched for i ran out of agent gpt — Nov 26, 2025, 11:12:36 AM EDT
+- Searched for use agent mode in chat gpt every time — Nov 26, 2025, 11:12:17 AM EDT
+- Searched for unlock unlimited agent mode chat gpt — Nov 26, 2025, 11:10:24 AM EDT
+- Searched for sacred g breath original — Nov 26, 2025, 8:04:48 AM EDT
+- Searched for sacred g breath core love — Nov 26, 2025, 6:24:43 AM EDT
+- Searched for sacred g breath original — Nov 26, 2025, 6:23:25 AM EDT
+- Searched for sacred g breath — Nov 26, 2025, 6:22:53 AM EDT
+- Searched for how to organize your existing chats in chat gpt — Nov 26, 2025, 5:00:30 AM EDT
+- Searched for hp stream laptop won&#39;t turn on — Nov 26, 2025, 3:29:08 AM EDT
+- Searched for i tried chat suggested free to play games — Nov 26, 2025, 12:30:16 AM EDT
+- Searched for dress up dolls — Nov 25, 2025, 11:15:51 PM EDT
+- Searched for how to organize your existing chats in chat gpt — Nov 25, 2025, 9:39:44 PM EDT
+- Searched for how to make a Vegeta balloon drawing projects — Nov 24, 2025, 12:08:25 AM EDT
+- Searched for a simple drawing of Vegeta — Nov 23, 2025, 11:50:51 PM EDT
+- Searched for diy macy&#39;s parade balloon project vegeta — Nov 23, 2025, 11:44:26 PM EDT
+- Searched for diy macys parade balloon project vageta — Nov 23, 2025, 11:39:59 PM EDT
+- Searched for diy macys parade balloon — Nov 23, 2025, 11:38:25 PM EDT
+- Searched for dress up dolls — Nov 23, 2025, 11:35:21 PM EDT
+- Searched for how to draw a easy Vegeta picture on a balloon — Nov 23, 2025, 11:29:48 PM EDT
+- Searched for how to make a balloon project — Nov 23, 2025, 10:15:27 PM EDT
+- Searched for how to make a easy vegeta balloon drawing — Nov 23, 2025, 10:14:16 PM EDT
+- Searched for how to make a Vegeta balloon easy — Nov 23, 2025, 10:09:55 PM EDT
+- Searched for how to make a Vegeta balloon — Nov 23, 2025, 10:07:44 PM EDT
+- Searched for how to make a Vegeta balloon drawing projects — Nov 23, 2025, 10:07:36 PM EDT
+- Searched for how to make a Vegeta balloon project — Nov 23, 2025, 10:05:37 PM EDT
+- Searched for how to make vegetable project — Nov 23, 2025, 10:04:35 PM EDT
+- Searched for how to make a drawing balloon — Nov 23, 2025, 10:04:22 PM EDT
+- Searched for how to make a balloon — Nov 23, 2025, 9:58:38 PM EDT
+- Visited https://ad.doubleclick.net/ddm/trackclk/N5295.5087813DEMANDGEN/B33016980.431421546;dc_trk_aid=624681053;dc_trk_cid=231467203;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ltd=;dc_tdv=1;dc_rui=1;dc_eps=AHas8cAPyuDfVO2T6PH0JRRVsyIMcXVOEyRBOa6GqqIpRDqdrbpD769zBhuiGmMxIEaJRiTZhIDORFIrXlheiA;dc_pubid=6?gad_source=2&amp;gad_campaignid=22855423090&amp;wbraid={wbraid} — Nov 23, 2025, 6:58:35 PM EDT
+- Searched for my singing monsters — Nov 23, 2025, 3:14:53 PM EDT
+- Searched for I said kissing monsters — Nov 23, 2025, 3:12:05 PM EDT
+- Searched for chatgpt secrets — Nov 23, 2025, 5:08:47 AM EDT
+- Searched for unlimited use of chatgpt — Nov 23, 2025, 5:06:15 AM EDT
+- Searched for problem linking google drive connector on android — Nov 23, 2025, 2:25:05 AM EDT
+- Searched for problem linking google drive connector — Nov 23, 2025, 2:11:22 AM EDT
+- Searched for problem linking drive connector — Nov 23, 2025, 2:08:55 AM EDT
+- Visited https://ad.doubleclick.net/ddm/trackclk/N5295.5087813DEMANDGEN/B33016980.431421546;dc_trk_aid=624681053;dc_trk_cid=231467203;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ltd=;dc_tdv=1;dc_rui=1;dc_eps=AHas8cBapi0k-GBGuAJHKKUCdH0pe8YdCTqkb2wXNfoJvNQNLaMEKsqKk42dEWJOUusDNNNe3qcr7GVapYUswQ;dc_pubid=6?gad_source=2&amp;gad_campaignid=22855423090&amp;wbraid={wbraid} — Nov 22, 2025, 11:39:01 PM EDT
+- Searched for salish matter — Nov 21, 2025, 8:56:08 PM EDT
+- Searched for the longest kiss in the world — Nov 21, 2025, 8:24:04 PM EDT
+- Searched for salish matter — Nov 21, 2025, 8:19:32 PM EDT
+- Searched for kissing the butthole — Nov 21, 2025, 8:11:49 PM EDT
+- Visited https://www.allofapk.com/en/info/60835?utm_source=allofapk.com/023&amp;gad_source=2&amp;gad_campaignid=22841476031&amp;wbraid={wbraid} — Nov 21, 2025, 8:00:43 PM EDT
+- Searched for kiss in the butt — Nov 21, 2025, 7:58:43 PM EDT
+- Searched for all the clothes off and kissing in the boob and in the butt — Nov 21, 2025, 7:58:31 PM EDT
+- Searched for My Little Rascals kissing other people — Nov 21, 2025, 7:56:11 PM EDT
+- Searched for everyone kissing at the beach — Nov 21, 2025, 7:55:43 PM EDT
+- Searched for s********* — Nov 21, 2025, 7:54:29 PM EDT
+- Searched for boobies — Nov 21, 2025, 7:53:24 PM EDT
+- Searched for kiss in the boobies and the butt — Nov 21, 2025, 7:51:57 PM EDT
+- Searched for inside your butt crack and your people — Nov 21, 2025, 7:51:34 PM EDT
+- Searched for someone kissing scary aliens — Nov 21, 2025, 7:51:03 PM EDT
+- Searched for me kissing people and my name is Cyrus — Nov 21, 2025, 7:50:47 PM EDT
+- Searched for Play — Nov 21, 2025, 7:49:57 PM EDT
+- Searched for kissy lips kissing respect comes out — Nov 21, 2025, 7:48:25 PM EDT
+- Searched for five girls kissing naked — Nov 21, 2025, 7:48:00 PM EDT
+- Searched for why do pumpkin seeds spit out of their lips — Nov 21, 2025, 7:47:39 PM EDT
+- Searched for we see special lips kissing — Nov 21, 2025, 7:45:08 PM EDT
+- Searched for spit lips kissing — Nov 21, 2025, 7:44:56 PM EDT
+- Searched for juicy lips kissing — Nov 21, 2025, 7:44:47 PM EDT
+- Searched for what are some toys that are so people that that can get in love with — Nov 21, 2025, 7:44:19 PM EDT
+- Searched for shorts with K-pop demon Hunters really juicy nipples — Nov 21, 2025, 7:43:52 PM EDT
+- Searched for kissing with juicy lips — Nov 21, 2025, 7:43:27 PM EDT
+- Searched for kissing the lips lift with with with — Nov 21, 2025, 7:42:15 PM EDT
+- Searched for mystery movie kissing — Nov 21, 2025, 7:41:44 PM EDT
+- Searched for Gene and Mira kissing — Nov 21, 2025, 7:41:15 PM EDT
+- Searched for kissing kpop demon hunters — Nov 21, 2025, 7:41:01 PM EDT
+- Searched for someone someone big kissing someone scary — Nov 21, 2025, 7:39:42 PM EDT
+- Searched for someone is eating someone else&#39;s head while they&#39;re kissing — Nov 21, 2025, 7:39:27 PM EDT
+- Searched for a scary monster kissing a other monster — Nov 21, 2025, 7:38:37 PM EDT
+- Searched for scary videos — Nov 21, 2025, 7:38:18 PM EDT
+- Searched for kissing people until they die — Nov 21, 2025, 7:38:11 PM EDT
+- Searched for the longest kiss in the world and the nastiest kiss in the world — Nov 21, 2025, 7:37:22 PM EDT
+- Searched for two boys kissing a girl — Nov 21, 2025, 7:36:23 PM EDT
+- Searched for the greatest Kiss Forever — Nov 21, 2025, 7:35:51 PM EDT
+- Searched for the longest kiss in the world — Nov 21, 2025, 7:30:52 PM EDT
+- Searched for naked kissing — Nov 21, 2025, 7:22:44 PM EDT
+- Searched for girls naked in front of boys — Nov 21, 2025, 7:22:24 PM EDT
+- Searched for I&#39;m just kissing lips — Nov 21, 2025, 7:21:03 PM EDT
+- Searched for kissing d — Nov 21, 2025, 7:16:06 PM EDT
+- Searched for kissing butt — Nov 21, 2025, 7:09:17 PM EDT
+- Searched for kissing — Nov 21, 2025, 7:08:45 PM EDT
+- Visited https://www.nvidia.com/en-us/ai/cosmos/?ncid=pa-so-gdg-966896&amp;_bt=773531482992&amp;_bk=&amp;_bm=&amp;_bn=&amp;_bg=182522877582&amp;gad_source=2&amp;gad_campaignid=23010324410&amp;wbraid={wbraid} — Nov 21, 2025, 5:31:28 PM EDT
+- Visited https://www.reddit.com/t/funny_humor/?utm_source=UA&amp;utm_medium=Display_GoogleAds&amp;utm_campaign=UA_Demand_Gen_Mobile_All_US_GoogleAds_Evergreen_Display&amp;utm_term=_&amp;utm_name=182862658274_m_753430102012&amp;gad_source=2&amp;gad_campaignid=22582205918&amp;wbraid={wbraid} — Nov 21, 2025, 4:24:57 PM EDT
+- Searched for fr33sol — Nov 21, 2025, 6:04:43 AM EDT
+- Searched for use google apps script on android phone — Nov 21, 2025, 2:08:11 AM EDT
+- Searched for ise google apps scrolipt on android phone — Nov 21, 2025, 2:00:37 AM EDT
+- Searched for the best ai productivity workflows — Nov 21, 2025, 1:27:32 AM EDT
+- Searched for the best ai workflows — Nov 21, 2025, 1:22:22 AM EDT
+- Searched for the best ai workflow — Nov 21, 2025, 1:21:32 AM EDT
+- Searched for the best ai system — Nov 21, 2025, 12:49:15 AM EDT
+- Searched for how to create your own ai system — Nov 21, 2025, 12:46:18 AM EDT
+- Searched for creating a interconnect ai system — Nov 21, 2025, 12:43:00 AM EDT
+- Visited https://temporal.io/ai/distributed-systems?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=amer_dg-youtube_agentic-ai&amp;utm_content=amer-youtube-agenticai&amp;utm_term=&amp;gad_source=2&amp;gad_campaignid=23023605116&amp;wbraid={wbraid} — Nov 20, 2025, 11:23:15 PM EDT
+- Searched for obsidian google drive android — Nov 20, 2025, 11:18:43 PM EDT
+- Searched for file organizing system google drive with obsidian and lm notebook — Nov 20, 2025, 11:10:08 PM EDT
+- Searched for file organizing system google drive — Nov 20, 2025, 11:09:38 PM EDT
+- Visited http://usemotion.com?utm_source=google&amp;utm_medium=22966702037&amp;utm_campaign=185577994478&amp;utm_term=&amp;utm_content=783056788952&amp;gad_source=2&amp;gad_campaignid=22966702037&amp;wbraid={wbraid} — Nov 20, 2025, 11:09:20 PM EDT
+- Searched for best way to organize google drive — Nov 20, 2025, 11:02:52 PM EDT
+- Visited http://usemotion.com?utm_source=google&amp;utm_medium=22966702037&amp;utm_campaign=185577994478&amp;utm_term=&amp;utm_content=782090816871&amp;gad_source=2&amp;gad_campaignid=22966702037&amp;wbraid={wbraid} — Nov 20, 2025, 10:26:50 PM EDT
+- Searched for salish matter — Nov 20, 2025, 10:15:41 PM EDT
+- Searched for salish matter — Nov 19, 2025, 10:31:40 PM EDT
+- Searched for what app should i download that&#39;s free on a vizio — Nov 18, 2025, 8:11:44 PM EDT
+- Searched for it&#39;s funny — Nov 18, 2025, 8:08:24 PM EDT
+- Searched for obsidian google drive android — Nov 18, 2025, 5:42:32 AM EDT
+- Searched for obsidian and google drive — Nov 18, 2025, 5:41:08 AM EDT
+- Searched for kissing — Nov 16, 2025, 11:55:17 PM EDT
+- Searched for explain gramatria to a child — Nov 16, 2025, 8:08:16 PM EDT
+- Searched for kissing kpop demon hunters — Nov 16, 2025, 4:46:37 PM EDT
+- Searched for new ai features — Nov 16, 2025, 10:56:34 AM EDT
+- Searched for newest ai — Nov 16, 2025, 10:52:37 AM EDT
+- Searched for organize existing chat gpt — Nov 16, 2025, 10:35:55 AM EDT
+- Visited https://www.pickfunny.com/?cid=12091&amp;utm_source=pickfunny.com/110&amp;gad_source=2&amp;gad_campaignid=22957646585&amp;wbraid={wbraid} — Nov 15, 2025, 8:29:30 PM EDT
+- Searched for dress up dolls — Nov 15, 2025, 8:23:13 PM EDT
+- Searched for kissing kpop demon hunters — Nov 15, 2025, 7:51:37 PM EDT
+- Visited market://details?id=com.naver.linewebtoon — Nov 15, 2025, 7:47:44 PM EDT
+- Searched for how to remove the bottom bolt on the spindle of a Scag Tiger Cat 2 — Nov 15, 2025, 11:22:49 AM EDT
+- Searched for remove spindle from mower deck scag tiger cat 2 — Nov 15, 2025, 10:05:25 AM EDT
+- Searched for dress up dolls — Nov 15, 2025, 10:05:22 AM EDT
+- Searched for remove spindle from mower deck — Nov 15, 2025, 9:52:04 AM EDT
+- Searched for the pimps of joytime — Nov 15, 2025, 9:37:27 AM EDT
+- Searched for newest ai — Nov 15, 2025, 3:58:58 AM EDT
+- Searched for best ai to make money — Nov 15, 2025, 3:50:01 AM EDT
+- Searched for ai to make money — Nov 15, 2025, 3:48:10 AM EDT
+- Searched for ai to make videos — Nov 15, 2025, 3:46:02 AM EDT
+- Searched for obsidian lm notebook and chatgpt — Nov 15, 2025, 1:58:15 AM EDT
+- Searched for obsidian vs lm notebook — Nov 15, 2025, 1:54:29 AM EDT
+- Visited market://details?id=com.ardraw.sketchphoto.arsketching.picture.paper — Nov 13, 2025, 9:59:21 PM EDT
+- Visited https://store.steampowered.com/app/1449110/The_Outer_Worlds_2/?gad_source=2&amp;gad_campaignid=23088216429&amp;wbraid={wbraid} — Nov 11, 2025, 8:11:54 PM EDT
+- Searched for shamwow guy paper towels — Nov 11, 2025, 6:53:18 PM EDT
+- Searched for make money from stocks using chatgpt and google — Nov 11, 2025, 5:29:41 PM EDT
+- Searched for make money from stocks using chatgpt — Nov 11, 2025, 5:17:06 PM EDT
+- Visited https://ad.doubleclick.net/ddm/trackclk/N1978105.279382BIDMANAGER_DFASIT/B32501830.407293408;dc_trk_aid=599362665;dc_trk_cid=224761349;dc_dbm_token=AOjeLNEAAAA8CjQKDAgAFQAAAAAdAAAAABIMCAAVAAAAAB0AAAAAIhQI9ZTAplWoAvrP3Y0ZsAL0t8PnA0A7EPiutZEEL-oLf0or9pUkPsIveGMgQA==;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;ltd=;dc_tdv=1;dc_transparent=1;dc_rui=1;dc_eps=AHas8cAWmkvzSFk4e8GABKK-nTiNKIlOVdLhSkqhNl96dQ3ItRpmj8q38NDVeJqa2bXfqYmJ0x0cgMn13-Aezg;dc_pubid=6?https://servedby.flashtalking.com/click/8/283262;9809571;5523444;211;0/?gdpr=${GDPR}&amp;gdpr_consent=${GDPR_CONSENT_78}&amp;us_privacy=${US_PRIVACY}&amp;force_transparent=true&amp;url=https://shop.mikmak.ai/social/687142d985a94d0f1d0fcda3?utm_source=dv360&amp;utm_medium=paid_video&amp;utm_campaign=une_deg_106&amp;utm_term=P36M91L&amp;utm_content=m-os-loyalist-15_stick_cool-rush-sweat-vs-competiton_bsay_na_16x9_yttv_15s_buynow_en_stp_mikmak_sta_004_na&amp;utm_placement=online_programmatic_video&amp;utm_marketing_tactic=Consideration&amp;utm_format=0596-past-purchase-male-competitive&amp;utm_placementid=p36m91l&amp;gad_source=2&amp;gad_campaignid=22897756789&amp;wbraid={wbraid} — Nov 11, 2025, 2:26:03 PM EDT
+- Searched for rope and pole ladder — Nov 9, 2025, 1:19:22 PM EDT
+- Searched for obsidian — Nov 9, 2025, 9:03:28 AM EDT
+- Searched for google docs forms tutorial — Nov 9, 2025, 9:00:42 AM EDT
+- Searched for automate keywords to create google doc — Nov 9, 2025, 6:28:31 AM EDT
+- Searched for goku shorts only — Nov 8, 2025, 4:03:35 PM EDT
+- Visited market://details?id=com.kayac.level_up_number — Nov 8, 2025, 11:09:51 AM EDT
+- Visited https://22815381755.puzzleabc.com/detail/com_epicgames_fortnite.html?pid=22815381755&amp;gid=180058440222&amp;cid=765185223113&amp;dv=m&amp;gad_source=2&amp;gad_campaignid=22815381755&amp;wbraid={wbraid} — Nov 8, 2025, 11:07:04 AM EDT
+- Visited https://ad.doubleclick.net/ddm/trackclk/N300005.933087GOOGLEDISPLAYBRAND/B34530819.432179012;dc_trk_aid=625169579;dc_trk_cid=244319436;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ltd=;dc_tdv=1;dc_transparent=1;;dc_rui=1;dc_eps=AHas8cDJWdLbzQvkJAStIMlfMPAy4NTKm7gB-uNGj1RxHFwBReMwYFcPTI95v6y0ezlE-TQotToz0bXwHMfUpw;dc_pubid=6?https://d.agkn.com/pixel/10691/?che=%n&amp;cmid=%ebuy!&amp;sid=%esid!&amp;pid=%epid!&amp;cgid=%eaid!&amp;cid=%ecid!&amp;aid=%eadv!&amp;gdpr=${GDPR}&amp;gdpr_consent=${GDPR_CONSENT_468}&amp;l1=https://www.walmart.com/shop/gifts/fashion-and-accessories-gifts?adid=1500000020090000089944&amp;veh=vid&amp;wmlspartner=pubw_ybc&amp;cn=fy26-gift-gift-hinc-quqs-3p_con_msp_vid_olv_ybc_n_n_n&amp;gad_source=2&amp;gad_campaignid=23173675376&amp;wbraid={wbraid} — Nov 7, 2025, 11:07:47 PM EDT
+- Visited https://chatgpt.com/features/codex?utm_source=Google&amp;utm_medium=paid-display_Consideration&amp;utm_campaign=GOOG_C_PSD_DGN_Codex_CHT_SEA_ACQ_PER_CTX_WEB_NAMER_US_EN_110325&amp;utm_content=GOOG_C_PSD_DGN_Codex_CHT_SEA_ACQ_PER_CTX_WEB_NAMER_US_EN_110325&amp;utm_term=B2C_V2-Static_Developer-EN-1x1&amp;gad_source=2&amp;gad_campaignid=23203004049&amp;wbraid={wbraid} — Nov 7, 2025, 10:42:29 PM EDT
+- Visited https://chatgpt.com/features/codex?utm_source=Google&amp;utm_medium=paid-display_Consideration&amp;utm_campaign=GOOG_C_PSD_DGN_Codex_CHT_SEA_ACQ_PER_CTX_WEB_NAMER_US_EN_110325&amp;utm_content=GOOG_C_PSD_DGN_Codex_CHT_SEA_ACQ_PER_CTX_WEB_NAMER_US_EN_110325&amp;utm_term=B2C_V3-Static_Developer-EN-1x1&amp;gad_source=2&amp;gad_campaignid=23203004049&amp;wbraid={wbraid} — Nov 7, 2025, 10:22:48 PM EDT
+- Visited https://store.google.com/category/phones?utm_source=video_demandgen&amp;utm_medium=dr&amp;utm_campaign=GS107234&amp;gad_source=2&amp;gad_campaignid=22851142927&amp;wbraid={wbraid} — Nov 7, 2025, 10:22:25 PM EDT
+- Visited https://ad.doubleclick.net/searchads/link/click?lid=58700008904438395&amp;ds_a_cid=16171&amp;ds_a_caid=22625024586&amp;ds_a_agid=186152382691&amp;ds_a_fiid=&amp;ds_a_lid=&amp;ds_a_extid=&amp;&amp;ds_e_adid=756041350943&amp;ds_e_matchtype=&amp;ds_e_device=m&amp;ds_e_network=&amp;&amp;ds_url_v=2&amp;ds_dest_url=https://www.campingworld.com/shop?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign={Campaign}&amp;cq_cmp=22625024586&amp;cq_con=186152382691&amp;cq_term=&amp;cq_plac=&amp;cq_net=&amp;cq_plt=gp&amp;gclsrc=aw.ds&amp;gad_source=2&amp;gad_campaignid=22625024586&amp;wbraid={wbraid}&amp;wbraid={wbraid} — Nov 7, 2025, 5:52:00 PM EDT
+- Searched for how to hook up propane tank to camper — Nov 7, 2025, 5:51:43 PM EDT
+- Searched for calligraphy amazing — Nov 6, 2025, 10:58:24 PM EDT
+- Searched for calligraphy writing pen — Nov 6, 2025, 10:58:10 PM EDT
+- Searched for calligraphy — Nov 6, 2025, 10:58:04 PM EDT
+- Searched for beautiful handwriting — Nov 6, 2025, 10:57:15 PM EDT
+- Searched for the importance of handwriting — Nov 6, 2025, 10:47:56 PM EDT
+- Searched for perspective drawing buildings — Nov 5, 2025, 8:16:17 PM EDT
+- Searched for drawing in perspective — Nov 5, 2025, 8:15:18 PM EDT
+- Visited https://ad.doubleclick.net/ddm/trackclk/N5295.5087813DEMANDGEN/B33016980.431423031;dc_trk_aid=624278101;dc_trk_cid=231467203;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ltd=;dc_tdv=1;dc_rui=1;dc_eps=AHas8cDaZd2m0bLIRupzEksGJBsW-2kKCwLYJqUxpMMdyzNM2YgVh6V2shXLUkZMAEHVvXpaunvKDUv_2-Ng0w;dc_pubid=6?gad_source=2&amp;gad_campaignid=22851142927&amp;wbraid={wbraid} — Nov 5, 2025, 8:12:10 PM EDT
+- Visited https://ad.doubleclick.net/ddm/trackclk/N5295.5087813DEMANDGEN/B33016980.431417487;dc_trk_aid=624681026;dc_trk_cid=231467203;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ltd=;dc_tdv=1;dc_rui=1;dc_eps=AHas8cDaxkfY83t6YEggjqpZFq7Xojl0E7a415avJqriKBwVoMMTWaWm4NIKFNGT8_abu6kkHEm9UlGugf3G6A;dc_pubid=6?gad_source=2&amp;gad_campaignid=22851142927&amp;wbraid={wbraid} — Nov 4, 2025, 7:11:23 PM EDT
+- Searched for kissing kpop demon hunters — Nov 4, 2025, 7:09:12 PM EDT
+- Visited market://details?id=com.naver.linewebtoon — Nov 4, 2025, 6:26:26 PM EDT
+- Visited https://www.gaia.com/lp/becoming-supernatural-dtp-sept?utm_source=Google+Native_PMax+Paid&amp;utm_medium=cpc&amp;utm_campaign=dtp-becomingsupernatural-evg-english&amp;utm_content=pmax-dr-joe-dispenza&amp;utm_term=09_23_24-dtp-sept5-CS8742&amp;utm_platcamp=21718554231&amp;utm_rainbow=5&amp;gad_source=2&amp;gad_campaignid=21741967189&amp;wbraid={wbraid} — Nov 3, 2025, 7:50:00 AM EDT
+- Visited https://aiadvantagesummit.com/rsvp-now?gc_id=23164766309&amp;h_ad_id=&amp;source=pmaxpaid&amp;a=11585&amp;utm_campaign=aia&amp;utm_source=pmax&amp;utm_medium=paid&amp;gad_source=2&amp;gad_campaignid=23159573451&amp;wbraid={wbraid} — Nov 3, 2025, 7:41:47 AM EDT
+- Searched for the string cheese incident — Nov 3, 2025, 7:35:07 AM EDT
+- Searched for scag cutting belt tensioner — Nov 2, 2025, 6:03:02 PM EDT
+- Searched for it&#39;s funny — Nov 2, 2025, 5:01:25 PM EDT
+- Searched for sonic — Nov 2, 2025, 4:27:04 PM EDT
+- Visited https://ad.doubleclick.net/ddm/trackclk/N5295.5087813DEMANDGEN/B33016980.431423031;dc_trk_aid=624278101;dc_trk_cid=231467203;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ltd=;dc_tdv=1;dc_rui=1;dc_eps=AHas8cB0jK-3iRyy3BA08cIGcCV1rtwdl45dlZJvptC0faV2PGvW4Ec59RNmHvtSbrgjAxfr38jdxQ7ECKZBQg;dc_pubid=6?gad_source=2&amp;gad_campaignid=22851142927&amp;wbraid={wbraid} — Nov 2, 2025, 3:16:31 PM EDT
+- Visited https://ad.doubleclick.net/ddm/trackclk/N5295.5087813DEMANDGEN/B33016980.430792423;dc_trk_aid=624278101;dc_trk_cid=231467203;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ltd=;dc_tdv=1;dc_rui=1;dc_eps=AHas8cB2UBtvA9YhA7uC2hSVZdOTDxFzP2rmmK6rVgDQT4FFqi5rWD21Yq3OMICF1DEpq-Jf247X09GVMtsSrA;dc_pubid=6?gad_source=2&amp;gad_campaignid=22851142927&amp;wbraid={wbraid} — Nov 2, 2025, 3:15:35 PM EDT
+- Visited https://ad.doubleclick.net/ddm/trackclk/N5295.5087813DEMANDGEN/B33016980.431423031;dc_trk_aid=624278101;dc_trk_cid=231467203;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ltd=;dc_tdv=1;dc_rui=1;dc_eps=AHas8cBSpZX1dEKCMPaSJcARwQf_RImn6u7e31EVrFGJxQ4qKr05_Z52q1K3QjqBKC_ux8ZaaMvysNceenWuXA;dc_pubid=6?gad_source=2&amp;gad_campaignid=22851142927&amp;wbraid={wbraid} — Nov 2, 2025, 1:18:50 PM EDT
+- Searched for kissing kpop demon hunters — Nov 2, 2025, 1:16:14 PM EDT
+- Searched for kissing in the bed 1 hour 3 people — Nov 2, 2025, 1:13:09 PM EDT
+- Searched for scag tiger cat 2 not starting cranks but wont start air lock — Nov 2, 2025, 12:25:23 PM EDT
+- Searched for scag tiger cat 2 not starting cranks but wont start — Nov 2, 2025, 12:25:13 PM EDT
+- Searched for using google ai studio to create a website — Nov 2, 2025, 11:58:10 AM EDT
+- Searched for using google ai studio — Nov 2, 2025, 11:56:13 AM EDT
+- Searched for kissing kpop demon hunters — Nov 1, 2025, 9:09:05 PM EDT
+- Searched for cisn k pop — Nov 1, 2025, 8:44:17 PM EDT
+- Visited market://details?id=com.broken.screen.prank.funny — Nov 1, 2025, 7:48:21 PM EDT
+- Visited market://details?id=com.igg.android.lordsmobile — Nov 1, 2025, 9:29:02 AM EDT

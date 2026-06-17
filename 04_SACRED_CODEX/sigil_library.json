@@ -1,0 +1,179 @@
+{
+  "version": "1.0.0",
+  "canon": "In lakesh alakin. ∆",
+  "compiled": "2026-06-17",
+  "root_sigils": [
+    {
+      "id": "gateway",
+      "name": "GATEWAY",
+      "glyph": "╻",
+      "canonical": "╻",
+      "alternate_glyph": "╺",
+      "shape_class": "hybrid",
+      "function": "Opening / Orientation — portals, navigation, linking",
+      "vibe": "GPS meets intuition",
+      "gesture": "Draw triangle with vertical axis",
+      "affinities": {
+        "full": ["path"],
+        "resonant": ["vault", "agent"]
+      }
+    },
+    {
+      "id": "mote",
+      "name": "MOTE",
+      "glyph": "○•",
+      "canonical": "○•",
+      "alternate_glyph": null,
+      "shape_class": "curved",
+      "function": "Memory Particle — notes, tags, fragments, journaling",
+      "vibe": "A seed of meaning",
+      "gesture": "Draw circle with orbiting dot",
+      "affinities": {
+        "full": ["memory"],
+        "resonant": ["codex", "forest"]
+      }
+    },
+    {
+      "id": "quest",
+      "name": "QUEST",
+      "glyph": "✧",
+      "canonical": "✧",
+      "alternate_glyph": null,
+      "shape_class": "angular",
+      "function": "Path & Progression — tasks, roadmaps, XP, rituals",
+      "vibe": "A map that is also a heartbeat",
+      "gesture": "Draw four-point star with curve",
+      "affinities": {
+        "full": ["path"],
+        "resonant": ["market", "social"]
+      }
+    },
+    {
+      "id": "forge",
+      "name": "FORGE",
+      "glyph": "⚒",
+      "canonical": "⚒",
+      "alternate_glyph": null,
+      "shape_class": "angular",
+      "function": "Creation & Crafting — templates, generators, builds",
+      "vibe": "The act of making real",
+      "gesture": "Draw intersecting hammers / crescents",
+      "affinities": {
+        "full": ["codex"],
+        "resonant": ["agent", "market"]
+      }
+    },
+    {
+      "id": "maestro",
+      "name": "MAESTRO",
+      "glyph": "Ϟ",
+      "canonical": "Ϟ",
+      "alternate_glyph": null,
+      "shape_class": "curved",
+      "function": "Resonance & Rhythm — sound, emotion, learning",
+      "vibe": "The OS hearing itself",
+      "gesture": "Draw lightning-bent eighth note",
+      "affinities": {
+        "full": ["social"],
+        "resonant": ["forest", "memory"]
+      }
+    },
+    {
+      "id": "lantern",
+      "name": "LANTERN",
+      "glyph": "✦",
+      "canonical": "✦",
+      "alternate_glyph": null,
+      "shape_class": "hybrid",
+      "function": "Illumination & Insight — analytics, guidance, wisdom",
+      "vibe": "Presence meeting clarity",
+      "gesture": "Draw diamond with flame inside",
+      "affinities": {
+        "full": ["forest"],
+        "resonant": ["codex", "vault"]
+      }
+    }
+  ],
+  "valid_compositions": [
+    {"composition": "╻+✧", "meaning": "Begin a new Quest at the Gateway"},
+    {"composition": "○•+⚒", "meaning": "Turn a memory into a crafted artifact"},
+    {"composition": "Ϟ+✦", "meaning": "Illuminate the emotion within a sound"},
+    {"composition": "⚒+✧", "meaning": "Forge a new path / create a quest"},
+    {"composition": "✦+╻", "meaning": "Illuminate the way forward"},
+    {"composition": "○•+✧", "meaning": "Remember a journey / log progress"}
+  ],
+  "macros": [
+    {
+      "id": "aurora_weave",
+      "name": "AURORA.WEAVE",
+      "composition": "∆+⊙:✦+╻",
+      "description": "Weave awareness across Forest + Codex with Lantern insight",
+      "agent": "AURORA",
+      "cost_resonance": 10,
+      "reward_insight": 15,
+      "reward_xp": 25
+    },
+    {
+      "id": "elias_open_path",
+      "name": "ELIAS.OPEN_PATH",
+      "composition": "✧+╻",
+      "description": "Open a Quest at the Gateway — find the path",
+      "agent": "ELIAS",
+      "cost_resonance": 5,
+      "reward_insight": 8,
+      "reward_xp": 12
+    },
+    {
+      "id": "iris_thread",
+      "name": "IRIS.THREAD",
+      "composition": "⊗:⚒+╻",
+      "description": "From SOCIAL, Forge a connection at the Gateway",
+      "agent": "IRIS",
+      "cost_resonance": 12,
+      "reward_insight": 25,
+      "reward_xp": 40
+    },
+    {
+      "id": "asher_shadow",
+      "name": "ASHER.SHADOW",
+      "composition": "✦:⚒",
+      "description": "Apply Lantern to Forge — illuminate what is hidden",
+      "agent": "ASHER",
+      "cost_resonance": 8,
+      "reward_insight": 20,
+      "reward_xp": 30
+    },
+    {
+      "id": "scribe_record",
+      "name": "SCRIBE.RECORD",
+      "composition": "○•:⚒",
+      "description": "Turn a Mote into a crafted record",
+      "agent": "SCRIBE",
+      "cost_resonance": 3,
+      "reward_insight": 5,
+      "reward_xp": 8
+    },
+    {
+      "id": "lore_unveil",
+      "name": "LORE.UNVEIL",
+      "composition": "♰:✦",
+      "description": "Reveal storyline connections with Lantern illumination",
+      "agent": "LORE",
+      "cost_resonance": 6,
+      "reward_insight": 18,
+      "reward_xp": 22
+    }
+  ],
+  "dimensions": [
+    {"id": "vault",   "glyph": "∞", "name": "VAULT",   "color": "#8B5A8F", "pillar": "01_CORE"},
+    {"id": "grove",   "glyph": "◊", "name": "GROVE",   "color": "#2D5016", "pillar": "02_SYSTEMS"},
+    {"id": "forest",  "glyph": "∆", "name": "FOREST",  "color": "#3A5C3A", "pillar": "03_NEURAL"},
+    {"id": "codex",   "glyph": "⊙", "name": "CODEX",   "color": "#8B7355", "pillar": "04_CODEX"},
+    {"id": "memory",  "glyph": "≈", "name": "MEMORY",  "color": "#5A5A8F", "pillar": "05_MEMORY"},
+    {"id": "agent",   "glyph": "♦", "name": "AGENT",   "color": "#8F5A5A", "pillar": "06_AGENTS"},
+    {"id": "social",  "glyph": "⊗", "name": "SOCIAL",  "color": "#5A8F8F", "pillar": "07_SOCIAL"},
+    {"id": "market",  "glyph": "⊜", "name": "MARKET",  "color": "#8F8F5A", "pillar": "09_MARKET"},
+    {"id": "path",    "glyph": "Λ", "name": "PATH",    "color": "#5A8F5A", "pillar": "08_LEARNING"},
+    {"id": "lore",    "glyph": "♰", "name": "LORE",    "color": "#FF6B35", "pillar": "04_CODEX"}
+  ]
+}

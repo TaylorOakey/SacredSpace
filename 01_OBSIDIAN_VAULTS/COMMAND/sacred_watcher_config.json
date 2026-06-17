@@ -1,0 +1,95 @@
+{
+  "_meta": {
+    "version": "1.0.0",
+    "status": "Active",
+    "pillar": "01_OBSIDIAN_VAULTS",
+    "x_source_pillar": "01_OBSIDIAN_VAULTS",
+    "description": "Watcher configuration operationalizing Sacred Google Drive Architecture",
+    "last_reviewed": "2026-06-11",
+    "reviewer": "Taylor (The Forge closure pass)"
+  },
+
+  "conflict_mode": {
+    "canon_files": "local_wins",
+    "distilled_files": "local_wins",
+    "draft_active_files": "timestamp_wins",
+    "gemini_authored_files": "drive_wins_pending_review",
+    "untagged_files": "flag_to_pending_review",
+    "conflict_log": "watcher_conflicts.log"
+  },
+
+  "pillar_paths": {
+    "01_OBSIDIAN_VAULTS": "D:/SacredSpace_OS/01_OBSIDIAN_VAULTS",
+    "02_SYSTEMS":         "D:/SacredSpace_OS/02_SYSTEMS",
+    "02_COUNCIL_GROVE":   "D:/SacredSpace_OS/02_COUNCIL_GROVE",
+    "03_NEURAL_FOREST":   "D:/SacredSpace_OS/03_NEURAL_FOREST",
+    "04_SACRED_CODEX":    "D:/SacredSpace_OS/04_SACRED_CODEX",
+    "05_MEMORY_ENGINE":   "D:/SacredSpace_OS/05_MEMORY_ENGINE",
+    "06_AGENT_LAYER":     "D:/SacredSpace_OS/06_AGENT_LAYER",
+    "07_SOCIAL_MOTHERSHIP":"D:/SacredSpace_OS/07_SOCIAL_MOTHERSHIP",
+    "08_LEARNING_PATH":   "D:/SacredSpace_OS/08_LEARNING_PATH",
+    "09_SACRED_MARKET":   "D:/SacredSpace_OS/09_SACRED_MARKET"
+  },
+
+  "cloud_pillar_paths": {
+    "01_OBSIDIAN_VAULTS": "SacredSpace_OS_CLOUD/01_OBSIDIAN_VAULTS",
+    "02_SYSTEMS":         "SacredSpace_OS_CLOUD/02_SYSTEMS",
+    "02_COUNCIL_GROVE":   "SacredSpace_OS_CLOUD/02_COUNCIL_GROVE",
+    "03_NEURAL_FOREST":   "SacredSpace_OS_CLOUD/03_NEURAL_FOREST",
+    "04_SACRED_CODEX":    "SacredSpace_OS_CLOUD/04_SACRED_CODEX",
+    "05_MEMORY_ENGINE":   "SacredSpace_OS_CLOUD/05_MEMORY_ENGINE",
+    "06_AGENT_LAYER":     "SacredSpace_OS_CLOUD/06_AGENT_LAYER",
+    "07_SOCIAL_MOTHERSHIP":"SacredSpace_OS_CLOUD/07_SOCIAL_MOTHERSHIP",
+    "08_LEARNING_PATH":   "SacredSpace_OS_CLOUD/08_LEARNING_PATH",
+    "09_SACRED_MARKET":   "SacredSpace_OS_CLOUD/09_SACRED_MARKET"
+  },
+
+  "protected_paths": {
+    "_PERSONAL": "SacredSpace_OS_CLOUD/_PERSONAL",
+    "_ARCHIVE":  "SacredSpace_OS_CLOUD/_ARCHIVE/PRE-CLOUD-MIGRATION"
+  },
+
+  "notebooklm_safe_path": "SacredSpace_OS_CLOUD/_PERSONAL/NOTEBOOKLM_SAFE",
+
+  "never_ingest": [
+    "*.env",
+    "*.env.*",
+    ".env.example",
+    "*secret*",
+    "*credential*",
+    "*token*",
+    "*api_key*",
+    "*bearer*",
+    "*.pem",
+    "*.key",
+    "*.pfx",
+    "_PERSONAL/**",
+    "**/__pycache__/**",
+    "**/node_modules/**",
+    "**/.git/**",
+    "**/venv/**",
+    "watcher_security.log",
+    "*.db-journal"
+  ],
+
+  "security_log": "watcher_security.log",
+  "main_log": "sacred_watcher.log",
+
+  "lock_protocol": {
+    "locked_status_string": "Status: LOCKED",
+    "header_scan_lines": 10,
+    "retry_interval_minutes": 15,
+    "locked_queue_file": "watcher_locked_queue.json"
+  },
+
+  "mismatch_handling": {
+    "x_source_pillar_field": "X-Source-Pillar",
+    "mismatch_destination": "SacredSpace_OS_CLOUD/_PENDING_REVIEW",
+    "mismatch_log": "watcher_mismatches.log"
+  },
+
+  "mission_state_path": "D:/SacredSpace_OS/01_OBSIDIAN_VAULTS/COMMAND/mission_state.json",
+
+  "ingest_logic": "intersection_nonempty",
+  "open_ingestion_when_no_mission": true
+}

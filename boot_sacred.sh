@@ -4,13 +4,17 @@
 
 SACRED_ROOT="/mnt/d/SacredSpace_OS"
 SPINE_DIR="$SACRED_ROOT/systems/fastapi"
-MISSION_CONTROL_DIR="$SACRED_ROOT/02_COUNCIL_GROVE/mission-control"
-SIGIL_TERMINAL_DIR="$SACRED_ROOT/06_AGENT_LAYER/sacred-sigil-terminal"
-LOG_DIR="$SACRED_ROOT/02_COUNCIL_GROVE/logs"
+MISSION_CONTROL_DIR="$SACRED_ROOT/02_SYSTEMS/mission-control"
+SIGIL_TERMINAL_DIR="$SACRED_ROOT/06_AGENTS/sacred-sigil-terminal"
+LOG_DIR="$SACRED_ROOT/02_SYSTEMS/logs"
 
-# Auto-detect Ollama gateway from WSL2 resolv.conf
+# Auto-detect Ollama gateway from WSL2 resolv.conf, fallback to localhost
 OLLAMA_GW=$(grep nameserver /etc/resolv.conf | awk '{print $2}' | head -1)
-OLLAMA_URL="http://${OLLAMA_GW}:11434"
+if curl -sf --max-time 2 "http://${OLLAMA_GW}:11434/api/tags" > /dev/null; then
+    OLLAMA_URL="http://${OLLAMA_GW}:11434"
+else
+    OLLAMA_URL="http://localhost:11434"
+fi
 
 mkdir -p "$LOG_DIR"
 

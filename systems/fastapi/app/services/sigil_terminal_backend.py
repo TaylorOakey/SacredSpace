@@ -76,6 +76,13 @@ DIMENSIONS = {
         "color": "#5A8F5A",
         "icon": "🎓",
     },
+    "lore": {
+        "name": "♰ LORE",
+        "description": "Storyline Canon — Characters, nodes, episodes & archetypes",
+        "source": "Story Engine — structured canon data from 01_CORE + 04_CODEX",
+        "color": "#FF6B35",
+        "icon": "📜",
+    },
 }
 
 
@@ -93,6 +100,30 @@ def query_dimension(dimension_id: str, query: str, limit: int = 10):
     dim = DIMENSIONS.get(dimension_id)
     if not dim:
         return {"error": f"Unknown dimension: {dimension_id}", "results": []}
+
+    # Special handling for lore dimension — search story engine
+    if dimension_id == "lore":
+        from app.services import story_engine
+        story_results = story_engine.search_story(query, limit)
+        flat_results = []
+        for category, items in story_results.get("results", {}).items():
+            for item in items:
+                flat_results.append({
+                    "title": item.get("name", item.get("title", "")),
+                    "path": f"lore/{category}/{item.get('id', '')}",
+                    "preview": f"[{category}] {item.get('archetype', '') or item.get('role', '') or item.get('core_lesson', '') or item.get('description', '')[:100]}",
+                    "dimension": "lore",
+                    "score": 0.9,
+                    "source": "story_engine",
+                    "category": category,
+                })
+        return {
+            "dimension": dimension_id,
+            "dimension_name": dim["name"],
+            "query": query,
+            "results": flat_results,
+            "total": len(flat_results),
+        }
 
     results = _chroma_search(dimension_id, query, limit) or _file_search(dimension_id, query, limit)
     return {
@@ -122,6 +153,7 @@ def _file_search(dimension_id: str, query: str, limit: int) -> list:
         "vault": "01_CORE", "grove": "02_SYSTEMS", "forest": "03_NEURAL",
         "codex": "04_CODEX", "memory": "05_MEMORY", "agent": "06_AGENTS",
         "social": "07_SOCIAL", "market": "09_MARKET", "path": "08_LEARNING",
+        "lore": "04_CODEX",
     }
     pillar = pillar_map.get(dimension_id)
     if not pillar:

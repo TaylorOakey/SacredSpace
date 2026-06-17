@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "<string>", line 4, in <module>
+  File "/home/useroak3ytree/.local/lib/python3.12/site-packages/graphify/detect.py", line 863, in detect
+    root = root.resolve()
+           ^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'resolve'

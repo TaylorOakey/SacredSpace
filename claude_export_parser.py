@@ -30,59 +30,59 @@ from pathlib import Path
 # ─────────────────────────────────────────────
 # VAULT RULE: bare "vault" is too broad — it matches finance, storage, and
 # generic references across conversations. Only compound phrases that tie
-# directly to Obsidian note-taking context route to 01_OBSIDIAN_VAULTS.
+# directly to Obsidian note-taking context route to 01_CORE.
 
 PILLAR_MAP = {
-    "01_OBSIDIAN_VAULTS": [
+    "01_CORE": [
         "obsidian vault", "obsidian note", "obsidian plugin", "obsidian canvas",
         "obsidian graph", "vault note", "vault file", "vault folder",
         "daily note", "backlink", "wikilink", "[[", "obsidian rest",
         "vault search", "dataview", "templater",
     ],
-    "02_COUNCIL_GROVE": [
+    "02_SYSTEMS": [
         "council grove", "mission control", "council session", "handoff ritual",
         "sacred ledger", "icaris quartet", "council seat", "agent quartet",
         "asher", "elias", "aurora", "iris", "multi-agent", "ai workflow",
         "opencode",
     ],
-    "03_NEURAL_FOREST": [
+    "03_NEURAL": [
         "neural forest", "omniparse", "neural network", "machine learning",
         "florence", "whisper model", "torch", "pytorch", "hugging face",
         "transformer", "embedding model", "fine-tune", "training run",
         "model weights", "inference engine", "cuda", "gpu training",
     ],
-    "04_SACRED_CODEX": [
+    "04_CODEX": [
         "sacred codex", "codex entry", "canon gate", "canon entry",
         "source of truth", "lock in", "make official", "make this official",
         "canonize", "is confirmed", "final decision", "we decided",
         "architecture decision", "sacredspace os", "nine pillar",
         "system design", "immutable", "icaris",
     ],
-    "05_MEMORY_ENGINE": [
+    "05_MEMORY": [
         "memory engine", "memory mote", "chromadb", "chroma db",
         "sqlite", "sacred memory", "vector store", "rag pipeline",
         "long-term memory", "mote", "store memory", "memory system",
         "chroma collection",
     ],
-    "06_AGENT_LAYER": [
+    "06_AGENTS": [
         "agent layer", "hermes", "fastapi", "api route", "api endpoint",
         "claude code", "agent config", "mcp server", "tool use",
         "bash script", "python script", "deploy script",
         "wsl2 setup", "docker", "uvicorn", "sacred spine",
     ],
-    "07_SOCIAL_MOTHERSHIP": [
+    "07_SOCIAL": [
         "social mothership", "instagram", "twitter", "tiktok",
         "discord", "telegram", "social media", "content strategy",
         "broadcast", "audience", "community building", "sacred sounds",
         "platform strategy",
     ],
-    "08_LEARNING_PATH": [
+    "08_LEARNING": [
         "learning path", "notebooklm", "study plan", "course outline",
         "curriculum", "lesson plan", "tutorial", "ai engineering",
         "how does", "what is", "explain this", "maestro", "aas",
         "learning spine", "study session",
     ],
-    "09_SACRED_MARKET": [
+    "09_MARKET": [
         "sacred market", "revenue", "crowdfund", "pricing model",
         "etsy", "printify", "gelato", "business model", "product listing",
         "market strategy", "kickstarter", "indiegogo", "storefront",
@@ -90,15 +90,15 @@ PILLAR_MAP = {
 }
 
 PILLAR_COLORS = {
-    "01_OBSIDIAN_VAULTS":   "#A78BFA",
-    "02_COUNCIL_GROVE":     "#533AB7",
-    "03_NEURAL_FOREST":     "#1D9E75",
-    "04_SACRED_CODEX":      "#7F77DD",
-    "05_MEMORY_ENGINE":     "#BA7517",
-    "06_AGENT_LAYER":       "#0F6E56",
-    "07_SOCIAL_MOTHERSHIP": "#D4537E",
-    "08_LEARNING_PATH":     "#639922",
-    "09_SACRED_MARKET":     "#D85A30",
+    "01_CORE":   "#A78BFA",
+    "02_SYSTEMS":     "#533AB7",
+    "03_NEURAL":     "#1D9E75",
+    "04_CODEX":      "#7F77DD",
+    "05_MEMORY":     "#BA7517",
+    "06_AGENTS":       "#0F6E56",
+    "07_SOCIAL": "#D4537E",
+    "08_LEARNING":     "#639922",
+    "09_MARKET":     "#D85A30",
 }
 
 CANON_TRIGGER_WORDS = [
@@ -148,7 +148,7 @@ def extract_messages(conversation: dict) -> list[dict]:
 
 def detect_pillar(title: str, messages: list[dict]) -> str:
     """Score conversation against each pillar's keywords.
-    Unmatched conversations default to 04_SACRED_CODEX."""
+    Unmatched conversations default to 04_CODEX."""
     combined = (title + " " + " ".join(m["text"][:300] for m in messages[:6])).lower()
     scores = {}
     for pillar, keywords in PILLAR_MAP.items():
@@ -156,7 +156,7 @@ def detect_pillar(title: str, messages: list[dict]) -> str:
         if score > 0:
             scores[pillar] = score
     if not scores:
-        return "04_SACRED_CODEX"
+        return "04_CODEX"
     return max(scores, key=scores.get)
 
 

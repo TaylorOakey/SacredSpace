@@ -1,0 +1,125 @@
+---
+title: "YouTube Watch History — 2018-06"
+source: youtube
+created: 2018-06-01
+pillar: 08_LEARNING_PATH
+stage: RAW
+tags: [takeout, youtube, watch-history]
+---
+
+# YouTube Watch History — 2018-06
+> 111 videos watched
+
+## Videos
+
+- [Matisyahu - Chop em down](https://www.youtube.com/watch?v=Dh9cPxOorX8) — mukham00 — Jun 30, 2018, 11:41:26 PM EDT
+- [Matisyahu - Chop &#39;Em Down](https://www.youtube.com/watch?v=lO3ca5FshCY) — Irvin989 — Jun 30, 2018, 11:37:35 PM EDT
+- [Spiders On Drugs](https://www.youtube.com/watch?v=sHzdsFiBbFc) — Andrew Struthers — Jun 30, 2018, 6:34:10 PM EDT
+- [Good Day (Lyric Video) - Rebelution](https://www.youtube.com/watch?v=KTfxcczuQjQ) — RebelutionMusic — Jun 30, 2018, 3:23:46 PM EDT
+- [Legend (Lyric Video) - Rebelution](https://www.youtube.com/watch?v=GPnFiOidnog) — RebelutionMusic — Jun 30, 2018, 3:23:33 PM EDT
+- [Settle Down Easy (Lyric Video) - Rebelution](https://www.youtube.com/watch?v=VvmgW-KZPVU) — RebelutionMusic — Jun 30, 2018, 3:18:07 PM EDT
+- [How Earth Moves](https://www.youtube.com/watch?v=IJhgZBn-LHg) — Vsauce — Jun 29, 2018, 10:02:17 PM EDT
+- [How the Universe is Way Bigger Than You Think](https://www.youtube.com/watch?v=Iy7NzjCmUf0) — RealLifeLore — Jun 29, 2018, 9:43:37 PM EDT
+- [Bob Marley Cover by Eric Rachmany of Rebelution &amp; Adam Taylor of Iration](https://www.youtube.com/watch?v=5o1koIwtTXs) — TODO TRANQUILO Clothing Company — Jun 29, 2018, 8:59:20 PM EDT
+- [Don&#39;t Learn the Pentatonic shapes, Solo up and down the neck without memorization](https://www.youtube.com/watch?v=B7JzOHR4HN4) — GuitarJamz — Jun 29, 2018, 7:52:54 PM EDT
+- [The MOST romantic acoustic guitar song EVER](https://www.youtube.com/watch?v=945n0QEDbpY) — GuitarJamz — Jun 29, 2018, 7:52:46 PM EDT
+- [Microdosing: People who take LSD with breakfast - BBC News](https://www.youtube.com/watch?v=Hbkgr3ZR2yA) — BBC News — Jun 26, 2018, 9:24:12 PM EDT
+- [Sumo Wrestler VS. Orangutan](https://www.youtube.com/watch?v=QfDxg0pJAX4) — awi wiw — Jun 26, 2018, 9:22:20 PM EDT
+- [Bass Lesson:  Ben.E.King:  Stand by me.](https://www.youtube.com/watch?v=JDhg-sQ6jWg) — BassBassBass — Jun 26, 2018, 9:00:24 PM EDT
+- [Bass Guitar Lessons - Simple Walk in &quot;A&quot; for Beginner Bass Players](https://www.youtube.com/watch?v=bb3hclXY7t4) — AVCSSGuitarWorld — Jun 26, 2018, 8:58:46 PM EDT
+- [How to Play a D Minor Scale | Bass Guitar](https://www.youtube.com/watch?v=-vK4PSAe930) — Howcast — Jun 26, 2018, 8:43:55 PM EDT
+- [Investigating the Haitian Zombie (Part 2/6)](https://www.youtube.com/watch?v=XyLdosiNdxE) — VICE — Jun 25, 2018, 8:03:24 PM EDT
+- [Investigating the Haitian Zombie (Part 1/6)](https://www.youtube.com/watch?v=cXcjioLLvRQ) — VICE — Jun 25, 2018, 7:32:18 PM EDT
+- [Bear Stanley: Reflections on Life, LSD and DMT](https://www.youtube.com/watch?v=geRXSVuPRhU) — Entheogenesis Australis - Entheo TV — Jun 25, 2018, 7:04:25 PM EDT
+- [Bass Lesson: Easy Reggae Line](https://www.youtube.com/watch?v=Eoa0uoiMxdg) — Guitar Compass — Jun 25, 2018, 7:00:14 PM EDT
+- [Top 5 Must Know Bass Riffs For Beginners (Check Out Updated Version)](https://www.youtube.com/watch?v=PlZxvS4aHM0) — TalkingBass - Online Bass Lessons — Jun 25, 2018, 6:43:40 PM EDT
+- [SYD Barrett interview RARE](https://www.youtube.com/watch?v=NG7vIWZVrUk) — TAVISTOCK INDUCTED REPLACEMENTS 666 creedence hoax propaganda — Jun 23, 2018, 8:48:53 PM EDT
+- [Syd Barrett on Acid 1966](https://www.youtube.com/watch?v=HmFd1LhAsJs) — BoBmAs51 — Jun 23, 2018, 8:48:31 PM EDT
+- [Syd Barrett - The Ealy Days Of Pink Floyd](https://www.youtube.com/watch?v=7sjwS1-8PKw) — Treble Clef — Jun 23, 2018, 8:48:13 PM EDT
+- [Joe Rogan Experience #1134 - Kyle Dunnigan](https://www.youtube.com/watch?v=ANeILT_kkDM) — PowerfulJRE — Jun 23, 2018, 6:44:22 PM EDT
+- [The Late Ones - Thunder &amp; Sun (Live Music) | Sugarshack Sessions](https://www.youtube.com/watch?v=kYXp2nLTndI) — Sugarshack Sessions — Jun 23, 2018, 1:18:37 PM EDT
+- [Through The Roots - Dancing In The Rain (Sugarshack Sessions Live)](https://www.youtube.com/watch?v=1aKQVz53s28) — ThroughTheRootsVEVO — Jun 23, 2018, 1:13:30 PM EDT
+- [Shoulda, Woulda, Coulda](https://www.youtube.com/watch?v=z2CDfAMUILQ) — Brian McKnight - Topic — Jun 22, 2018, 9:00:09 PM EDT
+- [Reggae Blues Backing Track (Am)](https://www.youtube.com/watch?v=1q7Vu-0cEs0) — Quist — Jun 17, 2018, 8:21:49 PM EDT
+- [Reggae Groove with Major + Minor Triads for Bass](https://www.youtube.com/watch?v=QB_JlAg-TSU) — josh fossgreen — Jun 17, 2018, 8:21:21 PM EDT
+- [How to Play Reggae Bass - with Matt Scharfglass!](https://www.youtube.com/watch?v=1aaVYh67cHg) — Guitar World — Jun 17, 2018, 8:14:02 PM EDT
+- [Bass &amp; Drum Clinic w/ Reggie Young](https://www.youtube.com/watch?v=yt2mGxcQN38) — Fodera Guitars — Jun 17, 2018, 8:09:56 PM EDT
+- [The best bass solo NAMM 2018 Reggie Young](https://www.youtube.com/watch?v=pYTjrNS1LMg) — Isaí Quintanilla Music — Jun 17, 2018, 8:07:27 PM EDT
+- [How to play BASS FILLS… like the gospel guys (with just one lick)](https://www.youtube.com/watch?v=pewSkjlFweY) — Scott&#39;s Bass Lessons — Jun 17, 2018, 8:06:31 PM EDT
+- [Take On Anything (Lyric Video) - Rebelution](https://www.youtube.com/watch?v=ykWc3Q2Jh8s) — RebelutionMusic — Jun 17, 2018, 6:34:30 PM EDT
+- [Stick Figure – &quot;Sound of the Sea&quot; (Official Music Video)](https://www.youtube.com/watch?v=UL6GEX47Nk8) — Stick Figure — Jun 17, 2018, 6:29:44 PM EDT
+- [Stick Figure - Weight of Sound](https://www.youtube.com/watch?v=fp9c3d7Gy9o) — BabylonStone — Jun 17, 2018, 6:27:31 PM EDT
+- [Stick Figure – &quot;Easy Runaway&quot; (Official Lyric Video)](https://www.youtube.com/watch?v=_0x0aWvazkc) — Stick Figure — Jun 17, 2018, 6:17:46 PM EDT
+- [Stick Figure – &quot;World on Fire (feat. Slightly Stoopid)&quot;](https://www.youtube.com/watch?v=Own0JqHKQSw) — Stick Figure — Jun 17, 2018, 6:13:42 PM EDT
+- [Constellation (Lyric Video) - Rebelution](https://www.youtube.com/watch?v=O9gAfNXBxmo) — RebelutionMusic — Jun 17, 2018, 6:06:40 PM EDT
+- [More Energy (Lyric Video) - Rebelution](https://www.youtube.com/watch?v=GgOdrXOqfiw) — RebelutionMusic — Jun 17, 2018, 6:02:24 PM EDT
+- [Good Day (Lyric Video) - Rebelution](https://www.youtube.com/watch?v=KTfxcczuQjQ) — RebelutionMusic — Jun 17, 2018, 5:58:41 PM EDT
+- [Trap Door (Lyric Video) - Rebelution](https://www.youtube.com/watch?v=a-j5s0yFpm0) — RebelutionMusic — Jun 17, 2018, 5:53:47 PM EDT
+- [Rise On Top (Lyric Video) - Rebelution](https://www.youtube.com/watch?v=_ISLncDhtaQ) — RebelutionMusic — Jun 17, 2018, 5:49:54 PM EDT
+- [Patience (Lyric Video) - Rebelution](https://www.youtube.com/watch?v=e1F8DGeboI4) — RebelutionMusic — Jun 17, 2018, 5:46:27 PM EDT
+- [Healing (Lyric Video) - Rebelution](https://www.youtube.com/watch?v=1J7dqV-Jp3s) — RebelutionMusic — Jun 17, 2018, 5:44:06 PM EDT
+- [Settle Down Easy (Lyric Video) - Rebelution](https://www.youtube.com/watch?v=VvmgW-KZPVU) — RebelutionMusic — Jun 17, 2018, 5:36:31 PM EDT
+- [Legend (Lyric Video) - Rebelution](https://www.youtube.com/watch?v=GPnFiOidnog) — RebelutionMusic — Jun 17, 2018, 5:32:03 PM EDT
+- [City Life (Lyric Video) - Rebelution](https://www.youtube.com/watch?v=VA20zpstE5o) — RebelutionMusic — Jun 17, 2018, 5:28:17 PM EDT
+- [Celebrate (Lyric Video) - Rebelution](https://www.youtube.com/watch?v=tqRC6A0mlk4) — RebelutionMusic — Jun 17, 2018, 5:24:04 PM EDT
+- [Family Feud Fails Compilation | Family Feud Funny Moments](https://www.youtube.com/watch?v=IVT0777RFMI) — T-Bell — Jun 16, 2018, 12:03:22 PM EDT
+- [ISIAH CAREY RUNS INTO BUGS AGAIN IN ANOTHER COUNTRY TOWN](https://www.youtube.com/watch?v=cdKJYlMTtHQ) — TheHoustonFactor — Jun 16, 2018, 12:02:35 PM EDT
+- [News Reporter swallows bug then loses it. Funny! Isiah Carey clip.](https://www.youtube.com/watch?v=f8MNH7JuR7I) — pfergy1 — Jun 16, 2018, 12:01:03 PM EDT
+- [City Life (Lyric Video) - Rebelution](https://www.youtube.com/watch?v=VA20zpstE5o) — RebelutionMusic — Jun 15, 2018, 3:26:56 PM EDT
+- [Trap Door (Lyric Video) - Rebelution](https://www.youtube.com/watch?v=a-j5s0yFpm0) — RebelutionMusic — Jun 15, 2018, 3:21:59 PM EDT
+- [Celebrate (Lyric Video) - Rebelution](https://www.youtube.com/watch?v=tqRC6A0mlk4) — RebelutionMusic — Jun 15, 2018, 3:17:47 PM EDT
+- [Through The Roots - Bear With Me ft. Eric Rachmany of Rebelution (Official Video)](https://www.youtube.com/watch?v=9m-lvNYj7TY) — ThroughTheRootsVEVO — Jun 15, 2018, 3:17:30 PM EDT
+- [Legend (Lyric Video) - Rebelution](https://www.youtube.com/watch?v=GPnFiOidnog) — RebelutionMusic — Jun 15, 2018, 3:13:11 PM EDT
+- [Stick Figure – &quot;Easy Runaway&quot; (Official Lyric Video)](https://www.youtube.com/watch?v=_0x0aWvazkc) — Stick Figure — Jun 15, 2018, 3:12:01 PM EDT
+- [Good Day (Lyric Video) - Rebelution](https://www.youtube.com/watch?v=KTfxcczuQjQ) — RebelutionMusic — Jun 15, 2018, 3:08:15 PM EDT
+- [So High - Rebelution](https://www.youtube.com/watch?v=6OUTn_Rhl4s) — RebelutionMusic — Jun 15, 2018, 3:07:50 PM EDT
+- [Take On Anything (Lyric Video) - Rebelution](https://www.youtube.com/watch?v=ykWc3Q2Jh8s) — RebelutionMusic — Jun 15, 2018, 3:04:29 PM EDT
+- [Kid Cudi - Love (Music Video, 2015)](https://www.youtube.com/watch?v=d0BNwyrEDiA) — suudabraalis — Jun 14, 2018, 6:49:01 AM EDT
+- [Stick Figure – &quot;World on Fire (feat. Slightly Stoopid)&quot; (Official Lyric Video)](https://www.youtube.com/watch?v=j7s04g7chTo) — Stick Figure — Jun 14, 2018, 6:42:29 AM EDT
+- [Deep Sleep Hypnosis with Astral Rain Music, Fall Asleep Faster, Meditation Sleep Music 🕙10 Hours](https://www.youtube.com/watch?v=BzOuFK9uBmM) — Jason Stephenson - Guided Sleep Meditation  — Jun 14, 2018, 12:31:02 AM EDT
+- [Waiting (In Due Time) (feat. Pam Nicely &amp; Sabrina Hale)](https://www.youtube.com/watch?v=7etQN0xl8UU) — Jonathan Hay - Topic — Jun 13, 2018, 5:32:22 PM EDT
+- [Interlude: Stoned Mountain Commercial (feat. Haylo 94)](https://www.youtube.com/watch?v=1W60QG6wJRw) — Jonathan Hay - Topic — Jun 13, 2018, 5:30:08 PM EDT
+- [James Brown (When the Sky Opens Up) (feat. Truth Ali, Frida Dee, Morgan Mcrae &amp; Ajami)](https://www.youtube.com/watch?v=-k-GVY2uvi4) — Jonathan Hay - Topic — Jun 13, 2018, 5:24:45 PM EDT
+- [Flower in the Addict, Pt. 1 (feat. Caskey, King Tech, Big V, Mike Smith &amp; Sabrina Hale)](https://www.youtube.com/watch?v=Gif4ni30zOc) — Jonathan Hay - Topic — Jun 13, 2018, 5:18:37 PM EDT
+- [Long Damn Time (Extended) (feat. Ana, Aesja, Lil Jsean, Jc Flores &amp; Matt Berman)](https://www.youtube.com/watch?v=qM_RL0087ns) — Jonathan Hay - Topic — Jun 13, 2018, 5:13:51 PM EDT
+- [Hippie Sabotage - SAVE ME](https://www.youtube.com/watch?v=WhHicLPLYs4) — Trap Station — Jun 13, 2018, 5:12:45 PM EDT
+- [Joe Rogan Experience #1130 - Adam Frank](https://www.youtube.com/watch?v=MfHk_93x8_0) — PowerfulJRE — Jun 12, 2018, 9:14:15 PM EDT
+- [Seductive Bluesy Funk | Guitar Backing Track Jam in Cm](https://www.youtube.com/watch?v=YpZ4VgZrUDs) — Elevated Jam Tracks — Jun 10, 2018, 12:43:43 PM EDT
+- [SMOKEY JOE &amp; THE KID - Jailhouse Blues (Feat. Blake Worrell)](https://www.youtube.com/watch?v=yQCuxYyNORY) — Smokey Joe &amp; The Kid — Jun 10, 2018, 12:36:52 AM EDT
+- [Dafuniks Ft. Elias - Don&#39;t Dig To Deep [Official Audio]](https://www.youtube.com/watch?v=0o4WYI8SF-Y) — Underdog Records — Jun 10, 2018, 12:32:54 AM EDT
+- [ODDISEE - OWN APPEAL (Official Video)](https://www.youtube.com/watch?v=E2Snh2NZHhk) — Mello Music Group — Jun 10, 2018, 12:25:26 AM EDT
+- [DJ Shadow - Nobody Speak feat. Run The Jewels (Official Video)](https://www.youtube.com/watch?v=NUC2EQvdzmY) — Mass Appeal — Jun 10, 2018, 12:21:25 AM EDT
+- [Awon &amp; Dephlow - (Official) Real Hip Hop (Prod. by Phoniks) off the &#39;Dephacation&#39; Album](https://www.youtube.com/watch?v=oaSB3DTNVw0) — Don&#39;t Sleep Records — Jun 10, 2018, 12:16:07 AM EDT
+- [Dafuniks (ft. Particle Man) - Soul Searching](https://www.youtube.com/watch?v=OYCJrnhidB8) — Underdog Records — Jun 10, 2018, 12:09:35 AM EDT
+- [Dafuniks (ft. A.S.M) - Heard Them Say](https://www.youtube.com/watch?v=Zz2jtEIv2hg) — Underdog Records — Jun 10, 2018, 12:05:27 AM EDT
+- [Dafuniks Ft. Blacc El - Non Similar [Live]](https://www.youtube.com/watch?v=OOyU2GnXhUg) — Underdog Records — Jun 10, 2018, 12:02:04 AM EDT
+- [JOHN MILK - Treat Me Right [LIVE FIP RADIO]](https://www.youtube.com/watch?v=jKYqumDoISU) — Underdog Records — Jun 10, 2018, 12:00:07 AM EDT
+- [FKJ &amp; Masego - Tadow](https://www.youtube.com/watch?v=hC8CH0Z3L54) — Fkj — Jun 9, 2018, 11:51:23 PM EDT
+- [Dafuniks (ft. Elias) - The Dance [Official Video]](https://www.youtube.com/watch?v=e51HKEdNI5o) — Underdog Records — Jun 9, 2018, 11:46:50 PM EDT
+- [Dafuniks (ft. Billow and Blacc El) - John Dope [Official Video]](https://www.youtube.com/watch?v=ydU0EAc5Tmc) — Underdog Records — Jun 9, 2018, 11:42:22 PM EDT
+- [432Hz - Tibetan Bowls Heart Energy ➤ Release Negative Blocks &amp; Raise Vibration - THETA BinauralBeat](https://www.youtube.com/watch?v=s0g28QAgYpo) — ZenLifeRelax — Jun 9, 2018, 11:38:58 PM EDT
+- [Sonic Geometry: The Language of Frequency and Form](https://www.youtube.com/watch?v=FY74AFQl2qQ) — Alanna Luna — Jun 9, 2018, 11:28:36 PM EDT
+- [SOUND ALCHEMY Documentary - Hermetic Sound Science - Egyptian Roots of Modern Sound Healing](https://www.youtube.com/watch?v=nQ83XWLKz7c) — soundbringer — Jun 9, 2018, 11:26:58 PM EDT
+- [The Truth About Alcohol: Etymology &amp; Symbolism. PLEASE SHARE! Sequel Cmg Soon!](https://www.youtube.com/watch?v=T8owHqVfCsU) — LIFTING THE VEIL — Jun 9, 2018, 11:13:10 PM EDT
+- [Aesop Rock - Hot Dogs (Official Video)](https://www.youtube.com/watch?v=VSEcQ7QqW4c) — Rhymesayers Entertainment — Jun 9, 2018, 8:46:53 PM EDT
+- [Aesop Rock - Klutz (Official Video)](https://www.youtube.com/watch?v=QtZT7hcMltg) — Rhymesayers Entertainment — Jun 9, 2018, 8:42:43 PM EDT
+- [Kid Cudi Teleport 2 Me Ft. Dot Da Genius (Official Video) HD](https://www.youtube.com/watch?v=GTlAAzTEIwE) — ArcadeAmbience — Jun 9, 2018, 8:38:30 PM EDT
+- [Hail Mary Mallon - The Poconos](https://www.youtube.com/watch?v=gU-9sPUl_pI) — id.unofficial. — Jun 9, 2018, 8:33:57 PM EDT
+- [Joe Rogan Experience #1128 - Ryan Sickler](https://www.youtube.com/watch?v=VX4qn8syLn0) — PowerfulJRE — Jun 7, 2018, 7:37:49 PM EDT
+- [Aesop Rock - Klutz (Official Video)](https://www.youtube.com/watch?v=QtZT7hcMltg) — Rhymesayers Entertainment — Jun 7, 2018, 7:36:12 PM EDT
+- [Djent 2018](https://www.youtube.com/watch?v=hYrN7EIeXmY) — Jared Dines — Jun 7, 2018, 7:32:58 PM EDT
+- [The Ultimate French Press Technique](https://www.youtube.com/watch?v=st571DYYTR8) — James Hoffmann — Jun 7, 2018, 7:28:28 PM EDT
+- [Joe Rogan Experience #1127 - Jesse Itzler](https://www.youtube.com/watch?v=b0GIO4lYFls) — PowerfulJRE — Jun 6, 2018, 9:48:05 PM EDT
+- [High Jahn the Conqueror](https://www.youtube.com/watch?v=33nZmZVds_k) — Illuminati Congo - Topic — Jun 6, 2018, 9:31:56 AM EDT
+- [Ground Zero Point](https://www.youtube.com/watch?v=28A0TS3ThvM) — Illuminati Congo - Topic — Jun 6, 2018, 9:28:09 AM EDT
+- [Yggdrasil (feat. Sense One &amp; Amun Neteru El)](https://www.youtube.com/watch?v=Z0swzm21CQw) — Illuminati Congo - Topic — Jun 6, 2018, 9:22:34 AM EDT
+- [Empty (feat. Son of Saturn)](https://www.youtube.com/watch?v=JujJ9kqw7yw) — Illuminati Congo - Topic — Jun 6, 2018, 8:52:31 AM EDT
+- [Phosphorus (feat. Apak)](https://www.youtube.com/watch?v=up6GCgAgCtM) — Illuminati Congo - Topic — Jun 6, 2018, 7:18:31 AM EDT
+- [Delphi](https://www.youtube.com/watch?v=RwlhvnkPyR8) — Illuminati Congo - Topic — Jun 6, 2018, 7:13:33 AM EDT
+- [Alkhemit](https://www.youtube.com/watch?v=aYBpW-5iVAs) — Illuminati Congo - Topic — Jun 6, 2018, 7:09:06 AM EDT
+- [RTJ x Mr. Dibbs = Run The Dibbs](https://www.youtube.com/watch?v=FBRw2dSaxIg) — RunTheJewels — Jun 6, 2018, 7:07:46 AM EDT
+- [Mushroomhead - Out of My Mind](https://www.youtube.com/watch?v=IM_y6Kxr0vA) — MushroomheadVEVO — Jun 5, 2018, 4:20:03 PM EDT
+- [Papadosio - Mr. Turtles Cloud Kingdom - (Official Video)](https://www.youtube.com/watch?v=vv45CuRVTec) — papadosio — Jun 2, 2018, 1:01:12 PM EDT
+- [Papadosio - New Signal Incoming 6.15.18](https://www.youtube.com/watch?v=V5pVvat5a0U) — papadosio — Jun 2, 2018, 12:59:58 PM EDT
+- [Papadosio - Cloud Found - The Orange Peel - April 6th, 2018](https://www.youtube.com/watch?v=g-dvtH6tgaE) — papadosio — Jun 2, 2018, 12:58:12 PM EDT
+- [Papadosio - 4.7.18  - Method Of Control - Live from The Orange Peel - Asheville, NC](https://www.youtube.com/watch?v=u1D_E-ZHtQA) — papadosio — Jun 2, 2018, 12:57:25 PM EDT

@@ -1,0 +1,3691 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "SacredSpace OS",
+      "file_type": "concept",
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "community": 2,
+      "norm_label": "sacredspace os",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "sacredspace_os",
+      "id": "04_SACRED_CODEX::sacredspace_os"
+    },
+    {
+      "label": "Nine Pillars",
+      "file_type": "concept",
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "community": 0,
+      "norm_label": "nine pillars",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "system_nine_pillars",
+      "id": "04_SACRED_CODEX::system_nine_pillars"
+    },
+    {
+      "label": "01 OBSIDIAN_VAULTS",
+      "file_type": "concept",
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "community": 0,
+      "norm_label": "01 obsidian_vaults",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "pillar_01_obsidian_vaults",
+      "id": "04_SACRED_CODEX::pillar_01_obsidian_vaults"
+    },
+    {
+      "label": "02 COUNCIL_GROVE",
+      "file_type": "concept",
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "community": 0,
+      "norm_label": "02 council_grove",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "pillar_02_council_grove",
+      "id": "04_SACRED_CODEX::pillar_02_council_grove"
+    },
+    {
+      "label": "03 NEURAL_FOREST",
+      "file_type": "concept",
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "community": 0,
+      "norm_label": "03 neural_forest",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "pillar_03_neural_forest",
+      "id": "04_SACRED_CODEX::pillar_03_neural_forest"
+    },
+    {
+      "label": "04 SACRED_CODEX",
+      "file_type": "concept",
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "community": 0,
+      "norm_label": "04 sacred_codex",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "pillar_04_sacred_codex",
+      "id": "04_SACRED_CODEX::pillar_04_sacred_codex"
+    },
+    {
+      "label": "05 MEMORY_ENGINE",
+      "file_type": "concept",
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "community": 2,
+      "norm_label": "05 memory_engine",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "pillar_05_memory_engine",
+      "id": "04_SACRED_CODEX::pillar_05_memory_engine"
+    },
+    {
+      "label": "06 AGENT_LAYER",
+      "file_type": "concept",
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "community": 0,
+      "norm_label": "06 agent_layer",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "pillar_06_agent_layer",
+      "id": "04_SACRED_CODEX::pillar_06_agent_layer"
+    },
+    {
+      "label": "07 SOCIAL_MOTHERSHIP",
+      "file_type": "concept",
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "community": 0,
+      "norm_label": "07 social_mothership",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "pillar_07_social_mothership",
+      "id": "04_SACRED_CODEX::pillar_07_social_mothership"
+    },
+    {
+      "label": "08 LEARNING_PATH",
+      "file_type": "concept",
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "community": 0,
+      "norm_label": "08 learning_path",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "pillar_08_learning_path",
+      "id": "04_SACRED_CODEX::pillar_08_learning_path"
+    },
+    {
+      "label": "09 SACRED_MARKET",
+      "file_type": "concept",
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "community": 0,
+      "norm_label": "09 sacred_market",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "pillar_09_sacred_market",
+      "id": "04_SACRED_CODEX::pillar_09_sacred_market"
+    },
+    {
+      "label": "Local-First Architecture (Zero Paid APIs)",
+      "file_type": "rationale",
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "community": 2,
+      "norm_label": "local-first architecture (zero paid apis)",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "local_first_architecture",
+      "id": "04_SACRED_CODEX::local_first_architecture"
+    },
+    {
+      "label": "WSL2 Ubuntu on Lenovo Legion Y520",
+      "file_type": "concept",
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "community": 2,
+      "norm_label": "wsl2 ubuntu on lenovo legion y520",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "wsl2_ubuntu",
+      "id": "04_SACRED_CODEX::wsl2_ubuntu"
+    },
+    {
+      "label": "FastAPI Spine (port 8888)",
+      "file_type": "code",
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "community": 8,
+      "norm_label": "fastapi spine (port 8888)",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "fastapi_spine",
+      "id": "04_SACRED_CODEX::fastapi_spine"
+    },
+    {
+      "label": "Ollama Local LLM Orchestration",
+      "file_type": "code",
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "community": 0,
+      "norm_label": "ollama local llm orchestration",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "ollama_llm",
+      "id": "04_SACRED_CODEX::ollama_llm"
+    },
+    {
+      "label": "ChromaDB Vector Search",
+      "file_type": "code",
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "community": 2,
+      "norm_label": "chromadb vector search",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "chromadb_vector",
+      "id": "04_SACRED_CODEX::chromadb_vector"
+    },
+    {
+      "label": "SQLite Memory (sacred_memory.db)",
+      "file_type": "code",
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "community": 2,
+      "norm_label": "sqlite memory (sacred_memory.db)",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "sqlite_memory",
+      "id": "04_SACRED_CODEX::sqlite_memory"
+    },
+    {
+      "label": "Mission Control Dashboard (port 3001)",
+      "file_type": "code",
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "community": 2,
+      "norm_label": "mission control dashboard (port 3001)",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "mission_control",
+      "id": "04_SACRED_CODEX::mission_control"
+    },
+    {
+      "label": "OmniParse Document Parser (port 8001)",
+      "file_type": "code",
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "community": 2,
+      "norm_label": "omniparse document parser (port 8001)",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "omniparse",
+      "id": "04_SACRED_CODEX::omniparse"
+    },
+    {
+      "label": "In Lakesh Alakin (Canon Closing)",
+      "file_type": "concept",
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "community": 15,
+      "norm_label": "in lakesh alakin (canon closing)",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "canon_close",
+      "id": "04_SACRED_CODEX::canon_close"
+    },
+    {
+      "label": "The Forge (Claude)",
+      "file_type": "concept",
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "community": 16,
+      "norm_label": "the forge (claude)",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "council_the_forge",
+      "id": "04_SACRED_CODEX::council_the_forge"
+    },
+    {
+      "label": "The Anvil (Claude Code)",
+      "file_type": "concept",
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "community": 2,
+      "norm_label": "the anvil (claude code)",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "council_the_anvil",
+      "id": "04_SACRED_CODEX::council_the_anvil"
+    },
+    {
+      "label": "The Sacred Smith (Claude Desktop + Hermes MCP)",
+      "file_type": "concept",
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "community": 12,
+      "norm_label": "the sacred smith (claude desktop + hermes mcp)",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "council_sacred_smith",
+      "id": "04_SACRED_CODEX::council_sacred_smith"
+    },
+    {
+      "label": "The Deep Well (Gemini)",
+      "file_type": "concept",
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "community": 17,
+      "norm_label": "the deep well (gemini)",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "council_deep_well",
+      "id": "04_SACRED_CODEX::council_deep_well"
+    },
+    {
+      "label": "The Architect (ChatGPT)",
+      "file_type": "concept",
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "community": 18,
+      "norm_label": "the architect (chatgpt)",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "council_the_architect",
+      "id": "04_SACRED_CODEX::council_the_architect"
+    },
+    {
+      "label": "GR\u2206M\u2206 (Hermes Cipher Sage)",
+      "file_type": "concept",
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "community": 12,
+      "norm_label": "gr\u2206m\u2206 (hermes cipher sage)",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "council_grama",
+      "id": "04_SACRED_CODEX::council_grama"
+    },
+    {
+      "label": "IRIS Agent",
+      "file_type": "code",
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "community": 2,
+      "norm_label": "iris agent",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "agent_iris",
+      "id": "04_SACRED_CODEX::agent_iris"
+    },
+    {
+      "label": "AURORA Agent",
+      "file_type": "code",
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "community": 14,
+      "norm_label": "aurora agent",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "agent_aurora",
+      "id": "04_SACRED_CODEX::agent_aurora"
+    },
+    {
+      "label": "ELIAS Agent",
+      "file_type": "code",
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "community": 19,
+      "norm_label": "elias agent",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "agent_elias",
+      "id": "04_SACRED_CODEX::agent_elias"
+    },
+    {
+      "label": "ASHER Agent",
+      "file_type": "code",
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "community": 20,
+      "norm_label": "asher agent",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "agent_asher",
+      "id": "04_SACRED_CODEX::agent_asher"
+    },
+    {
+      "label": "Hermes Agent",
+      "file_type": "code",
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "community": 12,
+      "norm_label": "hermes agent",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "agent_hermes",
+      "id": "04_SACRED_CODEX::agent_hermes"
+    },
+    {
+      "label": "Jeanie (Council Member)",
+      "file_type": "concept",
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "community": 2,
+      "norm_label": "jeanie (council member)",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "jeanie_council",
+      "id": "04_SACRED_CODEX::jeanie_council"
+    },
+    {
+      "label": "Taylor \u2206\u2206\u2206O\u2206K3YTREE\u2206\u2206\u2206",
+      "file_type": "concept",
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "community": 2,
+      "norm_label": "taylor \u2206\u2206\u2206o\u2206k3ytree\u2206\u2206\u2206",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "taylor_creator",
+      "id": "04_SACRED_CODEX::taylor_creator"
+    },
+    {
+      "label": "Game Layer (Board/Card Game)",
+      "file_type": "concept",
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "community": 4,
+      "norm_label": "game layer (board/card game)",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "game_layer",
+      "id": "04_SACRED_CODEX::game_layer"
+    },
+    {
+      "label": "Sacred Path Tarot (78-card)",
+      "file_type": "concept",
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "community": 4,
+      "norm_label": "sacred path tarot (78-card)",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "sacred_path_tarot",
+      "id": "04_SACRED_CODEX::sacred_path_tarot"
+    },
+    {
+      "label": "Arcana Grid (4x3 Board, 9x9 Grid, Metatron's Node)",
+      "file_type": "concept",
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "community": 4,
+      "norm_label": "arcana grid (4x3 board, 9x9 grid, metatron's node)",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "arcana_grid",
+      "id": "04_SACRED_CODEX::arcana_grid"
+    },
+    {
+      "label": "Silent Echo Gematria Engine",
+      "file_type": "concept",
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "community": 4,
+      "norm_label": "silent echo gematria engine",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "silent_echo",
+      "id": "04_SACRED_CODEX::silent_echo"
+    },
+    {
+      "label": "Nine Gates Progression System",
+      "file_type": "concept",
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "community": 4,
+      "norm_label": "nine gates progression system",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "nine_gates",
+      "id": "04_SACRED_CODEX::nine_gates"
+    },
+    {
+      "label": "The Serpent (Antagonist)",
+      "file_type": "concept",
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "community": 4,
+      "norm_label": "the serpent (antagonist)",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "the_serpent",
+      "id": "04_SACRED_CODEX::the_serpent"
+    },
+    {
+      "label": "Memory Motes (Knowledge Units)",
+      "file_type": "concept",
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "community": 2,
+      "norm_label": "memory motes (knowledge units)",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "memory_motes",
+      "id": "04_SACRED_CODEX::memory_motes"
+    },
+    {
+      "label": "Nameless Door (Trial of Silence)",
+      "file_type": "concept",
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "community": 4,
+      "norm_label": "nameless door (trial of silence)",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "nameless_door",
+      "id": "04_SACRED_CODEX::nameless_door"
+    },
+    {
+      "label": "Sacred Sigil Terminal v2.0",
+      "file_type": "code",
+      "source_file": "SACRED_SIGIL_TERMINAL_COMPLETE_OVERVIEW.md",
+      "community": 8,
+      "norm_label": "sacred sigil terminal v2.0",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "sacred_sigil_terminal",
+      "id": "04_SACRED_CODEX::sacred_sigil_terminal"
+    },
+    {
+      "label": "SacredSigilTerminal React Component",
+      "file_type": "code",
+      "source_file": "SACRED_SIGIL_TERMINAL_COMPLETE_OVERVIEW.md",
+      "community": 8,
+      "norm_label": "sacredsigilterminal react component",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "sst_react_component",
+      "id": "04_SACRED_CODEX::sst_react_component"
+    },
+    {
+      "label": "sigil_terminal_backend FastAPI",
+      "file_type": "code",
+      "source_file": "SACRED_SIGIL_TERMINAL_COMPLETE_OVERVIEW.md",
+      "community": 8,
+      "norm_label": "sigil_terminal_backend fastapi",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "sst_backend",
+      "id": "04_SACRED_CODEX::sst_backend"
+    },
+    {
+      "label": "Nine Dimensions (VAULT, GROVE, FOREST, CODEX, MEMORY, AGENT, SOCIAL, MARKET, PATH)",
+      "file_type": "concept",
+      "source_file": "SACRED_SIGIL_TERMINAL_COMPLETE_OVERVIEW.md",
+      "community": 0,
+      "norm_label": "nine dimensions (vault, grove, forest, codex, memory, agent, social, market, path)",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "sst_nine_dimensions",
+      "id": "04_SACRED_CODEX::sst_nine_dimensions"
+    },
+    {
+      "label": "Query Parser (Keyword-Based NLP)",
+      "file_type": "code",
+      "source_file": "SACRED_SIGIL_TERMINAL_COMPLETE_OVERVIEW.md",
+      "community": 8,
+      "norm_label": "query parser (keyword-based nlp)",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "sst_query_parser",
+      "id": "04_SACRED_CODEX::sst_query_parser"
+    },
+    {
+      "label": "Weaver Engine (Spell Execution)",
+      "file_type": "code",
+      "source_file": "SACRED_SIGIL_TERMINAL_COMPLETE_OVERVIEW.md",
+      "community": 4,
+      "norm_label": "weaver engine (spell execution)",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "sst_weaver_engine",
+      "id": "04_SACRED_CODEX::sst_weaver_engine"
+    },
+    {
+      "label": "PWA (Service Worker + Manifest)",
+      "file_type": "code",
+      "source_file": "SACRED_SIGIL_TERMINAL_QUICK_START.md",
+      "community": 8,
+      "norm_label": "pwa (service worker + manifest)",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "sst_pwa",
+      "id": "04_SACRED_CODEX::sst_pwa"
+    },
+    {
+      "label": "Chrome Extension (v3)",
+      "file_type": "code",
+      "source_file": "SACRED_SIGIL_TERMINAL_QUICK_START.md",
+      "community": 8,
+      "norm_label": "chrome extension (v3)",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "sst_chrome_extension",
+      "id": "04_SACRED_CODEX::sst_chrome_extension"
+    },
+    {
+      "label": "Cmd+K Keyboard Shortcut",
+      "file_type": "code",
+      "source_file": "SACRED_SIGIL_TERMINAL_COMPLETE_OVERVIEW.md",
+      "community": 8,
+      "norm_label": "cmd+k keyboard shortcut",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "sst_cmdk",
+      "id": "04_SACRED_CODEX::sst_cmdk"
+    },
+    {
+      "label": "Dimension: VAULT (Obsidian)",
+      "file_type": "code",
+      "source_file": "SACRED_SIGIL_TERMINAL_COMPLETE_OVERVIEW.md",
+      "community": 0,
+      "norm_label": "dimension: vault (obsidian)",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "sst_dimension_vault",
+      "id": "04_SACRED_CODEX::sst_dimension_vault"
+    },
+    {
+      "label": "Dimension: GROVE (Council)",
+      "file_type": "code",
+      "source_file": "SACRED_SIGIL_TERMINAL_COMPLETE_OVERVIEW.md",
+      "community": 0,
+      "norm_label": "dimension: grove (council)",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "sst_dimension_grove",
+      "id": "04_SACRED_CODEX::sst_dimension_grove"
+    },
+    {
+      "label": "Dimension: FOREST (Neural)",
+      "file_type": "code",
+      "source_file": "SACRED_SIGIL_TERMINAL_COMPLETE_OVERVIEW.md",
+      "community": 0,
+      "norm_label": "dimension: forest (neural)",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "sst_dimension_forest",
+      "id": "04_SACRED_CODEX::sst_dimension_forest"
+    },
+    {
+      "label": "Dimension: CODEX (Sacred)",
+      "file_type": "code",
+      "source_file": "SACRED_SIGIL_TERMINAL_COMPLETE_OVERVIEW.md",
+      "community": 0,
+      "norm_label": "dimension: codex (sacred)",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "sst_dimension_codex",
+      "id": "04_SACRED_CODEX::sst_dimension_codex"
+    },
+    {
+      "label": "Dimension: MEMORY (Engine)",
+      "file_type": "code",
+      "source_file": "SACRED_SIGIL_TERMINAL_COMPLETE_OVERVIEW.md",
+      "community": 2,
+      "norm_label": "dimension: memory (engine)",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "sst_dimension_memory",
+      "id": "04_SACRED_CODEX::sst_dimension_memory"
+    },
+    {
+      "label": "Dimension: AGENT (Spells)",
+      "file_type": "code",
+      "source_file": "SACRED_SIGIL_TERMINAL_COMPLETE_OVERVIEW.md",
+      "community": 0,
+      "norm_label": "dimension: agent (spells)",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "sst_dimension_agent",
+      "id": "04_SACRED_CODEX::sst_dimension_agent"
+    },
+    {
+      "label": "Dimension: SOCIAL (Mothership)",
+      "file_type": "code",
+      "source_file": "SACRED_SIGIL_TERMINAL_COMPLETE_OVERVIEW.md",
+      "community": 0,
+      "norm_label": "dimension: social (mothership)",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "sst_dimension_social",
+      "id": "04_SACRED_CODEX::sst_dimension_social"
+    },
+    {
+      "label": "Dimension: MARKET (Sacred)",
+      "file_type": "code",
+      "source_file": "SACRED_SIGIL_TERMINAL_COMPLETE_OVERVIEW.md",
+      "community": 0,
+      "norm_label": "dimension: market (sacred)",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "sst_dimension_market",
+      "id": "04_SACRED_CODEX::sst_dimension_market"
+    },
+    {
+      "label": "Dimension: PATH (Learning)",
+      "file_type": "code",
+      "source_file": "SACRED_SIGIL_TERMINAL_COMPLETE_OVERVIEW.md",
+      "community": 0,
+      "norm_label": "dimension: path (learning)",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "sst_dimension_path",
+      "id": "04_SACRED_CODEX::sst_dimension_path"
+    },
+    {
+      "label": "CopyQ Clipboard Integration",
+      "file_type": "code",
+      "source_file": "COPYQ_WIRE.md",
+      "community": 14,
+      "norm_label": "copyq clipboard integration",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "copyq_integration",
+      "id": "04_SACRED_CODEX::copyq_integration"
+    },
+    {
+      "label": "copyq_bridge.py",
+      "file_type": "code",
+      "source_file": "COPYQ_WIRE.md",
+      "community": 21,
+      "norm_label": "copyq_bridge.py",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "copyq_bridge",
+      "id": "04_SACRED_CODEX::copyq_bridge"
+    },
+    {
+      "label": "copyq_routes.py",
+      "file_type": "code",
+      "source_file": "COPYQ_WIRE.md",
+      "community": 8,
+      "norm_label": "copyq_routes.py",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "copyq_routes",
+      "id": "04_SACRED_CODEX::copyq_routes"
+    },
+    {
+      "label": "CopyQ Tab System (FORGE, CODEX, VAULT, COUNCIL, MARKET, LEARNING, MEMORY, INBOX)",
+      "file_type": "code",
+      "source_file": "COPYQ_WIRE.md",
+      "community": 0,
+      "norm_label": "copyq tab system (forge, codex, vault, council, market, learning, memory, inbox)",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "copyq_tabs",
+      "id": "04_SACRED_CODEX::copyq_tabs"
+    },
+    {
+      "label": "Tab: FORGE (Active Session)",
+      "file_type": "code",
+      "source_file": "COPYQ_WIRE.md",
+      "community": 0,
+      "norm_label": "tab: forge (active session)",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "copyq_tab_forge",
+      "id": "04_SACRED_CODEX::copyq_tab_forge"
+    },
+    {
+      "label": "Tab: CODEX (Canon/Spells)",
+      "file_type": "code",
+      "source_file": "COPYQ_WIRE.md",
+      "community": 0,
+      "norm_label": "tab: codex (canon/spells)",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "copyq_tab_codex",
+      "id": "04_SACRED_CODEX::copyq_tab_codex"
+    },
+    {
+      "label": "Tab: VAULT (Obsidian Clips)",
+      "file_type": "code",
+      "source_file": "COPYQ_WIRE.md",
+      "community": 0,
+      "norm_label": "tab: vault (obsidian clips)",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "copyq_tab_vault",
+      "id": "04_SACRED_CODEX::copyq_tab_vault"
+    },
+    {
+      "label": "Tab: COUNCIL (AI Outputs)",
+      "file_type": "code",
+      "source_file": "COPYQ_WIRE.md",
+      "community": 0,
+      "norm_label": "tab: council (ai outputs)",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "copyq_tab_council",
+      "id": "04_SACRED_CODEX::copyq_tab_council"
+    },
+    {
+      "label": "Tab: MARKET (Social/Listings)",
+      "file_type": "code",
+      "source_file": "COPYQ_WIRE.md",
+      "community": 0,
+      "norm_label": "tab: market (social/listings)",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "copyq_tab_market",
+      "id": "04_SACRED_CODEX::copyq_tab_market"
+    },
+    {
+      "label": "Tab: LEARNING (Study Notes)",
+      "file_type": "code",
+      "source_file": "COPYQ_WIRE.md",
+      "community": 0,
+      "norm_label": "tab: learning (study notes)",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "copyq_tab_learning",
+      "id": "04_SACRED_CODEX::copyq_tab_learning"
+    },
+    {
+      "label": "Tab: MEMORY (Mote Candidates)",
+      "file_type": "code",
+      "source_file": "COPYQ_WIRE.md",
+      "community": 2,
+      "norm_label": "tab: memory (mote candidates)",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "copyq_tab_memory",
+      "id": "04_SACRED_CODEX::copyq_tab_memory"
+    },
+    {
+      "label": "Tab: INBOX (Raw Catch-All)",
+      "file_type": "code",
+      "source_file": "COPYQ_WIRE.md",
+      "community": 0,
+      "norm_label": "tab: inbox (raw catch-all)",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "copyq_tab_inbox",
+      "id": "04_SACRED_CODEX::copyq_tab_inbox"
+    },
+    {
+      "label": "Supabase Schema (Players, Tarot, Spells, Artifacts)",
+      "file_type": "code",
+      "source_file": "supabase_schema.sql",
+      "community": 4,
+      "norm_label": "supabase schema (players, tarot, spells, artifacts)",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "supabase_schema",
+      "id": "04_SACRED_CODEX::supabase_schema"
+    },
+    {
+      "label": "players table",
+      "file_type": "code",
+      "source_file": "supabase_schema.sql",
+      "community": 4,
+      "norm_label": "players table",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "supabase_players",
+      "id": "04_SACRED_CODEX::supabase_players"
+    },
+    {
+      "label": "tarot_draws table",
+      "file_type": "code",
+      "source_file": "supabase_schema.sql",
+      "community": 4,
+      "norm_label": "tarot_draws table",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "supabase_tarot_draws",
+      "id": "04_SACRED_CODEX::supabase_tarot_draws"
+    },
+    {
+      "label": "spell_casts table",
+      "file_type": "code",
+      "source_file": "supabase_schema.sql",
+      "community": 4,
+      "norm_label": "spell_casts table",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "supabase_spell_casts",
+      "id": "04_SACRED_CODEX::supabase_spell_casts"
+    },
+    {
+      "label": "node_visits table",
+      "file_type": "code",
+      "source_file": "supabase_schema.sql",
+      "community": 4,
+      "norm_label": "node_visits table",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "supabase_node_visits",
+      "id": "04_SACRED_CODEX::supabase_node_visits"
+    },
+    {
+      "label": "artifacts table (Sacred Bazaar)",
+      "file_type": "code",
+      "source_file": "supabase_schema.sql",
+      "community": 4,
+      "norm_label": "artifacts table (sacred bazaar)",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "supabase_artifacts",
+      "id": "04_SACRED_CODEX::supabase_artifacts"
+    },
+    {
+      "label": "leaderboard view",
+      "file_type": "code",
+      "source_file": "supabase_schema.sql",
+      "community": 4,
+      "norm_label": "leaderboard view",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "supabase_leaderboard",
+      "id": "04_SACRED_CODEX::supabase_leaderboard"
+    },
+    {
+      "label": "Row Level Security Policies",
+      "file_type": "code",
+      "source_file": "supabase_schema.sql",
+      "community": 4,
+      "norm_label": "row level security policies",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "supabase_row_security",
+      "id": "04_SACRED_CODEX::supabase_row_security"
+    },
+    {
+      "label": "ChromaDB Ingestion Pipeline (ingest_game_system.py)",
+      "file_type": "code",
+      "source_file": "ingest_game_system.py",
+      "community": 2,
+      "norm_label": "chromadb ingestion pipeline (ingest_game_system.py)",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "chroma_ingestion",
+      "id": "04_SACRED_CODEX::chroma_ingestion"
+    },
+    {
+      "label": "Markdown Section Chunking Strategy",
+      "file_type": "code",
+      "source_file": "ingest_game_system.py",
+      "community": 2,
+      "norm_label": "markdown section chunking strategy",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "chroma_chunking",
+      "id": "04_SACRED_CODEX::chroma_chunking"
+    },
+    {
+      "label": "YAML Frontmatter Parser",
+      "file_type": "code",
+      "source_file": "ingest_game_system.py",
+      "community": 2,
+      "norm_label": "yaml frontmatter parser",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "chroma_frontmatter",
+      "id": "04_SACRED_CODEX::chroma_frontmatter"
+    },
+    {
+      "label": "sacredspace_canon ChromaDB Collection",
+      "file_type": "code",
+      "source_file": "ingest_game_system.py",
+      "community": 2,
+      "norm_label": "sacredspace_canon chromadb collection",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "sacredspace_canon_collection",
+      "id": "04_SACRED_CODEX::sacredspace_canon_collection"
+    },
+    {
+      "label": "NotebookLM Canon Migration (prep_notebooklm.py)",
+      "file_type": "code",
+      "source_file": "scripts/prep_notebooklm.py",
+      "community": 0,
+      "norm_label": "notebooklm canon migration (prep_notebooklm.py)",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "notebooklm_migration",
+      "id": "04_SACRED_CODEX::notebooklm_migration"
+    },
+    {
+      "label": "NOTEBOOKLM_STAGING Directory",
+      "file_type": "code",
+      "source_file": "scripts/prep_notebooklm.py",
+      "community": 0,
+      "norm_label": "notebooklm_staging directory",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "notebooklm_staging",
+      "id": "04_SACRED_CODEX::notebooklm_staging"
+    },
+    {
+      "label": "Notebook Routing Rules (6 notebooks)",
+      "file_type": "code",
+      "source_file": "scripts/prep_notebooklm.py",
+      "community": 10,
+      "norm_label": "notebook routing rules (6 notebooks)",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "notebooklm_routing",
+      "id": "04_SACRED_CODEX::notebooklm_routing"
+    },
+    {
+      "label": "Notebook: 01_SACRED_CORE",
+      "file_type": "code",
+      "source_file": "scripts/prep_notebooklm.py",
+      "community": 10,
+      "norm_label": "notebook: 01_sacred_core",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "notebook_01_sacred_core",
+      "id": "04_SACRED_CODEX::notebook_01_sacred_core"
+    },
+    {
+      "label": "Notebook: 02_LORE_VAULT",
+      "file_type": "code",
+      "source_file": "scripts/prep_notebooklm.py",
+      "community": 10,
+      "norm_label": "notebook: 02_lore_vault",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "notebook_02_lore_vault",
+      "id": "04_SACRED_CODEX::notebook_02_lore_vault"
+    },
+    {
+      "label": "Notebook: 03_GAME_SYSTEMS",
+      "file_type": "code",
+      "source_file": "scripts/prep_notebooklm.py",
+      "community": 10,
+      "norm_label": "notebook: 03_game_systems",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "notebook_03_game_systems",
+      "id": "04_SACRED_CODEX::notebook_03_game_systems"
+    },
+    {
+      "label": "Notebook: 04_KNOWLEDGE_VAULT",
+      "file_type": "code",
+      "source_file": "scripts/prep_notebooklm.py",
+      "community": 10,
+      "norm_label": "notebook: 04_knowledge_vault",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "notebook_04_knowledge_vault",
+      "id": "04_SACRED_CODEX::notebook_04_knowledge_vault"
+    },
+    {
+      "label": "Notebook: 05_FAMILY_LEGACY",
+      "file_type": "code",
+      "source_file": "scripts/prep_notebooklm.py",
+      "community": 10,
+      "norm_label": "notebook: 05_family_legacy",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "notebook_05_family_legacy",
+      "id": "04_SACRED_CODEX::notebook_05_family_legacy"
+    },
+    {
+      "label": "Notebook: 06_CREATION_LAB",
+      "file_type": "code",
+      "source_file": "scripts/prep_notebooklm.py",
+      "community": 10,
+      "norm_label": "notebook: 06_creation_lab",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "notebook_06_creation_lab",
+      "id": "04_SACRED_CODEX::notebook_06_creation_lab"
+    },
+    {
+      "label": "SACRED_FLASH_SCAFFOLD.ps1",
+      "file_type": "code",
+      "source_file": "scripts/SACRED_FLASH_SCAFFOLD.ps1",
+      "community": 5,
+      "norm_label": "sacred_flash_scaffold.ps1",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "flash_drive_scaffold",
+      "id": "04_SACRED_CODEX::flash_drive_scaffold"
+    },
+    {
+      "label": "SACRED_FLASH_POPULATE.ps1",
+      "file_type": "code",
+      "source_file": "scripts/SACRED_FLASH_POPULATE.ps1",
+      "community": 5,
+      "norm_label": "sacred_flash_populate.ps1",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "flash_drive_populate",
+      "id": "04_SACRED_CODEX::flash_drive_populate"
+    },
+    {
+      "label": "SACRED_BACKUP_TO_FLASH.ps1",
+      "file_type": "code",
+      "source_file": "scripts/SACRED_BACKUP_TO_FLASH.ps1",
+      "community": 5,
+      "norm_label": "sacred_backup_to_flash.ps1",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "flash_drive_backup",
+      "id": "04_SACRED_CODEX::flash_drive_backup"
+    },
+    {
+      "label": "SACRED_ARCANA_POPULATE.ps1",
+      "file_type": "code",
+      "source_file": "scripts/SACRED_ARCANA_POPULATE.ps1",
+      "community": 5,
+      "norm_label": "sacred_arcana_populate.ps1",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "flash_arcana_populate",
+      "id": "04_SACRED_CODEX::flash_arcana_populate"
+    },
+    {
+      "label": "SACRED_LINK_CHECK.ps1",
+      "file_type": "code",
+      "source_file": "scripts/SACRED_LINK_CHECK.ps1",
+      "community": 5,
+      "norm_label": "sacred_link_check.ps1",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "flash_link_check",
+      "id": "04_SACRED_CODEX::flash_link_check"
+    },
+    {
+      "label": "Communal Portal (PORTAL/)",
+      "file_type": "concept",
+      "source_file": "scripts/SACRED_FLASH_POPULATE.ps1",
+      "community": 5,
+      "norm_label": "communal portal (portal/)",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "flash_communal_portal",
+      "id": "04_SACRED_CODEX::flash_communal_portal"
+    },
+    {
+      "label": "SHARED_SPACE (Taylor x Jeanie)",
+      "file_type": "concept",
+      "source_file": "scripts/SACRED_FLASH_SCAFFOLD.ps1",
+      "community": 5,
+      "norm_label": "shared_space (taylor x jeanie)",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "flash_shared_space",
+      "id": "04_SACRED_CODEX::flash_shared_space"
+    },
+    {
+      "label": "ARCANA_LANDSCAPES Art Asset Directory",
+      "file_type": "concept",
+      "source_file": "scripts/SACRED_ARCANA_POPULATE.ps1",
+      "community": 5,
+      "norm_label": "arcana_landscapes art asset directory",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "flash_arcana_landscapes",
+      "id": "04_SACRED_CODEX::flash_arcana_landscapes"
+    },
+    {
+      "label": "SACRED_ENV.env Configuration",
+      "file_type": "code",
+      "source_file": "scripts/SACRED_FLASH_SCAFFOLD.ps1",
+      "community": 5,
+      "norm_label": "sacred_env.env configuration",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "flash_sacred_env",
+      "id": "04_SACRED_CODEX::flash_sacred_env"
+    },
+    {
+      "label": "Nine-Pillar Directory Tree on Flash Drive",
+      "file_type": "concept",
+      "source_file": "scripts/SACRED_FLASH_SCAFFOLD.ps1",
+      "community": 5,
+      "norm_label": "nine-pillar directory tree on flash drive",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "flash_nine_pillar_tree",
+      "id": "04_SACRED_CODEX::flash_nine_pillar_tree"
+    },
+    {
+      "label": "Asset Prefix Mapping (SIG_, CHAR_, ENV_, etc)",
+      "file_type": "code",
+      "source_file": "scripts/SACRED_ARCANA_POPULATE.ps1",
+      "community": 5,
+      "norm_label": "asset prefix mapping (sig_, char_, env_, etc)",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "flash_asset_prefix_map",
+      "id": "04_SACRED_CODEX::flash_asset_prefix_map"
+    },
+    {
+      "label": "Flash Drive Link Health Check Protocol",
+      "file_type": "code",
+      "source_file": "scripts/SACRED_LINK_CHECK.ps1",
+      "community": 5,
+      "norm_label": "flash drive link health check protocol",
+      "repo": "04_SACRED_CODEX",
+      "local_id": "flash_link_health",
+      "id": "04_SACRED_CODEX::flash_link_health"
+    },
+    {
+      "label": "sacred_watcher_config.json",
+      "file_type": "code",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L1",
+      "community": 1,
+      "norm_label": "sacred_watcher_config.json",
+      "repo": "sacred-neural-extract",
+      "local_id": "sacred_watcher_config_json",
+      "id": "sacred-neural-extract::sacred_watcher_config_json"
+    },
+    {
+      "label": "_meta",
+      "file_type": "code",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L2",
+      "community": 9,
+      "norm_label": "_meta",
+      "repo": "sacred-neural-extract",
+      "local_id": "sacred_neural_extract_sacred_watcher_config_meta",
+      "id": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_meta"
+    },
+    {
+      "label": "version",
+      "file_type": "code",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L3",
+      "community": 9,
+      "norm_label": "version",
+      "repo": "sacred-neural-extract",
+      "local_id": "sacred_neural_extract_sacred_watcher_config_meta_version",
+      "id": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_meta_version"
+    },
+    {
+      "label": "status",
+      "file_type": "code",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L4",
+      "community": 9,
+      "norm_label": "status",
+      "repo": "sacred-neural-extract",
+      "local_id": "sacred_neural_extract_sacred_watcher_config_meta_status",
+      "id": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_meta_status"
+    },
+    {
+      "label": "pillar",
+      "file_type": "code",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L5",
+      "community": 9,
+      "norm_label": "pillar",
+      "repo": "sacred-neural-extract",
+      "local_id": "sacred_neural_extract_sacred_watcher_config_meta_pillar",
+      "id": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_meta_pillar"
+    },
+    {
+      "label": "x_source_pillar",
+      "file_type": "code",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L6",
+      "community": 9,
+      "norm_label": "x_source_pillar",
+      "repo": "sacred-neural-extract",
+      "local_id": "sacred_neural_extract_sacred_watcher_config_meta_x_source_pillar",
+      "id": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_meta_x_source_pillar"
+    },
+    {
+      "label": "description",
+      "file_type": "code",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L7",
+      "community": 9,
+      "norm_label": "description",
+      "repo": "sacred-neural-extract",
+      "local_id": "sacred_neural_extract_sacred_watcher_config_meta_description",
+      "id": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_meta_description"
+    },
+    {
+      "label": "last_reviewed",
+      "file_type": "code",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L8",
+      "community": 9,
+      "norm_label": "last_reviewed",
+      "repo": "sacred-neural-extract",
+      "local_id": "sacred_neural_extract_sacred_watcher_config_meta_last_reviewed",
+      "id": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_meta_last_reviewed"
+    },
+    {
+      "label": "reviewer",
+      "file_type": "code",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L9",
+      "community": 9,
+      "norm_label": "reviewer",
+      "repo": "sacred-neural-extract",
+      "local_id": "sacred_neural_extract_sacred_watcher_config_meta_reviewer",
+      "id": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_meta_reviewer"
+    },
+    {
+      "label": "conflict_mode",
+      "file_type": "code",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L12",
+      "community": 1,
+      "norm_label": "conflict_mode",
+      "repo": "sacred-neural-extract",
+      "local_id": "sacred_neural_extract_sacred_watcher_config_conflict_mode",
+      "id": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_conflict_mode"
+    },
+    {
+      "label": "canon_files",
+      "file_type": "code",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L13",
+      "community": 1,
+      "norm_label": "canon_files",
+      "repo": "sacred-neural-extract",
+      "local_id": "sacred_neural_extract_sacred_watcher_config_conflict_mode_canon_files",
+      "id": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_conflict_mode_canon_files"
+    },
+    {
+      "label": "distilled_files",
+      "file_type": "code",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L14",
+      "community": 1,
+      "norm_label": "distilled_files",
+      "repo": "sacred-neural-extract",
+      "local_id": "sacred_neural_extract_sacred_watcher_config_conflict_mode_distilled_files",
+      "id": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_conflict_mode_distilled_files"
+    },
+    {
+      "label": "draft_active_files",
+      "file_type": "code",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L15",
+      "community": 1,
+      "norm_label": "draft_active_files",
+      "repo": "sacred-neural-extract",
+      "local_id": "sacred_neural_extract_sacred_watcher_config_conflict_mode_draft_active_files",
+      "id": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_conflict_mode_draft_active_files"
+    },
+    {
+      "label": "gemini_authored_files",
+      "file_type": "code",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L16",
+      "community": 1,
+      "norm_label": "gemini_authored_files",
+      "repo": "sacred-neural-extract",
+      "local_id": "sacred_neural_extract_sacred_watcher_config_conflict_mode_gemini_authored_files",
+      "id": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_conflict_mode_gemini_authored_files"
+    },
+    {
+      "label": "untagged_files",
+      "file_type": "code",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L17",
+      "community": 1,
+      "norm_label": "untagged_files",
+      "repo": "sacred-neural-extract",
+      "local_id": "sacred_neural_extract_sacred_watcher_config_conflict_mode_untagged_files",
+      "id": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_conflict_mode_untagged_files"
+    },
+    {
+      "label": "conflict_log",
+      "file_type": "code",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L18",
+      "community": 1,
+      "norm_label": "conflict_log",
+      "repo": "sacred-neural-extract",
+      "local_id": "sacred_neural_extract_sacred_watcher_config_conflict_mode_conflict_log",
+      "id": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_conflict_mode_conflict_log"
+    },
+    {
+      "label": "pillar_paths",
+      "file_type": "code",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L21",
+      "community": 7,
+      "norm_label": "pillar_paths",
+      "repo": "sacred-neural-extract",
+      "local_id": "sacred_neural_extract_sacred_watcher_config_pillar_paths",
+      "id": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_pillar_paths"
+    },
+    {
+      "label": "01_CORE",
+      "file_type": "code",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L22",
+      "community": 7,
+      "norm_label": "01_core",
+      "repo": "sacred-neural-extract",
+      "local_id": "sacred_neural_extract_sacred_watcher_config_pillar_paths_01_core",
+      "id": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_pillar_paths_01_core"
+    },
+    {
+      "label": "02_SYSTEMS",
+      "file_type": "code",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L23",
+      "community": 7,
+      "norm_label": "02_systems",
+      "repo": "sacred-neural-extract",
+      "local_id": "sacred_neural_extract_sacred_watcher_config_pillar_paths_02_systems",
+      "id": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_pillar_paths_02_systems"
+    },
+    {
+      "label": "03_NEURAL",
+      "file_type": "code",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L24",
+      "community": 7,
+      "norm_label": "03_neural",
+      "repo": "sacred-neural-extract",
+      "local_id": "sacred_neural_extract_sacred_watcher_config_pillar_paths_03_neural",
+      "id": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_pillar_paths_03_neural"
+    },
+    {
+      "label": "04_CODEX",
+      "file_type": "code",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L25",
+      "community": 7,
+      "norm_label": "04_codex",
+      "repo": "sacred-neural-extract",
+      "local_id": "sacred_neural_extract_sacred_watcher_config_pillar_paths_04_codex",
+      "id": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_pillar_paths_04_codex"
+    },
+    {
+      "label": "05_MEMORY",
+      "file_type": "code",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L26",
+      "community": 7,
+      "norm_label": "05_memory",
+      "repo": "sacred-neural-extract",
+      "local_id": "sacred_neural_extract_sacred_watcher_config_pillar_paths_05_memory",
+      "id": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_pillar_paths_05_memory"
+    },
+    {
+      "label": "06_AGENTS",
+      "file_type": "code",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L27",
+      "community": 7,
+      "norm_label": "06_agents",
+      "repo": "sacred-neural-extract",
+      "local_id": "sacred_neural_extract_sacred_watcher_config_pillar_paths_06_agents",
+      "id": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_pillar_paths_06_agents"
+    },
+    {
+      "label": "07_SOCIAL",
+      "file_type": "code",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L28",
+      "community": 7,
+      "norm_label": "07_social",
+      "repo": "sacred-neural-extract",
+      "local_id": "sacred_neural_extract_sacred_watcher_config_pillar_paths_07_social",
+      "id": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_pillar_paths_07_social"
+    },
+    {
+      "label": "08_LEARNING",
+      "file_type": "code",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L29",
+      "community": 7,
+      "norm_label": "08_learning",
+      "repo": "sacred-neural-extract",
+      "local_id": "sacred_neural_extract_sacred_watcher_config_pillar_paths_08_learning",
+      "id": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_pillar_paths_08_learning"
+    },
+    {
+      "label": "09_MARKET",
+      "file_type": "code",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L30",
+      "community": 7,
+      "norm_label": "09_market",
+      "repo": "sacred-neural-extract",
+      "local_id": "sacred_neural_extract_sacred_watcher_config_pillar_paths_09_market",
+      "id": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_pillar_paths_09_market"
+    },
+    {
+      "label": "cloud_pillar_paths",
+      "file_type": "code",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L33",
+      "community": 6,
+      "norm_label": "cloud_pillar_paths",
+      "repo": "sacred-neural-extract",
+      "local_id": "sacred_neural_extract_sacred_watcher_config_cloud_pillar_paths",
+      "id": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_cloud_pillar_paths"
+    },
+    {
+      "label": "01_CORE",
+      "file_type": "code",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L34",
+      "community": 6,
+      "norm_label": "01_core",
+      "repo": "sacred-neural-extract",
+      "local_id": "sacred_neural_extract_sacred_watcher_config_cloud_pillar_paths_01_core",
+      "id": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_cloud_pillar_paths_01_core"
+    },
+    {
+      "label": "02_SYSTEMS",
+      "file_type": "code",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L35",
+      "community": 6,
+      "norm_label": "02_systems",
+      "repo": "sacred-neural-extract",
+      "local_id": "sacred_neural_extract_sacred_watcher_config_cloud_pillar_paths_02_systems",
+      "id": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_cloud_pillar_paths_02_systems"
+    },
+    {
+      "label": "03_NEURAL",
+      "file_type": "code",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L36",
+      "community": 6,
+      "norm_label": "03_neural",
+      "repo": "sacred-neural-extract",
+      "local_id": "sacred_neural_extract_sacred_watcher_config_cloud_pillar_paths_03_neural",
+      "id": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_cloud_pillar_paths_03_neural"
+    },
+    {
+      "label": "04_CODEX",
+      "file_type": "code",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L37",
+      "community": 6,
+      "norm_label": "04_codex",
+      "repo": "sacred-neural-extract",
+      "local_id": "sacred_neural_extract_sacred_watcher_config_cloud_pillar_paths_04_codex",
+      "id": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_cloud_pillar_paths_04_codex"
+    },
+    {
+      "label": "05_MEMORY",
+      "file_type": "code",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L38",
+      "community": 6,
+      "norm_label": "05_memory",
+      "repo": "sacred-neural-extract",
+      "local_id": "sacred_neural_extract_sacred_watcher_config_cloud_pillar_paths_05_memory",
+      "id": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_cloud_pillar_paths_05_memory"
+    },
+    {
+      "label": "06_AGENTS",
+      "file_type": "code",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L39",
+      "community": 6,
+      "norm_label": "06_agents",
+      "repo": "sacred-neural-extract",
+      "local_id": "sacred_neural_extract_sacred_watcher_config_cloud_pillar_paths_06_agents",
+      "id": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_cloud_pillar_paths_06_agents"
+    },
+    {
+      "label": "07_SOCIAL",
+      "file_type": "code",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L40",
+      "community": 6,
+      "norm_label": "07_social",
+      "repo": "sacred-neural-extract",
+      "local_id": "sacred_neural_extract_sacred_watcher_config_cloud_pillar_paths_07_social",
+      "id": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_cloud_pillar_paths_07_social"
+    },
+    {
+      "label": "08_LEARNING",
+      "file_type": "code",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L41",
+      "community": 6,
+      "norm_label": "08_learning",
+      "repo": "sacred-neural-extract",
+      "local_id": "sacred_neural_extract_sacred_watcher_config_cloud_pillar_paths_08_learning",
+      "id": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_cloud_pillar_paths_08_learning"
+    },
+    {
+      "label": "09_MARKET",
+      "file_type": "code",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L42",
+      "community": 6,
+      "norm_label": "09_market",
+      "repo": "sacred-neural-extract",
+      "local_id": "sacred_neural_extract_sacred_watcher_config_cloud_pillar_paths_09_market",
+      "id": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_cloud_pillar_paths_09_market"
+    },
+    {
+      "label": "protected_paths",
+      "file_type": "code",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L45",
+      "community": 1,
+      "norm_label": "protected_paths",
+      "repo": "sacred-neural-extract",
+      "local_id": "sacred_neural_extract_sacred_watcher_config_protected_paths",
+      "id": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_protected_paths"
+    },
+    {
+      "label": "_PERSONAL",
+      "file_type": "code",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L46",
+      "community": 1,
+      "norm_label": "_personal",
+      "repo": "sacred-neural-extract",
+      "local_id": "sacred_neural_extract_sacred_watcher_config_protected_paths_personal",
+      "id": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_protected_paths_personal"
+    },
+    {
+      "label": "_ARCHIVE",
+      "file_type": "code",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L47",
+      "community": 1,
+      "norm_label": "_archive",
+      "repo": "sacred-neural-extract",
+      "local_id": "sacred_neural_extract_sacred_watcher_config_protected_paths_archive",
+      "id": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_protected_paths_archive"
+    },
+    {
+      "label": "notebooklm_safe_path",
+      "file_type": "code",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L50",
+      "community": 1,
+      "norm_label": "notebooklm_safe_path",
+      "repo": "sacred-neural-extract",
+      "local_id": "sacred_neural_extract_sacred_watcher_config_notebooklm_safe_path",
+      "id": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_notebooklm_safe_path"
+    },
+    {
+      "label": "never_ingest",
+      "file_type": "code",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L52",
+      "community": 1,
+      "norm_label": "never_ingest",
+      "repo": "sacred-neural-extract",
+      "local_id": "sacred_neural_extract_sacred_watcher_config_never_ingest",
+      "id": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_never_ingest"
+    },
+    {
+      "label": "security_log",
+      "file_type": "code",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L73",
+      "community": 1,
+      "norm_label": "security_log",
+      "repo": "sacred-neural-extract",
+      "local_id": "sacred_neural_extract_sacred_watcher_config_security_log",
+      "id": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_security_log"
+    },
+    {
+      "label": "main_log",
+      "file_type": "code",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L74",
+      "community": 1,
+      "norm_label": "main_log",
+      "repo": "sacred-neural-extract",
+      "local_id": "sacred_neural_extract_sacred_watcher_config_main_log",
+      "id": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_main_log"
+    },
+    {
+      "label": "lock_protocol",
+      "file_type": "code",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L76",
+      "community": 1,
+      "norm_label": "lock_protocol",
+      "repo": "sacred-neural-extract",
+      "local_id": "sacred_neural_extract_sacred_watcher_config_lock_protocol",
+      "id": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_lock_protocol"
+    },
+    {
+      "label": "locked_status_string",
+      "file_type": "code",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L77",
+      "community": 1,
+      "norm_label": "locked_status_string",
+      "repo": "sacred-neural-extract",
+      "local_id": "sacred_neural_extract_sacred_watcher_config_lock_protocol_locked_status_string",
+      "id": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_lock_protocol_locked_status_string"
+    },
+    {
+      "label": "header_scan_lines",
+      "file_type": "code",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L78",
+      "community": 1,
+      "norm_label": "header_scan_lines",
+      "repo": "sacred-neural-extract",
+      "local_id": "sacred_neural_extract_sacred_watcher_config_lock_protocol_header_scan_lines",
+      "id": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_lock_protocol_header_scan_lines"
+    },
+    {
+      "label": "retry_interval_minutes",
+      "file_type": "code",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L79",
+      "community": 1,
+      "norm_label": "retry_interval_minutes",
+      "repo": "sacred-neural-extract",
+      "local_id": "sacred_neural_extract_sacred_watcher_config_lock_protocol_retry_interval_minutes",
+      "id": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_lock_protocol_retry_interval_minutes"
+    },
+    {
+      "label": "locked_queue_file",
+      "file_type": "code",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L80",
+      "community": 1,
+      "norm_label": "locked_queue_file",
+      "repo": "sacred-neural-extract",
+      "local_id": "sacred_neural_extract_sacred_watcher_config_lock_protocol_locked_queue_file",
+      "id": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_lock_protocol_locked_queue_file"
+    },
+    {
+      "label": "mismatch_handling",
+      "file_type": "code",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L83",
+      "community": 1,
+      "norm_label": "mismatch_handling",
+      "repo": "sacred-neural-extract",
+      "local_id": "sacred_neural_extract_sacred_watcher_config_mismatch_handling",
+      "id": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_mismatch_handling"
+    },
+    {
+      "label": "x_source_pillar_field",
+      "file_type": "code",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L84",
+      "community": 1,
+      "norm_label": "x_source_pillar_field",
+      "repo": "sacred-neural-extract",
+      "local_id": "sacred_neural_extract_sacred_watcher_config_mismatch_handling_x_source_pillar_field",
+      "id": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_mismatch_handling_x_source_pillar_field"
+    },
+    {
+      "label": "mismatch_destination",
+      "file_type": "code",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L85",
+      "community": 1,
+      "norm_label": "mismatch_destination",
+      "repo": "sacred-neural-extract",
+      "local_id": "sacred_neural_extract_sacred_watcher_config_mismatch_handling_mismatch_destination",
+      "id": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_mismatch_handling_mismatch_destination"
+    },
+    {
+      "label": "mismatch_log",
+      "file_type": "code",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L86",
+      "community": 1,
+      "norm_label": "mismatch_log",
+      "repo": "sacred-neural-extract",
+      "local_id": "sacred_neural_extract_sacred_watcher_config_mismatch_handling_mismatch_log",
+      "id": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_mismatch_handling_mismatch_log"
+    },
+    {
+      "label": "mission_state_path",
+      "file_type": "code",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L89",
+      "community": 1,
+      "norm_label": "mission_state_path",
+      "repo": "sacred-neural-extract",
+      "local_id": "sacred_neural_extract_sacred_watcher_config_mission_state_path",
+      "id": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_mission_state_path"
+    },
+    {
+      "label": "ingest_logic",
+      "file_type": "code",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L91",
+      "community": 1,
+      "norm_label": "ingest_logic",
+      "repo": "sacred-neural-extract",
+      "local_id": "sacred_neural_extract_sacred_watcher_config_ingest_logic",
+      "id": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_ingest_logic"
+    },
+    {
+      "label": "open_ingestion_when_no_mission",
+      "file_type": "code",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L92",
+      "community": 1,
+      "norm_label": "open_ingestion_when_no_mission",
+      "repo": "sacred-neural-extract",
+      "local_id": "sacred_neural_extract_sacred_watcher_config_open_ingestion_when_no_mission",
+      "id": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_open_ingestion_when_no_mission"
+    },
+    {
+      "label": "notebook_routing.json",
+      "file_type": "code",
+      "source_file": "notebook_routing.json",
+      "source_location": "L1",
+      "community": 3,
+      "norm_label": "notebook_routing.json",
+      "repo": "sacred-neural-extract",
+      "local_id": "notebook_routing_json",
+      "id": "sacred-neural-extract::notebook_routing_json"
+    },
+    {
+      "label": "_meta",
+      "file_type": "code",
+      "source_file": "notebook_routing.json",
+      "source_location": "L2",
+      "community": 3,
+      "norm_label": "_meta",
+      "repo": "sacred-neural-extract",
+      "local_id": "sacred_neural_extract_notebook_routing_meta",
+      "id": "sacred-neural-extract::sacred_neural_extract_notebook_routing_meta"
+    },
+    {
+      "label": "version",
+      "file_type": "code",
+      "source_file": "notebook_routing.json",
+      "source_location": "L3",
+      "community": 3,
+      "norm_label": "version",
+      "repo": "sacred-neural-extract",
+      "local_id": "sacred_neural_extract_notebook_routing_meta_version",
+      "id": "sacred-neural-extract::sacred_neural_extract_notebook_routing_meta_version"
+    },
+    {
+      "label": "status",
+      "file_type": "code",
+      "source_file": "notebook_routing.json",
+      "source_location": "L4",
+      "community": 3,
+      "norm_label": "status",
+      "repo": "sacred-neural-extract",
+      "local_id": "sacred_neural_extract_notebook_routing_meta_status",
+      "id": "sacred-neural-extract::sacred_neural_extract_notebook_routing_meta_status"
+    },
+    {
+      "label": "pillar",
+      "file_type": "code",
+      "source_file": "notebook_routing.json",
+      "source_location": "L5",
+      "community": 3,
+      "norm_label": "pillar",
+      "repo": "sacred-neural-extract",
+      "local_id": "sacred_neural_extract_notebook_routing_meta_pillar",
+      "id": "sacred-neural-extract::sacred_neural_extract_notebook_routing_meta_pillar"
+    },
+    {
+      "label": "x_source_pillar",
+      "file_type": "code",
+      "source_file": "notebook_routing.json",
+      "source_location": "L6",
+      "community": 3,
+      "norm_label": "x_source_pillar",
+      "repo": "sacred-neural-extract",
+      "local_id": "sacred_neural_extract_notebook_routing_meta_x_source_pillar",
+      "id": "sacred-neural-extract::sacred_neural_extract_notebook_routing_meta_x_source_pillar"
+    },
+    {
+      "label": "description",
+      "file_type": "code",
+      "source_file": "notebook_routing.json",
+      "source_location": "L7",
+      "community": 3,
+      "norm_label": "description",
+      "repo": "sacred-neural-extract",
+      "local_id": "sacred_neural_extract_notebook_routing_meta_description",
+      "id": "sacred-neural-extract::sacred_neural_extract_notebook_routing_meta_description"
+    },
+    {
+      "label": "last_reviewed",
+      "file_type": "code",
+      "source_file": "notebook_routing.json",
+      "source_location": "L8",
+      "community": 3,
+      "norm_label": "last_reviewed",
+      "repo": "sacred-neural-extract",
+      "local_id": "sacred_neural_extract_notebook_routing_meta_last_reviewed",
+      "id": "sacred-neural-extract::sacred_neural_extract_notebook_routing_meta_last_reviewed"
+    },
+    {
+      "label": "reviewer",
+      "file_type": "code",
+      "source_file": "notebook_routing.json",
+      "source_location": "L9",
+      "community": 3,
+      "norm_label": "reviewer",
+      "repo": "sacred-neural-extract",
+      "local_id": "sacred_neural_extract_notebook_routing_meta_reviewer",
+      "id": "sacred-neural-extract::sacred_neural_extract_notebook_routing_meta_reviewer"
+    },
+    {
+      "label": "rule",
+      "file_type": "code",
+      "source_file": "notebook_routing.json",
+      "source_location": "L10",
+      "community": 3,
+      "norm_label": "rule",
+      "repo": "sacred-neural-extract",
+      "local_id": "sacred_neural_extract_notebook_routing_meta_rule",
+      "id": "sacred-neural-extract::sacred_neural_extract_notebook_routing_meta_rule"
+    },
+    {
+      "label": "notebooks",
+      "file_type": "code",
+      "source_file": "notebook_routing.json",
+      "source_location": "L13",
+      "community": 3,
+      "norm_label": "notebooks",
+      "repo": "sacred-neural-extract",
+      "local_id": "sacred_neural_extract_notebook_routing_notebooks",
+      "id": "sacred-neural-extract::sacred_neural_extract_notebook_routing_notebooks"
+    },
+    {
+      "label": "global_rules",
+      "file_type": "code",
+      "source_file": "notebook_routing.json",
+      "source_location": "L187",
+      "community": 3,
+      "norm_label": "global_rules",
+      "repo": "sacred-neural-extract",
+      "local_id": "sacred_neural_extract_notebook_routing_global_rules",
+      "id": "sacred-neural-extract::sacred_neural_extract_notebook_routing_global_rules"
+    },
+    {
+      "label": "no_duplication_across_pillars",
+      "file_type": "code",
+      "source_file": "notebook_routing.json",
+      "source_location": "L188",
+      "community": 3,
+      "norm_label": "no_duplication_across_pillars",
+      "repo": "sacred-neural-extract",
+      "local_id": "sacred_neural_extract_notebook_routing_global_rules_no_duplication_across_pillars",
+      "id": "sacred-neural-extract::sacred_neural_extract_notebook_routing_global_rules_no_duplication_across_pillars"
+    },
+    {
+      "label": "point_at_folder_not_files",
+      "file_type": "code",
+      "source_file": "notebook_routing.json",
+      "source_location": "L189",
+      "community": 3,
+      "norm_label": "point_at_folder_not_files",
+      "repo": "sacred-neural-extract",
+      "local_id": "sacred_neural_extract_notebook_routing_global_rules_point_at_folder_not_files",
+      "id": "sacred-neural-extract::sacred_neural_extract_notebook_routing_global_rules_point_at_folder_not_files"
+    },
+    {
+      "label": "auto_sync_requires_drive_folder_not_upload",
+      "file_type": "code",
+      "source_file": "notebook_routing.json",
+      "source_location": "L190",
+      "community": 3,
+      "norm_label": "auto_sync_requires_drive_folder_not_upload",
+      "repo": "sacred-neural-extract",
+      "local_id": "sacred_neural_extract_notebook_routing_global_rules_auto_sync_requires_drive_folder_not_upload",
+      "id": "sacred-neural-extract::sacred_neural_extract_notebook_routing_global_rules_auto_sync_requires_drive_folder_not_upload"
+    },
+    {
+      "label": "personal_folder_auto_sync",
+      "file_type": "code",
+      "source_file": "notebook_routing.json",
+      "source_location": "L191",
+      "community": 3,
+      "norm_label": "personal_folder_auto_sync",
+      "repo": "sacred-neural-extract",
+      "local_id": "sacred_neural_extract_notebook_routing_global_rules_personal_folder_auto_sync",
+      "id": "sacred-neural-extract::sacred_neural_extract_notebook_routing_global_rules_personal_folder_auto_sync"
+    },
+    {
+      "label": "conflict_on_duplicate_source_docs",
+      "file_type": "code",
+      "source_file": "notebook_routing.json",
+      "source_location": "L192",
+      "community": 3,
+      "norm_label": "conflict_on_duplicate_source_docs",
+      "repo": "sacred-neural-extract",
+      "local_id": "sacred_neural_extract_notebook_routing_global_rules_conflict_on_duplicate_source_docs",
+      "id": "sacred-neural-extract::sacred_neural_extract_notebook_routing_global_rules_conflict_on_duplicate_source_docs"
+    },
+    {
+      "label": "Conflict Mode Configuration",
+      "file_type": "code",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "conflict_mode",
+      "captured_at": "2026-06-11",
+      "community": 11,
+      "norm_label": "conflict mode configuration",
+      "repo": "sacred-neural-extract",
+      "local_id": "sacred_watcher_config_conflict_mode",
+      "id": "sacred-neural-extract::sacred_watcher_config_conflict_mode"
+    },
+    {
+      "label": "Pillar Paths (Local)",
+      "file_type": "code",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "pillar_paths",
+      "captured_at": "2026-06-11",
+      "community": 11,
+      "norm_label": "pillar paths (local)",
+      "repo": "sacred-neural-extract",
+      "local_id": "sacred_watcher_config_pillar_paths",
+      "id": "sacred-neural-extract::sacred_watcher_config_pillar_paths"
+    },
+    {
+      "label": "NotebookLM Routing Map",
+      "file_type": "code",
+      "source_file": "notebook_routing.json",
+      "source_location": "notebooks",
+      "captured_at": "2026-06-11",
+      "community": 11,
+      "norm_label": "notebooklm routing map",
+      "repo": "sacred-neural-extract",
+      "local_id": "notebook_routing_notebooks",
+      "id": "sacred-neural-extract::notebook_routing_notebooks"
+    },
+    {
+      "label": "Root Words Foundation",
+      "file_type": "document",
+      "source_file": "SACRED_WORD_BANK.md",
+      "source_location": "I. ROOT WORDS",
+      "author": "ELIAS",
+      "community": 11,
+      "norm_label": "root words foundation",
+      "repo": "sacred-neural-extract",
+      "local_id": "sacred_word_bank_root_words",
+      "id": "sacred-neural-extract::sacred_word_bank_root_words"
+    },
+    {
+      "label": "Structural Architecture Words",
+      "file_type": "document",
+      "source_file": "SACRED_WORD_BANK.md",
+      "source_location": "II. STRUCTURAL WORDS",
+      "author": "ELIAS",
+      "community": 13,
+      "norm_label": "structural architecture words",
+      "repo": "sacred-neural-extract",
+      "local_id": "sacred_word_bank_structural_words",
+      "id": "sacred-neural-extract::sacred_word_bank_structural_words"
+    },
+    {
+      "label": "D1-D6 Operations Ritual",
+      "file_type": "document",
+      "source_file": "sacred_council_ops_sequence.md",
+      "source_location": "D1 through D6",
+      "author": "The Forge",
+      "community": 11,
+      "norm_label": "d1-d6 operations ritual",
+      "repo": "sacred-neural-extract",
+      "local_id": "sacred_council_ops_sequence_d1_d6",
+      "id": "sacred-neural-extract::sacred_council_ops_sequence_d1_d6"
+    },
+    {
+      "label": "Sacred Themes & Components Subsystem",
+      "file_type": "document",
+      "source_file": "SUBSYSTEM_MANIFEST.md",
+      "source_location": "Directory Manifest",
+      "author": "AURORA",
+      "community": 11,
+      "norm_label": "sacred themes & components subsystem",
+      "repo": "sacred-neural-extract",
+      "local_id": "subsystem_manifest_themes_components",
+      "id": "sacred-neural-extract::subsystem_manifest_themes_components"
+    },
+    {
+      "label": "GR\u2206M\u2206 Cipher Sage Persona",
+      "file_type": "code",
+      "source_file": "HERMES_GRAMA_PERSONA.md",
+      "source_location": "Identity",
+      "author": "GR\u2206M\u2206",
+      "community": 13,
+      "norm_label": "gr\u2206m\u2206 cipher sage persona",
+      "repo": "sacred-neural-extract",
+      "local_id": "hermes_grama_persona_identity",
+      "id": "sacred-neural-extract::hermes_grama_persona_identity"
+    },
+    {
+      "label": "Hermes MCP Tools",
+      "file_type": "code",
+      "source_file": "HERMES_GRAMA_PERSONA.md",
+      "source_location": "Seven MCP Tools",
+      "captured_at": "2026-05-16",
+      "community": 13,
+      "norm_label": "hermes mcp tools",
+      "repo": "sacred-neural-extract",
+      "local_id": "hermes_grama_persona_mcp_tools",
+      "id": "sacred-neural-extract::hermes_grama_persona_mcp_tools"
+    }
+  ],
+  "links": [
+    {
+      "relation": "composed_of",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "source": "04_SACRED_CODEX::sacredspace_os",
+      "target": "04_SACRED_CODEX::system_nine_pillars"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "source": "04_SACRED_CODEX::sacredspace_os",
+      "target": "04_SACRED_CODEX::local_first_architecture"
+    },
+    {
+      "relation": "runs_on",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "source": "04_SACRED_CODEX::sacredspace_os",
+      "target": "04_SACRED_CODEX::wsl2_ubuntu"
+    },
+    {
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "source": "04_SACRED_CODEX::sacredspace_os",
+      "target": "04_SACRED_CODEX::fastapi_spine"
+    },
+    {
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "source": "04_SACRED_CODEX::sacredspace_os",
+      "target": "04_SACRED_CODEX::ollama_llm"
+    },
+    {
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "source": "04_SACRED_CODEX::sacredspace_os",
+      "target": "04_SACRED_CODEX::chromadb_vector"
+    },
+    {
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "source": "04_SACRED_CODEX::sacredspace_os",
+      "target": "04_SACRED_CODEX::sqlite_memory"
+    },
+    {
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "source": "04_SACRED_CODEX::sacredspace_os",
+      "target": "04_SACRED_CODEX::mission_control"
+    },
+    {
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "source": "04_SACRED_CODEX::sacredspace_os",
+      "target": "04_SACRED_CODEX::omniparse"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "source": "04_SACRED_CODEX::sacredspace_os",
+      "target": "04_SACRED_CODEX::jeanie_council"
+    },
+    {
+      "relation": "created_by",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "source": "04_SACRED_CODEX::sacredspace_os",
+      "target": "04_SACRED_CODEX::taylor_creator"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "source": "04_SACRED_CODEX::sacredspace_os",
+      "target": "04_SACRED_CODEX::game_layer"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "source": "04_SACRED_CODEX::system_nine_pillars",
+      "target": "04_SACRED_CODEX::pillar_01_obsidian_vaults"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "source": "04_SACRED_CODEX::system_nine_pillars",
+      "target": "04_SACRED_CODEX::pillar_02_council_grove"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "source": "04_SACRED_CODEX::system_nine_pillars",
+      "target": "04_SACRED_CODEX::pillar_03_neural_forest"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "source": "04_SACRED_CODEX::system_nine_pillars",
+      "target": "04_SACRED_CODEX::pillar_04_sacred_codex"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "source": "04_SACRED_CODEX::system_nine_pillars",
+      "target": "04_SACRED_CODEX::pillar_05_memory_engine"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "source": "04_SACRED_CODEX::system_nine_pillars",
+      "target": "04_SACRED_CODEX::pillar_06_agent_layer"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "source": "04_SACRED_CODEX::system_nine_pillars",
+      "target": "04_SACRED_CODEX::pillar_07_social_mothership"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "source": "04_SACRED_CODEX::system_nine_pillars",
+      "target": "04_SACRED_CODEX::pillar_08_learning_path"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "source": "04_SACRED_CODEX::system_nine_pillars",
+      "target": "04_SACRED_CODEX::pillar_09_sacred_market"
+    },
+    {
+      "relation": "mirrors",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACRED_SIGIL_TERMINAL_COMPLETE_OVERVIEW.md",
+      "source": "04_SACRED_CODEX::system_nine_pillars",
+      "target": "04_SACRED_CODEX::sacred_sigil_terminal"
+    },
+    {
+      "relation": "mirrors",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/SACRED_FLASH_SCAFFOLD.ps1",
+      "source": "04_SACRED_CODEX::system_nine_pillars",
+      "target": "04_SACRED_CODEX::flash_nine_pillar_tree"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACRED_SIGIL_TERMINAL_COMPLETE_OVERVIEW.md",
+      "source": "04_SACRED_CODEX::pillar_01_obsidian_vaults",
+      "target": "04_SACRED_CODEX::sst_dimension_vault"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "COPYQ_WIRE.md",
+      "source": "04_SACRED_CODEX::pillar_01_obsidian_vaults",
+      "target": "04_SACRED_CODEX::copyq_tab_vault"
+    },
+    {
+      "relation": "reads_from",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ingest_game_system.py",
+      "source": "04_SACRED_CODEX::pillar_01_obsidian_vaults",
+      "target": "04_SACRED_CODEX::chroma_ingestion"
+    },
+    {
+      "relation": "reads_from",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/prep_notebooklm.py",
+      "source": "04_SACRED_CODEX::pillar_01_obsidian_vaults",
+      "target": "04_SACRED_CODEX::notebooklm_migration"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACRED_SIGIL_TERMINAL_COMPLETE_OVERVIEW.md",
+      "source": "04_SACRED_CODEX::pillar_02_council_grove",
+      "target": "04_SACRED_CODEX::sst_dimension_grove"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "COPYQ_WIRE.md",
+      "source": "04_SACRED_CODEX::pillar_02_council_grove",
+      "target": "04_SACRED_CODEX::copyq_tab_council"
+    },
+    {
+      "relation": "hosts",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "source": "04_SACRED_CODEX::pillar_03_neural_forest",
+      "target": "04_SACRED_CODEX::ollama_llm"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACRED_SIGIL_TERMINAL_COMPLETE_OVERVIEW.md",
+      "source": "04_SACRED_CODEX::pillar_03_neural_forest",
+      "target": "04_SACRED_CODEX::sst_dimension_forest"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "COPYQ_WIRE.md",
+      "source": "04_SACRED_CODEX::pillar_03_neural_forest",
+      "target": "04_SACRED_CODEX::copyq_tab_council"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACRED_SIGIL_TERMINAL_COMPLETE_OVERVIEW.md",
+      "source": "04_SACRED_CODEX::pillar_04_sacred_codex",
+      "target": "04_SACRED_CODEX::sst_dimension_codex"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "COPYQ_WIRE.md",
+      "source": "04_SACRED_CODEX::pillar_04_sacred_codex",
+      "target": "04_SACRED_CODEX::copyq_tab_codex"
+    },
+    {
+      "relation": "reads_from",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/prep_notebooklm.py",
+      "source": "04_SACRED_CODEX::pillar_04_sacred_codex",
+      "target": "04_SACRED_CODEX::notebooklm_migration"
+    },
+    {
+      "relation": "hosts",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "source": "04_SACRED_CODEX::pillar_05_memory_engine",
+      "target": "04_SACRED_CODEX::chromadb_vector"
+    },
+    {
+      "relation": "hosts",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "source": "04_SACRED_CODEX::pillar_05_memory_engine",
+      "target": "04_SACRED_CODEX::sqlite_memory"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "source": "04_SACRED_CODEX::pillar_05_memory_engine",
+      "target": "04_SACRED_CODEX::memory_motes"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACRED_SIGIL_TERMINAL_COMPLETE_OVERVIEW.md",
+      "source": "04_SACRED_CODEX::pillar_05_memory_engine",
+      "target": "04_SACRED_CODEX::sst_dimension_memory"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "COPYQ_WIRE.md",
+      "source": "04_SACRED_CODEX::pillar_05_memory_engine",
+      "target": "04_SACRED_CODEX::copyq_tab_memory"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACRED_SIGIL_TERMINAL_COMPLETE_OVERVIEW.md",
+      "source": "04_SACRED_CODEX::pillar_06_agent_layer",
+      "target": "04_SACRED_CODEX::sst_dimension_agent"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "COPYQ_WIRE.md",
+      "source": "04_SACRED_CODEX::pillar_06_agent_layer",
+      "target": "04_SACRED_CODEX::copyq_tab_vault"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACRED_SIGIL_TERMINAL_COMPLETE_OVERVIEW.md",
+      "source": "04_SACRED_CODEX::pillar_07_social_mothership",
+      "target": "04_SACRED_CODEX::sst_dimension_social"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "COPYQ_WIRE.md",
+      "source": "04_SACRED_CODEX::pillar_07_social_mothership",
+      "target": "04_SACRED_CODEX::copyq_tab_market"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACRED_SIGIL_TERMINAL_COMPLETE_OVERVIEW.md",
+      "source": "04_SACRED_CODEX::pillar_08_learning_path",
+      "target": "04_SACRED_CODEX::sst_dimension_path"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACRED_SIGIL_TERMINAL_COMPLETE_OVERVIEW.md",
+      "source": "04_SACRED_CODEX::pillar_09_sacred_market",
+      "target": "04_SACRED_CODEX::sst_dimension_market"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "COPYQ_WIRE.md",
+      "source": "04_SACRED_CODEX::pillar_09_sacred_market",
+      "target": "04_SACRED_CODEX::copyq_tab_market"
+    },
+    {
+      "relation": "hosts",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACRED_SIGIL_TERMINAL_COMPLETE_OVERVIEW.md",
+      "source": "04_SACRED_CODEX::fastapi_spine",
+      "target": "04_SACRED_CODEX::sst_backend"
+    },
+    {
+      "relation": "hosts",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "COPYQ_WIRE.md",
+      "source": "04_SACRED_CODEX::fastapi_spine",
+      "target": "04_SACRED_CODEX::copyq_routes"
+    },
+    {
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ingest_game_system.py",
+      "source": "04_SACRED_CODEX::chromadb_vector",
+      "target": "04_SACRED_CODEX::chroma_ingestion"
+    },
+    {
+      "relation": "manages",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "source": "04_SACRED_CODEX::council_the_anvil",
+      "target": "04_SACRED_CODEX::agent_iris"
+    },
+    {
+      "relation": "manages",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "source": "04_SACRED_CODEX::council_sacred_smith",
+      "target": "04_SACRED_CODEX::agent_hermes"
+    },
+    {
+      "relation": "is_identity_of",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "source": "04_SACRED_CODEX::council_grama",
+      "target": "04_SACRED_CODEX::agent_hermes"
+    },
+    {
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ingest_game_system.py",
+      "source": "04_SACRED_CODEX::agent_iris",
+      "target": "04_SACRED_CODEX::chroma_ingestion"
+    },
+    {
+      "relation": "manages",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "COPYQ_WIRE.md",
+      "source": "04_SACRED_CODEX::agent_aurora",
+      "target": "04_SACRED_CODEX::copyq_integration"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "source": "04_SACRED_CODEX::game_layer",
+      "target": "04_SACRED_CODEX::sacred_path_tarot"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "source": "04_SACRED_CODEX::game_layer",
+      "target": "04_SACRED_CODEX::arcana_grid"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "source": "04_SACRED_CODEX::game_layer",
+      "target": "04_SACRED_CODEX::silent_echo"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "source": "04_SACRED_CODEX::game_layer",
+      "target": "04_SACRED_CODEX::nine_gates"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "source": "04_SACRED_CODEX::game_layer",
+      "target": "04_SACRED_CODEX::the_serpent"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "source": "04_SACRED_CODEX::game_layer",
+      "target": "04_SACRED_CODEX::memory_motes"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACREDSPACE_OS_BRIEFING.md",
+      "source": "04_SACRED_CODEX::game_layer",
+      "target": "04_SACRED_CODEX::nameless_door"
+    },
+    {
+      "relation": "persists",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "supabase_schema.sql",
+      "source": "04_SACRED_CODEX::game_layer",
+      "target": "04_SACRED_CODEX::supabase_schema"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "SACRED_SIGIL_TERMINAL_COMPLETE_OVERVIEW.md",
+      "source": "04_SACRED_CODEX::game_layer",
+      "target": "04_SACRED_CODEX::sst_weaver_engine"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "supabase_schema.sql",
+      "source": "04_SACRED_CODEX::sacred_path_tarot",
+      "target": "04_SACRED_CODEX::supabase_tarot_draws"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACRED_SIGIL_TERMINAL_COMPLETE_OVERVIEW.md",
+      "source": "04_SACRED_CODEX::sacred_sigil_terminal",
+      "target": "04_SACRED_CODEX::sst_react_component"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACRED_SIGIL_TERMINAL_COMPLETE_OVERVIEW.md",
+      "source": "04_SACRED_CODEX::sacred_sigil_terminal",
+      "target": "04_SACRED_CODEX::sst_backend"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACRED_SIGIL_TERMINAL_COMPLETE_OVERVIEW.md",
+      "source": "04_SACRED_CODEX::sacred_sigil_terminal",
+      "target": "04_SACRED_CODEX::sst_nine_dimensions"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACRED_SIGIL_TERMINAL_COMPLETE_OVERVIEW.md",
+      "source": "04_SACRED_CODEX::sacred_sigil_terminal",
+      "target": "04_SACRED_CODEX::sst_query_parser"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACRED_SIGIL_TERMINAL_COMPLETE_OVERVIEW.md",
+      "source": "04_SACRED_CODEX::sacred_sigil_terminal",
+      "target": "04_SACRED_CODEX::sst_weaver_engine"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACRED_SIGIL_TERMINAL_QUICK_START.md",
+      "source": "04_SACRED_CODEX::sacred_sigil_terminal",
+      "target": "04_SACRED_CODEX::sst_pwa"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACRED_SIGIL_TERMINAL_QUICK_START.md",
+      "source": "04_SACRED_CODEX::sacred_sigil_terminal",
+      "target": "04_SACRED_CODEX::sst_chrome_extension"
+    },
+    {
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACRED_SIGIL_TERMINAL_COMPLETE_OVERVIEW.md",
+      "source": "04_SACRED_CODEX::sacred_sigil_terminal",
+      "target": "04_SACRED_CODEX::sst_cmdk"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACRED_SIGIL_TERMINAL_COMPLETE_OVERVIEW.md",
+      "source": "04_SACRED_CODEX::sst_nine_dimensions",
+      "target": "04_SACRED_CODEX::sst_dimension_vault"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACRED_SIGIL_TERMINAL_COMPLETE_OVERVIEW.md",
+      "source": "04_SACRED_CODEX::sst_nine_dimensions",
+      "target": "04_SACRED_CODEX::sst_dimension_grove"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACRED_SIGIL_TERMINAL_COMPLETE_OVERVIEW.md",
+      "source": "04_SACRED_CODEX::sst_nine_dimensions",
+      "target": "04_SACRED_CODEX::sst_dimension_forest"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACRED_SIGIL_TERMINAL_COMPLETE_OVERVIEW.md",
+      "source": "04_SACRED_CODEX::sst_nine_dimensions",
+      "target": "04_SACRED_CODEX::sst_dimension_codex"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACRED_SIGIL_TERMINAL_COMPLETE_OVERVIEW.md",
+      "source": "04_SACRED_CODEX::sst_nine_dimensions",
+      "target": "04_SACRED_CODEX::sst_dimension_memory"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACRED_SIGIL_TERMINAL_COMPLETE_OVERVIEW.md",
+      "source": "04_SACRED_CODEX::sst_nine_dimensions",
+      "target": "04_SACRED_CODEX::sst_dimension_agent"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACRED_SIGIL_TERMINAL_COMPLETE_OVERVIEW.md",
+      "source": "04_SACRED_CODEX::sst_nine_dimensions",
+      "target": "04_SACRED_CODEX::sst_dimension_social"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACRED_SIGIL_TERMINAL_COMPLETE_OVERVIEW.md",
+      "source": "04_SACRED_CODEX::sst_nine_dimensions",
+      "target": "04_SACRED_CODEX::sst_dimension_market"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACRED_SIGIL_TERMINAL_COMPLETE_OVERVIEW.md",
+      "source": "04_SACRED_CODEX::sst_nine_dimensions",
+      "target": "04_SACRED_CODEX::sst_dimension_path"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "COPYQ_WIRE.md",
+      "source": "04_SACRED_CODEX::sst_nine_dimensions",
+      "target": "04_SACRED_CODEX::copyq_tabs"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "supabase_schema.sql",
+      "source": "04_SACRED_CODEX::sst_weaver_engine",
+      "target": "04_SACRED_CODEX::supabase_spell_casts"
+    },
+    {
+      "relation": "belongs_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SACRED_SIGIL_TERMINAL_COMPLETE_OVERVIEW.md",
+      "source": "04_SACRED_CODEX::sst_weaver_engine",
+      "target": "04_SACRED_CODEX::sst_dimension_agent"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "COPYQ_WIRE.md",
+      "source": "04_SACRED_CODEX::copyq_tabs",
+      "target": "04_SACRED_CODEX::copyq_tab_forge"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "COPYQ_WIRE.md",
+      "source": "04_SACRED_CODEX::copyq_tabs",
+      "target": "04_SACRED_CODEX::copyq_tab_codex"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "COPYQ_WIRE.md",
+      "source": "04_SACRED_CODEX::copyq_tabs",
+      "target": "04_SACRED_CODEX::copyq_tab_vault"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "COPYQ_WIRE.md",
+      "source": "04_SACRED_CODEX::copyq_tabs",
+      "target": "04_SACRED_CODEX::copyq_tab_council"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "COPYQ_WIRE.md",
+      "source": "04_SACRED_CODEX::copyq_tabs",
+      "target": "04_SACRED_CODEX::copyq_tab_market"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "COPYQ_WIRE.md",
+      "source": "04_SACRED_CODEX::copyq_tabs",
+      "target": "04_SACRED_CODEX::copyq_tab_learning"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "COPYQ_WIRE.md",
+      "source": "04_SACRED_CODEX::copyq_tabs",
+      "target": "04_SACRED_CODEX::copyq_tab_memory"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "COPYQ_WIRE.md",
+      "source": "04_SACRED_CODEX::copyq_tabs",
+      "target": "04_SACRED_CODEX::copyq_tab_inbox"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "supabase_schema.sql",
+      "source": "04_SACRED_CODEX::supabase_schema",
+      "target": "04_SACRED_CODEX::supabase_players"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "supabase_schema.sql",
+      "source": "04_SACRED_CODEX::supabase_schema",
+      "target": "04_SACRED_CODEX::supabase_tarot_draws"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "supabase_schema.sql",
+      "source": "04_SACRED_CODEX::supabase_schema",
+      "target": "04_SACRED_CODEX::supabase_spell_casts"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "supabase_schema.sql",
+      "source": "04_SACRED_CODEX::supabase_schema",
+      "target": "04_SACRED_CODEX::supabase_node_visits"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "supabase_schema.sql",
+      "source": "04_SACRED_CODEX::supabase_schema",
+      "target": "04_SACRED_CODEX::supabase_artifacts"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "supabase_schema.sql",
+      "source": "04_SACRED_CODEX::supabase_schema",
+      "target": "04_SACRED_CODEX::supabase_leaderboard"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "supabase_schema.sql",
+      "source": "04_SACRED_CODEX::supabase_schema",
+      "target": "04_SACRED_CODEX::supabase_row_security"
+    },
+    {
+      "relation": "writes_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ingest_game_system.py",
+      "source": "04_SACRED_CODEX::chroma_ingestion",
+      "target": "04_SACRED_CODEX::sacredspace_canon_collection"
+    },
+    {
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ingest_game_system.py",
+      "source": "04_SACRED_CODEX::chroma_ingestion",
+      "target": "04_SACRED_CODEX::chroma_chunking"
+    },
+    {
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ingest_game_system.py",
+      "source": "04_SACRED_CODEX::chroma_ingestion",
+      "target": "04_SACRED_CODEX::chroma_frontmatter"
+    },
+    {
+      "relation": "writes_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/prep_notebooklm.py",
+      "source": "04_SACRED_CODEX::notebooklm_migration",
+      "target": "04_SACRED_CODEX::notebooklm_staging"
+    },
+    {
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/prep_notebooklm.py",
+      "source": "04_SACRED_CODEX::notebooklm_migration",
+      "target": "04_SACRED_CODEX::notebooklm_routing"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/prep_notebooklm.py",
+      "source": "04_SACRED_CODEX::notebooklm_routing",
+      "target": "04_SACRED_CODEX::notebook_01_sacred_core"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/prep_notebooklm.py",
+      "source": "04_SACRED_CODEX::notebooklm_routing",
+      "target": "04_SACRED_CODEX::notebook_02_lore_vault"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/prep_notebooklm.py",
+      "source": "04_SACRED_CODEX::notebooklm_routing",
+      "target": "04_SACRED_CODEX::notebook_03_game_systems"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/prep_notebooklm.py",
+      "source": "04_SACRED_CODEX::notebooklm_routing",
+      "target": "04_SACRED_CODEX::notebook_04_knowledge_vault"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/prep_notebooklm.py",
+      "source": "04_SACRED_CODEX::notebooklm_routing",
+      "target": "04_SACRED_CODEX::notebook_05_family_legacy"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/prep_notebooklm.py",
+      "source": "04_SACRED_CODEX::notebooklm_routing",
+      "target": "04_SACRED_CODEX::notebook_06_creation_lab"
+    },
+    {
+      "relation": "creates",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/SACRED_FLASH_SCAFFOLD.ps1",
+      "source": "04_SACRED_CODEX::flash_drive_scaffold",
+      "target": "04_SACRED_CODEX::flash_nine_pillar_tree"
+    },
+    {
+      "relation": "writes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/SACRED_FLASH_SCAFFOLD.ps1",
+      "source": "04_SACRED_CODEX::flash_drive_scaffold",
+      "target": "04_SACRED_CODEX::flash_sacred_env"
+    },
+    {
+      "relation": "creates",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/SACRED_FLASH_SCAFFOLD.ps1",
+      "source": "04_SACRED_CODEX::flash_drive_scaffold",
+      "target": "04_SACRED_CODEX::flash_shared_space"
+    },
+    {
+      "relation": "creates",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/SACRED_FLASH_SCAFFOLD.ps1",
+      "source": "04_SACRED_CODEX::flash_drive_scaffold",
+      "target": "04_SACRED_CODEX::flash_arcana_landscapes"
+    },
+    {
+      "relation": "copies",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/SACRED_FLASH_POPULATE.ps1",
+      "source": "04_SACRED_CODEX::flash_drive_populate",
+      "target": "04_SACRED_CODEX::flash_communal_portal"
+    },
+    {
+      "relation": "populates",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/SACRED_FLASH_POPULATE.ps1",
+      "source": "04_SACRED_CODEX::flash_drive_populate",
+      "target": "04_SACRED_CODEX::flash_shared_space"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/SACRED_FLASH_POPULATE.ps1",
+      "source": "04_SACRED_CODEX::flash_drive_populate",
+      "target": "04_SACRED_CODEX::flash_arcana_populate"
+    },
+    {
+      "relation": "backs_up",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/SACRED_BACKUP_TO_FLASH.ps1",
+      "source": "04_SACRED_CODEX::flash_drive_backup",
+      "target": "04_SACRED_CODEX::flash_nine_pillar_tree"
+    },
+    {
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/SACRED_ARCANA_POPULATE.ps1",
+      "source": "04_SACRED_CODEX::flash_arcana_populate",
+      "target": "04_SACRED_CODEX::flash_asset_prefix_map"
+    },
+    {
+      "relation": "populates",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/SACRED_ARCANA_POPULATE.ps1",
+      "source": "04_SACRED_CODEX::flash_arcana_populate",
+      "target": "04_SACRED_CODEX::flash_arcana_landscapes"
+    },
+    {
+      "relation": "verifies",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/SACRED_LINK_CHECK.ps1",
+      "source": "04_SACRED_CODEX::flash_link_check",
+      "target": "04_SACRED_CODEX::flash_nine_pillar_tree"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/SACRED_LINK_CHECK.ps1",
+      "source": "04_SACRED_CODEX::flash_link_check",
+      "target": "04_SACRED_CODEX::flash_link_health"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sacred-neural-extract::sacred_watcher_config_json",
+      "target": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_meta"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sacred-neural-extract::sacred_watcher_config_json",
+      "target": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_conflict_mode"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L21",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sacred-neural-extract::sacred_watcher_config_json",
+      "target": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_pillar_paths"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L33",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sacred-neural-extract::sacred_watcher_config_json",
+      "target": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_cloud_pillar_paths"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L45",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sacred-neural-extract::sacred_watcher_config_json",
+      "target": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_protected_paths"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L50",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sacred-neural-extract::sacred_watcher_config_json",
+      "target": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_notebooklm_safe_path"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L52",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sacred-neural-extract::sacred_watcher_config_json",
+      "target": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_never_ingest"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L73",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sacred-neural-extract::sacred_watcher_config_json",
+      "target": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_security_log"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L74",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sacred-neural-extract::sacred_watcher_config_json",
+      "target": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_main_log"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L76",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sacred-neural-extract::sacred_watcher_config_json",
+      "target": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_lock_protocol"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L83",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sacred-neural-extract::sacred_watcher_config_json",
+      "target": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_mismatch_handling"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L89",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sacred-neural-extract::sacred_watcher_config_json",
+      "target": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_mission_state_path"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L91",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sacred-neural-extract::sacred_watcher_config_json",
+      "target": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_ingest_logic"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L92",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sacred-neural-extract::sacred_watcher_config_json",
+      "target": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_open_ingestion_when_no_mission"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_meta",
+      "target": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_meta_version"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_meta",
+      "target": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_meta_status"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_meta",
+      "target": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_meta_pillar"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_meta",
+      "target": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_meta_x_source_pillar"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_meta",
+      "target": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_meta_description"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_meta",
+      "target": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_meta_last_reviewed"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_meta",
+      "target": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_meta_reviewer"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L13",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_conflict_mode",
+      "target": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_conflict_mode_canon_files"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L14",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_conflict_mode",
+      "target": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_conflict_mode_distilled_files"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L15",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_conflict_mode",
+      "target": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_conflict_mode_draft_active_files"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L16",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_conflict_mode",
+      "target": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_conflict_mode_gemini_authored_files"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L17",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_conflict_mode",
+      "target": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_conflict_mode_untagged_files"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L18",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_conflict_mode",
+      "target": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_conflict_mode_conflict_log"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L22",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_pillar_paths",
+      "target": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_pillar_paths_01_core"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L23",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_pillar_paths",
+      "target": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_pillar_paths_02_systems"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L24",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_pillar_paths",
+      "target": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_pillar_paths_03_neural"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L25",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_pillar_paths",
+      "target": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_pillar_paths_04_codex"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L26",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_pillar_paths",
+      "target": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_pillar_paths_05_memory"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L27",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_pillar_paths",
+      "target": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_pillar_paths_06_agents"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L28",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_pillar_paths",
+      "target": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_pillar_paths_07_social"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L29",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_pillar_paths",
+      "target": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_pillar_paths_08_learning"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L30",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_pillar_paths",
+      "target": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_pillar_paths_09_market"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L34",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_cloud_pillar_paths",
+      "target": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_cloud_pillar_paths_01_core"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L35",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_cloud_pillar_paths",
+      "target": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_cloud_pillar_paths_02_systems"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L36",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_cloud_pillar_paths",
+      "target": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_cloud_pillar_paths_03_neural"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L37",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_cloud_pillar_paths",
+      "target": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_cloud_pillar_paths_04_codex"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L38",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_cloud_pillar_paths",
+      "target": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_cloud_pillar_paths_05_memory"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L39",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_cloud_pillar_paths",
+      "target": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_cloud_pillar_paths_06_agents"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L40",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_cloud_pillar_paths",
+      "target": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_cloud_pillar_paths_07_social"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L41",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_cloud_pillar_paths",
+      "target": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_cloud_pillar_paths_08_learning"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L42",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_cloud_pillar_paths",
+      "target": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_cloud_pillar_paths_09_market"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L46",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_protected_paths",
+      "target": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_protected_paths_personal"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L47",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_protected_paths",
+      "target": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_protected_paths_archive"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L77",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_lock_protocol",
+      "target": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_lock_protocol_locked_status_string"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L78",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_lock_protocol",
+      "target": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_lock_protocol_header_scan_lines"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L79",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_lock_protocol",
+      "target": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_lock_protocol_retry_interval_minutes"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L80",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_lock_protocol",
+      "target": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_lock_protocol_locked_queue_file"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L84",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_mismatch_handling",
+      "target": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_mismatch_handling_x_source_pillar_field"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L85",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_mismatch_handling",
+      "target": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_mismatch_handling_mismatch_destination"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sacred_watcher_config.json",
+      "source_location": "L86",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_mismatch_handling",
+      "target": "sacred-neural-extract::sacred_neural_extract_sacred_watcher_config_mismatch_handling_mismatch_log"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "notebook_routing.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sacred-neural-extract::notebook_routing_json",
+      "target": "sacred-neural-extract::sacred_neural_extract_notebook_routing_meta"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "notebook_routing.json",
+      "source_location": "L13",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sacred-neural-extract::notebook_routing_json",
+      "target": "sacred-neural-extract::sacred_neural_extract_notebook_routing_notebooks"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "notebook_routing.json",
+      "source_location": "L187",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sacred-neural-extract::notebook_routing_json",
+      "target": "sacred-neural-extract::sacred_neural_extract_notebook_routing_global_rules"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "notebook_routing.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sacred-neural-extract::sacred_neural_extract_notebook_routing_meta",
+      "target": "sacred-neural-extract::sacred_neural_extract_notebook_routing_meta_version"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "notebook_routing.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sacred-neural-extract::sacred_neural_extract_notebook_routing_meta",
+      "target": "sacred-neural-extract::sacred_neural_extract_notebook_routing_meta_status"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "notebook_routing.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sacred-neural-extract::sacred_neural_extract_notebook_routing_meta",
+      "target": "sacred-neural-extract::sacred_neural_extract_notebook_routing_meta_pillar"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "notebook_routing.json",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sacred-neural-extract::sacred_neural_extract_notebook_routing_meta",
+      "target": "sacred-neural-extract::sacred_neural_extract_notebook_routing_meta_x_source_pillar"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "notebook_routing.json",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sacred-neural-extract::sacred_neural_extract_notebook_routing_meta",
+      "target": "sacred-neural-extract::sacred_neural_extract_notebook_routing_meta_description"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "notebook_routing.json",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sacred-neural-extract::sacred_neural_extract_notebook_routing_meta",
+      "target": "sacred-neural-extract::sacred_neural_extract_notebook_routing_meta_last_reviewed"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "notebook_routing.json",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sacred-neural-extract::sacred_neural_extract_notebook_routing_meta",
+      "target": "sacred-neural-extract::sacred_neural_extract_notebook_routing_meta_reviewer"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "notebook_routing.json",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sacred-neural-extract::sacred_neural_extract_notebook_routing_meta",
+      "target": "sacred-neural-extract::sacred_neural_extract_notebook_routing_meta_rule"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "notebook_routing.json",
+      "source_location": "L188",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sacred-neural-extract::sacred_neural_extract_notebook_routing_global_rules",
+      "target": "sacred-neural-extract::sacred_neural_extract_notebook_routing_global_rules_no_duplication_across_pillars"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "notebook_routing.json",
+      "source_location": "L189",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sacred-neural-extract::sacred_neural_extract_notebook_routing_global_rules",
+      "target": "sacred-neural-extract::sacred_neural_extract_notebook_routing_global_rules_point_at_folder_not_files"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "notebook_routing.json",
+      "source_location": "L190",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sacred-neural-extract::sacred_neural_extract_notebook_routing_global_rules",
+      "target": "sacred-neural-extract::sacred_neural_extract_notebook_routing_global_rules_auto_sync_requires_drive_folder_not_upload"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "notebook_routing.json",
+      "source_location": "L191",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sacred-neural-extract::sacred_neural_extract_notebook_routing_global_rules",
+      "target": "sacred-neural-extract::sacred_neural_extract_notebook_routing_global_rules_personal_folder_auto_sync"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "notebook_routing.json",
+      "source_location": "L192",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sacred-neural-extract::sacred_neural_extract_notebook_routing_global_rules",
+      "target": "sacred-neural-extract::sacred_neural_extract_notebook_routing_global_rules_conflict_on_duplicate_source_docs"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "sacred_council_ops_sequence.md",
+      "source": "sacred-neural-extract::sacred_watcher_config_conflict_mode",
+      "target": "sacred-neural-extract::sacred_council_ops_sequence_d1_d6"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "sacred_council_ops_sequence.md",
+      "source": "sacred-neural-extract::sacred_watcher_config_pillar_paths",
+      "target": "sacred-neural-extract::sacred_council_ops_sequence_d1_d6"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "notebook_routing.json",
+      "source": "sacred-neural-extract::sacred_watcher_config_pillar_paths",
+      "target": "sacred-neural-extract::notebook_routing_notebooks"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SUBSYSTEM_MANIFEST.md",
+      "source": "sacred-neural-extract::notebook_routing_notebooks",
+      "target": "sacred-neural-extract::subsystem_manifest_themes_components"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SUBSYSTEM_MANIFEST.md",
+      "source": "sacred-neural-extract::sacred_word_bank_root_words",
+      "target": "sacred-neural-extract::subsystem_manifest_themes_components"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "HERMES_GRAMA_PERSONA.md",
+      "source": "sacred-neural-extract::sacred_word_bank_structural_words",
+      "target": "sacred-neural-extract::hermes_grama_persona_identity"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "HERMES_GRAMA_PERSONA.md",
+      "source": "sacred-neural-extract::sacred_word_bank_structural_words",
+      "target": "sacred-neural-extract::hermes_grama_persona_mcp_tools"
+    }
+  ],
+  "hyperedges": [],
+  "built_at_commit": "021ee65d8221846acc456170325018f2cbd14b2a"
+}

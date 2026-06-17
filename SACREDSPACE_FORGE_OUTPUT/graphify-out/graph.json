@@ -1,0 +1,210 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "NotebookLM Upload Manifest",
+      "file_type": "document",
+      "source_file": "NOTEBOOKLM_STAGING/UPLOAD_MANIFEST.md",
+      "id": "upload_manifest_manifest",
+      "community": 4,
+      "norm_label": "notebooklm upload manifest"
+    },
+    {
+      "label": "NotebookLM \u2014 Master Intelligence Package",
+      "file_type": "rationale",
+      "source_file": "NOTEBOOKLM_STAGING/NOTEBOOKLM_MASTER_INTELLIGENCE_PACKAGE.html",
+      "id": "master_intelligence_package_package",
+      "community": 1,
+      "norm_label": "notebooklm \u2014 master intelligence package"
+    },
+    {
+      "label": "Game System Index \u2014 Jenga's Journey",
+      "file_type": "code",
+      "source_file": "01_CORE/SacredSpace_Vault/00_CANON/GAME_SYSTEM/INDEX.md",
+      "id": "game_system_index_index",
+      "community": 3,
+      "norm_label": "game system index \u2014 jenga's journey"
+    },
+    {
+      "label": "Episode 1 \u2014 The First Step",
+      "file_type": "document",
+      "source_file": "01_CORE/SacredSpace_Vault/00_CANON/GAME_SYSTEM/EPISODES/EPISODE_01.md",
+      "id": "episode_01_episode",
+      "community": 2,
+      "norm_label": "episode 1 \u2014 the first step"
+    },
+    {
+      "label": "Episode 6 \u2014 The Teaching and the Teacher",
+      "file_type": "document",
+      "source_file": "01_CORE/SacredSpace_Vault/00_CANON/GAME_SYSTEM/EPISODES/EPISODE_06.md",
+      "id": "episode_06_episode",
+      "community": 5,
+      "norm_label": "episode 6 \u2014 the teaching and the teacher"
+    },
+    {
+      "label": "The Fool \u2014 Archetype 0",
+      "file_type": "document",
+      "source_file": "01_CORE/SacredSpace_Vault/00_CANON/GAME_SYSTEM/ARCHETYPES/ARCHETYPE_00_THE_FOOL.md",
+      "id": "archetype_00_the_fool_fool",
+      "community": 2,
+      "norm_label": "the fool \u2014 archetype 0"
+    },
+    {
+      "label": "The Magician \u2014 Archetype I",
+      "file_type": "document",
+      "source_file": "01_CORE/SacredSpace_Vault/00_CANON/GAME_SYSTEM/ARCHETYPES/ARCHETYPE_01_THE_MAGICIAN.md",
+      "id": "archetype_01_the_magician_magician",
+      "community": 6,
+      "norm_label": "the magician \u2014 archetype i"
+    },
+    {
+      "label": "Metatron \u2014 The Law",
+      "file_type": "document",
+      "source_file": "01_CORE/SacredSpace_Vault/00_CANON/GAME_SYSTEM/ARCHETYPES/METATRON_LAW.md",
+      "id": "metatron_law_metatron",
+      "community": 3,
+      "norm_label": "metatron \u2014 the law"
+    },
+    {
+      "label": "Sacred Node 1 \u2014 The Threshold",
+      "file_type": "code",
+      "source_file": "01_CORE/SacredSpace_Vault/00_CANON/GAME_SYSTEM/NODES/NODE_01_THE_THRESHOLD.md",
+      "id": "node_01_the_threshold_threshold",
+      "community": 7,
+      "norm_label": "sacred node 1 \u2014 the threshold"
+    },
+    {
+      "label": "School of Initiation",
+      "file_type": "code",
+      "source_file": "01_CORE/SacredSpace_Vault/00_CANON/GAME_SYSTEM/SCHOOLS/SCHOOL_INITIATION.md",
+      "id": "school_initiation_initiation",
+      "community": 2,
+      "norm_label": "school of initiation"
+    },
+    {
+      "label": "Sacred Sigil Terminal Quick Start",
+      "file_type": "document",
+      "source_file": "04_CODEX/SACRED_SIGIL_TERMINAL_QUICK_START.md",
+      "id": "sacred_sigil_terminal_quick_start_quickstart",
+      "community": 1,
+      "norm_label": "sacred sigil terminal quick start"
+    },
+    {
+      "label": "SacredSpace OS Briefing",
+      "file_type": "document",
+      "source_file": "04_CODEX/SACREDSPACE_OS_BRIEFING.md",
+      "id": "sacredspace_os_briefing_briefing",
+      "community": 1,
+      "norm_label": "sacredspace os briefing"
+    },
+    {
+      "label": "Sacred Word Bank",
+      "file_type": "document",
+      "source_file": "07_SOCIAL/SACRED_THEMES_COMPONENTS/SACRED_WORD_BANK.md",
+      "id": "sacred_word_bank_wordbank",
+      "community": 0,
+      "norm_label": "sacred word bank"
+    },
+    {
+      "label": "Monthly Sacred Messages Index (Year 1\u20135)",
+      "file_type": "document",
+      "source_file": "_PERSONAL/NOTEBOOKLM_SAFE/Monthly Sacred Messages Index (Year 1\u20135).docx",
+      "id": "sacred_messages_index_index",
+      "community": 8,
+      "norm_label": "monthly sacred messages index (year 1\u20135)"
+    },
+    {
+      "label": "SacredSpace NeuralForest GrantProposal v2",
+      "file_type": "paper",
+      "source_file": "09_MARKET/SacredSpace_NeuralForest_GrantProposal_v2.docx",
+      "id": "neuralforest_grantproposal_proposal",
+      "community": 0,
+      "norm_label": "sacredspace neuralforest grantproposal v2"
+    },
+    {
+      "label": "sacredarcana brand bible v3",
+      "file_type": "document",
+      "source_file": "07_SOCIAL/sacredarcana_brand_bible_v3.docx",
+      "id": "sacredarcana_brand_bible_bible",
+      "community": 0,
+      "norm_label": "sacredarcana brand bible v3"
+    }
+  ],
+  "links": [
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "NOTEBOOKLM_STAGING/NOTEBOOKLM_MASTER_INTELLIGENCE_PACKAGE.html",
+      "source": "master_intelligence_package_package",
+      "target": "sacredspace_os_briefing_briefing"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "01_CORE/SacredSpace_Vault/00_CANON/GAME_SYSTEM/INDEX.md",
+      "source": "game_system_index_index",
+      "target": "archetype_00_the_fool_fool"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "01_CORE/SacredSpace_Vault/00_CANON/GAME_SYSTEM/INDEX.md",
+      "source": "game_system_index_index",
+      "target": "metatron_law_metatron"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "01_CORE/SacredSpace_Vault/00_CANON/GAME_SYSTEM/EPISODES/EPISODE_01.md",
+      "source": "episode_01_episode",
+      "target": "archetype_00_the_fool_fool"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "01_CORE/SacredSpace_Vault/00_CANON/GAME_SYSTEM/ARCHETYPES/ARCHETYPE_00_THE_FOOL.md",
+      "source": "archetype_00_the_fool_fool",
+      "target": "school_initiation_initiation"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "07_SOCIAL/sacredarcana_brand_bible_v3.docx",
+      "source": "sacredarcana_brand_bible_bible",
+      "target": "metatron_law_metatron"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "04_CODEX/SACRED_SIGIL_TERMINAL_QUICK_START.md",
+      "source": "sacred_sigil_terminal_quick_start_quickstart",
+      "target": "sacredspace_os_briefing_briefing"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "07_SOCIAL/SACRED_THEMES_COMPONENTS/SACRED_WORD_BANK.md",
+      "source": "sacred_word_bank_wordbank",
+      "target": "sacredarcana_brand_bible_bible"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "09_MARKET/SacredSpace_NeuralForest_GrantProposal_v2.docx",
+      "source": "neuralforest_grantproposal_proposal",
+      "target": "sacredarcana_brand_bible_bible"
+    }
+  ],
+  "hyperedges": []
+}

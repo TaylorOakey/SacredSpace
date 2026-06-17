@@ -1,0 +1,144 @@
+---
+title: "YouTube Activity History — 2016-01"
+source: youtube
+created: 2016-01-01
+pillar: 08_LEARNING_PATH
+stage: RAW
+tags: [takeout, youtube, activity-history]
+---
+
+# YouTube Activity History — 2016-01
+> 130 entries
+
+## Entries
+
+- Searched for Asmr sexy meditation — Jan 30, 2016, 11:31:41 PM EDT
+- Searched for by the power of grayskull — Jan 30, 2016, 7:21:53 PM EDT
+- Searched for guided energy meditation — Jan 28, 2016, 9:54:02 PM EDT
+- Searched for Explanation  of tarot cards — Jan 28, 2016, 8:27:49 PM EDT
+- Searched for Explanation  of tarot cards — Jan 28, 2016, 7:16:33 PM EDT
+- Searched for banshee bungee — Jan 25, 2016, 9:41:56 AM EDT
+- Searched for asmr music — Jan 24, 2016, 7:54:10 PM EDT
+- Searched for virtual massage — Jan 24, 2016, 7:40:38 PM EDT
+- Searched for Reiki — Jan 24, 2016, 7:27:47 PM EDT
+- Searched for how does reality work — Jan 24, 2016, 7:17:34 PM EDT
+- Searched for how does augmented reality work — Jan 24, 2016, 7:17:05 PM EDT
+- Searched for manly p hall — Jan 24, 2016, 7:16:44 PM EDT
+- Searched for Freemason highest knowledge — Jan 24, 2016, 7:00:49 PM EDT
+- Searched for Reiki scientifically proven — Jan 24, 2016, 6:56:23 PM EDT
+- Searched for Reiki scientific proven — Jan 24, 2016, 6:54:22 PM EDT
+- Searched for Learning energy healing — Jan 24, 2016, 6:53:38 PM EDT
+- Searched for tai chi fight — Jan 24, 2016, 6:41:29 PM EDT
+- Searched for Learning energy healing — Jan 24, 2016, 6:04:54 PM EDT
+- Searched for Learning energy work — Jan 24, 2016, 6:03:10 PM EDT
+- Searched for Crystal grids — Jan 24, 2016, 6:02:18 PM EDT
+- Searched for 3 old women getting high — Jan 24, 2016, 9:54:38 AM EDT
+- Searched for Creating resonance on a guitar — Jan 23, 2016, 9:42:57 PM EDT
+- Searched for What lsd does to your eyes — Jan 23, 2016, 9:01:42 PM EDT
+- Searched for deep relaxation guided meditation — Jan 23, 2016, 4:10:55 PM EDT
+- Searched for deep relaxation music — Jan 23, 2016, 4:10:49 PM EDT
+- Searched for Understanding guitar fretboard — Jan 23, 2016, 1:54:16 PM EDT
+- Searched for Understaning guitar fretboard — Jan 23, 2016, 1:54:14 PM EDT
+- Searched for easy backing track — Jan 23, 2016, 1:36:10 PM EDT
+- Searched for frank sinatra — Jan 23, 2016, 1:32:30 PM EDT
+- Searched for metronome — Jan 23, 2016, 1:24:54 PM EDT
+- Searched for understanding rhythm in music — Jan 23, 2016, 12:58:59 PM EDT
+- Searched for frank sinatra — Jan 23, 2016, 12:19:08 PM EDT
+- Searched for metronome — Jan 23, 2016, 11:49:04 AM EDT
+- Searched for Despot — Jan 23, 2016, 11:38:55 AM EDT
+- Searched for how to play scales on guitar — Jan 23, 2016, 9:44:18 AM EDT
+- Searched for funky acoustic guitar — Jan 23, 2016, 9:35:13 AM EDT
+- Searched for metronome — Jan 22, 2016, 7:45:48 PM EDT
+- Searched for Become better at rhythm — Jan 22, 2016, 7:44:21 PM EDT
+- Searched for Become better at rythm — Jan 22, 2016, 7:44:18 PM EDT
+- Searched for Understanding how to play guitar — Jan 22, 2016, 7:43:13 PM EDT
+- Searched for How to understand music — Jan 22, 2016, 7:42:26 PM EDT
+- Searched for bass backing track — Jan 22, 2016, 7:24:27 PM EDT
+- Searched for Easy acoustic backing track — Jan 22, 2016, 7:19:57 PM EDT
+- Searched for acoustic reggae guitar lesson — Jan 22, 2016, 6:57:02 PM EDT
+- Searched for Triplets on acoustic guitar — Jan 22, 2016, 6:55:50 PM EDT
+- Searched for beats antique — Jan 22, 2016, 5:54:47 PM EDT
+- Searched for matisyahu beat box — Jan 22, 2016, 4:33:22 PM EDT
+- Searched for matisyahu — Jan 22, 2016, 4:33:12 PM EDT
+- Searched for richard cheese — Jan 21, 2016, 9:07:12 PM EDT
+- Searched for funky groove music — Jan 21, 2016, 9:08:22 AM EDT
+- Searched for meditation — Jan 20, 2016, 9:18:31 PM EDT
+- Searched for easy acoustic guitar songs — Jan 20, 2016, 6:42:39 PM EDT
+- Searched for funky acoustic guitar riffs — Jan 20, 2016, 6:27:35 PM EDT
+- Searched for funky guitar riffs — Jan 20, 2016, 6:25:29 PM EDT
+- Searched for Funky acoustic tutorial — Jan 19, 2016, 8:59:59 PM EDT
+- Searched for Funky acoustic tutorial — Jan 19, 2016, 8:29:34 PM EDT
+- Searched for backing track in g — Jan 19, 2016, 8:26:04 PM EDT
+- Searched for g breath — Jan 19, 2016, 10:17:02 AM EDT
+- Searched for Om — Jan 19, 2016, 9:03:29 AM EDT
+- Searched for Learn music in sleep — Jan 18, 2016, 10:30:32 PM EDT
+- Searched for Learn rhythm in sleep — Jan 18, 2016, 10:29:14 PM EDT
+- Searched for Latin stories — Jan 18, 2016, 10:28:57 PM EDT
+- Searched for Acoustic funk riff — Jan 18, 2016, 7:59:45 PM EDT
+- Searched for peaceful tribal music — Jan 18, 2016, 6:36:00 PM EDT
+- Searched for Big family homestead carrot cake — Jan 18, 2016, 5:31:13 PM EDT
+- Searched for ganesh mantra — Jan 18, 2016, 9:47:35 AM EDT
+- Searched for liquid funk mix — Jan 17, 2016, 5:37:02 PM EDT
+- Searched for Funk — Jan 17, 2016, 2:20:11 PM EDT
+- Searched for acoustic funk — Jan 17, 2016, 1:53:09 PM EDT
+- Searched for acoustic guitar funk lesson — Jan 17, 2016, 1:30:05 PM EDT
+- Searched for backing tracks for guitar — Jan 17, 2016, 1:23:42 PM EDT
+- Searched for Acoustic funk lesson — Jan 17, 2016, 12:43:28 PM EDT
+- Searched for freebies and samples — Jan 16, 2016, 3:01:05 PM EDT
+- Searched for hallelujah warren haynes — Jan 15, 2016, 11:04:12 PM EDT
+- Searched for hallelujah — Jan 15, 2016, 10:48:20 PM EDT
+- Searched for andy mckee — Jan 15, 2016, 10:47:53 PM EDT
+- Searched for acid bluegrass — Jan 15, 2016, 10:39:19 PM EDT
+- Searched for levitation — Jan 14, 2016, 9:21:37 AM EDT
+- Searched for harmonic resonance — Jan 12, 2016, 10:01:29 PM EDT
+- Searched for copper coil magnet — Jan 12, 2016, 9:55:08 PM EDT
+- Searched for Mark rohndron — Jan 12, 2016, 9:54:26 PM EDT
+- Searched for past life regression hypnosis — Jan 12, 2016, 8:31:49 PM EDT
+- Searched for acoustic backing track — Jan 12, 2016, 8:00:04 PM EDT
+- Searched for acoustic dubstep — Jan 12, 2016, 7:33:16 PM EDT
+- Searched for acoustic duet — Jan 12, 2016, 7:31:47 PM EDT
+- Searched for 7.3 hz — Jan 11, 2016, 11:54:03 PM EDT
+- Searched for om mani padme hum — Jan 11, 2016, 11:25:37 PM EDT
+- Searched for solfeggio frequencies — Jan 11, 2016, 11:25:25 PM EDT
+- Searched for vortex geometry — Jan 11, 2016, 10:43:07 PM EDT
+- Searched for solfeggio frequencies explained — Jan 11, 2016, 10:18:31 PM EDT
+- Searched for solfeggio frequencies — Jan 11, 2016, 10:18:25 PM EDT
+- Searched for Temper trap — Jan 11, 2016, 9:48:23 PM EDT
+- Searched for trance music — Jan 11, 2016, 9:41:38 PM EDT
+- Searched for fleetwood mac — Jan 11, 2016, 9:20:10 PM EDT
+- Searched for regina spektor — Jan 11, 2016, 9:19:44 PM EDT
+- Searched for regina spektor samson — Jan 11, 2016, 9:12:11 PM EDT
+- Searched for carina round — Jan 11, 2016, 9:08:58 PM EDT
+- Searched for london grammar — Jan 11, 2016, 9:00:43 PM EDT
+- Searched for white chocolate peppermint bark — Jan 8, 2016, 3:36:13 PM EDT
+- Searched for Monkey bread stuffed — Jan 8, 2016, 12:19:45 PM EDT
+- Searched for turbo suit — Jan 8, 2016, 8:26:45 AM EDT
+- Searched for drunvalo melchizedek — Jan 7, 2016, 10:14:24 PM EDT
+- Searched for muddy waters — Jan 7, 2016, 6:44:43 PM EDT
+- Searched for 528 hz — Jan 6, 2016, 11:40:57 PM EDT
+- Searched for 6 — Jan 6, 2016, 11:40:36 PM EDT
+- Searched for nu jazz — Jan 6, 2016, 9:21:21 PM EDT
+- Searched for Pretty lights — Jan 6, 2016, 9:20:07 PM EDT
+- Searched for borgore girls — Jan 6, 2016, 9:15:41 PM EDT
+- Searched for Odezza — Jan 5, 2016, 7:50:02 PM EDT
+- Searched for meditation music — Jan 5, 2016, 6:22:36 PM EDT
+- Searched for Easy backing track — Jan 5, 2016, 6:04:09 PM EDT
+- Searched for 528 — Jan 4, 2016, 10:01:57 PM EDT
+- Searched for How to eat vegitarian — Jan 4, 2016, 9:35:01 PM EDT
+- Searched for Playing the bass. Understanding — Jan 3, 2016, 10:08:17 PM EDT
+- Searched for Playing the bass. — Jan 3, 2016, 10:02:11 PM EDT
+- Searched for Om mani padme hum — Jan 3, 2016, 8:03:42 PM EDT
+- Searched for string cheese incident electric forest 2015 — Jan 3, 2016, 7:44:56 PM EDT
+- Searched for How to play a bass — Jan 3, 2016, 7:20:26 PM EDT
+- Searched for How to play slide cigar box guitar — Jan 3, 2016, 5:29:04 PM EDT
+- Searched for Harmonica — Jan 2, 2016, 11:12:37 PM EDT
+- Searched for C — Jan 2, 2016, 11:12:29 PM EDT
+- Searched for Upright Bass beatbox — Jan 2, 2016, 10:57:04 PM EDT
+- Searched for Les claypool bonnaroo jilly&#39;s on smack — Jan 2, 2016, 10:55:03 PM EDT
+- Searched for Bass beatbox — Jan 2, 2016, 10:53:14 PM EDT
+- Searched for Les claypool bonaroo jillys on smack — Jan 2, 2016, 10:48:25 PM EDT
+- Searched for Les claypool bonnaroo — Jan 2, 2016, 10:48:03 PM EDT
+- Searched for Les claypool bonaroo — Jan 2, 2016, 10:47:45 PM EDT
+- Searched for trap nation — Jan 2, 2016, 9:37:10 PM EDT
+- Searched for trap nation — Jan 2, 2016, 8:10:12 PM EDT
+- Searched for Where is my mind loop — Jan 1, 2016, 9:08:20 PM EDT

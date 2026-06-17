@@ -1,0 +1,139 @@
+---
+title: "YouTube Watch History — 2019-01"
+source: youtube
+created: 2019-01-01
+pillar: 08_LEARNING_PATH
+stage: RAW
+tags: [takeout, youtube, watch-history]
+---
+
+# YouTube Watch History — 2019-01
+> 125 videos watched
+
+## Videos
+
+- [The Very REAL Secret of GOLD EXTRACTION using MAGNETISM &amp; my expertise on same](https://www.youtube.com/watch?v=Kfvyk0LHLSY) — Theoria Apophasis — Jan 31, 2019, 10:32:47 PM EDT
+- [Conways game of life - The &#39;Acorn&#39;](https://www.youtube.com/watch?v=Aq51GfPmD54) — Jonas Røjkjær Hansen — Jan 31, 2019, 9:03:11 PM EDT
+- [epic conway&#39;s game of life](https://www.youtube.com/watch?v=C2vgICfQawE) — Rational Animations — Jan 31, 2019, 8:51:36 PM EDT
+- [An Introduction to Conway&#39;s The Game of Life](https://www.youtube.com/watch?v=ouipbDkwHWA) — Eric Steinhart — Jan 31, 2019, 8:36:40 PM EDT
+- [Andrew Gallimore - Talking with Aliens: DMT and the Search for Extradimensional Intelligence](https://www.youtube.com/watch?v=A10V_t95VfI) — Alien Insect — Jan 31, 2019, 1:50:30 PM EDT
+- [DMT : Experiencing the impossible](https://www.youtube.com/watch?v=i2nbnJzervs) — Getiemoko — Jan 31, 2019, 12:58:12 PM EDT
+- [My DMT Awakening (I was a US Air Force Captain)](https://www.youtube.com/watch?v=nUU13iIy71A) — Bryan Reeves (alternate page) — Jan 31, 2019, 12:41:41 PM EDT
+- [Neuroscientist Sees &#39;Proof of Heaven&#39; in Week-Long Coma](https://www.youtube.com/watch?v=KfaDOmT82gk) — Near-Death Experiences — Jan 31, 2019, 12:31:18 PM EDT
+- [5th Dimensional Habits that will Raise Your Vibration INSTANTLY](https://www.youtube.com/watch?v=WYOORv2H_uI) — Aaron Doughty — Jan 31, 2019, 11:44:06 AM EDT
+- [Paradigm Shift: An in Depth Explanation](https://www.youtube.com/watch?v=z2IEiYM_iYM) — Proctor Gallagher Institute — Jan 30, 2019, 4:07:11 PM EDT
+- [Gelong Thubten  explains how to develop a daily mindfulness practice](https://www.youtube.com/watch?v=PYD-Gx_9K_M) — Change Your World — Jan 30, 2019, 1:13:42 PM EDT
+- [The power of meditation | Gelong Thubten](https://www.youtube.com/watch?v=6vTviVkFJzM) — Mindvalley Talks — Jan 30, 2019, 11:38:56 AM EDT
+- [Episode 24: The Neuroscience of Business with Dr Tara Swart](https://www.youtube.com/watch?v=lP4OeIa7BwI) — CNBC Africa — Jan 30, 2019, 10:09:32 AM EDT
+- [Neuroscience for Leadership - Interview with Dr. Tara Swart](https://www.youtube.com/watch?v=iXpWtPib5n4) — CRF &amp; PARC — Jan 30, 2019, 10:06:25 AM EDT
+- [3D ROLLER COASTER - TOP15 VR  | 3D Side By Side SBS Google Cardboard VR Box Gear Oculus Rift](https://www.youtube.com/watch?v=1voV-DLw22s) — 3D &#39;n&#39; Play — Jan 29, 2019, 8:43:46 PM EDT
+- [Why can&#39;t you go faster than light?](https://www.youtube.com/watch?v=A2JCoIGyGxc) — Fermilab — Jan 28, 2019, 5:19:47 PM EDT
+- [How To Cut Down A Tree](https://www.youtube.com/watch?v=Os2vrOT8F1Q) — Lowe&#39;s Home Improvement — Jan 28, 2019, 2:44:09 PM EDT
+- [Football commentator swears... a lot](https://www.youtube.com/watch?v=kaNUDNS2Krk) — Boris Grishenko — Jan 28, 2019, 2:14:10 PM EDT
+- [Dennis Mckenna reads &quot;An Unusual Experience with Ayahuasca&quot; pt 1](https://www.youtube.com/watch?v=BCOx7kqN34Q) — Gerard de lang — Jan 28, 2019, 1:35:10 PM EDT
+- [Guided Meditation for Lucid Dreaming (The Forest of Dreams)](https://www.youtube.com/watch?v=QonP2sbizak) — Joe T - Hypnotic Labs — Jan 27, 2019, 1:14:50 AM EDT
+- [Is Quantum Physics Necessary for the Account of Consciousness? The Lecture of Stuart Hameroff](https://www.youtube.com/watch?v=2_sgFETJzak) — Moscow Center for Consciousness Studies — Jan 24, 2019, 6:06:54 PM EDT
+- [Eben Alexander: A Neurosurgeon&#39;s Journey through the Afterlife](https://www.youtube.com/watch?v=qbkgj5J91hE) — Theosophical Society — Jan 24, 2019, 5:20:32 PM EDT
+- [The &quot;1 Billion Dollar Morning Routine&quot; - Habits of the World’s Most Successful People](https://www.youtube.com/watch?v=SELWtQpcy1A) — Be Inspired — Jan 24, 2019, 4:18:57 PM EDT
+- [600ug of LSD Trip Report: Sorry Neighbours](https://www.youtube.com/watch?v=_yQTprzuVyE) — TripWhip — Jan 24, 2019, 10:49:35 AM EDT
+- [Joe Rogan Experience #1230 - Killer Mike](https://www.youtube.com/watch?v=w7HMOsRUFS8) — PowerfulJRE — Jan 24, 2019, 9:39:29 AM EDT
+- [Eben Alexander: A Neurosurgeon&#39;s Journey through the Afterlife](https://www.youtube.com/watch?v=qbkgj5J91hE) — Theosophical Society — Jan 23, 2019, 7:14:19 PM EDT
+- [Laura Eisenhower: Exiting the Matrix](https://www.youtube.com/watch?v=Y5DDs5qKO3o) — The Vortex — Jan 23, 2019, 4:41:01 PM EDT
+- [01-05 Honda Civic Common Oil Leak](https://www.youtube.com/watch?v=zFeaRHpvGMg) — DUBYA — Jan 23, 2019, 3:18:42 PM EDT
+- [Car Sounds With Mouth 2 (68 Camaro, M5 Turbo, Honda Civic, and more!)](https://www.youtube.com/watch?v=w9YluPOyXmg) — HonJazzz — Jan 22, 2019, 8:44:04 PM EDT
+- [Zakir Hussain &amp; Rakesh Chaurasia | EtnoKraków/Rozstaje 2015 | Crossroads Festival &amp; Euroradio EBU](https://www.youtube.com/watch?v=O2K0ptoYpuc) — etnokraków/rozstaje — Jan 22, 2019, 8:14:06 PM EDT
+- [growing-mushrooms-in-fast-motion](https://www.youtube.com/watch?v=DthWjUo4HTQ) — Romano Hage — Jan 22, 2019, 8:13:52 PM EDT
+- [Whole Body Cell Regeneration &amp; Energy Boost | 9 Hours](https://www.youtube.com/watch?v=IY4MVNO74y4) — Meditative Mind — Jan 22, 2019, 8:11:38 PM EDT
+- [OM Chanting @528 Hz | 8 Hours](https://www.youtube.com/watch?v=J7mZXwbddWg) — Meditative Mind — Jan 22, 2019, 8:10:53 PM EDT
+- [How to Make Beurre Blanc  (Butter Sauce)](https://www.youtube.com/watch?v=QLmzaYpBYgw) — Rouxbe — Jan 22, 2019, 8:00:18 PM EDT
+- [Breathtaking Nature Scenery on Planet Earth &amp; The Best Relax Music (1080p HD)](https://www.youtube.com/watch?v=rvc5mRATQ7c) — Cat Trumpet — Jan 22, 2019, 7:52:06 PM EDT
+- [Torus Fun (Sacred Geometry by ieoie)](https://www.youtube.com/watch?v=u0eOuxJX36g) — ieoie — Jan 22, 2019, 7:48:31 PM EDT
+- [Deepest Mandelbrot Set Zoom Animation ever - a New Record! 10^275 (2.1E275 or 2^915)](https://www.youtube.com/watch?v=0jGaio87u3A) — Orson Wang — Jan 22, 2019, 7:44:23 PM EDT
+- [Is There Life After Death? moderated by John Cleese - 2018 Tom Tom Festival](https://www.youtube.com/watch?v=4RGizqsLumo) — Tom Tom Foundation — Jan 22, 2019, 4:43:37 PM EDT
+- [Spirit Herbs: Secrets Of Divine Beings Who Heal](https://www.youtube.com/watch?v=gk-RknLN604) — Pillai Center — Jan 22, 2019, 4:33:20 PM EDT
+- [My DMT Experience - Entities, Inner Worlds, Awe, Fear, Ego Death, and Realizations](https://www.youtube.com/watch?v=7aRIuyhehok) — Bryan Divisions — Jan 22, 2019, 4:03:07 PM EDT
+- [GEMATRIA EXPLAINED: The Secrets of Gematria Revealed](https://www.youtube.com/watch?v=F69Y2x5Wv0g) — John Elias — Jan 22, 2019, 4:02:49 PM EDT
+- [Ron Miller: A Very Different Christian Story](https://www.youtube.com/watch?v=jwjWTKPvG5Q) — Theosophical Society — Jan 22, 2019, 3:54:09 PM EDT
+- [Soul Purpose - 2](https://www.youtube.com/watch?v=w4I_wsYw7PQ) — William Meader — Jan 22, 2019, 2:17:44 PM EDT
+- [Soul Purpose - 1](https://www.youtube.com/watch?v=2Z7QsHiXM0A) — William Meader — Jan 22, 2019, 2:17:10 PM EDT
+- [William Meader - Esoteric Astrology: Revealing the Soul&#39;s Intention](https://www.youtube.com/watch?v=OLhw9ndeEH8) — Theosophical Society — Jan 22, 2019, 1:47:50 PM EDT
+- [Gematria For Beginners: The Art and Science Behind Jewish Numerology](https://www.youtube.com/watch?v=eYEYecBBxn4) — Rabbi Simon Jacobson at Meaningful Life Center — Jan 22, 2019, 12:08:26 PM EDT
+- [David Nichols - DMT And The Pineal Gland: Facts vs Fantasy.](https://www.youtube.com/watch?v=YeeqHUiC8Io) — Breaking Convention — Jan 22, 2019, 12:01:38 PM EDT
+- [Psilocybin Mushrooms and the Mycology of Consciousness: Immersion into the MycoVerse | Paul Stamets](https://www.youtube.com/watch?v=M9joL8spvS8) — Portland Psychedelic Society — Jan 22, 2019, 10:56:39 AM EDT
+- [Joe Rogan Experience #1228 - Bari Weiss](https://www.youtube.com/watch?v=T77uFdw9HJA) — PowerfulJRE — Jan 22, 2019, 10:23:23 AM EDT
+- [Joe Rogan Experience #1054 - Dr. Rhonda Patrick](https://www.youtube.com/watch?v=A9Mj0Q9y084) — PowerfulJRE — Jan 22, 2019, 8:15:17 AM EDT
+- [How to Clear Your Body of Senescent Cells Through Activating Autophagy - Dr. Rhonda Patrick](https://www.youtube.com/watch?v=K9WGQn44XQo) — Erkki Dreiak — Jan 22, 2019, 8:14:58 AM EDT
+- [OM Mantra Chants  ✜ 1111 Times](https://www.youtube.com/watch?v=sG8NDw3Tv6c) — Meditative Mind — Jan 22, 2019, 6:59:12 AM EDT
+- [Stomach Healing Frequency Music: Stomach Pain Relief, Digestive Frequency](https://www.youtube.com/watch?v=4-Yu8XNwR4U) — Good Vibes - Binaural Beats — Jan 22, 2019, 6:53:59 AM EDT
+- [Blockhead - Uncle Tony&#39;s Coloring Book [Full Album]](https://www.youtube.com/watch?v=wo9KedPA8Z0) — Dark Satellites — Jan 21, 2019, 9:57:00 PM EDT
+- [Blockhead - &#39;The Music Scene&#39; (Official Video)](https://www.youtube.com/watch?v=NhheiPTdZCw) — Ninja Tune — Jan 21, 2019, 9:51:04 PM EDT
+- [Flying Lotus - Coronus, The Terminator](https://www.youtube.com/watch?v=Ak4vLEBxIo4) — FlyingLotusVEVO — Jan 21, 2019, 9:50:21 PM EDT
+- [Flying Lotus - Zodiac Shit](https://www.youtube.com/watch?v=0ScYz9sNaQk) — FlyingLotusVEVO — Jan 21, 2019, 9:48:49 PM EDT
+- [What DMT Feels Like | &quot;Interactive Experience&quot;](https://www.youtube.com/watch?v=6umdf4Ef970) — Psyched Substance — Jan 21, 2019, 5:21:49 PM EDT
+- [Yu Yu Hakusho AMV- Linkin Park](https://www.youtube.com/watch?v=uYSKpfgIwzs) — Affliction2pain — Jan 20, 2019, 10:43:51 PM EDT
+- [Yu Yu Hakusho HD: Bui vs. Kirenja](https://www.youtube.com/watch?v=9xL4SY1TJgQ) — Adam McCarthy — Jan 20, 2019, 10:40:52 PM EDT
+- [ALL 7 CHAKRAS HEALING CHANTS | Chakra Seed Mantras Meditation Music](https://www.youtube.com/watch?v=b7JS0O3pFS8) — Meditative Mind — Jan 20, 2019, 3:27:40 PM EDT
+- [528 Hz Heart Chakra Frequency: Heart Chakra Healing, Love Frequency](https://www.youtube.com/watch?v=MafFo3FsULM) — Good Vibes - Binaural Beats — Jan 20, 2019, 3:26:41 PM EDT
+- [OM Chanting @417 Hz | Removes All Negative Blocks](https://www.youtube.com/watch?v=8sYK7lm3UKg) — Meditative Mind — Jan 20, 2019, 3:25:08 PM EDT
+- [Microdosing A Really Good Day: Ayelet Waldman](https://www.youtube.com/watch?v=HUOX6LD9q0k) — Science and Nonduality — Jan 20, 2019, 1:31:05 PM EDT
+- [Dakota Drinks Legal DMT Live (ACRB) | Educational Content](https://www.youtube.com/watch?v=KW6b8WAtHXY) — Psyched Substance — Jan 20, 2019, 1:09:30 PM EDT
+- [SACRAL CHAKRA Sleep Meditation ✧ Remove Emotional Blockages ✧ Balancing &amp; Healing Chakra Sleep Music](https://www.youtube.com/watch?v=k1DSD57DZSc) — Meditative Mind — Jan 20, 2019, 12:39:56 AM EDT
+- [Best Ayahuasca explanation. R.I.P. Scott Petersen](https://www.youtube.com/watch?v=ufQptgr1--s) — certifiedhealthnut — Jan 20, 2019, 12:38:18 AM EDT
+- [Your Brain On Ayahuasca: The Hallucinogenic Drug](https://www.youtube.com/watch?v=cRsJB0taAak) — AsapSCIENCE — Jan 20, 2019, 12:38:16 AM EDT
+- [528 Hz Heart Chakra Frequency: Heart Chakra Healing, Love Frequency](https://www.youtube.com/watch?v=MafFo3FsULM) — Good Vibes - Binaural Beats — Jan 20, 2019, 12:38:11 AM EDT
+- [Tryptamine Meaning](https://www.youtube.com/watch?v=wpsBDzYLUFY) — SDictionary — Jan 20, 2019, 12:37:15 AM EDT
+- [Joe Rogan Experience #1227 - Mike Tyson](https://www.youtube.com/watch?v=7MNv4_rTkfU) — PowerfulJRE — Jan 19, 2019, 11:56:52 PM EDT
+- [How to DRAW a HORSE Step by Step Real time](https://www.youtube.com/watch?v=yDIZnpbvbg8) — Art ala Carte — Jan 19, 2019, 8:10:18 PM EDT
+- [Acrylic Painting Lesson - Horses in the Misty Forest by JM Lisondra](https://www.youtube.com/watch?v=bx2VrRmGVSw) — Art of John Magne Lisondra (JMLisondra) — Jan 19, 2019, 8:03:09 PM EDT
+- [01-05 Honda Civic Common Oil Leak](https://www.youtube.com/watch?v=zFeaRHpvGMg) — DUBYA — Jan 19, 2019, 4:04:37 PM EDT
+- [Michael Jackson - Billie Jean (bass cover) with tabs](https://www.youtube.com/watch?v=Yrm5RBG6S7c) — Yellow Tabs — Jan 19, 2019, 2:16:40 PM EDT
+- [Billy Drummond](https://www.youtube.com/watch?v=Qeyx8rHNnEg) — Equilibrium ARTS — Jan 18, 2019, 7:57:52 PM EDT
+- [OM Chanting @417 Hz | Removes All Negative Blocks](https://www.youtube.com/watch?v=8sYK7lm3UKg) — Meditative Mind — Jan 17, 2019, 12:48:59 PM EDT
+- [Hang Massive - The Secret Kissing of the Sun and Moon [ Official Video ]](https://www.youtube.com/watch?v=nvmOoSFhhJ4) — Hang Massive — Jan 17, 2019, 9:40:07 AM EDT
+- [BINKBEATS - Little Nerves feat. Niels Broos](https://www.youtube.com/watch?v=zfpSn7ZYC0A) — BINKBEATS — Jan 17, 2019, 9:32:50 AM EDT
+- [Naruto Dance Show by O-DOG (Front Row)  | ARENA CHENGDU 2018](https://www.youtube.com/watch?v=VEDQ5rELtoU) — Arena Dance Competition — Jan 16, 2019, 9:34:22 AM EDT
+- [Naruto Dance Show by O-DOG (Front Row)  | ARENA CHENGDU 2018](https://www.youtube.com/watch?v=VEDQ5rELtoU) — Arena Dance Competition — Jan 15, 2019, 10:32:42 PM EDT
+- [The BEST Way to Change Acoustic Guitar Strings](https://www.youtube.com/watch?v=2fPrnwS9qi4) — Tony Polecastro — Jan 15, 2019, 8:23:30 PM EDT
+- [Zeke Finn - Plight ft. Matisyahu](https://www.youtube.com/watch?v=8wA4lE-Kg9w) — Zeke Finn — Jan 15, 2019, 6:22:44 PM EDT
+- [Matisyahu - King Without A Crown](https://www.youtube.com/watch?v=ChV5BZ8SmS0) — MatisyahuVEVO — Jan 15, 2019, 6:18:35 PM EDT
+- [Chris Robinson Brotherhood - &quot;It&#39;s All Over Now Baby Blue&quot; (Bob Dylan Cover) [LIVE @ SiriusXM]](https://www.youtube.com/watch?v=y1wJAWdAR1w) — SiriusXM — Jan 14, 2019, 10:21:01 PM EDT
+- [FOOD, FUCK, FREEZE, FIGHT &amp; FLIGHT - THE LIZARD BRAIN - Wim Hof on The Lizard Brain](https://www.youtube.com/watch?v=IU1WqemH1LA) — London Real — Jan 14, 2019, 10:10:49 PM EDT
+- [I Built a Guitar Out of 1200 Colored Pencils](https://www.youtube.com/watch?v=zBWc5Ye-uLU) — Burls Art — Jan 13, 2019, 7:04:39 PM EDT
+- [hidden neck pattern that will tell you every chord or note in any key](https://www.youtube.com/watch?v=uZg1p2GkUg0) — The Legend of Dr Chill — Jan 13, 2019, 12:36:14 PM EDT
+- [The Circle of Fifths made clear](https://www.youtube.com/watch?v=_UxzDjU3-hM) — Mark Newman — Jan 13, 2019, 11:57:31 AM EDT
+- [A different way to visualize rhythm - John Varney](https://www.youtube.com/watch?v=2UphAzryVpY) — TED-Ed — Jan 13, 2019, 11:49:43 AM EDT
+- [Introducing the Baroque Theorbo](https://www.youtube.com/watch?v=eVabz8LneI4) — Orchestra of the Age of Enlightenment — Jan 13, 2019, 11:39:14 AM EDT
+- [Queen - Bohemian Rhapsody (Bass Cover) (Play Along Tabs In Video)](https://www.youtube.com/watch?v=qJVyHsJ2uEs) — CoverSolutions — Jan 12, 2019, 10:27:39 PM EDT
+- [How to Replace Rear Brakes 01-05 Honda Civic](https://www.youtube.com/watch?v=PGh879YscPA) — 1A Auto: Repair Tips &amp; Secrets Only Mechanics Know — Jan 12, 2019, 3:39:47 PM EDT
+- [Matisyahu - Exaltation](https://www.youtube.com/watch?v=4kFf696CBvQ) — Irvin989 — Jan 9, 2019, 7:57:17 PM EDT
+- [Matisyahu - King Without A Crown](https://www.youtube.com/watch?v=ChV5BZ8SmS0) — MatisyahuVEVO — Jan 9, 2019, 7:52:37 PM EDT
+- [Funniest Talking Parrot Ever on a Sailboat! Meet Lucky the African Grey | SSL](https://www.youtube.com/watch?v=xpgVL0hisCk) — Captain Rick Moore — Jan 8, 2019, 11:04:42 PM EDT
+- [Poppy the African Grey&#39;s best talking video](https://www.youtube.com/watch?v=vWS77c5epZ0) — tacoalf — Jan 8, 2019, 3:51:52 PM EDT
+- [Indian Flute Meditation Music for Healing All 7 Chakras | Instrumental Flute Music for Meditation](https://www.youtube.com/watch?v=X65M-tdqpSI) — Meditative Mind — Jan 6, 2019, 11:36:34 PM EDT
+- [God&#39;s Own Frequency (963Hz) + Shamanic Healing Echoes┇Cure Tension Headaches Fast, Stop Overthinking](https://www.youtube.com/watch?v=WYLOkA2ifsU) — Meditative Mind — Jan 6, 2019, 11:35:19 PM EDT
+- [How To Stain a Deck.  Tips &amp; Hacks Staining A Wood Deck.](https://www.youtube.com/watch?v=XJtgHhA8yhU) — Paint Life TV — Jan 6, 2019, 11:12:07 AM EDT
+- [A Day With WIM HOF And ELLIOTT HULSE - Meeting The ICEMAN | Conscious Coincidences](https://www.youtube.com/watch?v=uZOasUcuJOY) — Unconditional Attention — Jan 5, 2019, 11:22:49 PM EDT
+- [The SIMPLE BAY LEAF  - can HEAL you - PSYCHOACTIVE hERB](https://www.youtube.com/watch?v=CrMCFLQlYf8) — David Vose — Jan 5, 2019, 2:43:32 PM EDT
+- [Opening the First pulse of the groin by Mantak Chia](https://www.youtube.com/watch?v=UlG4hFUgQqE) — Master Mantak Chia — Jan 4, 2019, 11:16:48 PM EDT
+- [The Temptations and Black Sabbath - &quot;Get Ready for the Grave&quot;](https://www.youtube.com/watch?v=JR3uz8rq4ng) — Bill McClintock — Jan 4, 2019, 11:15:29 PM EDT
+- [Sam Chatmon: Make Me A Pallet On the Floor (1978)](https://www.youtube.com/watch?v=AkEhtfPN084) — Lomax Film Collection — Jan 4, 2019, 11:05:27 PM EDT
+- [Elizabeth Cotten - Ball The Jack](https://www.youtube.com/watch?v=AyYA5sTVKaY) — lumaz71 — Jan 4, 2019, 11:03:38 PM EDT
+- [Elizabeth Cotten , Shake Sugaree](https://www.youtube.com/watch?v=O1ViAIdO3i4) — TheMusoboy — Jan 4, 2019, 11:02:08 PM EDT
+- [Freight Train Elizabeth Cotton](https://www.youtube.com/watch?v=IUK8emiWabU) — Bonzo Turrell — Jan 4, 2019, 10:57:21 PM EDT
+- [TDC Podcast 12 - Hamilton Morris on the Expansive World of Drugs](https://www.youtube.com/watch?v=YNLc8i3nkYg) — The Drug Classroom — Jan 4, 2019, 11:03:52 AM EDT
+- [HOW NOT TO SCREW UP YOUR KIDS - Gabor Maté | London Real](https://www.youtube.com/watch?v=gX4EFwv76Vg) — London Real — Jan 4, 2019, 10:54:56 AM EDT
+- [SHOULD PARENTS PROTECT THEIR CHILDREN FROM DEVICES? - Gabor Maté  explains addiction| London Real](https://www.youtube.com/watch?v=lQ4ifp2lKvs) — London Real — Jan 4, 2019, 10:54:26 AM EDT
+- [IS AYAHUASCA A DRUG? - Gabor Maté | London Real](https://www.youtube.com/watch?v=lO_-OWSfzwY) — London Real — Jan 4, 2019, 7:20:54 AM EDT
+- [Unboxing 30 G’s of LEGAL Canadian Cannabis | Weed Legalization Documentary Part #2](https://www.youtube.com/watch?v=v0mK4WHsSrY) — Psyched Substance — Jan 3, 2019, 10:32:39 PM EDT
+- [Jamie Lidell&#39;s Secret Vocal Harmony Trick](https://www.youtube.com/watch?v=jhG4gw85Boo) — soundtoys — Jan 3, 2019, 10:26:23 PM EDT
+- [Over 30 Edible Perennials in a Small Garden!](https://www.youtube.com/watch?v=jTmiCyOVhpo) — OYR Frugal &amp; Sustainable Organic Gardening — Jan 3, 2019, 10:18:11 PM EDT
+- [Bajinn - Sounds Present A new meditative musical instrument](https://www.youtube.com/watch?v=z9RJs3cJTiQ) — Bajinn — Jan 3, 2019, 9:28:10 PM EDT
+- [When the Body Says No -- Caring for ourselves while caring for others. Dr. Gabor Maté](https://www.youtube.com/watch?v=c6IL8WVyMMs) — SCSASmithers — Jan 3, 2019, 2:10:48 PM EDT
+- [Dr. Gabor Maté - Compassionate Inquiry](https://www.youtube.com/watch?v=H-la8uKFd1E) — Banyen Books &amp; Sound — Jan 3, 2019, 1:43:17 PM EDT
+- [HOW NOT TO SCREW UP YOUR KIDS - Gabor Maté | London Real](https://www.youtube.com/watch?v=gX4EFwv76Vg) — London Real — Jan 3, 2019, 1:11:07 PM EDT
+- [Wim Hof: Control Your Happiness, Strength &amp; Health! &quot;Everything else is bullsh*t&quot;](https://www.youtube.com/watch?v=qYl3izzO4xo) — Aubrey Marcus — Jan 2, 2019, 7:55:51 PM EDT
+- [ALL 7 CHAKRAS HEALING MUSIC || Full Body Aura Cleanse &amp; Boost Positive Energy | Meditation Music](https://www.youtube.com/watch?v=vCpBSnYBTM0) — Meditative Mind — Jan 1, 2019, 11:35:44 PM EDT
+- [7 Chakras Spoken Word Guided Meditation, Visualization, Relaxing, Chakra Healing, Balancing](https://www.youtube.com/watch?v=00pNPZPtBpo) — Jason Stephenson - Guided Sleep Meditation  — Jan 1, 2019, 11:24:14 PM EDT
+- [Remove All Negative Blockages: Clear Subconscious Negativity &amp; Negative Thoughts](https://www.youtube.com/watch?v=ZL4YqdetFf8) — Good Vibes - Binaural Beats — Jan 1, 2019, 11:22:05 PM EDT
+- [70 minute~7 Chakra Meditation with 21 Antique Tibetan Singing Bowls~Crown~B thru Root~C](https://www.youtube.com/watch?v=Nb3okem4OCk) — templesounds — Jan 1, 2019, 11:21:50 PM EDT
+- [First Time Trying Morning Glory Seeds with Two See E](https://www.youtube.com/watch?v=RSBf_moPLxo) — Psyched Substance — Jan 1, 2019, 10:43:57 PM EDT

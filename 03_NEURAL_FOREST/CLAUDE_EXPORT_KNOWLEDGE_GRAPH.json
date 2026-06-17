@@ -1,0 +1,1868 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {
+    "hyperedges": [
+      {
+        "id": "sacred_market_ecosystem",
+        "label": "Sacred Market Ecosystem",
+        "nodes": [
+          "sacred_market_pillar_09",
+          "merchant_agent",
+          "etsy_platform",
+          "pod_product_pipeline",
+          "lore_to_product_pipeline",
+          "sacred_bazaar",
+          "gematric_pricing_model",
+          "graded_decode_service",
+          "sacredarcana_llc"
+        ],
+        "relation": "form",
+        "confidence": "INFERRED",
+        "confidence_score": 0.95
+      },
+      {
+        "id": "revenue_pipeline",
+        "label": "Revenue Generation Pipeline",
+        "nodes": [
+          "smb_ai_consulting",
+          "ai_implementation_engineer",
+          "crowdfunding_strategy",
+          "pod_product_pipeline",
+          "graded_decode_service",
+          "sacred_market_pillar_09",
+          "prelaunch_email_list",
+          "proof_density_sprint"
+        ],
+        "relation": "form",
+        "confidence": "INFERRED",
+        "confidence_score": 0.9
+      },
+      {
+        "id": "social_to_market_pipeline",
+        "label": "Social-to-Market Pipeline",
+        "nodes": [
+          "sacredspacestudios_brand",
+          "social_signal_pillar_07",
+          "grama_cipher_drops",
+          "product_reveals",
+          "behind_the_build_content",
+          "sacredspace_portal_website",
+          "sacred_bazaar",
+          "etsy_platform",
+          "crowdfunding_strategy"
+        ],
+        "relation": "form",
+        "confidence": "INFERRED",
+        "confidence_score": 0.95
+      },
+      {
+        "id": "lore_to_ledger_bridge",
+        "label": "Lore-to-Ledger Bridge",
+        "nodes": [
+          "lore_to_ledger_map",
+          "sacred_economy_codex",
+          "sacred_triad_narrative",
+          "graded_cipher_sage",
+          "vashd_weaver",
+          "lyra_harmonic_architect",
+          "gematric_pricing_model",
+          "lore_to_product_pipeline"
+        ],
+        "relation": "form",
+        "confidence": "INFERRED",
+        "confidence_score": 0.9
+      },
+      {
+        "id": "visual_brand_system",
+        "label": "Visual Brand System",
+        "nodes": [
+          "sacred_codex_design_system",
+          "luminous_visual_dna",
+          "ethereal_tech_fantasy_aesthetic",
+          "sacred_forest_ide_theme",
+          "arcana_grid_12_archetypes",
+          "sacredspace_portal_website",
+          "grounded_mysticism_voice",
+          "sacredspacestudios_brand"
+        ],
+        "relation": "form",
+        "confidence": "INFERRED",
+        "confidence_score": 0.85
+      },
+      {
+        "id": "income_strategy_2026",
+        "label": "2026 Income Strategy Vector",
+        "nodes": [
+          "smb_ai_consulting",
+          "ai_implementation_engineer",
+          "crowdfunding_strategy",
+          "sacredarcana_llc",
+          "kickstarter_platform",
+          "offer_physics",
+          "unit_economics_model",
+          "risk_register",
+          "30k_containment_strategy"
+        ],
+        "relation": "form",
+        "confidence": "INFERRED",
+        "confidence_score": 0.85
+      },
+      {
+        "id": "nine_pillar_backbone",
+        "label": "Nine Pillar Architecture",
+        "nodes": [
+          "obsidian_vaults_pillar_01",
+          "council_grove_pillar_02",
+          "neural_forest_pillar_03",
+          "sacred_codex_pillar_04",
+          "memory_engine_pillar_05",
+          "agent_layer_pillar_06",
+          "social_signal_pillar_07",
+          "learning_path_pillar_08",
+          "sacred_market_pillar_09"
+        ],
+        "relation": "form",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "label": "Sacred Market (Pillar 09)",
+      "file_type": "concept",
+      "source_file": "01_SACRED_MARKET.md",
+      "id": "sacred_market_pillar_09",
+      "community": 2,
+      "norm_label": "sacred market (pillar 09)"
+    },
+    {
+      "label": "MERCHANT Agent",
+      "file_type": "concept",
+      "source_file": "01_SACRED_MARKET.md",
+      "id": "merchant_agent",
+      "community": 0,
+      "norm_label": "merchant agent"
+    },
+    {
+      "label": "Etsy Platform",
+      "file_type": "concept",
+      "source_file": "01_SACRED_MARKET.md",
+      "id": "etsy_platform",
+      "community": 4,
+      "norm_label": "etsy platform"
+    },
+    {
+      "label": "Printify Platform",
+      "file_type": "concept",
+      "source_file": "01_SACRED_MARKET.md",
+      "id": "printify_platform",
+      "community": 2,
+      "norm_label": "printify platform"
+    },
+    {
+      "label": "Gelato Platform",
+      "file_type": "concept",
+      "source_file": "01_SACRED_MARKET.md",
+      "id": "gelato_platform",
+      "community": 2,
+      "norm_label": "gelato platform"
+    },
+    {
+      "label": "Lore-to-Product Pipeline",
+      "file_type": "concept",
+      "source_file": "01_SACRED_MARKET.md",
+      "id": "lore_to_product_pipeline",
+      "community": 6,
+      "norm_label": "lore-to-product pipeline"
+    },
+    {
+      "label": "Lore-to-Ledger Map",
+      "file_type": "concept",
+      "source_file": "01_SACRED_MARKET.md",
+      "id": "lore_to_ledger_map",
+      "community": 6,
+      "norm_label": "lore-to-ledger map"
+    },
+    {
+      "label": "Sacred Economy Codex",
+      "file_type": "concept",
+      "source_file": "01_SACRED_MARKET.md",
+      "id": "sacred_economy_codex",
+      "community": 6,
+      "norm_label": "sacred economy codex"
+    },
+    {
+      "label": "GRADED Decode Service",
+      "file_type": "concept",
+      "source_file": "01_SACRED_MARKET.md",
+      "id": "graded_decode_service",
+      "community": 0,
+      "norm_label": "graded decode service"
+    },
+    {
+      "label": "Sacred Bazaar",
+      "file_type": "concept",
+      "source_file": "01_SACRED_MARKET.md",
+      "id": "sacred_bazaar",
+      "community": 0,
+      "norm_label": "sacred bazaar"
+    },
+    {
+      "label": "Gematric Pricing Model",
+      "file_type": "concept",
+      "source_file": "01_SACRED_MARKET.md",
+      "id": "gematric_pricing_model",
+      "community": 0,
+      "norm_label": "gematric pricing model"
+    },
+    {
+      "label": "POD Product Pipeline",
+      "file_type": "concept",
+      "source_file": "01_SACRED_MARKET.md",
+      "id": "pod_product_pipeline",
+      "community": 5,
+      "norm_label": "pod product pipeline"
+    },
+    {
+      "label": "Physical Art Portfolio",
+      "file_type": "concept",
+      "source_file": "01_SACRED_MARKET.md",
+      "id": "physical_art_portfolio",
+      "community": 5,
+      "norm_label": "physical art portfolio"
+    },
+    {
+      "label": "AI Image Portfolio",
+      "file_type": "concept",
+      "source_file": "01_SACRED_MARKET.md",
+      "id": "ai_image_portfolio",
+      "community": 5,
+      "norm_label": "ai image portfolio"
+    },
+    {
+      "label": "Jenga Journey S1",
+      "file_type": "concept",
+      "source_file": "01_SACRED_MARKET.md",
+      "id": "jenga_journey_s1",
+      "community": 5,
+      "norm_label": "jenga journey s1"
+    },
+    {
+      "label": "Sacred Messages Year 1",
+      "file_type": "concept",
+      "source_file": "01_SACRED_MARKET.md",
+      "id": "sacred_messages_year_1",
+      "community": 5,
+      "norm_label": "sacred messages year 1"
+    },
+    {
+      "label": "ICARIS Quartet Designs",
+      "file_type": "concept",
+      "source_file": "01_SACRED_MARKET.md",
+      "id": "icaris_quartet_designs",
+      "community": 5,
+      "norm_label": "icaris quartet designs"
+    },
+    {
+      "label": "4 Elemental Realms",
+      "file_type": "concept",
+      "source_file": "01_SACRED_MARKET.md",
+      "id": "4_elemental_realms",
+      "community": 8,
+      "norm_label": "4 elemental realms"
+    },
+    {
+      "label": "8 Design Families",
+      "file_type": "concept",
+      "source_file": "01_SACRED_MARKET.md",
+      "id": "8_design_families",
+      "community": 8,
+      "norm_label": "8 design families"
+    },
+    {
+      "label": "SacredArcana LLC",
+      "file_type": "concept",
+      "source_file": "01_SACRED_MARKET.md",
+      "id": "sacredarcana_llc",
+      "community": 2,
+      "norm_label": "sacredarcana llc"
+    },
+    {
+      "label": "SacredSpace 501c3",
+      "file_type": "concept",
+      "source_file": "01_SACRED_MARKET.md",
+      "id": "sacredspace_501c3",
+      "community": 2,
+      "norm_label": "sacredspace 501c3"
+    },
+    {
+      "label": "Crowdfunding Strategy",
+      "file_type": "concept",
+      "source_file": "03_MONEY_FINANCE_CONCEPTS.md",
+      "id": "crowdfunding_strategy",
+      "community": 3,
+      "norm_label": "crowdfunding strategy"
+    },
+    {
+      "label": "Kickstarter Platform",
+      "file_type": "concept",
+      "source_file": "03_MONEY_FINANCE_CONCEPTS.md",
+      "id": "kickstarter_platform",
+      "community": 4,
+      "norm_label": "kickstarter platform"
+    },
+    {
+      "label": "Indiegogo Platform",
+      "file_type": "concept",
+      "source_file": "03_MONEY_FINANCE_CONCEPTS.md",
+      "id": "indiegogo_platform",
+      "community": 3,
+      "norm_label": "indiegogo platform"
+    },
+    {
+      "label": "StartEngine Equity",
+      "file_type": "concept",
+      "source_file": "03_MONEY_FINANCE_CONCEPTS.md",
+      "id": "startengine_equity",
+      "community": 3,
+      "norm_label": "startengine equity"
+    },
+    {
+      "label": "SMB AI Consulting",
+      "file_type": "concept",
+      "source_file": "03_MONEY_FINANCE_CONCEPTS.md",
+      "id": "smb_ai_consulting",
+      "community": 4,
+      "norm_label": "smb ai consulting"
+    },
+    {
+      "label": "AI Implementation Engineer",
+      "file_type": "concept",
+      "source_file": "03_MONEY_FINANCE_CONCEPTS.md",
+      "id": "ai_implementation_engineer",
+      "community": 2,
+      "norm_label": "ai implementation engineer"
+    },
+    {
+      "label": "Regulated SMB Compliance",
+      "file_type": "concept",
+      "source_file": "03_MONEY_FINANCE_CONCEPTS.md",
+      "id": "regulated_smb_compliance",
+      "community": 4,
+      "norm_label": "regulated smb compliance"
+    },
+    {
+      "label": "30k Containment Strategy",
+      "file_type": "concept",
+      "source_file": "03_MONEY_FINANCE_CONCEPTS.md",
+      "id": "30k_containment_strategy",
+      "community": 2,
+      "norm_label": "30k containment strategy"
+    },
+    {
+      "label": "Cashflow Master Tracking",
+      "file_type": "concept",
+      "source_file": "03_MONEY_FINANCE_CONCEPTS.md",
+      "id": "cashflow_master_tracking",
+      "community": 2,
+      "norm_label": "cashflow master tracking"
+    },
+    {
+      "label": "NotebookLM Intelligence",
+      "file_type": "concept",
+      "source_file": "03_MONEY_FINANCE_CONCEPTS.md",
+      "id": "notebooklm_intelligence",
+      "community": 2,
+      "norm_label": "notebooklm intelligence"
+    },
+    {
+      "label": "Unit Economics Model",
+      "file_type": "concept",
+      "source_file": "03_MONEY_FINANCE_CONCEPTS.md",
+      "id": "unit_economics_model",
+      "community": 3,
+      "norm_label": "unit economics model"
+    },
+    {
+      "label": "Reward Tier Pricing",
+      "file_type": "concept",
+      "source_file": "03_MONEY_FINANCE_CONCEPTS.md",
+      "id": "reward_tier_pricing",
+      "community": 3,
+      "norm_label": "reward tier pricing"
+    },
+    {
+      "label": "Prelaunch Email List",
+      "file_type": "concept",
+      "source_file": "03_MONEY_FINANCE_CONCEPTS.md",
+      "id": "prelaunch_email_list",
+      "community": 3,
+      "norm_label": "prelaunch email list"
+    },
+    {
+      "label": "Proof Density Sprint",
+      "file_type": "concept",
+      "source_file": "03_MONEY_FINANCE_CONCEPTS.md",
+      "id": "proof_density_sprint",
+      "community": 3,
+      "norm_label": "proof density sprint"
+    },
+    {
+      "label": "Offer Physics",
+      "file_type": "concept",
+      "source_file": "03_MONEY_FINANCE_CONCEPTS.md",
+      "id": "offer_physics",
+      "community": 3,
+      "norm_label": "offer physics"
+    },
+    {
+      "label": "Risk Register",
+      "file_type": "concept",
+      "source_file": "03_MONEY_FINANCE_CONCEPTS.md",
+      "id": "risk_register",
+      "community": 3,
+      "norm_label": "risk register"
+    },
+    {
+      "label": "Stretch Goal Discipline",
+      "file_type": "concept",
+      "source_file": "03_MONEY_FINANCE_CONCEPTS.md",
+      "id": "stretch_goal_discipline",
+      "community": 3,
+      "norm_label": "stretch goal discipline"
+    },
+    {
+      "label": "SacredSpace Intelligence Rig",
+      "file_type": "concept",
+      "source_file": "03_MONEY_FINANCE_CONCEPTS.md",
+      "id": "sacredspace_intelligence_rig",
+      "community": 2,
+      "norm_label": "sacredspace intelligence rig"
+    },
+    {
+      "label": "Campaign Market Monitor",
+      "file_type": "concept",
+      "source_file": "03_MONEY_FINANCE_CONCEPTS.md",
+      "id": "campaign_market_monitor",
+      "community": 2,
+      "norm_label": "campaign market monitor"
+    },
+    {
+      "label": "Daily AI Briefing",
+      "file_type": "concept",
+      "source_file": "03_MONEY_FINANCE_CONCEPTS.md",
+      "id": "daily_ai_briefing",
+      "community": 2,
+      "norm_label": "daily ai briefing"
+    },
+    {
+      "label": "Social Signal (Pillar 07)",
+      "file_type": "concept",
+      "source_file": "02_SOCIAL_SIGNAL.md",
+      "id": "social_signal_pillar_07",
+      "community": 0,
+      "norm_label": "social signal (pillar 07)"
+    },
+    {
+      "label": "SacredSpaceStudios Brand",
+      "file_type": "concept",
+      "source_file": "02_SOCIAL_SIGNAL.md",
+      "id": "sacredspacestudios_brand",
+      "community": 4,
+      "norm_label": "sacredspacestudios brand"
+    },
+    {
+      "label": "AURORA Agent",
+      "file_type": "concept",
+      "source_file": "02_SOCIAL_SIGNAL.md",
+      "id": "aurora_agent",
+      "community": 0,
+      "norm_label": "aurora agent"
+    },
+    {
+      "label": "ELIAS Agent",
+      "file_type": "concept",
+      "source_file": "02_SOCIAL_SIGNAL.md",
+      "id": "elias_agent",
+      "community": 0,
+      "norm_label": "elias agent"
+    },
+    {
+      "label": "Grounded Mysticism Voice",
+      "file_type": "concept",
+      "source_file": "02_SOCIAL_SIGNAL.md",
+      "id": "grounded_mysticism_voice",
+      "community": 10,
+      "norm_label": "grounded mysticism voice"
+    },
+    {
+      "label": "Sacred Signal Posts",
+      "file_type": "concept",
+      "source_file": "02_SOCIAL_SIGNAL.md",
+      "id": "sacred_signal_posts",
+      "community": 0,
+      "norm_label": "sacred signal posts"
+    },
+    {
+      "label": "Product Reveals",
+      "file_type": "concept",
+      "source_file": "02_SOCIAL_SIGNAL.md",
+      "id": "product_reveals",
+      "community": 5,
+      "norm_label": "product reveals"
+    },
+    {
+      "label": "Living Companion Stories",
+      "file_type": "concept",
+      "source_file": "02_SOCIAL_SIGNAL.md",
+      "id": "living_companion_stories",
+      "community": 0,
+      "norm_label": "living companion stories"
+    },
+    {
+      "label": "Behind the Build Content",
+      "file_type": "concept",
+      "source_file": "02_SOCIAL_SIGNAL.md",
+      "id": "behind_the_build_content",
+      "community": 0,
+      "norm_label": "behind the build content"
+    },
+    {
+      "label": "GRAMA Cipher Drops",
+      "file_type": "concept",
+      "source_file": "02_SOCIAL_SIGNAL.md",
+      "id": "grama_cipher_drops",
+      "community": 0,
+      "norm_label": "grama cipher drops"
+    },
+    {
+      "label": "Luminous Visual DNA",
+      "file_type": "concept",
+      "source_file": "02_SOCIAL_SIGNAL.md",
+      "id": "luminous_visual_dna",
+      "community": 7,
+      "norm_label": "luminous visual dna"
+    },
+    {
+      "label": "Ethereal Tech-Fantasy Aesthetic",
+      "file_type": "concept",
+      "source_file": "02_SOCIAL_SIGNAL.md",
+      "id": "ethereal_tech_fantasy_aesthetic",
+      "community": 7,
+      "norm_label": "ethereal tech-fantasy aesthetic"
+    },
+    {
+      "label": "Sacred Codex Design System",
+      "file_type": "concept",
+      "source_file": "02_SOCIAL_SIGNAL.md",
+      "id": "sacred_codex_design_system",
+      "community": 7,
+      "norm_label": "sacred codex design system"
+    },
+    {
+      "label": "Sacred Forest IDE Theme",
+      "file_type": "concept",
+      "source_file": "02_SOCIAL_SIGNAL.md",
+      "id": "sacred_forest_ide_theme",
+      "community": 7,
+      "norm_label": "sacred forest ide theme"
+    },
+    {
+      "label": "Arcana Grid 12 Archetypes",
+      "file_type": "concept",
+      "source_file": "02_SOCIAL_SIGNAL.md",
+      "id": "arcana_grid_12_archetypes",
+      "community": 9,
+      "norm_label": "arcana grid 12 archetypes"
+    },
+    {
+      "label": "SacredSpace Portal Website",
+      "file_type": "concept",
+      "source_file": "02_SOCIAL_SIGNAL.md",
+      "id": "sacredspace_portal_website",
+      "community": 0,
+      "norm_label": "sacredspace portal website"
+    },
+    {
+      "label": "Metatron Cube Animation",
+      "file_type": "concept",
+      "source_file": "02_SOCIAL_SIGNAL.md",
+      "id": "metatron_cube_animation",
+      "community": 11,
+      "norm_label": "metatron cube animation"
+    },
+    {
+      "label": "Awaken Email Capture",
+      "file_type": "concept",
+      "source_file": "02_SOCIAL_SIGNAL.md",
+      "id": "awaken_email_capture",
+      "community": 3,
+      "norm_label": "awaken email capture"
+    },
+    {
+      "label": "Open Grove Community",
+      "file_type": "concept",
+      "source_file": "02_SOCIAL_SIGNAL.md",
+      "id": "open_grove_community",
+      "community": 0,
+      "norm_label": "open grove community"
+    },
+    {
+      "label": "Instagram Platform",
+      "file_type": "concept",
+      "source_file": "04_SOCIAL_MEDIA_BUILDS.md",
+      "id": "instagram_platform",
+      "community": 4,
+      "norm_label": "instagram platform"
+    },
+    {
+      "label": "TikTok Platform",
+      "file_type": "concept",
+      "source_file": "04_SOCIAL_MEDIA_BUILDS.md",
+      "id": "tiktok_platform",
+      "community": 4,
+      "norm_label": "tiktok platform"
+    },
+    {
+      "label": "YouTube Platform",
+      "file_type": "concept",
+      "source_file": "04_SOCIAL_MEDIA_BUILDS.md",
+      "id": "youtube_platform",
+      "community": 4,
+      "norm_label": "youtube platform"
+    },
+    {
+      "label": "X Twitter Platform",
+      "file_type": "concept",
+      "source_file": "04_SOCIAL_MEDIA_BUILDS.md",
+      "id": "x_twitter_platform",
+      "community": 4,
+      "norm_label": "x twitter platform"
+    },
+    {
+      "label": "Pinterest Platform",
+      "file_type": "concept",
+      "source_file": "04_SOCIAL_MEDIA_BUILDS.md",
+      "id": "pinterest_platform",
+      "community": 4,
+      "norm_label": "pinterest platform"
+    },
+    {
+      "label": "LinkedIn Platform",
+      "file_type": "concept",
+      "source_file": "04_SOCIAL_MEDIA_BUILDS.md",
+      "id": "linkedin_platform",
+      "community": 4,
+      "norm_label": "linkedin platform"
+    },
+    {
+      "label": "SacredSpace OS",
+      "file_type": "concept",
+      "source_file": "06_SACRED_ECOSYSTEM_SUMMARY.md",
+      "id": "sacredspace_os",
+      "community": 1,
+      "norm_label": "sacredspace os"
+    },
+    {
+      "label": "Taylor OAK3YTREE Operator",
+      "file_type": "concept",
+      "source_file": "06_SACRED_ECOSYSTEM_SUMMARY.md",
+      "id": "taylor_oak3ytree_operator",
+      "community": 1,
+      "norm_label": "taylor oak3ytree operator"
+    },
+    {
+      "label": "ICARIS Quartet",
+      "file_type": "concept",
+      "source_file": "06_SACRED_ECOSYSTEM_SUMMARY.md",
+      "id": "icaris_quartet",
+      "community": 0,
+      "norm_label": "icaris quartet"
+    },
+    {
+      "label": "Nine Pillar Architecture",
+      "file_type": "concept",
+      "source_file": "06_SACRED_ECOSYSTEM_SUMMARY.md",
+      "id": "nine_pillar_architecture",
+      "community": 0,
+      "norm_label": "nine pillar architecture"
+    },
+    {
+      "label": "Council Grove Pillar 02",
+      "file_type": "concept",
+      "source_file": "06_SACRED_ECOSYSTEM_SUMMARY.md",
+      "id": "council_grove_pillar_02",
+      "community": 1,
+      "norm_label": "council grove pillar 02"
+    },
+    {
+      "label": "Obsidian Vaults Pillar 01",
+      "file_type": "concept",
+      "source_file": "06_SACRED_ECOSYSTEM_SUMMARY.md",
+      "id": "obsidian_vaults_pillar_01",
+      "community": 1,
+      "norm_label": "obsidian vaults pillar 01"
+    },
+    {
+      "label": "Neural Forest Pillar 03",
+      "file_type": "concept",
+      "source_file": "06_SACRED_ECOSYSTEM_SUMMARY.md",
+      "id": "neural_forest_pillar_03",
+      "community": 1,
+      "norm_label": "neural forest pillar 03"
+    },
+    {
+      "label": "Sacred Codex Pillar 04",
+      "file_type": "concept",
+      "source_file": "06_SACRED_ECOSYSTEM_SUMMARY.md",
+      "id": "sacred_codex_pillar_04",
+      "community": 1,
+      "norm_label": "sacred codex pillar 04"
+    },
+    {
+      "label": "Memory Engine Pillar 05",
+      "file_type": "concept",
+      "source_file": "06_SACRED_ECOSYSTEM_SUMMARY.md",
+      "id": "memory_engine_pillar_05",
+      "community": 1,
+      "norm_label": "memory engine pillar 05"
+    },
+    {
+      "label": "Agent Layer Pillar 06",
+      "file_type": "concept",
+      "source_file": "06_SACRED_ECOSYSTEM_SUMMARY.md",
+      "id": "agent_layer_pillar_06",
+      "community": 0,
+      "norm_label": "agent layer pillar 06"
+    },
+    {
+      "label": "Learning Path Pillar 08",
+      "file_type": "concept",
+      "source_file": "06_SACRED_ECOSYSTEM_SUMMARY.md",
+      "id": "learning_path_pillar_08",
+      "community": 1,
+      "norm_label": "learning path pillar 08"
+    },
+    {
+      "label": "SACREDSPACE Master Context",
+      "file_type": "concept",
+      "source_file": "06_SACRED_ECOSYSTEM_SUMMARY.md",
+      "id": "sacredspace_master_context",
+      "community": 1,
+      "norm_label": "sacredspace master context"
+    },
+    {
+      "label": "Live Sync Protocol",
+      "file_type": "concept",
+      "source_file": "06_SACRED_ECOSYSTEM_SUMMARY.md",
+      "id": "live_sync_protocol",
+      "community": 1,
+      "norm_label": "live sync protocol"
+    },
+    {
+      "label": "GRADED Cipher Sage",
+      "file_type": "concept",
+      "source_file": "05_CROSS_MAP_CONNECTIONS.md",
+      "id": "graded_cipher_sage",
+      "community": 0,
+      "norm_label": "graded cipher sage"
+    },
+    {
+      "label": "VASHD Weaver",
+      "file_type": "concept",
+      "source_file": "05_CROSS_MAP_CONNECTIONS.md",
+      "id": "vashd_weaver",
+      "community": 7,
+      "norm_label": "vashd weaver"
+    },
+    {
+      "label": "LYRA Harmonic Architect",
+      "file_type": "concept",
+      "source_file": "05_CROSS_MAP_CONNECTIONS.md",
+      "id": "lyra_harmonic_architect",
+      "community": 9,
+      "norm_label": "lyra harmonic architect"
+    },
+    {
+      "label": "Sacred Triad Narrative",
+      "file_type": "concept",
+      "source_file": "05_CROSS_MAP_CONNECTIONS.md",
+      "id": "sacred_triad_narrative",
+      "community": 6,
+      "norm_label": "sacred triad narrative"
+    },
+    {
+      "label": "Mythic Operating System",
+      "file_type": "concept",
+      "source_file": "05_CROSS_MAP_CONNECTIONS.md",
+      "id": "mythic_operating_system",
+      "community": 6,
+      "norm_label": "mythic operating system"
+    },
+    {
+      "label": "Song That Remembers Itself",
+      "file_type": "concept",
+      "source_file": "05_CROSS_MAP_CONNECTIONS.md",
+      "id": "song_that_remembers_itself",
+      "community": 6,
+      "norm_label": "song that remembers itself"
+    },
+    {
+      "label": "SACRED3 Infrastructure",
+      "file_type": "concept",
+      "source_file": "05_CROSS_MAP_CONNECTIONS.md",
+      "id": "sacred3_infrastructure",
+      "community": 6,
+      "norm_label": "sacred3 infrastructure"
+    },
+    {
+      "label": "Python FastAPI Stack",
+      "file_type": "concept",
+      "source_file": "06_SACRED_ECOSYSTEM_SUMMARY.md",
+      "id": "python_fastapi_stack",
+      "community": 1,
+      "norm_label": "python fastapi stack"
+    },
+    {
+      "label": "SQLite Redis ChromaDB",
+      "file_type": "concept",
+      "source_file": "06_SACRED_ECOSYSTEM_SUMMARY.md",
+      "id": "sqlite_redis_chromadb",
+      "community": 1,
+      "norm_label": "sqlite redis chromadb"
+    },
+    {
+      "label": "WSL2 Ubuntu Lenovo",
+      "file_type": "concept",
+      "source_file": "06_SACRED_ECOSYSTEM_SUMMARY.md",
+      "id": "wsl2_ubuntu_lenovo",
+      "community": 1,
+      "norm_label": "wsl2 ubuntu lenovo"
+    },
+    {
+      "label": "Ollama AI Models",
+      "file_type": "concept",
+      "source_file": "06_SACRED_ECOSYSTEM_SUMMARY.md",
+      "id": "ollama_ai_models",
+      "community": 1,
+      "norm_label": "ollama ai models"
+    },
+    {
+      "label": "Tailscale Network",
+      "file_type": "concept",
+      "source_file": "06_SACRED_ECOSYSTEM_SUMMARY.md",
+      "id": "tailscale_network",
+      "community": 1,
+      "norm_label": "tailscale network"
+    },
+    {
+      "label": "Zero Cost API Constraint",
+      "file_type": "concept",
+      "source_file": "06_SACRED_ECOSYSTEM_SUMMARY.md",
+      "id": "zero_cost_api_constraint",
+      "community": 1,
+      "norm_label": "zero cost api constraint"
+    }
+  ],
+  "links": [
+    {
+      "relation": "drives",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "sacred_market_pillar_09",
+      "target": "pod_product_pipeline"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "sacred_market_pillar_09",
+      "target": "lore_to_product_pipeline"
+    },
+    {
+      "relation": "operates",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "merchant_agent",
+      "target": "sacred_market_pillar_09"
+    },
+    {
+      "relation": "sells_on",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "sacred_market_pillar_09",
+      "target": "etsy_platform"
+    },
+    {
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "sacred_market_pillar_09",
+      "target": "printify_platform"
+    },
+    {
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "sacred_market_pillar_09",
+      "target": "gelato_platform"
+    },
+    {
+      "relation": "belongs_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "sacred_bazaar",
+      "target": "sacred_market_pillar_09"
+    },
+    {
+      "relation": "owns",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "sacredarcana_llc",
+      "target": "sacred_market_pillar_09"
+    },
+    {
+      "relation": "separate_from",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "sacredspace_501c3",
+      "target": "sacred_market_pillar_09"
+    },
+    {
+      "relation": "finances",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "crowdfunding_strategy",
+      "target": "sacred_market_pillar_09"
+    },
+    {
+      "relation": "revenue_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "smb_ai_consulting",
+      "target": "sacred_market_pillar_09"
+    },
+    {
+      "relation": "revenue_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "ai_implementation_engineer",
+      "target": "sacred_market_pillar_09"
+    },
+    {
+      "relation": "informs",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "sacredspace_intelligence_rig",
+      "target": "sacred_market_pillar_09"
+    },
+    {
+      "relation": "informs",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "notebooklm_intelligence",
+      "target": "sacred_market_pillar_09"
+    },
+    {
+      "relation": "promotes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "social_signal_pillar_07",
+      "target": "sacred_market_pillar_09"
+    },
+    {
+      "relation": "markets",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "sacredspacestudios_brand",
+      "target": "sacred_market_pillar_09"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "nine_pillar_architecture",
+      "target": "sacred_market_pillar_09"
+    },
+    {
+      "relation": "supports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "cashflow_master_tracking",
+      "target": "sacred_market_pillar_09"
+    },
+    {
+      "relation": "part_of",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "merchant_agent",
+      "target": "icaris_quartet"
+    },
+    {
+      "relation": "drives_traffic_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "sacredspacestudios_brand",
+      "target": "etsy_platform"
+    },
+    {
+      "relation": "feeds",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "lore_to_product_pipeline",
+      "target": "lore_to_ledger_map"
+    },
+    {
+      "relation": "produces",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "lore_to_ledger_map",
+      "target": "sacred_economy_codex"
+    },
+    {
+      "relation": "feeds",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "sacred_triad_narrative",
+      "target": "lore_to_ledger_map"
+    },
+    {
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "graded_decode_service",
+      "target": "gematric_pricing_model"
+    },
+    {
+      "relation": "lore_source_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "graded_cipher_sage",
+      "target": "graded_decode_service"
+    },
+    {
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "sacred_bazaar",
+      "target": "gematric_pricing_model"
+    },
+    {
+      "relation": "drives_traffic_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "sacred_signal_posts",
+      "target": "sacred_bazaar"
+    },
+    {
+      "relation": "displays",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "sacredspace_portal_website",
+      "target": "sacred_bazaar"
+    },
+    {
+      "relation": "feeds",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "physical_art_portfolio",
+      "target": "pod_product_pipeline"
+    },
+    {
+      "relation": "feeds",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "ai_image_portfolio",
+      "target": "pod_product_pipeline"
+    },
+    {
+      "relation": "feeds",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "jenga_journey_s1",
+      "target": "pod_product_pipeline"
+    },
+    {
+      "relation": "feeds",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "sacred_messages_year_1",
+      "target": "pod_product_pipeline"
+    },
+    {
+      "relation": "feeds",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "icaris_quartet_designs",
+      "target": "pod_product_pipeline"
+    },
+    {
+      "relation": "showcases",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "product_reveals",
+      "target": "pod_product_pipeline"
+    },
+    {
+      "relation": "inspires",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "icaris_quartet",
+      "target": "icaris_quartet_designs"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "4_elemental_realms",
+      "target": "8_design_families"
+    },
+    {
+      "relation": "governs",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "30k_containment_strategy",
+      "target": "sacredarcana_llc"
+    },
+    {
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "crowdfunding_strategy",
+      "target": "kickstarter_platform"
+    },
+    {
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "crowdfunding_strategy",
+      "target": "indiegogo_platform"
+    },
+    {
+      "relation": "future_phase",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "crowdfunding_strategy",
+      "target": "startengine_equity"
+    },
+    {
+      "relation": "requires",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "crowdfunding_strategy",
+      "target": "proof_density_sprint"
+    },
+    {
+      "relation": "requires",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "crowdfunding_strategy",
+      "target": "unit_economics_model"
+    },
+    {
+      "relation": "requires",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "crowdfunding_strategy",
+      "target": "prelaunch_email_list"
+    },
+    {
+      "relation": "based_on",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "crowdfunding_strategy",
+      "target": "offer_physics"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "crowdfunding_strategy",
+      "target": "reward_tier_pricing"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "crowdfunding_strategy",
+      "target": "risk_register"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "crowdfunding_strategy",
+      "target": "stretch_goal_discipline"
+    },
+    {
+      "relation": "builds_audience_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "sacredspacestudios_brand",
+      "target": "crowdfunding_strategy"
+    },
+    {
+      "relation": "feeds",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "awaken_email_capture",
+      "target": "crowdfunding_strategy"
+    },
+    {
+      "relation": "independent_from",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "smb_ai_consulting",
+      "target": "kickstarter_platform"
+    },
+    {
+      "relation": "requires",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "smb_ai_consulting",
+      "target": "regulated_smb_compliance"
+    },
+    {
+      "relation": "generates_leads_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "sacredspacestudios_brand",
+      "target": "smb_ai_consulting"
+    },
+    {
+      "relation": "professional_platform",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "linkedin_platform",
+      "target": "smb_ai_consulting"
+    },
+    {
+      "relation": "feeds",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "sacredspace_intelligence_rig",
+      "target": "cashflow_master_tracking"
+    },
+    {
+      "relation": "feeds",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "daily_ai_briefing",
+      "target": "notebooklm_intelligence"
+    },
+    {
+      "relation": "feeds",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "notebooklm_intelligence",
+      "target": "campaign_market_monitor"
+    },
+    {
+      "relation": "feeds",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "awaken_email_capture",
+      "target": "prelaunch_email_list"
+    },
+    {
+      "relation": "operates",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "sacredspace_intelligence_rig",
+      "target": "campaign_market_monitor"
+    },
+    {
+      "relation": "generates",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "sacredspace_intelligence_rig",
+      "target": "daily_ai_briefing"
+    },
+    {
+      "relation": "produces",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "campaign_market_monitor",
+      "target": "daily_ai_briefing"
+    },
+    {
+      "relation": "belongs_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "sacredspacestudios_brand",
+      "target": "social_signal_pillar_07"
+    },
+    {
+      "relation": "content_type",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "sacred_signal_posts",
+      "target": "social_signal_pillar_07"
+    },
+    {
+      "relation": "content_type",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "product_reveals",
+      "target": "social_signal_pillar_07"
+    },
+    {
+      "relation": "content_type",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "living_companion_stories",
+      "target": "social_signal_pillar_07"
+    },
+    {
+      "relation": "content_type",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "behind_the_build_content",
+      "target": "social_signal_pillar_07"
+    },
+    {
+      "relation": "content_type",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "grama_cipher_drops",
+      "target": "social_signal_pillar_07"
+    },
+    {
+      "relation": "web_presence_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "sacredspace_portal_website",
+      "target": "social_signal_pillar_07"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "nine_pillar_architecture",
+      "target": "social_signal_pillar_07"
+    },
+    {
+      "relation": "operates",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "aurora_agent",
+      "target": "social_signal_pillar_07"
+    },
+    {
+      "relation": "operates",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "elias_agent",
+      "target": "social_signal_pillar_07"
+    },
+    {
+      "relation": "brand_platform",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "instagram_platform",
+      "target": "sacredspacestudios_brand"
+    },
+    {
+      "relation": "brand_platform",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "tiktok_platform",
+      "target": "sacredspacestudios_brand"
+    },
+    {
+      "relation": "brand_platform",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "youtube_platform",
+      "target": "sacredspacestudios_brand"
+    },
+    {
+      "relation": "brand_platform",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "x_twitter_platform",
+      "target": "sacredspacestudios_brand"
+    },
+    {
+      "relation": "brand_platform",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "pinterest_platform",
+      "target": "sacredspacestudios_brand"
+    },
+    {
+      "relation": "brand_aesthetic",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "ethereal_tech_fantasy_aesthetic",
+      "target": "sacredspacestudios_brand"
+    },
+    {
+      "relation": "part_of",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "aurora_agent",
+      "target": "icaris_quartet"
+    },
+    {
+      "relation": "part_of",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "elias_agent",
+      "target": "icaris_quartet"
+    },
+    {
+      "relation": "creates",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "graded_cipher_sage",
+      "target": "grama_cipher_drops"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "sacred_codex_design_system",
+      "target": "luminous_visual_dna"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "luminous_visual_dna",
+      "target": "ethereal_tech_fantasy_aesthetic"
+    },
+    {
+      "relation": "powers",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "sacred_codex_design_system",
+      "target": "sacredspace_portal_website"
+    },
+    {
+      "relation": "part_of",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "sacred_forest_ide_theme",
+      "target": "sacred_codex_design_system"
+    },
+    {
+      "relation": "weaves",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "vashd_weaver",
+      "target": "sacred_codex_design_system"
+    },
+    {
+      "relation": "inspires",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "lyra_harmonic_architect",
+      "target": "arcana_grid_12_archetypes"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "sacredspace_portal_website",
+      "target": "awaken_email_capture"
+    },
+    {
+      "relation": "showcases",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "sacredspace_portal_website",
+      "target": "icaris_quartet"
+    },
+    {
+      "relation": "hosts",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "sacredspace_portal_website",
+      "target": "open_grove_community"
+    },
+    {
+      "relation": "built_on",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "sacredspace_os",
+      "target": "nine_pillar_architecture"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "sacredspace_os",
+      "target": "council_grove_pillar_02"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "sacredspace_os",
+      "target": "obsidian_vaults_pillar_01"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "sacredspace_os",
+      "target": "neural_forest_pillar_03"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "sacredspace_os",
+      "target": "sacred_codex_pillar_04"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "sacredspace_os",
+      "target": "memory_engine_pillar_05"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "sacredspace_os",
+      "target": "agent_layer_pillar_06"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "sacredspace_os",
+      "target": "learning_path_pillar_08"
+    },
+    {
+      "relation": "founded_by",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "sacredspace_os",
+      "target": "taylor_oak3ytree_operator"
+    },
+    {
+      "relation": "documents",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "sacredspace_master_context",
+      "target": "sacredspace_os"
+    },
+    {
+      "relation": "tech_stack",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "python_fastapi_stack",
+      "target": "sacredspace_os"
+    },
+    {
+      "relation": "hosted_on",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "wsl2_ubuntu_lenovo",
+      "target": "sacredspace_os"
+    },
+    {
+      "relation": "ai_engine",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "ollama_ai_models",
+      "target": "sacredspace_os"
+    },
+    {
+      "relation": "network",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "tailscale_network",
+      "target": "sacredspace_os"
+    },
+    {
+      "relation": "governs",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "zero_cost_api_constraint",
+      "target": "sacredspace_os"
+    },
+    {
+      "relation": "syncs",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "live_sync_protocol",
+      "target": "sacredspace_os"
+    },
+    {
+      "relation": "inhabits",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "icaris_quartet",
+      "target": "agent_layer_pillar_06"
+    },
+    {
+      "relation": "tech_stack",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "sqlite_redis_chromadb",
+      "target": "memory_engine_pillar_05"
+    },
+    {
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "mythic_operating_system",
+      "target": "sacred_triad_narrative"
+    },
+    {
+      "relation": "core_myth",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "song_that_remembers_itself",
+      "target": "mythic_operating_system"
+    },
+    {
+      "relation": "core_myth",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source": "sacred3_infrastructure",
+      "target": "mythic_operating_system"
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "sacred_market_ecosystem",
+      "label": "Sacred Market Ecosystem",
+      "nodes": [
+        "sacred_market_pillar_09",
+        "merchant_agent",
+        "etsy_platform",
+        "pod_product_pipeline",
+        "lore_to_product_pipeline",
+        "sacred_bazaar",
+        "gematric_pricing_model",
+        "graded_decode_service",
+        "sacredarcana_llc"
+      ],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95
+    },
+    {
+      "id": "revenue_pipeline",
+      "label": "Revenue Generation Pipeline",
+      "nodes": [
+        "smb_ai_consulting",
+        "ai_implementation_engineer",
+        "crowdfunding_strategy",
+        "pod_product_pipeline",
+        "graded_decode_service",
+        "sacred_market_pillar_09",
+        "prelaunch_email_list",
+        "proof_density_sprint"
+      ],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9
+    },
+    {
+      "id": "social_to_market_pipeline",
+      "label": "Social-to-Market Pipeline",
+      "nodes": [
+        "sacredspacestudios_brand",
+        "social_signal_pillar_07",
+        "grama_cipher_drops",
+        "product_reveals",
+        "behind_the_build_content",
+        "sacredspace_portal_website",
+        "sacred_bazaar",
+        "etsy_platform",
+        "crowdfunding_strategy"
+      ],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95
+    },
+    {
+      "id": "lore_to_ledger_bridge",
+      "label": "Lore-to-Ledger Bridge",
+      "nodes": [
+        "lore_to_ledger_map",
+        "sacred_economy_codex",
+        "sacred_triad_narrative",
+        "graded_cipher_sage",
+        "vashd_weaver",
+        "lyra_harmonic_architect",
+        "gematric_pricing_model",
+        "lore_to_product_pipeline"
+      ],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9
+    },
+    {
+      "id": "visual_brand_system",
+      "label": "Visual Brand System",
+      "nodes": [
+        "sacred_codex_design_system",
+        "luminous_visual_dna",
+        "ethereal_tech_fantasy_aesthetic",
+        "sacred_forest_ide_theme",
+        "arcana_grid_12_archetypes",
+        "sacredspace_portal_website",
+        "grounded_mysticism_voice",
+        "sacredspacestudios_brand"
+      ],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85
+    },
+    {
+      "id": "income_strategy_2026",
+      "label": "2026 Income Strategy Vector",
+      "nodes": [
+        "smb_ai_consulting",
+        "ai_implementation_engineer",
+        "crowdfunding_strategy",
+        "sacredarcana_llc",
+        "kickstarter_platform",
+        "offer_physics",
+        "unit_economics_model",
+        "risk_register",
+        "30k_containment_strategy"
+      ],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85
+    },
+    {
+      "id": "nine_pillar_backbone",
+      "label": "Nine Pillar Architecture",
+      "nodes": [
+        "obsidian_vaults_pillar_01",
+        "council_grove_pillar_02",
+        "neural_forest_pillar_03",
+        "sacred_codex_pillar_04",
+        "memory_engine_pillar_05",
+        "agent_layer_pillar_06",
+        "social_signal_pillar_07",
+        "learning_path_pillar_08",
+        "sacred_market_pillar_09"
+      ],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0
+    }
+  ]
+}

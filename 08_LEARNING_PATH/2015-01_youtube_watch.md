@@ -1,0 +1,139 @@
+---
+title: "YouTube Watch History — 2015-01"
+source: youtube
+created: 2015-01-01
+pillar: 08_LEARNING_PATH
+stage: RAW
+tags: [takeout, youtube, watch-history]
+---
+
+# YouTube Watch History — 2015-01
+> 125 videos watched
+
+## Videos
+
+- [Bashar: Finding your Highest Excitement - Posted w permission from Bashar Communications.](https://www.youtube.com/watch?v=OB-NLlwzfOM) — NewRealities — Jan 31, 2015, 2:12:21 PM EDT
+- [Approaching Pavonis Mons By Balloon (Utopia Planitia)](https://www.youtube.com/watch?v=-OCpGMJPUaU) — The Flaming Lips - Topic — Jan 30, 2015, 5:52:32 PM EDT
+- [All We Have Is Now](https://www.youtube.com/watch?v=OSWjIpZXHco) — The Flaming Lips - Topic — Jan 30, 2015, 5:47:14 PM EDT
+- [The Flaming Lips - Do You Realize?? [Official Music Video]](https://www.youtube.com/watch?v=kTY3zh9sjeU) — flaminglips — Jan 30, 2015, 5:43:41 PM EDT
+- [It&#39;s Summertime](https://www.youtube.com/watch?v=-xP4Uz_e7j0) — The Flaming Lips - Topic — Jan 30, 2015, 5:39:18 PM EDT
+- [The Flaming Lips - Are You A Hypnotist?? (Official Music Video) [HD Remaster]](https://www.youtube.com/watch?v=E-9mCAA1YYY) — flaminglips — Jan 30, 2015, 5:34:32 PM EDT
+- [Ego Tripping At The Gates Of Hell](https://www.youtube.com/watch?v=PgRPmPZViAc) — The Flaming Lips - Topic — Jan 30, 2015, 5:29:54 PM EDT
+- [In The Morning Of The Magicians](https://www.youtube.com/watch?v=D1FTTAiMCLI) — The Flaming Lips - Topic — Jan 30, 2015, 5:23:33 PM EDT
+- [Yoshimi Battles The Pink Robots Part 2](https://www.youtube.com/watch?v=jhhOjQojrl0) — The Flaming Lips - Topic — Jan 30, 2015, 5:20:25 PM EDT
+- [The Flaming Lips - Yoshimi Battles the Pink Robots Pt. 1 [Official Music Video]](https://www.youtube.com/watch?v=ZdDHi5SSIlM) — flaminglips — Jan 30, 2015, 5:16:44 PM EDT
+- [One More Robot/Sympathy 3000-21](https://www.youtube.com/watch?v=HFaUBDVOWdw) — The Flaming Lips - Topic — Jan 30, 2015, 5:16:38 PM EDT
+- [Fight Test](https://www.youtube.com/watch?v=yfj_v4oXdRo) — The Flaming Lips - Topic — Jan 30, 2015, 5:01:17 PM EDT
+- [KYUSS live @ Segnali Di Fumo (1995) *full show* BEST QUALITY](https://www.youtube.com/watch?v=g4KymCOEaN0) — vaccamuzak — Jan 27, 2015, 1:58:50 PM EDT
+- [The xx - Teardrops - [FLAC] [HD] (Bonus track)](https://www.youtube.com/watch?v=wd895FQpoAQ) — Petr Haluza — Jan 27, 2015, 10:39:39 AM EDT
+- [The xx - Hot Like Fire - [FLAC] [HD] (Bonus track)](https://www.youtube.com/watch?v=tWQC9Zrgidk) — Petr Haluza — Jan 27, 2015, 10:36:02 AM EDT
+- [The xx - Do You Mind - [FLAC] [HD] (Bonus track)](https://www.youtube.com/watch?v=gJErURiFlYM) — Petr Haluza — Jan 27, 2015, 10:32:13 AM EDT
+- [The xx - Stars - [FLAC] [HD]](https://www.youtube.com/watch?v=-bTanE4aFjA) — Petr Haluza — Jan 27, 2015, 10:27:48 AM EDT
+- [The xx - Night Time - [FLAC] [HD]](https://www.youtube.com/watch?v=Z8g0FWHODsc) — Petr Haluza — Jan 27, 2015, 10:24:08 AM EDT
+- [The xx - Infinity - [FLAC] [HD]](https://www.youtube.com/watch?v=FJgwYl1Qzus) — Petr Haluza — Jan 27, 2015, 10:18:51 AM EDT
+- [The xx - Shelter - [FLAC] [HD]](https://www.youtube.com/watch?v=hzKkd8rurjE) — Petr Haluza — Jan 27, 2015, 10:14:08 AM EDT
+- [The xx - Fantasy - [FLAC] [HD]](https://www.youtube.com/watch?v=IwQLNw8GaS8) — Petr Haluza — Jan 27, 2015, 10:11:26 AM EDT
+- [The xx - Heart Skipped A Beat - [FLAC] [HD]](https://www.youtube.com/watch?v=guah0TKdgBM) — Petr Haluza — Jan 27, 2015, 10:07:18 AM EDT
+- [The xx - Islands - [FLAC] [HD]](https://www.youtube.com/watch?v=b5ArKBd32ck) — Petr Haluza — Jan 27, 2015, 10:04:34 AM EDT
+- [Terence Mckenna - The past and future importance of mushrooms for humanity](https://www.youtube.com/watch?v=2g-C2QAAovQ) — MckennaCountrCulture — Jan 25, 2015, 3:40:33 PM EDT
+- [Built To Spill - Broken Chairs - 3/15/2012 - Stage On Sixth, Austin, TX](https://www.youtube.com/watch?v=_NtOA7ZT5XY) — Paste Magazine — Jan 22, 2015, 8:05:40 PM EDT
+- [The xx - Teardrops - [FLAC] [HD] (Bonus track)](https://www.youtube.com/watch?v=wd895FQpoAQ) — Petr Haluza — Jan 21, 2015, 10:24:19 PM EDT
+- [The xx - Hot Like Fire - [FLAC] [HD] (Bonus track)](https://www.youtube.com/watch?v=tWQC9Zrgidk) — Petr Haluza — Jan 21, 2015, 10:20:43 PM EDT
+- [The xx - Do You Mind - [FLAC] [HD] (Bonus track)](https://www.youtube.com/watch?v=gJErURiFlYM) — Petr Haluza — Jan 21, 2015, 10:16:54 PM EDT
+- [The xx - Stars - [FLAC] [HD]](https://www.youtube.com/watch?v=-bTanE4aFjA) — Petr Haluza — Jan 21, 2015, 10:12:30 PM EDT
+- [The xx - Night Time - [FLAC] [HD]](https://www.youtube.com/watch?v=Z8g0FWHODsc) — Petr Haluza — Jan 21, 2015, 10:08:51 PM EDT
+- [The xx - Infinity - [FLAC] [HD]](https://www.youtube.com/watch?v=FJgwYl1Qzus) — Petr Haluza — Jan 21, 2015, 10:03:36 PM EDT
+- [The xx - Shelter - [FLAC] [HD]](https://www.youtube.com/watch?v=hzKkd8rurjE) — Petr Haluza — Jan 21, 2015, 9:58:58 PM EDT
+- [The xx - Fantasy - [FLAC] [HD]](https://www.youtube.com/watch?v=IwQLNw8GaS8) — Petr Haluza — Jan 21, 2015, 9:56:17 PM EDT
+- [The xx - Heart Skipped A Beat - [FLAC] [HD]](https://www.youtube.com/watch?v=guah0TKdgBM) — Petr Haluza — Jan 21, 2015, 9:52:13 PM EDT
+- [The xx - Islands - [FLAC] [HD]](https://www.youtube.com/watch?v=b5ArKBd32ck) — Petr Haluza — Jan 21, 2015, 9:49:31 PM EDT
+- [The Budos Band - Ride or Die](https://www.youtube.com/watch?v=ZhggVynRhXQ) — MrHotpantsImComin — Jan 21, 2015, 9:15:56 PM EDT
+- [Bad Cookies - Lets Get Connected](https://www.youtube.com/watch?v=JcYRhMuSPCc) — seriousgrooves — Jan 21, 2015, 9:15:19 PM EDT
+- [Esperanto - Night of the Wolf](https://www.youtube.com/watch?v=g4xxKIK4w5U) — MrHotpantsImComin — Jan 21, 2015, 9:07:20 PM EDT
+- [Soopasoul- Swing Down](https://www.youtube.com/watch?v=cPzYPrjTNWI) — katanaboy995 — Jan 21, 2015, 9:00:48 PM EDT
+- [New York Ska-Jazz Ensemble - Boogie Stop Shuffle](https://www.youtube.com/watch?v=7Z5fDFR9J-0) — Gaboskaa — Jan 21, 2015, 8:56:29 PM EDT
+- [Jazzanova - Coffee Talk](https://www.youtube.com/watch?v=NgdQqRclWTE) — GretaProdigy — Jan 21, 2015, 8:46:50 PM EDT
+- [Initiation of the Pyramid. Manly P Hall.](https://www.youtube.com/watch?v=ddHfU2wKvmc) — AstroWorld — Jan 10, 2015, 9:48:33 PM EDT
+- [David Gilmour Wish you were here live unplugged](https://www.youtube.com/watch?v=3j8mr-gcgoI) — ReGilmour — Jan 6, 2015, 9:11:52 AM EDT
+- [Deepak Chopra - Chakra Balacing Meditation (First to Third) Part 1 of 2](https://www.youtube.com/watch?v=3661sFNFoKU) — Awesome Meditations — Jan 4, 2015, 8:35:04 PM EDT
+- [Deepak Chopra - Chakra Balacing Meditation (First to Third) Part 1 of 2](https://www.youtube.com/watch?v=3661sFNFoKU) — Awesome Meditations — Jan 3, 2015, 7:46:31 PM EDT
+- [Mozart, Symphony 41, Jupiter (K. 551), 4th mvt. (shapes) ©](https://www.youtube.com/watch?v=SiX3z_fOR5k) — smalin — Jan 3, 2015, 6:02:53 PM EDT
+- [The Best of Mozart](https://www.youtube.com/watch?v=Rb0UmrCXxVA) — HALIDONMUSIC — Jan 3, 2015, 3:57:34 PM EDT
+- [&quot;A&quot; major pentatonic run - easy electric guitar lesson](https://www.youtube.com/watch?v=TfDmVwz24lE) — Covey The Boston Terrier — Jan 3, 2015, 3:17:29 PM EDT
+- [Lecture 2. Introduction to Instruments and Musical Genres](https://www.youtube.com/watch?v=TRg-75VKOFU) — YaleCourses — Jan 3, 2015, 3:16:39 PM EDT
+- [1. Introduction](https://www.youtube.com/watch?v=5_yOVARO2Oc) — YaleCourses — Jan 3, 2015, 3:16:38 PM EDT
+- [Lecture 3. Rhythm: Fundamentals](https://www.youtube.com/watch?v=t4echOq29d0) — YaleCourses — Jan 3, 2015, 3:16:38 PM EDT
+- [The 5 Minor Pentatonic Scale Shapes You Must Know](https://www.youtube.com/watch?v=4owDn7sTsnI) — GUITARHABITS — Jan 3, 2015, 1:20:16 PM EDT
+- [Learn Guitar - Pentatonic Scale Patterns to practice - How to solo on guitar](https://www.youtube.com/watch?v=Lf_2eodyR_0) — GuitarJamz Lessons — Jan 3, 2015, 1:17:08 PM EDT
+- [Guitar Scales - Major Pentatonic Extension Scale - Guitar Solos](https://www.youtube.com/watch?v=En3W7LkihW0) — GuitarJamz Lessons — Jan 3, 2015, 1:07:02 PM EDT
+- [How to Memorize Your Guitar Fret-board](https://www.youtube.com/watch?v=hkIYLFNBNAc) — Andrew Wasson — Jan 3, 2015, 12:55:11 PM EDT
+- [All Chakras - Meditation, Balancing and Tuning](https://www.youtube.com/watch?v=C4GtPb3Y3vQ) — Taos Winds Spirit Music — Jan 3, 2015, 12:53:55 PM EDT
+- [Morning Wake-up/ Evening Energy Boost Yoga Routine](https://www.youtube.com/watch?v=zmvUlDfYfho) — Collective Evolution — Jan 3, 2015, 10:33:42 AM EDT
+- [Chopin - Polonaise in A, Op. 40, No. 1, &quot;Military&quot;](https://www.youtube.com/watch?v=W1Qq3RA19G4) — Classical Music Only — Jan 3, 2015, 3:41:08 AM EDT
+- [Mozart - Horn Concerto No. 3 in E-flat Major](https://www.youtube.com/watch?v=En2mThXfUlY) — Classical Music Only — Jan 3, 2015, 3:36:38 AM EDT
+- [Rachmaninoff - Vocalise (for violin and piano)](https://www.youtube.com/watch?v=19J8dO3T1S8) — Classical Music Only — Jan 3, 2015, 3:30:47 AM EDT
+- [Chopin, Nocturne, opus 27 #2, piano solo](https://www.youtube.com/watch?v=asDXpfFMKNA) — smalin — Jan 3, 2015, 3:24:23 AM EDT
+- [Haydn - Emperor&#39;s Hymn, from String Quartet in C Major, Op. 76](https://www.youtube.com/watch?v=L_chH88_--A) — Classical Music Only — Jan 3, 2015, 3:17:00 AM EDT
+- [Aram Khachaturian - Sabre Dance](https://www.youtube.com/watch?v=gqg3l3r_DRI) — The Wicked North — Jan 3, 2015, 3:14:26 AM EDT
+- [Mozart - Flute and Harp Concerto in C Major](https://www.youtube.com/watch?v=bjAm_XEodAY) — Classical Music Only — Jan 3, 2015, 3:10:20 AM EDT
+- [Dmitri Shostakovich - Romance (from The Gadfly)](https://www.youtube.com/watch?v=QDW4VJGKLAQ) — Classical Music Only — Jan 3, 2015, 3:06:48 AM EDT
+- [Johannes Brahms - Lullaby](https://www.youtube.com/watch?v=t894eGoymio) — schmobot — Jan 3, 2015, 3:03:41 AM EDT
+- [Tchaikovsky - None But The Lonely Heart](https://www.youtube.com/watch?v=7PtIHBCuR-Q) — Classical Music Only — Jan 3, 2015, 2:59:59 AM EDT
+- [Georges Bizet - &quot;Les Toreadors&quot; from Carmen Suite No. 1](https://www.youtube.com/watch?v=4DNGMoMNLRY) — FacundoJG — Jan 3, 2015, 2:57:32 AM EDT
+- [Mendelssohn - Spring Song](https://www.youtube.com/watch?v=8mz5Rtx-Eu0) — Classical Music Only — Jan 3, 2015, 2:54:40 AM EDT
+- [Chopin&#39;s Raindrops](https://www.youtube.com/watch?v=OcIMvliWM2I) — JJPlays — Jan 3, 2015, 2:44:36 AM EDT
+- [Bach, &quot;Little&quot; Fugue (G minor, BWV 578)](https://www.youtube.com/watch?v=pVadl4ocX0M) — smalin — Jan 3, 2015, 2:40:50 AM EDT
+- [Debussy, Clair de lune (piano music)](https://www.youtube.com/watch?v=LlvUepMa31o) — smalin — Jan 3, 2015, 2:35:31 AM EDT
+- [BOLERO-RAVEL](https://www.youtube.com/watch?v=3-4J5j74VPw) — consejomunicipal — Jan 3, 2015, 2:28:21 AM EDT
+- [Gioachino Rossini - The Barber Of Seville - Overture](https://www.youtube.com/watch?v=OloXRhesab0) — Classical Music Only — Jan 3, 2015, 2:20:27 AM EDT
+- [Piano Richard Clayderman - Love Story](https://www.youtube.com/watch?v=6_y5Q6PDqeI) — Just Classic — Jan 3, 2015, 2:17:20 AM EDT
+- [Tchaikovsky - Lake in the Moonlight](https://www.youtube.com/watch?v=_P65WNm48p0) — BeautifulFight — Jan 3, 2015, 2:14:38 AM EDT
+- [mozart - dies irae](https://www.youtube.com/watch?v=j1C-GXQ1LdY) — Alberto Al — Jan 3, 2015, 2:12:42 AM EDT
+- [Mussorgsky - Night on Bald Mountain](https://www.youtube.com/watch?v=iCEDfZgDPS8) — The Wicked North — Jan 3, 2015, 2:02:55 AM EDT
+- [Dmitri Shostakovich - Waltz No. 2](https://www.youtube.com/watch?v=mmCnQDUSO4I) — The Wicked North — Jan 3, 2015, 1:53:07 AM EDT
+- [Franz Liszt - Hungarian Rhapsody No.2 (Orchestra version)](https://www.youtube.com/watch?v=goeOUTRy2es) — FacundoJG — Jan 3, 2015, 1:42:22 AM EDT
+- [TCHAIKOVSKY: Swan Lake - Лебединое Озеро](https://www.youtube.com/watch?v=ph3h2IJAsgk) — andrewgrummanJC — Jan 3, 2015, 1:36:06 AM EDT
+- [Johann Strauss II - The Blue Danube Waltz](https://www.youtube.com/watch?v=_CTYymbbEL4) — Classical Music Only — Jan 3, 2015, 1:22:09 AM EDT
+- [La Traviata (Giuseppe Verdi) Best of Classical Music / Highlights Klassische Musik Playlist](https://www.youtube.com/watch?v=s8zE-WNA6os) — BPanther — Jan 3, 2015, 1:18:35 AM EDT
+- [Vivaldi : La Follia](https://www.youtube.com/watch?v=7v8zxoEoA_Q) — Le Lutin d&#39;Ecouves — Jan 3, 2015, 1:08:31 AM EDT
+- [Richard Wagner - The ride of the Valkyries from &quot;Die Walküre&quot;](https://www.youtube.com/watch?v=7AlEvy0fJto) — FacundoJG — Jan 3, 2015, 1:03:33 AM EDT
+- [Carmina Burana ~ O Fortuna | Carl Orff ~ André Rieu](https://www.youtube.com/watch?v=GD3VsesSBsw) — ingifrance — Jan 3, 2015, 12:46:31 AM EDT
+- [Johann Pachelbel - Canon in D Major](https://www.youtube.com/watch?v=8Af372EQLck) — schmobot — Jan 3, 2015, 12:42:32 AM EDT
+- [Marcha fúnebre - Chopin](https://www.youtube.com/watch?v=28sdV_DXSrU) — Envydia Menya Ichbinfrei — Jan 3, 2015, 12:33:06 AM EDT
+- [J.S. Bach - Double Violin Concerto in D minor - 2nd Movement, Largo Ma Non Tanto (BWV 1043)](https://www.youtube.com/watch?v=Fo0K_n3VLG4) — Classical Music Only — Jan 3, 2015, 12:25:32 AM EDT
+- [Mozart - The Piano Sonata No 16 in C major](https://www.youtube.com/watch?v=XXIu0MRuIQU) — Head of Data — Jan 3, 2015, 12:16:12 AM EDT
+- [Franz Liszt - Liebestraum - Love Dream](https://www.youtube.com/watch?v=KpOtuoHL45Y) — The Wicked North — Jan 3, 2015, 12:10:14 AM EDT
+- [Adagio in G Minor (Albinoni)](https://www.youtube.com/watch?v=XMbvcp480Y4) — MoodTools — Jan 2, 2015, 11:50:28 PM EDT
+- [Handel - Sarabande (Keyboard Suite in D Minor)](https://www.youtube.com/watch?v=JSAd3NpDi6Q) — Classical Music Only — Jan 2, 2015, 11:40:50 PM EDT
+- [Schubert &quot;Serenade&quot;](https://www.youtube.com/watch?v=ZpA0l2WB86E) — LonelyMoonRise — Jan 2, 2015, 11:33:54 PM EDT
+- [Mozart - Turkish March - Marcha Turca](https://www.youtube.com/watch?v=rrk-zuuc77U) — Patricio Inostroza Cornejo — Jan 2, 2015, 11:30:02 PM EDT
+- [Bach, Toccata and Fugue in D minor, organ](https://www.youtube.com/watch?v=ipzR9bhei_o) — smalin — Jan 2, 2015, 11:16:50 PM EDT
+- [Johannes Brahms - Hungarian Dance No. 5](https://www.youtube.com/watch?v=3X9LvC9WkkQ) — FacundoJG — Jan 2, 2015, 11:13:23 PM EDT
+- [Mozart Symphony #40 in G Minor, K 550 - 1. Molto Allegro](https://www.youtube.com/watch?v=-hJf4ZffkoI) — Thomas Hughes — Jan 2, 2015, 10:58:15 PM EDT
+- [Mozart&#39;s Greatest Violin Piece](https://www.youtube.com/watch?v=caVr-VdeDvw) — Classical Music Only — Jan 2, 2015, 10:44:21 PM EDT
+- [Schubert - Ave Maria](https://www.youtube.com/watch?v=2bosouX_d8Y) — Stadics — Jan 2, 2015, 10:37:58 PM EDT
+- [Mozart-The Marriage of Figaro](https://www.youtube.com/watch?v=8OZCyp-LcGw) — wmd10 — Jan 2, 2015, 10:33:02 PM EDT
+- [Beethoven&#39;s 5th Symphony](https://www.youtube.com/watch?v=_4IRMYuE1hI) — castout888 — Jan 2, 2015, 10:17:51 PM EDT
+- [Mozart - Requiem](https://www.youtube.com/watch?v=Zi8vJ_lMxQI) — madhammu — Jan 2, 2015, 10:17:30 PM EDT
+- [Beethoven Symphony No.9](https://www.youtube.com/watch?v=YAOTCtW9v0M) — Mitsumi122 — Jan 2, 2015, 10:17:18 PM EDT
+- [Vivaldi - Four Seasons (Winter)](https://www.youtube.com/watch?v=nGdFHJXciAQ) — funfront — Jan 2, 2015, 10:05:01 PM EDT
+- [Mozart - Lacrimosa](https://www.youtube.com/watch?v=k1-TrAvp_xs) — Rosa Music — Jan 2, 2015, 9:54:19 PM EDT
+- [Wolfgang Amadeus Mozart - Piano Concerto No. 21 - Andante](https://www.youtube.com/watch?v=df-eLzao63I) — poloshia — Jan 2, 2015, 9:48:18 PM EDT
+- [Moonlight Sonata](https://www.youtube.com/watch?v=vQVeaIHWWck) — beethovenslady — Jan 2, 2015, 9:41:50 PM EDT
+- [How To Meditate &amp; Why Most People Fail](https://www.youtube.com/watch?v=ASFpyVIoK6I) — Noah Elkrief — Jan 2, 2015, 9:08:09 PM EDT
+- [Guided Meditation to Open Heart - Unconditional Love](https://www.youtube.com/watch?v=hBU5i8iS1lc) — Flo Karuna — Jan 2, 2015, 6:07:11 PM EDT
+- [Balkan Beat Box - Nu Med [Full Album]](https://www.youtube.com/watch?v=t9LcoLp6kXo) — Alon Koval — Jan 2, 2015, 3:23:30 AM EDT
+- [Balkan Beat Box - Hermetico (HD)](https://www.youtube.com/watch?v=8Psuqys26J4) — AlexxMusicDe — Jan 2, 2015, 3:16:27 AM EDT
+- [Virtual Boy - Mass](https://www.youtube.com/watch?v=C3DPxfs2v8o) — Alpha Pup — Jan 2, 2015, 1:05:10 AM EDT
+- [Sopwith  Camel - The Great Morpheum, Postcard from Jamaica](https://www.youtube.com/watch?v=DU5e3lcHkx0) — Lendall Pitts — Jan 2, 2015, 12:59:54 AM EDT
+- [The Sophwith`Camel  - Monkeys in rhe Moon](https://www.youtube.com/watch?v=Q5lv4uucWHg) — Daniel Huerta — Jan 2, 2015, 12:58:36 AM EDT
+- [Sopwith Camel  -Orange Peel (1973)](https://www.youtube.com/watch?v=1VCHgMJtTPE) — Giannis Pachidis — Jan 2, 2015, 12:38:41 AM EDT
+- [Fazon - Sopwith Camel](https://www.youtube.com/watch?v=HQK_r9vA9VM) — Circuit7Active — Jan 2, 2015, 12:33:45 AM EDT
+- [Moonlight Sonata](https://www.youtube.com/watch?v=vQVeaIHWWck) — beethovenslady — Jan 2, 2015, 12:27:22 AM EDT
+- [Mozart - Requiem](https://www.youtube.com/watch?v=Zi8vJ_lMxQI) — madhammu — Jan 2, 2015, 12:18:21 AM EDT
+- [Wolfgang Amadeus Mozart - Piano Concerto No. 21 - Andante](https://www.youtube.com/watch?v=df-eLzao63I) — poloshia — Jan 2, 2015, 12:12:21 AM EDT
+- [Just Checkin&#39; by Mark Farina](https://www.youtube.com/watch?v=Qc6YLoTMGWI) — bgower86 — Jan 1, 2015, 11:58:44 PM EDT
+- [Alive by Mark Farina](https://www.youtube.com/watch?v=VOOrZYOmHyM) — bgower86 — Jan 1, 2015, 11:53:29 PM EDT
+- [Baaaby by Mark Farina](https://www.youtube.com/watch?v=G2Z6hdXQGQs) — bgower86 — Jan 1, 2015, 11:43:26 PM EDT
+- [This Beat by Mark Farina](https://www.youtube.com/watch?v=r9xyQrUBq5w) — bgower86 — Jan 1, 2015, 11:39:39 PM EDT
+- [Chakra Cleansing &amp; Activating Guided Meditation](https://www.youtube.com/watch?v=Y1xwtA6C2DQ) — Zen Zia  — Jan 1, 2015, 11:29:11 AM EDT

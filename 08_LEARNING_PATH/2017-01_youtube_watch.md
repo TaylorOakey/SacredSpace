@@ -1,0 +1,128 @@
+---
+title: "YouTube Watch History — 2017-01"
+source: youtube
+created: 2017-01-01
+pillar: 08_LEARNING_PATH
+stage: RAW
+tags: [takeout, youtube, watch-history]
+---
+
+# YouTube Watch History — 2017-01
+> 114 videos watched
+
+## Videos
+
+- [Rodeo Stampede How To Get Elektro Zebra](https://www.youtube.com/watch?v=hW6Fj50m6oY) — D3ath Angel — Jan 31, 2017, 7:00:50 PM EDT
+- [Rodeo Stampede: Sky Zoo Safari | Trailer](https://www.youtube.com/watch?v=06B-t8gHRuM) — Yodo1 Games — Jan 31, 2017, 7:00:14 PM EDT
+- [All 7 Chakras Healing Meditation Music](https://www.youtube.com/watch?v=eOpOaG1-83Y) — Meditative Mind — Jan 28, 2017, 1:27:04 PM EDT
+- [MEDITATION MUSIC FOR POSITIVE ENERGY l CLEAR SUBCONSCIOUS &amp; UNCONSCIOUS NEGATIVITY l ZEN RELAX - 864](https://www.youtube.com/watch?v=AAp1WF-0GFk) — Meditation and Healing — Jan 27, 2017, 12:23:15 AM EDT
+- [Peace Therapy Music Mix - Melodic Chill Out Psychill Entheogenic Downtempo Ethnic World](https://www.youtube.com/watch?v=0yMZ-04ud_Q) — Tryptology — Jan 27, 2017, 12:21:47 AM EDT
+- [What happened to Bob Dylan?](https://www.youtube.com/watch?v=2WENXCJqpDk) — graflok — Jan 26, 2017, 8:18:51 PM EDT
+- [Exclusive Interview with Bob Dylan: Proof that the devil do exists](https://www.youtube.com/watch?v=V29LvEQUhUc) — Sir M (SirM_streetz_ja) — Jan 26, 2017, 8:18:02 PM EDT
+- [I SOLD my Soul to the DEVIL! - Katy Perry, Kanye West, Eminem, Snoop Dogg, Bob Dylan](https://www.youtube.com/watch?v=yDM7D1teDco) — EndTimeChristian — Jan 26, 2017, 8:17:51 PM EDT
+- [2 Chainz - Birthday Song ft. Kanye West (Official Music Video) (Explicit Version)](https://www.youtube.com/watch?v=Y34jC4I1m70) — 2ChainzVEVO — Jan 26, 2017, 8:14:55 PM EDT
+- [Juvenile - Back That Ass Up](https://www.youtube.com/watch?v=WL2txMU50CI) — crunkyboo — Jan 26, 2017, 8:09:53 PM EDT
+- [Petey Pablo - Freek-A-Leek (Official Video)](https://www.youtube.com/watch?v=M48nlk-1kH8) — PeteyPabloVEVO — Jan 26, 2017, 8:07:06 PM EDT
+- [Scientist vs Mystic | A Conversation about Cosmos, Brain and Reality | David Eagleman and Sadhguru](https://www.youtube.com/watch?v=aaCTs8oeAh8) — Cosmology Today™ — Jan 26, 2017, 3:50:48 PM EDT
+- [17. Simple Harmonic Motion](https://www.youtube.com/watch?v=Zz-9UVpYcJI) — YaleCourses — Jan 26, 2017, 3:50:15 PM EDT
+- [20. Fluid Dynamics and Statics and Bernoulli&#39;s Equation](https://www.youtube.com/watch?v=lfXDJKKPGfY) — YaleCourses — Jan 26, 2017, 3:31:07 PM EDT
+- [How to Survive a Grenade Blast](https://www.youtube.com/watch?v=W4DnuQOtA8E) — Mark Rober — Jan 26, 2017, 3:25:51 PM EDT
+- [How strong is Oobleck?](https://www.youtube.com/watch?v=Sl0BHueSjvA) — TheBackyardScientist — Jan 26, 2017, 3:19:06 PM EDT
+- [Pouring Molten salt into Water - Explosion!](https://www.youtube.com/watch?v=PDRWQUUUCF0) — TheBackyardScientist — Jan 26, 2017, 3:14:32 PM EDT
+- [20 kilograms of red hot steel vs. frozen lake](https://www.youtube.com/watch?v=cOEBwBERPv4) — Beyond the press — Jan 26, 2017, 3:12:37 PM EDT
+- [10 fundamental fingerstyle patterns: part 1](https://www.youtube.com/watch?v=drpB1AvjG3Q) — MusicRadar — Jan 26, 2017, 3:09:34 PM EDT
+- [how to play &quot;Ramble On&quot; by Led Zeppelin - acoustic guitar lesson](https://www.youtube.com/watch?v=NvURL_svtxo) — Shutup &amp; Play - Guitar Tutorials — Jan 26, 2017, 3:00:10 PM EDT
+- [Vanilla - Origin (Full Album)](https://www.youtube.com/watch?v=lSU1eFxgr68) — Mindful Music — Jan 26, 2017, 1:57:57 PM EDT
+- [Maple Syrup - Vacation (Debut Album / Lofi Hip Hop) [HD]](https://www.youtube.com/watch?v=v_4x1SyE9Y0) — Mindful Music — Jan 26, 2017, 1:55:46 PM EDT
+- [Rings (2017) - &quot;Origin&quot; - Paramount Pictures](https://www.youtube.com/watch?v=2Z2A8xQGE9w) — Paramount Pictures — Jan 26, 2017, 1:51:32 PM EDT
+- [Beyond Success - Ram Dass Full Lecture 1987](https://www.youtube.com/watch?v=Orb8cGSqS-A) — Baba Ram Dass — Jan 25, 2017, 6:58:52 PM EDT
+- [NehruvianDoom - Bishop nehru and MF doom (Full Album)](https://www.youtube.com/watch?v=h_bBRrt9TRo) — Lyric Translator — Jan 25, 2017, 6:35:51 PM EDT
+- [3 Blues Riffs Every Guitarist Should Know   (Amaze your Friends)](https://www.youtube.com/watch?v=EojOW1rFcvw) — GuitarJamz — Jan 24, 2017, 5:52:44 PM EDT
+- [Hotel California The Eagles Easy Acoustic Guitar Lesson + Tutorial](https://www.youtube.com/watch?v=JIDdI-AtK-Q) — Marty Music — Jan 24, 2017, 5:52:29 PM EDT
+- [House Of The Rising Sun Guitar Lesson - The Animals - Easy Songs For Acoustic Guitar - Tutorial](https://www.youtube.com/watch?v=I2rSsaCPkwM) — Marty Music — Jan 24, 2017, 5:39:38 PM EDT
+- [Metallica - Nothing Else Matters - How to Play On Guitar - Guitar Lesson Tutorial part1](https://www.youtube.com/watch?v=ifQhQv9nlaM) — GuitarJamz — Jan 24, 2017, 5:39:17 PM EDT
+- [The Silent Forest - Chillstep Mix](https://www.youtube.com/watch?v=18NHV4nJLQc) — Mixomnia — Jan 23, 2017, 10:24:10 PM EDT
+- [Allen Toussaint - 1975 -Southern Nights - Full Album](https://www.youtube.com/watch?v=mQ-rcIp7Wmk) — Thiago Ribeiro — Jan 23, 2017, 9:15:16 PM EDT
+- [Vanilla - The Evolution (1 Hour Tribute Mix) [HD]](https://www.youtube.com/watch?v=I56ubMcnZN4) — Mindful Music — Jan 23, 2017, 12:27:10 AM EDT
+- [Microtonal Guitar (Fixed Fret) - Tolgahan Çoğulu](https://www.youtube.com/watch?v=iRsSjh5TTqI) — Microtonal Guitar - Tolgahan Çoğulu — Jan 23, 2017, 12:26:17 AM EDT
+- [Dr  John &amp; Eric Clapton - VH1 Duets](https://www.youtube.com/watch?v=u-Fc6c52gas) — MrCanalegal — Jan 23, 2017, 12:20:12 AM EDT
+- [The Chord That Changes Everything](https://www.youtube.com/watch?v=2le_5LRJL8o) — Music is Win — Jan 23, 2017, 12:12:40 AM EDT
+- [Bass Temple (Compiled by Dubnotic and Mystical Voyager) [Full Compilation]](https://www.youtube.com/watch?v=6idybvN444E) — The Psychedelic Muse — Jan 23, 2017, 12:08:04 AM EDT
+- [Dr John - The Sun The Moon &amp; Herbs (1971) full album](https://www.youtube.com/watch?v=0l9OqFw6Ops) — Sounds Good — Jan 21, 2017, 12:34:40 PM EDT
+- [Dr John - Gumbo (1972) full album](https://www.youtube.com/watch?v=pgP7wnNjkNo) — Sounds Good — Jan 21, 2017, 11:35:26 AM EDT
+- [Dr John - In The Right Place (1973) full album](https://www.youtube.com/watch?v=R44PkPUEDCM) — Sounds Good — Jan 21, 2017, 11:30:35 AM EDT
+- [1 Hour Relaxing Sleep Music, Sleep Therapy, Deep Sleep Music, Insomnia, Spa, Study, Sleep, ☯101](https://www.youtube.com/watch?v=2fvPad12Gb8) — Yellow Brick Cinema - Relaxing Music — Jan 21, 2017, 3:31:10 AM EDT
+- [30 Minute Deep Sleep Music: Calming Music, Relaxing Music, Soothing Music, Calming Music, ☯426B](https://www.youtube.com/watch?v=FaRrq7cYu84) — Yellow Brick Cinema - Relaxing Music — Jan 21, 2017, 3:00:43 AM EDT
+- [15 Minute Super Deep Meditation Music: Relax Mind Body, Inner Peace, Relaxing Music, ☯2563B](https://www.youtube.com/watch?v=aIIEI33EUqI) — Yellow Brick Cinema - Relaxing Music — Jan 21, 2017, 2:45:32 AM EDT
+- [20 min Awareness Meditation Music Relax Mind Body: Chakra Cleansing and Balancing](https://www.youtube.com/watch?v=Gqfk5sr9fpw) — Nu Meditation Music — Jan 21, 2017, 2:23:28 AM EDT
+- [In the Face of Chaos - Ram Dass Full Lecture 1994](https://www.youtube.com/watch?v=a8NR6AM5oKk) — Baba Ram Dass — Jan 21, 2017, 2:23:11 AM EDT
+- [Being Free Together - Ram Dass Full Lecture 1994](https://www.youtube.com/watch?v=Ir5ydNXpJlA) — Baba Ram Dass — Jan 21, 2017, 12:05:33 AM EDT
+- [15 Minute Super Deep Meditation Music: Relax Mind Body, Inner Peace, Relaxing Music, ☯2563B](https://www.youtube.com/watch?v=aIIEI33EUqI) — Yellow Brick Cinema - Relaxing Music — Jan 20, 2017, 6:00:13 PM EDT
+- [20 min Awareness Meditation Music Relax Mind Body: Chakra Cleansing and Balancing](https://www.youtube.com/watch?v=Gqfk5sr9fpw) — Nu Meditation Music — Jan 20, 2017, 5:38:08 PM EDT
+- [Awaken Your Spirit (EXTREMELY Powerful) Complete Chakra Activation](https://www.youtube.com/watch?v=NR351WlGC4I) — Taos Winds Spirit Music — Jan 20, 2017, 5:37:38 PM EDT
+- [15 Minute All Chakra - Tuning, Meditation and Balancing](https://www.youtube.com/watch?v=Jdyg8jt0OQU) — Taos Winds Spirit Music — Jan 20, 2017, 5:21:02 PM EDT
+- [Stairway To Heaven Led Zeppelin Guitar Lesson + Tutorial](https://www.youtube.com/watch?v=iGleR_5yiaE) — Marty Music — Jan 20, 2017, 3:50:02 PM EDT
+- [Hotel California The Eagles Easy Acoustic Guitar Lesson + Tutorial](https://www.youtube.com/watch?v=JIDdI-AtK-Q) — Marty Music — Jan 20, 2017, 3:48:42 PM EDT
+- [Guitar lesson for &quot;Hotel California&quot; by The Eagles (acoustic, no capo)](https://www.youtube.com/watch?v=sEEG2eSfvB8) — Song Notes by David Pots — Jan 20, 2017, 3:47:35 PM EDT
+- [Grandmas Smoking Weed for the First Time | Strange Buds | Cut](https://www.youtube.com/watch?v=IRBAZJ4lF0U) — Cut — Jan 17, 2017, 2:32:12 PM EDT
+- [30 Minute Sleep Music, Calm Music, Power Nap, Sleep Music, Meditation Music, Music For Sleep ☾☆002](https://www.youtube.com/watch?v=u4Fxl8OKZes) — Myndstream — Jan 16, 2017, 8:13:24 PM EDT
+- [Kyoto - Forest Trip [Full Album]](https://www.youtube.com/watch?v=ur7vgLZzbbg) — The Psychedelic Muse — Jan 16, 2017, 7:54:18 PM EDT
+- [The Monkees - I&#39;m A Believer 1966 (HD Stereo!)](https://www.youtube.com/watch?v=4f4GpZQk6rw) — RV Stuff — Jan 15, 2017, 9:16:50 PM EDT
+- [Billy Ocean - Suddenly (2009)](https://www.youtube.com/watch?v=GAjInKiOkqo) — nana443 — Jan 15, 2017, 9:15:13 PM EDT
+- [How to play One by Metallica on Guitar](https://www.youtube.com/watch?v=5tPhA7L4xpY) — GuitarJamz — Jan 15, 2017, 7:30:13 PM EDT
+- [Bhakti: Devotion and the Guru - Ram Dass Full Lecture 1996](https://www.youtube.com/watch?v=J-iB1CwKku0) — Baba Ram Dass — Jan 15, 2017, 1:22:37 AM EDT
+- [The Saga Of Biorn](https://www.youtube.com/watch?v=MV5w262XvCU) — The Animation Workshop — Jan 15, 2017, 1:07:02 AM EDT
+- [How to Pronounce BJÖRN  - PronounceNames.com](https://www.youtube.com/watch?v=SSPutZESNWk) — Pronounce Names — Jan 15, 2017, 1:06:09 AM EDT
+- [Action Bronson - &quot;Strictly 4 My Jeeps&quot; (Official Video)](https://www.youtube.com/watch?v=yfP7qK0khuQ) — Noisey — Jan 15, 2017, 12:13:58 AM EDT
+- [Action Bronson - Actin Crazy (Official Music Video)](https://www.youtube.com/watch?v=debIyWS6Byc) — Action Bronson — Jan 15, 2017, 12:09:30 AM EDT
+- [Action Bronson feat. Chance The Rapper - Baby Blue [Official Music Video YTMAs]](https://www.youtube.com/watch?v=bVP_w1rQweE) — Action Bronson — Jan 15, 2017, 12:03:35 AM EDT
+- [The BEST Street Football/Futsal/Freestyle Skills EVER!! ★ HD](https://www.youtube.com/watch?v=ox7spKu7EOc) — SkillTwins — Jan 14, 2017, 7:40:29 PM EDT
+- [How to Play the First Solo on Guitar - Guitar Lessons -](https://www.youtube.com/watch?v=S7F_UW6PvmE) — GuitarJamz — Jan 14, 2017, 11:22:16 AM EDT
+- [How to play One by Metallica on Guitar](https://www.youtube.com/watch?v=5tPhA7L4xpY) — GuitarJamz — Jan 14, 2017, 11:11:40 AM EDT
+- [RICK ROSS, BIG MEECH &amp; LARRY HOOVER](https://www.youtube.com/watch?v=AXXiYwwTry4) — TOMMYONTHETOWN — Jan 14, 2017, 8:11:40 AM EDT
+- [VA - Selections by Johnny Blue [Full Compilation]](https://www.youtube.com/watch?v=rlB9NaW3eqY) — The Psychedelic Muse — Jan 14, 2017, 12:43:54 AM EDT
+- [Automatic vs Manual Transmission](https://www.youtube.com/watch?v=auQgOtveQi0) — Sabin Civil Engineering — Jan 13, 2017, 9:26:05 AM EDT
+- [Manual Transmission Operation](https://www.youtube.com/watch?v=vOo3TLgL0kM) — WeberAuto — Jan 13, 2017, 9:23:25 AM EDT
+- [CDL Road Test: Double Clutch a Semi Truck-Micro Lesson](https://www.youtube.com/watch?v=tIrk6keM9hs) — CDLCollege — Jan 13, 2017, 9:21:31 AM EDT
+- [What Is Double Clutching?](https://www.youtube.com/watch?v=tescWzTlGQ0) — Engineering Explained — Jan 13, 2017, 9:07:09 AM EDT
+- [3 Hours of Beautiful Piano, Harp, Cello, Flute &amp; Violin Music](https://www.youtube.com/watch?v=Mx6xkyi5Ij8) — Peder B. Helland — Jan 13, 2017, 7:15:14 AM EDT
+- [Music to fall asleep: Cello at 432 Hz, meditation and relaxation 3 hours](https://www.youtube.com/watch?v=2cCZoxboF5s) — Jesse Ahmann - Montana Cellist — Jan 13, 2017, 12:36:35 AM EDT
+- [How electricity works. . . . animated](https://www.youtube.com/watch?v=ZInLPe_bezQ) — Amber Book — Jan 13, 2017, 12:13:30 AM EDT
+- [Tai Chi vs Kung Fu Shaolin](https://www.youtube.com/watch?v=B7LMYGdKV1w) — kyokushinbul — Jan 13, 2017, 12:06:04 AM EDT
+- [Small Soldiers Trailer](https://www.youtube.com/watch?v=YwIt5wagRsg) — Rafael M — Jan 13, 2017, 12:00:47 AM EDT
+- [15 Minute All Chakra - Tuning, Meditation and Balancing](https://www.youtube.com/watch?v=Jdyg8jt0OQU) — Taos Winds Spirit Music — Jan 12, 2017, 9:47:49 PM EDT
+- [20 min Awareness Meditation Music Relax Mind Body: Chakra Cleansing and Balancing](https://www.youtube.com/watch?v=Gqfk5sr9fpw) — Nu Meditation Music — Jan 12, 2017, 9:25:44 PM EDT
+- [Fix Galaxy Note 4 Continuous Reboot Issue (Android) #26](https://www.youtube.com/watch?v=eOTzNjA7nsU) — My Simple Fix — Jan 12, 2017, 8:17:38 PM EDT
+- [** WARNING** ANCIENT ZEN SOLFEGGIO 528 HZ  SOUNDS FOR BRAIN &amp; DNA HEALING : AMAZINGLY POWERFUL](https://www.youtube.com/watch?v=fwk-oc2QKHc) — DhyaanGuru Dr. Nipun Aggarwal — Jan 11, 2017, 12:19:38 PM EDT
+- [Aer vs. Notorious B.I.G. -- Everyday Struggle (Monster Mashes Mashup)](https://www.youtube.com/watch?v=rx1nDyzqIt0) — Andi Mayer — Jan 10, 2017, 10:05:03 PM EDT
+- [Aer vs. Notorious B.I.G. -- Party on the Moon (Monster Mashes mashup)](https://www.youtube.com/watch?v=RL7cWf6n3Qc) — Andi Mayer — Jan 10, 2017, 10:04:53 PM EDT
+- [Aer vs. Notorious B.I.G. -- Big Medina (Monster Mashes Mashup)](https://www.youtube.com/watch?v=M8CX1lMiKeU) — Andi Mayer — Jan 10, 2017, 10:04:26 PM EDT
+- [MF DOOM + SADE (SADEVILLAIN) FULL ALBUM](https://www.youtube.com/watch?v=RZSY9lO0S-I) — TENZOE — Jan 10, 2017, 9:53:39 PM EDT
+- [NehruvianDoom - Bishop nehru and MF doom (Full Album)](https://www.youtube.com/watch?v=h_bBRrt9TRo) — Lyric Translator — Jan 10, 2017, 9:48:04 PM EDT
+- [How to Use Pastels For Beginners](https://www.youtube.com/watch?v=dpF_zAiLpvU) — Copic Tipz — Jan 10, 2017, 7:18:37 PM EDT
+- [How to Play the First Solo on Guitar - Guitar Lessons -](https://www.youtube.com/watch?v=S7F_UW6PvmE) — GuitarJamz — Jan 10, 2017, 6:28:07 PM EDT
+- [How to Play &quot;Wish You Were Here&quot; (solo) - Pink Floyd](https://www.youtube.com/watch?v=jgUI9M3egVM) — Marty Music — Jan 9, 2017, 9:42:40 AM EDT
+- [Mantra for Positive Energy | Tohi Mohi Mohi Tohi | Relaxing Calming Meditation Music](https://www.youtube.com/watch?v=gar2vKmnqcs) — Meditative Mind — Jan 8, 2017, 11:55:11 PM EDT
+- [Meow The Jewels: A Short Paw-cumentary](https://www.youtube.com/watch?v=Oxk9WzHB81g) — Mass Appeal — Jan 5, 2017, 10:32:47 PM EDT
+- [Paw Due Respect (Blood Diamonds Remix) - Meow The Jewels](https://www.youtube.com/watch?v=-I0eCkVPD_E) — Mass Appeal Records — Jan 5, 2017, 10:29:24 PM EDT
+- [Meowpurrdy (El-P Remix) - Meow The Jewels](https://www.youtube.com/watch?v=eOvzllwBJQg) — Mass Appeal Records — Jan 5, 2017, 10:25:13 PM EDT
+- [Ain&#39;t No Sunshine - Matt Andersen](https://www.youtube.com/watch?v=jLsye_LJ_Ks) — Bob Ault — Jan 5, 2017, 10:21:56 PM EDT
+- [Migos - Bad and Boujee ft. Lil Uzi Vert](https://www.youtube.com/watch?v=LVOS_lzgEpQ) — Quality Control Music — Jan 5, 2017, 10:21:10 PM EDT
+- [El-P - Oh Hail No (ft. Mr. Muthafuckin eXquire &amp; Danny Brown)](https://www.youtube.com/watch?v=W2ed5osQYvU) — ce3flow — Jan 5, 2017, 10:19:28 PM EDT
+- [Mr. Muthafuckin eXquire ft. Despot, Das Racist, Danny Brown, EL-P - The Last Huzzah (Remix)](https://www.youtube.com/watch?v=N0ijOe3sGEk) — Everything iZ Y.O.U — Jan 5, 2017, 10:13:47 PM EDT
+- [People Under The Stairs - San Francisco Knights](https://www.youtube.com/watch?v=LFYR4XI9Itw) — shannonrmr — Jan 5, 2017, 10:13:39 PM EDT
+- [People Under the Stairs - Acid Raindrops](https://www.youtube.com/watch?v=1dr1kQDGgRk) — Shankzilla87 — Jan 5, 2017, 10:08:28 PM EDT
+- [Captain Murphy ft. Viktor Vaughn &amp; Earl Sweatshirt - Between Villains](https://www.youtube.com/watch?v=7sMLUg7VdXo) — DREAMWORLD  — Jan 5, 2017, 10:06:55 PM EDT
+- [NehruvianDoom - Bishop nehru and MF doom (Full Album)](https://www.youtube.com/watch?v=h_bBRrt9TRo) — Lyric Translator — Jan 5, 2017, 9:51:19 PM EDT
+- [MF DOOM + SADE (SADEVILLAIN) FULL ALBUM](https://www.youtube.com/watch?v=RZSY9lO0S-I) — TENZOE — Jan 5, 2017, 9:38:17 PM EDT
+- [MF Doom - Doomsday](https://www.youtube.com/watch?v=CRHyBwNtkLA) — Tormatic — Jan 5, 2017, 9:35:16 PM EDT
+- [MF DOOM - Madvillain - Accordion](https://www.youtube.com/watch?v=rpaonSDPw7Y) — Stones Throw — Jan 5, 2017, 9:33:08 PM EDT
+- [MF DOOM &amp; Gorillaz - &quot;November Has Come&quot; Video (Re-Edited)](https://www.youtube.com/watch?v=5SgpzI0z41s) — HarryPittProductions — Jan 5, 2017, 9:27:32 PM EDT
+- [OMEGAH RED feat. MF DOOM and RZA - Books of War](https://www.youtube.com/watch?v=pTCp0kJYF30) — Importan Joe — Jan 5, 2017, 9:19:22 PM EDT
+- [A Day Made of Glass... Made possible by Corning. (2011)](https://www.youtube.com/watch?v=6Cf7IL_eZ38) — Corning Incorporated — Jan 5, 2017, 2:12:32 PM EDT
+- [OMEGAH RED feat. MF DOOM and RZA - Books of War](https://www.youtube.com/watch?v=pTCp0kJYF30) — Importan Joe — Jan 4, 2017, 12:36:48 PM EDT
+- [Astronaut Ape - Flight 420 [Full Album]](https://www.youtube.com/watch?v=u4t7aZUNlYw) — The Psychedelic Muse — Jan 4, 2017, 12:22:37 PM EDT
+- [Migos - Bad and Boujee ft. Lil Uzi Vert](https://www.youtube.com/watch?v=LVOS_lzgEpQ) — Quality Control Music — Jan 4, 2017, 11:36:14 AM EDT
+- [DJ ESCO - Too Much Sauce (Official Video) ft. Future, Lil Uzi Vert](https://www.youtube.com/watch?v=Ekqu_Ku7nuY) — DJESCOVEVO — Jan 4, 2017, 11:35:32 AM EDT
+- [ASAP Ferg &quot;Uzi Gang&quot; Feat. Lil Uzi Vert &amp; Marty Baller (WSHH Exclusive - Official Music Video)](https://www.youtube.com/watch?v=DI0PBcyCzpM) — WORLDSTARHIPHOP — Jan 4, 2017, 11:27:53 AM EDT
+- [I wanna put my dick in](https://www.youtube.com/watch?v=nt9PbIUKHeM) — xxsteveo420xx — Jan 3, 2017, 9:45:20 AM EDT

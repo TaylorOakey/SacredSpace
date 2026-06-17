@@ -2,7 +2,8 @@
 Implements MCP Streamable HTTP transport directly as FastAPI routes.
 Avoids FastMCP ASGI lifecycle issues when embedded in an existing app.
 Tools: system_health, query_memory, store_mote, read_ledger,
-       pillar_status, run_inference, vault_search, list_anvil_missions
+       pillar_status, run_inference, vault_search, list_anvil_missions,
+       sigil_query, sigil_execute_spell
 """
 
 import json
@@ -13,6 +14,7 @@ from fastapi import APIRouter, Request
 from fastapi.responses import JSONResponse
 from app.config import SACRED_ROOT, OLLAMA_BASE, NINE_PILLARS
 from app.db import get_sqlite, get_chroma_client
+from app.services import sigil_terminal_backend, weaver_engine, sigil_grammar
 
 router = APIRouter(tags=["mcp"])
 
@@ -158,6 +160,156 @@ def tool_list_anvil_missions(_args: dict) -> str:
         return f"ANVIL read failed: {e}"
 
 
+# ── Sigil Terminal MCP tools ──────────────────────────────────────────────────
+
+def tool_sigil_query(args: dict) -> str:
+    """Query the Sacred Sigil Terminal across one or all dimensions."""
+    try:
+        query = args.get("query", "")
+        dimension = args.get("dimension", None)
+        limit = int(args.get("limit", 10))
+        if not query:
+            return "Error: query is required"
+        if dimension and dimension != "all":
+            result = sigil_terminal_backend.query_dimension(dimension, query, limit)
+        else:
+            result = sigil_terminal_backend.cross_dimension_search(query, limit)
+        return json.dumps(result, indent=2, default=str)
+    except Exception as e:
+        return f"Sigil query failed: {e}"
+
+
+def tool_sigil_execute_spell(args: dict) -> str:
+    """Execute a Sigil Terminal spell (weaver engine)."""
+    try:
+        spell_id = args.get("spell_id", "")
+        params = args.get("params", {})
+        if not spell_id:
+            spells = weaver_engine.get_spells()
+            names = ", ".join(f"{k}: {v['name']}" for k, v in spells.items())
+            return f"Available spells: {names}"
+        result = weaver_engine.execute_spell(spell_id, params)
+        return json.dumps(result, indent=2, default=str)
+    except Exception as e:
+        return f"Spell execution failed: {e}"
+
+
+def tool_sigil_parse(args: dict) -> str:
+    """Parse a sigil string using the Sacred Sigil Grammar Engine."""
+    try:
+        sigil = args.get("sigil", "")
+        if not sigil:
+            return "Error: sigil string is required"
+        parsed = sigil_grammar.parse(sigil)
+        cost = sigil_grammar.calculate_cost(parsed)
+        description = sigil_grammar.describe_sigil(parsed)
+        return json.dumps({
+            "parsed": parsed.to_dict(),
+            "cost": cost,
+            "description": description,
+        }, indent=2, default=str)
+    except Exception as e:
+        return f"Sigil parse failed: {e}"
+
+
+def tool_sigil_lint(args: dict) -> str:
+    """Lint a sigil string for validity and affinity warnings."""
+    try:
+        sigil = args.get("sigil", "")
+        if not sigil:
+            return "Error: sigil string is required"
+        result = sigil_grammar.lint(sigil)
+        return json.dumps(result, indent=2, default=str)
+    except Exception as e:
+        return f"Sigil lint failed: {e}"
+
+
+def tool_sigil_library(_args: dict) -> str:
+    """Return the full sigil grammar reference library."""
+    try:
+        lib = sigil_grammar.get_library()
+        lib["all_macros"] = sigil_grammar.get_all_macros()
+        return json.dumps(lib, indent=2, default=str)
+    except Exception as e:
+        return f"Sigil library failed: {e}"
+
+
+def tool_sigil_create_macro(args: dict) -> str:
+    """Create a custom sigil macro."""
+    try:
+        from app.db import get_sqlite
+        name = args.get("name", "")
+        composition = args.get("composition", "")
+        if not name or not composition:
+            return "Error: both 'name' and 'composition' are required"
+        parsed = sigil_grammar.parse(composition)
+        if parsed.errors:
+            return f"Invalid composition: {'; '.join(parsed.errors)}"
+        conn = get_sqlite()
+        sigil_grammar.load_custom_macros(conn)
+        macro = sigil_grammar.add_custom_macro(
+            conn, name, composition,
+            args.get("description", ""),
+            args.get("agent", "CUSTOM"),
+        )
+        conn.close()
+        return json.dumps(macro, indent=2, default=str)
+    except Exception as e:
+        return f"Create macro failed: {e}"
+
+
+def tool_sigil_list_macros(_args: dict) -> str:
+    """List all macros (built-in + custom)."""
+    try:
+        from app.db import get_sqlite
+        conn = get_sqlite()
+        sigil_grammar.load_custom_macros(conn)
+        conn.close()
+        all_macros = sigil_grammar.get_all_macros()
+        return json.dumps({
+            "macros": [{"id": k, **v} for k, v in all_macros.items()],
+            "total": len(all_macros),
+        }, indent=2, default=str)
+    except Exception as e:
+        return f"List macros failed: {e}"
+
+
+def tool_sigil_delete_macro(args: dict) -> str:
+    """Delete a custom sigil macro by ID."""
+    try:
+        from app.db import get_sqlite
+        macro_id = int(args.get("macro_id", 0))
+        if not macro_id:
+            return "Error: 'macro_id' (int) is required"
+        conn = get_sqlite()
+        sigil_grammar.load_custom_macros(conn)
+        deleted = sigil_grammar.delete_custom_macro(conn, macro_id)
+        conn.close()
+        return json.dumps({"deleted": deleted, "macro_id": macro_id}, indent=2)
+    except Exception as e:
+        return f"Delete macro failed: {e}"
+
+
+def tool_sigil_spell_cost(args: dict) -> str:
+    """Get grammar-backed spell cost breakdown for a spell."""
+    try:
+        spell_id = args.get("spell_id", "")
+        if not spell_id:
+            spells = weaver_engine.get_spells()
+            names = ", ".join(spells.keys())
+            return f"Available spells: {names}"
+        cost = weaver_engine.calculate_spell_resonance(spell_id)
+        composition = weaver_engine.get_spell_composition(spell_id)
+        result = {"spell_id": spell_id, "cost": cost}
+        if composition:
+            parsed = sigil_grammar.parse(composition)
+            result["composition"] = composition
+            result["parsed"] = parsed.to_dict()
+        return json.dumps(result, indent=2, default=str)
+    except Exception as e:
+        return f"Spell cost failed: {e}"
+
+
 # ── Tool registry ─────────────────────────────────────────────────────────────
 
 TOOLS = {
@@ -226,6 +378,99 @@ TOOLS = {
         "fn": tool_list_anvil_missions,
         "description": "List all open ANVIL mission files in D:/CLAUDECODE.ANVIL/.",
         "inputSchema": {"type": "object", "properties": {}, "required": []},
+    },
+    "sigil_query": {
+        "fn": tool_sigil_query,
+        "description": "Query the Sacred Sigil Terminal across any of the 9 dimensions (vault, grove, forest, codex, memory, agent, social, market, path) or all.",
+        "inputSchema": {
+            "type": "object",
+            "properties": {
+                "query": {"type": "string", "description": "Natural language search query"},
+                "dimension": {"type": "string", "description": "Dimension filter: vault|grove|forest|codex|memory|agent|social|market|path|all (default: all)"},
+                "limit": {"type": "integer", "description": "Max results per dimension (default: 10)"},
+            },
+            "required": ["query"],
+        },
+    },
+    "sigil_execute_spell": {
+        "fn": tool_sigil_execute_spell,
+        "description": "Execute a Sigil Terminal spell. Spells: aurora_weave (cross-dimensional synthesis), elias_open_path (graph pathfinding), iris_thread (knowledge connection), asher_shadow (adversarial analysis), scribe_record (memory storage).",
+        "inputSchema": {
+            "type": "object",
+            "properties": {
+                "spell_id": {"type": "string", "description": "Spell name: aurora_weave|elias_open_path|iris_thread|asher_shadow|scribe_record"},
+                "params": {"type": "object", "description": "Spell-specific parameters (query, from, to, target, text, etc.)"},
+            },
+            "required": ["spell_id"],
+        },
+    },
+    "sigil_parse": {
+        "fn": tool_sigil_parse,
+        "description": "Parse a sigil string into its structured components using the Sacred Sigil Grammar Engine. Supports dimension glyphs (∞◊∆⊙≈♦⊗⊜Λ♰), root sigils (╻○•✧⚒Ϟ✦), affixes (!+~>*), macros (AURORA.WEAVE, etc.), and #N limits.",
+        "inputSchema": {
+            "type": "object",
+            "properties": {
+                "sigil": {"type": "string", "description": "Sigil string to parse, e.g. '∆:⚒' or 'AURORA.WEAVE' or '∞+⊙:✦+╻*#10'"},
+            },
+            "required": ["sigil"],
+        },
+    },
+    "sigil_lint": {
+        "fn": tool_sigil_lint,
+        "description": "Lint a sigil string for grammar validity, affinity warnings, and composition rules.",
+        "inputSchema": {
+            "type": "object",
+            "properties": {
+                "sigil": {"type": "string", "description": "Sigil string to lint, e.g. '≈:✦#5' or '∆:⚒'"},
+            },
+            "required": ["sigil"],
+        },
+    },
+    "sigil_library": {
+        "fn": tool_sigil_library,
+        "description": "Return the full Sacred Sigil Grammar reference including all dimensions, root sigils, macros, and affixes.",
+        "inputSchema": {"type": "object", "properties": {}, "required": []},
+    },
+    "sigil_create_macro": {
+        "fn": tool_sigil_create_macro,
+        "description": "Create a custom sigil macro with a name, composition string, and optional description.",
+        "inputSchema": {
+            "type": "object",
+            "properties": {
+                "name": {"type": "string", "description": "Macro name, e.g. 'MY_CUSTOM.WEAVE'"},
+                "composition": {"type": "string", "description": "Sigil composition string, e.g. '∆:✦+╻'"},
+                "description": {"type": "string", "description": "Optional description of what the macro does"},
+                "agent": {"type": "string", "description": "Optional agent name (default: CUSTOM)"},
+            },
+            "required": ["name", "composition"],
+        },
+    },
+    "sigil_list_macros": {
+        "fn": tool_sigil_list_macros,
+        "description": "List all macros including built-in and custom user-created macros.",
+        "inputSchema": {"type": "object", "properties": {}, "required": []},
+    },
+    "sigil_delete_macro": {
+        "fn": tool_sigil_delete_macro,
+        "description": "Delete a custom sigil macro by its numeric ID.",
+        "inputSchema": {
+            "type": "object",
+            "properties": {
+                "macro_id": {"type": "integer", "description": "Numeric ID of the custom macro to delete"},
+            },
+            "required": ["macro_id"],
+        },
+    },
+    "sigil_spell_cost": {
+        "fn": tool_sigil_spell_cost,
+        "description": "Get the grammar-backed cost breakdown for any spell, including composition parse, affinity discount, and effective resonance cost.",
+        "inputSchema": {
+            "type": "object",
+            "properties": {
+                "spell_id": {"type": "string", "description": "Spell ID: aurora_weave|elias_open_path|iris_thread|asher_shadow|scribe_record|lore_unveil"},
+            },
+            "required": [],
+        },
     },
 }
 

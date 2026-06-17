@@ -1,0 +1,265 @@
+{
+  "communities": {
+    "4": [
+      "sacred_market_pillar_09",
+      "printify_platform",
+      "gelato_platform",
+      "sacredarcana_llc",
+      "sacredspace_501c3",
+      "ai_implementation_engineer",
+      "30k_containment_strategy",
+      "cashflow_master_tracking",
+      "notebooklm_intelligence",
+      "sacredspace_intelligence_rig",
+      "campaign_market_monitor",
+      "daily_ai_briefing"
+    ],
+    "3": [
+      "merchant_agent",
+      "graded_decode_service",
+      "gematric_pricing_model",
+      "social_signal_pillar_07",
+      "aurora_agent",
+      "elias_agent",
+      "living_companion_stories",
+      "behind_the_build_content",
+      "grama_cipher_drops",
+      "icaris_quartet",
+      "nine_pillar_architecture",
+      "agent_layer_pillar_06",
+      "graded_cipher_sage"
+    ],
+    "0": [
+      "etsy_platform",
+      "sacred_bazaar",
+      "sacredspacestudios_brand",
+      "grounded_mysticism_voice",
+      "sacred_signal_posts",
+      "luminous_visual_dna",
+      "ethereal_tech_fantasy_aesthetic",
+      "sacred_codex_design_system",
+      "sacred_forest_ide_theme",
+      "arcana_grid_12_archetypes",
+      "sacredspace_portal_website",
+      "metatron_cube_animation",
+      "open_grove_community",
+      "instagram_platform",
+      "tiktok_platform",
+      "youtube_platform",
+      "x_twitter_platform",
+      "pinterest_platform",
+      "vashd_weaver",
+      "lyra_harmonic_architect"
+    ],
+    "6": [
+      "lore_to_product_pipeline",
+      "lore_to_ledger_map",
+      "sacred_economy_codex",
+      "sacred_triad_narrative",
+      "mythic_operating_system",
+      "song_that_remembers_itself",
+      "sacred3_infrastructure"
+    ],
+    "5": [
+      "pod_product_pipeline",
+      "physical_art_portfolio",
+      "ai_image_portfolio",
+      "jenga_journey_s1",
+      "sacred_messages_year_1",
+      "icaris_quartet_designs",
+      "4_elemental_realms",
+      "8_design_families",
+      "product_reveals"
+    ],
+    "2": [
+      "crowdfunding_strategy",
+      "kickstarter_platform",
+      "indiegogo_platform",
+      "startengine_equity",
+      "smb_ai_consulting",
+      "regulated_smb_compliance",
+      "unit_economics_model",
+      "reward_tier_pricing",
+      "prelaunch_email_list",
+      "proof_density_sprint",
+      "offer_physics",
+      "risk_register",
+      "stretch_goal_discipline",
+      "awaken_email_capture",
+      "linkedin_platform"
+    ],
+    "1": [
+      "sacredspace_os",
+      "taylor_oak3ytree_operator",
+      "council_grove_pillar_02",
+      "obsidian_vaults_pillar_01",
+      "neural_forest_pillar_03",
+      "sacred_codex_pillar_04",
+      "memory_engine_pillar_05",
+      "learning_path_pillar_08",
+      "sacredspace_master_context",
+      "live_sync_protocol",
+      "python_fastapi_stack",
+      "sqlite_redis_chromadb",
+      "wsl2_ubuntu_lenovo",
+      "ollama_ai_models",
+      "tailscale_network",
+      "zero_cost_api_constraint"
+    ]
+  },
+  "cohesion": {
+    "4": 0.22727272727272727,
+    "3": 0.16666666666666666,
+    "0": 0.15789473684210525,
+    "6": 0.2857142857142857,
+    "5": 0.3055555555555556,
+    "2": 0.14285714285714285,
+    "1": 0.125
+  },
+  "gods": [
+    {
+      "id": "sacred_market_pillar_09",
+      "label": "Sacred Market (Pillar 09)",
+      "degree": 18
+    },
+    {
+      "id": "sacredspace_os",
+      "label": "SacredSpace OS",
+      "degree": 16
+    },
+    {
+      "id": "sacredspacestudios_brand",
+      "label": "SacredSpaceStudios Brand",
+      "degree": 14
+    },
+    {
+      "id": "crowdfunding_strategy",
+      "label": "Crowdfunding Strategy",
+      "degree": 13
+    },
+    {
+      "id": "social_signal_pillar_07",
+      "label": "Social Signal (Pillar 07)",
+      "degree": 12
+    },
+    {
+      "id": "pod_product_pipeline",
+      "label": "POD Product Pipeline",
+      "degree": 9
+    },
+    {
+      "id": "sacred_codex_design_system",
+      "label": "Sacred Codex Design System",
+      "degree": 9
+    },
+    {
+      "id": "sacredspace_portal_website",
+      "label": "SacredSpace Portal Website",
+      "degree": 9
+    },
+    {
+      "id": "grounded_mysticism_voice",
+      "label": "Grounded Mysticism Voice",
+      "degree": 6
+    },
+    {
+      "id": "icaris_quartet",
+      "label": "ICARIS Quartet",
+      "degree": 6
+    }
+  ],
+  "surprises": [
+    {
+      "source": "4 Elemental Realms",
+      "target": "Sacred Codex Design System",
+      "source_files": [
+        "01_SACRED_MARKET.md",
+        "02_SOCIAL_SIGNAL.md"
+      ],
+      "confidence": "INFERRED",
+      "relation": "described_in",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; bridges separate communities"
+    },
+    {
+      "source": "Crowdfunding Strategy",
+      "target": "Sacred Market (Pillar 09)",
+      "source_files": [
+        "03_MONEY_FINANCE_CONCEPTS.md",
+        "01_SACRED_MARKET.md"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "finances",
+      "why": "connects across different repos/directories; bridges separate communities"
+    },
+    {
+      "source": "SMB AI Consulting",
+      "target": "Sacred Market (Pillar 09)",
+      "source_files": [
+        "03_MONEY_FINANCE_CONCEPTS.md",
+        "01_SACRED_MARKET.md"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "revenue_for",
+      "why": "connects across different repos/directories; bridges separate communities"
+    },
+    {
+      "source": "AI Implementation Engineer",
+      "target": "Sacred Market (Pillar 09)",
+      "source_files": [
+        "03_MONEY_FINANCE_CONCEPTS.md",
+        "01_SACRED_MARKET.md"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "revenue_for",
+      "why": "connects across different repos/directories; peripheral node `AI Implementation Engineer` unexpectedly reaches hub `Sacred Market (Pillar 09)`"
+    },
+    {
+      "source": "Social Signal (Pillar 07)",
+      "target": "Sacred Market (Pillar 09)",
+      "source_files": [
+        "02_SOCIAL_SIGNAL.md",
+        "01_SACRED_MARKET.md"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "promotes",
+      "why": "connects across different repos/directories; bridges separate communities"
+    }
+  ],
+  "questions": [
+    {
+      "type": "bridge_node",
+      "question": "Why does `Sacred Market (Pillar 09)` connect `Sacred Market & Business Operations` to `Visual Brand & Platform Distribution`, `Crowdfunding & Revenue Strategy`, `Social Signal & Agent Ecosystem`, `Product Portfolio & Design`, `Mythic Lore & Economy Codex`?",
+      "why": "High betweenness centrality (0.580) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `SacredSpace OS` connect `SacredSpace OS Infrastructure` to `Social Signal & Agent Ecosystem`?",
+      "why": "High betweenness centrality (0.308) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `Nine Pillar Architecture` connect `Social Signal & Agent Ecosystem` to `SacredSpace OS Infrastructure`, `Sacred Market & Business Operations`?",
+      "why": "High betweenness centrality (0.264) - this node is a cross-community bridge."
+    },
+    {
+      "type": "verify_inferred",
+      "question": "Are the 3 inferred relationships involving `SacredSpaceStudios Brand` (e.g. with `Grounded Mysticism Voice` and `Metatron Cube Animation`) actually correct?",
+      "why": "`SacredSpaceStudios Brand` has 3 INFERRED edges - model-reasoned connections that need verification."
+    },
+    {
+      "type": "isolated_nodes",
+      "question": "What connects `Printify Platform`, `Gelato Platform`, `Sacred Economy Codex` to the rest of the system?",
+      "why": "46 weakly-connected nodes found - possible documentation gaps or missing edges."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Crowdfunding & Revenue Strategy` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.14285714285714285 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `SacredSpace OS Infrastructure` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.125 - nodes in this community are weakly interconnected."
+    }
+  ]
+}

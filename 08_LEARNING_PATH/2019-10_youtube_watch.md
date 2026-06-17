@@ -1,0 +1,137 @@
+---
+title: "YouTube Watch History — 2019-10"
+source: youtube
+created: 2019-10-01
+pillar: 08_LEARNING_PATH
+stage: RAW
+tags: [takeout, youtube, watch-history]
+---
+
+# YouTube Watch History — 2019-10
+> 123 videos watched
+
+## Videos
+
+- [Graham Hancock - Ayahuasca &amp; Technologies of Transcendence | I.AM.LIFE / Tony Moss](https://www.youtube.com/watch?v=tqJW7VJJvx0) — I AM LIFE MUSIC — Oct 31, 2019, 9:15:10 PM EDT
+- [Ayahuasca](https://www.youtube.com/watch?v=U3lWVLuc6CE) — Vsauce — Oct 31, 2019, 9:06:24 PM EDT
+- [Are Miracles Real? The Secret Mysteries of Ayahuasca](https://www.youtube.com/watch?v=ZZrDhuF22B0) — Spirit Science — Oct 31, 2019, 8:41:55 PM EDT
+- [90 BPM - Metronome](https://www.youtube.com/watch?v=slcdchaRQaw) — Drumset Fundamentals — Oct 30, 2019, 9:40:42 PM EDT
+- [80 BPM - Metronome](https://www.youtube.com/watch?v=v900d5tVw6E) — Drumset Fundamentals — Oct 30, 2019, 9:28:04 PM EDT
+- [70 BPM - Metronome](https://www.youtube.com/watch?v=wo-wr_tRkCw) — Drumset Fundamentals — Oct 30, 2019, 9:18:07 PM EDT
+- [60 BPM - Metronome](https://www.youtube.com/watch?v=ymJIXzvDvj4) — Drumset Fundamentals — Oct 30, 2019, 9:06:13 PM EDT
+- [STEVEN KOTLER - FIND YOUR FLOW STATE - Part 1/2 | London Real](https://www.youtube.com/watch?v=F2W03RfOOdw) — London Real — Oct 30, 2019, 4:18:59 PM EDT
+- [The nature of consciousness - Interview with Alan Hugenot](https://www.youtube.com/watch?v=yByEQfaD314) — Anthony Chene production — Oct 30, 2019, 10:19:15 AM EDT
+- [How To Get Into The Flow State | Steven Kotler](https://www.youtube.com/watch?v=XG_hNZ5T4nY) — Mindvalley Talks — Oct 30, 2019, 10:18:57 AM EDT
+- [Enlightenment (Documentary)](https://www.youtube.com/watch?v=PgYO3VB6ubo) — Anthony Chene production — Oct 30, 2019, 10:18:03 AM EDT
+- [Decoding the Science of Ultimate Human Performance | Steven Kotler | Talks at Google](https://www.youtube.com/watch?v=y1MHyyWsMeE) — Talks at Google — Oct 30, 2019, 10:16:50 AM EDT
+- [Estas Tonne - Spontaneous Nostalgia in Tallinn 2015](https://www.youtube.com/watch?v=bgm_G92VEOQ) — Geri Dagys — Oct 27, 2019, 9:08:40 PM EDT
+- [Estas Tonne - Perception [ Live in Zurich ]](https://www.youtube.com/watch?v=Kbkc_0Ns6q0) — Universal Sounds Switzerland — Oct 27, 2019, 8:43:42 PM EDT
+- [The Re-Stoned - Stories Of The Astral Lizard(Full Album)](https://www.youtube.com/watch?v=kP-Xhu-T4qY) — HYPERLOUPE — Oct 27, 2019, 8:26:42 PM EDT
+- [Bela Fleck &amp; Abigail Washburn live at Paste Studio NYC](https://www.youtube.com/watch?v=KjLYjf4B7xQ) — Paste Magazine — Oct 27, 2019, 7:51:40 PM EDT
+- [What guitars were like 400 years ago (The 9 String Baroque Guitar)](https://www.youtube.com/watch?v=alyDJysSzL4) — Rob Scallon — Oct 27, 2019, 7:50:35 PM EDT
+- [The Logos // Law Of One 002](https://www.youtube.com/watch?v=JTt-C2vCdxI) — Aaron Abke — Oct 27, 2019, 7:35:14 PM EDT
+- [The Seven Densities of Consciousness // Law Of One 001](https://www.youtube.com/watch?v=seaJcY0kXjk) — Aaron Abke — Oct 27, 2019, 7:11:39 PM EDT
+- [Khruangbin: NPR Music Tiny Desk Concert](https://www.youtube.com/watch?v=vWLJeqLPfSU) — NPR Music — Oct 27, 2019, 7:09:30 PM EDT
+- [Sylvan Esso - Hey Mami](https://www.youtube.com/watch?v=wjR7Rk7b7_c) — Music Ward — Oct 25, 2019, 11:05:05 PM EDT
+- [Sylvan Esso - Hey Mami (Audio)](https://www.youtube.com/watch?v=3mh2RctlGxc) — trekkyrecords — Oct 25, 2019, 11:03:34 PM EDT
+- [Dotan Negrin &amp; Prismatic Mantis  - Pure Imagination (Future James Trap Remix)](https://www.youtube.com/watch?v=dmVnsFSZSfw) — EDM Bot — Oct 25, 2019, 10:56:39 PM EDT
+- [Sacred G Breath Meditation Station   DMT Releasing Pineal Activation](https://www.youtube.com/watch?v=97gSeQY2IZg) — falconflylow — Oct 25, 2019, 9:35:04 AM EDT
+- [Big Wild - &quot;6&#39;s to 9&#39;s (feat. Rationale)&quot; | Live at Los Angeles State Historic Park](https://www.youtube.com/watch?v=eqde1YFdR2Q) — Big Wild — Oct 25, 2019, 9:31:14 AM EDT
+- [BINKBEATS - Rhythmiconomy](https://www.youtube.com/watch?v=HNBzNCsDylY) — BINKBEATS — Oct 24, 2019, 10:25:18 PM EDT
+- [BINKBEATS - The Humming / The Ghost (feat. Maxime Barlag)](https://www.youtube.com/watch?v=LjNPBZXFhRM) — BINKBEATS — Oct 24, 2019, 10:18:44 PM EDT
+- [BINKBEATS - Drones In My Bones](https://www.youtube.com/watch?v=E75VPh78qkc) — BINKBEATS — Oct 24, 2019, 10:13:14 PM EDT
+- [BINKBEATS - Mooncake](https://www.youtube.com/watch?v=ChFA10ypmpY) — BINKBEATS — Oct 24, 2019, 10:09:20 PM EDT
+- [Alan Watts~ The Art of Meditation](https://www.youtube.com/watch?v=-TjCZRutOKY) — Alan Wattsify (Fan Page) — Oct 22, 2019, 9:41:11 PM EDT
+- [Alan Watts - Guided Meditation (Awakening The Mind)](https://www.youtube.com/watch?v=jPpUNAFHgxM) — Indigo Bliss — Oct 22, 2019, 9:25:25 PM EDT
+- [Can you Hack Your Biological Age? | Ben Greenfield](https://www.youtube.com/watch?v=p7ccaKmoSfM) — Mindvalley Talks — Oct 22, 2019, 10:55:41 AM EDT
+- [Is This Cheating? “Little Known” Biohacks](https://www.youtube.com/watch?v=9fWFOJ8-SsQ) — Be Inspired — Oct 22, 2019, 10:41:38 AM EDT
+- [Brain Massage - Multi-Instrument Sound Bath (No Talking) Sleep | Study | Meditation | Heal | Tingles](https://www.youtube.com/watch?v=WAmNus7rdDE) — Healing Vibrations — Oct 21, 2019, 10:35:02 PM EDT
+- [Tibetan Meditation Music, Healing Music, Calm Music, Stress Relief Music, Relaxing Music, ☯3453](https://www.youtube.com/watch?v=aXH-QsPTeEI) — Yellow Brick Cinema - Relaxing Music — Oct 21, 2019, 7:27:19 PM EDT
+- [Dodge Durango Throttle Position Sensor Replacement and clear any codes in the PCM computer](https://www.youtube.com/watch?v=8m339ziMi18) — William Wakeman — Oct 19, 2019, 2:57:49 PM EDT
+- [CODE P0058 OXYGEN SENSOR HEATER CONTROL CIRCUIT HIGH BANK 2 SENSOR 2 DODGE JEEP CHRYSLER](https://www.youtube.com/watch?v=qahl0VnnP5M) — Auto Repair Guys — Oct 19, 2019, 2:48:27 PM EDT
+- [Ray of Sunshine](https://www.youtube.com/watch?v=Uv1FO_Q-jxU) — The Sim Redmond Band - Topic — Oct 19, 2019, 1:02:37 PM EDT
+- [Lately](https://www.youtube.com/watch?v=mwWOWZvkSAg) — The Sim Redmond Band - Topic — Oct 19, 2019, 12:59:06 PM EDT
+- [Pink Guitar](https://www.youtube.com/watch?v=w3S2uvuv6U0) — The Sim Redmond Band - Topic — Oct 19, 2019, 12:54:28 PM EDT
+- [The very best of Colin Mochrie](https://www.youtube.com/watch?v=Q961dViRof4) — libanlibanliban — Oct 17, 2019, 7:09:20 PM EDT
+- [TOP 10 FASTEST CARS IN THE WORLD 2019](https://www.youtube.com/watch?v=frqT0_E1G80) — UTAY — Oct 17, 2019, 7:04:14 PM EDT
+- [Lotus Evija - The Most Powerful Car In The World!](https://www.youtube.com/watch?v=i59QX1GHiKI) — Supercar Blondie — Oct 17, 2019, 6:54:14 PM EDT
+- [7 Minutes Of Pure Ferrari 250 GTO Hillclimb Bliss](https://www.youtube.com/watch?v=KHgD0wJGcR0) — Petrolicious — Oct 17, 2019, 6:52:10 PM EDT
+- [Introduction to Integral Spirituality | Ken Wilber](https://www.youtube.com/watch?v=H4jcxxJ_0ok) — Integral Life — Oct 15, 2019, 10:24:42 AM EDT
+- [Ken Wilber on the evolution of consciousness in the age of Trump.](https://www.youtube.com/watch?v=IiC-z9HmySg) — John Tangney — Oct 15, 2019, 10:24:31 AM EDT
+- [Isolation is the dream-killer, not your attitude | Barbara Sher | TEDxPrague](https://www.youtube.com/watch?v=H2rG4Dg6xyI) — TEDx Talks — Oct 14, 2019, 8:08:00 AM EDT
+- [Tape Measure Pro Tips](https://www.youtube.com/watch?v=p-AlTvciSQ8) — Essential Craftsman — Oct 13, 2019, 6:06:43 PM EDT
+- [How to use a speed square | Why it might be the most important tool you own](https://www.youtube.com/watch?v=xa9HZQV0W-Q) — Perkins Builder Brothers — Oct 13, 2019, 5:56:01 PM EDT
+- [How to build a Greenhouse! DIY~ Framing](https://www.youtube.com/watch?v=9czqvzVsHOg) — Homestead Handyman — Oct 13, 2019, 5:46:19 PM EDT
+- [5 Low Cost Greenhouse Ideas](https://www.youtube.com/watch?v=-vPcqhQ8DMg) — Daisy Creek Farms with Jag Singh — Oct 13, 2019, 5:45:58 PM EDT
+- [Before You Build a GREENHOUSE Watch This](https://www.youtube.com/watch?v=fJfbqk5RfRA) — SSLFamilyDad — Oct 13, 2019, 5:44:54 PM EDT
+- [How to Make a DIY Greenhouse | I Like To Make Stuff](https://www.youtube.com/watch?v=sQWPnaiixe0) — I Like To Make Stuff — Oct 13, 2019, 5:27:56 PM EDT
+- [What it takes to Build a Mystical Handpan](https://www.youtube.com/watch?v=q0O6SFM48Fc) — Hard Is Easy — Oct 13, 2019, 5:11:06 PM EDT
+- [How to Build a Simple, Sturdy Greenhouse from 2x4&#39;s | Modern Builds | EP. 58](https://www.youtube.com/watch?v=hwOmUN5B4FY) — Modern Builds — Oct 13, 2019, 5:09:34 PM EDT
+- [Sumac Dub - Le Jardin de Lucy [Full Album]](https://www.youtube.com/watch?v=Ljw5eJdO4kQ) — ODGProd — Oct 13, 2019, 8:11:37 AM EDT
+- [The Temptations - Papa Was A Rolling Stone](https://www.youtube.com/watch?v=pJV2pWFyfn4) — TSQD01 — Oct 12, 2019, 11:55:38 PM EDT
+- [The Doors - Roadhouse Blues](https://www.youtube.com/watch?v=n2_X4VTCoEo) — 215Days — Oct 12, 2019, 11:49:48 PM EDT
+- [Gary Clark Jr. - Bright Lights](https://www.youtube.com/watch?v=x_ZeDn-hHGE) — CrossroadsGuitar — Oct 12, 2019, 4:47:27 PM EDT
+- [Charles Bradley performs soulful cover of Black Sabbath&#39;s &#39;Changes&#39;](https://www.youtube.com/watch?v=zfaOf70M4xs) — Toronto Star — Oct 12, 2019, 4:40:54 PM EDT
+- [Blue October - Into The Ocean](https://www.youtube.com/watch?v=ZES3nJQYJok) — BlueOctoberVEVO — Oct 12, 2019, 4:36:34 PM EDT
+- [Bill Withers - Aint No Sunshine (OFFICIAL Lido TRAP REMIX)](https://www.youtube.com/watch?v=7NrdY-i3Eec) — Trap Music Now — Oct 12, 2019, 3:48:47 PM EDT
+- [Cherub - Doses &amp; Mimosas (Official Video)](https://www.youtube.com/watch?v=E45fogGN_Y8) — CHERUBVEVO — Oct 12, 2019, 3:43:16 PM EDT
+- [II. Zealots of Stockholm [Free Information]](https://www.youtube.com/watch?v=hs8lV0C9Mx8) — Childish Gambino - Topic — Oct 12, 2019, 3:38:38 PM EDT
+- [Run The Jewels - Legend Has It (Official Music Video From RTJ3 &amp; Black Panther)](https://www.youtube.com/watch?v=vWaljXUiCaE) — RunTheJewels — Oct 12, 2019, 3:34:47 PM EDT
+- [Gift of Gab (feat. R.A. The Rugged Man and A-F-R-O) - Freedom Form Flowing (Official Music Video)](https://www.youtube.com/watch?v=L3dtIyt6U1E) — The Gift of Gab — Oct 12, 2019, 3:30:53 PM EDT
+- [A-F-R-O - Code #829 (Official Music Video)](https://www.youtube.com/watch?v=547DlGNUnMA) — RAtheRuggedManTV — Oct 12, 2019, 3:28:30 PM EDT
+- [Tame Impala - The Less I Know The Better](https://www.youtube.com/watch?v=YnmEePUXLRs) — Vladimir Sarkisov — Oct 12, 2019, 3:25:32 PM EDT
+- [hot girl bummer](https://www.youtube.com/watch?v=l3Readohjuc) — blackbear - Topic — Oct 12, 2019, 3:22:15 PM EDT
+- [Ryan And Colin - The Dynamic Duo - Whose Line Is It Anyway?](https://www.youtube.com/watch?v=bNGABX2lfHo) — Whose Line Is It Anyway? — Oct 10, 2019, 10:46:04 PM EDT
+- [Whose line is it anyway NEW What&#39;s in the bag Season 9](https://www.youtube.com/watch?v=KyP1WTrwLxA) — Alain Le Francois — Oct 10, 2019, 10:35:37 PM EDT
+- [Whose line is it anyway NEW Scenes from a hat Season 9](https://www.youtube.com/watch?v=KpZ5d--2C6c) — Alain Le Francois — Oct 10, 2019, 10:03:05 PM EDT
+- [Flight Of The Conchords - The Bus Driver Song (live)](https://www.youtube.com/watch?v=ASY7boVoDCQ) — NickLapse — Oct 10, 2019, 10:01:29 PM EDT
+- [Flight of the Conchords-Robots](https://www.youtube.com/watch?v=2IPAOxrH7Ro) — R — Oct 10, 2019, 9:58:20 PM EDT
+- [Flight of the Conchords- Albi (racist dragon)](https://www.youtube.com/watch?v=X-jVAHAuiS4) — Ellaelise — Oct 10, 2019, 9:58:05 PM EDT
+- [Flight of the Conchords &quot;Leggy Blonde [feat. Rhys Darby]&quot;](https://www.youtube.com/watch?v=Mg0jS6F4M10) — Rich Mullinax — Oct 10, 2019, 9:57:38 PM EDT
+- [Flight of the Conchords - The Most Beautiful Girl (In The Room)](https://www.youtube.com/watch?v=9jLDZjMF3tk) — Kenneth Lloyd — Oct 10, 2019, 9:53:09 PM EDT
+- [Flight of the Conchords (I&#39;m Not Crying)](https://www.youtube.com/watch?v=5GdrKhhfJQw) — BillyMahoney1974 — Oct 10, 2019, 9:52:25 PM EDT
+- [Flight of the Conchords - Hiphopopotamus vs. Rhymnoceros](https://www.youtube.com/watch?v=dfqiC92INO4) — Kenneth Lloyd — Oct 10, 2019, 9:48:59 PM EDT
+- [Sleep Chakra Meditation Music: Healing Deep Sleep Meditation &amp; Sacral Chakra Meditation Balancing](https://www.youtube.com/watch?v=V3u7mNTG09g) — Nu Meditation Music — Oct 10, 2019, 9:23:21 PM EDT
+- [Guided Meditation - Blissful Deep Relaxation](https://www.youtube.com/watch?v=Jyy0ra2WcQQ) — The Honest Guys - Meditations - Relaxation — Oct 10, 2019, 9:04:19 PM EDT
+- [Let the Sounds Bring You Into the Present Moment ~ 10 Minute Mindfulness Guided Meditation](https://www.youtube.com/watch?v=xr_H18UcQCo) — Great Meditation — Oct 10, 2019, 9:01:26 PM EDT
+- [Stick Figure- Meltdown (Instrumental)](https://www.youtube.com/watch?v=VZJYanyqj6Q) — Cameron C — Oct 9, 2019, 9:20:45 PM EDT
+- [Stick Figure Road to Red Rocks](https://www.youtube.com/watch?v=tHFfmuuNSMQ) — Stick Figure — Oct 9, 2019, 9:19:35 PM EDT
+- [Stick Figure – &quot;Free Flow Sessions - No. 5&quot;](https://www.youtube.com/watch?v=gfp4pF2qp9I) — Stick Figure — Oct 9, 2019, 9:18:26 PM EDT
+- [Stick Figure (feat Eric Rachmany of Rebelution)– &quot;Free Flow Sessions - No. 4&quot;](https://www.youtube.com/watch?v=3Dmi_MF-Xw0) — Stick Figure — Oct 9, 2019, 9:17:16 PM EDT
+- [Stick Figure – &quot;Free Flow Sessions - No. 2&quot;](https://www.youtube.com/watch?v=hy5SHEXeEr8) — Stick Figure — Oct 9, 2019, 9:16:07 PM EDT
+- [Stick Figure – &quot;Free Flow Sessions - No. 1&quot;](https://www.youtube.com/watch?v=ayILJ6LWTl8) — Stick Figure — Oct 9, 2019, 9:15:03 PM EDT
+- [Stick Figure – &quot;Free Flow Sessions - No. 3&quot;](https://www.youtube.com/watch?v=teKPRLka9To) — Stick Figure — Oct 9, 2019, 9:13:51 PM EDT
+- [Stick Figure – &quot;Free Flow Sessions - No. 6&quot;](https://www.youtube.com/watch?v=qU-7PE0n9gc) — Stick Figure — Oct 9, 2019, 9:12:23 PM EDT
+- [Fretless Funk Rock Ghost Note Shuffle Bass Grooves](https://www.youtube.com/watch?v=5pBh04sbxdE) — Remco&#39;s Groove Lab — Oct 9, 2019, 9:08:16 PM EDT
+- [Extremely Deep Trance Meditation: Powerful Healing Music - Relax Mind Body](https://www.youtube.com/watch?v=kxRRuM99yg0) — Greenred Productions - Relaxing Music — Oct 6, 2019, 8:03:18 PM EDT
+- [One Point Perspective for Beginners](https://www.youtube.com/watch?v=nAlCyQqEZSU) — moderndayjames — Oct 6, 2019, 7:20:01 PM EDT
+- [Yoga Music, Relaxing Music, Calming Music, Stress Relief Music, Peaceful Music, Relax, ☯2849](https://www.youtube.com/watch?v=urTtMT-1-KI) — Yellow Brick Cinema - Relaxing Music — Oct 5, 2019, 9:16:51 PM EDT
+- [Meditation For Relaxation ♥ 10 Min Of Peace, Calm, &amp; Tranquility](https://www.youtube.com/watch?v=HVWkp1Nu6o8) — Boho Beautiful Yoga — Oct 5, 2019, 9:02:27 PM EDT
+- [Meditation For Stress &amp; Anxiety Relief ♥ 10 Minutes of Heaven](https://www.youtube.com/watch?v=5d6TriLBQmE) — Boho Beautiful Yoga — Oct 5, 2019, 9:02:06 PM EDT
+- [OM Chanting @432Hz {Female Version}](https://www.youtube.com/watch?v=Ua2-zCo9iNE) — Meditative Mind — Oct 5, 2019, 9:00:21 PM EDT
+- [Shpongle - Tales Of The Inexpressible (Remastered) [Full Album]](https://www.youtube.com/watch?v=S99IKbu8eyE) — The Psychedelic Muse — Oct 5, 2019, 12:07:02 AM EDT
+- [Shpongle - The Seventh Revelation [Visualization]](https://www.youtube.com/watch?v=Z0bSI_8o4BU) — Psybrations — Oct 4, 2019, 11:01:00 PM EDT
+- [Gift of Gab (feat. R.A. The Rugged Man and A-F-R-O) - Freedom Form Flowing (Official Music Video)](https://www.youtube.com/watch?v=L3dtIyt6U1E) — The Gift of Gab — Oct 4, 2019, 10:53:50 PM EDT
+- [King Fantastic - Lost Art of Killing (Official Music Video)](https://www.youtube.com/watch?v=XqQDFhDSQ7g) — thekingfantastic — Oct 4, 2019, 10:50:01 PM EDT
+- [King Fantastic - &quot;Westcoastsynthesizerbeachbumgangstermusic&quot;](https://www.youtube.com/watch?v=qIuERobmLqA) — tobyjackson19benders — Oct 4, 2019, 10:46:42 PM EDT
+- [Kid Cudi - Just What I Am ft. King Chip](https://www.youtube.com/watch?v=hGbP_kTM4CA) — KidCudiVEVO — Oct 4, 2019, 10:46:37 PM EDT
+- [King Fantastic - Bonfire Sessions (Official Music Video)](https://www.youtube.com/watch?v=-fwK_oQHBYQ) — thekingfantastic — Oct 4, 2019, 10:43:50 PM EDT
+- [French Montana - Writing on the Wall (Official Video) ft. Post Malone, Cardi B, Rvssian](https://www.youtube.com/watch?v=VZiVePJCpZI) — FrenchMontanaVEVO — Oct 4, 2019, 10:42:58 PM EDT
+- [Khalid - Right Back (Official Video) ft. A Boogie Wit Da Hoodie](https://www.youtube.com/watch?v=rbHIDVVTSNA) — KhalidVEVO — Oct 4, 2019, 10:37:07 PM EDT
+- [INNA - Diggy Down (feat. Marian Hill) | Official Music Video](https://www.youtube.com/watch?v=1mzl2Oo8Ncw) — INNA — Oct 4, 2019, 10:36:19 PM EDT
+- [Run The Jewels - Legend Has It (Official Music Video From RTJ3 &amp; Black Panther)](https://www.youtube.com/watch?v=vWaljXUiCaE) — RunTheJewels — Oct 4, 2019, 10:31:55 PM EDT
+- [OMEGAH RED feat. MF DOOM and RZA - Books of War](https://www.youtube.com/watch?v=pTCp0kJYF30) — Importan Joe — Oct 4, 2019, 10:25:28 PM EDT
+- [Borgore - Nympho](https://www.youtube.com/watch?v=reHGIYHAR2Q) — Borgore — Oct 4, 2019, 10:21:12 PM EDT
+- [Getter - Head Splitter](https://www.youtube.com/watch?v=DYcRLAv8bPc) — OWSLA — Oct 4, 2019, 10:15:10 PM EDT
+- [Namo Namo (Sat Nam)](https://www.youtube.com/watch?v=EvrqsUiAKPI) — Ram Dass - Topic — Oct 2, 2019, 9:06:50 PM EDT
+- [Kenny Wayne Shepherd - Blue on black (With lyrics)](https://www.youtube.com/watch?v=V94pBlA4n7U) — PlayToday — Oct 1, 2019, 7:44:15 PM EDT
+- [Everlast - &quot;Folsom Prison Blues&quot; Martyr Inc. Records](https://www.youtube.com/watch?v=zmt6OyRqb8A) — BlankTV — Oct 1, 2019, 7:43:36 PM EDT
+- [Scrapper Blackwell - Nobody Knows You When You&#39;re Down and Out](https://www.youtube.com/watch?v=626pNZB8xXE) — culturalcannibals — Oct 1, 2019, 7:27:24 PM EDT
+- [Johnny Cash - Folsom Prison Blues Lyrics](https://www.youtube.com/watch?v=_Xyp63MaSBs) — dthomp5on — Oct 1, 2019, 6:45:33 PM EDT
+- [Landslide](https://www.youtube.com/watch?v=k4M53xndqiU) — FLEETWOOD MAC - Topic — Oct 1, 2019, 6:32:20 PM EDT
+- [Fleetwood Mac - Dreams [with lyrics]](https://www.youtube.com/watch?v=mrZRURcb1cM) — muzicchnl — Oct 1, 2019, 6:32:10 PM EDT
+- [Fleetwood Mac - Dreams (Gigamesh Edit)](https://www.youtube.com/watch?v=pOlWbSUQASs) — Þórey Rún — Oct 1, 2019, 6:31:53 PM EDT
+- [II. Zealots of Stockholm [Free Information]](https://www.youtube.com/watch?v=hs8lV0C9Mx8) — Childish Gambino - Topic — Oct 1, 2019, 6:30:41 PM EDT
+- [Cherub - Doses &amp; Mimosas (Official Video)](https://www.youtube.com/watch?v=E45fogGN_Y8) — CHERUBVEVO — Oct 1, 2019, 6:24:31 PM EDT
+- [Red Hot Chili Peppers - Snow (Jondai Remix)](https://www.youtube.com/watch?v=HH4TrLtfzMM) — EDM Bot — Oct 1, 2019, 6:19:48 PM EDT
+- [Bill Withers - Aint No Sunshine (OFFICIAL Lido TRAP REMIX)](https://www.youtube.com/watch?v=7NrdY-i3Eec) — Trap Music Now — Oct 1, 2019, 6:11:50 PM EDT

@@ -1,0 +1,143 @@
+---
+title: "YouTube Watch History — 2022-11"
+source: youtube
+created: 2022-11-01
+pillar: 08_LEARNING_PATH
+stage: RAW
+tags: [takeout, youtube, watch-history]
+---
+
+# YouTube Watch History — 2022-11
+> 129 videos watched
+
+## Videos
+
+- [SURPRISING A HOMELESS MAN FOR HIS BIRTHDAY 🥺❤️ #shorts](https://www.youtube.com/watch?v=5Umufajqnyk) — Savage Vlogs — Nov 13, 2022, 9:45:12 PM EDT
+- [HOMELESS MAN AND HIS DAUGHTER ignored until this happened… #shorts](https://www.youtube.com/watch?v=M9Pg9kbILZ8) — Cjay011 — Nov 13, 2022, 9:44:33 PM EDT
+- [Taylan Michael - When a KID has a DEMON on T.V…🤯😧 #demons #angels #shorts #bible #supernatural](https://www.youtube.com/watch?v=Y9CzJ9kL_-4) — Taylan Michael — Nov 13, 2022, 9:43:30 PM EDT
+- [STORYTIME: HOW MY SISTERS AND I ALMOST GOT KIDNAPPED?😳 part 1/2](https://www.youtube.com/watch?v=dBUBGG0Xjuc) — Anacrylics — Nov 13, 2022, 9:17:26 PM EDT
+- [You hand will FREEZE🥶🧊#trythis#interactive](https://www.youtube.com/watch?v=Vpx5MOp9jjc) — TheMagicMatt — Nov 13, 2022, 9:17:23 PM EDT
+- [Can you make it to the end? Try not to sing challenge](https://www.youtube.com/watch?v=a6BP0xfbcTU) — Arc North Daily — Nov 13, 2022, 9:16:19 PM EDT
+- [satisfying ar👜#colouring#shorts#youtubeshorts#viral#art#aafiyacraft#](https://www.youtube.com/watch?v=r4_OfQrSA1Q) — @Trendy_baby — Nov 13, 2022, 9:16:03 PM EDT
+- [Wait for it... 🤯](https://www.youtube.com/watch?v=HgZsAjt86K8) — MagixMC — Nov 13, 2022, 9:15:16 PM EDT
+- [He just wanted to real love 🥹❤️👻 #shorts](https://www.youtube.com/watch?v=2WTFenODx8w) — BETER BÖCÜK — Nov 13, 2022, 9:14:16 PM EDT
+- [This video is too powerful😂 #Shorts](https://www.youtube.com/watch?v=BeAlcfc-rbo) — mmmjoemele — Nov 13, 2022, 9:13:50 PM EDT
+- [Best &#39;&#39;GUESS THE EMOJI&#39;&#39; Game VS my GF (Funny) #shorts](https://www.youtube.com/watch?v=bPDLDXivOoQ) — NichLmao — Nov 13, 2022, 9:12:47 PM EDT
+- [The BEST Optical Illusion!! #shorts](https://www.youtube.com/watch?v=0sNdh-wUato) — Sean Andrew — Nov 13, 2022, 9:11:08 PM EDT
+- [Taylan Michael - Jesus saved this woman at a 7/11?!😧 #jesus #heaven #prayer #supernatural #bible](https://www.youtube.com/watch?v=l3BxbduhBZI) — Taylan Michael — Nov 13, 2022, 9:10:11 PM EDT
+- [ANIMALS CAN TALK? 😮 #shorts](https://www.youtube.com/watch?v=ejnJxQMtRkk) — Dan Rhodes — Nov 13, 2022, 9:10:10 PM EDT
+- [She tried to smack my 🍑](https://www.youtube.com/watch?v=--k0uQFGGaM) — Chase &amp; Melo 2 — Nov 13, 2022, 9:10:09 PM EDT
+- [Did I get it?!🤯🧠#minread#interactive (Credit: @NicoMagic )#shorts30](https://www.youtube.com/watch?v=5qh23zrST5g) — TheMagicMatt — Nov 13, 2022, 9:10:09 PM EDT
+- [The slime machine works! No cap!](https://www.youtube.com/watch?v=GT2RnxErIf8) — Just Ameerah — Nov 13, 2022, 9:10:08 PM EDT
+- [The Pregnancy #TheManniiShow.com/series iB:@6stx (on TikTok)](https://www.youtube.com/watch?v=TpYMXHcg-rQ) — The Mannii Show — Nov 13, 2022, 9:08:57 PM EDT
+- [M&amp;M’s Decides My Makeup Talk Through 😂](https://www.youtube.com/watch?v=ECp5z7BrVq4) — Atarah Mayhew — Nov 13, 2022, 9:01:07 PM EDT
+- [“Can u do DNA with 3 yo-yos?”](https://www.youtube.com/watch?v=qmy0iW-tnLA) — Evan Nagao — Nov 13, 2022, 9:01:05 PM EDT
+- [Dustin Porier’s evolution as a fighter](https://www.youtube.com/watch?v=G-gBT39itCA) — Hard MMA — Nov 13, 2022, 9:01:00 PM EDT
+- [I will control your fingers!🖐🏻😵‍💫#trythis#interactive#magic#hypnosis](https://www.youtube.com/watch?v=fwo16G0FDQM) — TheMagicMatt — Nov 13, 2022, 9:00:36 PM EDT
+- [Tricking My Roommate With Ketchup #shorts](https://www.youtube.com/watch?v=6eZDvK4n1HQ) — Jamie Nyland — Nov 13, 2022, 8:59:43 PM EDT
+- [How to Grow Cherries at Home | creative explained](https://www.youtube.com/watch?v=ZWueGZkbxiw) — creative explained — Nov 13, 2022, 8:59:36 PM EDT
+- [homeless street food vendor sleeps in his car to survive 💔 #shorts](https://www.youtube.com/watch?v=qB7Ngpv3V5g) — Isaiah Garza — Nov 13, 2022, 8:58:03 PM EDT
+- [Trooper Mom Meets Mando Dad](https://www.youtube.com/watch?v=IIXqA7DPrvg) — jenmarkham — Nov 13, 2022, 8:56:41 PM EDT
+- [I WILL READ YOUR MIND!](https://www.youtube.com/watch?v=Rp1euoOv4pM) — NicoMagic — Nov 13, 2022, 8:55:51 PM EDT
+- [[ASMR] HATCHING A *RAINBOW* MYSTERY EGG!!😱🌈✨(RARE TIE DYE FIND!!😳) #Shorts](https://www.youtube.com/watch?v=ifeb0Pa8AMI) — Rhia Official — Nov 13, 2022, 8:54:47 PM EDT
+- [Extreme Red Face Mask #shorts](https://www.youtube.com/watch?v=kaedWKgD3M0) — Dr Ryan — Nov 13, 2022, 8:53:46 PM EDT
+- [FOCUS on the red eye.🔴👁#illusion#trippy#trythis#magic](https://www.youtube.com/watch?v=xFTE5sTtkAs) — TheMagicMatt — Nov 13, 2022, 8:51:16 PM EDT
+- [My Childhood Story 😅 #shorts](https://www.youtube.com/watch?v=_qQwaPz74ZY) — Lily — Nov 13, 2022, 8:48:47 PM EDT
+- [How to #transition  with #shorts results at the end 😃](https://www.youtube.com/watch?v=TEQJszutBc8) — Mks.Vision — Nov 13, 2022, 8:47:07 PM EDT
+- [This paper READS your mind!😳🧠#trythis#halloween#mindread#shorts30](https://www.youtube.com/watch?v=rZsNp0C88NY) — TheMagicMatt — Nov 13, 2022, 8:39:09 PM EDT
+- [Who did it best 😍😍❤️‍🔥](https://www.youtube.com/watch?v=lnHz05RMGG0) — SAJE NICOLE — Nov 13, 2022, 8:39:08 PM EDT
+- [Minecraft, But i can&#39;t Say the letter A...](https://www.youtube.com/watch?v=SXS9ogpWH4E) — Object — Nov 13, 2022, 8:38:50 PM EDT
+- [Ultimate &#39;&#39;GUESS THE EMOJI&#39;&#39; Challenge VS my GF (Funny) #shorts](https://www.youtube.com/watch?v=YDnakmr_h4I) — NichLmao — Nov 13, 2022, 8:35:52 PM EDT
+- [Boop! #shorts #love](https://www.youtube.com/watch?v=aI-Sp0MSt08) — Ogie &amp; Olive  — Nov 13, 2022, 8:34:40 PM EDT
+- [I Did This TREND With My BESTFRIEND✨](https://www.youtube.com/watch?v=7s6T1d6tpsw) — IBella — Nov 13, 2022, 8:33:49 PM EDT
+- [Flame of number 5 😬](https://www.youtube.com/watch?v=tmBudDATS1o) — Blaze Lighters — Nov 13, 2022, 8:31:59 PM EDT
+- [This was the hardest one yet!🥵🎃#halloween#art#shorts30](https://www.youtube.com/watch?v=5WKZeXQqgmg) — TheMagicMatt — Nov 13, 2022, 8:31:09 PM EDT
+- [&quot;5x5=?&quot; Foolish Axolotl🤣](https://www.youtube.com/watch?v=w0ARiSN8QsI) — Parotter — Nov 13, 2022, 8:30:33 PM EDT
+- [All my friends are toxic](https://www.youtube.com/watch?v=DLWnotaWvYw) — Kakashi — Nov 13, 2022, 8:29:52 PM EDT
+- [Pumpkin Spice Toothbrush and Toothpaste! #shorts](https://www.youtube.com/watch?v=kfAe0btSyAc) — Dental Digest — Nov 13, 2022, 8:27:47 PM EDT
+- [I tried to draw a minion as a realistic ✨HUMAN✨💀don’t watch if u plan to sleep tonight](https://www.youtube.com/watch?v=MXOocpQTDYo) — JULIA GISELLA — Nov 13, 2022, 8:26:57 PM EDT
+- [Making a Snow Cone with Real Snow](https://www.youtube.com/watch?v=sJyqTDQ1Dhs) — Lucky Boy — Nov 13, 2022, 8:26:18 PM EDT
+- [😺 Join my #TSAntiHeroChallenge and share your anti-heroic traits, brought to you by YouTube Shorts.](https://www.youtube.com/watch?v=9Wx2It8SbLs) — Taylor Swift — Nov 13, 2022, 8:26:02 PM EDT
+- [When SpongeBob tells a story #shorts #tiktokviral #soundcloud #rap #spongebob #soundcloudrapper](https://www.youtube.com/watch?v=-fwRz_p6CV0) — Shad0w — Nov 13, 2022, 8:25:01 PM EDT
+- [Destroying art challenge… #shorts](https://www.youtube.com/watch?v=hSLFARXumOk) — Artcoaster — Nov 13, 2022, 8:24:10 PM EDT
+- [From Straw to Table Number (Compilation)](https://www.youtube.com/watch?v=eOHlgL47fNU) — SIMJI — Nov 13, 2022, 8:23:26 PM EDT
+- [Blue space poster #spraypaint #learnwithme #space #planets #spraypaintart](https://www.youtube.com/watch?v=TG0cj7h8Cww) — Casey VanArsdale — Nov 13, 2022, 8:21:34 PM EDT
+- [Megabot Full Size Toy / Prop - Flat Faces - From Big Hero 6 #shorts #disney #bighero6 #asmrsounds](https://www.youtube.com/watch?v=BOtj2dS7kzA) — Props88 — Nov 13, 2022, 8:21:26 PM EDT
+- [I can&#39;t believe what we found #shorts](https://www.youtube.com/watch?v=28eqXDIEmnA) — Shangerdanger — Nov 9, 2022, 7:09:12 AM EDT
+- [Minecraft Trending #shorts tiktok viral hack #minecraft #utkarshweger](https://www.youtube.com/watch?v=oa0AbpwEHkw) — OG___INDIAN — Nov 9, 2022, 7:09:07 AM EDT
+- [POV If words were the new currency…PT.5](https://www.youtube.com/watch?v=GxPhQlEOYsY) — Devin Caherly — Nov 9, 2022, 7:06:51 AM EDT
+- [Can YOU find it? (99% FAIL) 👀🍬](https://www.youtube.com/watch?v=XOudLy6tE1g) — MoreAliA — Nov 9, 2022, 7:06:51 AM EDT
+- [I Destroyed My Classroom on St. Patrick’s Day | Mrs. Woolley in 5th #shorts #teacher](https://www.youtube.com/watch?v=4_V5XPGGeEI) — Mrs. Woolley in 5th — Nov 9, 2022, 7:04:02 AM EDT
+- [This Video Will Make You CRY](https://www.youtube.com/watch?v=48XpU18yiHU) — Dan Ondrey — Nov 9, 2022, 7:03:13 AM EDT
+- [✨Giving my Old Drawing a ‘ GLOW Up ‘ 🤌🏻🫣#shorts](https://www.youtube.com/watch?v=TUT3fZKoUww) — UNO Afrah — Nov 9, 2022, 7:02:21 AM EDT
+- [YOU LAUGH, YOU LOSE #8](https://www.youtube.com/watch?v=iGDHCB160EE) — Mappelz — Nov 9, 2022, 7:01:23 AM EDT
+- [Which toy is this puppy&#39;s favorite? 🤔](https://www.youtube.com/watch?v=bZymjEHIJ5M) — Jesser — Nov 9, 2022, 7:00:52 AM EDT
+- [&quot;Can u do a 720 no-scope? 🤔&quot; (yoyo trick)](https://www.youtube.com/watch?v=Ly9RtAS4dO0) — Evan Nagao — Nov 9, 2022, 6:59:56 AM EDT
+- [Why Do the End of these C-Sections Make Me Cry? 😭💔🤧 Satisfying #foodsurgery #asmr](https://www.youtube.com/watch?v=LH4eej0tfPs) — Fleeting Films — Nov 9, 2022, 6:59:54 AM EDT
+- [The BEST &amp; WORST Fidgets to Bring to the Beach! 🏖🌊](https://www.youtube.com/watch?v=K-APZPuZoLw) — Chillin&#39; with Rachel 💛 — Nov 9, 2022, 6:57:06 AM EDT
+- [Minecraft, BUT the World Is Floating Gravel!](https://www.youtube.com/watch?v=9u4a_NPrAEc) — Object — Nov 9, 2022, 6:56:07 AM EDT
+- [Filling a MASSIVE Water Balloon with Bathbombs…👀💦#shorts](https://www.youtube.com/watch?v=7LaC3OTxuZ8) — Kaz Sawyer — Nov 9, 2022, 6:55:31 AM EDT
+- [how to draw a perfect circle](https://www.youtube.com/watch?v=KR56UQviXIA) — Channel Super Fun — Nov 9, 2022, 6:54:44 AM EDT
+- [Falling - Fortnite Videos | New Shorts Videos | Animation Videos #shorts #animation #cat](https://www.youtube.com/watch?v=4tan0TU5_1Y) — Bahauddin Dije — Nov 9, 2022, 6:53:26 AM EDT
+- [when your house is haunted but you have nowhere else to live](https://www.youtube.com/watch?v=WsciBZQACk4) — everett — Nov 9, 2022, 6:52:31 AM EDT
+- [I bought a duck.](https://www.youtube.com/watch?v=KiNRDtqguvM) — Lexi Hensler — Nov 9, 2022, 6:51:55 AM EDT
+- [I made it on TV!!😱](https://www.youtube.com/watch?v=ZyoLu3rdHWs) — Brent Rivera — Nov 9, 2022, 6:51:18 AM EDT
+- [Drawing, But I can Only use GOLD (satisfying) #shorts](https://www.youtube.com/watch?v=2zFy-4UKj_g) — Artcoaster — Nov 9, 2022, 6:50:05 AM EDT
+- [My Vending Machine Was Out Of Order #shorts #vendingmachine](https://www.youtube.com/watch?v=eR9hAL0Htj0) — TYE Arcade — Nov 9, 2022, 6:48:09 AM EDT
+- [Baby Tortoises Go Back To School 🥹🐢🚌 #shorts #backtoschool](https://www.youtube.com/watch?v=AIZlJRLxy6Y) — Corbin Maxey — Nov 9, 2022, 6:46:56 AM EDT
+- [World&#39;s Shortest Woman #345](https://www.youtube.com/watch?v=wLIJ11H4eIk) — Nas Daily — Nov 9, 2022, 6:46:54 AM EDT
+- [AUTOTUNE VS NO AUTOTUNE #shorts #viral #tiktok](https://www.youtube.com/watch?v=_HSsnz_ERq4) — APELA NUMB — Nov 9, 2022, 6:45:55 AM EDT
+- [How Far can hero jump ? #shorts](https://www.youtube.com/watch?v=QVGtXzcJtPc) — Hero DW — Nov 9, 2022, 6:43:53 AM EDT
+- [respect💯🤯👌😱](https://www.youtube.com/watch?v=CEtL9980qZ0) — Respect_C. — Nov 9, 2022, 6:42:36 AM EDT
+- [i did a face reveal...](https://www.youtube.com/watch?v=2UX1BobJj3c) — Frost Ops — Nov 9, 2022, 6:41:24 AM EDT
+- [YOU LAUGH, YOU LOSE #21](https://www.youtube.com/watch?v=jHwXApIyBV8) — Mappelz — Nov 9, 2022, 6:40:09 AM EDT
+- [They love WHO more????? That last one nearly sent me!! 😂😂❤️#couplescomedy #Relationship #relatable](https://www.youtube.com/watch?v=H_zNNs056Gk) — The Spraggs — Nov 9, 2022, 6:39:04 AM EDT
+- [Trapped in bedrock. just my luck! #minecraft #shorts #trending](https://www.youtube.com/watch?v=xAVILILEKgg) — STRANGEhit — Nov 9, 2022, 6:38:28 AM EDT
+- [Making SLIME BUBBLES With Different Slime Textures!](https://www.youtube.com/watch?v=Dgm7fH_JD1g) — Snoopslimes — Nov 9, 2022, 6:37:43 AM EDT
+- [World&#39;s Most DANGEROUS Waterpark...](https://www.youtube.com/watch?v=ewmgenu3jHM) — Ben Azelart — Nov 9, 2022, 6:37:12 AM EDT
+- [I Picked My Girlfriend Over My Mom? (This or That Game) #shorts](https://www.youtube.com/watch?v=dGi7I4EblwY) — Zhong — Nov 9, 2022, 6:36:28 AM EDT
+- [The Jungle King #293](https://www.youtube.com/watch?v=bXEbMnXHlmk) — Nas Daily — Nov 9, 2022, 6:35:18 AM EDT
+- [Tasks Failed… Successfully?!?! (Part 2) #trickshot #trickshots #shorts #fails](https://www.youtube.com/watch?v=A1SAuX6qY40) — Carson Hockey — Nov 9, 2022, 6:34:26 AM EDT
+- [Grogu Shows Trooper Mom a Magic Trick](https://www.youtube.com/watch?v=1oaPF_IrpsQ) — jenmarkham — Nov 9, 2022, 6:33:23 AM EDT
+- [green man #shorts](https://www.youtube.com/watch?v=VDums57hdh8) — Anet Sobko — Nov 9, 2022, 6:33:07 AM EDT
+- [She WASNT THINKING THAT! 😂 #shorts](https://www.youtube.com/watch?v=Z0AXMA8BhfQ) — Dan Rhodes — Nov 9, 2022, 6:32:26 AM EDT
+- [Minecraft, But Everything Is SAND...](https://www.youtube.com/watch?v=ts4-k4XAWLU) — Kiply — Nov 9, 2022, 6:31:48 AM EDT
+- [Which Magician is BETTER? - #Shorts](https://www.youtube.com/watch?v=BeCG2ejCaH0) — SeanDoesMagic — Nov 9, 2022, 6:30:59 AM EDT
+- [I became the world&#39;s greatest magician](https://www.youtube.com/watch?v=AFq1Pto5h1Y) — Airrack — Nov 9, 2022, 6:29:53 AM EDT
+- [My Girlfriend Had To See A Shark? (left or right game) #shorts](https://www.youtube.com/watch?v=Is-5a44dM54) — Zhong — Nov 9, 2022, 6:29:12 AM EDT
+- [Sonic or Springtrap? Only One Survives](https://www.youtube.com/watch?v=AWVxgfSUUIk) — VBunny Go Shorts — Nov 9, 2022, 6:28:29 AM EDT
+- [How to transition pt.3 #shorts #tutorialmks](https://www.youtube.com/watch?v=WhfA5BYfxw0) — Mks.Vision — Nov 9, 2022, 6:27:27 AM EDT
+- [Which is True Love 🥹❤️👻 #shorts](https://www.youtube.com/watch?v=td0MZJZEGjI) — BETER BÖCÜK — Nov 9, 2022, 6:25:53 AM EDT
+- [AUTOTUNE VS NO AUTOTUNE | Viral | Short | Rocky.....](https://www.youtube.com/watch?v=npqFo0oiKjc) — Rocky Rocky — Nov 9, 2022, 6:23:47 AM EDT
+- [It’s a pizza kinda day today. Whats your favorite pizza chain? 🍕](https://www.youtube.com/watch?v=4H-mjKag8Ak) — DeannaDreams — Nov 9, 2022, 6:23:20 AM EDT
+- [Plunger Trick Shots from Shortest to Tallest](https://www.youtube.com/watch?v=VHM6aaFuZcc) — Plunger Papi — Nov 9, 2022, 6:22:19 AM EDT
+- [Minecraft, But If I DIE I Have To REVEAL Dream&#39;s Face!](https://www.youtube.com/watch?v=yKa7XcTofTA) — LimitlessXD — Nov 9, 2022, 6:21:24 AM EDT
+- [Climbing A Building with REAL Spider-Man Suit!](https://www.youtube.com/watch?v=9qyoDfu9rhU) — Ben Azelart — Nov 9, 2022, 6:20:49 AM EDT
+- [Did This Satisfy You?](https://www.youtube.com/watch?v=n6IqOSoe8nE) — Surfnboy Shorts — Nov 9, 2022, 6:19:37 AM EDT
+- [I ✨FORCED✨ my grandma to draw LUCA😇 and i am SHOOK😳 | DANIA (#Shorts)](https://www.youtube.com/watch?v=onZTeLwfyzc) — DANIA — Nov 9, 2022, 6:18:23 AM EDT
+- [i was captured...](https://www.youtube.com/watch?v=9yLP-FtAFRo) — Frost Ops — Nov 9, 2022, 6:17:17 AM EDT
+- [How girls drop their phones PART 2](https://www.youtube.com/watch?v=HvVtMLvcJi4) — joshiiwuh — Nov 9, 2022, 6:16:16 AM EDT
+- [Magic Vs reality / check pinned comment (press the bell icon)](https://www.youtube.com/watch?v=IotRdWPWYOY) — Aladdin 2 hell — Nov 9, 2022, 6:14:08 AM EDT
+- [Axolotl needs Nintendo Switch #shorts #Parotter](https://www.youtube.com/watch?v=g7L8-Pk8hr0) — Parotter — Nov 9, 2022, 6:13:36 AM EDT
+- [GUESS THE DRINK BY EMOJI? | EMOJI PUZZLES](https://www.youtube.com/watch?v=XOn2WpWIBa4) — Quizzes On Fleek — Nov 9, 2022, 6:13:20 AM EDT
+- [1 Inch Punch (Can You Break This Board?)](https://www.youtube.com/watch?v=bOYjMX0jghI) — Hafu Go — Nov 9, 2022, 6:12:05 AM EDT
+- [Their Competition Is Worth Watching 👀😂🤯 ft Droopy And Shaggy 🕶️💣](https://www.youtube.com/watch?v=j7ZcJG1_Wa8) — ∞Respect — Nov 9, 2022, 6:10:39 AM EDT
+- [YOU LAUGH, YOU LOSE #85 😆 #shorts](https://www.youtube.com/watch?v=Wc3C83O1ml0) — Azeria — Nov 9, 2022, 6:09:45 AM EDT
+- [Go ahead and drive the spirit of the car#short #shortvideo #shortsvideo #viral #india #indian ❤️❤️❤️](https://www.youtube.com/watch?v=9hjodNAvnOw) — Garib raja — Nov 9, 2022, 6:09:16 AM EDT
+- [How animals get over a fence. 😂Part 1 🐑 #shorts](https://www.youtube.com/watch?v=cKqt9_EZwHg) — Jiemba Sands — Nov 9, 2022, 6:08:43 AM EDT
+- [BEST Guess The Emoji Game EVER w/ my GF!!! (Sad...) #shorts](https://www.youtube.com/watch?v=gQHRu0dIet4) — NichLmao — Nov 9, 2022, 6:07:41 AM EDT
+- [My Highest Wall Run! 🤯](https://www.youtube.com/watch?v=cEmhH5nPzhk) — Matt Larose — Nov 9, 2022, 6:07:05 AM EDT
+- [Alphabet Lore IN REAL LIFE!](https://www.youtube.com/watch?v=Q0Z1yg6B2rQ) — Norme — Nov 9, 2022, 6:06:15 AM EDT
+- [If you catch it... YOU KEEP IT w/ MY GF (Gone Wrong) #shorts](https://www.youtube.com/watch?v=BKhmiq6xkbg) — NichLmao — Nov 9, 2022, 6:05:00 AM EDT
+- [I Built a Sand Castle to Protect Steve #shorts](https://www.youtube.com/watch?v=foxo_Miloxs) — Isaac Explores — Nov 9, 2022, 6:02:40 AM EDT
+- [When everyone lies to u 😂😂 #shorts](https://www.youtube.com/watch?v=GQfGd9YeFEU) — Huyen Tran — Nov 9, 2022, 6:01:51 AM EDT
+- [Funniest CATCH IT and YOU KEEP IT (new) #shorts](https://www.youtube.com/watch?v=ABbFTaUjoI0) — NichLmao — Nov 9, 2022, 6:00:52 AM EDT
+- [I Busted 8 Movie Myths in GTA 5! #shorts](https://www.youtube.com/watch?v=E-JXmMZlFQM) — Caylus   — Nov 9, 2022, 5:58:01 AM EDT
+- [How Different Animals Get Over a Fence 💀😂 Part 3 #shorts](https://www.youtube.com/watch?v=hqinnsKfEEU) — Jiemba Sands — Nov 9, 2022, 5:57:12 AM EDT
+- [Blocking the mirror in the gym 😂 #shorts](https://www.youtube.com/watch?v=Kyv8t0YzKAc) — Adam W — Nov 9, 2022, 5:56:18 AM EDT
+- [🫣 Join my #TSAntiHeroChallenge and share your anti-heroic traits, brought to you by YouTube Shorts.](https://www.youtube.com/watch?v=U1IqinpmpQE) — Taylor Swift — Nov 9, 2022, 5:56:00 AM EDT
+- [Dominic Toretto vs THE MULTIVERSE](https://www.youtube.com/watch?v=M4pGsF4nqyI) — Treadmill Guy — Nov 9, 2022, 5:55:08 AM EDT
+- [Will Smith Doesn’t like Parkour (Slap Compilation 😂) #shorts](https://www.youtube.com/watch?v=S_-DCBcdMqQ) — Jiemba Sands — Nov 9, 2022, 5:51:22 AM EDT
+- [Baby Fresh Out Moms Womb acts like he’s already been here before and Back on this planet 😭👶🏾🤯](https://www.youtube.com/watch?v=y7se7SHTUOc) — Raphouse TV — Nov 9, 2022, 5:49:40 AM EDT
+- [This Is How Deep Facial Hair Goes](https://www.youtube.com/watch?v=5jDqaI5eLu0) — Institute of Human Anatomy — Nov 7, 2022, 9:08:28 PM EDT
+- [Changing Rear Brake Pads On A 2003 Ford F150](https://www.youtube.com/watch?v=z-FGJzoYMyQ) — Thomas Fix It — Nov 7, 2022, 8:58:15 PM EDT

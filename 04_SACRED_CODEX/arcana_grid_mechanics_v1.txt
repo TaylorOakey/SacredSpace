@@ -1,0 +1,1 @@
+Rules for the tarot-based grid system.

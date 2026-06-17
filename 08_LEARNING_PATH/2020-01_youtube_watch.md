@@ -1,0 +1,152 @@
+---
+title: "YouTube Watch History — 2020-01"
+source: youtube
+created: 2020-01-01
+pillar: 08_LEARNING_PATH
+stage: RAW
+tags: [takeout, youtube, watch-history]
+---
+
+# YouTube Watch History — 2020-01
+> 138 videos watched
+
+## Videos
+
+- [Giant Smoke Rings - Cool Science Experiment](https://www.youtube.com/watch?v=-VL0M0jmu7k) — Sick Science! — Jan 31, 2020, 11:37:47 PM EDT
+- [BFG - Dry Ice Cannon](https://www.youtube.com/watch?v=7Nm9zdXxSs4) — ManiacMacPain — Jan 31, 2020, 11:35:44 PM EDT
+- [Next Level DIY Vortex Cannons! TKOR Explores How To Make A DIY Air Cannon For Smoke Rings And More!](https://www.youtube.com/watch?v=QHen1rXttFo) — TKOR — Jan 31, 2020, 11:33:24 PM EDT
+- [Kim Jung Gi - How to Become a Master](https://www.youtube.com/watch?v=aoqu5SEFqRI) — Proko — Jan 31, 2020, 8:14:45 PM EDT
+- [김정기 Kim Jung gi Drawing show in 포항](https://www.youtube.com/watch?v=MGbvhyTZXfs) — Super Ani — Jan 31, 2020, 8:09:45 PM EDT
+- [6 ways mushrooms can save the world | Paul Stamets | TED](https://www.youtube.com/watch?v=XI5frPV58tY) — TED — Jan 31, 2020, 7:05:40 PM EDT
+- [R.A. the Rugged Man - Legendary Loser (Official Music Video)](https://www.youtube.com/watch?v=qLuJSzs-3lE) — RAtheRuggedManVEVO — Jan 31, 2020, 12:27:08 PM EDT
+- [Cherub - Doses &amp; Mimosas (Official Video)](https://www.youtube.com/watch?v=E45fogGN_Y8) — CHERUBVEVO — Jan 31, 2020, 11:37:27 AM EDT
+- [Pretty Lights - Hot Like Sauce](https://www.youtube.com/watch?v=62VASkbu1gw) — SitCoffeeCom — Jan 31, 2020, 11:29:44 AM EDT
+- [Pretty Lights - I Know The Truth (Bonnaroo 2011 HD Video Recap)](https://www.youtube.com/watch?v=8wCgxkQj_Qo) — Pretty Lights — Jan 31, 2020, 11:27:46 AM EDT
+- [Microdosing Psychedelics](https://www.youtube.com/watch?v=0vdltv7kqU4) — Freethink — Jan 30, 2020, 11:03:14 PM EDT
+- [Organic Instruments Meets Electronic Elements via Boss RC-505 Loop Station!](https://www.youtube.com/watch?v=OBLOt8Om6ro) — Reinhardt Buhr — Jan 30, 2020, 10:59:24 PM EDT
+- [Khruangbin: NPR Music Tiny Desk Concert](https://www.youtube.com/watch?v=vWLJeqLPfSU) — NPR Music — Jan 30, 2020, 10:58:29 PM EDT
+- [Total Awakening Live In Real Time - Part 1](https://www.youtube.com/watch?v=WNKWGo30zR4) — Actualized.org — Jan 30, 2020, 10:54:14 PM EDT
+- [Lotus &quot;Wax&quot; Live At Red Rocks](https://www.youtube.com/watch?v=l8QItjeyqh0) — Lotus — Jan 30, 2020, 10:49:01 PM EDT
+- [Umbilical Moonrise - Lotus](https://www.youtube.com/watch?v=hU0BxPUkdP0) — grasso1157 — Jan 30, 2020, 10:48:47 PM EDT
+- [Lewis Capaldi - Fade (Official Audio)](https://www.youtube.com/watch?v=hM_kejkWeHU) — LewisCapaldiVEVO — Jan 30, 2020, 7:39:44 PM EDT
+- [Biochemist Eats 3 Tabs of Legal LSD for Science](https://www.youtube.com/watch?v=bhHFEzMKIJU) — Psyched Substance — Jan 29, 2020, 11:00:09 PM EDT
+- [Biochemist Eats Molly’s Sister (MDA) For Science](https://www.youtube.com/watch?v=MjXk0-jVK4U) — Psyched Substance — Jan 29, 2020, 10:23:54 PM EDT
+- [Ek Ong Kaar](https://www.youtube.com/watch?v=qgI9iEbAN9Y) — Ashana - Topic — Jan 28, 2020, 7:14:52 PM EDT
+- [Aad Guray Nameh](https://www.youtube.com/watch?v=UIB0-q66eDw) — Ashana - Topic — Jan 28, 2020, 7:06:45 PM EDT
+- [Mere Man Loche](https://www.youtube.com/watch?v=B3ee0TXF5gw) — Ashana - Topic — Jan 28, 2020, 6:40:32 PM EDT
+- [Ong Namo](https://www.youtube.com/watch?v=rAf6IMPlaLw) — Ashana - Topic — Jan 28, 2020, 6:30:23 PM EDT
+- [Light Body Activation Meditation | Full Ascension Upgrade (WARNING: Extremely Powerful)](https://www.youtube.com/watch?v=O9fRFe443lo) — Spiritual Zen — Jan 28, 2020, 2:19:41 AM EDT
+- [DENNIS MCKENNA - THE PSYCHEDELIC PIONEER: How Plant Medicine Can Save Humanity -Part1/2| London Real](https://www.youtube.com/watch?v=ZNjzOgL24iI) — London Real — Jan 28, 2020, 1:26:29 AM EDT
+- [Why YOU Need To Invest in PSYCHEDELICS | Ask Mr. Wonderful #14 Kevin O&#39;Leary](https://www.youtube.com/watch?v=6Xe7TCV5k4g) — Kevin O&#39;Leary — Jan 28, 2020, 1:03:10 AM EDT
+- [Taking My Highest Dose Of LSD Ever | Live Trip Report In A Rain Forest](https://www.youtube.com/watch?v=tO9Rn7EKNgc) — The Quentin Experiment — Jan 28, 2020, 12:35:27 AM EDT
+- [I Meditated Every Day &amp; This Is What Happened To Me... | Russell Brand](https://www.youtube.com/watch?v=g7Zyj2P6sig) — Russell Brand — Jan 28, 2020, 12:26:57 AM EDT
+- [Caleidoscopio para Relajarse y Meditar 🎆 Música Relajante para Dormir](https://www.youtube.com/watch?v=3htKYkfF2b8) — The Pink Dog&#39;s Relaxing Music — Jan 27, 2020, 8:53:04 PM EDT
+- [A Trip to Infinity - Mandelbrot Fractal Zoom (Depth 1.2e1077)  (4k 60fps)](https://www.youtube.com/watch?v=fFyC68CIEio) — Maths Town — Jan 27, 2020, 8:41:16 PM EDT
+- [Captain Hook - Origin (full album trip) [TAS Visuals]](https://www.youtube.com/watch?v=Nyr-iJqr1mU) — Captain Hook Official — Jan 27, 2020, 8:38:10 PM EDT
+- [Like in a dream - 3D fractal trip](https://www.youtube.com/watch?v=S530Vwa33G0) — bib993 — Jan 27, 2020, 8:33:57 PM EDT
+- [Total Awakening Live In Real Time - Part 1](https://www.youtube.com/watch?v=WNKWGo30zR4) — Actualized.org — Jan 27, 2020, 7:32:56 PM EDT
+- [Aad Guray Nameh](https://www.youtube.com/watch?v=UIB0-q66eDw) — Ashana - Topic — Jan 26, 2020, 7:51:39 PM EDT
+- [Mere Man Loche](https://www.youtube.com/watch?v=B3ee0TXF5gw) — Ashana - Topic — Jan 26, 2020, 7:43:41 PM EDT
+- [Ong Namo](https://www.youtube.com/watch?v=rAf6IMPlaLw) — Ashana - Topic — Jan 26, 2020, 7:33:32 PM EDT
+- [BloopHilbertLayers (Au5 - Divine / The Void)](https://www.youtube.com/watch?v=_Zy0YG1_hnw) — UON Visuals — Jan 25, 2020, 11:09:28 PM EDT
+- [HilVoxInv2 Layer test (Deathpact - Shambhala 2019 clip)](https://www.youtube.com/watch?v=_zWJes_jXWo) — UON Visuals — Jan 25, 2020, 11:06:21 PM EDT
+- [FractalFormulaWall Layers Demo (Au5 &amp; Nasty Purple - Funk Ain&#39;t Even)](https://www.youtube.com/watch?v=bSgHYtu_CI0) — UON Visuals — Jan 25, 2020, 11:03:51 PM EDT
+- [WavyFractalFolds Demo (Shpongle - How the Jellyfish Jumped Up the Mountain)](https://www.youtube.com/watch?v=VqAJDV_Jw9g) — UON Visuals — Jan 25, 2020, 11:02:10 PM EDT
+- [CYHI THE PRYNCE FREESTYLE ON FLEX | #FREESTYLE084](https://www.youtube.com/watch?v=1oWu5jdiKLg) — HOT 97 — Jan 24, 2020, 12:06:18 PM EDT
+- [Sacred G Breath Meditation Station   DMT Releasing Pineal Activation](https://www.youtube.com/watch?v=97gSeQY2IZg) — falconflylow — Jan 23, 2020, 1:31:04 PM EDT
+- [Honoring Ram Dass – A Moment to Be Here Now (Original Live Stream)](https://www.youtube.com/watch?v=Nj5A5U0z_5c) — Baba Ram Dass — Jan 22, 2020, 11:17:05 PM EDT
+- [Joe Rogan Experience #1411 - Robert Downey Jr.](https://www.youtube.com/watch?v=d5XTDmm0KUQ) — PowerfulJRE — Jan 22, 2020, 8:00:54 AM EDT
+- [Learn the Breath of Fire - Bastrika Pranayama | Yoga](https://www.youtube.com/watch?v=rOdF8EoQKwM) — SIKANA English — Jan 22, 2020, 7:58:32 AM EDT
+- [❂ 396Hz | Remove Fear &amp; Balance Root Chakra | Stop Worrying | Solfeggio Mandala Sound Bath Series](https://www.youtube.com/watch?v=dlP7Rh3mKYw) — Meditative Mind — Jan 21, 2020, 10:05:01 PM EDT
+- [Sacred G Breath Meditation Station   DMT Releasing Pineal Activation](https://www.youtube.com/watch?v=97gSeQY2IZg) — falconflylow — Jan 21, 2020, 9:56:07 PM EDT
+- [Alan Watts - Guided Meditation (Awakening The Mind)](https://www.youtube.com/watch?v=jPpUNAFHgxM) — Indigo Bliss — Jan 21, 2020, 9:50:29 PM EDT
+- [&#39;&#39; Teoría y práctica de la respiración G o G-breath&#39;&#39; Máximo Blázquez](https://www.youtube.com/watch?v=wy0ma_tluvc) — Máximo Blázquez — Jan 21, 2020, 9:47:39 PM EDT
+- [Tummo Breathing Technique - Inner Fire (Full Tutorial)](https://www.youtube.com/watch?v=3XtDgQZbiFc) — Noble Movement Academy — Jan 21, 2020, 9:43:35 PM EDT
+- [Learn the Breath of Fire - Bastrika Pranayama | Yoga](https://www.youtube.com/watch?v=rOdF8EoQKwM) — SIKANA English — Jan 21, 2020, 9:40:10 PM EDT
+- [963Hz + 852Hz + 639Hz | Miracle Tones | Activate Pineal Gland | Open Third Eye | Heal Heart Chakra](https://www.youtube.com/watch?v=dJoXVILGeKQ) — Meditative Mind — Jan 20, 2020, 8:41:43 PM EDT
+- [Sacred G Breath Meditation Station   DMT Releasing Pineal Activation](https://www.youtube.com/watch?v=97gSeQY2IZg) — falconflylow — Jan 20, 2020, 8:33:31 PM EDT
+- [Ralph Metzner and 5 MeO DMT](https://www.youtube.com/watch?v=4Q0oq90YJuc) — The Entheogenic Evolution — Jan 20, 2020, 3:23:49 PM EDT
+- [DMT and the Language of Energy (from &quot;Being Infinite&quot; by Martin W. Ball)](https://www.youtube.com/watch?v=z3nicUWkFMs) — The Entheogenic Evolution — Jan 20, 2020, 3:22:10 PM EDT
+- [Baphomet done with charcoal and Q-tips](https://www.youtube.com/watch?v=Wa5obyjNeTk) — Psyca-art — Jan 19, 2020, 10:19:29 PM EDT
+- [The Fourth Phase of Water: Dr. Gerald Pollack at TEDxGuelphU](https://www.youtube.com/watch?v=i-T7tCMUDXU) — TEDx Talks — Jan 18, 2020, 2:19:40 PM EDT
+- [FKJ &amp; Masego - Tadow](https://www.youtube.com/watch?v=hC8CH0Z3L54) — Fkj — Jan 18, 2020, 9:12:04 AM EDT
+- [Mac Miller ft. Kendrick Lamar &amp; Iman Omari - Fight The Feeling](https://www.youtube.com/watch?v=As_cvwAMYi4) — Vybe Right — Jan 18, 2020, 9:07:05 AM EDT
+- [Mac Miller - Good News](https://www.youtube.com/watch?v=aIHF7u9Wwiw) — Mac Miller — Jan 18, 2020, 8:59:31 AM EDT
+- [Mac Miller - Hand Me Downs](https://www.youtube.com/watch?v=fYEXdCCpfVQ) — Mac Miller — Jan 18, 2020, 8:52:22 AM EDT
+- [kudasai - a light of mine](https://www.youtube.com/watch?v=we0-cIofJNI) — kudasaibeats — Jan 16, 2020, 11:12:49 PM EDT
+- [kudasai - technicolor](https://www.youtube.com/watch?v=T9qVyDbnF3I) — ikiru — Jan 16, 2020, 11:08:39 PM EDT
+- [Dotan Negrin &amp; Prismatic Mantis  - Pure Imagination (Future James Trap Remix)](https://www.youtube.com/watch?v=dmVnsFSZSfw) — EDM Bot — Jan 16, 2020, 11:04:17 PM EDT
+- [Milky Chance - Stolen Dance (Official 4K Music Video)](https://www.youtube.com/watch?v=iX-QaNzd-0Y) — Milky Chance Official — Jan 16, 2020, 10:56:16 PM EDT
+- [FKJ &amp; Masego - Tadow](https://www.youtube.com/watch?v=hC8CH0Z3L54) — Fkj — Jan 16, 2020, 10:48:01 PM EDT
+- [Logic - I Am The Greatest (Official Audio)](https://www.youtube.com/watch?v=aHW3mU51bjY) — Visionary Music Group — Jan 16, 2020, 10:44:20 PM EDT
+- [Anderson .Paak &amp; The Free Nationals: NPR Music Tiny Desk Concert](https://www.youtube.com/watch?v=ferZnZ0_rSM) — NPR Music — Jan 16, 2020, 10:40:58 PM EDT
+- [Logic - The Incredible True Story (Official Audio)](https://www.youtube.com/watch?v=cmkkcAh08vw) — Visionary Music Group — Jan 16, 2020, 10:35:19 PM EDT
+- [Mac Miller - Good News](https://www.youtube.com/watch?v=aIHF7u9Wwiw) — Mac Miller — Jan 16, 2020, 10:29:16 PM EDT
+- [Sacred G Breath Meditation Station   DMT Releasing Pineal Activation](https://www.youtube.com/watch?v=97gSeQY2IZg) — falconflylow — Jan 16, 2020, 2:32:41 PM EDT
+- [Stanislav Grof - The Cosmic Game](https://www.youtube.com/watch?v=wNSMDWBSv54) — Intellectual Deep Web — Jan 16, 2020, 10:36:43 AM EDT
+- [INTRO TO HOLOTROPIC BREATHWORK | YJ Tried It](https://www.youtube.com/watch?v=prfll4C1zw0) — Yoga Journal — Jan 16, 2020, 10:34:34 AM EDT
+- [Holotropic Breathwork Founder Stan Grof on Birth, Life, Breath, and Death](https://www.youtube.com/watch?v=kHfFz7Ci7vk) — Aubrey Marcus — Jan 16, 2020, 8:10:38 AM EDT
+- [Jim Lee &amp; Kim Jung Gi Dual Sketch Batman | NYCC 2018 | SYFY WIRE](https://www.youtube.com/watch?v=97iIHTGP1uw) — SYFY — Jan 15, 2020, 9:11:37 PM EDT
+- [Making Art with the 3Doodler Start // 3D pen review](https://www.youtube.com/watch?v=zge0qRdC35Y) — Make Anything — Jan 15, 2020, 8:36:49 PM EDT
+- [Deep OM Mantra Chants with Water Sounds ✡ Stress Relieving Brain Calming Nature Mantra Meditation](https://www.youtube.com/watch?v=cL_cSZ_LWC4) — Meditative Mind — Jan 15, 2020, 12:39:50 PM EDT
+- [Sacred G Breath Meditation Station   DMT Releasing Pineal Activation](https://www.youtube.com/watch?v=97gSeQY2IZg) — falconflylow — Jan 15, 2020, 12:33:23 PM EDT
+- [Visual Poi Mini - Pink Panther Duo](https://www.youtube.com/watch?v=LYcE3fOhyWo) — Pyroterra — Jan 15, 2020, 10:09:47 AM EDT
+- [The Many Facets Of Awakening - List of Top 30 Enlightenment Insights](https://www.youtube.com/watch?v=OgtPGEBGUWw) — Actualized.org — Jan 14, 2020, 11:10:42 AM EDT
+- [Alan Watts - Guided Meditation (Awakening The Mind)](https://www.youtube.com/watch?v=jPpUNAFHgxM) — Indigo Bliss — Jan 14, 2020, 9:58:41 AM EDT
+- [Sacred G Breath Meditation Station   DMT Releasing Pineal Activation](https://www.youtube.com/watch?v=97gSeQY2IZg) — falconflylow — Jan 14, 2020, 9:52:15 AM EDT
+- [Mac Miller - Good News](https://www.youtube.com/watch?v=aIHF7u9Wwiw) — Mac Miller — Jan 14, 2020, 9:18:04 AM EDT
+- [Focus Music with Binaural Beats, Tongue Drum Music for Concentration](https://www.youtube.com/watch?v=MnqnQHcfnno) — Greenred Productions - Relaxing Music — Jan 13, 2020, 10:43:02 PM EDT
+- [Hayashi-Mamady duo. Grandmasters Mamady Keita (djembeföla) and Eitetsu Hayashi (taiko soloist)](https://www.youtube.com/watch?v=NCnoDfOuIKY) — Mamady Keïta — Jan 13, 2020, 10:39:18 PM EDT
+- [Gong Bath 60&quot; Symphonic and Neptune Planet Gong The Element Of Water](https://www.youtube.com/watch?v=p1mk77sOJSo) — mark swan — Jan 13, 2020, 10:29:02 PM EDT
+- [Paiste - 80&quot; Symphonic Gong played by Paiste Gong Master Sven](https://www.youtube.com/watch?v=mL2r6E1E7sM) — Wind Chimes Australia — Jan 13, 2020, 10:28:59 PM EDT
+- [Tibetan Singing Bowl - 14.5cm Demonstration](https://www.youtube.com/watch?v=LK5ewVTrBRk) — Wind Chimes Australia — Jan 13, 2020, 10:28:52 PM EDT
+- [Jere Friedman Playing the Paiste 80&quot; Gong #1](https://www.youtube.com/watch?v=Mma2Labgdw0) — Jere Friedman — Jan 13, 2020, 10:27:23 PM EDT
+- [Miraphone - Hinter den Kulissen](https://www.youtube.com/watch?v=t4mSNSd014g) — Josef Lindlmair (MIRAPHONE Germany) — Jan 13, 2020, 10:24:37 PM EDT
+- [Working with Gongs #1: Gongs &amp; Mallets](https://www.youtube.com/watch?v=HA0xOaMU3Wc) — GONGTOPIA — Jan 13, 2020, 10:15:51 PM EDT
+- [Paiste - Planet Gong - Nibiru E2 (Played with M5 Mallet)](https://www.youtube.com/watch?v=2yvn-zq0nHE) — Wind Chimes Australia — Jan 13, 2020, 10:15:02 PM EDT
+- [Koshi Wind Chimes - Aqua (Water) demonstration](https://www.youtube.com/watch?v=Pa3K4iOBoWk) — Wind Chimes Australia — Jan 13, 2020, 10:14:55 PM EDT
+- [Mac Miller - Good News](https://www.youtube.com/watch?v=aIHF7u9Wwiw) — Mac Miller — Jan 13, 2020, 10:01:22 PM EDT
+- [ONE MORE TIME](https://www.youtube.com/watch?v=VKF5LCHZREg) — Marc Rebillet — Jan 13, 2020, 9:57:01 PM EDT
+- [HOW TO FUNK IN TWO MINUTES](https://www.youtube.com/watch?v=3vBwRfQbXkg) — Marc Rebillet — Jan 13, 2020, 9:54:30 PM EDT
+- [Doctor Dissects the Wim Hof Method - Cold Hard Science Analysis](https://www.youtube.com/watch?v=D6EPuUdIC1E) — Medlife Crisis — Jan 13, 2020, 8:21:40 AM EDT
+- [RELEASING DMT: How To Release Psychedelic Substance In Your Brain | Wim Hof On London Real](https://www.youtube.com/watch?v=-5iD_8Eo7yQ) — London Real — Jan 13, 2020, 8:18:24 AM EDT
+- [963Hz + 852Hz + 639Hz | Miracle Tones | Activate Pineal Gland | Open Third Eye | Heal Heart Chakra](https://www.youtube.com/watch?v=dJoXVILGeKQ) — Meditative Mind — Jan 13, 2020, 8:13:21 AM EDT
+- [Sacred G Breath Meditation Station   DMT Releasing Pineal Activation](https://www.youtube.com/watch?v=97gSeQY2IZg) — falconflylow — Jan 13, 2020, 8:06:55 AM EDT
+- [Random Jam #4 [funky hip-hop w/ Digitakt, 0-Coast, Volca FM, Keystep &amp; Ditto X4]](https://www.youtube.com/watch?v=Mq3Tf0I95M8) — Aldo — Jan 11, 2020, 3:08:36 PM EDT
+- [Random Jam #3 [jazzy ambient w/ 0-Coast, Ditto X4, Digitakt &amp; Keystep]](https://www.youtube.com/watch?v=PBPbGNEPEnw) — Aldo — Jan 11, 2020, 3:02:26 PM EDT
+- [Random Jam #12 [electronic hip-hop w/ DrumBrute, Digitakt, 0-Coast &amp; Ditto X4]](https://www.youtube.com/watch?v=cxnr_De0MZQ) — Aldo — Jan 11, 2020, 2:58:20 PM EDT
+- [Random Jam #11 [lo-fi ambient w/ Digitakt, Glou-Glou Pralines, 0-Coast &amp; Ditto X4]](https://www.youtube.com/watch?v=tKFXWoif-8k) — Aldo — Jan 11, 2020, 2:55:28 PM EDT
+- [Making Ambient with a Tiny Setup [Volca FM, ZOIA &amp; Reverb]](https://www.youtube.com/watch?v=KovjBwq18sk) — Aldo — Jan 11, 2020, 2:53:24 PM EDT
+- [Random Jam #8 [weird jazzy stuff w/ Digitakt, 0-Coast, Keystep &amp; Ditto X4]](https://www.youtube.com/watch?v=PffyRrUEPVM) — Aldo — Jan 11, 2020, 2:48:11 PM EDT
+- [Babilu - Spirit Fragments | Full Album](https://www.youtube.com/watch?v=VQH0XaO2VRI) — The Psychedelic Muse — Jan 11, 2020, 2:31:33 PM EDT
+- [2015 first-person drone racing in an abandoned Melbourne factory | Lateline](https://www.youtube.com/watch?v=bR4Gq9qfpnM) — ABC News (Australia) — Jan 11, 2020, 1:46:16 PM EDT
+- [Championship Race: Xfinity CA Drone Speed Challenge, 2018](https://www.youtube.com/watch?v=bZvNLuC12R0) — Aerial Sports League — Jan 11, 2020, 1:42:33 PM EDT
+- [GUNSHIP - The Drone Racing League [Official Audio]](https://www.youtube.com/watch?v=syzHPv3-hH4) — GUNSHIPMUSIC — Jan 11, 2020, 1:42:10 PM EDT
+- [2019 DRL @Allianz World Championship Season Overview](https://www.youtube.com/watch?v=_i-sn6SNo0I) — Drone Racing League — Jan 11, 2020, 1:39:45 PM EDT
+- [963Hz + 852Hz + 639Hz | Miracle Tones | Activate Pineal Gland | Open Third Eye | Heal Heart Chakra](https://www.youtube.com/watch?v=dJoXVILGeKQ) — Meditative Mind — Jan 11, 2020, 1:15:20 PM EDT
+- [Sacred G Breath Meditation Station   DMT Releasing Pineal Activation](https://www.youtube.com/watch?v=97gSeQY2IZg) — falconflylow — Jan 11, 2020, 1:06:17 PM EDT
+- [How Magic Mushrooms Affect Your Brain](https://www.youtube.com/watch?v=1apjnIW17LA) — Insider Science — Jan 9, 2020, 1:33:08 AM EDT
+- [Psilocybin (feat. Pleiiiades &amp; Austin Alchemy)](https://www.youtube.com/watch?v=UklslgMU750) — Bryan Divisions &amp; Illuminati Congo &amp; Derrien White - Topic — Jan 9, 2020, 1:31:55 AM EDT
+- [The Underachievers - Chasing Faith x Rain Dance x Allusions](https://www.youtube.com/watch?v=rKbvHYkEyng) — The Underachievers — Jan 9, 2020, 1:26:14 AM EDT
+- [&#39;Similar to fireworks, but a lot cooler.&#39; Watch Intel&#39;s effort to break drone record](https://www.youtube.com/watch?v=KhDEEN4gcpI) — Sacramento Bee — Jan 7, 2020, 8:37:10 AM EDT
+- [Championship Race: Xfinity CA Drone Speed Challenge, 2018](https://www.youtube.com/watch?v=bZvNLuC12R0) — Aerial Sports League — Jan 7, 2020, 8:33:52 AM EDT
+- [90 lumen vs 45 lumen](https://www.youtube.com/watch?v=xYqknPSRc-8) — Andrew Schubauer — Jan 6, 2020, 2:34:29 PM EDT
+- [Indigo Cypher Ft. 3rd Eye Indigo, Illuminati Congo, Aura Da Prophet, Drok The Menace, Kyle Bent](https://www.youtube.com/watch?v=UH4JxQXAfxc) — 3rd Eye Indigo — Jan 6, 2020, 10:15:56 AM EDT
+- [Spiritual Awakening to Jesus Christ](https://www.youtube.com/watch?v=fkPPRQtwmmc) — dakota of earth — Jan 5, 2020, 5:58:59 PM EDT
+- [In the Face of Chaos - Ram Dass Full Lecture 1994](https://www.youtube.com/watch?v=a8NR6AM5oKk) — Baba Ram Dass — Jan 5, 2020, 5:20:45 PM EDT
+- [Breathing Techniques To Release DMT!](https://www.youtube.com/watch?v=dHyRsexBiM8) — Elliott Hulse | WISDOM — Jan 5, 2020, 3:56:01 PM EDT
+- [Força do Rapé - Astral Flowers (Hino de txai Gustavo &quot;Soslaio&quot; Mello)](https://www.youtube.com/watch?v=hF4DS7pXsAw) — Canal Dany Matos — Jan 5, 2020, 3:54:56 PM EDT
+- [Revealing the Mind: The Promise of Psychedelics | World Science Festival](https://www.youtube.com/watch?v=Fi66wFfOC-4) — World Science Festival — Jan 5, 2020, 10:42:17 AM EDT
+- [Having a “BadTrip” On Purpose: Facing DMT Hell](https://www.youtube.com/watch?v=w-2Q7l-3Esc) — Psyched Substance — Jan 5, 2020, 10:24:46 AM EDT
+- [This Trick Reduce Stress, Anxiety and Depression | Wim Hof](https://www.youtube.com/watch?v=8GgAoZUYAvY) — Alexander Pärleros — Jan 5, 2020, 10:07:13 AM EDT
+- [Jim Carrey: I Needed Color](https://www.youtube.com/watch?v=21CEOlBq2YI) — cheesecakerulez — Jan 5, 2020, 1:41:31 AM EDT
+- [639 Hz ❯ PURE POSITIVE LOVE ENERGY ❯ Miracle Tone Healing Music | Heart Chakra Solfeggio Frequency](https://www.youtube.com/watch?v=5T_QxR8aclQ) — Meditative Mind — Jan 5, 2020, 1:38:38 AM EDT
+- [Ken Block’s Climbkhana TWO: 914hp Hoonitruck on China&#39;s Most Dangerous Road; Tianmen Mountain](https://www.youtube.com/watch?v=ZX2uXBMkO8U) — Hoonigan — Jan 5, 2020, 12:16:11 AM EDT
+- [Reaching The Infinite Loop | Tripcast Ft. Quentin](https://www.youtube.com/watch?v=WOEfNi_LLnE) — Psyched Substance — Jan 4, 2020, 11:49:47 PM EDT
+- [BILLIE JEAN DUBSTEP | NONSTOP &amp; RICARDO WALKER](https://www.youtube.com/watch?v=ZqQpt6mht2E) — MARQUESE SCOTT — Jan 4, 2020, 11:45:32 PM EDT
+- [Begleri - 2 Beads 1 String](https://www.youtube.com/watch?v=4yZC1inesPY) — Kuma Films — Jan 4, 2020, 2:31:27 PM EDT
+- [5 Easy Devil Stick Tricks Tutorial *With Instructions*](https://www.youtube.com/watch?v=Z7Pv-p-nEYo) — HNWpodcasts — Jan 4, 2020, 2:31:08 PM EDT
+- [Bravo FingerPoi](https://www.youtube.com/watch?v=xIlZor9NlbA) — Bravo Juggling — Jan 4, 2020, 2:30:33 PM EDT
+- [Awareness Veils Itself with Its Own Activity](https://www.youtube.com/watch?v=9Ba96sAY61A) — Rupert Spira — Jan 2, 2020, 3:33:42 PM EDT
+- [Thich Nhat Hanh, interview Part 2 | Ram Dass Channel](https://www.youtube.com/watch?v=edOW5hvB8hs) — Baba Ram Dass — Jan 1, 2020, 12:27:10 AM EDT
+- [Thich Nhat Hanh, interview Part 1 | Ram Dass Channel](https://www.youtube.com/watch?v=jsnUonUZBuY) — Baba Ram Dass — Jan 1, 2020, 12:00:12 AM EDT

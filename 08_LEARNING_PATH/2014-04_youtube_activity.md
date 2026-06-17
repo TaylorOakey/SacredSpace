@@ -1,0 +1,121 @@
+---
+title: "YouTube Activity History — 2014-04"
+source: youtube
+created: 2014-04-01
+pillar: 08_LEARNING_PATH
+stage: RAW
+tags: [takeout, youtube, activity-history]
+---
+
+# YouTube Activity History — 2014-04
+> 107 entries
+
+## Entries
+
+- Searched for cyhi da prynce — Apr 30, 2014, 4:34:04 PM EDT
+- Searched for Ccc — Apr 30, 2014, 3:31:01 PM EDT
+- Searched for Kushinator — Apr 28, 2014, 3:32:41 PM EDT
+- Searched for sacred knowledge — Apr 27, 2014, 7:51:01 PM EDT
+- Searched for Alman brothers — Apr 27, 2014, 2:10:00 PM EDT
+- Searched for wire wrapping techniques — Apr 27, 2014, 9:48:45 AM EDT
+- Searched for cyhi da prynce — Apr 26, 2014, 9:20:32 AM EDT
+- Searched for childish gambino 3005 — Apr 26, 2014, 9:01:33 AM EDT
+- Searched for backing tracks for guitar — Apr 26, 2014, 8:48:07 AM EDT
+- Searched for Easy electric guitar — Apr 26, 2014, 8:46:20 AM EDT
+- Searched for higher consciousness — Apr 25, 2014, 6:45:21 PM EDT
+- Searched for childish gambino 3005 — Apr 25, 2014, 6:44:49 PM EDT
+- Searched for childish gambino 3005 — Apr 25, 2014, 5:13:53 PM EDT
+- Searched for new underground rap 2014 — Apr 25, 2014, 5:06:10 PM EDT
+- Searched for new underground rap 2014 — Apr 24, 2014, 7:57:23 PM EDT
+- Searched for john mayer 2014 — Apr 23, 2014, 7:07:02 PM EDT
+- Searched for john mayer electric guitar lesson — Apr 23, 2014, 6:58:43 PM EDT
+- Searched for electric guitar beginner riffs — Apr 23, 2014, 6:57:52 PM EDT
+- Searched for nirvana acoustic — Apr 23, 2014, 5:49:27 PM EDT
+- Searched for sacred geometry — Apr 23, 2014, 3:26:52 PM EDT
+- Searched for easy acoustic guitar songs — Apr 20, 2014, 6:03:38 PM EDT
+- Searched for Ccc — Apr 20, 2014, 6:03:25 PM EDT
+- Searched for easy acoustic guitar songs — Apr 20, 2014, 5:02:51 PM EDT
+- Searched for easy acoustic guitar songs — Apr 20, 2014, 4:00:48 PM EDT
+- Searched for electric guitar lessons for beginners — Apr 20, 2014, 3:32:38 PM EDT
+- Searched for Electric guitar — Apr 20, 2014, 3:31:11 PM EDT
+- Searched for gamma binaural beats — Apr 19, 2014, 5:25:57 PM EDT
+- Searched for Easy blues play along — Apr 19, 2014, 3:25:44 PM EDT
+- Searched for Blues scales electric guitar — Apr 19, 2014, 2:13:37 PM EDT
+- Searched for rock backing track in e — Apr 19, 2014, 1:49:23 PM EDT
+- Searched for blues electric guitar — Apr 19, 2014, 1:41:54 PM EDT
+- Searched for eric clapton — Apr 19, 2014, 11:37:39 AM EDT
+- Searched for easy electric guitar songs for beginners — Apr 19, 2014, 10:57:49 AM EDT
+- Searched for easy eric clapton guitar lesson — Apr 19, 2014, 10:55:24 AM EDT
+- Searched for white stripes — Apr 19, 2014, 9:25:46 AM EDT
+- Searched for easy electric guitar riffs — Apr 19, 2014, 9:10:30 AM EDT
+- Searched for small town john mellencamp guitar lesson — Apr 19, 2014, 9:04:43 AM EDT
+- Searched for small town john mellencamp — Apr 19, 2014, 9:04:39 AM EDT
+- Searched for Easy peter frampton — Apr 19, 2014, 9:04:03 AM EDT
+- Searched for deep sleep music — Apr 18, 2014, 9:30:48 PM EDT
+- Searched for Music Festivals — Apr 17, 2014, 7:55:14 PM EDT
+- Searched for Festivals — Apr 17, 2014, 7:54:22 PM EDT
+- Searched for Grateful dead oxford circle — Apr 17, 2014, 7:30:09 PM EDT
+- Searched for cyhi da prynce — Apr 17, 2014, 5:35:50 AM EDT
+- Searched for mac miller thomas — Apr 16, 2014, 9:07:48 PM EDT
+- Searched for mac miller — Apr 16, 2014, 8:22:45 PM EDT
+- Searched for mac miller mixtape — Apr 16, 2014, 4:55:43 PM EDT
+- Searched for mac miller — Apr 16, 2014, 4:54:47 PM EDT
+- Searched for Ccc — Apr 16, 2014, 4:08:55 PM EDT
+- Searched for weed review 2014 — Apr 16, 2014, 4:05:27 PM EDT
+- Searched for Weed — Apr 16, 2014, 4:04:27 PM EDT
+- Searched for Ccc — Apr 16, 2014, 3:20:36 PM EDT
+- Searched for macadelic — Apr 16, 2014, 1:37:24 PM EDT
+- Searched for chip tha ripper — Apr 16, 2014, 12:42:57 PM EDT
+- Searched for logic king chip two kings — Apr 16, 2014, 12:35:45 PM EDT
+- Searched for Logic — Apr 16, 2014, 12:35:22 PM EDT
+- Searched for g.o.o.d music — Apr 16, 2014, 12:33:58 PM EDT
+- Searched for yesus — Apr 16, 2014, 12:32:24 PM EDT
+- Searched for cyhi da prynce — Apr 16, 2014, 10:39:24 AM EDT
+- Searched for g breeze — Apr 15, 2014, 7:07:17 PM EDT
+- Searched for g breath — Apr 15, 2014, 7:06:33 PM EDT
+- Searched for g breath — Apr 15, 2014, 6:22:44 PM EDT
+- Searched for easy blues strumming — Apr 15, 2014, 5:41:20 PM EDT
+- Searched for Franklin&#39;s tower acoustic lesson — Apr 15, 2014, 5:02:32 PM EDT
+- Searched for Franklins toweracoustic lesson — Apr 15, 2014, 5:02:28 PM EDT
+- Searched for ripple acoustic lesson — Apr 15, 2014, 4:56:00 PM EDT
+- Searched for Ccc — Apr 14, 2014, 7:56:49 PM EDT
+- Searched for cyhi da prynce — Apr 13, 2014, 4:03:14 PM EDT
+- Searched for cyhi da prynce — Apr 13, 2014, 8:25:29 AM EDT
+- Searched for Bashar — Apr 12, 2014, 3:40:09 PM EDT
+- Searched for Easy guitar riffs — Apr 12, 2014, 3:22:21 PM EDT
+- Searched for Guided meditation — Apr 11, 2014, 9:24:44 PM EDT
+- Searched for Phish — Apr 11, 2014, 7:21:58 PM EDT
+- Searched for furthur 2014 — Apr 10, 2014, 7:04:35 PM EDT
+- Searched for kid cudi — Apr 9, 2014, 7:47:23 PM EDT
+- Searched for cyhi da prynce — Apr 9, 2014, 5:35:38 AM EDT
+- Searched for Poi — Apr 7, 2014, 1:48:09 PM EDT
+- Searched for cyhi da prynce — Apr 7, 2014, 1:10:00 PM EDT
+- Searched for Emazinglights phoenix — Apr 7, 2014, 10:30:41 AM EDT
+- Searched for Emazing lights phoenix — Apr 7, 2014, 10:30:35 AM EDT
+- Searched for chip tha ripper — Apr 7, 2014, 10:04:24 AM EDT
+- Searched for benny benassi — Apr 7, 2014, 9:55:10 AM EDT
+- Searched for cyhi da prynce cold as ice — Apr 7, 2014, 9:45:53 AM EDT
+- Searched for cyhi da prynce — Apr 7, 2014, 9:45:45 AM EDT
+- Searched for eric clapton — Apr 7, 2014, 9:31:42 AM EDT
+- Searched for wrecking ball miley cyrus lyrics — Apr 7, 2014, 9:21:25 AM EDT
+- Searched for good music 2014 — Apr 6, 2014, 8:15:14 PM EDT
+- Searched for good music — Apr 6, 2014, 8:14:34 PM EDT
+- Searched for cyhi da prynce — Apr 6, 2014, 7:07:13 PM EDT
+- Searched for cyhi da prynce — Apr 6, 2014, 3:23:02 PM EDT
+- Searched for drunvalo melchizedek — Apr 6, 2014, 1:37:33 PM EDT
+- Searched for King chip — Apr 6, 2014, 1:08:25 PM EDT
+- Searched for cyhi da prynce — Apr 6, 2014, 11:53:01 AM EDT
+- Searched for sacred geometry — Apr 5, 2014, 8:13:04 PM EDT
+- Searched for tech n9ne worldwide choppers — Apr 5, 2014, 10:23:37 AM EDT
+- Searched for t9x tech n9ne — Apr 5, 2014, 10:19:52 AM EDT
+- Searched for tech n9ne demons official music video — Apr 5, 2014, 10:12:23 AM EDT
+- Searched for cyhi da prynce — Apr 5, 2014, 10:02:35 AM EDT
+- Searched for King fantastic — Apr 4, 2014, 7:48:04 PM EDT
+- Searched for cyhi da prynce — Apr 4, 2014, 6:46:27 PM EDT
+- Searched for el p freestyle — Apr 3, 2014, 6:45:25 PM EDT
+- Searched for cyhi da prynce freestyle — Apr 3, 2014, 6:42:25 PM EDT
+- Searched for masta blasta big brotha thunda — Apr 3, 2014, 4:03:15 PM EDT
+- Searched for cyhi da prynce napoleon — Apr 2, 2014, 8:21:25 AM EDT
+- Searched for cyhi da prynce — Apr 2, 2014, 8:21:19 AM EDT
+- Searched for cyhi da prynce napoleon — Apr 1, 2014, 6:07:55 PM EDT
+- Searched for cyhi da prince — Apr 1, 2014, 6:00:13 PM EDT

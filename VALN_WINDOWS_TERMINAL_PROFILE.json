@@ -1,0 +1,50 @@
+{
+  "_comment": "Paste this into your Windows Terminal settings.json under 'profiles.list'",
+  "name": "VAL3N · Sacred Terminal",
+  "commandline": "wsl.exe -d Ubuntu-24.04 -- bash -c 'cd /mnt/d/SacredSpace_OS && opencode'",
+  "startingDirectory": "\\\\wsl.localhost\\Ubuntu-24.04\\mnt\\d\\SacredSpace_OS",
+  "icon": "⬡",
+  "tabTitle": "∆ VAL3N",
+  "colorScheme": "VAL3N-Sacred",
+  "font": {
+    "face": "JetBrainsMono Nerd Font",
+    "size": 13,
+    "weight": "normal",
+    "features": {
+      "liga": true
+    }
+  },
+  "opacity": 97,
+  "useAcrylic": true,
+  "acrylicOpacity": 0.95,
+  "padding": "12",
+  "scrollbarState": "hidden",
+  "cursorShape": "bar",
+  "cursorColor": "#f59e0b",
+  "bellStyle": "none",
+
+  "_colorScheme_comment": "Add this to the 'schemes' array in settings.json",
+  "schemes_entry": {
+    "name": "VAL3N-Sacred",
+    "background": "#020804",
+    "foreground": "#b8d4b0",
+    "black": "#020804",
+    "red": "#f87171",
+    "green": "#22c55e",
+    "yellow": "#f59e0b",
+    "blue": "#00e5f5",
+    "purple": "#a855f7",
+    "cyan": "#00e5f5",
+    "white": "#b8d4b0",
+    "brightBlack": "#2d4a28",
+    "brightRed": "#f87171",
+    "brightGreen": "#4ade80",
+    "brightYellow": "#fbbf24",
+    "brightBlue": "#67e8f9",
+    "brightPurple": "#c084fc",
+    "brightCyan": "#67e8f9",
+    "brightWhite": "#e0e0e0",
+    "cursorColor": "#f59e0b",
+    "selectionBackground": "#162614"
+  }
+}

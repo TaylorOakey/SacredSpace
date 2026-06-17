@@ -12,8 +12,8 @@ import shutil
 import re
 from pathlib import Path
 
-VAULT = Path("/mnt/d/SacredSpace_OS/01_OBSIDIAN_VAULTS/SacredSpace_Vault")
-CODEX = Path("/mnt/d/SacredSpace_OS/04_SACRED_CODEX")
+VAULT = Path("/mnt/d/SacredSpace_OS/01_CORE/SacredSpace_Vault")
+CODEX = Path("/mnt/d/SacredSpace_OS/04_CODEX")
 STAGING = Path("/mnt/d/SacredSpace_OS/NOTEBOOKLM_STAGING")
 
 # Notebook staging subdirs
@@ -27,10 +27,12 @@ NOTEBOOKS = {
 }
 
 def clean_name(stem: str) -> str:
-    """Convert ARCHETYPE_01_THE_FOOL → The Fool, METATRON_LAW → Metatron Law"""
-    # Strip leading type prefix + optional number (ARCHETYPE_01_, NODE_02_, SCHOOL_)
+    """Convert ARCHETYPE_01_THE_FOOL → The Fool, EPISODE_01 → Episode 01"""
+    original = stem
     stem = re.sub(r'^(ARCHETYPE|NODE|SCHOOL|EPISODE)_\d*_?', '', stem)
-    # Replace underscores with spaces, title case
+    if not stem.strip():
+        # e.g. EPISODE_01 → "Episode 01"
+        stem = re.sub(r'^(\w+)_(\d+)$', r'\1 \2', original)
     return stem.replace('_', ' ').title()
 
 

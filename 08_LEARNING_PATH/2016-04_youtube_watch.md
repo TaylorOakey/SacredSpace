@@ -1,0 +1,133 @@
+---
+title: "YouTube Watch History — 2016-04"
+source: youtube
+created: 2016-04-01
+pillar: 08_LEARNING_PATH
+stage: RAW
+tags: [takeout, youtube, watch-history]
+---
+
+# YouTube Watch History — 2016-04
+> 119 videos watched
+
+## Videos
+
+- [Are You Making This Pentatonic Soloing Mistake?!](https://www.youtube.com/watch?v=_TTwkBTjgt4) — JamPlay — Apr 30, 2016, 6:58:22 PM EDT
+- [how to play &quot;Ramble On&quot; by Led Zeppelin - acoustic guitar lesson](https://www.youtube.com/watch?v=NvURL_svtxo) — Shutup &amp; Play - Guitar Tutorials — Apr 30, 2016, 8:48:28 AM EDT
+- [Prince - Purple Rain | simple acoustic guitar lesson](https://www.youtube.com/watch?v=0jV90QadLRw) — LeftHandedGuitarist — Apr 30, 2016, 8:46:15 AM EDT
+- [Sleep Hypnosis. Release Anxiety, Fear, Depression. Guided Meditation. Sound Healing. Gamma State.](https://www.youtube.com/watch?v=H7Tn8ARBYBE) — Balance Lab — Apr 29, 2016, 10:59:34 PM EDT
+- [GARY CLARK JR. - &quot;When My Train Pulls In&quot; (Live in Griffith Park, CA) #JAMINTHEVAN](https://www.youtube.com/watch?v=MPYLVQfjCts) — Jam In The Van — Apr 29, 2016, 9:47:18 PM EDT
+- [The Suffers - Full Performance (Live on KEXP)](https://www.youtube.com/watch?v=NcqS5TSzTWY) — KEXP — Apr 29, 2016, 9:45:36 PM EDT
+- [José González - Full Performance (Live on KEXP)](https://www.youtube.com/watch?v=vo1zyMk1n5I) — KEXP — Apr 29, 2016, 9:43:04 PM EDT
+- [Kiasmos - Full Performance (Live on KEXP)](https://www.youtube.com/watch?v=5lzQlpjj7sA) — KEXP — Apr 29, 2016, 9:38:54 PM EDT
+- [Ariya Astrobeat Arkestra - African Kings](https://www.youtube.com/watch?v=sbSlSnU2vuo) — ZicZak Garage — Apr 29, 2016, 9:36:59 PM EDT
+- [Orgone - The Cleaner](https://www.youtube.com/watch?v=MRJafNobL9c) — Julien Jacquier — Apr 29, 2016, 9:36:25 PM EDT
+- [Sleep Hypnosis. Attract Your Soulmate or Twin Flame. Guided Meditation. ASMR](https://www.youtube.com/watch?v=XGEChhKepTM) — Balance Lab — Apr 28, 2016, 9:16:37 PM EDT
+- [Joe Rogan Experience #791 - Steve Schirripa](https://www.youtube.com/watch?v=CEuWo95DpTI) — PowerfulJRE — Apr 28, 2016, 7:14:57 PM EDT
+- [Kamasi Washington - &#39;Re Run Home&#39;](https://www.youtube.com/watch?v=U8NFS8WXfCI) — Brainfeeder — Apr 28, 2016, 6:45:29 PM EDT
+- [~Simple Pleasures~  ASMR  Soft Spoken  Personal Attention](https://www.youtube.com/watch?v=B8jUVci17vE) — Gentle Whispering ASMR — Apr 27, 2016, 10:22:41 PM EDT
+- [Top 10 Bruce Lee Moments](https://www.youtube.com/watch?v=Se1y2R5QRKU) — WatchMojo.com — Apr 27, 2016, 9:06:00 PM EDT
+- [Top 10 TAI CHI Combat Fighting Moves - Tai Ji Quan Combat](https://www.youtube.com/watch?v=8jpcpidlDyA) — Kung Fu &amp; Tai Chi Center w/ Jake Mace — Apr 27, 2016, 9:00:28 PM EDT
+- [Tai Chi vs Boxing](https://www.youtube.com/watch?v=vcc0jNJwgJA) — Kung Fu &amp; Tai Chi Center w/ Jake Mace — Apr 27, 2016, 8:54:10 PM EDT
+- [[read warning] ASMR Ear Cleaning &amp; Exam: Welcome to the Commune II, A Binaural Role Play](https://www.youtube.com/watch?v=QuNuwJ-6098) — Jellybean Green ASMR — Apr 25, 2016, 9:02:21 PM EDT
+- [ASMR Fantastic 4 Role Play | Medical Attention and Disguise Fitting](https://www.youtube.com/watch?v=gBlB2sdIwoc) — Cosmic Tingles ASMR — Apr 25, 2016, 8:59:24 PM EDT
+- [ASMR REIKI - ASMR Role Play for Energy Healing](https://www.youtube.com/watch?v=9orO50T2n4M) — MissASMR — Apr 25, 2016, 8:58:52 PM EDT
+- [ASMR Scalp &amp; Head Massage. How Give A Relaxation Head Massage, Binaural 3D Sound](https://www.youtube.com/watch?v=jSxSjSVtFCM) — PsycheTruth — Apr 24, 2016, 9:54:21 PM EDT
+- [Terence McKenna - The DMT Experience (The Transcendental Object At The End Of Time)](https://www.youtube.com/watch?v=XlBzIecpxfE) — We Plants Are Happy Plants — Apr 24, 2016, 9:53:37 PM EDT
+- [What It Feels Like to Be Crazy | Lynn Rivers | TEDxUofM](https://www.youtube.com/watch?v=OT9MG3-1y4M) — TEDx Talks — Apr 24, 2016, 8:50:28 PM EDT
+- [How to Become a Millionaire in 3 Years | Daniel Ally | TEDxBergenCommunityCollege](https://www.youtube.com/watch?v=jvBaRf9LHDs) — TEDx Talks — Apr 24, 2016, 8:49:54 PM EDT
+- [Zion I  + The Grouch-Heroes in the City of Dope (2006) (Full Album)](https://www.youtube.com/watch?v=tO6a0CI3rQA) — El Feicho — Apr 24, 2016, 4:35:14 PM EDT
+- [How To Hook Up A Crossover To Your Amp](https://www.youtube.com/watch?v=-okIvyk56lE) — casperskafs — Apr 24, 2016, 4:33:31 PM EDT
+- [The New Mastersounds &amp; Friends - 2/25/13 - Brooklyn Bowl](https://www.youtube.com/watch?v=HIayeSLUoK0) — LazyLightning55a — Apr 24, 2016, 3:46:57 PM EDT
+- [Best Of The Pimps Of Joytime](https://www.youtube.com/watch?v=gmJ_kQTBCjM) — Radio Aku Aku Rapanui — Apr 24, 2016, 3:46:33 PM EDT
+- [The Four Owls - Natures Greatest Mystery (FULL ALBUM)](https://www.youtube.com/watch?v=taGkHwtoQKQ) — Kerim Ford — Apr 24, 2016, 3:45:08 PM EDT
+- [HÆLOS - Full Performance (Live on KEXP)](https://www.youtube.com/watch?v=oERJYbRU9Ts) — KEXP — Apr 24, 2016, 3:16:41 PM EDT
+- [[read warning] ASMR Ear Cleaning &amp; Exam: Welcome to the Commune II, A Binaural Role Play](https://www.youtube.com/watch?v=QuNuwJ-6098) — Jellybean Green ASMR — Apr 23, 2016, 10:28:31 PM EDT
+- [Father John Misty - Full Performance (Live on KEXP)](https://www.youtube.com/watch?v=NSTAVn0IAFg) — KEXP — Apr 23, 2016, 5:35:31 PM EDT
+- [PIMPS OF JOYTIME - &quot;Hey Mr. J.&quot; (Live in Silverlake, CA) #JAMINTHEVAN](https://www.youtube.com/watch?v=J7ajLsM063I) — Jam In The Van — Apr 23, 2016, 5:28:34 PM EDT
+- [Barry White - Hard to Believe That I Found You SOUL/FUNK 1973](https://www.youtube.com/watch?v=4YrySgBd9cs) — AfromanDisco — Apr 23, 2016, 5:23:18 PM EDT
+- [Black Sugar - Understanding FUNK 1970](https://www.youtube.com/watch?v=H0QhECqmTZM) — AfromanDisco — Apr 23, 2016, 5:12:47 PM EDT
+- [Lafayette Afro Rock Band - Hihache](https://www.youtube.com/watch?v=A3ckIovZRwk) — dravmasta — Apr 23, 2016, 5:05:39 PM EDT
+- [Moment Of Truth -  so much for love  instrumental  .flv](https://www.youtube.com/watch?v=tk6E1i4hklA) — Oliver Anaya — Apr 23, 2016, 5:05:30 PM EDT
+- [Monophonics - &quot;Promises&quot;](https://www.youtube.com/watch?v=nPpdgcERNAU) — Monophonics — Apr 23, 2016, 5:01:57 PM EDT
+- [Monophonics - Foolish Love](https://www.youtube.com/watch?v=cWgIdWDxIVU) — lorent123 — Apr 23, 2016, 4:56:07 PM EDT
+- [Foxy ~ Get Off 1978 Disco Purrfection Version](https://www.youtube.com/watch?v=ipR3tvLN2DU) — DJDiscoCat — Apr 23, 2016, 3:35:50 PM EDT
+- [Foxy -Chicapbon 1979 Disco](https://www.youtube.com/watch?v=ixJkVxMQq8o) — dirtydiscosecrets — Apr 23, 2016, 2:11:22 PM EDT
+- [Souljazz Orchestra - Kapital](https://www.youtube.com/watch?v=oprWZttVhCE) — Claude0 — Apr 23, 2016, 10:11:45 AM EDT
+- [Top 5 Reasons Psychs Are Dangerous](https://www.youtube.com/watch?v=nCK6tYjjxlw) — Psyched Substance — Apr 23, 2016, 10:07:11 AM EDT
+- [Top 5 Back Massage Techniques for Back Pain Relief &amp; Relaxation](https://www.youtube.com/watch?v=j3YruCJWuqc) — PsycheTruth — Apr 22, 2016, 11:11:38 PM EDT
+- [Mark Farina - Mushroom Jazz 6 [Full Mixtape]](https://www.youtube.com/watch?v=YuTDP7IPAbA) — Matt Katar — Apr 22, 2016, 8:55:14 PM EDT
+- [Moment Of Truth -  so much for love  instrumental  .flv](https://www.youtube.com/watch?v=tk6E1i4hklA) — Oliver Anaya — Apr 22, 2016, 8:54:12 PM EDT
+- [Tycho - Dive (Full Album)](https://www.youtube.com/watch?v=Z6ih1aKeETk) — Kerim Ford — Apr 22, 2016, 7:53:57 PM EDT
+- [Janko Nilovic - Drug Song (1975)](https://www.youtube.com/watch?v=ScNgrQ1EXr0) — Adventures In Silence — Apr 22, 2016, 7:50:37 PM EDT
+- [Aaron Neville - Hercules](https://www.youtube.com/watch?v=AtkYKoq3sVQ) — Skipskabriarius — Apr 22, 2016, 7:42:44 PM EDT
+- [Lafayette Afro Rock Band - Hihache](https://www.youtube.com/watch?v=A3ckIovZRwk) — dravmasta — Apr 22, 2016, 7:35:11 PM EDT
+- [Yo Mama&#39;s Big Fat Booty Band- full set [HD] (Pro Audio)](https://www.youtube.com/watch?v=FG9g7J9NgIA) — guitarjamie — Apr 22, 2016, 7:27:15 PM EDT
+- [The Pimps Of Joytime -full set@ Gnarnia [HD] (Pro Audio)](https://www.youtube.com/watch?v=peQdfgx5SwI) — guitarjamie — Apr 22, 2016, 6:17:59 PM EDT
+- [Tom Browne - Funkin&#39; for Jamaica](https://www.youtube.com/watch?v=McICiingXQI) — BrownPrider Funk — Apr 22, 2016, 4:59:10 PM EDT
+- [Weed is different after Psychs](https://www.youtube.com/watch?v=ruokJEMETlA) — Psyched Substance — Apr 21, 2016, 9:31:50 PM EDT
+- [The Secret Universal Mind Meditation by Kelly Howell](https://www.youtube.com/watch?v=6tF14GnCJqk) — Brain Sync — Apr 20, 2016, 10:44:05 PM EDT
+- [ASMR Healing: Light Tracking &amp; Reiki; A Binaural Role Play](https://www.youtube.com/watch?v=iQcKgye2XxI) — Jellybean Green ASMR — Apr 20, 2016, 10:23:05 PM EDT
+- [[ASMR] Reiki Session 5](https://www.youtube.com/watch?v=pJP32vJcZv8) — CordeliaCharter ASMR — Apr 20, 2016, 10:05:10 PM EDT
+- [Stevie Wonder - Superstition live on Sesame Street](https://www.youtube.com/watch?v=_ul7X5js1vE) — Ryan&#39;s Smashing Life — Apr 19, 2016, 8:25:30 PM EDT
+- [Funkiest Music Video EVER!](https://www.youtube.com/watch?v=N32XfbLvox0) — OnionCreekProduction — Apr 19, 2016, 8:22:47 PM EDT
+- [Rosalee- Chris Robinson Brotherhood ☮](https://www.youtube.com/watch?v=UWeVbng2ytE) — lolZEPPELINrules — Apr 19, 2016, 8:20:12 PM EDT
+- [No More The Fool - Stone Foundation - Live In Leeds](https://www.youtube.com/watch?v=0cqgwsipu58) — Neil Jones — Apr 19, 2016, 8:17:31 PM EDT
+- [&quot;I Couldn&#39;t Help It If I Tried&quot;  - Stone Foundation (&#39;Dexys Midnight Runners&#39; cover)](https://www.youtube.com/watch?v=rfeDdR6VDkA) — richardedkins — Apr 19, 2016, 8:13:48 PM EDT
+- [Joe Harris and Stone Foundation - Introductions and Papa Was A Rolling Stone](https://www.youtube.com/watch?v=luSng0FETcE) — dinmakers — Apr 19, 2016, 8:13:29 PM EDT
+- [Joe Harris and Stone Foundation - Smiling Faces Sometimes](https://www.youtube.com/watch?v=lx7oGW4gRMU) — dinmakers — Apr 19, 2016, 8:13:24 PM EDT
+- [Joe Harris from Undisputed Truth  &quot;Smiling Faces&quot;  &quot;The Ghetto&quot;](https://www.youtube.com/watch?v=i3-jZdih9Jc) — Robyn Ballard — Apr 19, 2016, 8:10:21 PM EDT
+- [Undisputed Truth  -  You + Me = Love](https://www.youtube.com/watch?v=IFIVfgeJ35Y) — AuntieSoul34 — Apr 19, 2016, 8:06:27 PM EDT
+- [Fat Freddy&#39;s Drop - Russia ( Live Amsterdam/Rome - 2013) [HD]](https://www.youtube.com/watch?v=bT2pn91NgFM) — AlfioZio — Apr 19, 2016, 8:03:40 PM EDT
+- [Fat Freddy&#39;s Drop Shiverman Live at Alexandra Palace, London 2014](https://www.youtube.com/watch?v=N47KnuP8B9Q) — Fat Freddy&#39;s Drop — Apr 19, 2016, 7:56:36 PM EDT
+- [Ocyphius | Sylvester -  From Who to What you are](https://www.youtube.com/watch?v=LIFwdM3uiqg) — Odyssey of Ascension — Apr 16, 2016, 9:38:00 PM EDT
+- [Eric Dollard - History and Theory of Electricity](https://www.youtube.com/watch?v=TttHkDRuyZw) — Aaron Murakami — Apr 16, 2016, 6:47:10 PM EDT
+- [Guzheng: &quot;Spring River Flower Moon Night&quot; 古筝 - 春江花月夜](https://www.youtube.com/watch?v=ujzMHLac404) — SoundofChina Guzheng — Apr 10, 2016, 9:16:16 PM EDT
+- [Shpongle - Tales of the Inexpressable [Full album]](https://www.youtube.com/watch?v=6WTxC8wnXQo) — Bea Flygel — Apr 10, 2016, 12:27:22 PM EDT
+- [Kaminanda - Gateways Of Consciousness [Full Album]](https://www.youtube.com/watch?v=XhugAjgxfL8) — The Psychedelic Muse — Apr 10, 2016, 12:19:56 PM EDT
+- [Carbon Based Lifeforms - Interloper [Full Album - 2015 Remaster]](https://www.youtube.com/watch?v=-9pgIVcB3rk) — Cosmic Soundwaves — Apr 10, 2016, 10:29:56 AM EDT
+- [Celeste Headlee: 10 ways to have a better conversation | TED](https://www.youtube.com/watch?v=R1vskiVDwl4) — TED — Apr 10, 2016, 7:50:26 AM EDT
+- [Torch Talk 78 - Fume Jellyfish Implosion](https://www.youtube.com/watch?v=wrgBZWXK4vE) — Torch Talk — Apr 9, 2016, 7:30:28 PM EDT
+- [Tedeschi Trucks Band - &quot;Made Up Mind&quot; - Mountain Jam 2014](https://www.youtube.com/watch?v=2U_41PxnXhA) — Mountain Jam Festival — Apr 9, 2016, 7:23:14 PM EDT
+- [Jimbo on his War Guitar](https://www.youtube.com/watch?v=FE9o0kT11Xw) — Legend Music Manteca/Fresno — Apr 9, 2016, 7:18:41 PM EDT
+- [Psychedelic Satori VS Meditation](https://www.youtube.com/watch?v=GgZYe6vzOqI) — SWIM — Apr 9, 2016, 7:18:08 PM EDT
+- [Psychill - Ancestral Lullabies (Compiled By Ancient Core) [Full Compilation]](https://www.youtube.com/watch?v=rTpbf5FFu1g) — The Psychedelic Muse — Apr 9, 2016, 7:10:23 PM EDT
+- [Alice Coltrane - Turiya And Ramakrishna](https://www.youtube.com/watch?v=QUMuDWDVd20) — Rosa Felix — Apr 9, 2016, 7:02:43 PM EDT
+- [God Lives Underwater - The Rush Is Loud](https://www.youtube.com/watch?v=xjTxafw-JIA) — AARGH13EXSODAHEAD — Apr 9, 2016, 6:05:13 PM EDT
+- [Chris Robinson Brotherhood - Star Or Stone](https://www.youtube.com/watch?v=nSKn0THfzTw) — AARGH13EXSODAHEAD — Apr 9, 2016, 6:05:00 PM EDT
+- [Black Muddy River, Played on a Zither / Lap Harp](https://www.youtube.com/watch?v=EOwkNUqmb9k) — Debbie Center Music &amp; Art — Apr 9, 2016, 5:57:39 PM EDT
+- [Zither &quot;Der Dritte Mann&quot; virtuos! / The Harry Lime Theme at it&#39;s best.](https://www.youtube.com/watch?v=8KKQDotECdg) — runner902 — Apr 9, 2016, 5:56:09 PM EDT
+- [German Zither Music](https://www.youtube.com/watch?v=v0Px_HOquN0) — Testa David — Apr 9, 2016, 5:53:59 PM EDT
+- [Fur Elise, Played on a Zither or Lap Harp, by Debbie Center, World of Harmony Music](https://www.youtube.com/watch?v=9zfxjvgS2Lg) — Debbie Center — Apr 9, 2016, 5:52:18 PM EDT
+- [Chris Robinson Brotherhood  -  Tulsa Yesterday](https://www.youtube.com/watch?v=6f1Ul_-Wfp0) — AARGH13EXSODAHEAD — Apr 8, 2016, 6:39:41 PM EDT
+- [OM MANTRA: MOST POWERFUL TRANSCENDENTAL HINDU VEDIC CHANT FOR MEDITATION,  STUDY, FOCUS](https://www.youtube.com/watch?v=yoYrLM5rGX8) — DhyaanGuru Dr. Nipun Aggarwal — Apr 8, 2016, 7:31:51 AM EDT
+- [Chris Robinson Brotherhood - &quot;Rosalee&quot; - Mountain Jam 2014](https://www.youtube.com/watch?v=Bcmo8CxpC3A) — Mountain Jam Festival — Apr 7, 2016, 7:24:57 PM EDT
+- [OM MANTRA: MOST POWERFUL TRANSCENDENTAL HINDU VEDIC CHANT FOR MEDITATION,  STUDY, FOCUS](https://www.youtube.com/watch?v=yoYrLM5rGX8) — DhyaanGuru Dr. Nipun Aggarwal — Apr 7, 2016, 7:59:11 AM EDT
+- [A 15-Min Mind Hack To Enhance Brain Power | Vishen Lakhiani](https://www.youtube.com/watch?v=77YVmymBozk) — Mindvalley  — Apr 6, 2016, 7:31:15 AM EDT
+- [Ain&#39;t No Sunshine - Matt Andersen](https://www.youtube.com/watch?v=jLsye_LJ_Ks) — Bob Ault — Apr 4, 2016, 8:24:22 PM EDT
+- [2 Hours Relaxing Back Massage Therapy, Relaxation Music &amp; ASMR Voice](https://www.youtube.com/watch?v=S7kL5oalrvk) — PsycheTruth — Apr 3, 2016, 10:05:00 PM EDT
+- [Best Relaxation Back Massage Techniques. How To Give A Relaxing Back Rub, ASMR Christen Renee](https://www.youtube.com/watch?v=wunsbyF1XPA) — PsycheTruth — Apr 3, 2016, 9:16:54 PM EDT
+- [The Music of the Spheres and Harmonic Astrology: An Ancient Tradition](https://www.youtube.com/watch?v=eU2V_iMxbgc) — Evidence-Based Vibrational Astrology — Apr 3, 2016, 7:51:19 PM EDT
+- [The Geometry of Consonance: Music and Mathematics](https://www.youtube.com/watch?v=UcIxwrZV10A) — Santa Fe Institute — Apr 3, 2016, 7:34:03 PM EDT
+- [Roman Light - Sacred Arithmetic 1   The New Paradigm of the Decoded Matrix](https://www.youtube.com/watch?v=vZftkGO4vAY) — Sacred Arithmetic — Apr 3, 2016, 7:25:23 PM EDT
+- [Infinite Wisdom of The Akashic Records | #255](https://www.youtube.com/watch?v=Cx0u2jhc1hg) — The Moore Show  — Apr 3, 2016, 7:22:15 PM EDT
+- [LEXXTEX - 293 - THE HIDDEN SECRET OF THE GREAT PYRAMID&quot;S CONSTRUCTION UNCOVERED](https://www.youtube.com/watch?v=YTgxGJfXRQ0) — LEXXTEX — Apr 3, 2016, 7:20:45 PM EDT
+- [Why I Stopped Watching Porn](https://www.youtube.com/watch?v=Ss-fpokfn88) — Infinite Waters (Diving Deep) — Apr 3, 2016, 4:55:06 PM EDT
+- [How To Create Your Dream World &amp; Achieve Your Goals | Vishen Lakhiani](https://www.youtube.com/watch?v=3rW-i_FM4x0) — Mindvalley  — Apr 3, 2016, 4:48:24 PM EDT
+- [Pharoah Sanders - Village Of The Pharoahs [Full Album]](https://www.youtube.com/watch?v=Momk6tm7nkc) — planet of the music — Apr 3, 2016, 8:04:51 AM EDT
+- [Bullets vs Bowling Balls](https://www.youtube.com/watch?v=b_L46reGiq0) — DemolitionRanch — Apr 2, 2016, 10:39:15 PM EDT
+- [Naam - Naam (Full Album)](https://www.youtube.com/watch?v=C00ajeEDMts) — Captain Beefart — Apr 2, 2016, 9:09:43 PM EDT
+- [Dark Star Orchestra - &quot;Eyes of the World&quot; - Mountain Jam 2014](https://www.youtube.com/watch?v=D01baH2ObhQ) — Mountain Jam Festival — Apr 2, 2016, 9:04:04 PM EDT
+- [Moon Taxi - &quot;Cabaret&quot; feat. Warren Haynes - Mountain Jam 2014](https://www.youtube.com/watch?v=HJnXRkRqaIo) — Mountain Jam Festival — Apr 2, 2016, 8:54:24 PM EDT
+- [Matt Andersen - Country Roads](https://www.youtube.com/watch?v=L3JoxD-fwgg) — AxemmanCHR — Apr 2, 2016, 8:49:17 PM EDT
+- [Wagon Wheel - Matt Andersen](https://www.youtube.com/watch?v=b0dKtiWTKaA) — Bob Ault — Apr 2, 2016, 8:49:09 PM EDT
+- [Ain&#39;t No Sunshine - Matt Andersen](https://www.youtube.com/watch?v=jLsye_LJ_Ks) — Bob Ault — Apr 2, 2016, 8:39:48 PM EDT
+- [Call me the breeze (Matt Andersen)](https://www.youtube.com/watch?v=FAC1fIVrHFg) — corinne1962 — Apr 2, 2016, 8:36:31 PM EDT
+- [Matt Andersen - Let&#39;s Get Back (Music Video)](https://www.youtube.com/watch?v=pM_kwy7cAro) — The Indie Folk Music Channel — Apr 2, 2016, 8:25:52 PM EDT
+- [The Elite bloodline from ancient time till now](https://www.youtube.com/watch?v=UD4rFQwZhJ4) — Erich B — Apr 2, 2016, 8:14:50 PM EDT
+- [WHAT NOBODY WILL TELL YOU about the law of attraction](https://www.youtube.com/watch?v=I90IptemEfc) — Infinite Waters (Diving Deep) — Apr 2, 2016, 5:51:16 PM EDT
+- [OM MANTRA: MOST POWERFUL TRANSCENDENTAL HINDU VEDIC CHANT FOR MEDITATION,  STUDY, FOCUS](https://www.youtube.com/watch?v=yoYrLM5rGX8) — DhyaanGuru Dr. Nipun Aggarwal — Apr 2, 2016, 12:54:22 PM EDT
+- [The Digestive System](https://www.youtube.com/watch?v=P0zIzJVkxzA) — RiTiL prod — Apr 2, 2016, 6:27:28 AM EDT
+- [Chakra Scanning and Energy Movement, Reiki, ASMR](https://www.youtube.com/watch?v=WdXv_VVHj8U) — The Lune INNATE — Apr 1, 2016, 10:42:13 PM EDT
+- [I&#39;M On Fire-Matt Andersen](https://www.youtube.com/watch?v=4edjh2sJvxc) — Bob Ault — Apr 1, 2016, 9:47:03 PM EDT
+- [OM MANTRA: MOST POWERFUL TRANSCENDENTAL HINDU VEDIC CHANT FOR MEDITATION,  STUDY, FOCUS](https://www.youtube.com/watch?v=yoYrLM5rGX8) — DhyaanGuru Dr. Nipun Aggarwal — Apr 1, 2016, 7:41:40 AM EDT

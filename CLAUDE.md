@@ -20,6 +20,8 @@ The repository is organized by nine pillars, each with a distinct role:
 
 2. **02_COUNCIL_GROVE**: Agent routing & dispatch logic. Routes queries to the correct agent based on intent.
 
+   **02_SYSTEMS** (auxiliary): System configs, scripts, templates, and workflow docs. Contains `CONFIGS/` (watcher, notebook routing, model files), `scripts/` (backup, sync, watcher daemon), `TEMPLATES/` (various templates), and `mission-control/` (Next.js admin UI). Not part of the canonical 9-pillar ontology but present on disk for infrastructure.
+
 3. **03_NEURAL_FOREST**: LLM inference pipeline. Orchestrates Ollama queries, handles model selection and fallbacks.
 
 4. **04_SACRED_CODEX**: Code repository & scripts. Contains automation logic, initialization scripts, helper utilities.

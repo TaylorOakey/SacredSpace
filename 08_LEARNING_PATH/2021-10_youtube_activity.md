@@ -1,0 +1,123 @@
+---
+title: "YouTube Activity History — 2021-10"
+source: youtube
+created: 2021-10-01
+pillar: 08_LEARNING_PATH
+stage: RAW
+tags: [takeout, youtube, activity-history]
+---
+
+# YouTube Activity History — 2021-10
+> 109 entries
+
+## Entries
+
+- Searched for tractor video — Oct 30, 2021, 3:12:54 PM EDT
+- Searched for how to make coloring pencils smooth — Oct 29, 2021, 11:10:43 PM EDT
+- Searched for j — Oct 29, 2021, 11:09:39 PM EDT
+- Searched for tractor video — Oct 28, 2021, 9:26:09 AM EDT
+- Searched for third eye indigo — Oct 28, 2021, 9:26:07 AM EDT
+- Searched for third eye indigo — Oct 28, 2021, 1:54:28 AM EDT
+- Searched for third eye meditation — Oct 28, 2021, 1:33:15 AM EDT
+- Searched for dave rawlings machine ruby — Oct 27, 2021, 9:23:00 PM EDT
+- Searched for tractor video — Oct 27, 2021, 8:42:45 PM EDT
+- Searched for graphic design course — Oct 26, 2021, 4:53:43 PM EDT
+- Searched for ram dass chillstep — Oct 26, 2021, 1:13:12 PM EDT
+- Searched for ram dass — Oct 26, 2021, 1:13:09 PM EDT
+- Searched for ram dass meditation golden buddah — Oct 26, 2021, 1:13:05 PM EDT
+- Searched for tractor video — Oct 26, 2021, 8:07:24 AM EDT
+- Searched for parkour — Oct 25, 2021, 6:54:23 PM EDT
+- Searched for ram dass — Oct 25, 2021, 12:10:12 PM EDT
+- Visited market://details?id=com.dxm.nopuzzle — Oct 25, 2021, 11:24:50 AM EDT
+- Searched for tractor video — Oct 24, 2021, 9:06:37 PM EDT
+- Searched for bong song sublime — Oct 23, 2021, 7:32:16 PM EDT
+- Searched for sublime get out  dub mix — Oct 23, 2021, 7:31:07 PM EDT
+- Searched for sublime get out  dub — Oct 23, 2021, 7:30:58 PM EDT
+- Searched for sublime — Oct 23, 2021, 7:28:05 PM EDT
+- Searched for scarlet begonias sublime — Oct 23, 2021, 7:22:26 PM EDT
+- Searched for minecraft the wild update — Oct 23, 2021, 10:19:08 AM EDT
+- Searched for tractor video — Oct 21, 2021, 7:44:29 PM EDT
+- Searched for tractor video — Oct 21, 2021, 3:01:56 PM EDT
+- Searched for music studio pod — Oct 21, 2021, 3:01:07 PM EDT
+- Searched for pod space hush office — Oct 21, 2021, 2:22:22 PM EDT
+- Searched for pod space — Oct 21, 2021, 2:21:44 PM EDT
+- Searched for inside pod music and meditation — Oct 21, 2021, 1:44:38 PM EDT
+- Searched for inside pod container — Oct 21, 2021, 1:44:18 PM EDT
+- Searched for inside pod culture — Oct 21, 2021, 1:44:11 PM EDT
+- Searched for music meditation pod — Oct 21, 2021, 1:29:13 PM EDT
+- Searched for music pod — Oct 21, 2021, 1:28:53 PM EDT
+- Searched for music podda — Oct 21, 2021, 1:28:48 PM EDT
+- Searched for t shirt design — Oct 21, 2021, 1:09:11 PM EDT
+- Searched for enter pikachu pokemon journeys episode 2 — Oct 21, 2021, 11:23:21 AM EDT
+- Searched for kid anime — Oct 21, 2021, 10:55:37 AM EDT
+- Searched for my hero academia episode 1 — Oct 21, 2021, 10:51:31 AM EDT
+- Searched for funimation — Oct 21, 2021, 10:50:36 AM EDT
+- Searched for graphic design software — Oct 20, 2021, 6:14:20 PM EDT
+- Searched for tractor video — Oct 20, 2021, 11:40:38 AM EDT
+- Visited https://www.daz3d.com/get_studio?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=Display%20%7C%20Prospecting%20%7C%20Discovery&amp;utm_content=&amp;utm_term=&amp;utm_matchtype=&amp;utm_creative= — Oct 19, 2021, 8:03:58 PM EDT
+- Searched for graphic design — Oct 19, 2021, 7:53:10 PM EDT
+- Searched for best desktop for graphic design — Oct 19, 2021, 7:34:43 PM EDT
+- Searched for huion — Oct 19, 2021, 7:22:41 PM EDT
+- Searched for tractor video — Oct 19, 2021, 6:54:42 PM EDT
+- Searched for john mayer solo — Oct 18, 2021, 9:38:05 PM EDT
+- Searched for vulpeck — Oct 18, 2021, 9:29:57 PM EDT
+- Searched for sean gordon — Oct 18, 2021, 9:22:06 PM EDT
+- Searched for gomn — Oct 18, 2021, 9:18:37 PM EDT
+- Searched for awesome guitar — Oct 18, 2021, 9:13:10 PM EDT
+- Searched for tractor video — Oct 18, 2021, 12:06:47 PM EDT
+- Searched for best drum solo — Oct 18, 2021, 11:39:55 AM EDT
+- Searched for keyboard bass — Oct 17, 2021, 11:19:19 AM EDT
+- Searched for how to play bass on keyboard — Oct 17, 2021, 10:40:53 AM EDT
+- Searched for frog tongue slow motion — Oct 16, 2021, 8:49:21 PM EDT
+- Searched for restaurant music — Oct 16, 2021, 7:39:12 PM EDT
+- Searched for guitar bar chords — Oct 16, 2021, 3:08:07 PM EDT
+- Searched for tractor video — Oct 15, 2021, 12:49:01 PM EDT
+- Searched for qi gong 7 minutes of magic — Oct 14, 2021, 9:34:04 AM EDT
+- Searched for Play-Doh videos — Oct 13, 2021, 2:21:24 PM EDT
+- Searched for 3rd eye indigo — Oct 13, 2021, 12:31:24 PM EDT
+- Searched for artiphon instrument 1 — Oct 12, 2021, 5:45:54 PM EDT
+- Searched for tractor video — Oct 12, 2021, 5:45:49 PM EDT
+- Searched for tractor video — Oct 12, 2021, 9:33:57 AM EDT
+- Searched for artiphon instrument 1 — Oct 11, 2021, 8:45:32 PM EDT
+- Searched for how to draw dressed anime male — Oct 11, 2021, 5:32:02 PM EDT
+- Searched for how to draw dressed anime men — Oct 11, 2021, 5:17:45 PM EDT
+- Searched for how to draw a hoodie on an anime guy — Oct 11, 2021, 4:38:28 PM EDT
+- Searched for how to draw a suit — Oct 11, 2021, 4:32:43 PM EDT
+- Searched for how to draw boy anime hair — Oct 11, 2021, 1:34:39 PM EDT
+- Searched for how to draw male face — Oct 11, 2021, 1:29:27 PM EDT
+- Searched for how to draw boy face — Oct 11, 2021, 1:28:52 PM EDT
+- Searched for how to draw a six pack — Oct 11, 2021, 1:02:28 PM EDT
+- Searched for how to draw buff man — Oct 11, 2021, 12:12:45 PM EDT
+- Searched for how to draw tubbo full body — Oct 11, 2021, 12:11:40 PM EDT
+- Searched for how to draw tubbo — Oct 11, 2021, 12:10:42 PM EDT
+- Searched for how to draw tubo — Oct 11, 2021, 12:10:36 PM EDT
+- Searched for dreams laugh — Oct 11, 2021, 11:24:03 AM EDT
+- Searched for dream smp things to draw — Oct 11, 2021, 11:17:44 AM EDT
+- Searched for Play-Doh videos — Oct 11, 2021, 8:32:08 AM EDT
+- Searched for tractor video — Oct 11, 2021, 7:59:18 AM EDT
+- Searched for golden buddha meditation ram dass — Oct 10, 2021, 11:53:22 PM EDT
+- Searched for golden buddha meditation — Oct 10, 2021, 11:53:05 PM EDT
+- Searched for meditation music chakra balancing — Oct 10, 2021, 11:52:38 PM EDT
+- Searched for binocular soccer — Oct 10, 2021, 9:56:41 PM EDT
+- Searched for soccer freestyle juggling — Oct 10, 2021, 9:50:12 PM EDT
+- Searched for meditation music chakra balancing — Oct 9, 2021, 12:03:23 PM EDT
+- Searched for ram dass chillstep — Oct 9, 2021, 12:01:33 PM EDT
+- Visited https://mysearches.net/?search=donate+cars+near+me&amp;rgid=114215&amp;sub=gclid — Oct 9, 2021, 10:33:15 AM EDT
+- Searched for tractor video — Oct 9, 2021, 9:48:47 AM EDT
+- Searched for ram dass chillstep — Oct 9, 2021, 9:48:45 AM EDT
+- Searched for ram dass chillstep — Oct 9, 2021, 1:01:16 AM EDT
+- Searched for tallest man on earth — Oct 8, 2021, 9:06:48 AM EDT
+- Searched for hold on — Oct 8, 2021, 8:24:30 AM EDT
+- Searched for hold on to love jason becker — Oct 8, 2021, 8:24:18 AM EDT
+- Searched for nightmare  alex becker — Oct 8, 2021, 8:17:48 AM EDT
+- Searched for nightmare mode alex becker — Oct 8, 2021, 8:17:38 AM EDT
+- Searched for midi keyboard — Oct 7, 2021, 11:41:20 PM EDT
+- Visited https://mama.tv/en/oddly-magnet/3913/utm-mama3/ — Oct 6, 2021, 2:37:57 PM EDT
+- Searched for tractor videos for kids — Oct 6, 2021, 9:06:47 AM EDT
+- Searched for soccer freestyle juggling — Oct 5, 2021, 11:26:30 PM EDT
+- Searched for soccer freestyle — Oct 5, 2021, 11:26:09 PM EDT
+- Searched for ram dass chillstep — Oct 4, 2021, 1:20:35 PM EDT
+- Searched for ram dass — Oct 4, 2021, 1:20:33 PM EDT
+- Searched for chillstep — Oct 3, 2021, 10:03:38 PM EDT
+- Visited https://www.smartconsumerusa.org/survey/solar-stimulus?gc_id=14223516629&amp;h_ad_id=549018357046&amp;lead_vendor=Amplify&amp;lead_source=Amplify_YT — Oct 3, 2021, 9:56:49 PM EDT
+- Searched for meditation music chakra balancing — Oct 1, 2021, 12:36:05 AM EDT

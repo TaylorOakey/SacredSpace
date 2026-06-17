@@ -1,0 +1,194 @@
+{
+  "_meta": {
+    "version": "1.0.0",
+    "status": "Active",
+    "pillar": "01_OBSIDIAN_VAULTS",
+    "x_source_pillar": "01_OBSIDIAN_VAULTS",
+    "description": "Machine-readable routing map: eight NotebookLM notebooks → Drive pillar sources",
+    "last_reviewed": "2026-06-11",
+    "reviewer": "Taylor (The Forge closure pass)",
+    "rule": "One source per notebook. No duplication across pillars. Point at pillar folder, not individual files."
+  },
+
+  "notebooks": [
+    {
+      "id": "01",
+      "name": "SACRED.CORE",
+      "purpose": "Root axioms, philosophy, OS logic, resonance doctrine",
+      "primary_source_pillar": "04_SACRED_CODEX",
+      "source_subfolder": null,
+      "source_path": "SacredSpace_OS_CLOUD/04_SACRED_CODEX",
+      "key_documents": [
+        "SacredSpace_Canon_Foundation",
+        "SOUL.md",
+        "SACRED_MESH.md",
+        "AGENTS.md",
+        "Warden Protocol"
+      ],
+      "sacred_prompts": [
+        "What are the 5 most consistent principles across all sources?",
+        "Where do my beliefs contradict each other?",
+        "Refine this into a universal law system"
+      ],
+      "drive_auto_sync": true,
+      "nlm_update_trigger": "any file added or modified in 04_SACRED_CODEX"
+    },
+    {
+      "id": "02",
+      "name": "LORE.VAULT",
+      "purpose": "Storylines, characters, mythology, symbols, timelines",
+      "primary_source_pillar": "04_SACRED_CODEX",
+      "source_subfolder": "LORE/",
+      "source_path": "SacredSpace_OS_CLOUD/04_SACRED_CODEX/LORE",
+      "key_documents": [
+        "Jenga's Journey graphic novel docs",
+        "ICARIS Quartet character sheets",
+        "GR∆M∆ canon seal",
+        "Arcana Grid map",
+        "Nameless Door — Trial of Silence"
+      ],
+      "sacred_prompts": [
+        "Map all relationships between characters",
+        "Find inconsistencies in the timeline",
+        "What emotional themes connect these stories?"
+      ],
+      "drive_auto_sync": true,
+      "nlm_update_trigger": "any file added or modified in 04_SACRED_CODEX/LORE"
+    },
+    {
+      "id": "03",
+      "name": "GAME.SYSTEMS",
+      "purpose": "Mechanics, archetypes, progression, ritual systems",
+      "primary_source_pillar": "03_NEURAL_FOREST",
+      "source_subfolder": null,
+      "source_path": "SacredSpace_OS_CLOUD/03_NEURAL_FOREST",
+      "key_documents": [
+        "NEURAL FOREST INDEX",
+        "Bailey's Five Initiations",
+        "Arcana Grid mechanics",
+        "SKRY Engine docs",
+        "SacredSpace Game Engine v1 (interactive HTML)"
+      ],
+      "sacred_prompts": [
+        "Turn this philosophy into a playable mechanic",
+        "Balance this system for long-term engagement",
+        "Create progression tiers from beginner to master"
+      ],
+      "drive_auto_sync": true,
+      "nlm_update_trigger": "any file added or modified in 03_NEURAL_FOREST"
+    },
+    {
+      "id": "04",
+      "name": "KNOWLEDGE.VAULT",
+      "purpose": "Research, spiritual frameworks, psychology, AI theory",
+      "primary_source_pillar": "08_LEARNING_PATH",
+      "source_subfolder": "RESEARCH/",
+      "source_path": "SacredSpace_OS_CLOUD/08_LEARNING_PATH/RESEARCH",
+      "key_documents": [
+        "AI Engineering research PDFs",
+        "Lorentzian geometry references",
+        "Subnautica lore processing docs",
+        "Sovereignty Doctrine (DISTILLED)"
+      ],
+      "sacred_prompts": [
+        "What patterns connect these different sources?",
+        "Combine these ideas into a new framework",
+        "What am I missing?"
+      ],
+      "drive_auto_sync": true,
+      "nlm_update_trigger": "any file added to 08_LEARNING_PATH/RESEARCH"
+    },
+    {
+      "id": "05",
+      "name": "FAMILY.LEGACY",
+      "purpose": "Sacred Messages (Iris and Asher), journals, life systems",
+      "primary_source_pillar": "_PERSONAL_SAFE",
+      "source_subfolder": "NOTEBOOKLM_SAFE/",
+      "source_path": "SacredSpace_OS_CLOUD/_PERSONAL/NOTEBOOKLM_SAFE",
+      "key_documents": [
+        "Sacred_Messages_Iris/ (Year 1 complete)",
+        "Sacred_Messages_Asher/ (Year 1 complete)",
+        "Aurora companion docs (Iris)",
+        "Elias companion docs (Asher)"
+      ],
+      "sacred_prompts": [
+        "What lessons repeat across my messages?",
+        "Turn this into a timeless principle",
+        "Adapt this message for different ages"
+      ],
+      "drive_auto_sync": false,
+      "manual_push_only": true,
+      "security_note": "Only NOTEBOOKLM_SAFE subfolder. Never index _PERSONAL root.",
+      "nlm_update_trigger": "manual Taylor approval only"
+    },
+    {
+      "id": "06",
+      "name": "CREATION.LAB",
+      "purpose": "Brain dumps, idea seeds, unfinished experiments",
+      "primary_source_pillar": "07_SOCIAL_MOTHERSHIP",
+      "source_subfolder": "CREATION_LAB/",
+      "source_path": "SacredSpace_OS_CLOUD/07_SOCIAL_MOTHERSHIP/CREATION_LAB",
+      "key_documents": [
+        "merchant.py output drops",
+        "Unrefined creative seeds",
+        "Roblox avatar concepts",
+        "Drag racing DAQ experiments"
+      ],
+      "sacred_prompts": [
+        "What is this idea really?",
+        "What category does this belong in?",
+        "Turn this into SacredSpace canon"
+      ],
+      "drive_auto_sync": true,
+      "nlm_update_trigger": "any file added to 07_SOCIAL_MOTHERSHIP/CREATION_LAB"
+    },
+    {
+      "id": "07",
+      "name": "SACRED.SIGNAL",
+      "purpose": "Brand voice, Sacred Signal strategy, @OAKEYTREE content",
+      "primary_source_pillar": "07_SOCIAL_MOTHERSHIP",
+      "source_subfolder": "SIGNAL/",
+      "source_path": "SacredSpace_OS_CLOUD/07_SOCIAL_MOTHERSHIP/SIGNAL",
+      "key_documents": [
+        "Signal Strategy brand voice doc (326 lines)",
+        "Sacred Signal Launch Pack v1.0",
+        "Day 1–7 social content drafts"
+      ],
+      "sacred_prompts": [
+        "What voice patterns define Sacred Signal?",
+        "Which posts have the highest resonance potential?",
+        "What is the underlying teaching in this content?"
+      ],
+      "drive_auto_sync": true,
+      "nlm_update_trigger": "any file added to 07_SOCIAL_MOTHERSHIP/SIGNAL"
+    },
+    {
+      "id": "08",
+      "name": "SACRED.MARKET",
+      "purpose": "Commercial strategy, SacredArcana Studios brand, market intel",
+      "primary_source_pillar": "09_SACRED_MARKET",
+      "source_subfolder": null,
+      "source_path": "SacredSpace_OS_CLOUD/09_SACRED_MARKET",
+      "key_documents": [
+        "SacredArcana Studios brand docs",
+        "Commercial strategy documents",
+        "Market research"
+      ],
+      "sacred_prompts": [
+        "What is the core value proposition?",
+        "Where is the market underserved relative to our strengths?",
+        "What offerings are ready to launch vs. still forming?"
+      ],
+      "drive_auto_sync": true,
+      "nlm_update_trigger": "any file added or modified in 09_SACRED_MARKET"
+    }
+  ],
+
+  "global_rules": {
+    "no_duplication_across_pillars": true,
+    "point_at_folder_not_files": true,
+    "auto_sync_requires_drive_folder_not_upload": true,
+    "personal_folder_auto_sync": false,
+    "conflict_on_duplicate_source_docs": "flag_to_pending_review"
+  }
+}

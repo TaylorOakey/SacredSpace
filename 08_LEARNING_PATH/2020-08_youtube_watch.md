@@ -1,0 +1,139 @@
+---
+title: "YouTube Watch History — 2020-08"
+source: youtube
+created: 2020-08-01
+pillar: 08_LEARNING_PATH
+stage: RAW
+tags: [takeout, youtube, watch-history]
+---
+
+# YouTube Watch History — 2020-08
+> 125 videos watched
+
+## Videos
+
+- [Silent 4K Fractal Flame Radial Kaleidoscope Screensaver - 2 Minute Loop - 3 Hrs - Calming &amp; Soothing](https://www.youtube.com/watch?v=msnYBMdaB08) — HDCOLORS - Colorful Kaleidoscopes with Added Value — Aug 30, 2020, 5:41:19 PM EDT
+- [A Geometry of Consciousness -- The Pribram Bohm Hypothesis](https://www.youtube.com/watch?v=-tOTX7oI5Vs) — Shelli Joye — Aug 30, 2020, 5:40:46 PM EDT
+- [The Origins of Machu Picchu...](https://www.youtube.com/watch?v=JMAKRKkdOlw) — UnchartedX — Aug 30, 2020, 5:21:48 PM EDT
+- [Joe Rogan Experience #1527 - David Blaine](https://www.youtube.com/watch?v=NY3Zg37nIHo) — PowerfulJRE — Aug 30, 2020, 3:43:47 PM EDT
+- [STS9 :: 2017.09.10 :: Red Rocks :: Morrison, CO](https://www.youtube.com/watch?v=ELo9l0PjUrA) — J Mar — Aug 30, 2020, 3:43:14 PM EDT
+- [STS9 - The Last 50,000 Years (Official Audio)](https://www.youtube.com/watch?v=hDmsDE5URrQ) — STS9 — Aug 30, 2020, 2:19:54 PM EDT
+- [STS9 - Metameme (Official Audio)](https://www.youtube.com/watch?v=RDobnFwZ51g) — STS9 — Aug 30, 2020, 2:19:08 PM EDT
+- [STS9 &quot;Artifact&quot;](https://www.youtube.com/watch?v=w-dPyfCe_vQ) — Lee Berreth — Aug 30, 2020, 2:14:36 PM EDT
+- [Ekoostik Hookah - Backwoods Rose](https://www.youtube.com/watch?v=QfRAf9ujMuE) — Ladybird41 — Aug 30, 2020, 2:12:24 PM EDT
+- [Duck Farm](https://www.youtube.com/watch?v=ZYdvvLiYXYY) — The Werks - Topic — Aug 30, 2020, 2:09:02 PM EDT
+- [Blast Off](https://www.youtube.com/watch?v=CB54RQPUV6Q) — The Werks - Topic — Aug 30, 2020, 2:06:01 PM EDT
+- [The Werks - “Wide Awake”](https://www.youtube.com/watch?v=7Sd3M8NomDw) — The Werks Official — Aug 30, 2020, 1:56:44 PM EDT
+- [SKRILLEX - Bangarang feat. Sirah [Official Music Video]](https://www.youtube.com/watch?v=YJVmu6yttiw) — Skrillex — Aug 30, 2020, 7:41:35 AM EDT
+- [AYAHUASCA vs MUSHROOMS - Dennis McKenna on DMT &amp; Psilocybin](https://www.youtube.com/watch?v=-yF2eJP_C4U) — London Real — Aug 30, 2020, 12:35:33 AM EDT
+- [Jaguar trips on Ayahuasca DMT in Rainforest](https://www.youtube.com/watch?v=RXVfDgQr3K8) — jiggityfriggity — Aug 30, 2020, 12:33:14 AM EDT
+- [Joe Rogan Experience #1527 - David Blaine](https://www.youtube.com/watch?v=NY3Zg37nIHo) — PowerfulJRE — Aug 29, 2020, 9:49:30 PM EDT
+- [David Blaine (Pilot) Rare Demo // Street Magic](https://www.youtube.com/watch?v=o2MUtc8Z4JE) — El Mago Rob — Aug 29, 2020, 9:45:16 PM EDT
+- [David Blaine Shocks Jimmy and The Roots with Magic Tricks](https://www.youtube.com/watch?v=Z8Ws4PEky28) — The Tonight Show Starring Jimmy Fallon — Aug 29, 2020, 9:36:15 PM EDT
+- [Quantum Biology: The Hidden Nature of Nature | World Science Festival](https://www.youtube.com/watch?v=ADiql3FG5is) — World Science Festival — Aug 29, 2020, 12:12:23 AM EDT
+- [The Distance](https://www.youtube.com/watch?v=6bDVIO8tv2Y) — Cake - Topic — Aug 28, 2020, 5:23:55 PM EDT
+- [Cake - War Pigs](https://www.youtube.com/watch?v=IDJgwUeW7_k) — iacobelli7 — Aug 28, 2020, 5:19:48 PM EDT
+- [Psychotic Girl - The Black Keys](https://www.youtube.com/watch?v=lJR1MmXqcBk) — Hosam Mohamed — Aug 28, 2020, 5:15:38 PM EDT
+- [She Knows](https://www.youtube.com/watch?v=DiMczQTbps0) — J. Cole - Topic — Aug 28, 2020, 5:14:08 PM EDT
+- [J. Cole - G.O.M.D.](https://www.youtube.com/watch?v=M1VhkCOHbRw) — mrgipcu — Aug 28, 2020, 5:08:34 PM EDT
+- [All Me](https://www.youtube.com/watch?v=jz9riK0nfNY) — Drake - Topic — Aug 28, 2020, 5:03:49 PM EDT
+- [070 Shake - Daydreamin (Audio)](https://www.youtube.com/watch?v=UILyDcpj-gU) — 070ShakeVEVO — Aug 28, 2020, 3:13:27 PM EDT
+- [Homicide Remix - Eminem, Kendrick Lamar, Mac Miller, Joyner Lucas, Logic [Nitin Randhawa Remix]](https://www.youtube.com/watch?v=r3zEdvaEes0) — Nitin Randhawa — Aug 28, 2020, 3:06:59 PM EDT
+- [Sacred G Breath Meditation Station   DMT Releasing Pineal Activation](https://www.youtube.com/watch?v=97gSeQY2IZg) — falconflylow — Aug 28, 2020, 12:55:49 PM EDT
+- [Found Rare Amethyst Crystal While Digging at a Private Mine! (Unbelievable Find)](https://www.youtube.com/watch?v=MwAMiddqytE) — DALLMYD — Aug 27, 2020, 11:07:17 PM EDT
+- [Found Rare $50,000 Amethyst Crystal While Digging at a Private Mine! (Unbelievable Find)](https://www.youtube.com/watch?v=VIjK-KXeNHY) — DALLMYD — Aug 27, 2020, 10:53:21 PM EDT
+- [Found $100,000 Crystal While Digging with Logan Paul! (Record Breaking)](https://www.youtube.com/watch?v=d4xwPMH8WBY) — DALLMYD — Aug 27, 2020, 10:39:45 PM EDT
+- [MEZERG &amp; WAAGAL - FACTORY LIVE 4K](https://www.youtube.com/watch?v=iCRmTiMZap4) — MEZERG — Aug 27, 2020, 7:57:53 PM EDT
+- [The Book of Enoch 📚 Part 1 🕎](https://www.youtube.com/watch?v=uVX7yzz6uh4) — ⚡Pilgrim — Aug 25, 2020, 1:04:52 AM EDT
+- [THE BOOK OF ENOCH | Fallen Angels, Rise of the Nephilim | Full Audiobook Part 1](https://www.youtube.com/watch?v=CaSYpog3ZCE) — Uncovering Bible Secrets With Christopher Glyn — Aug 25, 2020, 12:57:38 AM EDT
+- [FALL ASLEEP FAST &amp; RECALL DREAMS - With Ocean Waves - 8 hour Brainwave Entrainment Music](https://www.youtube.com/watch?v=qSh-kuRrFqg) — Brainwave Music — Aug 25, 2020, 12:55:13 AM EDT
+- [Blessings Run](https://www.youtube.com/watch?v=7_6XfY1dezs) — Indubious - Topic — Aug 22, 2020, 11:14:02 AM EDT
+- [Arrow](https://www.youtube.com/watch?v=JJRpbYANgl8) — Indubious - Topic — Aug 22, 2020, 11:13:39 AM EDT
+- [Zara Larsson - Ruin My Life (Lyrics)](https://www.youtube.com/watch?v=ppw9vAc_wGU) — Royal Music — Aug 22, 2020, 1:20:44 AM EDT
+- [David Gilmour - Comfortably Numb (In Concert)](https://www.youtube.com/watch?v=X4-EyzuHvv8) — David Gilmour — Aug 21, 2020, 10:43:37 PM EDT
+- [Sacred Geometry: Art Church at CoSM](https://www.youtube.com/watch?v=5OfuDTTkKOE) — CoSM — Aug 19, 2020, 9:35:07 PM EDT
+- [Fujiya &amp; Miyagi - Serotonin Rushes](https://www.youtube.com/watch?v=01vXD623q2w) — Fujiya &amp; Miyagi — Aug 17, 2020, 9:26:31 PM EDT
+- [Blessings Run](https://www.youtube.com/watch?v=7_6XfY1dezs) — Indubious - Topic — Aug 17, 2020, 8:51:57 PM EDT
+- [Arrow](https://www.youtube.com/watch?v=JJRpbYANgl8) — Indubious - Topic — Aug 17, 2020, 8:49:23 PM EDT
+- [Indubious - Fabric Of Creation (HD) (OFFICIAL) Lyrics](https://www.youtube.com/watch?v=7x9H5W_1Vms) — Indubious Music — Aug 17, 2020, 8:45:31 PM EDT
+- [Here We Come](https://www.youtube.com/watch?v=yxEnVJOoWtA) — Indubious - Topic — Aug 17, 2020, 8:43:39 PM EDT
+- [Cake - i will survive](https://www.youtube.com/watch?v=7KJjVMqNIgA) — Francisco Cusi  — Aug 17, 2020, 3:28:58 PM EDT
+- [Cake - War Pigs](https://www.youtube.com/watch?v=IDJgwUeW7_k) — iacobelli7 — Aug 17, 2020, 3:24:27 PM EDT
+- [THE HUMP live w/ Evton B of Indubious](https://www.youtube.com/watch?v=ndMavLTy2sI) — Indubious Music — Aug 17, 2020, 2:22:00 PM EDT
+- [The Best Bob Proctor Speech Of His Entire Life! (R.I.P)](https://www.youtube.com/watch?v=5Y_p0NBxzck) — Motivate Manifest — Aug 16, 2020, 8:57:14 PM EDT
+- [Bashar :: The Council of 13 and The Crystal Skulls - Highlights](https://www.youtube.com/watch?v=EP_yeveLIM8) — Bashar Channeled by Darryl Anka — Aug 16, 2020, 8:13:35 PM EDT
+- [Skinshape - Skinshape LP [Full Album]](https://www.youtube.com/watch?v=qHp2ooJxJRs) — Melting Records — Aug 16, 2020, 3:02:12 PM EDT
+- [All Them Witches - Voodoo Chile](https://www.youtube.com/watch?v=YQGqs3uZkoY) — agelospap9 — Aug 16, 2020, 11:06:36 AM EDT
+- [Harlem River](https://www.youtube.com/watch?v=JjXEXox3668) — Kevin Morby - Topic — Aug 16, 2020, 10:57:11 AM EDT
+- [Best Girl](https://www.youtube.com/watch?v=Zd6YMFrrVD8) — DOPE LEMON - Topic — Aug 16, 2020, 10:49:47 AM EDT
+- [Where Do You Go](https://www.youtube.com/watch?v=XgAKbI0lrE8) — DOPE LEMON - Topic — Aug 16, 2020, 10:41:52 AM EDT
+- [DOPE LEMON - Hey Little Baby (Official Visualiser)](https://www.youtube.com/watch?v=5EYk7Cp9Eow) — Dope Lemon — Aug 16, 2020, 10:35:47 AM EDT
+- [DOPE LEMON - Dope &amp; Smoke (Official Visualiser)](https://www.youtube.com/watch?v=9OzmlCmTvc4) — Dope Lemon — Aug 16, 2020, 10:29:38 AM EDT
+- [Arrow](https://www.youtube.com/watch?v=JJRpbYANgl8) — Indubious - Topic — Aug 15, 2020, 11:30:02 PM EDT
+- [Rag Doll](https://www.youtube.com/watch?v=fCeRXHyBQsA) — Aerosmith - Topic — Aug 15, 2020, 10:03:36 PM EDT
+- [Aerosmith - Uncle Salty](https://www.youtube.com/watch?v=TVBxpVnsBr8) — Furiouseagle90 — Aug 15, 2020, 9:59:15 PM EDT
+- [TRUE HALLUCINATIONS: Secrets Of The McKenna&#39;s La Chorrera Experiment | Dennis McKenna on London Real](https://www.youtube.com/watch?v=_rGi63RLfhw) — London Real — Aug 12, 2020, 11:12:53 PM EDT
+- [Dennis McKenna | 50th Anniversary of the Ethnopharmacologic Search for Psychoactive Drugs](https://www.youtube.com/watch?v=uGd6kbo3Xx0) — ICEERS — Aug 12, 2020, 11:11:59 PM EDT
+- [Mythic Sunship ► Backyard Ritual [HQ Audio] Another Shape Of Psychedelic Music 2018](https://www.youtube.com/watch?v=XhooiV4FvQg) — Suha Önder — Aug 12, 2020, 11:07:50 PM EDT
+- [Ritual 2017 • Psychedelic Arts Festival • The Mystical Journey • Mini-Aftermovie](https://www.youtube.com/watch?v=b0jdXGWzoIg) — Fernando Gonzalez — Aug 12, 2020, 11:07:48 PM EDT
+- [Good Morning To You Jimmy Neutron](https://www.youtube.com/watch?v=kRkCX2-yDjs) — Marissa Lorenzo — Aug 12, 2020, 7:44:51 AM EDT
+- [Sacred Pipe](https://www.youtube.com/watch?v=I8EtTg2Bdqg) — Ganja White Night - Topic — Aug 11, 2020, 10:42:10 PM EDT
+- [Ganja White Night - Double Dream](https://www.youtube.com/watch?v=zH0pqhYuGzM) — Ganja White Night — Aug 11, 2020, 10:34:49 PM EDT
+- [Blackberries](https://www.youtube.com/watch?v=lO_er6KZynA) — Ganja White Night - Topic — Aug 11, 2020, 10:27:26 PM EDT
+- [Ganja White Night x Caspa - Mr. Fix It | Music Video | Animation](https://www.youtube.com/watch?v=lWGepdgYq0M) — Ganja White Night — Aug 11, 2020, 10:22:57 PM EDT
+- [Ganja White Night x Apashe - Flute Chillum | Music Video | Animation](https://www.youtube.com/watch?v=QvNTiBCxS_E) — Ganja White Night — Aug 11, 2020, 10:18:29 PM EDT
+- [Sessa - Full Performance (Live on KEXP)](https://www.youtube.com/watch?v=OIlLSQt0ymk) — KEXP — Aug 11, 2020, 10:17:05 PM EDT
+- [Trevor Hall talks Music, Going to India, UFOs &amp; more | A Place For Humans podcast w/ Dakota Wint #31](https://www.youtube.com/watch?v=z_LLKjRFfbM) — dakota of earth — Aug 11, 2020, 10:00:20 PM EDT
+- [Flamingosis &amp; The Kount - Maniacs! (Full Album)](https://www.youtube.com/watch?v=7csKHD6JBcY) — Flamingosis — Aug 11, 2020, 9:51:14 PM EDT
+- [Escapism - A Trip Hop Mix](https://www.youtube.com/watch?v=djDyJ4zaO84) — Confused bi-Product of a Misinformed Culture — Aug 11, 2020, 5:14:23 PM EDT
+- [Carl Gustav Jung - Lapis philosophorum](https://www.youtube.com/watch?v=hdRTFD2e1f8) — Intellectual Deep Web — Aug 10, 2020, 9:57:28 PM EDT
+- [Theremin (An instrument you play by not touching it)](https://www.youtube.com/watch?v=LYSGTkNtazo) — Rob Scallon — Aug 10, 2020, 1:09:50 AM EDT
+- [ONLY 1% CAN HANDLE This DMT ACTIVATION ⚠️ Your SUPERHUMAN MIND AWAKENS](https://www.youtube.com/watch?v=VCeNUH4RY0M) — Lovemotives Meditation Music — Aug 10, 2020, 12:49:05 AM EDT
+- [Sacred G Breath Meditation Station   DMT Releasing Pineal Activation](https://www.youtube.com/watch?v=97gSeQY2IZg) — falconflylow — Aug 10, 2020, 12:42:34 AM EDT
+- [Blessings Run](https://www.youtube.com/watch?v=7_6XfY1dezs) — Indubious - Topic — Aug 8, 2020, 9:24:29 PM EDT
+- [Fabric of Creation](https://www.youtube.com/watch?v=4Apbvk5wAos) — Indubious - Topic — Aug 8, 2020, 11:32:28 AM EDT
+- [Arrow](https://www.youtube.com/watch?v=JJRpbYANgl8) — Indubious - Topic — Aug 8, 2020, 11:26:00 AM EDT
+- [Web Of Life  - Trippy Circles Sacred Geometry Visuals ( Psychedelic Goa Trance )](https://www.youtube.com/watch?v=rtX_aj_GcKU) — voyager360360 — Aug 8, 2020, 1:33:46 AM EDT
+- [INDUBIOUS - SEVENTH GENERATION (OFFICIAL) (HD)](https://www.youtube.com/watch?v=HtfOpQ2PiY8) — Indubious Music — Aug 8, 2020, 12:29:54 AM EDT
+- [Do the Best You Can](https://www.youtube.com/watch?v=0fH-t2aF9hk) — Indubious - Topic — Aug 8, 2020, 12:25:08 AM EDT
+- [Indubious - Fabric of Creation [Official Video 2019]](https://www.youtube.com/watch?v=AniYy1TlL8w) — Reggaeville — Aug 8, 2020, 12:13:52 AM EDT
+- [Mac Miller: NPR Music Tiny Desk Concert](https://www.youtube.com/watch?v=QrR_gm6RqCo) — NPR Music — Aug 8, 2020, 12:07:30 AM EDT
+- [Anderson .Paak &amp; The Free Nationals: NPR Music Tiny Desk Concert](https://www.youtube.com/watch?v=ferZnZ0_rSM) — NPR Music — Aug 7, 2020, 11:49:08 PM EDT
+- [The Undisputed Truth   Like A Rolling Stone](https://www.youtube.com/watch?v=eANzZiOietg) — BLUES AND SOUL  — Aug 7, 2020, 11:44:13 PM EDT
+- [The Undisputed Truth - Method To The Madness](https://www.youtube.com/watch?v=T1ZMUj4Z0uE) — Vinymatic (We Love Vinyl) — Aug 7, 2020, 11:22:08 PM EDT
+- [THE HUMP live w/ Evton B of Indubious](https://www.youtube.com/watch?v=iLmCzHCMiTw) — Indubious Music — Aug 7, 2020, 10:24:55 PM EDT
+- [GuruPrem teaching Spinal Flex](https://www.youtube.com/watch?v=WbVlZ5Nmc_o) — GuruPrem &amp; Simran — Aug 7, 2020, 10:21:15 PM EDT
+- [GuruPrem teaching - Better Breathing](https://www.youtube.com/watch?v=8K1osbpN75s) — GuruPrem &amp; Simran — Aug 7, 2020, 10:10:35 PM EDT
+- [Dragon Painting STEP by STEP Acrylic Painting (ColorByFeliks)](https://www.youtube.com/watch?v=1W1Rraj0XvY) — ColorByFeliks — Aug 6, 2020, 10:56:45 PM EDT
+- [#93 How To Paint A Valley | Oil Painting Tutorial](https://www.youtube.com/watch?v=HW-4Me9_PBk) — Michael James Smith — Aug 6, 2020, 10:42:22 PM EDT
+- [#23 Landscape Oil Painting | Time Lapse](https://www.youtube.com/watch?v=3jq2l2A2SWc) — Michael James Smith — Aug 6, 2020, 10:25:53 PM EDT
+- [Why I Stopped Taking Kratom | “Is it truly safe?” (EDUCATIONAL)](https://www.youtube.com/watch?v=HedEeSDzNSY) — Psyched Substance — Aug 6, 2020, 10:01:16 PM EDT
+- [Painting Tutorial EASY for Kids &amp; Beginners / Acrylic Floral Bouquet](https://www.youtube.com/watch?v=hRQV6K4wsvo) — Katie Jobling Art — Aug 6, 2020, 8:35:00 PM EDT
+- [5 Hours of Relaxing Psychedelic Space Rock - Third Star](https://www.youtube.com/watch?v=aaAmg9weGks) — Underrated Albums — Aug 5, 2020, 11:48:42 PM EDT
+- [Out Of Body Experience Meditation For Deep Astral Travel (INTENSE 3D AUDIO BRAIN MASSAGE) 4 Hz Theta](https://www.youtube.com/watch?v=-7uWKROQP-k) — Theta Realms - Brainwave Sound Journeys — Aug 5, 2020, 11:45:34 PM EDT
+- [Grateful Dead - The Grateful Dead Movie [Complete]](https://www.youtube.com/watch?v=pZPJ_VN3Iis) — Grateful Dead — Aug 5, 2020, 11:40:15 PM EDT
+- [Sessa - Full Performance (Live on KEXP)](https://www.youtube.com/watch?v=OIlLSQt0ymk) — KEXP — Aug 5, 2020, 11:30:38 PM EDT
+- [The Doors - Live at the Bowl - 1968 - HD](https://www.youtube.com/watch?v=LotFY3ID_tY) — Dead8Phish — Aug 5, 2020, 10:51:18 PM EDT
+- [The Koto (13 string Japanese traditional instrument)](https://www.youtube.com/watch?v=3K6KpkFXKdM) — Rob Scallon — Aug 5, 2020, 9:41:49 PM EDT
+- [Summer in the City](https://www.youtube.com/watch?v=U7ofnHmxE-I) — The Lovin&#39; Spoonful - Topic — Aug 5, 2020, 9:17:13 PM EDT
+- [Chris Timmermann - Dynamic Transitions Of Consciousness: An EEG Study Using DMT](https://www.youtube.com/watch?v=XKuGiJhe_84) — Breaking Convention — Aug 5, 2020, 6:10:33 PM EDT
+- [STS9 - Throwback Re:Stream (Red Rocks 2017 - Night 1)](https://www.youtube.com/watch?v=yH6egu6a8Lk) — STS9 — Aug 5, 2020, 5:31:14 PM EDT
+- [Ex Cult Member Sarah Landry (Nithyananda) | A Place For Humans podcast w/ Dakota Wint #30](https://www.youtube.com/watch?v=LaOByicoSZg) — dakota of earth — Aug 5, 2020, 5:21:54 PM EDT
+- [SAT KRIYA w/ GuruPrem Khalsa](https://www.youtube.com/watch?v=47O1fQs6f_0) — GuruPrem &amp; Simran — Aug 4, 2020, 7:16:04 PM EDT
+- [GuruPrem teaching Uddiyana Bandh](https://www.youtube.com/watch?v=1P1Lo-73Y3M) — GuruPrem &amp; Simran — Aug 4, 2020, 7:10:58 PM EDT
+- [Damian &#39;Jr. Gong&#39; Marley: NPR Music Tiny Desk Concert](https://www.youtube.com/watch?v=id28fCyYgIU) — NPR Music — Aug 4, 2020, 2:57:31 AM EDT
+- [Mike Love - &quot;No Justice&quot;](https://www.youtube.com/watch?v=kuLhBzzi7h0) — Mike Love — Aug 4, 2020, 2:47:52 AM EDT
+- [Mike Love &quot;Babylon Control&quot;](https://www.youtube.com/watch?v=qM_r-cJ-JZI) — Mike Love — Aug 4, 2020, 2:34:37 AM EDT
+- [Dan Dubuque covering RAGE AGAINST THE MACHINE&#39;s &quot;Killing In The Name&quot; on Weissenborn Slide Guitar](https://www.youtube.com/watch?v=OVboY26AexU) — Dan Dubuque — Aug 4, 2020, 2:30:52 AM EDT
+- [Thievery Corporation • 25 Years Tribute • Special Coffeeshop Selection [Seven Beats Music]](https://www.youtube.com/watch?v=ZemCiJV0188) — Seven Beats Music — Aug 4, 2020, 2:17:39 AM EDT
+- [Hang Massive - Goa Garden Live Concert](https://www.youtube.com/watch?v=TDqLEl3yp8I) — Hang Massive — Aug 4, 2020, 1:48:19 AM EDT
+- [Best of The Cancel | Trip Hop &amp; Boom Bap &amp; Abstract Hip Hop](https://www.youtube.com/watch?v=7YdVfZ4Kcw0) — S!X - Music — Aug 4, 2020, 1:44:59 AM EDT
+- [Thievery Corporation • Dub Garden • The Cancel - Special Coffeeshop Selection [Seven Beats Music]](https://www.youtube.com/watch?v=z79NXnj6hHg) — Seven Beats Music — Aug 4, 2020, 12:27:22 AM EDT
+- [Kikagaku Moyo - Full Performance (Live on KEXP)](https://www.youtube.com/watch?v=PpnQlnra_to) — KEXP — Aug 3, 2020, 11:32:54 PM EDT
+- [&quot;This Was A KEPT SECRET By Monks!&quot; - Stop Wasting Your Life &amp; Unlock Your POTENTIAL | Sadhguru](https://www.youtube.com/watch?v=Gw1I7fqmxmA) — Tom Bilyeu — Aug 3, 2020, 11:32:10 PM EDT
+- [GuruPrem teaching - Better Breathing](https://www.youtube.com/watch?v=8K1osbpN75s) — GuruPrem &amp; Simran — Aug 3, 2020, 11:23:40 PM EDT
+- [SAT KRIYA w/ GuruPrem Khalsa](https://www.youtube.com/watch?v=47O1fQs6f_0) — GuruPrem &amp; Simran — Aug 3, 2020, 11:08:22 PM EDT
+- [Revealing the Mind: The Promise of Psychedelics | World Science Festival](https://www.youtube.com/watch?v=Fi66wFfOC-4) — World Science Festival — Aug 2, 2020, 6:30:29 PM EDT
+- [David Luke - Hyperspatial journeys with your goods&#39;elf: Experimental DMT field research](https://www.youtube.com/watch?v=7NLhUuoEHmo) — Breaking Convention — Aug 2, 2020, 5:55:48 PM EDT
+- [Kilindi Iyi - Psilocybin: A Tool of Exploration?](https://www.youtube.com/watch?v=32DNA6MYpio) — Breaking Convention — Aug 2, 2020, 5:55:31 PM EDT
+- [Spiral Dynamics - Stage Red](https://www.youtube.com/watch?v=XEHYK3TM2jc) — Actualized.org — Aug 2, 2020, 2:23:06 PM EDT

@@ -1,0 +1,126 @@
+---
+title: "YouTube Activity History — 2017-04"
+source: youtube
+created: 2017-04-01
+pillar: 08_LEARNING_PATH
+stage: RAW
+tags: [takeout, youtube, activity-history]
+---
+
+# YouTube Activity History — 2017-04
+> 112 entries
+
+## Entries
+
+- Searched for gorillaz — Apr 30, 2017, 7:25:24 PM EDT
+- Searched for mattafix — Apr 30, 2017, 7:24:57 PM EDT
+- Searched for lettuce — Apr 30, 2017, 7:19:08 PM EDT
+- Searched for the werks — Apr 30, 2017, 3:51:20 PM EDT
+- Searched for groove fetish — Apr 30, 2017, 3:46:05 PM EDT
+- Searched for dopapod — Apr 30, 2017, 3:44:22 PM EDT
+- Searched for the werks — Apr 29, 2017, 2:40:09 PM EDT
+- Searched for the werks blast off — Apr 29, 2017, 2:40:00 PM EDT
+- Searched for big something — Apr 29, 2017, 2:16:26 PM EDT
+- Searched for spiritual rez — Apr 29, 2017, 2:11:19 PM EDT
+- Searched for charlie brown superstar — Apr 29, 2017, 2:04:10 PM EDT
+- Searched for beauty mountain groove project — Apr 29, 2017, 1:59:26 PM EDT
+- Searched for karl denson&#39;s tiny universe — Apr 29, 2017, 1:53:34 PM EDT
+- Searched for the revivalists — Apr 29, 2017, 1:45:49 PM EDT
+- Searched for dopapod — Apr 29, 2017, 1:15:00 PM EDT
+- Searched for new mastersounds funk your face off — Apr 29, 2017, 11:49:13 AM EDT
+- Searched for new mastersounds funk — Apr 29, 2017, 11:48:56 AM EDT
+- Searched for new mastersounds — Apr 29, 2017, 8:35:05 AM EDT
+- Searched for new mastersounds — Apr 28, 2017, 8:29:58 PM EDT
+- Searched for dopapod — Apr 28, 2017, 7:01:09 PM EDT
+- Searched for groove fetish — Apr 28, 2017, 5:59:02 PM EDT
+- Searched for ram dass — Apr 28, 2017, 12:19:28 AM EDT
+- Searched for gorillaz — Apr 27, 2017, 6:22:33 PM EDT
+- Searched for dopapod — Apr 27, 2017, 6:15:38 PM EDT
+- Searched for srt climbing system — Apr 27, 2017, 11:46:56 AM EDT
+- Searched for om mani padme hum — Apr 26, 2017, 9:08:00 PM EDT
+- Searched for meditation music — Apr 26, 2017, 9:07:44 PM EDT
+- Searched for meditation music chakra balancing — Apr 26, 2017, 9:06:42 PM EDT
+- Searched for patwa language — Apr 25, 2017, 7:23:06 PM EDT
+- Searched for cucumber song — Apr 25, 2017, 6:36:59 PM EDT
+- Searched for reggie watts — Apr 25, 2017, 6:31:01 PM EDT
+- Searched for how to play guitar riffs — Apr 25, 2017, 12:41:53 PM EDT
+- Searched for understanding guitar fretboard — Apr 25, 2017, 12:31:27 PM EDT
+- Searched for pink floyd guitar lesson — Apr 25, 2017, 12:07:32 PM EDT
+- Searched for backing track in g — Apr 25, 2017, 11:50:28 AM EDT
+- Searched for gorillaz — Apr 25, 2017, 11:12:11 AM EDT
+- Searched for reggie watts — Apr 25, 2017, 10:13:27 AM EDT
+- Searched for best records on vinyl — Apr 24, 2017, 5:55:17 PM EDT
+- Searched for best records — Apr 24, 2017, 5:55:07 PM EDT
+- Searched for awesome dancing — Apr 24, 2017, 3:45:59 PM EDT
+- Searched for john denver poems prayers and promises — Apr 24, 2017, 2:39:12 PM EDT
+- Searched for the monkees — Apr 24, 2017, 2:29:44 PM EDT
+- Searched for pisces aquarius capricorn &amp; jones ltd — Apr 24, 2017, 2:28:00 PM EDT
+- Searched for mystic moods orchestra california — Apr 24, 2017, 1:47:06 PM EDT
+- Searched for dr funkenstein — Apr 24, 2017, 1:12:51 PM EDT
+- Searched for reggae bass — Apr 24, 2017, 1:12:27 PM EDT
+- Searched for ben harper — Apr 24, 2017, 12:54:19 PM EDT
+- Searched for dr funkenstein — Apr 24, 2017, 9:43:00 AM EDT
+- Searched for hang massive — Apr 23, 2017, 9:40:37 PM EDT
+- Searched for glass blowing — Apr 23, 2017, 6:08:06 PM EDT
+- Searched for weed — Apr 23, 2017, 6:07:40 PM EDT
+- Searched for hallucination — Apr 23, 2017, 5:11:50 PM EDT
+- Searched for jre — Apr 23, 2017, 3:40:42 PM EDT
+- Searched for how to make hemp necklaces — Apr 23, 2017, 3:28:37 PM EDT
+- Searched for how to make hemp necklaces — Apr 23, 2017, 2:51:35 PM EDT
+- Searched for downtown brown — Apr 19, 2017, 8:13:23 PM EDT
+- Searched for allman brothers — Apr 19, 2017, 7:59:13 PM EDT
+- Searched for alman brothers — Apr 19, 2017, 7:57:27 PM EDT
+- Searched for powerful guitar solo — Apr 19, 2017, 7:56:26 PM EDT
+- Searched for Peter frampton — Apr 19, 2017, 7:27:34 PM EDT
+- Searched for matisyahu — Apr 16, 2017, 1:04:32 PM EDT
+- Searched for zeke finn — Apr 16, 2017, 12:54:25 PM EDT
+- Searched for carbon life forms — Apr 16, 2017, 12:39:21 PM EDT
+- Searched for magic city hippies — Apr 15, 2017, 9:55:06 PM EDT
+- Searched for matisyahu — Apr 15, 2017, 8:27:35 PM EDT
+- Searched for zeke finn — Apr 15, 2017, 8:22:31 PM EDT
+- Searched for rebeloution — Apr 15, 2017, 8:18:14 PM EDT
+- Searched for bootsy collins — Apr 15, 2017, 8:13:55 PM EDT
+- Searched for bootsy collins i&#39;d rather be with you — Apr 15, 2017, 8:12:44 PM EDT
+- Searched for Mandelbrot sleep — Apr 13, 2017, 8:50:57 PM EDT
+- Searched for sleep music — Apr 13, 2017, 8:30:38 PM EDT
+- Searched for micro frog srt system — Apr 13, 2017, 3:35:19 PM EDT
+- Searched for petzl foot ascender — Apr 13, 2017, 9:42:03 AM EDT
+- Searched for foot ascender — Apr 13, 2017, 8:02:44 AM EDT
+- Searched for the tree in the wood song with lyrics — Apr 12, 2017, 8:37:47 PM EDT
+- Searched for topping a tree arborpod — Apr 12, 2017, 7:40:16 AM EDT
+- Searched for topping a tree arnorpod — Apr 12, 2017, 7:40:13 AM EDT
+- Searched for topping a tree — Apr 12, 2017, 7:40:05 AM EDT
+- Searched for using spikes to climb a tree — Apr 10, 2017, 6:33:38 AM EDT
+- Searched for reggie watts — Apr 7, 2017, 7:50:53 PM EDT
+- Searched for reggie watts conan — Apr 7, 2017, 7:43:49 PM EDT
+- Searched for mark almond band — Apr 6, 2017, 10:49:06 PM EDT
+- Searched for ziggy stardust — Apr 6, 2017, 10:46:33 PM EDT
+- Searched for best of bread — Apr 6, 2017, 10:44:31 PM EDT
+- Searched for joni mitchell — Apr 6, 2017, 10:42:10 PM EDT
+- Searched for joni mitchell you&#39;re so vain — Apr 6, 2017, 10:41:00 PM EDT
+- Searched for joni mitchell — Apr 6, 2017, 8:10:40 PM EDT
+- Searched for bobbie gentry ode to billy joe — Apr 6, 2017, 8:03:14 PM EDT
+- Searched for mac davis friend lover woman wife — Apr 6, 2017, 6:25:06 PM EDT
+- Searched for mac davis baby don&#39;t get hooked on me — Apr 6, 2017, 6:24:01 PM EDT
+- Searched for danny o&#39;keefe — Apr 6, 2017, 6:18:25 PM EDT
+- Searched for bobbie gentry lazy willie — Apr 6, 2017, 6:17:42 PM EDT
+- Searched for bobbie gentry ode to billy joe — Apr 6, 2017, 6:17:04 PM EDT
+- Searched for three dog night coming down your way full album — Apr 6, 2017, 6:16:21 PM EDT
+- Searched for three dog night till the world ends — Apr 6, 2017, 6:15:23 PM EDT
+- Searched for three dog night — Apr 6, 2017, 6:14:56 PM EDT
+- Searched for air supply lost in love — Apr 6, 2017, 6:13:29 PM EDT
+- Searched for le roux last safe place — Apr 6, 2017, 6:11:31 PM EDT
+- Searched for the best of bread — Apr 6, 2017, 6:10:49 PM EDT
+- Searched for joni mitchell — Apr 6, 2017, 6:09:27 PM EDT
+- Searched for ritchie blackmore&#39;s rainbow — Apr 6, 2017, 6:07:23 PM EDT
+- Searched for b j Thomas little — Apr 6, 2017, 6:06:23 PM EDT
+- Searched for hi Thomas little — Apr 6, 2017, 6:06:10 PM EDT
+- Searched for the partridge family season 1 episode 1 — Apr 6, 2017, 5:38:50 PM EDT
+- Searched for noel paul stookey winner — Apr 6, 2017, 5:33:58 PM EDT
+- Searched for noel paul stookey — Apr 6, 2017, 5:33:24 PM EDT
+- Searched for kenny rogers — Apr 6, 2017, 5:31:55 PM EDT
+- Searched for tree saver strap — Apr 6, 2017, 7:33:16 AM EDT
+- Searched for rope saver — Apr 5, 2017, 12:23:04 PM EDT
+- Searched for throw bag techniques — Apr 5, 2017, 11:43:03 AM EDT
+- Searched for throw bag — Apr 5, 2017, 11:39:41 AM EDT
+- Searched for guitar solo lesson — Apr 2, 2017, 11:04:04 AM EDT
