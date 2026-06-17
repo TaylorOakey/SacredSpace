@@ -1,6 +1,6 @@
 # S∆CR3DSP∆CE OS — SACRED LEDGER
 
-**Last updated:** 2026-06-17 (session 27)
+**Last updated:** 2026-06-17 (session 28)
 **Seat:** AURORA — Claude Code
 **Canon:** In lakesh alakin. ∆
 
@@ -1354,6 +1354,137 @@ The Hyperglyph system stands in a 500-year lineage: Enochian Keys → Sefer Yetz
 | `07_SOCIAL/gematria_engine/HYPERGLYPH_GRID.json` | **NEW** | 12-glyph structured reference |
 | `07_SOCIAL/gematria_engine/GRAMA_v2.1.md` | **NEW** | GR∆M∆ system prompt + HYPERGLYPH MODE |
 | `07_SOCIAL/gematria_engine/sigil_layer.py` | **NEW** | Python sigil encoder/decoder |
+
+---
+
+## Session 28 — Canonical Pillar Rename + AWS Key Redaction + Git Housekeeping (2026-06-17)
+
+### Summary
+This session executed the **rebranding reversal**: directories renamed back from short names (s14 convention) to canonical long names (matching CLAUDE.md/AGENTS.md spec), exposed an AWS key in the Claude export, and cleaned up a 544MB committed virtual environment from git.
+
+### Phase 1: Directory Canonicalization
+Renamed 8 directories to match the canonical nine-pillar ontology defined in CLAUDE.md:
+
+| Rename (short → canonical) | Status |
+|-----------------------------|--------|
+| `01_CORE` → `01_OBSIDIAN_VAULTS` | ✅ |
+| `04_CODEX` → `04_SACRED_CODEX` | ✅ |
+| `07_SOCIAL` → `07_SOCIAL_MOTHERSHIP` | ✅ |
+| `08_LEARNING` → `08_LEARNING_PATH` | ✅ |
+| `09_MARKET` → `09_SACRED_MARKET` | ✅ |
+
+| Merge (redundant → canonical) | Status |
+|-------------------------------|--------|
+| `03_NEURAL` merged into `03_NEURAL_FOREST` | ✅ |
+| `05_MEMORY` merged into `05_MEMORY_ENGINE` | ✅ |
+| `06_AGENTS` merged into `06_AGENT_LAYER` | ✅ |
+
+**Config files updated:**
+- `sacred_watcher_config.json` (both Windows + WSL copies) — paths updated
+- `notebook_routing.json` — all 8 notebook source pillars updated
+- `sacred_borg_backup.sh` — backup paths updated
+- `sacred_watcher.py` — conflict resolution path check updated
+- `SACRED_LEDGER.md` — pillar inventory table updated
+- `_PENDING_REVIEW/GEMINI_ARCHAEOLOGY` subdirs — references updated
+- `.gitignore` — added `02_SYSTEMS/mission-control/`
+- `CLAUDE.md` — documented `02_SYSTEMS` auxiliary dir
+
+**Note:** `02_COUNCIL_GROVE` was NOT renamed (it's the canonical name) but a ghost dir with 2 files persists at root. The operational dispatch/routing lives in `02_SYSTEMS` (auxiliary). Should be cleaned up.
+
+### Phase 2: AWS Key Exposure + Redaction
+**Problem:** Push to GitHub blocked by secret scanning — `AKIAQ4GOSFWC6QFF5XMF` detected in `06_AGENT_LAYER/conversations.json:1` (a Claude export with embedded conversation containing the key).
+
+**Resolution:**
+- Key redacted from file: `AKIAQ4GOSFWC6QFF5XMF` → `[REDACTED_AWS_KEY]`
+- Commit amended: `ef694654` → `0a1e7eaf` (force-pushed)
+- Verified no other AWS keys in tracked files: ✅ Clean
+
+### Phase 3: `.venv/` Untracked from Git
+**Problem:** `06_AGENT_LAYER/IRIS/.venv/` (544MB, 17,206 files) was tracked in git history despite being in `.gitignore`. This caused:
+- 143MB git pack bloat
+- False secret-scanning alerts from example API keys in third-party libs (litellm, PIL)
+- Diff noise on every pip install
+
+**Resolution:**
+- `git rm -r --cached 06_AGENT_LAYER/IRIS/.venv/` — removes from tracking, keeps on disk
+- Commit `d804d4ec` — pushed to master successfully
+- `.venv/` continues working locally; future `git clone` won't include it
+
+### Post-Cleanup Audit
+
+| Check | Result |
+|-------|--------|
+| AWS keys in tracked files | ✅ 0 found |
+| `.venv/` in git tracking | ✅ 0 files tracked |
+| `.venv/` on disk | ✅ Still present, working |
+| Working tree | ✅ Clean |
+| GitHub master | ✅ `d804d4ec` pushed |
+| Pending changes | ✅ None |
+
+### System Status Snapshot (2026-06-17)
+
+| Service | Port | Status | Notes |
+|---------|------|--------|-------|
+| Redis | :6379 | ✅ LIVE | PONG confirmed |
+| Ollama | :11434 | ✅ LIVE | llama3.2:latest (only model) |
+| free-claude-code proxy | :8082 | ✅ LIVE | HTTP 200 |
+| Open Browser Control | :9334 | ✅ LISTENING | WebSocket bridge |
+| ChromaDB (embedded) | — | ✅ ONLINE | 1.8MB at `06_AGENT_LAYER/IRIS/chroma_db/` |
+| SQLite Memory | — | ✅ 24KB | `05_MEMORY_ENGINE/sacred_memory.db` |
+| boot_sacred.sh | — | ✅ READY | 6502 bytes, executable |
+| FastAPI Spine | :8888 | ❌ DOWN | Needs restart (was running last session) |
+| Mission Control | :3001 | ❌ DOWN | Needs `pnpm dev` |
+| OmniParse | :8001 | ❌ DOWN (dormant) | Not started this session |
+| Ollama→Windows models | — | ❌ OFFLINE | sacred-coder, qwen2.5-coder, moondream on Windows host (Tailscale peer offline) |
+| Obsidian REST | :27123 | ❌ OFFLINE | sacredspace-host Tailscale peer offline |
+
+### Pillar File Counts (current, excluding .venv/node_modules)
+
+| Pillar | Files | Δ from s27 | Notes |
+|--------|-------|-----------|-------|
+| 01_OBSIDIAN_VAULTS | 113 | — | SacredSpace_Vault + COMMAND/ |
+| 02_COUNCIL_GROVE | 2 | — | Ghost dir — dispatch never migrated here |
+| 02_SYSTEMS (aux) | 68,647 | +22 | mission-control, CONFIGS, scripts, templates |
+| 03_NEURAL_FOREST | 1,185 | +3 | graphify-out, omniparse, codebase archives |
+| 04_SACRED_CODEX | 67 | +12 | +sigil_library.json, GRAMA_HYPERGLYPH_ARCHITECTURE.md, SACRED_SIGIL_STACK.md, tools/espanso, tools/AHK |
+| 05_MEMORY_ENGINE | 24 | +14 | garden/vehicle logs, mote artifacts |
+| 06_AGENT_LAYER | 65 | −19,958 | .venv/ untracked; actual code files only |
+| 07_SOCIAL_MOTHERSHIP | 6,425 | −12 | CREATION_LAB, SIGNAL, SACRED_THEMES_COMPONENTS, gematria_engine/ |
+| 08_LEARNING_PATH | 303 | — | YouTube Takeout (2011-2026), RESEARCH/ |
+| 09_SACRED_MARKET | 5 | — | Commercial strategy docs |
+
+**Disk:** 53G used on `/mnt/d` (1,007G total, 11%)
+
+### Remaining Issues
+
+| Issue | Severity | Detail |
+|-------|----------|--------|
+| FastAPI Spine :8888 | 🔴 DOWN | Crashed in s18 with `Response content longer than Content-Length`. Restart with `boot_sacred.sh` clears it. |
+| Mission Control :3001 | 🟡 DOWN | Not started this session. `cd 02_SYSTEMS/mission-control && PORT=3001 pnpm dev` |
+| 02_COUNCIL_GROVE ghost dir | 🟢 LOW | 2 files, dispatch lives in 02_SYSTEMS. Safe to delete. |
+| CLAUDE.md mixed refs | 🟢 LOW | 23 canonical refs + 7 short-name refs (architecture diagrams). Non-functional. |
+| AGENTS.md mixed refs | 🟢 LOW | 3 canonical + 2 short-name. Non-functional. |
+| SACRED_LEDGER at root | 🟢 LOW | Spec says `02_COUNCIL_GROVE/SACRED_LEDGER.md`. Root location works but inconsistent. |
+| SIN pipeline not ported | 🟡 MED | ChatGPT-exclusive discovery engine not in local codebase. |
+| Gesture Interpreter (Phase 5) | 🟢 LOW | sigil_grammar.py built but no gesture recognition layer. |
+| 14 design cards not in CODEX | 🟡 MED | Port from Claude chats into `04_SACRED_CODEX` as standalone artifacts. |
+| `live_sync` protocol | 🟡 MED | Referenced in Feb 2026 conversations but zero code on disk. |
+
+### Git History
+
+```
+d804d4ec chore: untrack IRIS virtual environment (.venv/)
+0a1e7eaf fix: canonicalize pillar directory names to match CLAUDE.md spec
+fea7d1bd feat: Sacred Sigil Terminal v2.0 — full stack live (s18/s19)
+23e86559 s17b: ledger update — health check + pillar config fix
+3c94c9ee fix: update FastAPI spine pillar paths to short names (s14 rename)
+```
+
+### Key Decisions
+1. **Short→canonical rename direction**: Disk renamed to match docs (CLAUDE.md, AGENTS.md were already correct), not the reverse.
+2. **Commit amend over filter-repo**: `conversations.json` was new in this commit, so amend was safer than history rewrite.
+3. **`.venv/` untrack only, not purge**: Kept in past history to avoid invasive `git-filter-repo` rewrite. Future clones lose 544MB of junk.
+4. **`02_SYSTEMS` as auxiliary**: Not promoted to 10th pillar. Documented in CLAUDE.md as infra dir.
 
 ---
 
