@@ -8,6 +8,7 @@ episode: 11
 status: GENERATED
 tags: [npc, wheel-of-fortune, the-convergence, season-1]
 created: 2026-05-04
+pillar: 04_SACRED_CODEX
 ---
 
 # Khepri
@@ -50,3 +51,11 @@ Khepri will name the pattern whether or not Jenga is ready. The wheel has alread
 
 **Cipher verse:**
 > *KH⊕PR◇ maps the spiral you called a straight line — the pattern was always the teaching, and it has been patient.*
+
+## See Also
+
+- [[EPISODE_05]]
+- [[ARCHETYPE_11_JUSTICE]]
+- [[ARCHETYPE_03_THE_EMPRESS]]
+- [[ARCHETYPE_01_THE_MAGICIAN]]
+- [[EPISODE_12]]

@@ -8,6 +8,7 @@ episode: 9
 status: GENERATED
 tags: [npc, strength, council-grove, season-1]
 created: 2026-05-04
+pillar: 04_SACRED_CODEX
 ---
 
 # Lune
@@ -50,3 +51,11 @@ Lune cannot face the truth for Jenga. If Jenga leaves, Lune watches them go. The
 
 **Cipher verse:**
 > *L⟡N⊕ does not pull you toward the fire — she stays beside you while it burns, and that is the whole of the teaching.*
+
+## See Also
+
+- [[EPISODE_05]]
+- [[ARCHETYPE_11_JUSTICE]]
+- [[ARCHETYPE_03_THE_EMPRESS]]
+- [[ARCHETYPE_01_THE_MAGICIAN]]
+- [[EPISODE_12]]

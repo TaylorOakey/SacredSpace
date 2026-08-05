@@ -1,7 +1,7 @@
 ---
 title: Strength — Archetype VIII
 pillar: 04_SACRED_CODEX
-status: canon
+status: CANON
 agent: IRIS
 tags: [game-system, archetype, strength, lune, courage, season-1-episode-9]
 created: 2026-05-03
@@ -43,3 +43,10 @@ She has faced everything ASHER has ever asked her to face. She carries no scars 
 Jenga encounters something in the SacredSpace that frightens her — not a monster, but a truth. Lune is present, not to protect Jenga from it but to model how to remain in contact with it.
 
 The episode's test is simple: can Jenga stay? Not fight, not fix. Stay.
+
+## See Also
+
+- [[EPISODE_12]]
+- [[SCHOOL_COURAGE]]
+- [[EPISODE_05]]
+- [[SCHOOL_MYSTERY]]

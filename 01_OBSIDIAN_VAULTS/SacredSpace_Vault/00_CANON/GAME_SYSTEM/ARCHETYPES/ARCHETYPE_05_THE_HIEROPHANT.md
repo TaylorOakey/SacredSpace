@@ -1,7 +1,7 @@
 ---
 title: The Hierophant — Archetype V
 pillar: 04_SACRED_CODEX
-status: canon
+status: CANON
 agent: IRIS
 tags: [game-system, archetype, the-hierophant, oran, initiation, mystery, season-1-episode-6]
 created: 2026-05-03
@@ -41,3 +41,10 @@ He is not rigid. He is the first to say: *"This rite worked for everyone until i
 Jenga must learn a rite from Oran — but partway through, she realizes the rite doesn't fit her. The test: does she complete it anyway (respect for tradition), adapt it (creative courage), or reject it entirely (risk of arrogance)?
 
 There is no wrong answer, but each choice unlocks a different relationship with the remaining archetypes.
+
+## See Also
+
+- [[EPISODE_12]]
+- [[SCHOOL_COURAGE]]
+- [[EPISODE_05]]
+- [[SCHOOL_MYSTERY]]

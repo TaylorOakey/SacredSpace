@@ -1,7 +1,7 @@
 ---
 title: Sacred Node 4 — The Void Gate
 pillar: 04_SACRED_CODEX
-status: canon
+status: CANON
 agent: IRIS
 tags: [game-system, sacred-node, void-gate, lyra, void, transformation]
 created: 2026-05-03
@@ -46,3 +46,9 @@ She guards the Gate not to prevent entry but to ensure seekers understand what t
 The Void is not dark. Seekers who expect darkness are surprised. It is simply — there. Without the structures that make things distinguishable from each other. The self persists, but only as awareness, without the usual anchors.
 
 Lyra describes it as *"the most honest place I have ever been."*
+
+## See Also
+
+- [[EPISODE_12]]
+- [[EPISODE_06]]
+- [[EPISODE_05]]

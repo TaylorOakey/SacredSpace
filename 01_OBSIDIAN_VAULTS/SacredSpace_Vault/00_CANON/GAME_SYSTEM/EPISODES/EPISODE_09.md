@@ -6,6 +6,7 @@ npc: Lune
 node: The Council Grove
 spell_unlocked: FACE
 status: STUB
+pillar: 04_SACRED_CODEX
 tags: [episode, game-system, season-1, strength, lune]
 created: 2026-05-04
 ---
@@ -21,3 +22,10 @@ Jenga encounters a truth that frightens her. Lune is present — not to protect 
 **Spell unlocked:** FACE
 
 **Through-line:** The stayed-with truth becomes what Mira names in Episode 12.
+
+## See Also
+
+- [[ARCHETYPE_11_JUSTICE]]
+- [[NODE_02_THE_FOOLS_BRIDGE]]
+- [[NODE_06_THE_SIGIL_FORGE]]
+- [[ARCHETYPE_01_THE_MAGICIAN]]

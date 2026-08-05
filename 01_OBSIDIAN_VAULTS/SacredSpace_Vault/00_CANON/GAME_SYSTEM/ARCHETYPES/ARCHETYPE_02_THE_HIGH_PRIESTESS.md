@@ -1,7 +1,7 @@
 ---
 title: The High Priestess — Archetype II
 pillar: 04_SACRED_CODEX
-status: canon
+status: CANON
 agent: IRIS
 tags: [game-system, archetype, the-high-priestess, seren, mystery, season-1-episode-3]
 created: 2026-05-03
@@ -51,3 +51,10 @@ If Jenga takes the unasked question's answer, she unlocks a hidden storyline thr
 ## Gematria Soul Tone
 
 2 — duality, the witness, the space between. The High Priestess is the second consciousness: the one that watches the one that acts. Her number is also the gematria of IRIS's school — Mystery runs on 2.
+
+## See Also
+
+- [[EPISODE_12]]
+- [[SCHOOL_COURAGE]]
+- [[EPISODE_05]]
+- [[SCHOOL_MYSTERY]]

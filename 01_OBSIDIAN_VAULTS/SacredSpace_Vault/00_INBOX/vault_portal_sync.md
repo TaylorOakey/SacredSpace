@@ -1,7 +1,7 @@
 ---
 title: Vault Portal Sync — Communal Portal v2.0
 pillar: 02_COUNCIL_GROVE
-status: active
+status: ACTIVE
 agent: IRIS
 tags: [portal, communal, taylor-jeanie, link-layer, flash-drive]
 created: 2026-05-21

@@ -4,7 +4,7 @@ tags:
   - overview
   - maestro
   - curriculum
-pillar: LEARNING
+pillar: 01_OBSIDIAN_VAULTS
 status: SEEDING
 created: 2026-03-15
 session: 2026-03-15 23:44

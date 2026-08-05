@@ -6,6 +6,7 @@ npc: Oran
 node: The Council Grove
 spell_unlocked: FORTIFY
 status: STUB
+pillar: 04_SACRED_CODEX
 tags: [episode, game-system, season-1, the-hierophant, oran]
 created: 2026-05-04
 ---
@@ -21,3 +22,10 @@ Oran begins a rite. Midway through, Jenga realizes it doesn't fit her. Complete 
 **Spell unlocked:** FORTIFY
 
 **Through-line:** Oran remembers what Jenga chose. In Episode 12, he tells Mira.
+
+## See Also
+
+- [[ARCHETYPE_11_JUSTICE]]
+- [[NODE_02_THE_FOOLS_BRIDGE]]
+- [[NODE_06_THE_SIGIL_FORGE]]
+- [[ARCHETYPE_01_THE_MAGICIAN]]

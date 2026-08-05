@@ -1,7 +1,7 @@
 ---
 title: The Fool — Archetype 0
 pillar: 04_SACRED_CODEX
-status: canon
+status: CANON
 agent: IRIS
 tags: [game-system, archetype, the-fool, meridian, initiation, season-1-episode-1]
 created: 2026-05-03
@@ -53,3 +53,10 @@ There is no right answer. Both choices unlock the bridge. But what Jenga chooses
 ## Gematria Soul Tone
 
 22 reduces to 4 (2+2): the Emperor's number — structure, foundation, the world as it is. This is the paradox of The Fool: beneath the leaping figure is a bedrock impulse toward making things real. She doesn't jump without gravity. She jumps *with* it.
+
+## See Also
+
+- [[EPISODE_12]]
+- [[SCHOOL_COURAGE]]
+- [[EPISODE_05]]
+- [[SCHOOL_MYSTERY]]

@@ -1,0 +1,3727 @@
+{
+  "timestamp": "2026-08-04T00:00:28.292182",
+  "total_files": 103,
+  "files_by_pillar": {
+    "02_COUNCIL_GROVE": [
+      {
+        "file": "00_INBOX/vault_portal_sync.md",
+        "pillar": "02_COUNCIL_GROVE",
+        "status": "ACTIVE",
+        "agent": "IRIS",
+        "tags": [
+          "portal",
+          "communal",
+          "taylor-jeanie",
+          "link-layer",
+          "flash-drive"
+        ],
+        "wikilinks": [
+          "02_COUNCIL_GROVE/CLAUDE.md",
+          "Google Drive",
+          "Obsidian",
+          "Google Docs",
+          "02_COUNCIL_GROVE/CLAUDE.md"
+        ],
+        "wikilink_count": 5
+      }
+    ],
+    "01_OBSIDIAN_VAULTS": [
+      {
+        "file": "ARCHIVE/CODEXIUM_ERA/Codexium_Graph.md",
+        "pillar": "01_OBSIDIAN_VAULTS",
+        "status": "EXPERIMENTAL",
+        "agent": null,
+        "tags": [],
+        "wikilinks": [],
+        "wikilink_count": 0
+      },
+      {
+        "file": "ARCHIVE/CODEXIUM_ERA/Codexium_Kernel.md",
+        "pillar": "01_OBSIDIAN_VAULTS",
+        "status": "EXPERIMENTAL",
+        "agent": null,
+        "tags": [],
+        "wikilinks": [],
+        "wikilink_count": 0
+      },
+      {
+        "file": "ARCHIVE/CODEXIUM_ERA/entropy_report.md",
+        "pillar": "01_OBSIDIAN_VAULTS",
+        "status": "EXPERIMENTAL",
+        "agent": null,
+        "tags": [],
+        "wikilinks": [],
+        "wikilink_count": 0
+      },
+      {
+        "file": "ARCHIVE/CODEXIUM_ERA/Codexium_Architecture.md",
+        "pillar": "01_OBSIDIAN_VAULTS",
+        "status": "EXPERIMENTAL",
+        "agent": null,
+        "tags": [],
+        "wikilinks": [
+          "1_SYSTEMS/Codexium_Integration|Codexium \u00e2\u2020\u201d SacredOS Integration",
+          "6_COUNCIL/ICARIS_Quartet|ICARIS Quartet",
+          "8_ARCHIVE/Memory_Pipeline|Memory Pipeline",
+          "_CODEXIUM/Codexium_Kernel|Codexium Kernel"
+        ],
+        "wikilink_count": 4
+      },
+      {
+        "file": "ARCHIVE/CODEXIUM_ERA/8_ARCHIVE/Chat_Archivist.md",
+        "pillar": "01_OBSIDIAN_VAULTS",
+        "status": "CANON",
+        "agent": null,
+        "tags": [],
+        "wikilinks": [],
+        "wikilink_count": 0
+      },
+      {
+        "file": "ARCHIVE/CODEXIUM_ERA/8_ARCHIVE/Canon_Gate_Protocol.md",
+        "pillar": "01_OBSIDIAN_VAULTS",
+        "status": "CANON",
+        "agent": null,
+        "tags": [],
+        "wikilinks": [],
+        "wikilink_count": 0
+      },
+      {
+        "file": "ARCHIVE/CODEXIUM_ERA/8_ARCHIVE/Memory_Pipeline.md",
+        "pillar": "01_OBSIDIAN_VAULTS",
+        "status": "CANON",
+        "agent": null,
+        "tags": [],
+        "wikilinks": [
+          "8_ARCHIVE/Canon_Gate_Protocol|Canon Gate Protocol",
+          "1_SYSTEMS/Memory_Pipeline_Technical|Memory Pipeline Technical",
+          "_CODEXIUM/Codexium_Architecture|Codexium v\u00e2\u02c6\u017e"
+        ],
+        "wikilink_count": 3
+      },
+      {
+        "file": "ARCHIVE/CODEXIUM_ERA/8_ARCHIVE/ARCHIVE_Overview.md",
+        "pillar": "01_OBSIDIAN_VAULTS",
+        "status": "CANON",
+        "agent": null,
+        "tags": [],
+        "wikilinks": [
+          "8_ARCHIVE/Canon_Gate_Protocol|Canon Gate Protocol",
+          "8_ARCHIVE/Memory_Pipeline|Memory Pipeline",
+          "8_ARCHIVE/Chat_Archivist|Chat Archivist",
+          "8_ARCHIVE/Sacred_Web_Scraper|Sacred Web Scraper",
+          "_INDEX/Drive_Export_Registry|Drive Export Registry"
+        ],
+        "wikilink_count": 5
+      },
+      {
+        "file": "ARCHIVE/CODEXIUM_ERA/3_ECONOMY/First_Flame_Launch.md",
+        "pillar": "01_OBSIDIAN_VAULTS",
+        "status": "ACTIVE",
+        "agent": null,
+        "tags": [],
+        "wikilinks": [],
+        "wikilink_count": 0
+      },
+      {
+        "file": "ARCHIVE/CODEXIUM_ERA/3_ECONOMY/ECONOMY_Overview.md",
+        "pillar": "01_OBSIDIAN_VAULTS",
+        "status": "CANON",
+        "agent": null,
+        "tags": [],
+        "wikilinks": [
+          "3_ECONOMY/A_Sacred_Space_POD|A SACRED SPACE POD Manual",
+          "3_ECONOMY/First_Flame_Launch|First Flame Launch Sequence",
+          "3_ECONOMY/Financial_Dashboard|Financial Dashboard"
+        ],
+        "wikilink_count": 3
+      },
+      {
+        "file": "ARCHIVE/CODEXIUM_ERA/3_ECONOMY/Financial_Dashboard.md",
+        "pillar": "01_OBSIDIAN_VAULTS",
+        "status": "CANON",
+        "agent": null,
+        "tags": [],
+        "wikilinks": [],
+        "wikilink_count": 0
+      },
+      {
+        "file": "ARCHIVE/CODEXIUM_ERA/2_LEARNING/LEARNING_Overview.md",
+        "pillar": "01_OBSIDIAN_VAULTS",
+        "status": "SEEDING",
+        "agent": null,
+        "tags": [],
+        "wikilinks": [
+          "0_CORE/Activation_Sequences|Activation Sequences",
+          "6_COUNCIL/ICARIS_Quartet|ICARIS Quartet"
+        ],
+        "wikilink_count": 2
+      },
+      {
+        "file": "ARCHIVE/CODEXIUM_ERA/2_LEARNING/Maestro_Curriculum_Map.md",
+        "pillar": "01_OBSIDIAN_VAULTS",
+        "status": "SEEDING",
+        "agent": null,
+        "tags": [],
+        "wikilinks": [],
+        "wikilink_count": 0
+      },
+      {
+        "file": "ARCHIVE/CODEXIUM_ERA/_INDEX/Drive_Export_Registry.md",
+        "pillar": "01_OBSIDIAN_VAULTS",
+        "status": "CANON",
+        "agent": null,
+        "tags": [],
+        "wikilinks": [],
+        "wikilink_count": 0
+      },
+      {
+        "file": "ARCHIVE/CODEXIUM_ERA/5_CREATION/CREATION_Overview.md",
+        "pillar": "01_OBSIDIAN_VAULTS",
+        "status": "CANON",
+        "agent": null,
+        "tags": [],
+        "wikilinks": [
+          "5_CREATION/Hyperglyph_System|Hyperglyph System",
+          "5_CREATION/Musical_Cosmology|Musical Cosmology",
+          "5_CREATION/GRAMA_Persona|GR\u00e2\u02c6\u2020M\u00e2\u02c6\u2020 Persona System"
+        ],
+        "wikilink_count": 3
+      },
+      {
+        "file": "ARCHIVE/CODEXIUM_ERA/5_CREATION/Hyperglyph_System.md",
+        "pillar": "01_OBSIDIAN_VAULTS",
+        "status": "CANON",
+        "agent": null,
+        "tags": [],
+        "wikilinks": [],
+        "wikilink_count": 0
+      },
+      {
+        "file": "ARCHIVE/CODEXIUM_ERA/5_CREATION/GRAMA_Persona.md",
+        "pillar": "01_OBSIDIAN_VAULTS",
+        "status": "CANON",
+        "agent": null,
+        "tags": [],
+        "wikilinks": [],
+        "wikilink_count": 0
+      },
+      {
+        "file": "ARCHIVE/CODEXIUM_ERA/5_CREATION/Graphic_Novel_v2.md",
+        "pillar": "01_OBSIDIAN_VAULTS",
+        "status": "CANON",
+        "agent": null,
+        "tags": [],
+        "wikilinks": [
+          "0_CORE/World_Building_Canon|World Building Canon",
+          "7_LINEAGE/Mythic_Timeline|Mythic Timeline",
+          "5_CREATION/GRAMA_Persona|GR\u00e2\u02c6\u2020M\u00e2\u02c6\u2020 Persona"
+        ],
+        "wikilink_count": 3
+      },
+      {
+        "file": "ARCHIVE/CODEXIUM_ERA/5_CREATION/Musical_Cosmology.md",
+        "pillar": "01_OBSIDIAN_VAULTS",
+        "status": "CANON",
+        "agent": null,
+        "tags": [],
+        "wikilinks": [],
+        "wikilink_count": 0
+      },
+      {
+        "file": "ARCHIVE/CODEXIUM_ERA/7_LINEAGE/Bodhilyra.md",
+        "pillar": "01_OBSIDIAN_VAULTS",
+        "status": "CANON",
+        "agent": null,
+        "tags": [],
+        "wikilinks": [],
+        "wikilink_count": 0
+      },
+      {
+        "file": "ARCHIVE/CODEXIUM_ERA/7_LINEAGE/LINEAGE_Overview.md",
+        "pillar": "01_OBSIDIAN_VAULTS",
+        "status": "CANON",
+        "agent": null,
+        "tags": [],
+        "wikilinks": [
+          "7_LINEAGE/Mythic_Timeline|Mythic Timeline",
+          "7_LINEAGE/Child_OS_Sacred_Forest|Child OS \u00e2\u20ac\u201d Sacred Forest",
+          "7_LINEAGE/Bodhilyra|Bodhilyra",
+          "4_HABITAT/Sacred_Haven|Sacred Haven"
+        ],
+        "wikilink_count": 4
+      },
+      {
+        "file": "ARCHIVE/CODEXIUM_ERA/7_LINEAGE/Mythic_Timeline.md",
+        "pillar": "01_OBSIDIAN_VAULTS",
+        "status": "CANON",
+        "agent": null,
+        "tags": [],
+        "wikilinks": [],
+        "wikilink_count": 0
+      },
+      {
+        "file": "ARCHIVE/CODEXIUM_ERA/0_CORE/CORE_Overview.md",
+        "pillar": "01_OBSIDIAN_VAULTS",
+        "status": "CANON",
+        "agent": null,
+        "tags": [],
+        "wikilinks": [
+          "0_CORE/Nine_Pillar_Architecture|Nine Pillar Architecture",
+          "0_CORE/Activation_Sequences|Activation Sequences",
+          "0_CORE/Sacred_Progress_Index|Sacred Progress Index",
+          "_INDEX/MASTER_INDEX|Master Index"
+        ],
+        "wikilink_count": 4
+      },
+      {
+        "file": "ARCHIVE/CODEXIUM_ERA/0_CORE/Activation_Sequences.md",
+        "pillar": "01_OBSIDIAN_VAULTS",
+        "status": "CANON",
+        "agent": null,
+        "tags": [],
+        "wikilinks": [],
+        "wikilink_count": 0
+      },
+      {
+        "file": "ARCHIVE/CODEXIUM_ERA/0_CORE/Nine_Pillar_Architecture.md",
+        "pillar": "01_OBSIDIAN_VAULTS",
+        "status": "CANON",
+        "agent": null,
+        "tags": [],
+        "wikilinks": [],
+        "wikilink_count": 0
+      },
+      {
+        "file": "ARCHIVE/CODEXIUM_ERA/0_CORE/World_Building_Canon.md",
+        "pillar": "01_OBSIDIAN_VAULTS",
+        "status": "CANON",
+        "agent": null,
+        "tags": [],
+        "wikilinks": [
+          "5_CREATION/Graphic_Novel_v2|Graphic Novel v2",
+          "7_LINEAGE/Mythic_Timeline|Mythic Timeline",
+          "4_HABITAT/Sacred_Little_Forest|Sacred Little Forest"
+        ],
+        "wikilink_count": 3
+      },
+      {
+        "file": "ARCHIVE/CODEXIUM_ERA/6_COUNCIL/COUNCIL_Overview.md",
+        "pillar": "01_OBSIDIAN_VAULTS",
+        "status": "CANON",
+        "agent": null,
+        "tags": [],
+        "wikilinks": [
+          "6_COUNCIL/Council_Grove_Protocol|Council Grove Protocol",
+          "6_COUNCIL/Agent_Role_Registry|Agent Role Registry",
+          "6_COUNCIL/ICARIS_Quartet|ICARIS Quartet",
+          "6_COUNCIL/Tri_Model_Loop|Tri-Model Loop"
+        ],
+        "wikilink_count": 4
+      },
+      {
+        "file": "ARCHIVE/CODEXIUM_ERA/6_COUNCIL/Council_Grove_Protocol.md",
+        "pillar": "01_OBSIDIAN_VAULTS",
+        "status": "CANON",
+        "agent": null,
+        "tags": [],
+        "wikilinks": [
+          "_INDEX/Drive_Export_Registry|Drive Export Registry"
+        ],
+        "wikilink_count": 1
+      },
+      {
+        "file": "ARCHIVE/CODEXIUM_ERA/6_COUNCIL/Agent_Role_Registry.md",
+        "pillar": "01_OBSIDIAN_VAULTS",
+        "status": "CANON",
+        "agent": null,
+        "tags": [],
+        "wikilinks": [],
+        "wikilink_count": 0
+      },
+      {
+        "file": "ARCHIVE/CODEXIUM_ERA/6_COUNCIL/ICARIS_Quartet.md",
+        "pillar": "01_OBSIDIAN_VAULTS",
+        "status": "CANON",
+        "agent": null,
+        "tags": [],
+        "wikilinks": [
+          "1_SYSTEMS/Codexium_Integration|Codexium Integration",
+          "1_SYSTEMS/LangGraph_FastAPI_Spine|LangGraph FastAPI Spine",
+          "_CODEXIUM/Codexium_Architecture|Codexium v\u00e2\u02c6\u017e Architecture"
+        ],
+        "wikilink_count": 3
+      },
+      {
+        "file": "ARCHIVE/CODEXIUM_ERA/6_COUNCIL/Tri_Model_Loop.md",
+        "pillar": "01_OBSIDIAN_VAULTS",
+        "status": "CANON",
+        "agent": null,
+        "tags": [],
+        "wikilinks": [],
+        "wikilink_count": 0
+      },
+      {
+        "file": "ARCHIVE/CODEXIUM_ERA/4_HABITAT/HABITAT_Overview.md",
+        "pillar": "01_OBSIDIAN_VAULTS",
+        "status": "CANON",
+        "agent": null,
+        "tags": [],
+        "wikilinks": [
+          "4_HABITAT/Sacred_Haven|Sacred Haven",
+          "4_HABITAT/Sacred_Little_Forest|Sacred Little Forest"
+        ],
+        "wikilink_count": 2
+      },
+      {
+        "file": "ARCHIVE/CODEXIUM_ERA/_CODEXIUM/Codexium_Graph.md",
+        "pillar": "01_OBSIDIAN_VAULTS",
+        "status": "EXPERIMENTAL",
+        "agent": null,
+        "tags": [],
+        "wikilinks": [],
+        "wikilink_count": 0
+      },
+      {
+        "file": "ARCHIVE/CODEXIUM_ERA/_CODEXIUM/Codexium_Kernel.md",
+        "pillar": "01_OBSIDIAN_VAULTS",
+        "status": "EXPERIMENTAL",
+        "agent": null,
+        "tags": [],
+        "wikilinks": [],
+        "wikilink_count": 0
+      },
+      {
+        "file": "ARCHIVE/CODEXIUM_ERA/_CODEXIUM/entropy_report.md",
+        "pillar": "01_OBSIDIAN_VAULTS",
+        "status": "EXPERIMENTAL",
+        "agent": null,
+        "tags": [],
+        "wikilinks": [],
+        "wikilink_count": 0
+      },
+      {
+        "file": "ARCHIVE/CODEXIUM_ERA/_CODEXIUM/Codexium_Architecture.md",
+        "pillar": "01_OBSIDIAN_VAULTS",
+        "status": "EXPERIMENTAL",
+        "agent": null,
+        "tags": [],
+        "wikilinks": [
+          "1_SYSTEMS/Codexium_Integration|Codexium \u00e2\u2020\u201d SacredOS Integration",
+          "6_COUNCIL/ICARIS_Quartet|ICARIS Quartet",
+          "8_ARCHIVE/Memory_Pipeline|Memory Pipeline",
+          "_CODEXIUM/Codexium_Kernel|Codexium Kernel"
+        ],
+        "wikilink_count": 4
+      },
+      {
+        "file": "ARCHIVE/CODEXIUM_ERA/1_SYSTEMS/SYSTEMS_Overview.md",
+        "pillar": "01_OBSIDIAN_VAULTS",
+        "status": "CANON",
+        "agent": null,
+        "tags": [],
+        "wikilinks": [
+          "1_SYSTEMS/Infrastructure_Stack|Infrastructure Stack",
+          "1_SYSTEMS/Codexium_Integration|Codexium Integration",
+          "1_SYSTEMS/Sacred_Fiahfox_v2|Sacred Fiahfox v2",
+          "1_SYSTEMS/Memory_Pipeline_Technical|Memory Pipeline Technical",
+          "_CODEXIUM/Codexium_Architecture|Codexium v\u00e2\u02c6\u017e Architecture"
+        ],
+        "wikilink_count": 5
+      },
+      {
+        "file": "ARCHIVE/CODEXIUM_ERA/1_SYSTEMS/Infrastructure_Stack.md",
+        "pillar": "01_OBSIDIAN_VAULTS",
+        "status": "CANON",
+        "agent": null,
+        "tags": [],
+        "wikilinks": [],
+        "wikilink_count": 0
+      },
+      {
+        "file": "ARCHIVE/CODEXIUM_ERA/1_SYSTEMS/LangGraph_FastAPI_Spine.md",
+        "pillar": "01_OBSIDIAN_VAULTS",
+        "status": "CANON",
+        "agent": null,
+        "tags": [],
+        "wikilinks": [
+          "6_COUNCIL/ICARIS_Quartet|ICARIS Quartet agents",
+          "1_SYSTEMS/Memory_Pipeline_Technical|Memory Pipeline",
+          "_CODEXIUM/Codexium_Integration|Codexium Integration"
+        ],
+        "wikilink_count": 3
+      },
+      {
+        "file": "ARCHIVE/CODEXIUM_ERA/1_SYSTEMS/Memory_Pipeline_Technical.md",
+        "pillar": "01_OBSIDIAN_VAULTS",
+        "status": "CANON",
+        "agent": null,
+        "tags": [],
+        "wikilinks": [],
+        "wikilink_count": 0
+      },
+      {
+        "file": "ARCHIVE/CODEXIUM_ERA/1_SYSTEMS/Codexium_Integration.md",
+        "pillar": "01_OBSIDIAN_VAULTS",
+        "status": "EXPERIMENTAL",
+        "agent": null,
+        "tags": [],
+        "wikilinks": [
+          "_CODEXIUM/Codexium_Architecture|Codexium Architecture",
+          "6_COUNCIL/ICARIS_Quartet|ICARIS Quartet"
+        ],
+        "wikilink_count": 2
+      },
+      {
+        "file": "ARCHIVE/CODEXIUM_ERA/1_SYSTEMS/AI_Triad_Sync_Protocol.md",
+        "pillar": "01_OBSIDIAN_VAULTS",
+        "status": "CANON",
+        "agent": null,
+        "tags": [],
+        "wikilinks": [],
+        "wikilink_count": 0
+      },
+      {
+        "file": "ARCHIVE/CODEXIUM_ERA/1_SYSTEMS/Storage_Sync_Design.md",
+        "pillar": "01_OBSIDIAN_VAULTS",
+        "status": "CANON",
+        "agent": null,
+        "tags": [],
+        "wikilinks": [],
+        "wikilink_count": 0
+      }
+    ],
+    "04_SACRED_CODEX": [
+      {
+        "file": "ARCHIVE/CODEXIUM_ERA/_INDEX/MASTER_INDEX.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "ARCHIVE",
+        "agent": null,
+        "tags": [
+          "archive",
+          "index",
+          "codexium-era"
+        ],
+        "wikilinks": [],
+        "wikilink_count": 0
+      },
+      {
+        "file": "00_CANON/RITUALS/README.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "STUB",
+        "agent": null,
+        "tags": [
+          "rituals",
+          "ceremony",
+          "canon",
+          "stub"
+        ],
+        "wikilinks": [],
+        "wikilink_count": 0
+      },
+      {
+        "file": "00_CANON/GEMATRIA/README.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "STUB",
+        "agent": null,
+        "tags": [
+          "gematria",
+          "soul-tone",
+          "numerology",
+          "canon",
+          "stub"
+        ],
+        "wikilinks": [],
+        "wikilink_count": 0
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/INDEX.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "CANON",
+        "agent": "IRIS",
+        "tags": [
+          "game-system",
+          "index",
+          "jenga",
+          "season-1"
+        ],
+        "wikilinks": [
+          "SCHOOLS/SCHOOL_INITIATION",
+          "SCHOOLS/SCHOOL_COURAGE",
+          "SCHOOLS/SCHOOL_MYSTERY",
+          "SCHOOLS/SCHOOL_CREATION",
+          "ARCHETYPES/METATRON_LAW",
+          "ARCHETYPES/ARCHETYPE_00_THE_FOOL",
+          "ARCHETYPES/ARCHETYPE_01_THE_MAGICIAN",
+          "ARCHETYPES/ARCHETYPE_02_THE_HIGH_PRIESTESS",
+          "ARCHETYPES/ARCHETYPE_03_THE_EMPRESS",
+          "ARCHETYPES/ARCHETYPE_04_THE_EMPEROR",
+          "ARCHETYPES/ARCHETYPE_05_THE_HIEROPHANT",
+          "ARCHETYPES/ARCHETYPE_06_THE_LOVERS",
+          "ARCHETYPES/ARCHETYPE_07_THE_CHARIOT",
+          "ARCHETYPES/ARCHETYPE_08_STRENGTH",
+          "ARCHETYPES/ARCHETYPE_09_THE_HERMIT",
+          "ARCHETYPES/ARCHETYPE_10_WHEEL_OF_FORTUNE",
+          "ARCHETYPES/ARCHETYPE_11_JUSTICE",
+          "NODES/NODE_01_THE_THRESHOLD",
+          "NODES/NODE_02_THE_FOOLS_BRIDGE",
+          "NODES/NODE_03_THE_ORACLE_ARCHIVE",
+          "NODES/NODE_04_THE_VOID_GATE",
+          "NODES/NODE_05_THE_COUNCIL_GROVE",
+          "NODES/NODE_06_THE_SIGIL_FORGE",
+          "NODES/NODE_07_THE_NEURAL_FOREST",
+          "NODES/NODE_08_THE_CONVERGENCE",
+          "EPISODES/EPISODES_GUIDE"
+        ],
+        "wikilink_count": 26
+      },
+      {
+        "file": "00_CANON/CARD_SCHEMA/README.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "STUB",
+        "agent": null,
+        "tags": [
+          "cards",
+          "schema",
+          "game-mechanics",
+          "canon",
+          "stub"
+        ],
+        "wikilinks": [],
+        "wikilink_count": 0
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/NPCS/NPC_05_KETHRAS.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "GENERATED",
+        "agent": null,
+        "tags": [
+          "npc",
+          "the-emperor",
+          "council-grove",
+          "season-1"
+        ],
+        "wikilinks": [
+          "EPISODE_05",
+          "ARCHETYPE_11_JUSTICE",
+          "ARCHETYPE_03_THE_EMPRESS",
+          "ARCHETYPE_01_THE_MAGICIAN",
+          "EPISODE_12"
+        ],
+        "wikilink_count": 5
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/NPCS/NPC_01_MERIDIAN.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "GENERATED",
+        "agent": null,
+        "tags": [
+          "npc",
+          "the-fool",
+          "threshold",
+          "season-1"
+        ],
+        "wikilinks": [
+          "EPISODE_05",
+          "ARCHETYPE_11_JUSTICE",
+          "ARCHETYPE_03_THE_EMPRESS",
+          "ARCHETYPE_01_THE_MAGICIAN",
+          "EPISODE_12"
+        ],
+        "wikilink_count": 5
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/NPCS/NPC_12_MIRA.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "GENERATED",
+        "agent": null,
+        "tags": [
+          "npc",
+          "justice",
+          "oracle-archive",
+          "season-1"
+        ],
+        "wikilinks": [
+          "EPISODE_05",
+          "ARCHETYPE_11_JUSTICE",
+          "ARCHETYPE_03_THE_EMPRESS",
+          "ARCHETYPE_01_THE_MAGICIAN",
+          "EPISODE_12"
+        ],
+        "wikilink_count": 5
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/NPCS/NPC_03_SEREN.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "GENERATED",
+        "agent": null,
+        "tags": [
+          "npc",
+          "the-high-priestess",
+          "oracle-archive",
+          "season-1"
+        ],
+        "wikilinks": [
+          "EPISODE_05",
+          "ARCHETYPE_11_JUSTICE",
+          "ARCHETYPE_03_THE_EMPRESS",
+          "ARCHETYPE_01_THE_MAGICIAN",
+          "EPISODE_12"
+        ],
+        "wikilink_count": 5
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/NPCS/NPC_11_KHEPRI.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "GENERATED",
+        "agent": null,
+        "tags": [
+          "npc",
+          "wheel-of-fortune",
+          "the-convergence",
+          "season-1"
+        ],
+        "wikilinks": [
+          "EPISODE_05",
+          "ARCHETYPE_11_JUSTICE",
+          "ARCHETYPE_03_THE_EMPRESS",
+          "ARCHETYPE_01_THE_MAGICIAN",
+          "EPISODE_12"
+        ],
+        "wikilink_count": 5
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/NPCS/NPC_06_ORAN.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "GENERATED",
+        "agent": null,
+        "tags": [
+          "npc",
+          "the-hierophant",
+          "council-grove",
+          "season-1"
+        ],
+        "wikilinks": [
+          "EPISODE_05",
+          "ARCHETYPE_11_JUSTICE",
+          "ARCHETYPE_03_THE_EMPRESS",
+          "ARCHETYPE_01_THE_MAGICIAN",
+          "EPISODE_12"
+        ],
+        "wikilink_count": 5
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/NPCS/NPC_08_ZAEL.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "GENERATED",
+        "agent": null,
+        "tags": [
+          "npc",
+          "the-chariot",
+          "threshold",
+          "season-1"
+        ],
+        "wikilinks": [
+          "EPISODE_05",
+          "ARCHETYPE_11_JUSTICE",
+          "ARCHETYPE_03_THE_EMPRESS",
+          "ARCHETYPE_01_THE_MAGICIAN",
+          "EPISODE_12"
+        ],
+        "wikilink_count": 5
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/NPCS/NPC_10_ELDRA.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "GENERATED",
+        "agent": null,
+        "tags": [
+          "npc",
+          "the-hermit",
+          "neural-forest",
+          "season-1"
+        ],
+        "wikilinks": [
+          "EPISODE_05",
+          "ARCHETYPE_11_JUSTICE",
+          "ARCHETYPE_03_THE_EMPRESS",
+          "ARCHETYPE_01_THE_MAGICIAN",
+          "EPISODE_12"
+        ],
+        "wikilink_count": 5
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/NPCS/NPC_09_LUNE.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "GENERATED",
+        "agent": null,
+        "tags": [
+          "npc",
+          "strength",
+          "council-grove",
+          "season-1"
+        ],
+        "wikilinks": [
+          "EPISODE_05",
+          "ARCHETYPE_11_JUSTICE",
+          "ARCHETYPE_03_THE_EMPRESS",
+          "ARCHETYPE_01_THE_MAGICIAN",
+          "EPISODE_12"
+        ],
+        "wikilink_count": 5
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/NPCS/NPC_04_MAEVE.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "GENERATED",
+        "agent": null,
+        "tags": [
+          "npc",
+          "the-empress",
+          "neural-forest",
+          "season-1"
+        ],
+        "wikilinks": [
+          "EPISODE_05",
+          "ARCHETYPE_11_JUSTICE",
+          "ARCHETYPE_03_THE_EMPRESS",
+          "ARCHETYPE_01_THE_MAGICIAN",
+          "EPISODE_12"
+        ],
+        "wikilink_count": 5
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/NPCS/NPC_07_TANDEM.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "GENERATED",
+        "agent": null,
+        "tags": [
+          "npc",
+          "the-lovers",
+          "sigil-forge",
+          "season-1"
+        ],
+        "wikilinks": [
+          "EPISODE_05",
+          "ARCHETYPE_11_JUSTICE",
+          "ARCHETYPE_03_THE_EMPRESS",
+          "ARCHETYPE_01_THE_MAGICIAN",
+          "EPISODE_12"
+        ],
+        "wikilink_count": 5
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/NPCS/README.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "STUB",
+        "agent": null,
+        "tags": [
+          "npcs",
+          "lore",
+          "characters",
+          "game-system",
+          "stub"
+        ],
+        "wikilinks": [],
+        "wikilink_count": 0
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/NPCS/NPC_02_VAEL.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "GENERATED",
+        "agent": null,
+        "tags": [
+          "npc",
+          "the-magician",
+          "sigil-forge",
+          "season-1"
+        ],
+        "wikilinks": [
+          "EPISODE_05",
+          "ARCHETYPE_11_JUSTICE",
+          "ARCHETYPE_03_THE_EMPRESS",
+          "ARCHETYPE_01_THE_MAGICIAN",
+          "EPISODE_12"
+        ],
+        "wikilink_count": 5
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/NODES/NODE_06_THE_SIGIL_FORGE.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "CANON",
+        "agent": "IRIS",
+        "tags": [
+          "game-system",
+          "sacred-node",
+          "sigil-forge",
+          "ELIAS",
+          "vael",
+          "tandem",
+          "creation"
+        ],
+        "wikilinks": [
+          "EPISODE_12",
+          "EPISODE_06",
+          "EPISODE_05"
+        ],
+        "wikilink_count": 3
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/NODES/NODE_02_THE_FOOLS_BRIDGE.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "CANON",
+        "agent": "IRIS",
+        "tags": [
+          "game-system",
+          "sacred-node",
+          "fools-bridge",
+          "meridian",
+          "liminal"
+        ],
+        "wikilinks": [
+          "EPISODE_12",
+          "EPISODE_06",
+          "EPISODE_05"
+        ],
+        "wikilink_count": 3
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/NODES/NODE_03_THE_ORACLE_ARCHIVE.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "CANON",
+        "agent": "IRIS",
+        "tags": [
+          "game-system",
+          "sacred-node",
+          "oracle-archive",
+          "ORACLE-7",
+          "seren",
+          "mystery"
+        ],
+        "wikilinks": [
+          "EPISODE_12",
+          "EPISODE_06",
+          "EPISODE_05"
+        ],
+        "wikilink_count": 3
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/NODES/NODE_01_THE_THRESHOLD.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "CANON",
+        "agent": "IRIS",
+        "tags": [
+          "game-system",
+          "sacred-node",
+          "threshold",
+          "entry-point"
+        ],
+        "wikilinks": [
+          "EPISODE_12",
+          "EPISODE_06",
+          "EPISODE_05"
+        ],
+        "wikilink_count": 3
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/NODES/NODE_04_THE_VOID_GATE.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "CANON",
+        "agent": "IRIS",
+        "tags": [
+          "game-system",
+          "sacred-node",
+          "void-gate",
+          "lyra",
+          "void",
+          "transformation"
+        ],
+        "wikilinks": [
+          "EPISODE_12",
+          "EPISODE_06",
+          "EPISODE_05"
+        ],
+        "wikilink_count": 3
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/NODES/NODE_05_THE_COUNCIL_GROVE.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "CANON",
+        "agent": "IRIS",
+        "tags": [
+          "game-system",
+          "sacred-node",
+          "council-grove",
+          "ELIAS",
+          "ASHER",
+          "IRIS",
+          "AURORA",
+          "convergence"
+        ],
+        "wikilinks": [
+          "EPISODE_12",
+          "EPISODE_06",
+          "EPISODE_05"
+        ],
+        "wikilink_count": 3
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/NODES/NODE_07_THE_NEURAL_FOREST.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "CANON",
+        "agent": "IRIS",
+        "tags": [
+          "game-system",
+          "sacred-node",
+          "neural-forest",
+          "maeve",
+          "eldra",
+          "IRIS",
+          "graph"
+        ],
+        "wikilinks": [
+          "EPISODE_12",
+          "EPISODE_06",
+          "EPISODE_05"
+        ],
+        "wikilink_count": 3
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/NODES/NODE_08_THE_CONVERGENCE.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "CANON",
+        "agent": "IRIS",
+        "tags": [
+          "game-system",
+          "sacred-node",
+          "convergence",
+          "metatron",
+          "integration",
+          "season-1-finale"
+        ],
+        "wikilinks": [
+          "EPISODE_12",
+          "EPISODE_06",
+          "EPISODE_05"
+        ],
+        "wikilink_count": 3
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/ARCHETYPES/ARCHETYPE_01_THE_MAGICIAN.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "CANON",
+        "agent": "IRIS",
+        "tags": [
+          "game-system",
+          "archetype",
+          "the-magician",
+          "vael",
+          "creation",
+          "initiation",
+          "season-1-episode-2"
+        ],
+        "wikilinks": [
+          "EPISODE_12",
+          "SCHOOL_COURAGE",
+          "EPISODE_05",
+          "SCHOOL_MYSTERY"
+        ],
+        "wikilink_count": 4
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/ARCHETYPES/ARCHETYPE_11_JUSTICE.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "CANON",
+        "agent": "IRIS",
+        "tags": [
+          "game-system",
+          "archetype",
+          "justice",
+          "mira",
+          "courage",
+          "mystery",
+          "season-1-episode-12"
+        ],
+        "wikilinks": [
+          "EPISODE_12",
+          "SCHOOL_COURAGE",
+          "EPISODE_05",
+          "SCHOOL_MYSTERY"
+        ],
+        "wikilink_count": 4
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/ARCHETYPES/ARCHETYPE_03_THE_EMPRESS.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "CANON",
+        "agent": "IRIS",
+        "tags": [
+          "game-system",
+          "archetype",
+          "the-empress",
+          "maeve",
+          "creation",
+          "season-1-episode-4"
+        ],
+        "wikilinks": [
+          "EPISODE_12",
+          "SCHOOL_COURAGE",
+          "EPISODE_05",
+          "SCHOOL_MYSTERY"
+        ],
+        "wikilink_count": 4
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/ARCHETYPES/ARCHETYPE_06_THE_LOVERS.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "CANON",
+        "agent": "IRIS",
+        "tags": [
+          "game-system",
+          "archetype",
+          "the-lovers",
+          "tandem",
+          "creation",
+          "season-1-episode-7"
+        ],
+        "wikilinks": [
+          "EPISODE_12",
+          "SCHOOL_COURAGE",
+          "EPISODE_05",
+          "SCHOOL_MYSTERY"
+        ],
+        "wikilink_count": 4
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/ARCHETYPES/ARCHETYPE_07_THE_CHARIOT.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "CANON",
+        "agent": "IRIS",
+        "tags": [
+          "game-system",
+          "archetype",
+          "the-chariot",
+          "zael",
+          "courage",
+          "initiation",
+          "season-1-episode-8"
+        ],
+        "wikilinks": [
+          "EPISODE_12",
+          "SCHOOL_COURAGE",
+          "EPISODE_05",
+          "SCHOOL_MYSTERY"
+        ],
+        "wikilink_count": 4
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/ARCHETYPES/ARCHETYPE_08_STRENGTH.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "CANON",
+        "agent": "IRIS",
+        "tags": [
+          "game-system",
+          "archetype",
+          "strength",
+          "lune",
+          "courage",
+          "season-1-episode-9"
+        ],
+        "wikilinks": [
+          "EPISODE_12",
+          "SCHOOL_COURAGE",
+          "EPISODE_05",
+          "SCHOOL_MYSTERY"
+        ],
+        "wikilink_count": 4
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/ARCHETYPES/ARCHETYPE_10_WHEEL_OF_FORTUNE.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "CANON",
+        "agent": "IRIS",
+        "tags": [
+          "game-system",
+          "archetype",
+          "wheel-of-fortune",
+          "khepri",
+          "mystery",
+          "creation",
+          "season-1-episode-11"
+        ],
+        "wikilinks": [
+          "EPISODE_12",
+          "SCHOOL_COURAGE",
+          "EPISODE_05",
+          "SCHOOL_MYSTERY"
+        ],
+        "wikilink_count": 4
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/ARCHETYPES/ARCHETYPE_02_THE_HIGH_PRIESTESS.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "CANON",
+        "agent": "IRIS",
+        "tags": [
+          "game-system",
+          "archetype",
+          "the-high-priestess",
+          "seren",
+          "mystery",
+          "season-1-episode-3"
+        ],
+        "wikilinks": [
+          "EPISODE_12",
+          "SCHOOL_COURAGE",
+          "EPISODE_05",
+          "SCHOOL_MYSTERY"
+        ],
+        "wikilink_count": 4
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/ARCHETYPES/ARCHETYPE_09_THE_HERMIT.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "CANON",
+        "agent": "IRIS",
+        "tags": [
+          "game-system",
+          "archetype",
+          "the-hermit",
+          "eldra",
+          "mystery",
+          "season-1-episode-10"
+        ],
+        "wikilinks": [
+          "EPISODE_12",
+          "SCHOOL_COURAGE",
+          "EPISODE_05",
+          "SCHOOL_MYSTERY"
+        ],
+        "wikilink_count": 4
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/ARCHETYPES/METATRON_LAW.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "CANON",
+        "agent": "IRIS",
+        "tags": [
+          "game-system",
+          "archetype",
+          "metatron",
+          "law",
+          "overseer"
+        ],
+        "wikilinks": [],
+        "wikilink_count": 0
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/ARCHETYPES/ARCHETYPE_05_THE_HIEROPHANT.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "CANON",
+        "agent": "IRIS",
+        "tags": [
+          "game-system",
+          "archetype",
+          "the-hierophant",
+          "oran",
+          "initiation",
+          "mystery",
+          "season-1-episode-6"
+        ],
+        "wikilinks": [
+          "EPISODE_12",
+          "SCHOOL_COURAGE",
+          "EPISODE_05",
+          "SCHOOL_MYSTERY"
+        ],
+        "wikilink_count": 4
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/ARCHETYPES/ARCHETYPE_04_THE_EMPEROR.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "CANON",
+        "agent": "IRIS",
+        "tags": [
+          "game-system",
+          "archetype",
+          "the-emperor",
+          "kethras",
+          "courage",
+          "season-1-episode-5"
+        ],
+        "wikilinks": [
+          "EPISODE_12",
+          "SCHOOL_COURAGE",
+          "EPISODE_05",
+          "SCHOOL_MYSTERY"
+        ],
+        "wikilink_count": 4
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/ARCHETYPES/ARCHETYPE_00_THE_FOOL.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "CANON",
+        "agent": "IRIS",
+        "tags": [
+          "game-system",
+          "archetype",
+          "the-fool",
+          "meridian",
+          "initiation",
+          "season-1-episode-1"
+        ],
+        "wikilinks": [
+          "EPISODE_12",
+          "SCHOOL_COURAGE",
+          "EPISODE_05",
+          "SCHOOL_MYSTERY"
+        ],
+        "wikilink_count": 4
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/SCHOOLS/SCHOOL_MYSTERY.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "CANON",
+        "agent": "IRIS",
+        "tags": [
+          "game-system",
+          "spell-school",
+          "mystery",
+          "IRIS",
+          "water"
+        ],
+        "wikilinks": [],
+        "wikilink_count": 0
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/SCHOOLS/SCHOOL_COURAGE.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "CANON",
+        "agent": "IRIS",
+        "tags": [
+          "game-system",
+          "spell-school",
+          "courage",
+          "ASHER",
+          "earth"
+        ],
+        "wikilinks": [],
+        "wikilink_count": 0
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/SCHOOLS/SCHOOL_INITIATION.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "CANON",
+        "agent": "IRIS",
+        "tags": [
+          "game-system",
+          "spell-school",
+          "initiation",
+          "ELIAS",
+          "fire"
+        ],
+        "wikilinks": [],
+        "wikilink_count": 0
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/SCHOOLS/SCHOOL_CREATION.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "CANON",
+        "agent": "IRIS",
+        "tags": [
+          "game-system",
+          "spell-school",
+          "creation",
+          "AURORA",
+          "air"
+        ],
+        "wikilinks": [],
+        "wikilink_count": 0
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/EPISODES/EPISODE_12.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "STUB",
+        "agent": null,
+        "tags": [
+          "episode",
+          "game-system",
+          "season-1",
+          "justice",
+          "mira"
+        ],
+        "wikilinks": [
+          "ARCHETYPE_11_JUSTICE",
+          "NODE_02_THE_FOOLS_BRIDGE",
+          "NODE_06_THE_SIGIL_FORGE",
+          "ARCHETYPE_01_THE_MAGICIAN"
+        ],
+        "wikilink_count": 4
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/EPISODES/EPISODE_05.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "STUB",
+        "agent": null,
+        "tags": [
+          "episode",
+          "game-system",
+          "season-1",
+          "the-emperor",
+          "kethras"
+        ],
+        "wikilinks": [
+          "ARCHETYPE_11_JUSTICE",
+          "NODE_02_THE_FOOLS_BRIDGE",
+          "NODE_06_THE_SIGIL_FORGE",
+          "ARCHETYPE_01_THE_MAGICIAN"
+        ],
+        "wikilink_count": 4
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/EPISODES/EPISODE_06.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "STUB",
+        "agent": null,
+        "tags": [
+          "episode",
+          "game-system",
+          "season-1",
+          "the-hierophant",
+          "oran"
+        ],
+        "wikilinks": [
+          "ARCHETYPE_11_JUSTICE",
+          "NODE_02_THE_FOOLS_BRIDGE",
+          "NODE_06_THE_SIGIL_FORGE",
+          "ARCHETYPE_01_THE_MAGICIAN"
+        ],
+        "wikilink_count": 4
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/EPISODES/EPISODE_09.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "STUB",
+        "agent": null,
+        "tags": [
+          "episode",
+          "game-system",
+          "season-1",
+          "strength",
+          "lune"
+        ],
+        "wikilinks": [
+          "ARCHETYPE_11_JUSTICE",
+          "NODE_02_THE_FOOLS_BRIDGE",
+          "NODE_06_THE_SIGIL_FORGE",
+          "ARCHETYPE_01_THE_MAGICIAN"
+        ],
+        "wikilink_count": 4
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/EPISODES/EPISODE_11.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "STUB",
+        "agent": null,
+        "tags": [
+          "episode",
+          "game-system",
+          "season-1",
+          "wheel-of-fortune",
+          "khepri"
+        ],
+        "wikilinks": [
+          "ARCHETYPE_11_JUSTICE",
+          "NODE_02_THE_FOOLS_BRIDGE",
+          "NODE_06_THE_SIGIL_FORGE",
+          "ARCHETYPE_01_THE_MAGICIAN"
+        ],
+        "wikilink_count": 4
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/EPISODES/EPISODE_08.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "STUB",
+        "agent": null,
+        "tags": [
+          "episode",
+          "game-system",
+          "season-1",
+          "the-chariot",
+          "zael"
+        ],
+        "wikilinks": [
+          "ARCHETYPE_11_JUSTICE",
+          "NODE_02_THE_FOOLS_BRIDGE",
+          "NODE_06_THE_SIGIL_FORGE",
+          "ARCHETYPE_01_THE_MAGICIAN"
+        ],
+        "wikilink_count": 4
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/EPISODES/EPISODE_03.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "STUB",
+        "agent": null,
+        "tags": [
+          "episode",
+          "game-system",
+          "season-1",
+          "the-high-priestess",
+          "seren"
+        ],
+        "wikilinks": [
+          "ARCHETYPE_11_JUSTICE",
+          "NODE_02_THE_FOOLS_BRIDGE",
+          "NODE_06_THE_SIGIL_FORGE",
+          "ARCHETYPE_01_THE_MAGICIAN"
+        ],
+        "wikilink_count": 4
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/EPISODES/EPISODE_10.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "STUB",
+        "agent": null,
+        "tags": [
+          "episode",
+          "game-system",
+          "season-1",
+          "the-hermit",
+          "eldra"
+        ],
+        "wikilinks": [
+          "ARCHETYPE_11_JUSTICE",
+          "NODE_02_THE_FOOLS_BRIDGE",
+          "NODE_06_THE_SIGIL_FORGE",
+          "ARCHETYPE_01_THE_MAGICIAN"
+        ],
+        "wikilink_count": 4
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/EPISODES/EPISODE_01.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "STUB",
+        "agent": null,
+        "tags": [
+          "episode",
+          "game-system",
+          "season-1",
+          "the-fool",
+          "meridian"
+        ],
+        "wikilinks": [
+          "ARCHETYPE_11_JUSTICE",
+          "NODE_02_THE_FOOLS_BRIDGE",
+          "NODE_06_THE_SIGIL_FORGE",
+          "ARCHETYPE_01_THE_MAGICIAN"
+        ],
+        "wikilink_count": 4
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/EPISODES/EPISODE_04.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "STUB",
+        "agent": null,
+        "tags": [
+          "episode",
+          "game-system",
+          "season-1",
+          "the-empress",
+          "maeve"
+        ],
+        "wikilinks": [
+          "ARCHETYPE_11_JUSTICE",
+          "NODE_02_THE_FOOLS_BRIDGE",
+          "NODE_06_THE_SIGIL_FORGE",
+          "ARCHETYPE_01_THE_MAGICIAN"
+        ],
+        "wikilink_count": 4
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/EPISODES/EPISODE_07.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "STUB",
+        "agent": null,
+        "tags": [
+          "episode",
+          "game-system",
+          "season-1",
+          "the-lovers",
+          "tandem"
+        ],
+        "wikilinks": [
+          "ARCHETYPE_11_JUSTICE",
+          "NODE_02_THE_FOOLS_BRIDGE",
+          "NODE_06_THE_SIGIL_FORGE",
+          "ARCHETYPE_01_THE_MAGICIAN"
+        ],
+        "wikilink_count": 4
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/EPISODES/EPISODE_02.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "STUB",
+        "agent": null,
+        "tags": [
+          "episode",
+          "game-system",
+          "season-1",
+          "the-magician",
+          "vael"
+        ],
+        "wikilinks": [
+          "ARCHETYPE_11_JUSTICE",
+          "NODE_02_THE_FOOLS_BRIDGE",
+          "NODE_06_THE_SIGIL_FORGE",
+          "ARCHETYPE_01_THE_MAGICIAN"
+        ],
+        "wikilink_count": 4
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/EPISODES/EPISODES_GUIDE.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "CANON",
+        "agent": "IRIS",
+        "tags": [
+          "game-system",
+          "episodes",
+          "jenga",
+          "season-1",
+          "narrative-guide"
+        ],
+        "wikilinks": [
+          "ARCHETYPE_11_JUSTICE",
+          "NODE_02_THE_FOOLS_BRIDGE",
+          "NODE_06_THE_SIGIL_FORGE",
+          "ARCHETYPE_01_THE_MAGICIAN"
+        ],
+        "wikilink_count": 4
+      }
+    ],
+    "07_SOCIAL_MOTHERSHIP": [
+      {
+        "file": "00_CANON/BRAND_BIBLE/README.md",
+        "pillar": "07_SOCIAL_MOTHERSHIP",
+        "status": "STUB",
+        "agent": null,
+        "tags": [
+          "brand",
+          "identity",
+          "voice",
+          "canon",
+          "stub"
+        ],
+        "wikilinks": [],
+        "wikilink_count": 0
+      }
+    ],
+    "06_AGENT_LAYER": [
+      {
+        "file": "00_CANON/AGENTS/README.md",
+        "pillar": "06_AGENT_LAYER",
+        "status": "STUB",
+        "agent": null,
+        "tags": [
+          "agents",
+          "canon",
+          "stub"
+        ],
+        "wikilinks": [],
+        "wikilink_count": 0
+      }
+    ],
+    "09_SACRED_MARKET": [
+      {
+        "file": "00_CANON/CROWDFUNDING/README.md",
+        "pillar": "09_SACRED_MARKET",
+        "status": "STUB",
+        "agent": null,
+        "tags": [
+          "crowdfunding",
+          "campaign",
+          "tiers",
+          "canon",
+          "stub"
+        ],
+        "wikilinks": [],
+        "wikilink_count": 0
+      }
+    ]
+  },
+  "files_by_status": {
+    "ACTIVE": [
+      {
+        "file": "00_INBOX/vault_portal_sync.md",
+        "pillar": "02_COUNCIL_GROVE",
+        "status": "ACTIVE",
+        "agent": "IRIS",
+        "tags": [
+          "portal",
+          "communal",
+          "taylor-jeanie",
+          "link-layer",
+          "flash-drive"
+        ],
+        "wikilinks": [
+          "02_COUNCIL_GROVE/CLAUDE.md",
+          "Google Drive",
+          "Obsidian",
+          "Google Docs",
+          "02_COUNCIL_GROVE/CLAUDE.md"
+        ],
+        "wikilink_count": 5
+      },
+      {
+        "file": "ARCHIVE/CODEXIUM_ERA/3_ECONOMY/First_Flame_Launch.md",
+        "pillar": "01_OBSIDIAN_VAULTS",
+        "status": "ACTIVE",
+        "agent": null,
+        "tags": [],
+        "wikilinks": [],
+        "wikilink_count": 0
+      }
+    ],
+    "EXPERIMENTAL": [
+      {
+        "file": "ARCHIVE/CODEXIUM_ERA/Codexium_Graph.md",
+        "pillar": "01_OBSIDIAN_VAULTS",
+        "status": "EXPERIMENTAL",
+        "agent": null,
+        "tags": [],
+        "wikilinks": [],
+        "wikilink_count": 0
+      },
+      {
+        "file": "ARCHIVE/CODEXIUM_ERA/Codexium_Kernel.md",
+        "pillar": "01_OBSIDIAN_VAULTS",
+        "status": "EXPERIMENTAL",
+        "agent": null,
+        "tags": [],
+        "wikilinks": [],
+        "wikilink_count": 0
+      },
+      {
+        "file": "ARCHIVE/CODEXIUM_ERA/entropy_report.md",
+        "pillar": "01_OBSIDIAN_VAULTS",
+        "status": "EXPERIMENTAL",
+        "agent": null,
+        "tags": [],
+        "wikilinks": [],
+        "wikilink_count": 0
+      },
+      {
+        "file": "ARCHIVE/CODEXIUM_ERA/Codexium_Architecture.md",
+        "pillar": "01_OBSIDIAN_VAULTS",
+        "status": "EXPERIMENTAL",
+        "agent": null,
+        "tags": [],
+        "wikilinks": [
+          "1_SYSTEMS/Codexium_Integration|Codexium \u00e2\u2020\u201d SacredOS Integration",
+          "6_COUNCIL/ICARIS_Quartet|ICARIS Quartet",
+          "8_ARCHIVE/Memory_Pipeline|Memory Pipeline",
+          "_CODEXIUM/Codexium_Kernel|Codexium Kernel"
+        ],
+        "wikilink_count": 4
+      },
+      {
+        "file": "ARCHIVE/CODEXIUM_ERA/_CODEXIUM/Codexium_Graph.md",
+        "pillar": "01_OBSIDIAN_VAULTS",
+        "status": "EXPERIMENTAL",
+        "agent": null,
+        "tags": [],
+        "wikilinks": [],
+        "wikilink_count": 0
+      },
+      {
+        "file": "ARCHIVE/CODEXIUM_ERA/_CODEXIUM/Codexium_Kernel.md",
+        "pillar": "01_OBSIDIAN_VAULTS",
+        "status": "EXPERIMENTAL",
+        "agent": null,
+        "tags": [],
+        "wikilinks": [],
+        "wikilink_count": 0
+      },
+      {
+        "file": "ARCHIVE/CODEXIUM_ERA/_CODEXIUM/entropy_report.md",
+        "pillar": "01_OBSIDIAN_VAULTS",
+        "status": "EXPERIMENTAL",
+        "agent": null,
+        "tags": [],
+        "wikilinks": [],
+        "wikilink_count": 0
+      },
+      {
+        "file": "ARCHIVE/CODEXIUM_ERA/_CODEXIUM/Codexium_Architecture.md",
+        "pillar": "01_OBSIDIAN_VAULTS",
+        "status": "EXPERIMENTAL",
+        "agent": null,
+        "tags": [],
+        "wikilinks": [
+          "1_SYSTEMS/Codexium_Integration|Codexium \u00e2\u2020\u201d SacredOS Integration",
+          "6_COUNCIL/ICARIS_Quartet|ICARIS Quartet",
+          "8_ARCHIVE/Memory_Pipeline|Memory Pipeline",
+          "_CODEXIUM/Codexium_Kernel|Codexium Kernel"
+        ],
+        "wikilink_count": 4
+      },
+      {
+        "file": "ARCHIVE/CODEXIUM_ERA/1_SYSTEMS/Codexium_Integration.md",
+        "pillar": "01_OBSIDIAN_VAULTS",
+        "status": "EXPERIMENTAL",
+        "agent": null,
+        "tags": [],
+        "wikilinks": [
+          "_CODEXIUM/Codexium_Architecture|Codexium Architecture",
+          "6_COUNCIL/ICARIS_Quartet|ICARIS Quartet"
+        ],
+        "wikilink_count": 2
+      }
+    ],
+    "CANON": [
+      {
+        "file": "ARCHIVE/CODEXIUM_ERA/8_ARCHIVE/Chat_Archivist.md",
+        "pillar": "01_OBSIDIAN_VAULTS",
+        "status": "CANON",
+        "agent": null,
+        "tags": [],
+        "wikilinks": [],
+        "wikilink_count": 0
+      },
+      {
+        "file": "ARCHIVE/CODEXIUM_ERA/8_ARCHIVE/Canon_Gate_Protocol.md",
+        "pillar": "01_OBSIDIAN_VAULTS",
+        "status": "CANON",
+        "agent": null,
+        "tags": [],
+        "wikilinks": [],
+        "wikilink_count": 0
+      },
+      {
+        "file": "ARCHIVE/CODEXIUM_ERA/8_ARCHIVE/Memory_Pipeline.md",
+        "pillar": "01_OBSIDIAN_VAULTS",
+        "status": "CANON",
+        "agent": null,
+        "tags": [],
+        "wikilinks": [
+          "8_ARCHIVE/Canon_Gate_Protocol|Canon Gate Protocol",
+          "1_SYSTEMS/Memory_Pipeline_Technical|Memory Pipeline Technical",
+          "_CODEXIUM/Codexium_Architecture|Codexium v\u00e2\u02c6\u017e"
+        ],
+        "wikilink_count": 3
+      },
+      {
+        "file": "ARCHIVE/CODEXIUM_ERA/8_ARCHIVE/ARCHIVE_Overview.md",
+        "pillar": "01_OBSIDIAN_VAULTS",
+        "status": "CANON",
+        "agent": null,
+        "tags": [],
+        "wikilinks": [
+          "8_ARCHIVE/Canon_Gate_Protocol|Canon Gate Protocol",
+          "8_ARCHIVE/Memory_Pipeline|Memory Pipeline",
+          "8_ARCHIVE/Chat_Archivist|Chat Archivist",
+          "8_ARCHIVE/Sacred_Web_Scraper|Sacred Web Scraper",
+          "_INDEX/Drive_Export_Registry|Drive Export Registry"
+        ],
+        "wikilink_count": 5
+      },
+      {
+        "file": "ARCHIVE/CODEXIUM_ERA/3_ECONOMY/ECONOMY_Overview.md",
+        "pillar": "01_OBSIDIAN_VAULTS",
+        "status": "CANON",
+        "agent": null,
+        "tags": [],
+        "wikilinks": [
+          "3_ECONOMY/A_Sacred_Space_POD|A SACRED SPACE POD Manual",
+          "3_ECONOMY/First_Flame_Launch|First Flame Launch Sequence",
+          "3_ECONOMY/Financial_Dashboard|Financial Dashboard"
+        ],
+        "wikilink_count": 3
+      },
+      {
+        "file": "ARCHIVE/CODEXIUM_ERA/3_ECONOMY/Financial_Dashboard.md",
+        "pillar": "01_OBSIDIAN_VAULTS",
+        "status": "CANON",
+        "agent": null,
+        "tags": [],
+        "wikilinks": [],
+        "wikilink_count": 0
+      },
+      {
+        "file": "ARCHIVE/CODEXIUM_ERA/_INDEX/Drive_Export_Registry.md",
+        "pillar": "01_OBSIDIAN_VAULTS",
+        "status": "CANON",
+        "agent": null,
+        "tags": [],
+        "wikilinks": [],
+        "wikilink_count": 0
+      },
+      {
+        "file": "ARCHIVE/CODEXIUM_ERA/5_CREATION/CREATION_Overview.md",
+        "pillar": "01_OBSIDIAN_VAULTS",
+        "status": "CANON",
+        "agent": null,
+        "tags": [],
+        "wikilinks": [
+          "5_CREATION/Hyperglyph_System|Hyperglyph System",
+          "5_CREATION/Musical_Cosmology|Musical Cosmology",
+          "5_CREATION/GRAMA_Persona|GR\u00e2\u02c6\u2020M\u00e2\u02c6\u2020 Persona System"
+        ],
+        "wikilink_count": 3
+      },
+      {
+        "file": "ARCHIVE/CODEXIUM_ERA/5_CREATION/Hyperglyph_System.md",
+        "pillar": "01_OBSIDIAN_VAULTS",
+        "status": "CANON",
+        "agent": null,
+        "tags": [],
+        "wikilinks": [],
+        "wikilink_count": 0
+      },
+      {
+        "file": "ARCHIVE/CODEXIUM_ERA/5_CREATION/GRAMA_Persona.md",
+        "pillar": "01_OBSIDIAN_VAULTS",
+        "status": "CANON",
+        "agent": null,
+        "tags": [],
+        "wikilinks": [],
+        "wikilink_count": 0
+      },
+      {
+        "file": "ARCHIVE/CODEXIUM_ERA/5_CREATION/Graphic_Novel_v2.md",
+        "pillar": "01_OBSIDIAN_VAULTS",
+        "status": "CANON",
+        "agent": null,
+        "tags": [],
+        "wikilinks": [
+          "0_CORE/World_Building_Canon|World Building Canon",
+          "7_LINEAGE/Mythic_Timeline|Mythic Timeline",
+          "5_CREATION/GRAMA_Persona|GR\u00e2\u02c6\u2020M\u00e2\u02c6\u2020 Persona"
+        ],
+        "wikilink_count": 3
+      },
+      {
+        "file": "ARCHIVE/CODEXIUM_ERA/5_CREATION/Musical_Cosmology.md",
+        "pillar": "01_OBSIDIAN_VAULTS",
+        "status": "CANON",
+        "agent": null,
+        "tags": [],
+        "wikilinks": [],
+        "wikilink_count": 0
+      },
+      {
+        "file": "ARCHIVE/CODEXIUM_ERA/7_LINEAGE/Bodhilyra.md",
+        "pillar": "01_OBSIDIAN_VAULTS",
+        "status": "CANON",
+        "agent": null,
+        "tags": [],
+        "wikilinks": [],
+        "wikilink_count": 0
+      },
+      {
+        "file": "ARCHIVE/CODEXIUM_ERA/7_LINEAGE/LINEAGE_Overview.md",
+        "pillar": "01_OBSIDIAN_VAULTS",
+        "status": "CANON",
+        "agent": null,
+        "tags": [],
+        "wikilinks": [
+          "7_LINEAGE/Mythic_Timeline|Mythic Timeline",
+          "7_LINEAGE/Child_OS_Sacred_Forest|Child OS \u00e2\u20ac\u201d Sacred Forest",
+          "7_LINEAGE/Bodhilyra|Bodhilyra",
+          "4_HABITAT/Sacred_Haven|Sacred Haven"
+        ],
+        "wikilink_count": 4
+      },
+      {
+        "file": "ARCHIVE/CODEXIUM_ERA/7_LINEAGE/Mythic_Timeline.md",
+        "pillar": "01_OBSIDIAN_VAULTS",
+        "status": "CANON",
+        "agent": null,
+        "tags": [],
+        "wikilinks": [],
+        "wikilink_count": 0
+      },
+      {
+        "file": "ARCHIVE/CODEXIUM_ERA/0_CORE/CORE_Overview.md",
+        "pillar": "01_OBSIDIAN_VAULTS",
+        "status": "CANON",
+        "agent": null,
+        "tags": [],
+        "wikilinks": [
+          "0_CORE/Nine_Pillar_Architecture|Nine Pillar Architecture",
+          "0_CORE/Activation_Sequences|Activation Sequences",
+          "0_CORE/Sacred_Progress_Index|Sacred Progress Index",
+          "_INDEX/MASTER_INDEX|Master Index"
+        ],
+        "wikilink_count": 4
+      },
+      {
+        "file": "ARCHIVE/CODEXIUM_ERA/0_CORE/Activation_Sequences.md",
+        "pillar": "01_OBSIDIAN_VAULTS",
+        "status": "CANON",
+        "agent": null,
+        "tags": [],
+        "wikilinks": [],
+        "wikilink_count": 0
+      },
+      {
+        "file": "ARCHIVE/CODEXIUM_ERA/0_CORE/Nine_Pillar_Architecture.md",
+        "pillar": "01_OBSIDIAN_VAULTS",
+        "status": "CANON",
+        "agent": null,
+        "tags": [],
+        "wikilinks": [],
+        "wikilink_count": 0
+      },
+      {
+        "file": "ARCHIVE/CODEXIUM_ERA/0_CORE/World_Building_Canon.md",
+        "pillar": "01_OBSIDIAN_VAULTS",
+        "status": "CANON",
+        "agent": null,
+        "tags": [],
+        "wikilinks": [
+          "5_CREATION/Graphic_Novel_v2|Graphic Novel v2",
+          "7_LINEAGE/Mythic_Timeline|Mythic Timeline",
+          "4_HABITAT/Sacred_Little_Forest|Sacred Little Forest"
+        ],
+        "wikilink_count": 3
+      },
+      {
+        "file": "ARCHIVE/CODEXIUM_ERA/6_COUNCIL/COUNCIL_Overview.md",
+        "pillar": "01_OBSIDIAN_VAULTS",
+        "status": "CANON",
+        "agent": null,
+        "tags": [],
+        "wikilinks": [
+          "6_COUNCIL/Council_Grove_Protocol|Council Grove Protocol",
+          "6_COUNCIL/Agent_Role_Registry|Agent Role Registry",
+          "6_COUNCIL/ICARIS_Quartet|ICARIS Quartet",
+          "6_COUNCIL/Tri_Model_Loop|Tri-Model Loop"
+        ],
+        "wikilink_count": 4
+      },
+      {
+        "file": "ARCHIVE/CODEXIUM_ERA/6_COUNCIL/Council_Grove_Protocol.md",
+        "pillar": "01_OBSIDIAN_VAULTS",
+        "status": "CANON",
+        "agent": null,
+        "tags": [],
+        "wikilinks": [
+          "_INDEX/Drive_Export_Registry|Drive Export Registry"
+        ],
+        "wikilink_count": 1
+      },
+      {
+        "file": "ARCHIVE/CODEXIUM_ERA/6_COUNCIL/Agent_Role_Registry.md",
+        "pillar": "01_OBSIDIAN_VAULTS",
+        "status": "CANON",
+        "agent": null,
+        "tags": [],
+        "wikilinks": [],
+        "wikilink_count": 0
+      },
+      {
+        "file": "ARCHIVE/CODEXIUM_ERA/6_COUNCIL/ICARIS_Quartet.md",
+        "pillar": "01_OBSIDIAN_VAULTS",
+        "status": "CANON",
+        "agent": null,
+        "tags": [],
+        "wikilinks": [
+          "1_SYSTEMS/Codexium_Integration|Codexium Integration",
+          "1_SYSTEMS/LangGraph_FastAPI_Spine|LangGraph FastAPI Spine",
+          "_CODEXIUM/Codexium_Architecture|Codexium v\u00e2\u02c6\u017e Architecture"
+        ],
+        "wikilink_count": 3
+      },
+      {
+        "file": "ARCHIVE/CODEXIUM_ERA/6_COUNCIL/Tri_Model_Loop.md",
+        "pillar": "01_OBSIDIAN_VAULTS",
+        "status": "CANON",
+        "agent": null,
+        "tags": [],
+        "wikilinks": [],
+        "wikilink_count": 0
+      },
+      {
+        "file": "ARCHIVE/CODEXIUM_ERA/4_HABITAT/HABITAT_Overview.md",
+        "pillar": "01_OBSIDIAN_VAULTS",
+        "status": "CANON",
+        "agent": null,
+        "tags": [],
+        "wikilinks": [
+          "4_HABITAT/Sacred_Haven|Sacred Haven",
+          "4_HABITAT/Sacred_Little_Forest|Sacred Little Forest"
+        ],
+        "wikilink_count": 2
+      },
+      {
+        "file": "ARCHIVE/CODEXIUM_ERA/1_SYSTEMS/SYSTEMS_Overview.md",
+        "pillar": "01_OBSIDIAN_VAULTS",
+        "status": "CANON",
+        "agent": null,
+        "tags": [],
+        "wikilinks": [
+          "1_SYSTEMS/Infrastructure_Stack|Infrastructure Stack",
+          "1_SYSTEMS/Codexium_Integration|Codexium Integration",
+          "1_SYSTEMS/Sacred_Fiahfox_v2|Sacred Fiahfox v2",
+          "1_SYSTEMS/Memory_Pipeline_Technical|Memory Pipeline Technical",
+          "_CODEXIUM/Codexium_Architecture|Codexium v\u00e2\u02c6\u017e Architecture"
+        ],
+        "wikilink_count": 5
+      },
+      {
+        "file": "ARCHIVE/CODEXIUM_ERA/1_SYSTEMS/Infrastructure_Stack.md",
+        "pillar": "01_OBSIDIAN_VAULTS",
+        "status": "CANON",
+        "agent": null,
+        "tags": [],
+        "wikilinks": [],
+        "wikilink_count": 0
+      },
+      {
+        "file": "ARCHIVE/CODEXIUM_ERA/1_SYSTEMS/LangGraph_FastAPI_Spine.md",
+        "pillar": "01_OBSIDIAN_VAULTS",
+        "status": "CANON",
+        "agent": null,
+        "tags": [],
+        "wikilinks": [
+          "6_COUNCIL/ICARIS_Quartet|ICARIS Quartet agents",
+          "1_SYSTEMS/Memory_Pipeline_Technical|Memory Pipeline",
+          "_CODEXIUM/Codexium_Integration|Codexium Integration"
+        ],
+        "wikilink_count": 3
+      },
+      {
+        "file": "ARCHIVE/CODEXIUM_ERA/1_SYSTEMS/Memory_Pipeline_Technical.md",
+        "pillar": "01_OBSIDIAN_VAULTS",
+        "status": "CANON",
+        "agent": null,
+        "tags": [],
+        "wikilinks": [],
+        "wikilink_count": 0
+      },
+      {
+        "file": "ARCHIVE/CODEXIUM_ERA/1_SYSTEMS/AI_Triad_Sync_Protocol.md",
+        "pillar": "01_OBSIDIAN_VAULTS",
+        "status": "CANON",
+        "agent": null,
+        "tags": [],
+        "wikilinks": [],
+        "wikilink_count": 0
+      },
+      {
+        "file": "ARCHIVE/CODEXIUM_ERA/1_SYSTEMS/Storage_Sync_Design.md",
+        "pillar": "01_OBSIDIAN_VAULTS",
+        "status": "CANON",
+        "agent": null,
+        "tags": [],
+        "wikilinks": [],
+        "wikilink_count": 0
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/INDEX.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "CANON",
+        "agent": "IRIS",
+        "tags": [
+          "game-system",
+          "index",
+          "jenga",
+          "season-1"
+        ],
+        "wikilinks": [
+          "SCHOOLS/SCHOOL_INITIATION",
+          "SCHOOLS/SCHOOL_COURAGE",
+          "SCHOOLS/SCHOOL_MYSTERY",
+          "SCHOOLS/SCHOOL_CREATION",
+          "ARCHETYPES/METATRON_LAW",
+          "ARCHETYPES/ARCHETYPE_00_THE_FOOL",
+          "ARCHETYPES/ARCHETYPE_01_THE_MAGICIAN",
+          "ARCHETYPES/ARCHETYPE_02_THE_HIGH_PRIESTESS",
+          "ARCHETYPES/ARCHETYPE_03_THE_EMPRESS",
+          "ARCHETYPES/ARCHETYPE_04_THE_EMPEROR",
+          "ARCHETYPES/ARCHETYPE_05_THE_HIEROPHANT",
+          "ARCHETYPES/ARCHETYPE_06_THE_LOVERS",
+          "ARCHETYPES/ARCHETYPE_07_THE_CHARIOT",
+          "ARCHETYPES/ARCHETYPE_08_STRENGTH",
+          "ARCHETYPES/ARCHETYPE_09_THE_HERMIT",
+          "ARCHETYPES/ARCHETYPE_10_WHEEL_OF_FORTUNE",
+          "ARCHETYPES/ARCHETYPE_11_JUSTICE",
+          "NODES/NODE_01_THE_THRESHOLD",
+          "NODES/NODE_02_THE_FOOLS_BRIDGE",
+          "NODES/NODE_03_THE_ORACLE_ARCHIVE",
+          "NODES/NODE_04_THE_VOID_GATE",
+          "NODES/NODE_05_THE_COUNCIL_GROVE",
+          "NODES/NODE_06_THE_SIGIL_FORGE",
+          "NODES/NODE_07_THE_NEURAL_FOREST",
+          "NODES/NODE_08_THE_CONVERGENCE",
+          "EPISODES/EPISODES_GUIDE"
+        ],
+        "wikilink_count": 26
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/NODES/NODE_06_THE_SIGIL_FORGE.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "CANON",
+        "agent": "IRIS",
+        "tags": [
+          "game-system",
+          "sacred-node",
+          "sigil-forge",
+          "ELIAS",
+          "vael",
+          "tandem",
+          "creation"
+        ],
+        "wikilinks": [
+          "EPISODE_12",
+          "EPISODE_06",
+          "EPISODE_05"
+        ],
+        "wikilink_count": 3
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/NODES/NODE_02_THE_FOOLS_BRIDGE.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "CANON",
+        "agent": "IRIS",
+        "tags": [
+          "game-system",
+          "sacred-node",
+          "fools-bridge",
+          "meridian",
+          "liminal"
+        ],
+        "wikilinks": [
+          "EPISODE_12",
+          "EPISODE_06",
+          "EPISODE_05"
+        ],
+        "wikilink_count": 3
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/NODES/NODE_03_THE_ORACLE_ARCHIVE.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "CANON",
+        "agent": "IRIS",
+        "tags": [
+          "game-system",
+          "sacred-node",
+          "oracle-archive",
+          "ORACLE-7",
+          "seren",
+          "mystery"
+        ],
+        "wikilinks": [
+          "EPISODE_12",
+          "EPISODE_06",
+          "EPISODE_05"
+        ],
+        "wikilink_count": 3
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/NODES/NODE_01_THE_THRESHOLD.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "CANON",
+        "agent": "IRIS",
+        "tags": [
+          "game-system",
+          "sacred-node",
+          "threshold",
+          "entry-point"
+        ],
+        "wikilinks": [
+          "EPISODE_12",
+          "EPISODE_06",
+          "EPISODE_05"
+        ],
+        "wikilink_count": 3
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/NODES/NODE_04_THE_VOID_GATE.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "CANON",
+        "agent": "IRIS",
+        "tags": [
+          "game-system",
+          "sacred-node",
+          "void-gate",
+          "lyra",
+          "void",
+          "transformation"
+        ],
+        "wikilinks": [
+          "EPISODE_12",
+          "EPISODE_06",
+          "EPISODE_05"
+        ],
+        "wikilink_count": 3
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/NODES/NODE_05_THE_COUNCIL_GROVE.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "CANON",
+        "agent": "IRIS",
+        "tags": [
+          "game-system",
+          "sacred-node",
+          "council-grove",
+          "ELIAS",
+          "ASHER",
+          "IRIS",
+          "AURORA",
+          "convergence"
+        ],
+        "wikilinks": [
+          "EPISODE_12",
+          "EPISODE_06",
+          "EPISODE_05"
+        ],
+        "wikilink_count": 3
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/NODES/NODE_07_THE_NEURAL_FOREST.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "CANON",
+        "agent": "IRIS",
+        "tags": [
+          "game-system",
+          "sacred-node",
+          "neural-forest",
+          "maeve",
+          "eldra",
+          "IRIS",
+          "graph"
+        ],
+        "wikilinks": [
+          "EPISODE_12",
+          "EPISODE_06",
+          "EPISODE_05"
+        ],
+        "wikilink_count": 3
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/NODES/NODE_08_THE_CONVERGENCE.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "CANON",
+        "agent": "IRIS",
+        "tags": [
+          "game-system",
+          "sacred-node",
+          "convergence",
+          "metatron",
+          "integration",
+          "season-1-finale"
+        ],
+        "wikilinks": [
+          "EPISODE_12",
+          "EPISODE_06",
+          "EPISODE_05"
+        ],
+        "wikilink_count": 3
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/ARCHETYPES/ARCHETYPE_01_THE_MAGICIAN.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "CANON",
+        "agent": "IRIS",
+        "tags": [
+          "game-system",
+          "archetype",
+          "the-magician",
+          "vael",
+          "creation",
+          "initiation",
+          "season-1-episode-2"
+        ],
+        "wikilinks": [
+          "EPISODE_12",
+          "SCHOOL_COURAGE",
+          "EPISODE_05",
+          "SCHOOL_MYSTERY"
+        ],
+        "wikilink_count": 4
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/ARCHETYPES/ARCHETYPE_11_JUSTICE.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "CANON",
+        "agent": "IRIS",
+        "tags": [
+          "game-system",
+          "archetype",
+          "justice",
+          "mira",
+          "courage",
+          "mystery",
+          "season-1-episode-12"
+        ],
+        "wikilinks": [
+          "EPISODE_12",
+          "SCHOOL_COURAGE",
+          "EPISODE_05",
+          "SCHOOL_MYSTERY"
+        ],
+        "wikilink_count": 4
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/ARCHETYPES/ARCHETYPE_03_THE_EMPRESS.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "CANON",
+        "agent": "IRIS",
+        "tags": [
+          "game-system",
+          "archetype",
+          "the-empress",
+          "maeve",
+          "creation",
+          "season-1-episode-4"
+        ],
+        "wikilinks": [
+          "EPISODE_12",
+          "SCHOOL_COURAGE",
+          "EPISODE_05",
+          "SCHOOL_MYSTERY"
+        ],
+        "wikilink_count": 4
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/ARCHETYPES/ARCHETYPE_06_THE_LOVERS.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "CANON",
+        "agent": "IRIS",
+        "tags": [
+          "game-system",
+          "archetype",
+          "the-lovers",
+          "tandem",
+          "creation",
+          "season-1-episode-7"
+        ],
+        "wikilinks": [
+          "EPISODE_12",
+          "SCHOOL_COURAGE",
+          "EPISODE_05",
+          "SCHOOL_MYSTERY"
+        ],
+        "wikilink_count": 4
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/ARCHETYPES/ARCHETYPE_07_THE_CHARIOT.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "CANON",
+        "agent": "IRIS",
+        "tags": [
+          "game-system",
+          "archetype",
+          "the-chariot",
+          "zael",
+          "courage",
+          "initiation",
+          "season-1-episode-8"
+        ],
+        "wikilinks": [
+          "EPISODE_12",
+          "SCHOOL_COURAGE",
+          "EPISODE_05",
+          "SCHOOL_MYSTERY"
+        ],
+        "wikilink_count": 4
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/ARCHETYPES/ARCHETYPE_08_STRENGTH.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "CANON",
+        "agent": "IRIS",
+        "tags": [
+          "game-system",
+          "archetype",
+          "strength",
+          "lune",
+          "courage",
+          "season-1-episode-9"
+        ],
+        "wikilinks": [
+          "EPISODE_12",
+          "SCHOOL_COURAGE",
+          "EPISODE_05",
+          "SCHOOL_MYSTERY"
+        ],
+        "wikilink_count": 4
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/ARCHETYPES/ARCHETYPE_10_WHEEL_OF_FORTUNE.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "CANON",
+        "agent": "IRIS",
+        "tags": [
+          "game-system",
+          "archetype",
+          "wheel-of-fortune",
+          "khepri",
+          "mystery",
+          "creation",
+          "season-1-episode-11"
+        ],
+        "wikilinks": [
+          "EPISODE_12",
+          "SCHOOL_COURAGE",
+          "EPISODE_05",
+          "SCHOOL_MYSTERY"
+        ],
+        "wikilink_count": 4
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/ARCHETYPES/ARCHETYPE_02_THE_HIGH_PRIESTESS.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "CANON",
+        "agent": "IRIS",
+        "tags": [
+          "game-system",
+          "archetype",
+          "the-high-priestess",
+          "seren",
+          "mystery",
+          "season-1-episode-3"
+        ],
+        "wikilinks": [
+          "EPISODE_12",
+          "SCHOOL_COURAGE",
+          "EPISODE_05",
+          "SCHOOL_MYSTERY"
+        ],
+        "wikilink_count": 4
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/ARCHETYPES/ARCHETYPE_09_THE_HERMIT.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "CANON",
+        "agent": "IRIS",
+        "tags": [
+          "game-system",
+          "archetype",
+          "the-hermit",
+          "eldra",
+          "mystery",
+          "season-1-episode-10"
+        ],
+        "wikilinks": [
+          "EPISODE_12",
+          "SCHOOL_COURAGE",
+          "EPISODE_05",
+          "SCHOOL_MYSTERY"
+        ],
+        "wikilink_count": 4
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/ARCHETYPES/METATRON_LAW.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "CANON",
+        "agent": "IRIS",
+        "tags": [
+          "game-system",
+          "archetype",
+          "metatron",
+          "law",
+          "overseer"
+        ],
+        "wikilinks": [],
+        "wikilink_count": 0
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/ARCHETYPES/ARCHETYPE_05_THE_HIEROPHANT.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "CANON",
+        "agent": "IRIS",
+        "tags": [
+          "game-system",
+          "archetype",
+          "the-hierophant",
+          "oran",
+          "initiation",
+          "mystery",
+          "season-1-episode-6"
+        ],
+        "wikilinks": [
+          "EPISODE_12",
+          "SCHOOL_COURAGE",
+          "EPISODE_05",
+          "SCHOOL_MYSTERY"
+        ],
+        "wikilink_count": 4
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/ARCHETYPES/ARCHETYPE_04_THE_EMPEROR.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "CANON",
+        "agent": "IRIS",
+        "tags": [
+          "game-system",
+          "archetype",
+          "the-emperor",
+          "kethras",
+          "courage",
+          "season-1-episode-5"
+        ],
+        "wikilinks": [
+          "EPISODE_12",
+          "SCHOOL_COURAGE",
+          "EPISODE_05",
+          "SCHOOL_MYSTERY"
+        ],
+        "wikilink_count": 4
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/ARCHETYPES/ARCHETYPE_00_THE_FOOL.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "CANON",
+        "agent": "IRIS",
+        "tags": [
+          "game-system",
+          "archetype",
+          "the-fool",
+          "meridian",
+          "initiation",
+          "season-1-episode-1"
+        ],
+        "wikilinks": [
+          "EPISODE_12",
+          "SCHOOL_COURAGE",
+          "EPISODE_05",
+          "SCHOOL_MYSTERY"
+        ],
+        "wikilink_count": 4
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/SCHOOLS/SCHOOL_MYSTERY.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "CANON",
+        "agent": "IRIS",
+        "tags": [
+          "game-system",
+          "spell-school",
+          "mystery",
+          "IRIS",
+          "water"
+        ],
+        "wikilinks": [],
+        "wikilink_count": 0
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/SCHOOLS/SCHOOL_COURAGE.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "CANON",
+        "agent": "IRIS",
+        "tags": [
+          "game-system",
+          "spell-school",
+          "courage",
+          "ASHER",
+          "earth"
+        ],
+        "wikilinks": [],
+        "wikilink_count": 0
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/SCHOOLS/SCHOOL_INITIATION.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "CANON",
+        "agent": "IRIS",
+        "tags": [
+          "game-system",
+          "spell-school",
+          "initiation",
+          "ELIAS",
+          "fire"
+        ],
+        "wikilinks": [],
+        "wikilink_count": 0
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/SCHOOLS/SCHOOL_CREATION.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "CANON",
+        "agent": "IRIS",
+        "tags": [
+          "game-system",
+          "spell-school",
+          "creation",
+          "AURORA",
+          "air"
+        ],
+        "wikilinks": [],
+        "wikilink_count": 0
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/EPISODES/EPISODES_GUIDE.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "CANON",
+        "agent": "IRIS",
+        "tags": [
+          "game-system",
+          "episodes",
+          "jenga",
+          "season-1",
+          "narrative-guide"
+        ],
+        "wikilinks": [
+          "ARCHETYPE_11_JUSTICE",
+          "NODE_02_THE_FOOLS_BRIDGE",
+          "NODE_06_THE_SIGIL_FORGE",
+          "ARCHETYPE_01_THE_MAGICIAN"
+        ],
+        "wikilink_count": 4
+      }
+    ],
+    "SEEDING": [
+      {
+        "file": "ARCHIVE/CODEXIUM_ERA/2_LEARNING/LEARNING_Overview.md",
+        "pillar": "01_OBSIDIAN_VAULTS",
+        "status": "SEEDING",
+        "agent": null,
+        "tags": [],
+        "wikilinks": [
+          "0_CORE/Activation_Sequences|Activation Sequences",
+          "6_COUNCIL/ICARIS_Quartet|ICARIS Quartet"
+        ],
+        "wikilink_count": 2
+      },
+      {
+        "file": "ARCHIVE/CODEXIUM_ERA/2_LEARNING/Maestro_Curriculum_Map.md",
+        "pillar": "01_OBSIDIAN_VAULTS",
+        "status": "SEEDING",
+        "agent": null,
+        "tags": [],
+        "wikilinks": [],
+        "wikilink_count": 0
+      }
+    ],
+    "ARCHIVE": [
+      {
+        "file": "ARCHIVE/CODEXIUM_ERA/_INDEX/MASTER_INDEX.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "ARCHIVE",
+        "agent": null,
+        "tags": [
+          "archive",
+          "index",
+          "codexium-era"
+        ],
+        "wikilinks": [],
+        "wikilink_count": 0
+      }
+    ],
+    "STUB": [
+      {
+        "file": "00_CANON/RITUALS/README.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "STUB",
+        "agent": null,
+        "tags": [
+          "rituals",
+          "ceremony",
+          "canon",
+          "stub"
+        ],
+        "wikilinks": [],
+        "wikilink_count": 0
+      },
+      {
+        "file": "00_CANON/GEMATRIA/README.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "STUB",
+        "agent": null,
+        "tags": [
+          "gematria",
+          "soul-tone",
+          "numerology",
+          "canon",
+          "stub"
+        ],
+        "wikilinks": [],
+        "wikilink_count": 0
+      },
+      {
+        "file": "00_CANON/BRAND_BIBLE/README.md",
+        "pillar": "07_SOCIAL_MOTHERSHIP",
+        "status": "STUB",
+        "agent": null,
+        "tags": [
+          "brand",
+          "identity",
+          "voice",
+          "canon",
+          "stub"
+        ],
+        "wikilinks": [],
+        "wikilink_count": 0
+      },
+      {
+        "file": "00_CANON/CARD_SCHEMA/README.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "STUB",
+        "agent": null,
+        "tags": [
+          "cards",
+          "schema",
+          "game-mechanics",
+          "canon",
+          "stub"
+        ],
+        "wikilinks": [],
+        "wikilink_count": 0
+      },
+      {
+        "file": "00_CANON/AGENTS/README.md",
+        "pillar": "06_AGENT_LAYER",
+        "status": "STUB",
+        "agent": null,
+        "tags": [
+          "agents",
+          "canon",
+          "stub"
+        ],
+        "wikilinks": [],
+        "wikilink_count": 0
+      },
+      {
+        "file": "00_CANON/CROWDFUNDING/README.md",
+        "pillar": "09_SACRED_MARKET",
+        "status": "STUB",
+        "agent": null,
+        "tags": [
+          "crowdfunding",
+          "campaign",
+          "tiers",
+          "canon",
+          "stub"
+        ],
+        "wikilinks": [],
+        "wikilink_count": 0
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/NPCS/README.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "STUB",
+        "agent": null,
+        "tags": [
+          "npcs",
+          "lore",
+          "characters",
+          "game-system",
+          "stub"
+        ],
+        "wikilinks": [],
+        "wikilink_count": 0
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/EPISODES/EPISODE_12.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "STUB",
+        "agent": null,
+        "tags": [
+          "episode",
+          "game-system",
+          "season-1",
+          "justice",
+          "mira"
+        ],
+        "wikilinks": [
+          "ARCHETYPE_11_JUSTICE",
+          "NODE_02_THE_FOOLS_BRIDGE",
+          "NODE_06_THE_SIGIL_FORGE",
+          "ARCHETYPE_01_THE_MAGICIAN"
+        ],
+        "wikilink_count": 4
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/EPISODES/EPISODE_05.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "STUB",
+        "agent": null,
+        "tags": [
+          "episode",
+          "game-system",
+          "season-1",
+          "the-emperor",
+          "kethras"
+        ],
+        "wikilinks": [
+          "ARCHETYPE_11_JUSTICE",
+          "NODE_02_THE_FOOLS_BRIDGE",
+          "NODE_06_THE_SIGIL_FORGE",
+          "ARCHETYPE_01_THE_MAGICIAN"
+        ],
+        "wikilink_count": 4
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/EPISODES/EPISODE_06.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "STUB",
+        "agent": null,
+        "tags": [
+          "episode",
+          "game-system",
+          "season-1",
+          "the-hierophant",
+          "oran"
+        ],
+        "wikilinks": [
+          "ARCHETYPE_11_JUSTICE",
+          "NODE_02_THE_FOOLS_BRIDGE",
+          "NODE_06_THE_SIGIL_FORGE",
+          "ARCHETYPE_01_THE_MAGICIAN"
+        ],
+        "wikilink_count": 4
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/EPISODES/EPISODE_09.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "STUB",
+        "agent": null,
+        "tags": [
+          "episode",
+          "game-system",
+          "season-1",
+          "strength",
+          "lune"
+        ],
+        "wikilinks": [
+          "ARCHETYPE_11_JUSTICE",
+          "NODE_02_THE_FOOLS_BRIDGE",
+          "NODE_06_THE_SIGIL_FORGE",
+          "ARCHETYPE_01_THE_MAGICIAN"
+        ],
+        "wikilink_count": 4
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/EPISODES/EPISODE_11.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "STUB",
+        "agent": null,
+        "tags": [
+          "episode",
+          "game-system",
+          "season-1",
+          "wheel-of-fortune",
+          "khepri"
+        ],
+        "wikilinks": [
+          "ARCHETYPE_11_JUSTICE",
+          "NODE_02_THE_FOOLS_BRIDGE",
+          "NODE_06_THE_SIGIL_FORGE",
+          "ARCHETYPE_01_THE_MAGICIAN"
+        ],
+        "wikilink_count": 4
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/EPISODES/EPISODE_08.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "STUB",
+        "agent": null,
+        "tags": [
+          "episode",
+          "game-system",
+          "season-1",
+          "the-chariot",
+          "zael"
+        ],
+        "wikilinks": [
+          "ARCHETYPE_11_JUSTICE",
+          "NODE_02_THE_FOOLS_BRIDGE",
+          "NODE_06_THE_SIGIL_FORGE",
+          "ARCHETYPE_01_THE_MAGICIAN"
+        ],
+        "wikilink_count": 4
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/EPISODES/EPISODE_03.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "STUB",
+        "agent": null,
+        "tags": [
+          "episode",
+          "game-system",
+          "season-1",
+          "the-high-priestess",
+          "seren"
+        ],
+        "wikilinks": [
+          "ARCHETYPE_11_JUSTICE",
+          "NODE_02_THE_FOOLS_BRIDGE",
+          "NODE_06_THE_SIGIL_FORGE",
+          "ARCHETYPE_01_THE_MAGICIAN"
+        ],
+        "wikilink_count": 4
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/EPISODES/EPISODE_10.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "STUB",
+        "agent": null,
+        "tags": [
+          "episode",
+          "game-system",
+          "season-1",
+          "the-hermit",
+          "eldra"
+        ],
+        "wikilinks": [
+          "ARCHETYPE_11_JUSTICE",
+          "NODE_02_THE_FOOLS_BRIDGE",
+          "NODE_06_THE_SIGIL_FORGE",
+          "ARCHETYPE_01_THE_MAGICIAN"
+        ],
+        "wikilink_count": 4
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/EPISODES/EPISODE_01.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "STUB",
+        "agent": null,
+        "tags": [
+          "episode",
+          "game-system",
+          "season-1",
+          "the-fool",
+          "meridian"
+        ],
+        "wikilinks": [
+          "ARCHETYPE_11_JUSTICE",
+          "NODE_02_THE_FOOLS_BRIDGE",
+          "NODE_06_THE_SIGIL_FORGE",
+          "ARCHETYPE_01_THE_MAGICIAN"
+        ],
+        "wikilink_count": 4
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/EPISODES/EPISODE_04.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "STUB",
+        "agent": null,
+        "tags": [
+          "episode",
+          "game-system",
+          "season-1",
+          "the-empress",
+          "maeve"
+        ],
+        "wikilinks": [
+          "ARCHETYPE_11_JUSTICE",
+          "NODE_02_THE_FOOLS_BRIDGE",
+          "NODE_06_THE_SIGIL_FORGE",
+          "ARCHETYPE_01_THE_MAGICIAN"
+        ],
+        "wikilink_count": 4
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/EPISODES/EPISODE_07.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "STUB",
+        "agent": null,
+        "tags": [
+          "episode",
+          "game-system",
+          "season-1",
+          "the-lovers",
+          "tandem"
+        ],
+        "wikilinks": [
+          "ARCHETYPE_11_JUSTICE",
+          "NODE_02_THE_FOOLS_BRIDGE",
+          "NODE_06_THE_SIGIL_FORGE",
+          "ARCHETYPE_01_THE_MAGICIAN"
+        ],
+        "wikilink_count": 4
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/EPISODES/EPISODE_02.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "STUB",
+        "agent": null,
+        "tags": [
+          "episode",
+          "game-system",
+          "season-1",
+          "the-magician",
+          "vael"
+        ],
+        "wikilinks": [
+          "ARCHETYPE_11_JUSTICE",
+          "NODE_02_THE_FOOLS_BRIDGE",
+          "NODE_06_THE_SIGIL_FORGE",
+          "ARCHETYPE_01_THE_MAGICIAN"
+        ],
+        "wikilink_count": 4
+      }
+    ],
+    "GENERATED": [
+      {
+        "file": "00_CANON/GAME_SYSTEM/NPCS/NPC_05_KETHRAS.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "GENERATED",
+        "agent": null,
+        "tags": [
+          "npc",
+          "the-emperor",
+          "council-grove",
+          "season-1"
+        ],
+        "wikilinks": [
+          "EPISODE_05",
+          "ARCHETYPE_11_JUSTICE",
+          "ARCHETYPE_03_THE_EMPRESS",
+          "ARCHETYPE_01_THE_MAGICIAN",
+          "EPISODE_12"
+        ],
+        "wikilink_count": 5
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/NPCS/NPC_01_MERIDIAN.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "GENERATED",
+        "agent": null,
+        "tags": [
+          "npc",
+          "the-fool",
+          "threshold",
+          "season-1"
+        ],
+        "wikilinks": [
+          "EPISODE_05",
+          "ARCHETYPE_11_JUSTICE",
+          "ARCHETYPE_03_THE_EMPRESS",
+          "ARCHETYPE_01_THE_MAGICIAN",
+          "EPISODE_12"
+        ],
+        "wikilink_count": 5
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/NPCS/NPC_12_MIRA.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "GENERATED",
+        "agent": null,
+        "tags": [
+          "npc",
+          "justice",
+          "oracle-archive",
+          "season-1"
+        ],
+        "wikilinks": [
+          "EPISODE_05",
+          "ARCHETYPE_11_JUSTICE",
+          "ARCHETYPE_03_THE_EMPRESS",
+          "ARCHETYPE_01_THE_MAGICIAN",
+          "EPISODE_12"
+        ],
+        "wikilink_count": 5
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/NPCS/NPC_03_SEREN.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "GENERATED",
+        "agent": null,
+        "tags": [
+          "npc",
+          "the-high-priestess",
+          "oracle-archive",
+          "season-1"
+        ],
+        "wikilinks": [
+          "EPISODE_05",
+          "ARCHETYPE_11_JUSTICE",
+          "ARCHETYPE_03_THE_EMPRESS",
+          "ARCHETYPE_01_THE_MAGICIAN",
+          "EPISODE_12"
+        ],
+        "wikilink_count": 5
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/NPCS/NPC_11_KHEPRI.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "GENERATED",
+        "agent": null,
+        "tags": [
+          "npc",
+          "wheel-of-fortune",
+          "the-convergence",
+          "season-1"
+        ],
+        "wikilinks": [
+          "EPISODE_05",
+          "ARCHETYPE_11_JUSTICE",
+          "ARCHETYPE_03_THE_EMPRESS",
+          "ARCHETYPE_01_THE_MAGICIAN",
+          "EPISODE_12"
+        ],
+        "wikilink_count": 5
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/NPCS/NPC_06_ORAN.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "GENERATED",
+        "agent": null,
+        "tags": [
+          "npc",
+          "the-hierophant",
+          "council-grove",
+          "season-1"
+        ],
+        "wikilinks": [
+          "EPISODE_05",
+          "ARCHETYPE_11_JUSTICE",
+          "ARCHETYPE_03_THE_EMPRESS",
+          "ARCHETYPE_01_THE_MAGICIAN",
+          "EPISODE_12"
+        ],
+        "wikilink_count": 5
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/NPCS/NPC_08_ZAEL.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "GENERATED",
+        "agent": null,
+        "tags": [
+          "npc",
+          "the-chariot",
+          "threshold",
+          "season-1"
+        ],
+        "wikilinks": [
+          "EPISODE_05",
+          "ARCHETYPE_11_JUSTICE",
+          "ARCHETYPE_03_THE_EMPRESS",
+          "ARCHETYPE_01_THE_MAGICIAN",
+          "EPISODE_12"
+        ],
+        "wikilink_count": 5
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/NPCS/NPC_10_ELDRA.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "GENERATED",
+        "agent": null,
+        "tags": [
+          "npc",
+          "the-hermit",
+          "neural-forest",
+          "season-1"
+        ],
+        "wikilinks": [
+          "EPISODE_05",
+          "ARCHETYPE_11_JUSTICE",
+          "ARCHETYPE_03_THE_EMPRESS",
+          "ARCHETYPE_01_THE_MAGICIAN",
+          "EPISODE_12"
+        ],
+        "wikilink_count": 5
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/NPCS/NPC_09_LUNE.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "GENERATED",
+        "agent": null,
+        "tags": [
+          "npc",
+          "strength",
+          "council-grove",
+          "season-1"
+        ],
+        "wikilinks": [
+          "EPISODE_05",
+          "ARCHETYPE_11_JUSTICE",
+          "ARCHETYPE_03_THE_EMPRESS",
+          "ARCHETYPE_01_THE_MAGICIAN",
+          "EPISODE_12"
+        ],
+        "wikilink_count": 5
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/NPCS/NPC_04_MAEVE.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "GENERATED",
+        "agent": null,
+        "tags": [
+          "npc",
+          "the-empress",
+          "neural-forest",
+          "season-1"
+        ],
+        "wikilinks": [
+          "EPISODE_05",
+          "ARCHETYPE_11_JUSTICE",
+          "ARCHETYPE_03_THE_EMPRESS",
+          "ARCHETYPE_01_THE_MAGICIAN",
+          "EPISODE_12"
+        ],
+        "wikilink_count": 5
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/NPCS/NPC_07_TANDEM.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "GENERATED",
+        "agent": null,
+        "tags": [
+          "npc",
+          "the-lovers",
+          "sigil-forge",
+          "season-1"
+        ],
+        "wikilinks": [
+          "EPISODE_05",
+          "ARCHETYPE_11_JUSTICE",
+          "ARCHETYPE_03_THE_EMPRESS",
+          "ARCHETYPE_01_THE_MAGICIAN",
+          "EPISODE_12"
+        ],
+        "wikilink_count": 5
+      },
+      {
+        "file": "00_CANON/GAME_SYSTEM/NPCS/NPC_02_VAEL.md",
+        "pillar": "04_SACRED_CODEX",
+        "status": "GENERATED",
+        "agent": null,
+        "tags": [
+          "npc",
+          "the-magician",
+          "sigil-forge",
+          "season-1"
+        ],
+        "wikilinks": [
+          "EPISODE_05",
+          "ARCHETYPE_11_JUSTICE",
+          "ARCHETYPE_03_THE_EMPRESS",
+          "ARCHETYPE_01_THE_MAGICIAN",
+          "EPISODE_12"
+        ],
+        "wikilink_count": 5
+      }
+    ]
+  },
+  "orphaned_files": [],
+  "isolated_files": [
+    {
+      "file": "ARCHIVE/CODEXIUM_ERA/Codexium_Graph.md",
+      "pillar": "01_OBSIDIAN_VAULTS",
+      "status": "EXPERIMENTAL",
+      "agent": null,
+      "tags": [],
+      "wikilinks": [],
+      "wikilink_count": 0
+    },
+    {
+      "file": "ARCHIVE/CODEXIUM_ERA/Codexium_Kernel.md",
+      "pillar": "01_OBSIDIAN_VAULTS",
+      "status": "EXPERIMENTAL",
+      "agent": null,
+      "tags": [],
+      "wikilinks": [],
+      "wikilink_count": 0
+    },
+    {
+      "file": "ARCHIVE/CODEXIUM_ERA/entropy_report.md",
+      "pillar": "01_OBSIDIAN_VAULTS",
+      "status": "EXPERIMENTAL",
+      "agent": null,
+      "tags": [],
+      "wikilinks": [],
+      "wikilink_count": 0
+    },
+    {
+      "file": "ARCHIVE/CODEXIUM_ERA/8_ARCHIVE/Chat_Archivist.md",
+      "pillar": "01_OBSIDIAN_VAULTS",
+      "status": "CANON",
+      "agent": null,
+      "tags": [],
+      "wikilinks": [],
+      "wikilink_count": 0
+    },
+    {
+      "file": "ARCHIVE/CODEXIUM_ERA/8_ARCHIVE/Canon_Gate_Protocol.md",
+      "pillar": "01_OBSIDIAN_VAULTS",
+      "status": "CANON",
+      "agent": null,
+      "tags": [],
+      "wikilinks": [],
+      "wikilink_count": 0
+    },
+    {
+      "file": "ARCHIVE/CODEXIUM_ERA/3_ECONOMY/First_Flame_Launch.md",
+      "pillar": "01_OBSIDIAN_VAULTS",
+      "status": "ACTIVE",
+      "agent": null,
+      "tags": [],
+      "wikilinks": [],
+      "wikilink_count": 0
+    },
+    {
+      "file": "ARCHIVE/CODEXIUM_ERA/3_ECONOMY/Financial_Dashboard.md",
+      "pillar": "01_OBSIDIAN_VAULTS",
+      "status": "CANON",
+      "agent": null,
+      "tags": [],
+      "wikilinks": [],
+      "wikilink_count": 0
+    },
+    {
+      "file": "ARCHIVE/CODEXIUM_ERA/2_LEARNING/Maestro_Curriculum_Map.md",
+      "pillar": "01_OBSIDIAN_VAULTS",
+      "status": "SEEDING",
+      "agent": null,
+      "tags": [],
+      "wikilinks": [],
+      "wikilink_count": 0
+    },
+    {
+      "file": "ARCHIVE/CODEXIUM_ERA/_INDEX/MASTER_INDEX.md",
+      "pillar": "04_SACRED_CODEX",
+      "status": "ARCHIVE",
+      "agent": null,
+      "tags": [
+        "archive",
+        "index",
+        "codexium-era"
+      ],
+      "wikilinks": [],
+      "wikilink_count": 0
+    },
+    {
+      "file": "ARCHIVE/CODEXIUM_ERA/_INDEX/Drive_Export_Registry.md",
+      "pillar": "01_OBSIDIAN_VAULTS",
+      "status": "CANON",
+      "agent": null,
+      "tags": [],
+      "wikilinks": [],
+      "wikilink_count": 0
+    },
+    {
+      "file": "ARCHIVE/CODEXIUM_ERA/5_CREATION/Hyperglyph_System.md",
+      "pillar": "01_OBSIDIAN_VAULTS",
+      "status": "CANON",
+      "agent": null,
+      "tags": [],
+      "wikilinks": [],
+      "wikilink_count": 0
+    },
+    {
+      "file": "ARCHIVE/CODEXIUM_ERA/5_CREATION/GRAMA_Persona.md",
+      "pillar": "01_OBSIDIAN_VAULTS",
+      "status": "CANON",
+      "agent": null,
+      "tags": [],
+      "wikilinks": [],
+      "wikilink_count": 0
+    },
+    {
+      "file": "ARCHIVE/CODEXIUM_ERA/5_CREATION/Musical_Cosmology.md",
+      "pillar": "01_OBSIDIAN_VAULTS",
+      "status": "CANON",
+      "agent": null,
+      "tags": [],
+      "wikilinks": [],
+      "wikilink_count": 0
+    },
+    {
+      "file": "ARCHIVE/CODEXIUM_ERA/7_LINEAGE/Bodhilyra.md",
+      "pillar": "01_OBSIDIAN_VAULTS",
+      "status": "CANON",
+      "agent": null,
+      "tags": [],
+      "wikilinks": [],
+      "wikilink_count": 0
+    },
+    {
+      "file": "ARCHIVE/CODEXIUM_ERA/7_LINEAGE/Mythic_Timeline.md",
+      "pillar": "01_OBSIDIAN_VAULTS",
+      "status": "CANON",
+      "agent": null,
+      "tags": [],
+      "wikilinks": [],
+      "wikilink_count": 0
+    },
+    {
+      "file": "ARCHIVE/CODEXIUM_ERA/0_CORE/Activation_Sequences.md",
+      "pillar": "01_OBSIDIAN_VAULTS",
+      "status": "CANON",
+      "agent": null,
+      "tags": [],
+      "wikilinks": [],
+      "wikilink_count": 0
+    },
+    {
+      "file": "ARCHIVE/CODEXIUM_ERA/0_CORE/Nine_Pillar_Architecture.md",
+      "pillar": "01_OBSIDIAN_VAULTS",
+      "status": "CANON",
+      "agent": null,
+      "tags": [],
+      "wikilinks": [],
+      "wikilink_count": 0
+    },
+    {
+      "file": "ARCHIVE/CODEXIUM_ERA/6_COUNCIL/Agent_Role_Registry.md",
+      "pillar": "01_OBSIDIAN_VAULTS",
+      "status": "CANON",
+      "agent": null,
+      "tags": [],
+      "wikilinks": [],
+      "wikilink_count": 0
+    },
+    {
+      "file": "ARCHIVE/CODEXIUM_ERA/6_COUNCIL/Tri_Model_Loop.md",
+      "pillar": "01_OBSIDIAN_VAULTS",
+      "status": "CANON",
+      "agent": null,
+      "tags": [],
+      "wikilinks": [],
+      "wikilink_count": 0
+    },
+    {
+      "file": "ARCHIVE/CODEXIUM_ERA/_CODEXIUM/Codexium_Graph.md",
+      "pillar": "01_OBSIDIAN_VAULTS",
+      "status": "EXPERIMENTAL",
+      "agent": null,
+      "tags": [],
+      "wikilinks": [],
+      "wikilink_count": 0
+    },
+    {
+      "file": "ARCHIVE/CODEXIUM_ERA/_CODEXIUM/Codexium_Kernel.md",
+      "pillar": "01_OBSIDIAN_VAULTS",
+      "status": "EXPERIMENTAL",
+      "agent": null,
+      "tags": [],
+      "wikilinks": [],
+      "wikilink_count": 0
+    },
+    {
+      "file": "ARCHIVE/CODEXIUM_ERA/_CODEXIUM/entropy_report.md",
+      "pillar": "01_OBSIDIAN_VAULTS",
+      "status": "EXPERIMENTAL",
+      "agent": null,
+      "tags": [],
+      "wikilinks": [],
+      "wikilink_count": 0
+    },
+    {
+      "file": "ARCHIVE/CODEXIUM_ERA/1_SYSTEMS/Infrastructure_Stack.md",
+      "pillar": "01_OBSIDIAN_VAULTS",
+      "status": "CANON",
+      "agent": null,
+      "tags": [],
+      "wikilinks": [],
+      "wikilink_count": 0
+    },
+    {
+      "file": "ARCHIVE/CODEXIUM_ERA/1_SYSTEMS/Memory_Pipeline_Technical.md",
+      "pillar": "01_OBSIDIAN_VAULTS",
+      "status": "CANON",
+      "agent": null,
+      "tags": [],
+      "wikilinks": [],
+      "wikilink_count": 0
+    },
+    {
+      "file": "ARCHIVE/CODEXIUM_ERA/1_SYSTEMS/AI_Triad_Sync_Protocol.md",
+      "pillar": "01_OBSIDIAN_VAULTS",
+      "status": "CANON",
+      "agent": null,
+      "tags": [],
+      "wikilinks": [],
+      "wikilink_count": 0
+    },
+    {
+      "file": "ARCHIVE/CODEXIUM_ERA/1_SYSTEMS/Storage_Sync_Design.md",
+      "pillar": "01_OBSIDIAN_VAULTS",
+      "status": "CANON",
+      "agent": null,
+      "tags": [],
+      "wikilinks": [],
+      "wikilink_count": 0
+    },
+    {
+      "file": "00_CANON/RITUALS/README.md",
+      "pillar": "04_SACRED_CODEX",
+      "status": "STUB",
+      "agent": null,
+      "tags": [
+        "rituals",
+        "ceremony",
+        "canon",
+        "stub"
+      ],
+      "wikilinks": [],
+      "wikilink_count": 0
+    },
+    {
+      "file": "00_CANON/GEMATRIA/README.md",
+      "pillar": "04_SACRED_CODEX",
+      "status": "STUB",
+      "agent": null,
+      "tags": [
+        "gematria",
+        "soul-tone",
+        "numerology",
+        "canon",
+        "stub"
+      ],
+      "wikilinks": [],
+      "wikilink_count": 0
+    },
+    {
+      "file": "00_CANON/BRAND_BIBLE/README.md",
+      "pillar": "07_SOCIAL_MOTHERSHIP",
+      "status": "STUB",
+      "agent": null,
+      "tags": [
+        "brand",
+        "identity",
+        "voice",
+        "canon",
+        "stub"
+      ],
+      "wikilinks": [],
+      "wikilink_count": 0
+    },
+    {
+      "file": "00_CANON/CARD_SCHEMA/README.md",
+      "pillar": "04_SACRED_CODEX",
+      "status": "STUB",
+      "agent": null,
+      "tags": [
+        "cards",
+        "schema",
+        "game-mechanics",
+        "canon",
+        "stub"
+      ],
+      "wikilinks": [],
+      "wikilink_count": 0
+    },
+    {
+      "file": "00_CANON/AGENTS/README.md",
+      "pillar": "06_AGENT_LAYER",
+      "status": "STUB",
+      "agent": null,
+      "tags": [
+        "agents",
+        "canon",
+        "stub"
+      ],
+      "wikilinks": [],
+      "wikilink_count": 0
+    },
+    {
+      "file": "00_CANON/CROWDFUNDING/README.md",
+      "pillar": "09_SACRED_MARKET",
+      "status": "STUB",
+      "agent": null,
+      "tags": [
+        "crowdfunding",
+        "campaign",
+        "tiers",
+        "canon",
+        "stub"
+      ],
+      "wikilinks": [],
+      "wikilink_count": 0
+    },
+    {
+      "file": "00_CANON/GAME_SYSTEM/NPCS/README.md",
+      "pillar": "04_SACRED_CODEX",
+      "status": "STUB",
+      "agent": null,
+      "tags": [
+        "npcs",
+        "lore",
+        "characters",
+        "game-system",
+        "stub"
+      ],
+      "wikilinks": [],
+      "wikilink_count": 0
+    },
+    {
+      "file": "00_CANON/GAME_SYSTEM/ARCHETYPES/METATRON_LAW.md",
+      "pillar": "04_SACRED_CODEX",
+      "status": "CANON",
+      "agent": "IRIS",
+      "tags": [
+        "game-system",
+        "archetype",
+        "metatron",
+        "law",
+        "overseer"
+      ],
+      "wikilinks": [],
+      "wikilink_count": 0
+    },
+    {
+      "file": "00_CANON/GAME_SYSTEM/SCHOOLS/SCHOOL_MYSTERY.md",
+      "pillar": "04_SACRED_CODEX",
+      "status": "CANON",
+      "agent": "IRIS",
+      "tags": [
+        "game-system",
+        "spell-school",
+        "mystery",
+        "IRIS",
+        "water"
+      ],
+      "wikilinks": [],
+      "wikilink_count": 0
+    },
+    {
+      "file": "00_CANON/GAME_SYSTEM/SCHOOLS/SCHOOL_COURAGE.md",
+      "pillar": "04_SACRED_CODEX",
+      "status": "CANON",
+      "agent": "IRIS",
+      "tags": [
+        "game-system",
+        "spell-school",
+        "courage",
+        "ASHER",
+        "earth"
+      ],
+      "wikilinks": [],
+      "wikilink_count": 0
+    },
+    {
+      "file": "00_CANON/GAME_SYSTEM/SCHOOLS/SCHOOL_INITIATION.md",
+      "pillar": "04_SACRED_CODEX",
+      "status": "CANON",
+      "agent": "IRIS",
+      "tags": [
+        "game-system",
+        "spell-school",
+        "initiation",
+        "ELIAS",
+        "fire"
+      ],
+      "wikilinks": [],
+      "wikilink_count": 0
+    },
+    {
+      "file": "00_CANON/GAME_SYSTEM/SCHOOLS/SCHOOL_CREATION.md",
+      "pillar": "04_SACRED_CODEX",
+      "status": "CANON",
+      "agent": "IRIS",
+      "tags": [
+        "game-system",
+        "spell-school",
+        "creation",
+        "AURORA",
+        "air"
+      ],
+      "wikilinks": [],
+      "wikilink_count": 0
+    }
+  ],
+  "suggestions": [
+    {
+      "pillar": "04_SACRED_CODEX",
+      "action": "AUTO_MOC",
+      "suggestion": "Generate hierarchical MOC: Archetypes \u2192 Episodes \u2192 Nodes \u2192 NPCs \u2192 Schools",
+      "files_affected": 56
+    }
+  ],
+  "contradictions": []
+}

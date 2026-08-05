@@ -1,7 +1,7 @@
 ---
 title: The Empress — Archetype III
 pillar: 04_SACRED_CODEX
-status: canon
+status: CANON
 agent: IRIS
 tags: [game-system, archetype, the-empress, maeve, creation, season-1-episode-4]
 created: 2026-05-03
@@ -53,3 +53,10 @@ Jenga must decide: prune it (efficient, safe) or follow it (unpredictable, possi
 ## Gematria Soul Tone
 
 3 — expression, the voice finding form. The Empress's number is also Creation's school tone. What Maeve embodies is the school's highest truth: expression that doesn't need to announce itself.
+
+## See Also
+
+- [[EPISODE_12]]
+- [[SCHOOL_COURAGE]]
+- [[EPISODE_05]]
+- [[SCHOOL_MYSTERY]]

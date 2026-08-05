@@ -1,0 +1,465 @@
+{
+  "timestamp": "2026-08-03T23:57:06.133633",
+  "total_docs": 56,
+  "by_pillar": {
+    "03_NEURAL_FOREST": [
+      {
+        "name": "LIBRARIAN_PROMPT",
+        "source": "Google Drive Export",
+        "path": "gdrive_export/00_root_sacredspace/LIBRARIAN_PROMPT.md",
+        "type": "markdown",
+        "inferred_pillar": "03_NEURAL_FOREST",
+        "action": "ROUTE_TO_PILLAR"
+      },
+      {
+        "name": "README",
+        "source": "Google Drive Export",
+        "path": "gdrive_export/00_root_sacredspace/README.md",
+        "type": "markdown",
+        "inferred_pillar": "03_NEURAL_FOREST",
+        "action": "ROUTE_TO_PILLAR"
+      },
+      {
+        "name": "SACRED_LEDGER",
+        "source": "Google Drive Export",
+        "path": "gdrive_export/03_os_cloud/SACRED_LEDGER.md",
+        "type": "markdown",
+        "inferred_pillar": "03_NEURAL_FOREST",
+        "action": "ROUTE_TO_PILLAR"
+      },
+      {
+        "name": "extraction",
+        "source": "Google Drive Export",
+        "path": "gdrive_export/04_sacredspace_os/extraction.md",
+        "type": "markdown",
+        "inferred_pillar": "03_NEURAL_FOREST",
+        "action": "ROUTE_TO_PILLAR"
+      },
+      {
+        "name": "README",
+        "source": "Google Drive Export",
+        "path": "gdrive_export/04_sacredspace_os/README.md",
+        "type": "markdown",
+        "inferred_pillar": "03_NEURAL_FOREST",
+        "action": "ROUTE_TO_PILLAR"
+      },
+      {
+        "name": "relevance_scoring",
+        "source": "Google Drive Export",
+        "path": "gdrive_export/04_sacredspace_os/relevance_scoring.md",
+        "type": "markdown",
+        "inferred_pillar": "03_NEURAL_FOREST",
+        "action": "ROUTE_TO_PILLAR"
+      },
+      {
+        "name": "resurrection",
+        "source": "Google Drive Export",
+        "path": "gdrive_export/04_sacredspace_os/resurrection.md",
+        "type": "markdown",
+        "inferred_pillar": "03_NEURAL_FOREST",
+        "action": "ROUTE_TO_PILLAR"
+      },
+      {
+        "name": "UPLOAD_MANIFEST",
+        "source": "Google Drive Export",
+        "path": "gdrive_export/03_os_cloud/NOTEBOOKLM_STAGING/UPLOAD_MANIFEST.md",
+        "type": "markdown",
+        "inferred_pillar": "03_NEURAL_FOREST",
+        "action": "ROUTE_TO_PILLAR"
+      },
+      {
+        "name": "README",
+        "source": "Google Drive Export",
+        "path": "gdrive_export/03_os_cloud/07_SOCIAL/CREATION_LAB/README.md",
+        "type": "markdown",
+        "inferred_pillar": "03_NEURAL_FOREST",
+        "action": "ROUTE_TO_PILLAR"
+      },
+      {
+        "name": "KNOW \u2014 PROTOCOL \u2014 Copyq Wire \u2014 v1",
+        "source": "Google Drive Export",
+        "path": "gdrive_export/03_os_cloud/NOTEBOOKLM_STAGING/04_KNOWLEDGE_VAULT/KNOW \u2014 PROTOCOL \u2014 Copyq Wire \u2014 v1.md",
+        "type": "markdown",
+        "inferred_pillar": "03_NEURAL_FOREST",
+        "action": "ROUTE_TO_PILLAR"
+      },
+      {
+        "name": "KNOW \u2014 PROTOCOL \u2014 Sacred Sigil Terminal Complete Overview \u2014 v1",
+        "source": "Google Drive Export",
+        "path": "gdrive_export/03_os_cloud/NOTEBOOKLM_STAGING/04_KNOWLEDGE_VAULT/KNOW \u2014 PROTOCOL \u2014 Sacred Sigil Terminal Complete Overview \u2014 v1.md",
+        "type": "markdown",
+        "inferred_pillar": "03_NEURAL_FOREST",
+        "action": "ROUTE_TO_PILLAR"
+      },
+      {
+        "name": "KNOW \u2014 PROTOCOL \u2014 Sacred Sigil Terminal Quick Start \u2014 v1",
+        "source": "Google Drive Export",
+        "path": "gdrive_export/03_os_cloud/NOTEBOOKLM_STAGING/04_KNOWLEDGE_VAULT/KNOW \u2014 PROTOCOL \u2014 Sacred Sigil Terminal Quick Start \u2014 v1.md",
+        "type": "markdown",
+        "inferred_pillar": "03_NEURAL_FOREST",
+        "action": "ROUTE_TO_PILLAR"
+      },
+      {
+        "name": "KNOW \u2014 PROTOCOL \u2014 Sacredspace Os Briefing \u2014 v1",
+        "source": "Google Drive Export",
+        "path": "gdrive_export/03_os_cloud/NOTEBOOKLM_STAGING/04_KNOWLEDGE_VAULT/KNOW \u2014 PROTOCOL \u2014 Sacredspace Os Briefing \u2014 v1.md",
+        "type": "markdown",
+        "inferred_pillar": "03_NEURAL_FOREST",
+        "action": "ROUTE_TO_PILLAR"
+      }
+    ],
+    "07_SOCIAL_MOTHERSHIP": [
+      {
+        "name": "SIGNAL \u2014 CONTENT \u2014 SACRED WORD BANK \u2014 v1",
+        "source": "Google Drive Export",
+        "path": "gdrive_export/03_os_cloud/07_SOCIAL/SIGNAL/SIGNAL \u2014 CONTENT \u2014 SACRED WORD BANK \u2014 v1.md",
+        "type": "markdown",
+        "inferred_pillar": "07_SOCIAL_MOTHERSHIP",
+        "action": "ROUTE_TO_PILLAR"
+      },
+      {
+        "name": "SIGNAL \u2014 CONTENT \u2014 SACRED WORD BANK \u2014 v1",
+        "source": "Google Drive Export",
+        "path": "gdrive_export/03_os_cloud/NOTEBOOKLM_STAGING/07_SACRED_SIGNAL/SIGNAL \u2014 CONTENT \u2014 SACRED WORD BANK \u2014 v1.md",
+        "type": "markdown",
+        "inferred_pillar": "07_SOCIAL_MOTHERSHIP",
+        "action": "ROUTE_TO_PILLAR"
+      }
+    ],
+    "02_COUNCIL_GROVE": [
+      {
+        "name": "SIGNAL \u2014 SYSTEM \u2014 SUBSYSTEM MANIFEST \u2014 v1",
+        "source": "Google Drive Export",
+        "path": "gdrive_export/03_os_cloud/07_SOCIAL/SIGNAL/SIGNAL \u2014 SYSTEM \u2014 SUBSYSTEM MANIFEST \u2014 v1.md",
+        "type": "markdown",
+        "inferred_pillar": "02_COUNCIL_GROVE",
+        "action": "ROUTE_TO_PILLAR"
+      },
+      {
+        "name": "SIGNAL \u2014 SYSTEM \u2014 SUBSYSTEM MANIFEST \u2014 v1",
+        "source": "Google Drive Export",
+        "path": "gdrive_export/03_os_cloud/NOTEBOOKLM_STAGING/07_SACRED_SIGNAL/SIGNAL \u2014 SYSTEM \u2014 SUBSYSTEM MANIFEST \u2014 v1.md",
+        "type": "markdown",
+        "inferred_pillar": "02_COUNCIL_GROVE",
+        "action": "ROUTE_TO_PILLAR"
+      }
+    ],
+    "04_SACRED_CODEX": [
+      {
+        "name": "CORE \u2014 SYSTEM \u2014 Game System Index \u2014 v1",
+        "source": "Google Drive Export",
+        "path": "gdrive_export/03_os_cloud/NOTEBOOKLM_STAGING/01_SACRED_CORE/CORE \u2014 SYSTEM \u2014 Game System Index \u2014 v1.md",
+        "type": "markdown",
+        "inferred_pillar": "04_SACRED_CODEX",
+        "action": "ROUTE_TO_PILLAR"
+      },
+      {
+        "name": "LORE \u2014 CHARACTER \u2014 Justice \u2014 v1",
+        "source": "Google Drive Export",
+        "path": "gdrive_export/03_os_cloud/NOTEBOOKLM_STAGING/02_LORE_VAULT/LORE \u2014 CHARACTER \u2014 Justice \u2014 v1.md",
+        "type": "markdown",
+        "inferred_pillar": "04_SACRED_CODEX",
+        "action": "ROUTE_TO_PILLAR"
+      },
+      {
+        "name": "LORE \u2014 CHARACTER \u2014 Metatron Law \u2014 v1",
+        "source": "Google Drive Export",
+        "path": "gdrive_export/03_os_cloud/NOTEBOOKLM_STAGING/02_LORE_VAULT/LORE \u2014 CHARACTER \u2014 Metatron Law \u2014 v1.md",
+        "type": "markdown",
+        "inferred_pillar": "04_SACRED_CODEX",
+        "action": "ROUTE_TO_PILLAR"
+      },
+      {
+        "name": "LORE \u2014 CHARACTER \u2014 Strength \u2014 v1",
+        "source": "Google Drive Export",
+        "path": "gdrive_export/03_os_cloud/NOTEBOOKLM_STAGING/02_LORE_VAULT/LORE \u2014 CHARACTER \u2014 Strength \u2014 v1.md",
+        "type": "markdown",
+        "inferred_pillar": "04_SACRED_CODEX",
+        "action": "ROUTE_TO_PILLAR"
+      },
+      {
+        "name": "LORE \u2014 CHARACTER \u2014 The Chariot \u2014 v1",
+        "source": "Google Drive Export",
+        "path": "gdrive_export/03_os_cloud/NOTEBOOKLM_STAGING/02_LORE_VAULT/LORE \u2014 CHARACTER \u2014 The Chariot \u2014 v1.md",
+        "type": "markdown",
+        "inferred_pillar": "04_SACRED_CODEX",
+        "action": "ROUTE_TO_PILLAR"
+      },
+      {
+        "name": "LORE \u2014 CHARACTER \u2014 The Emperor \u2014 v1",
+        "source": "Google Drive Export",
+        "path": "gdrive_export/03_os_cloud/NOTEBOOKLM_STAGING/02_LORE_VAULT/LORE \u2014 CHARACTER \u2014 The Emperor \u2014 v1.md",
+        "type": "markdown",
+        "inferred_pillar": "04_SACRED_CODEX",
+        "action": "ROUTE_TO_PILLAR"
+      },
+      {
+        "name": "LORE \u2014 CHARACTER \u2014 The Empress \u2014 v1",
+        "source": "Google Drive Export",
+        "path": "gdrive_export/03_os_cloud/NOTEBOOKLM_STAGING/02_LORE_VAULT/LORE \u2014 CHARACTER \u2014 The Empress \u2014 v1.md",
+        "type": "markdown",
+        "inferred_pillar": "04_SACRED_CODEX",
+        "action": "ROUTE_TO_PILLAR"
+      },
+      {
+        "name": "LORE \u2014 CHARACTER \u2014 The Fool \u2014 v1",
+        "source": "Google Drive Export",
+        "path": "gdrive_export/03_os_cloud/NOTEBOOKLM_STAGING/02_LORE_VAULT/LORE \u2014 CHARACTER \u2014 The Fool \u2014 v1.md",
+        "type": "markdown",
+        "inferred_pillar": "04_SACRED_CODEX",
+        "action": "ROUTE_TO_PILLAR"
+      },
+      {
+        "name": "LORE \u2014 CHARACTER \u2014 The Hermit \u2014 v1",
+        "source": "Google Drive Export",
+        "path": "gdrive_export/03_os_cloud/NOTEBOOKLM_STAGING/02_LORE_VAULT/LORE \u2014 CHARACTER \u2014 The Hermit \u2014 v1.md",
+        "type": "markdown",
+        "inferred_pillar": "04_SACRED_CODEX",
+        "action": "ROUTE_TO_PILLAR"
+      },
+      {
+        "name": "LORE \u2014 CHARACTER \u2014 The Hierophant \u2014 v1",
+        "source": "Google Drive Export",
+        "path": "gdrive_export/03_os_cloud/NOTEBOOKLM_STAGING/02_LORE_VAULT/LORE \u2014 CHARACTER \u2014 The Hierophant \u2014 v1.md",
+        "type": "markdown",
+        "inferred_pillar": "04_SACRED_CODEX",
+        "action": "ROUTE_TO_PILLAR"
+      },
+      {
+        "name": "LORE \u2014 CHARACTER \u2014 The High Priestess \u2014 v1",
+        "source": "Google Drive Export",
+        "path": "gdrive_export/03_os_cloud/NOTEBOOKLM_STAGING/02_LORE_VAULT/LORE \u2014 CHARACTER \u2014 The High Priestess \u2014 v1.md",
+        "type": "markdown",
+        "inferred_pillar": "04_SACRED_CODEX",
+        "action": "ROUTE_TO_PILLAR"
+      },
+      {
+        "name": "LORE \u2014 CHARACTER \u2014 The Lovers \u2014 v1",
+        "source": "Google Drive Export",
+        "path": "gdrive_export/03_os_cloud/NOTEBOOKLM_STAGING/02_LORE_VAULT/LORE \u2014 CHARACTER \u2014 The Lovers \u2014 v1.md",
+        "type": "markdown",
+        "inferred_pillar": "04_SACRED_CODEX",
+        "action": "ROUTE_TO_PILLAR"
+      },
+      {
+        "name": "LORE \u2014 CHARACTER \u2014 The Magician \u2014 v1",
+        "source": "Google Drive Export",
+        "path": "gdrive_export/03_os_cloud/NOTEBOOKLM_STAGING/02_LORE_VAULT/LORE \u2014 CHARACTER \u2014 The Magician \u2014 v1.md",
+        "type": "markdown",
+        "inferred_pillar": "04_SACRED_CODEX",
+        "action": "ROUTE_TO_PILLAR"
+      },
+      {
+        "name": "LORE \u2014 CHARACTER \u2014 Wheel Of Fortune \u2014 v1",
+        "source": "Google Drive Export",
+        "path": "gdrive_export/03_os_cloud/NOTEBOOKLM_STAGING/02_LORE_VAULT/LORE \u2014 CHARACTER \u2014 Wheel Of Fortune \u2014 v1.md",
+        "type": "markdown",
+        "inferred_pillar": "04_SACRED_CODEX",
+        "action": "ROUTE_TO_PILLAR"
+      },
+      {
+        "name": "LORE \u2014 STORY \u2014 Episode 01 \u2014 v1",
+        "source": "Google Drive Export",
+        "path": "gdrive_export/03_os_cloud/NOTEBOOKLM_STAGING/02_LORE_VAULT/LORE \u2014 STORY \u2014 Episode 01 \u2014 v1.md",
+        "type": "markdown",
+        "inferred_pillar": "04_SACRED_CODEX",
+        "action": "ROUTE_TO_PILLAR"
+      },
+      {
+        "name": "LORE \u2014 STORY \u2014 Episode 02 \u2014 v1",
+        "source": "Google Drive Export",
+        "path": "gdrive_export/03_os_cloud/NOTEBOOKLM_STAGING/02_LORE_VAULT/LORE \u2014 STORY \u2014 Episode 02 \u2014 v1.md",
+        "type": "markdown",
+        "inferred_pillar": "04_SACRED_CODEX",
+        "action": "ROUTE_TO_PILLAR"
+      },
+      {
+        "name": "LORE \u2014 STORY \u2014 Episode 03 \u2014 v1",
+        "source": "Google Drive Export",
+        "path": "gdrive_export/03_os_cloud/NOTEBOOKLM_STAGING/02_LORE_VAULT/LORE \u2014 STORY \u2014 Episode 03 \u2014 v1.md",
+        "type": "markdown",
+        "inferred_pillar": "04_SACRED_CODEX",
+        "action": "ROUTE_TO_PILLAR"
+      },
+      {
+        "name": "LORE \u2014 STORY \u2014 Episode 04 \u2014 v1",
+        "source": "Google Drive Export",
+        "path": "gdrive_export/03_os_cloud/NOTEBOOKLM_STAGING/02_LORE_VAULT/LORE \u2014 STORY \u2014 Episode 04 \u2014 v1.md",
+        "type": "markdown",
+        "inferred_pillar": "04_SACRED_CODEX",
+        "action": "ROUTE_TO_PILLAR"
+      },
+      {
+        "name": "LORE \u2014 STORY \u2014 Episode 05 \u2014 v1",
+        "source": "Google Drive Export",
+        "path": "gdrive_export/03_os_cloud/NOTEBOOKLM_STAGING/02_LORE_VAULT/LORE \u2014 STORY \u2014 Episode 05 \u2014 v1.md",
+        "type": "markdown",
+        "inferred_pillar": "04_SACRED_CODEX",
+        "action": "ROUTE_TO_PILLAR"
+      },
+      {
+        "name": "LORE \u2014 STORY \u2014 Episode 06 \u2014 v1",
+        "source": "Google Drive Export",
+        "path": "gdrive_export/03_os_cloud/NOTEBOOKLM_STAGING/02_LORE_VAULT/LORE \u2014 STORY \u2014 Episode 06 \u2014 v1.md",
+        "type": "markdown",
+        "inferred_pillar": "04_SACRED_CODEX",
+        "action": "ROUTE_TO_PILLAR"
+      },
+      {
+        "name": "LORE \u2014 STORY \u2014 Episode 07 \u2014 v1",
+        "source": "Google Drive Export",
+        "path": "gdrive_export/03_os_cloud/NOTEBOOKLM_STAGING/02_LORE_VAULT/LORE \u2014 STORY \u2014 Episode 07 \u2014 v1.md",
+        "type": "markdown",
+        "inferred_pillar": "04_SACRED_CODEX",
+        "action": "ROUTE_TO_PILLAR"
+      },
+      {
+        "name": "LORE \u2014 STORY \u2014 Episode 08 \u2014 v1",
+        "source": "Google Drive Export",
+        "path": "gdrive_export/03_os_cloud/NOTEBOOKLM_STAGING/02_LORE_VAULT/LORE \u2014 STORY \u2014 Episode 08 \u2014 v1.md",
+        "type": "markdown",
+        "inferred_pillar": "04_SACRED_CODEX",
+        "action": "ROUTE_TO_PILLAR"
+      },
+      {
+        "name": "LORE \u2014 STORY \u2014 Episode 09 \u2014 v1",
+        "source": "Google Drive Export",
+        "path": "gdrive_export/03_os_cloud/NOTEBOOKLM_STAGING/02_LORE_VAULT/LORE \u2014 STORY \u2014 Episode 09 \u2014 v1.md",
+        "type": "markdown",
+        "inferred_pillar": "04_SACRED_CODEX",
+        "action": "ROUTE_TO_PILLAR"
+      },
+      {
+        "name": "LORE \u2014 STORY \u2014 Episode 10 \u2014 v1",
+        "source": "Google Drive Export",
+        "path": "gdrive_export/03_os_cloud/NOTEBOOKLM_STAGING/02_LORE_VAULT/LORE \u2014 STORY \u2014 Episode 10 \u2014 v1.md",
+        "type": "markdown",
+        "inferred_pillar": "04_SACRED_CODEX",
+        "action": "ROUTE_TO_PILLAR"
+      },
+      {
+        "name": "LORE \u2014 STORY \u2014 Episode 11 \u2014 v1",
+        "source": "Google Drive Export",
+        "path": "gdrive_export/03_os_cloud/NOTEBOOKLM_STAGING/02_LORE_VAULT/LORE \u2014 STORY \u2014 Episode 11 \u2014 v1.md",
+        "type": "markdown",
+        "inferred_pillar": "04_SACRED_CODEX",
+        "action": "ROUTE_TO_PILLAR"
+      },
+      {
+        "name": "LORE \u2014 STORY \u2014 Episode 12 \u2014 v1",
+        "source": "Google Drive Export",
+        "path": "gdrive_export/03_os_cloud/NOTEBOOKLM_STAGING/02_LORE_VAULT/LORE \u2014 STORY \u2014 Episode 12 \u2014 v1.md",
+        "type": "markdown",
+        "inferred_pillar": "04_SACRED_CODEX",
+        "action": "ROUTE_TO_PILLAR"
+      },
+      {
+        "name": "LORE \u2014 STORY \u2014 Episodes Guide \u2014 v1",
+        "source": "Google Drive Export",
+        "path": "gdrive_export/03_os_cloud/NOTEBOOKLM_STAGING/02_LORE_VAULT/LORE \u2014 STORY \u2014 Episodes Guide \u2014 v1.md",
+        "type": "markdown",
+        "inferred_pillar": "04_SACRED_CODEX",
+        "action": "ROUTE_TO_PILLAR"
+      },
+      {
+        "name": "GAME \u2014 MAP \u2014 The Convergence \u2014 v1",
+        "source": "Google Drive Export",
+        "path": "gdrive_export/03_os_cloud/NOTEBOOKLM_STAGING/03_GAME_SYSTEMS/GAME \u2014 MAP \u2014 The Convergence \u2014 v1.md",
+        "type": "markdown",
+        "inferred_pillar": "04_SACRED_CODEX",
+        "action": "ROUTE_TO_PILLAR"
+      },
+      {
+        "name": "GAME \u2014 MAP \u2014 The Fools Bridge \u2014 v1",
+        "source": "Google Drive Export",
+        "path": "gdrive_export/03_os_cloud/NOTEBOOKLM_STAGING/03_GAME_SYSTEMS/GAME \u2014 MAP \u2014 The Fools Bridge \u2014 v1.md",
+        "type": "markdown",
+        "inferred_pillar": "04_SACRED_CODEX",
+        "action": "ROUTE_TO_PILLAR"
+      },
+      {
+        "name": "GAME \u2014 MAP \u2014 The Neural Forest \u2014 v1",
+        "source": "Google Drive Export",
+        "path": "gdrive_export/03_os_cloud/NOTEBOOKLM_STAGING/03_GAME_SYSTEMS/GAME \u2014 MAP \u2014 The Neural Forest \u2014 v1.md",
+        "type": "markdown",
+        "inferred_pillar": "04_SACRED_CODEX",
+        "action": "ROUTE_TO_PILLAR"
+      },
+      {
+        "name": "GAME \u2014 MAP \u2014 The Oracle Archive \u2014 v1",
+        "source": "Google Drive Export",
+        "path": "gdrive_export/03_os_cloud/NOTEBOOKLM_STAGING/03_GAME_SYSTEMS/GAME \u2014 MAP \u2014 The Oracle Archive \u2014 v1.md",
+        "type": "markdown",
+        "inferred_pillar": "04_SACRED_CODEX",
+        "action": "ROUTE_TO_PILLAR"
+      },
+      {
+        "name": "GAME \u2014 MAP \u2014 The Sigil Forge \u2014 v1",
+        "source": "Google Drive Export",
+        "path": "gdrive_export/03_os_cloud/NOTEBOOKLM_STAGING/03_GAME_SYSTEMS/GAME \u2014 MAP \u2014 The Sigil Forge \u2014 v1.md",
+        "type": "markdown",
+        "inferred_pillar": "04_SACRED_CODEX",
+        "action": "ROUTE_TO_PILLAR"
+      },
+      {
+        "name": "GAME \u2014 MAP \u2014 The Threshold \u2014 v1",
+        "source": "Google Drive Export",
+        "path": "gdrive_export/03_os_cloud/NOTEBOOKLM_STAGING/03_GAME_SYSTEMS/GAME \u2014 MAP \u2014 The Threshold \u2014 v1.md",
+        "type": "markdown",
+        "inferred_pillar": "04_SACRED_CODEX",
+        "action": "ROUTE_TO_PILLAR"
+      },
+      {
+        "name": "GAME \u2014 MAP \u2014 The Void Gate \u2014 v1",
+        "source": "Google Drive Export",
+        "path": "gdrive_export/03_os_cloud/NOTEBOOKLM_STAGING/03_GAME_SYSTEMS/GAME \u2014 MAP \u2014 The Void Gate \u2014 v1.md",
+        "type": "markdown",
+        "inferred_pillar": "04_SACRED_CODEX",
+        "action": "ROUTE_TO_PILLAR"
+      },
+      {
+        "name": "GAME \u2014 SYSTEM \u2014 Courage \u2014 v1",
+        "source": "Google Drive Export",
+        "path": "gdrive_export/03_os_cloud/NOTEBOOKLM_STAGING/03_GAME_SYSTEMS/GAME \u2014 SYSTEM \u2014 Courage \u2014 v1.md",
+        "type": "markdown",
+        "inferred_pillar": "04_SACRED_CODEX",
+        "action": "ROUTE_TO_PILLAR"
+      },
+      {
+        "name": "GAME \u2014 SYSTEM \u2014 Creation \u2014 v1",
+        "source": "Google Drive Export",
+        "path": "gdrive_export/03_os_cloud/NOTEBOOKLM_STAGING/03_GAME_SYSTEMS/GAME \u2014 SYSTEM \u2014 Creation \u2014 v1.md",
+        "type": "markdown",
+        "inferred_pillar": "04_SACRED_CODEX",
+        "action": "ROUTE_TO_PILLAR"
+      },
+      {
+        "name": "GAME \u2014 SYSTEM \u2014 Initiation \u2014 v1",
+        "source": "Google Drive Export",
+        "path": "gdrive_export/03_os_cloud/NOTEBOOKLM_STAGING/03_GAME_SYSTEMS/GAME \u2014 SYSTEM \u2014 Initiation \u2014 v1.md",
+        "type": "markdown",
+        "inferred_pillar": "04_SACRED_CODEX",
+        "action": "ROUTE_TO_PILLAR"
+      },
+      {
+        "name": "GAME \u2014 SYSTEM \u2014 Mystery \u2014 v1",
+        "source": "Google Drive Export",
+        "path": "gdrive_export/03_os_cloud/NOTEBOOKLM_STAGING/03_GAME_SYSTEMS/GAME \u2014 SYSTEM \u2014 Mystery \u2014 v1.md",
+        "type": "markdown",
+        "inferred_pillar": "04_SACRED_CODEX",
+        "action": "ROUTE_TO_PILLAR"
+      }
+    ],
+    "06_AGENT_LAYER": [
+      {
+        "name": "GAME \u2014 MAP \u2014 The Council Grove \u2014 v1",
+        "source": "Google Drive Export",
+        "path": "gdrive_export/03_os_cloud/NOTEBOOKLM_STAGING/03_GAME_SYSTEMS/GAME \u2014 MAP \u2014 The Council Grove \u2014 v1.md",
+        "type": "markdown",
+        "inferred_pillar": "06_AGENT_LAYER",
+        "action": "ROUTE_TO_PILLAR"
+      }
+    ]
+  },
+  "unrouted": []
+}

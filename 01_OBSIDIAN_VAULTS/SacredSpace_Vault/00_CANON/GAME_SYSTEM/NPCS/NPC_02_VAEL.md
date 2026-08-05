@@ -8,6 +8,7 @@ episode: 2
 status: GENERATED
 tags: [npc, the-magician, sigil-forge, season-1]
 created: 2026-05-04
+pillar: 04_SACRED_CODEX
 ---
 
 # Vael
@@ -50,3 +51,11 @@ Vael remembers every object Jenga makes. If she abandons her creations, Vael kno
 
 **Cipher verse:**
 > *V∆⊕L turns the unshaped — the Forge remembers every hand, and the first touch is the truest signature.*
+
+## See Also
+
+- [[EPISODE_05]]
+- [[ARCHETYPE_11_JUSTICE]]
+- [[ARCHETYPE_03_THE_EMPRESS]]
+- [[ARCHETYPE_01_THE_MAGICIAN]]
+- [[EPISODE_12]]

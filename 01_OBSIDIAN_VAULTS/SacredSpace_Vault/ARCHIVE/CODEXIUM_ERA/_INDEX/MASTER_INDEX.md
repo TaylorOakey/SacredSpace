@@ -1,3 +1,11 @@
+---
+title: Master Index — Codexium Era Archive
+pillar: 04_SACRED_CODEX
+status: ARCHIVE
+tags: [archive, index, codexium-era]
+created: 2026-04-25
+---
+
 ﻿$root = "D:\SacredSpace_OS"
 $vault = "$root\01_OBSIDIAN_VAULTS\SacredSpace_Vault"
 $scripts = "$root\00_SYSTEM_CORE\scripts"

@@ -1,7 +1,7 @@
 ---
 title: Sacred Node 1 — The Threshold
 pillar: 04_SACRED_CODEX
-status: canon
+status: CANON
 agent: IRIS
 tags: [game-system, sacred-node, threshold, entry-point]
 created: 2026-05-03
@@ -41,3 +41,9 @@ The Threshold can be revisited at any time during Season 1. Each return creates 
 ## Lore Note
 
 The Threshold is the only Sacred Node that does not belong to any archetype. Metatron oversees it without claiming it. This is intentional: the beginning belongs to the seeker, not the system.
+
+## See Also
+
+- [[EPISODE_12]]
+- [[EPISODE_06]]
+- [[EPISODE_05]]

@@ -8,6 +8,7 @@ episode: 8
 status: GENERATED
 tags: [npc, the-chariot, threshold, season-1]
 created: 2026-05-04
+pillar: 04_SACRED_CODEX
 ---
 
 # Zael
@@ -50,3 +51,11 @@ Zael cannot wait. If Jenga falls behind, Zael is already gone — and what she d
 
 **Cipher verse:**
 > *Z∆⊕L does not wait at the door — the distance already knows her name, and she is already there.*
+
+## See Also
+
+- [[EPISODE_05]]
+- [[ARCHETYPE_11_JUSTICE]]
+- [[ARCHETYPE_03_THE_EMPRESS]]
+- [[ARCHETYPE_01_THE_MAGICIAN]]
+- [[EPISODE_12]]

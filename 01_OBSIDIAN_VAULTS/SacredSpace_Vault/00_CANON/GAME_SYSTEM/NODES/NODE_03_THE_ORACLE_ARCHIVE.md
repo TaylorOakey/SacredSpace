@@ -1,7 +1,7 @@
 ---
 title: Sacred Node 3 — The Oracle's Archive
 pillar: 04_SACRED_CODEX
-status: canon
+status: CANON
 agent: IRIS
 tags: [game-system, sacred-node, oracle-archive, ORACLE-7, seren, mystery]
 created: 2026-05-03
@@ -44,3 +44,9 @@ ORACLE-7 is not kind. It is also not unkind. It is precise.
 ## Lore Note
 
 The Archive contains the complete record of every Codex entry ever added by a seeker using SING INTO BEING. Every player's true-name creations are stored here. In this way, the Archive is the cumulative record of all Jenga's Journeys that have ever been completed.
+
+## See Also
+
+- [[EPISODE_12]]
+- [[EPISODE_06]]
+- [[EPISODE_05]]

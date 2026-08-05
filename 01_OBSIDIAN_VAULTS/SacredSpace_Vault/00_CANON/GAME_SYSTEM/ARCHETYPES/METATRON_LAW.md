@@ -1,7 +1,7 @@
 ---
 title: Metatron — The Law
 pillar: 04_SACRED_CODEX
-status: canon
+status: CANON
 agent: IRIS
 tags: [game-system, archetype, metatron, law, overseer]
 created: 2026-05-03

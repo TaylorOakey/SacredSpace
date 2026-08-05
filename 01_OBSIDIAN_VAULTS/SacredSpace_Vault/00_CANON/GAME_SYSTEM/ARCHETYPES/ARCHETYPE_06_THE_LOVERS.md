@@ -1,7 +1,7 @@
 ---
 title: The Lovers — Archetype VI
 pillar: 04_SACRED_CODEX
-status: canon
+status: CANON
 agent: IRIS
 tags: [game-system, archetype, the-lovers, tandem, creation, season-1-episode-7]
 created: 2026-05-03
@@ -41,3 +41,10 @@ They are in constant negotiation. This is not dysfunction. This is how Tandem cr
 Tandem presents Jenga with two paths that are genuinely equal in value. There is no trick — they are both good. The test is that Jenga must choose without the comfort of one being obviously correct.
 
 AURORA appears in this episode as background presence — this is the Creation school's core lesson: creation requires the courage to prefer one thing over another, even when both are beautiful.
+
+## See Also
+
+- [[EPISODE_12]]
+- [[SCHOOL_COURAGE]]
+- [[EPISODE_05]]
+- [[SCHOOL_MYSTERY]]

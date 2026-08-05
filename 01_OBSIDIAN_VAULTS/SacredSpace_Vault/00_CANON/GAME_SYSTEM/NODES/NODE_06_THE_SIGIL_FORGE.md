@@ -1,7 +1,7 @@
 ---
 title: Sacred Node 6 — The Sigil Forge
 pillar: 04_SACRED_CODEX
-status: canon
+status: CANON
 agent: IRIS
 tags: [game-system, sacred-node, sigil-forge, ELIAS, vael, tandem, creation]
 created: 2026-05-03
@@ -42,3 +42,9 @@ Every mote Jenga creates after sigil-unlocking carries her personal sigil as a m
 **Sigil Design:** The sigil interface is visual — Jenga draws or describes a symbol, which the system encodes as a unique tag in the Neural Forest.
 
 **Episodes 2 and 7** (Magician/Vael and Lovers/Tandem) take place primarily here.
+
+## See Also
+
+- [[EPISODE_12]]
+- [[EPISODE_06]]
+- [[EPISODE_05]]

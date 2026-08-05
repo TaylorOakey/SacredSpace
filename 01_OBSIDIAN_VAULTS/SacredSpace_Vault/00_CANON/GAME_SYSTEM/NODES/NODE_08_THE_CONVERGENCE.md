@@ -1,7 +1,7 @@
 ---
 title: Sacred Node 8 — The Convergence
 pillar: 04_SACRED_CODEX
-status: canon
+status: CANON
 agent: IRIS
 tags: [game-system, sacred-node, convergence, metatron, integration, season-1-finale]
 created: 2026-05-03
@@ -47,3 +47,9 @@ This is not a test. The Convergence is not a final boss. It is an integration sp
 The Convergence is proof that the game is not circular — it is spiral. Jenga ends where she began (at The Threshold of a new understanding) but one full turn higher. The journey does not repeat. It continues, transformed.
 
 Season 2 begins here.
+
+## See Also
+
+- [[EPISODE_12]]
+- [[EPISODE_06]]
+- [[EPISODE_05]]

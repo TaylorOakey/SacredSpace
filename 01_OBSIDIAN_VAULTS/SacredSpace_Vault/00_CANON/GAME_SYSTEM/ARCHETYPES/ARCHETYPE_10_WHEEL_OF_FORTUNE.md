@@ -1,7 +1,7 @@
 ---
 title: Wheel of Fortune — Archetype X
 pillar: 04_SACRED_CODEX
-status: canon
+status: CANON
 agent: IRIS
 tags: [game-system, archetype, wheel-of-fortune, khepri, mystery, creation, season-1-episode-11]
 created: 2026-05-03
@@ -41,3 +41,10 @@ She is delightful company. She finds patterns everywhere and shares them with en
 Khepri shows Jenga the pattern of her own journey so far — the specific cycle she has been moving through across all 10 previous episodes. The revelation is not comfortable. It shows Jenga where she has been repeating the same move in different costumes.
 
 The question Khepri asks: *"Now that you see it — what do you do differently?"*
+
+## See Also
+
+- [[EPISODE_12]]
+- [[SCHOOL_COURAGE]]
+- [[EPISODE_05]]
+- [[SCHOOL_MYSTERY]]

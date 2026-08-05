@@ -6,6 +6,7 @@ npc: Khepri
 node: The Convergence (orbiting)
 spell_unlocked: VEIL
 status: STUB
+pillar: 04_SACRED_CODEX
 tags: [episode, game-system, season-1, wheel-of-fortune, khepri]
 created: 2026-05-04
 ---
@@ -21,3 +22,10 @@ Khepri maps Jenga's entire journey to date and shows her the pattern she has bee
 **Spell unlocked:** VEIL (to hide patterns she's not yet ready to face, or to choose not to use it)
 
 **Through-line:** The named pattern is what Mira receives in Episode 12.
+
+## See Also
+
+- [[ARCHETYPE_11_JUSTICE]]
+- [[NODE_02_THE_FOOLS_BRIDGE]]
+- [[NODE_06_THE_SIGIL_FORGE]]
+- [[ARCHETYPE_01_THE_MAGICIAN]]

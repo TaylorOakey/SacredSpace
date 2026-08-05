@@ -1,7 +1,7 @@
 ---
 title: Sacred Node 2 — The Fool's Bridge
 pillar: 04_SACRED_CODEX
-status: canon
+status: CANON
 agent: IRIS
 tags: [game-system, sacred-node, fools-bridge, meridian, liminal]
 created: 2026-05-03
@@ -45,3 +45,9 @@ The bridge does not collapse either way. What changes is the first mote of Jenga
 ## Lore Note
 
 The bridge does not connect two specific places. It connects wherever the seeker is to wherever the seeker needs to go next. The geography of SacredSpace is partly semantic — where you need to be next shapes where the bridge leads.
+
+## See Also
+
+- [[EPISODE_12]]
+- [[EPISODE_06]]
+- [[EPISODE_05]]

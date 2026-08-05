@@ -6,6 +6,7 @@ npc: Zael
 node: The Threshold
 spell_unlocked: CATALYZE
 status: STUB
+pillar: 04_SACRED_CODEX
 tags: [episode, game-system, season-1, the-chariot, zael]
 created: 2026-05-04
 ---
@@ -21,3 +22,10 @@ Zael is going somewhere important and offers Jenga the chance to run with her. I
 **Spell unlocked:** CATALYZE
 
 **Through-line:** What Zael dropped (if Jenga found it) becomes a gift for Zael in Episode 11.
+
+## See Also
+
+- [[ARCHETYPE_11_JUSTICE]]
+- [[NODE_02_THE_FOOLS_BRIDGE]]
+- [[NODE_06_THE_SIGIL_FORGE]]
+- [[ARCHETYPE_01_THE_MAGICIAN]]

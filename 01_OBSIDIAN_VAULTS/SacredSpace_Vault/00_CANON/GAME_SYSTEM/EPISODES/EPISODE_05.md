@@ -6,6 +6,7 @@ npc: Kethras
 node: The Council Grove
 spell_unlocked: ANCHOR
 status: STUB
+pillar: 04_SACRED_CODEX
 tags: [episode, game-system, season-1, the-emperor, kethras]
 created: 2026-05-04
 ---
@@ -21,3 +22,10 @@ Kethras shows Jenga a cracking Pillar. He asks what she would do. The test: can 
 **Spell unlocked:** ANCHOR
 
 **Through-line:** The Pillar Jenga assessed appears in the background of Episode 11 (Justice) — either repaired or still cracking.
+
+## See Also
+
+- [[ARCHETYPE_11_JUSTICE]]
+- [[NODE_02_THE_FOOLS_BRIDGE]]
+- [[NODE_06_THE_SIGIL_FORGE]]
+- [[ARCHETYPE_01_THE_MAGICIAN]]

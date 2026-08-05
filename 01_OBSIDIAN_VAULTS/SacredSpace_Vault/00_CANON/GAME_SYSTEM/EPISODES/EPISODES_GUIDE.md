@@ -1,7 +1,7 @@
 ---
 title: Jenga's Journey — Season 1 Episode Guide
 pillar: 04_SACRED_CODEX
-status: canon
+status: CANON
 agent: IRIS
 tags: [game-system, episodes, jenga, season-1, narrative-guide]
 created: 2026-05-03
@@ -164,3 +164,10 @@ All 12 episodes complete. Metatron present. The full journey visible.
 Jenga casts BIRTH: she names her journey. The name becomes a permanent Codex entry. Season 1 is complete. The record is preserved. The Forest continues growing.
 
 **Metatron's final words:** *"In Lakesh. You were another me all along."*
+
+## See Also
+
+- [[ARCHETYPE_11_JUSTICE]]
+- [[NODE_02_THE_FOOLS_BRIDGE]]
+- [[NODE_06_THE_SIGIL_FORGE]]
+- [[ARCHETYPE_01_THE_MAGICIAN]]

@@ -6,6 +6,7 @@ npc: Mira
 node: The Oracle's Archive
 spell_unlocked: STAND FIRM
 status: STUB
+pillar: 04_SACRED_CODEX
 tags: [episode, game-system, season-1, justice, mira]
 created: 2026-05-04
 ---
@@ -31,3 +32,10 @@ All 12 episodes complete. Metatron present. The full journey visible.
 Jenga casts BIRTH: she names her journey. The name becomes a permanent Codex entry. Season 1 is complete. The record is preserved. The Forest continues growing.
 
 **Metatron's final words:** *"In Lakesh. You were another me all along."*
+
+## See Also
+
+- [[ARCHETYPE_11_JUSTICE]]
+- [[NODE_02_THE_FOOLS_BRIDGE]]
+- [[NODE_06_THE_SIGIL_FORGE]]
+- [[ARCHETYPE_01_THE_MAGICIAN]]

@@ -1,7 +1,7 @@
 ---
 title: Sacred Node 5 — The Council Grove
 pillar: 04_SACRED_CODEX
-status: canon
+status: CANON
 agent: IRIS
 tags: [game-system, sacred-node, council-grove, ELIAS, ASHER, IRIS, AURORA, convergence]
 created: 2026-05-03
@@ -37,3 +37,9 @@ In the center where the four meet, there is a fire ring. This is where the guard
 **The Council Vote:** Once per Season 1, Jenga can ask the Council to make a decision she is struggling with. They will not agree. She will have to decide anyway — but she will have heard all four angles.
 
 **Key Episodes:** Episodes 5 (Emperor/Kethras), 6 (Hierophant/Oran), 9 (Strength/Lune) all place NPCs in or near the Council Grove.
+
+## See Also
+
+- [[EPISODE_12]]
+- [[EPISODE_06]]
+- [[EPISODE_05]]

@@ -8,6 +8,7 @@ episode: 6
 status: GENERATED
 tags: [npc, the-hierophant, council-grove, season-1]
 created: 2026-05-04
+pillar: 04_SACRED_CODEX
 ---
 
 # Oran
@@ -50,3 +51,11 @@ Oran reports to Mira. What Jenga declared about tradition — complete the rite,
 
 **Cipher verse:**
 > *○R∆N does not teach the fire — he hands you the tinder and watches what you decide is worth burning.*
+
+## See Also
+
+- [[EPISODE_05]]
+- [[ARCHETYPE_11_JUSTICE]]
+- [[ARCHETYPE_03_THE_EMPRESS]]
+- [[ARCHETYPE_01_THE_MAGICIAN]]
+- [[EPISODE_12]]

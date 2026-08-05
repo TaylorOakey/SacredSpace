@@ -8,6 +8,7 @@ episode: 7
 status: GENERATED
 tags: [npc, the-lovers, sigil-forge, season-1]
 created: 2026-05-04
+pillar: 04_SACRED_CODEX
 ---
 
 # Tandem
@@ -50,3 +51,11 @@ The unchosen path is not gone. Tandem holds it. It reappears as shadow-possibili
 
 **Cipher verse:**
 > *T∆ND⊕M is two doors that are the same door — what you choose reveals the one who chooses, and that is the only answer that matters.*
+
+## See Also
+
+- [[EPISODE_05]]
+- [[ARCHETYPE_11_JUSTICE]]
+- [[ARCHETYPE_03_THE_EMPRESS]]
+- [[ARCHETYPE_01_THE_MAGICIAN]]
+- [[EPISODE_12]]

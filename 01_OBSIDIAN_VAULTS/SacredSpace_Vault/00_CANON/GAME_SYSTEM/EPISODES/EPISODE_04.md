@@ -6,6 +6,7 @@ npc: Maeve
 node: The Neural Forest
 spell_unlocked: MANIFEST
 status: STUB
+pillar: 04_SACRED_CODEX
 tags: [episode, game-system, season-1, the-empress, maeve]
 created: 2026-05-04
 ---
@@ -21,3 +22,10 @@ Something has grown unexpectedly in the Neural Forest. Jenga must decide: prune 
 **Spell unlocked:** MANIFEST
 
 **Through-line:** The pruned or followed growth becomes a landmark in later episodes.
+
+## See Also
+
+- [[ARCHETYPE_11_JUSTICE]]
+- [[NODE_02_THE_FOOLS_BRIDGE]]
+- [[NODE_06_THE_SIGIL_FORGE]]
+- [[ARCHETYPE_01_THE_MAGICIAN]]

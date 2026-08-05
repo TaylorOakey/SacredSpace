@@ -8,6 +8,7 @@ episode: 3
 status: GENERATED
 tags: [npc, the-high-priestess, oracle-archive, season-1]
 created: 2026-05-04
+pillar: 04_SACRED_CODEX
 ---
 
 # Seren
@@ -50,3 +51,11 @@ Seren holds the question Jenga didn't choose. In Episode 12, that question retur
 
 **Cipher verse:**
 > *S⊕R⊕N speaks in the space between questions — the answer was always the shape of the silence you chose.*
+
+## See Also
+
+- [[EPISODE_05]]
+- [[ARCHETYPE_11_JUSTICE]]
+- [[ARCHETYPE_03_THE_EMPRESS]]
+- [[ARCHETYPE_01_THE_MAGICIAN]]
+- [[EPISODE_12]]

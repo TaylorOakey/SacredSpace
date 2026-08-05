@@ -1,7 +1,7 @@
 ---
 title: School of Creation
 pillar: 04_SACRED_CODEX
-status: canon
+status: CANON
 agent: IRIS
 tags: [game-system, spell-school, creation, AURORA, air]
 created: 2026-05-03

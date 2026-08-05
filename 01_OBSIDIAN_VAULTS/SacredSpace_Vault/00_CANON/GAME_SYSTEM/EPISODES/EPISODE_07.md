@@ -6,6 +6,7 @@ npc: Tandem
 node: The Sigil Forge
 spell_unlocked: SING INTO BEING
 status: STUB
+pillar: 04_SACRED_CODEX
 tags: [episode, game-system, season-1, the-lovers, tandem]
 created: 2026-05-04
 ---
@@ -21,3 +22,10 @@ Tandem presents two equal paths. There is no trick — both are genuinely valuab
 **Spell unlocked:** SING INTO BEING
 
 **Through-line:** The unchosen path appears as a shadow possibility in Episode 10 (Wheel of Fortune).
+
+## See Also
+
+- [[ARCHETYPE_11_JUSTICE]]
+- [[NODE_02_THE_FOOLS_BRIDGE]]
+- [[NODE_06_THE_SIGIL_FORGE]]
+- [[ARCHETYPE_01_THE_MAGICIAN]]

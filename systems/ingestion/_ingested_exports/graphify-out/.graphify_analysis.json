@@ -1,0 +1,183 @@
+{
+  "communities": {
+    "0": [
+      "agent_mode_alternatives_sacred_automation_spine",
+      "auto_spells_rituals_automation",
+      "automate_saving_chats_automate_app",
+      "automate_saving_chats_sacredspace_flow"
+    ],
+    "1": [
+      "akashic_hall_of_remembrance_potion",
+      "graphic_novel_development_urban_jungle",
+      "sacredspace_index_creation_v1_map"
+    ],
+    "2": [
+      "canon_merge_handoff_continuity_seed",
+      "iris_character_design_indigo",
+      "train_conductor_character_harlan"
+    ],
+    "3": [
+      "canon_merge_handoff_amaru",
+      "canon_merge_handoff_jenga",
+      "canon_merge_handoff_lattice"
+    ],
+    "4": [
+      "document_review_request_obsidian_vault_structure",
+      "sacred_library_workflow_library_edition"
+    ],
+    "5": [
+      "dmt_code_reality_canon",
+      "grok_ai_analysis_mystical_responses"
+    ],
+    "6": [
+      "next_steps_outlined_power_12_wheel",
+      "sacred_spaces_grant_opportunities_list"
+    ],
+    "7": [
+      "sacred_space_tarot_insights_spread"
+    ],
+    "8": [
+      "council_mode_insights_system_prompt"
+    ],
+    "9": [
+      "unexpected_memory_story_bodhi_origin"
+    ],
+    "10": [
+      "chats_and_docs_to_print_list"
+    ],
+    "11": [
+      "openai_skills_and_justhtml_skills_folder"
+    ],
+    "12": [
+      "youtube_watch_later_urls_export_script"
+    ]
+  },
+  "cohesion": {
+    "0": 0.5,
+    "1": 0.6666666666666666,
+    "2": 0.6666666666666666,
+    "3": 0.6666666666666666,
+    "4": 1.0,
+    "5": 1.0,
+    "6": 1.0,
+    "7": 1.0,
+    "8": 1.0,
+    "9": 1.0,
+    "10": 1.0,
+    "11": 1.0,
+    "12": 1.0
+  },
+  "gods": [
+    {
+      "id": "sacredspace_index_creation_v1_map",
+      "label": "SacredSpace Index \u2014 v1 (Living Canon)",
+      "degree": 4
+    },
+    {
+      "id": "automate_saving_chats_sacredspace_flow",
+      "label": "SacredSpace Chat Saver Flow",
+      "degree": 3
+    },
+    {
+      "id": "canon_merge_handoff_continuity_seed",
+      "label": "S@CR3DSTORTL!N3 \u2014 CONTINUITY SEED",
+      "degree": 3
+    },
+    {
+      "id": "canon_merge_handoff_jenga",
+      "label": "Jenga",
+      "degree": 2
+    },
+    {
+      "id": "auto_spells_rituals_automation",
+      "label": "Auto-Spells \u2014 The Automation Rituals",
+      "degree": 2
+    },
+    {
+      "id": "automate_saving_chats_automate_app",
+      "label": "Automate App (LlamaLab)",
+      "degree": 1
+    },
+    {
+      "id": "canon_merge_handoff_amaru",
+      "label": "Amaru",
+      "degree": 1
+    },
+    {
+      "id": "canon_merge_handoff_lattice",
+      "label": "The Lattice",
+      "degree": 1
+    },
+    {
+      "id": "agent_mode_alternatives_sacred_automation_spine",
+      "label": "Sacred Automation Spine",
+      "degree": 1
+    },
+    {
+      "id": "sacred_library_workflow_library_edition",
+      "label": "Sacred Work Flow \u2014 Library Edition",
+      "degree": 1
+    }
+  ],
+  "surprises": [
+    {
+      "source": "Grok AI Mystical Analysis",
+      "target": "DMT Code of Reality",
+      "source_files": [
+        "ARTIFACT_Grok AI analysis.md",
+        "03_NEURAL_FOREST_DMT_CODE_REALITY.md"
+      ],
+      "confidence": "INFERRED",
+      "relation": "semantically_similar_to",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; semantically similar concepts with no structural link"
+    },
+    {
+      "source": "The Grand Potion of S@CR3DSP@CE",
+      "target": "SacredSpace Index \u2014 v1 (Living Canon)",
+      "source_files": [
+        "ARTIFACT_Akashic Hall of Remembrance.md",
+        "ARTIFACT_SacredSpace index creation.md"
+      ],
+      "confidence": "INFERRED",
+      "relation": "semantically_similar_to",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; semantically similar concepts with no structural link"
+    },
+    {
+      "source": "Sacred Automation Spine",
+      "target": "SacredSpace Chat Saver Flow",
+      "source_files": [
+        "ARTIFACT_Agent mode alternatives.md",
+        "ARTIFACT_Automate saving chats.md"
+      ],
+      "confidence": "INFERRED",
+      "relation": "conceptually_related_to",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories"
+    },
+    {
+      "source": "Auto-Spells \u2014 The Automation Rituals",
+      "target": "SacredSpace Chat Saver Flow",
+      "source_files": [
+        "ARTIFACT_Auto-spells rituals.md",
+        "ARTIFACT_Automate saving chats.md"
+      ],
+      "confidence": "INFERRED",
+      "relation": "conceptually_related_to",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories"
+    },
+    {
+      "source": "SacredSpace Index \u2014 v1 (Living Canon)",
+      "target": "S@CR3DSTORTL!N3 \u2014 CONTINUITY SEED",
+      "source_files": [
+        "ARTIFACT_SacredSpace index creation.md",
+        "ARTIFACT_Canon merge handoff.md"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "connects across different repos/directories; bridges separate communities"
+    }
+  ],
+  "tokens": {
+    "input": 65931,
+    "output": 2792
+  }
+}

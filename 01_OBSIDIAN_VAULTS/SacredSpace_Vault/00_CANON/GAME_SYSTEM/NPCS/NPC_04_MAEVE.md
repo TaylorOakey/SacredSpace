@@ -8,6 +8,7 @@ episode: 4
 status: GENERATED
 tags: [npc, the-empress, neural-forest, season-1]
 created: 2026-05-04
+pillar: 04_SACRED_CODEX
 ---
 
 # Maeve
@@ -50,3 +51,11 @@ Maeve will not prune for Jenga. The choice to cut or follow lives only with the 
 
 **Cipher verse:**
 > *M∆⊕V⊕ does not plant — she becomes the soil that decides what is worth becoming.*
+
+## See Also
+
+- [[EPISODE_05]]
+- [[ARCHETYPE_11_JUSTICE]]
+- [[ARCHETYPE_03_THE_EMPRESS]]
+- [[ARCHETYPE_01_THE_MAGICIAN]]
+- [[EPISODE_12]]

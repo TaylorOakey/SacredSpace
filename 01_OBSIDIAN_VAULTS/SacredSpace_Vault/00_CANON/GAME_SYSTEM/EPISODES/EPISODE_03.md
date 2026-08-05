@@ -6,6 +6,7 @@ npc: Seren
 node: The Oracle's Archive
 spell_unlocked: SCRY
 status: STUB
+pillar: 04_SACRED_CODEX
 tags: [episode, game-system, season-1, the-high-priestess, seren]
 created: 2026-05-04
 ---
@@ -21,3 +22,10 @@ Jenga seeks a specific answer from Seren. Seren offers a choice: the answer Jeng
 **Spell unlocked:** SCRY
 
 **Through-line:** The question Seren returns with at Episode 12 (Justice) is the one Jenga chose not to ask here.
+
+## See Also
+
+- [[ARCHETYPE_11_JUSTICE]]
+- [[NODE_02_THE_FOOLS_BRIDGE]]
+- [[NODE_06_THE_SIGIL_FORGE]]
+- [[ARCHETYPE_01_THE_MAGICIAN]]

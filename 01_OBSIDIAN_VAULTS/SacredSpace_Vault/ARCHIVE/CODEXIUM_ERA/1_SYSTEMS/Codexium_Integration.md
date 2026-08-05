@@ -4,7 +4,7 @@ tags:
   - codexium
   - integration
   - unification
-pillar: SYSTEMS
+pillar: 01_OBSIDIAN_VAULTS
 status: EXPERIMENTAL
 created: 2026-03-15
 session: 2026-03-15 23:44

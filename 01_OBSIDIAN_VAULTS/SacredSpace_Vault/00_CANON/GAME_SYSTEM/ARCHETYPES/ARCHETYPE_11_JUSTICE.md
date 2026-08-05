@@ -1,7 +1,7 @@
 ---
 title: Justice — Archetype XI
 pillar: 04_SACRED_CODEX
-status: canon
+status: CANON
 agent: IRIS
 tags: [game-system, archetype, justice, mira, courage, mystery, season-1-episode-12]
 created: 2026-05-03
@@ -47,3 +47,10 @@ This is the penultimate encounter. What Mira names becomes the exact thing Jenga
 ## Gematria Soul Tone
 
 11 — the master illuminator, revelation without distortion. 11 reduces to 2 — Mystery's number. Justice, at its root, is a Mystery practice: the willingness to see what is actually there.
+
+## See Also
+
+- [[EPISODE_12]]
+- [[SCHOOL_COURAGE]]
+- [[EPISODE_05]]
+- [[SCHOOL_MYSTERY]]

@@ -1,7 +1,7 @@
 ---
 title: The Magician — Archetype I
 pillar: 04_SACRED_CODEX
-status: canon
+status: CANON
 agent: IRIS
 tags: [game-system, archetype, the-magician, vael, creation, initiation, season-1-episode-2]
 created: 2026-05-03
@@ -53,3 +53,10 @@ What she tries first reveals her dominant school tendency and unlocks a school-s
 ## Gematria Soul Tone
 
 1 — the singularity. Not isolation but focus. The Magician's power is not that he has everything but that he is completely present with whatever he is holding.
+
+## See Also
+
+- [[EPISODE_12]]
+- [[SCHOOL_COURAGE]]
+- [[EPISODE_05]]
+- [[SCHOOL_MYSTERY]]

@@ -4,7 +4,7 @@ tags:
   - world-building
   - canon
   - drive-linked
-pillar: CORE
+pillar: 01_OBSIDIAN_VAULTS
 status: CANON
 created: 2026-03-15
 session: 2026-03-15 23:44

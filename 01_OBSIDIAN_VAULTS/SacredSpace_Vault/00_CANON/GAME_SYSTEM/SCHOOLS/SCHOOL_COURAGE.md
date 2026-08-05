@@ -1,7 +1,7 @@
 ---
 title: School of Courage
 pillar: 04_SACRED_CODEX
-status: canon
+status: CANON
 agent: IRIS
 tags: [game-system, spell-school, courage, ASHER, earth]
 created: 2026-05-03

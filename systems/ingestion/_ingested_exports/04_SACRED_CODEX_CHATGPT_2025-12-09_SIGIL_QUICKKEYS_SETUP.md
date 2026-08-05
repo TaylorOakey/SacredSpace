@@ -1,0 +1,15 @@
+---
+entity: CHATGPT_2025-12-09_SIGIL_QUICKKEYS_SETUP
+pillar: 04_SACRED_CODEX
+tags: chatgpt, council-grove, distilled-candidate
+status: DISTILLED_CANDIDATE
+created: 2026-06-24 00:46:38
+source: ingested_chat
+---
+
+# CHATGPT_2025-12-09_SIGIL_QUICKKEYS_SETUP
+**Pillar:** 04_SACRED_CODEX
+**Tags:** chatgpt, council-grove, distilled-candidate
+**Status:** DISTILLED_CANDIDATE
+
+Can we make a quickkey for the sigil spellings of words on my phones keyboard

@@ -1,7 +1,7 @@
 ---
 title: The Hermit — Archetype IX
 pillar: 04_SACRED_CODEX
-status: canon
+status: CANON
 agent: IRIS
 tags: [game-system, archetype, the-hermit, eldra, mystery, season-1-episode-10]
 created: 2026-05-03
@@ -41,3 +41,10 @@ He is not lonely. This is the first thing seekers assume and the first thing the
 Eldra gives Jenga a lantern and sends her into the deep Forest alone. The lantern only illuminates what Jenga is already thinking about — it externalizes her current focus, making it visible.
 
 What illuminates reveals her deepest current preoccupation. This becomes the theme of Episode 11 (Justice).
+
+## See Also
+
+- [[EPISODE_12]]
+- [[SCHOOL_COURAGE]]
+- [[EPISODE_05]]
+- [[SCHOOL_MYSTERY]]

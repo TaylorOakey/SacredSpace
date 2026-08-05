@@ -8,6 +8,7 @@ episode: 5
 status: GENERATED
 tags: [npc, the-emperor, council-grove, season-1]
 created: 2026-05-04
+pillar: 04_SACRED_CODEX
 ---
 
 # Kethras
@@ -50,3 +51,11 @@ Kethras has no mercy for self-deception. If Jenga cannot accurately name the dam
 
 **Cipher verse:**
 > *K⊕THR∆S does not fear the crack — the crack is the data, and the data is what the Pillar needs you to see clearly.*
+
+## See Also
+
+- [[EPISODE_05]]
+- [[ARCHETYPE_11_JUSTICE]]
+- [[ARCHETYPE_03_THE_EMPRESS]]
+- [[ARCHETYPE_01_THE_MAGICIAN]]
+- [[EPISODE_12]]

@@ -8,6 +8,7 @@ episode: 1
 status: GENERATED
 tags: [npc, the-fool, threshold, season-1]
 created: 2026-05-04
+pillar: 04_SACRED_CODEX
 ---
 
 # Meridian
@@ -50,3 +51,11 @@ Meridian cannot follow. They exist only at the threshold. What Jenga learns here
 
 **Cipher verse:**
 > *Between the known and the leap, M⊕R◇D◇∆N holds the span — not as safety, but as proof the crossing is possible.*
+
+## See Also
+
+- [[EPISODE_05]]
+- [[ARCHETYPE_11_JUSTICE]]
+- [[ARCHETYPE_03_THE_EMPRESS]]
+- [[ARCHETYPE_01_THE_MAGICIAN]]
+- [[EPISODE_12]]

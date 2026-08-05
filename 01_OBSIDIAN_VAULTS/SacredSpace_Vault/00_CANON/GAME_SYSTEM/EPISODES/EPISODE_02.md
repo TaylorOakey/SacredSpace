@@ -6,6 +6,7 @@ npc: Vael
 node: The Sigil Forge
 spell_unlocked: WEAVE
 status: STUB
+pillar: 04_SACRED_CODEX
 tags: [episode, game-system, season-1, the-magician, vael]
 created: 2026-05-04
 ---
@@ -21,3 +22,10 @@ Vael gives Jenga three objects of unknown purpose. She must build something with
 **Spell unlocked:** WEAVE
 
 **Through-line:** Vael reappears whenever Jenga uses a Creation spell — brief, watching, not commenting.
+
+## See Also
+
+- [[ARCHETYPE_11_JUSTICE]]
+- [[NODE_02_THE_FOOLS_BRIDGE]]
+- [[NODE_06_THE_SIGIL_FORGE]]
+- [[ARCHETYPE_01_THE_MAGICIAN]]

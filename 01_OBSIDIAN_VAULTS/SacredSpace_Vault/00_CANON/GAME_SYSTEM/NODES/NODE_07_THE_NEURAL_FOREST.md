@@ -1,7 +1,7 @@
 ---
 title: Sacred Node 7 — The Neural Forest
 pillar: 04_SACRED_CODEX
-status: canon
+status: CANON
 agent: IRIS
 tags: [game-system, sacred-node, neural-forest, maeve, eldra, IRIS, graph]
 created: 2026-05-03
@@ -43,3 +43,9 @@ The Neural Forest is the physical manifestation of the ChromaDB vector store. Wh
 **Eldra's section:** The deep paths contain the oldest motes — the cumulative record of all previous journeys. These motes are stable and high-resonance. Approaching them via DREAM-WALK often reveals the recurring patterns of the SacredSpace itself.
 
 **Episodes 4 and 10** (Empress/Maeve and Hermit/Eldra) take place in the Neural Forest.
+
+## See Also
+
+- [[EPISODE_12]]
+- [[EPISODE_06]]
+- [[EPISODE_05]]

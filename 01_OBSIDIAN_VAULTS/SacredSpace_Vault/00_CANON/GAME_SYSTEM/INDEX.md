@@ -1,7 +1,7 @@
 ---
 title: Game System Index — Jenga's Journey
 pillar: 04_SACRED_CODEX
-status: canon
+status: CANON
 agent: IRIS
 tags: [game-system, index, jenga, season-1]
 created: 2026-05-03

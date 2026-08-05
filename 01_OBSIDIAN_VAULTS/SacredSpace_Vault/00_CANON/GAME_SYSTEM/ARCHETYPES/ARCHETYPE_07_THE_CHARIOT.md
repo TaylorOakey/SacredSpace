@@ -1,7 +1,7 @@
 ---
 title: The Chariot — Archetype VII
 pillar: 04_SACRED_CODEX
-status: canon
+status: CANON
 agent: IRIS
 tags: [game-system, archetype, the-chariot, zael, courage, initiation, season-1-episode-8]
 created: 2026-05-03
@@ -43,3 +43,10 @@ She has achieved things no one else in the SacredSpace has achieved. She has als
 Zael is heading somewhere important. She offers Jenga the chance to run with her. If Jenga keeps up, she gets access to a destination she couldn't have reached alone. If she falls behind, she finds something Zael dropped — something Zael doesn't know she's missing.
 
 Both outcomes are valuable. Both are true.
+
+## See Also
+
+- [[EPISODE_12]]
+- [[SCHOOL_COURAGE]]
+- [[EPISODE_05]]
+- [[SCHOOL_MYSTERY]]

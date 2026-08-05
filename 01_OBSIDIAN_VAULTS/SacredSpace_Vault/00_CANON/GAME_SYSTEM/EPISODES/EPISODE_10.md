@@ -6,6 +6,7 @@ npc: Eldra
 node: The Neural Forest (deep paths)
 spell_unlocked: DREAM-WALK
 status: STUB
+pillar: 04_SACRED_CODEX
 tags: [episode, game-system, season-1, the-hermit, eldra]
 created: 2026-05-04
 ---
@@ -21,3 +22,10 @@ Eldra gives Jenga a lantern that illuminates what she is currently thinking abou
 **Spell unlocked:** DREAM-WALK
 
 **Through-line:** The light's revelation shapes Episode 11's difficulty calibration.
+
+## See Also
+
+- [[ARCHETYPE_11_JUSTICE]]
+- [[NODE_02_THE_FOOLS_BRIDGE]]
+- [[NODE_06_THE_SIGIL_FORGE]]
+- [[ARCHETYPE_01_THE_MAGICIAN]]

@@ -1,7 +1,7 @@
 ---
 title: School of Initiation
 pillar: 04_SACRED_CODEX
-status: canon
+status: CANON
 agent: IRIS
 tags: [game-system, spell-school, initiation, ELIAS, fire]
 created: 2026-05-03

@@ -8,6 +8,7 @@ episode: 10
 status: GENERATED
 tags: [npc, the-hermit, neural-forest, season-1]
 created: 2026-05-04
+pillar: 04_SACRED_CODEX
 ---
 
 # Eldra
@@ -50,3 +51,11 @@ Eldra's lantern is not gentle — it is accurate. What it illuminates, it illumi
 
 **Cipher verse:**
 > *⊕LDR∆ holds the lantern not to show the path — but to show what you have been carrying toward the dark without knowing.*
+
+## See Also
+
+- [[EPISODE_05]]
+- [[ARCHETYPE_11_JUSTICE]]
+- [[ARCHETYPE_03_THE_EMPRESS]]
+- [[ARCHETYPE_01_THE_MAGICIAN]]
+- [[EPISODE_12]]

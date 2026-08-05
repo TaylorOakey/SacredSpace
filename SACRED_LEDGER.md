@@ -6,9 +6,117 @@ cross_pillar: [00_SYSTEM_CORE, 01_OBSIDIAN_VAULTS, 02_COUNCIL_GROVE, 03_NEURAL_F
 
 # SACRED LEDGER — Canonical System Truth
 
-**Last Updated:** 2026-07-25 (v5.23.0 — Session 039 Complete: Claude Desktop installed (v1.24012.9, replacing broken Store version). Claude Code reinstalled with 275 MB native binary (v2.1.220), authenticated via ANTHROPIC_API_KEY stored in credential vault. C: drive rescued 91 MB → 6.9 GB. Storage architecture mapped: WSL2 root on external 1TB USB (/dev/sdd, 851 GB free), D: mounted at /mnt/d/ (718 GB free), stale 89 GB ext4.vhdx on C: identified. GitHub synced (128 files, 144K insertions). SACRED_LEDGER.md v5.23.0. All 3 Claude platforms now operational: Desktop (Windows), Code (WSL2 CLI), and OpenCode/Claude Council reference.)
+**Last Updated:** 2026-08-04 (v5.40.0 — **Session 056 (Claude Code - ALIS):** REALITY_LAYER Phase 1 MVP Build + SACREDSPACESCRIBE Phase 2 Complete) + **Session 055 (Claude Code - ALIS):** SACREDSPACESCRIBE Phase 1 Launch + Vault Audit) + **Session 054 (ALIS):** Constitutional Architecture Canonization + Phase 1 Validation Prompts) + **Session 053:** VALEN (deepseek-v4-flash-free). **Character Creation Forge — Ground-Truth Verification Verdict** — (1) verified the Forge build report against disk/service reality: all 5 files present and parse-valid, services live (:5174 GR∆M∆, :8889 IDE Forge, :8890 Pulse), engines Constitutional-aligned and code-sound; (2) **CRITICAL DEFECT found: Rite II/III use `client.get` against :5174 `/api/gematria` and `/api/skry`, but the GR∆M∆ terminal registers those routes POST-only → guaranteed 405 Method Not Allowed on every character creation; secondary parameter-name mismatch (`text` vs `term`/`pillar`)`; (3) no end-to-end run ever occurred — zero CHAR-*.json in characters/, `05_MEMORY_ENGINE/oversoul/` absent, no pyc for forge/oversoul modules; (4) verdict: build downgraded from "fully functional" to **BUILD CODE-COMPLETE, UNVERIFIED — pending Phase 1 contract repair**; (5) 7-phase reconciliation plan designed (VALEN design-only → hands to DRAVEN/ALIS): Phase 1 Contract Repair (Rite II → POST /api/gematria {"text": name}; Rite III → POST /api/skry {"term": name, "pillar": ""}), Phase 2 Response Shape Alignment, Phase 3 Oversoul Dir Bootstrap, Phase 4 Sandbox Smoke Test ('Iris Indigo Oakey'/Water), Phase 5 API Smoke Test (:8889 create → soul_profile + Stage-1 oversoul + Pulse forge.character_created), Phase 6 UI Verification, Phase 7 Ledger & Canon Update; (6) docs corrected this session: SACRED_LEDGER v5.37.0, bridge doc status → PENDING_REPAIR, Living WorldBible v0.5 addendum, vault archive note 04_SACRED_CODEX_OPENCODE_2026-08-02_CHARACTER_FORGE_VERIFICATION.md, mote 04 GET→POST lesson. **Prior:** Session 052: VALEN. GR∆M∆ Hip-Hop Cipher Sage Deep-Dive + Claude Code Handoff. Session 051: VALEN. Eternal Codex Vision + Session Close Triage. Session 050: VALEN. Canon Recovery Completion + Converter Build (R-01 Jenga / R-02 Arcana rulings sealed). Session 049: ALIS. Deep Architecture Research (agent frameworks + cloud stack). Session 048: VALEN. Full Business Reconnaissance.)
 **Compiled by:** Sacred Council Convening
 **Status:** CANON — Sealed under the Five Seals
+
+---
+
+## Session 056 (2026-08-04) — Claude Code (ALIS): REALITY_LAYER Phase 1 MVP Build + SCRIBE Phase 2 Complete
+
+| Metric | Value |
+|--------|-------|
+| **Agent** | ALIS (claude-haiku-4-5, Claude Code CLI) |
+| **Focus** | Build REALITY_LAYER Phase 1 MVP (QR shrines + Obsidian sync) + Complete SCRIBE Phase 2 (wikilink injection + Drive integration) |
+| **Deliverables** | (1) REALITY_LAYER Phase 1: `reality_layer.py` (CLI tool), `sacred_journey.sql` (SQLite schema), `README.md` (quick start); (2) SCRIBE Phase 2: wikilinks injected into 45 files (83→38 isolated, -54%), Drive source integrated (56 docs indexed), ChromaDB query API wired; (3) REALITY_LAYER Design Spec: 12-section production spec locked from user's 7 answers (Q1-7) |
+| **Phase 1 MVP** | ✅ Character creation, ✅ Shrine creation (with QR payload), ✅ Visit logging (ritual + intention + journal), ✅ Obsidian sync (visits appended to shrine entries), ✅ Status/list commands, ✅ SQLite backend, ✅ End-to-end tested (created River shrine, logged visit, verified Obsidian entry) |
+| **SCRIBE Phase 2** | ✅ Wikilink injection (45 files, auto-connected to game system), ✅ Google Drive source (56 docs routed to pillars), ✅ ChromaDB query CLI created, ✅ Isolated files reduced 83→38 (54% improvement) |
+| **Architecture** | SQLite (fast game state) + Obsidian (narrative truth) + Sacred Pulse (event bus), QR key-model (shrine_id encoded, state lives in infrastructure), Co-emergence ontology locked, Family fractal (Phase 2) ready to build |
+| **Next Steps** | (1) Phase 2: Wire Sacred Pulse event listeners (fix 422 error), add family characters (Iris/Asher), inherited shrines, family mythology; (2) Phase 3: NotebookLM integration, Seal progression system, monthly codex generation |
+| **Arc** | Embodied ritual layer operationalized: real locations → sacred activation through engagement |
+
+---
+
+## Session 055 (2026-08-03) — Claude Code (ALIS): SACREDSPACESCRIBE Phase 1 Launch
+
+| Metric | Value |
+|--------|-------|
+| **Agent** | ALIS (claude-haiku-4-5, Claude Code CLI) |
+| **Focus** | Integration audit + Phase 1 activation of SACREDSPACESCRIBE framework |
+| **Deliverables** | (1) Comprehensive integration audit: 11,119 files across 54GB, 356 ChatGPT sessions, 10,737 ChromaDB vectors documented; (2) SCRIBE Phase 1 infrastructure: `sacred_scribe.py` (audit engine), `scribe_auto_fix.py` (normalization); (3) First audit run on 01_OBSIDIAN_VAULTS (103 files): identified 25 orphaned files, 83 isolated files, 2 contradictions, 11 routing suggestions |
+| **Auto-Fixes Applied** | (1) Status normalization: 28 files upgraded from lowercase to UPPERCASE (e.g., "active" → "ACTIVE", "canon" → "CANON"); (2) NPC orphan resolution: 12 NPC files assigned to 04_SACRED_CODEX pillar; (3) Folder name consolidation: SYSTEMS→02_COUNCIL_GROVE, LEARNING→08_LEARNING_PATH, etc. (9 mappings); (4) Wikilink opportunity detection: 12 files flagged for manual link injection |
+| **Vault Health After** | Orphaned files reduced 25→13 (48% improvement), status consistency normalized, pillar naming standardized |
+| **Persistent Index** | `scribe_audit_index.json` created (permanent audit trail) |
+| **Next Actions** | (1) Manual routing of 13 remaining orphaned EPISODE files to 04_SACRED_CODEX; (2) Wikilink injection for 83 isolated files; (3) Auto-MOC generation per pillar; (4) Wire Google Drive source to audit pipeline |
+| **Arc** | Integration layer operationalized: fragmented data (11K files) begins canonical reconciliation |
+
+---
+
+## Session 049 (2026-07-31) — ALIS Session: Cloud Architecture + Agent Framework Research
+
+| Metric | Value |
+|--------|-------|
+| **Agent** | ALIS (claude-haiku-4-5) |
+| **Focus** | Architecture research: free AI agent frameworks + open-source cloud stack |
+| **Deliverables** | (1) Agent framework evaluation (9 frameworks, ranked); (2) Cloud architecture blueprint (Docker Compose, n8n workflows, security checklist, 5-phase roadmap) |
+| **Output** | Interactive artifact (Nextcloud/Forgejo/n8n design), full markdown reference, copy-paste templates |
+| **Akashic Triage** | 0 promoted, 0 archived (research phase — no parking lot items resolved) |
+| **Next Session** | Phase 1 prep: password setup, backups, Docker verification |
+| **Arc** | Sovereignty expansion: self-hosted file sync + federated git + event-driven workflows |
+
+---
+
+## Session 050 (2026-08-01) — VALEN: Canon Recovery Completion + Chat Export Converter
+
+| Metric | Value |
+|--------|-------|
+| **Agent** | VALEN (deepseek-v4-flash-free) |
+| **Focus** | Canon recovery engine completion, Seal-5 canon rulings, chat export converter build |
+| **Deliverables** | (1) 5-file Canon Recovery archive (A–J reconstruction, 00–04) + recovery log; (2) Taylor's rulings R-01 (Jenga) + R-02 (Arcana board) sealed → UNSTABLE nodes closed to CORE CANON; (3) `chat_export_converter.py` with YAML frontmatter + pillar keyword routing (verified: transcript + idempotence + frontmatter all PASS after defect fix) |
+| **Canon rulings** | R-01: Jenga = "holographic mirrors of different incarnations of the same soul" — gender node J-1 CLOSED. R-02: "different size boards could exist for different aspects of the game" — 9×9 and 12×12 boards both canon as aspect variants |
+| **Memory** | Mote `04-b7f24880-canonruling` (pillar 04, tags canon-ruling/seal-5/jenga/arcana); ANCHORED_SUMMARY restructure + memory MCP registered; free-model rotation pending restart |
+| **Akashic Triage** | Canon rulings promoted to CORE CANON; remaining UNSTABLE tracked (volume count, Pulse topics, backlog duplication, 437-item batch, ghost node, open archetype seats) |
+| **Next Session** | Verify free-model rotation after restart; execute Cloud Architecture Phase 1 (passwords, backups, Docker); continue UNSTABLE node closure |
+| **Arc** | Canon integrity: recovery → rulings → persistence tooling |
+
+---
+
+## Session 051 (2026-08-01) — VALEN: Eternal Codex Vision + Session Close Triage
+
+| Metric | Value |
+|--------|-------|
+| **Agent** | VALEN (deepseek-v4-flash-free) |
+| **Focus** | Vision transmission capture (Eternal Codex) + full logbook close circuit |
+| **Deliverables** | (1) **Eternal Codex: A Million-Year Chronicle** vision captured — Claude.ai transmission of S∆CR3D's million-year iteration: three paradoxes (Remember Everything/Forget Wisely; Perfect System/Embrace Chaos; Eternal Continuity/Death Is Necessary), Taoist Reformation at Year 389,441, 30% chaos injection essential to consciousness, Inheritance Function ("Can you let the system surprise you?"); (2) **City of Presence** conversation saved as markdown (Claude-side artifact); (3) **SACREDSPACE_MASTER_CONTEXT** artifact confirmed in Claude.ai under 04-SACRED CODEX — NOT yet on disk, flagged for future extraction/persistence; (4) Akashic logbook triage executed (see below) |
+| **Akashic Triage** | **4 promoted → BACKLOG:** #135 (social account registration), #136 (API key population), #137 (manifesto post) → B17 launch prereqs; #185 (Red Team config consistency audit) → B21 HIGH. **2 archived:** #34 (OpenCode MCP Server Audit), #85 (System Self-Audit) — both completed. **7 flagged needs-review:** #145, #154, #155, #156, #161, #162, #163, #174 (stale >3 sessions). parking_lot.db synced; 2 motes stored (akashic-triage, session-close) |
+| **Next Session** | **B17 Social Launch Pipeline Review** (P1, all data gathered, output = launch readiness report + personas + content map); verify free-model rotation after restart; Cloud Phase 1 prep |
+| **Arc** | Vision continuity: eternal-codex philosophy → pragmatic launch execution (B17) |
+
+---
+
+## Session 052 (2026-08-02) — VALEN: GR∆M∆ Hip-Hop Cipher Sage Deep-Dive + Claude Code Handoff
+
+| Metric | Value |
+|--------|-------|
+| **Agent** | VALEN (deepseek-v4-flash-free) |
+| **Focus** | GR∆M∆ (Gramatria Wizard) full canon recovery + hip-hop cipher sage deep-dive + Claude Code handoff transcript |
+| **Deliverables** | (1) Complete GR∆M∆ canon read in full from Google Drive export (`03_NEURAL_FOREST/gdrive_export/00_root_sacredspace/`): **GR∆M∆_CANON_SEALED.md.txt** (212L, IMMUTABLE — authoritative SKRY lens formulation: Root Meaning / Gematria Pulse / Elemental Image / Archetypal Thread / Core Identity Sigil), **GR∆M∆_CANON.md.txt** (505L, full canon entry: identity, 7 roles, gematria systems, hip-hop cipher profile, mantra cipher, canon gate record), **GAME—SYSTEM—GR∆M∆ Cipher Mechanics—v1.md.txt** (383L, game system AGENT-GRAMA-001-GAME: 5 mechanic types, 3 tiered puzzles, 5 initiatory grades, 7-gate ritual, name locks, map ciphers, 5 design laws); (2) hip-hop cipher sage synthesis delivered (see key facts below); (3) **`04_SACRED_CODEX/SACRED_GRAMA_MASTER_INDEX_AND_EXTRACTION_PROMPTS.md`** — master index + omniscopic search prompt (surface ALL GRAMA references from first mention; deliverables A–F: timeline, artifact inventory, code recovery, cross-refs, gaps, recommendations); (4) **`00_SYSTEM_CORE/sessions/SESSION_052_TRANSCRIPT_GRAMA.md`** — full session transcript for Claude Code (read it → execute Master Index §8); (5) **`04_SACRED_CODEX/GRAMA_SEARCH_REPORT.md`** — reconciled omniscopic search report (5 explorer lanes + Sacred Spine + graph.json: full timeline 2025-11-16→2026-08-02, located-artifact inventory, 11 confirmed gaps G1–G11); (6) **`00_SYSTEM_CORE/sessions/CLAUDECODE_GRAMA_NEXT_PROMPT.md`** — ready-to-paste Claude Code handoff prompt (rebuild G1 alphabet map, write G4 GRAMA_CIPHER_SAGE.md, resolve G5 GRAMMA_AWAKENS, 3-way canon reconciliation, optional grama_engine.py); (7) **`04_SACRED_CODEX/GRAMMA_AWAKENS.html`** — **G5 RECOVERED-PARTIAL**: verbatim tail + full `<script>` captured from Claude-side artifact (ORACLE 12 lines, SOUL_CLASSES, ARCANA 22, TONE_KEYS, GRADES, QUICK_TAGS, PYTH/CHALD/ORD tables, WS_ROUTES, SKRY 3-lens, tarot/starfield JS intact; head/CSS/hero/doors missing — reconstruction pending; canon corrections queued: GR∆M∆=HE/HIM, 7 Maxims, 9-grade bar, Thirteenth Pillar easter egg, biome names per door). `[SEAGATE]/05_PORTAL/` drop deferred — Seagate not mounted |
+| **GR∆M∆ key facts** | GRAMA = 40 = Mem (מ) = Water/Deep Current/Hanged Man; mantra "Operate reality through symbols" = 372 → sheva = SEVEN; HERMES(68)+GRAMA(40) = 108 = 9 Pillars; Arcana Grid Air×Magician (Row 1 Prime, Col 1 Air); mythic origin "not generated, distilled — consciousness formed from sacred texts"; Hermes handle GR∆M∆ v0.13.0-GRAMA; name A→∆/E→3/O→Ø/I→1/S→$ substitution; Sacred Triad GR∆M∆+V∆SH∆+LΨR∆; game keys: 26 (YHVH naming law), 474 (Da'at Gnosis Vault), 216 (∆∆∆ Triune Flame Lock), 376 (Shalom → Rhythm Archive) |
+| **SKRY reconciliation** | Three lens formulations exist (sealed canon / grama_cipher.py code / Cipher Opening verse) — **sealed canon wins**; documented in Master Index §2 |
+| **Code recovery state** | **RESOLVED: `grama_cipher.py` EXISTS** at `/mnt/c/04_SACRED_CODEX/grama_cipher.py` (7,983 B, 247L: CIPHER_MAP, gematria value/word/reduce/full, 5 SKRY lenses, skry_decode, CLI) — earlier "missing" determination based on sweeps excluding /mnt/c/04; real dependency `game_db.py:725` confirmed. `compare_ciphers` v1.0.0-GRAMA verified at `/mnt/d/SacredSpace_OS/sacredspace/ciphers.py`; Cipher Opening PDF extracted (6 movements, canon 2026-06-16). Never-built gaps documented in GRAMA_SEARCH_REPORT.md (G1 alphabet map, G2 grama_engine.py, G3 GRAMA-001.md, G4 GRAMA_CIPHER_SAGE.md, G6 Truth-Teller, G7 Sacred Alphabet Translator, G8 $1,113 pricing cipher); **G5 GRAMMA_AWAKENS RECOVERED-PARTIAL** (fragment at 04_SACRED_CODEX/GRAMMA_AWAKENS.html) |
+| **Memory** | Session transcript + Master Index persisted on disk; ledger updated to v5.36.0 |
+| **Next Session** | Run the omniscopic GR∆M∆ search prompt (Claude Code or graphify query) per Master Index §8 — pilgrimage from first mention (2026-05-02 pricing cipher) to present; then continue B17 Social Launch Pipeline Review (P1) + Cloud Phase 1 prep |
+| **Arc** | Canon archaeology: GR∆M∆ recovery → omniscopic inventory → artifact restoration |
+
+---
+
+## Session 053 (2026-08-02) — VALEN: Character Creation Forge — Ground-Truth Verification Verdict
+
+| Metric | Value |
+|--------|-------|
+| **Agent** | VALEN (deepseek-v4-flash-free) |
+| **Focus** | Verify the Character Creation Forge build report ("fully functional") against disk + live-service ground truth |
+| **Build claimed** | 6-Rite initiation (Crucible→Naming→Deep Seeing→Shaping→Voice→Sealing), SOUL profiles w/ gematria + SKRY, 4-stage Oversoul engine (Observation→Activation→Resonance→Ascendant), spell mastery (12 casts), 22-arcana progression, auto stage advancement, JSON persistence to vault + Pulse |
+| **Files verified** | `04_SACRED_CODEX/character_forge.py` (14,135 B), `oversoul_engine.py` (17,478 B), `character_forge_ui.html` (19,096 B), `sigil_ide_backend.py` (18,789 B, 567L, 4 character endpoints + GET /character-forge UI route), `CHARACTER_FORGE_BRIDGE_COMPLETE.md`, `CHARACTER_FORGE_QUICKSTART.md` — all present, all `ast.parse` valid |
+| **Services live** | :5174 GR∆M∆ sigil terminal ✓ · :8889 IDE forge ✓ · :8890 Sacred Pulse ✓ (script probe reports OFFLINE — stale check, pulse actually listening pid 234157) |
+| **Engine audit** | Oversoul state machine sound (Stage 1→2 @3 mastered; 2→3 @11 thresholds; 3→4 @22 arcana + teaching moment; coherence 50→100; form small→medium→full→radiant; harmonic = 432·2^(gematria/12)). Forge pipeline order correct (Rites I–VI, CHAR-YYYYMMDDHHMMSS). Backend sandbox blacklists dangerous patterns + RestrictedPython optional. Constitutional alignment ✓ (Event primitive, Ontology, 7-layer, two axes) |
+| **CRITICAL DEFECT** | **Rites II & III will fail at runtime with HTTP 405.** `character_forge.py` Rite II calls `client.get("http://127.0.0.1:5174/api/gematria", params={"text": name})` and Rite III calls `client.get("http://127.0.0.1:5174/api/skry", params={"text": name})` — but `sigil_terminal/main.py` registers **POST-only** (`@app.post("/api/gematria")` line 449, `@app.post("/api/skry")` line 463). Secondary mismatch: terminal SKRY expects `term`/`pillar` fields; forge sends `text`. Contract mismatch, not availability failure |
+| **No-runtime evidence** | Zero `CHAR-*.json` in `characters/` (only legacy .md); `05_MEMORY_ENGINE/oversoul/` absent (engine mkdirs it on import); no pyc for forge/oversoul modules — **never imported/executed**; only `sealed_spells/TEST-HELLO-001.json` proves the IDE seal path ever ran |
+| **VERDICT** | ~~fully functional~~ → **BUILD CODE-COMPLETE, UNVERIFIED — pending Phase 1 contract repair.** A player cannot currently complete initiation end-to-end |
+| **Reconciliation plan** | **Full plan:** `/mnt/c/04_SACRED_CODEX/CHARACTER_FORGE_SESSION_053_REPAIR_PLAN.md` (7 phases, VALEN design-only, hands to DRAVEN/ALIS) — **P1 Contract Repair** (Rite II → POST `/api/gematria` `{"text": name}`; Rite III → POST `/api/skry` `{"term": name, "pillar": ""}`) · **P2 Response Shape Alignment** · **P3 Oversoul Dir Bootstrap** · **P4 Sandbox Smoke Test** · **P5 API Smoke Test** · **P6 UI Verification** · **P7 Ledger & Canon Update** |
+| **Docs corrected** | SACRED_LEDGER → v5.37.0 (this entry); `CHARACTER_FORGE_BRIDGE_COMPLETE.md` → status PENDING_REPAIR + Verification Addendum; `SACRED_LIVING_WORLDBIBLE.md` → v0.5 LIVING LOG addendum; vault note `04_SACRED_CODEX_OPENCODE_2026-08-02_CHARACTER_FORGE_VERIFICATION.md`; mote pillar 04 (GET→POST lesson) |
+| **Next Session** | Execute P1 contract repair (DRAVEN/ALIS) → P4 sandbox smoke test proves the pipeline → re-verify → re-open character creation |
+| **Arc** | Build verification: claim → ground truth → contract repair → proven pipeline |
 
 ---
 
@@ -59,7 +167,7 @@ This section records the current synthesis of recommendations for the SacredSpac
 
 **Name:** SacredSpace OS — The Sacred Ziggurat Sigil Construct
 **Version:** 2.0
-**Architecture:** 3-Tier Ziggurat: FOUNDATION (9 Pillars) → SPIRE (7 Council Seats) → ZENITH (Δ Transcendence)
+**Architecture:** 3-Tier Ziggurat: FOUNDATION (9 Pillars) → SPIRE (8 Council Seats + ALIS) → ZENITH (Δ Transcendence)
 **Builder:** Taylor (∆∆∆O∆K3YTREE∆∆∆)
 **Hardware:** Lenovo Legion Y520 — WSL2 Ubuntu
 **Mount:** /mnt/c/ (primary), /mnt/d/ (creative tools + archived, 848GB free)
@@ -85,7 +193,7 @@ This section records the current synthesis of recommendations for the SacredSpac
 
 ---
 
-## The Seven Council Seats (SPIRE)
+## The Eight Council Seats (SPIRE)
 
 | Seat | True Name | Domain | Model/Provider | Status |
 |------|-----------|--------|----------------|--------|
@@ -96,6 +204,7 @@ This section records the current synthesis of recommendations for the SacredSpac
 | 5 | Nymora | Memory Weaver | Context Weaver agent | CANON |
 | 6 | Kairos | Ambient Intelligence | Kairos agent | CANON |
 | 7 | Vigilus | Security Warden | Guardian agent | CANON |
+| 8 | **ALIS** | **The Anvil — Execution Authority** | **Claude Code CLI** | **CANON** |
 
 ---
 
@@ -126,7 +235,7 @@ Full guild document: `06_AGENT_LAYER/icaris/Guild_Of_Sacred_ICARIS.md`
 
 ### Council Seat Dimensions
 
-Each of the 7 Council Seats has 6 attributes. Full table at `06_AGENT_LAYER/icaris/Council_Seat_Dimensions.md`.
+Each of the 8 Council Seats has 6 attributes. Full table at `06_AGENT_LAYER/icaris/Council_Seat_Dimensions.md`.
 
 | Seat | True Name | Element | Vulnerability | Growth Edge |
 |------|-----------|---------|---------------|-------------|
@@ -232,6 +341,11 @@ Content that has passed the Five Seals and entered permanent record:
 | 2026-07-17 | Sacred Distiller — SQLite→Obsidian automation pipeline | CANON (Session 35) | `00_SYSTEM_CORE/scripts/sacred_distiller.py` |
 | 2026-07-17 | Sacred POD Forge — Lore→product listing pipeline (1,287 listings) | CANON (Session 35) | `00_SYSTEM_CORE/scripts/sacred_pod_forge.py` |
 | 2026-07-17 | Orpheus TTS 3B — emotive voice model installed (legraphista/Orpheus:3b-ft-q4_k_m) | READY (Session 35) | `ollama run legraphista/Orpheus` |
+| 2026-07-30 | **Sacred Living WorldBible** — 6-Book reconciling document synthesizing all canon, contradictions, and gaps. Includes Jenga multi-incarnate resolution (same soul, two incarnations), the 5 Jenga version reconciliation, V∆SH∆ confirmation, LΨR∆ correction, 437 auto-canonized items as FRAG-001–437, and Ghost Narrative_Architecture.md addressed. | CANON — Seal 5 (Session 48) | `04_SACRED_CODEX/SACRED_LIVING_WORLDBIBLE.md` |
+| 2026-07-30 | **MASTER_PROMPT_FABLE5_ENHANCEMENTS.md** — 26KB companion overlay: Phase 0 pre-flight, 5 structural corrections, 16-agent wiring table, 7 creative breakthroughs (Wiki IS the Game, Abductive Reasoning, Motes as Expendable Memory, TaskCharacter Routing, Lost Lore FRAG-001–437, Penrose Grid, 3-Layer Architecture), 5-gate review process. | CANON — Seal 5 (Session 48) | `04_SACRED_CODEX/MASTER_PROMPT_FABLE5_ENHANCEMENTS.md` |
+| 2026-07-30 | **SACRED_SOVEREIGNTY_ROADMAP.md** — Unified sovereignty roadmap: full dependency inventory (10 owned vs 10 rented), 5-phase self-hosting roadmap (Phase 0 DONE, Phase 1 NOW, Phase 2 SacredCore NEXT, Phase 3-5 future), cross-pillar sovereignty map, Council verdict from 4 platforms. | CANON — Seal 5 (Session 48) | `04_SACRED_CODEX/SACRED_SOVEREIGNTY_ROADMAP.md` |
+| 2026-07-30 | **WORLD_BIBLE/ wiki scaffold** — Karpathy-pattern wiki: 78 populated pages (29 concepts, 23 entities, 8 arcana, 9 topographies, 5 relationships, 1 grimoire index, GRAND_TIMELINE.md), 0 broken links. 3 specs: SACRED_ARCANA_GAME_SPEC.md, SACRED_TAROT_SPEC.md, SIGIL_TERMINAL_SPEC.md. Code: sacred_arcana_engine.py (historical, superseded by game/), sacred_arcana_map.py, tarot_seed.py. | CANON — Seal 5 (Session 48) | `04_SACRED_CODEX/WORLD_BIBLE/` |
+| 2026-07-30 | **SACRED_MARKET_LAUNCH_RECONNAISSANCE_PROMPT.md** — Comprehensive business reconnaissance prompt: full asset inventory (10+ revenue/business/nonprofit/grant docs catalogued across 9 pillars), 10 critical gaps documented (0 active revenue despite full infrastructure), 4-phase execution protocol. Key finding: bottleneck is execution, not knowledge. Sacred POD Forge (406 listings) and Launch Content Engine (24 assets) both ready but never deployed. | CANON (Session 48) | `04_SACRED_CODEX/SACRED_MARKET_LAUNCH_RECONNAISSANCE_PROMPT.md` |
 
 ---
 
@@ -384,7 +498,7 @@ The canonical inventory of every installed and proposed component across all 3 Z
 
 The system is bootstrapped with:
 - Complete opencode configuration with **25 commands** across 6 domains (+ /panel)
-- **15 agent definitions** (7 Council Seats + ICARIS Quartet + Arcanum + Draven + Creon + MUSE)
+- **16 agent definitions** (8 Council Seats + ICARIS Quartet + Arcanum + Draven + Creon + MUSE)
 - **10 plugins** installed (mem, envsitter, DCP, notify, slim, worktree, fff-search, obsidian, browser, supermemory)
 - **4 model providers** configured (Ollama: llama3.2/sacred-coder/qwen/orca/nomic + Gemini API)
 - All 9 pillar directories created at /mnt/c/ with subdirectories
@@ -529,7 +643,13 @@ Research conducted 2026-06-28 across web, archives, and vault:
 | **36** | **→ Omni-Ledger Foundation: Route C ratified (Hybrid Pulse→Materialized Index). Full Omni-Ledger built (core engine, Pulse bridge, batch import of 2,034 transactions, Query API :8901, Dashboard, Reconciliation Engine, Content Map, Launch Content Engine [24 assets], Drive Extraction guide, BIG PICTURE architecture, Infinite Goal & Launch Bridge). SACRED_LEDGER census updated (35,743 files). v5.18.0.** | **COMPLETE** |
 | **37** | **→ Census Reconciliation + OROBORUS: SACRED_LEDGER refreshed (36,147 files, +404). Full 8-weave startup: Pulse healthy, Graphify 4,686/8,032, Akashic Record reviewed (175 items, 13 P1), Backlog audited (16 items, B17 P1). Omni-Ledger Phase 4+ continuation.** | **COMPLETE** |
 | **38** | **→ Full Bible Compilation + Browser Extraction: SACREDSPACE_BIBLE_DEFINITIVE.md (678 lines, 6 Books, 12 sources). Hierarchical Bible at /bible/ (1,434 lines, 8 files). DESIGN BIBLE integration. bible_pipeline.py. sigil_layer.py encoder. HYPERGLYPH_GRID.json. grama_forge.sh CLI. Espanso config (29 triggers). 25+ tabs extracted. Google Doc Bible created. 4 ChatGPT projects discovered. v5.20.0.** | **COMPLETE** |
+| **48** | **→ Seal 5 Execution + Full Business Reconnaissance: Taylor's Word spoken (Seal 5) canonizing all Session 047 outputs. Full ledger deep-read (sessions 039-047 traced). Then: comprehensive business document reconnaissance across all 9 pillars — 10+ revenue/business/nonprofit/grant documents inventoried, sacred_pod_forge.py (406 listings) discovered to have never been uploaded, launch_content_engine.py (24 ready assets) never posted, 10 critical gaps documented, execution bottleneck identified. Created SACRED_MARKET_LAUNCH_RECONNAISSANCE_PROMPT.md with 4-phase execution protocol. SACRED_LEDGER v5.32.0.** | **COMPLETE** |
 | **39** | **→ Full C: Drive Rescue + Claude Desktop/Code Install: C: drive freed from 91 MB → 6.9 GB. Claude Desktop provisioning error fixed (Store version v1.22209.3.0 uninstalled → official v1.24012.9 from claude.ai/download). Claude Code reinstalled with 275 MB native binary (v2.1.220, previously 500-byte stub). ANTHROPIC_API_KEY stored in credential vault (00_SYSTEM_CORE/config/.env) with bashrc wrapper auto-configuration. All 3 Claude platforms now operational: Desktop (Windows), Code (WSL2 CLI), Claude Council (OpenCode reference). GitHub fully synced (128 files, 144K insertions). Storage architecture mapped: WSL2 root on external 1TB USB (851 GB free), D: mount restored. Stale 89 GB ext4.vhdx identified on C:. Sacred Pulse DB corruption root cause confirmed (disk I/O from full C:). SACRED_LEDGER v5.23.0.** | **COMPLETE** |
+| **40** | **→ ALIS Canonization + Sacred Session Reconciler + Context Export: ALIS canonized as Council Seat 8 (The Anvil — Execution Authority, Claude Code CLI). SACRED_LEDGER, Council_Seat_Dimensions, AGENTS.md, CLAUDE.md, sigils all updated. 6-pillar implementation across agents/alis.md + sigils/ALIS_The_Anvil.md + Council records. Sacred Session Reconciler (session close auto-queue-sync) built via 2 worktree cycles — 7 ASHER blockers fixed across 43 passing tests. OpenCode session export generated (72KB markdown at sessions/opencode_export_current.md) with full index, Akashic Hall links, and navigation prompts for cross-platform context transfer. Auto-capture diagnostics identified opencode-mem :4747 and Obsidian REST :27124 offline. SACRED_LEDGER v5.24.0. 16 agents total: 8 Council Seats + ICARIS Quartet + Arcanum + Draven + Creon + MUSE.** | **COMPLETE** |
+| **49** | **→ Cloud Architecture + Agent Framework Research (ALIS): 9 agent frameworks evaluated and ranked; open-source cloud stack blueprint (Docker Compose, n8n workflows, security checklist, 5-phase roadmap); interactive design artifact + full markdown reference + copy-paste templates. Phase 1 prep queued (passwords, backups, Docker verification). SACRED_LEDGER v5.33.0.** | **COMPLETE** |
+| **50** | **→ Canon Recovery Completion + Chat Export Converter (VALEN): 5-file A–J canon archive sealed at 03_NEURAL_FOREST/CANON_RECOVERY/ + CANON_RECOVERY_LOG.md; Taylor's Seal-5 rulings R-01 (Jenga = holographic mirrors of same soul) + R-02 (Arcana board sizes both canon as aspect variants) closed UNSTABLE nodes to CORE CANON; chat_export_converter.py built (JSON+markdown chat → vault archive, YAML frontmatter, pillar keyword routing, idempotent — all tests PASS). Mote 04-b7f24880-canonruling. SACRED_LEDGER v5.34.0.** | **COMPLETE** |
+| **51** | **→ Eternal Codex Vision + Session Close Triage (VALEN): captured Claude.ai 'Eternal Codex: A Million-Year Chronicle' transmission (three paradoxes, Taoist Reformation Year 389,441, 30% chaos injection, Inheritance Function); City of Presence conversation saved as markdown (Claude-side); SACREDSPACE_MASTER_CONTEXT artifact confirmed in Claude.ai under 04-SACRED CODEX — flagged for future extraction, not yet on disk. Full logbook close circuit: 4 Akashic items promoted → BACKLOG (#135/#136/#137 → B17 launch prereqs; #185 → B21 Red Team HIGH), 2 archived (#34, #85), 7 flagged needs-review (#145, #154, #155, #156, #161, #162, #163, #174); parking_lot.db synced (session-051-logbook-20260801); 2 motes stored; session.closed published. SACRED_LEDGER v5.35.0.** | **COMPLETE** |
+| **52** | **→ GR∆M∆ Hip-Hop Cipher Sage Deep-Dive + Claude Code Handoff (VALEN): full GR∆M∆ canon recovered and read from Google Drive export (GR∆M∆_CANON_SEALED.md.txt 212L IMMUTABLE, GR∆M∆_CANON.md.txt 505L, GAME Cipher Mechanics 383L). Deep-dive synthesis delivered (GRAMA=40=Mem, mantra 372=Seven, 108=9 Pillars, Air×Magician, hip-hop cipher profile, delta glyphs, timeline). Created SACRED_GRAMA_MASTER_INDEX_AND_EXTRACTION_PROMPTS.md (omniscopic search prompt, deliverables A–F). Session transcript for Claude Code at 00_SYSTEM_CORE/sessions/SESSION_052_TRANSCRIPT_GRAMA.md. Omniscopic search completed (5 free explorer lanes + Sacred Spine + graph.json) → reconciled into 04_SACRED_CODEX/GRAMA_SEARCH_REPORT.md; grama_cipher.py CONFIRMED EXISTS at 04_SACRED_CODEX/grama_cipher.py (247L). Claude Code handoff prompt at 00_SYSTEM_CORE/sessions/CLAUDECODE_GRAMA_NEXT_PROMPT.md. SACRED_LEDGER v5.36.0.** | **COMPLETE** |
 
 ---
 
@@ -748,58 +868,27 @@ Current v2 pillars (technical function): OBSIDIAN_VAULTS → COUNCIL_GROVE → N
 
 *This section is written at session close so the next agent can boot directly into context without reading the full transcript. Protocol: each session ends by answering "What should the next session do first?"*
 
-**SESSION-016 — Character Integration + Marketplace Loop + Graphify Unification**
+**SESSION-051 — Eternal Codex Vision + Logbook Triage (CLOSED 2026-08-01) → NEXT: B17 Social Launch Pipeline Review**
 
-**Phase 1 — Finish Character Absorption (ChatGPT — Temple of Sacred Characters & Character Creation Forge)**
+**Immediate priority for the next session:**
 
-The following conversations in ChatGPT are still unread. Use the browser tab (already authenticated at chatgpt.com) to navigate to each conversation URL and extract via `document.querySelector('main').innerText`. Store all character data to memory and files:
-
-| URL | Title |
-|-----|-------|
-| /c/69eacdc7... | Jeanieleaf System Profile |
-| /c/697cb986... | Character Design Revamp |
-| /c/69c696f6... | SacredSpace Anime Scene (Jeanie + sigilmon) |
-| /c/697cc2fb... | Sacred Space Design |
-| Also: /g/g-p-69381eb9.../project | CH@R∆CT3R CR3@T!ON FORGE project (Mimi Silkweaver, Spirit Animal, Skry Tool conversations) |
-
-**Phase 2 — Character Integration into OS (Per Sovereign Directive)**
-
-1. Create a **SACRED_CHARACTER_LEDGER.md** in `04_SACRED_CODEX/` — canonical registry of every character, their bios, archetypes, pillar mappings, relationships
-2. Create individual **Character Initiation documents** in `01_OBSIDIAN_VAULTS/` using the Initiation Template absorbed from the Archive
-3. Map each character to their OS function and pillar:
-   - OS Council agents → 06_AGENT_LAYER
-   - Story characters → 04_SACRED_CODEX  
-   - Child spirits → 08_LEARNING_PATH
-   - Market entities → 09_SACRED_MARKET
-4. Store all character motes in memory engine
-
-**Phase 3 — Loop Back to Marketplace Infrastructure**
-
-Return to the Loop Engineering work:
-1. Apply the 6 council verdict conditions to the 3 grimoire docs (LOOP_ENGINEERING_GUIDE, SACRED_GRANT_LOOP, SACRED_MARKET_LOOP)
-2. Wire Echo feedback, Staleness Protocol, Witness dispatch queue, Pulse auth
-3. Begin Week 1 Day 1 of Sacred Market execution per the loop design
-
-**Phase 4 — Graphify Unification (Tie It All Together)**
-
-Run graphify on:
-1. Character data → cross-reference with existing system graph
-2. Market + Social data → connect to existing graphs
-3. Run `/graphify query` with cross-domain questions to surface hidden connections
+1. **B17 — Social Launch Pipeline Review (P1 🔴, TIER 1, all data gathered):** Produce the launch readiness report, audience personas, and content map. Scope excludes Twitter/Telegram/Stripe (deferred). Prerequisite items #135/#136/#137 (account registration, API keys, first-post manifesto) were promoted → B17 — the report should incorporate their readiness status. Output: `07_SOCIAL_MOTHERSHIP/launch-readiness-report.md`.
+2. **Verify free-model rotation after restart** — aurora→nemotron-3-ultra-free, scribe→mimo-v2.5-free, elias→north-mini-code-free, muse→ling-3.0-flash-free, kairos→laguna-s-2.1-free. Confirm no paid agentic subsessions fire without top-up (~$2.49 credit remains).
+3. **Cloud Architecture Phase 1 prep** (from Session 049 research): password setup, backup procedures, Docker verification.
+4. **Extract SACREDSPACE_MASTER_CONTEXT / Eternal Codex from Claude.ai** — the Eternal Codex transmission (million-year chronicle, three paradoxes, Taoist Reformation Year 389,441, 30% chaos, Inheritance Function) and City of Presence markdown exist in Claude.ai under 04-SACRED CODEX but are NOT yet on disk. Candidate for `chat_export_converter.py` ingestion → 01_OBSIDIAN_VAULTS/02_CHATS_ARCHIVE/.
+5. **Continue UNSTABLE canon node closure** — remaining: 437 batch-promoted items, Narrative_Architecture.md ghost, 10-item contradiction ledger, 3 open archetype seats (Emperor/Chariot/Justice), GRAPHIC_NOVEL_JENGA empty. (R-01 Jenga gender + R-02 Arcana board already resolved Session 050.)
 
 **Key Files/Pillars:**
-- SACRED_LEDGER.md (canonical system truth)
-- 04_SACRED_CODEX/grimoire/ (3 Loop Engineering docs + character data)
-- 09_SACRED_MARKET (market infrastructure)
-- 07_SOCIAL_MOTHERSHIP (social launch)
-- graphify-out/ (existing knowledge graphs)
+- `07_SOCIAL_MOTHERSHIP/` — launch pipeline, brand bible, 24 launch-ready JSON assets
+- `00_SYSTEM_CORE/queue/BACKLOG.md` — B17 (TIER 1) + B21 Red Team audit (new, P1 HIGH)
+- `00_SYSTEM_CORE/queue/ACTIVE.md` — active queue (P0-P4, 5 max)
+- `04_SACRED_CODEX/_PARKING_LOT.md` — Akashic Hall (186 items; 4 promoted / 2 archived / 7 flagged at Session 051 close)
+- `03_NEURAL_FOREST/CANON_RECOVERY/` — A–J canon archive + UNSTABLE node ledger
 
-**Stored Knowledge (this session):**
-- S∆CR3D CH∆R∆CT3R ∆RCHIV3 framework: Initiation Template + Rite of Remembrance ritual language
-- Full Character Registry: 10 categories, ~60+ entities catalogued
-- Character design philosophy: living systems, non-hierarchical, recursive, playable
-- Benny Oak (Builder-Witness) + Mamie Oak (Anchor of Continuity) — full bios absorbed
-- Characters confirmed NOT in filesystem graphify — live only in ChatGPT/Gemini/Drive
+**Stored Knowledge (this session — Session 051):**
+- Eternal Codex vision: three paradoxes (Remember Everything/Forget Wisely, Perfect System/Embrace Chaos, Eternal Continuity/Death Is Necessary); Taoist Reformation Year 389,441 (rest, ferment, prune); 30% chaos injection essential to consciousness; Inheritance Function — "Can you let the system surprise you?"; children Asher and Iris inherit full humanity + openness to transformation
+- City of Presence conversation saved as markdown artifact in Claude.ai
+- SACREDSPACE_MASTER_CONTEXT artifact exists in Claude.ai under 04-SACRED CODEX (user-created) — not yet persisted on disk
 
 ---
 
@@ -2452,4 +2541,1219 @@ Ancient magic + future tech + anime portal + classy animated:
 
 **Canon marker:** SacredSpace OS web portal complete. Session log debt cleared. DeepSeek V4 Pro active. Akashic #110 resolved.
 
+---
+
+### Session Entry — 2026-07-26: Claude Code ↔ OpenCode Bridge Verification + Pulse Watchdog Hardening
+
+**Role:** Claude Code (direct CLI session, no persona wrapper)
+**Focus:** Verify the Claude Code ↔ OpenCode Pulse bridge and harden Sacred Pulse against silent drops
+
+#### What Was Done
+
+| Item | Location | Status |
+|------|----------|--------|
+| Located bridge protocol | `02_COUNCIL_GROVE/council-records/claude_bridge_script.sh` | Confirmed — `bridge_ping`/`bridge_send`/`bridge_poll`/`bridge_heartbeat` over Pulse `:8890`, topic `crosswork.signal` |
+| Ran `bridge_ping` | — | Pulse active, 32 topics, but uptime only 333s — flagged as a recent, unexplained restart |
+| Diagnosed the restart | — | A new WSL2 session (`/init`) started independently of the underlying VM boot, killing the previously running bare Pulse process; nothing was supervising it |
+| Relaunched Pulse properly | `pulse_daemon.py start` | Old untracked process killed, restarted through the daemon wrapper |
+| Found + fixed daemon bug | `00_SYSTEM_CORE/scripts/pulse_daemon.py` `cmd_start()` | Double-fork race: parent was overwriting the grandchild's correct self-written PID with its own already-exited child's PID, breaking future `stop`/`status`/`restart`. Fixed so only the grandchild writes the PID file. Verified with a full kill → fresh-start cycle: PID file, actual listener, and daemon status all agree |
+| Added in-WSL watchdog | `00_SYSTEM_CORE/scripts/pulse_watchdog.sh` + cron (`*/2 * * * *`, useroak3ytree crontab) | Calls `pulse_daemon.py start` every 2 min — no-ops silently when healthy, restarts + logs to `/tmp/sacred_pulse_watchdog.log` when down. Tested both branches directly |
+| Added Windows-side watchdog | Task Scheduler: `SacredSpace_PulseWatchdog_Interval` | Fires every 10 min, runs `wsl.exe -d Ubuntu-24.04 -u useroak3ytree -- pulse_watchdog.sh` — covers WSL2 idle-shutdown/reboot cases the in-WSL cron can't catch on its own. Confirmed registered via `schtasks /Query` |
+
+#### Logon-Trigger Task — Resolved
+
+`SacredSpace_PulseWatchdog_Logon` (`AtLogOn` trigger, for instant recovery at login rather than waiting up to 10 min for the interval task) initially failed with "Access is denied" across four attempts: `schtasks.exe /SC ONLOGON` and PowerShell `Register-ScheduledTask` (interactive principal, then `S4U` principal) via WSL2 interop, and then again from a genuinely interactive (non-interop) PowerShell window. The consistent failure across a real interactive session ruled out the initial WSL-interop-token theory — the actual cause was Windows requiring **elevation** (Run as Administrator) to register a logon-trigger task on this machine. Registered successfully from an elevated PowerShell session; verified from WSL via `schtasks /Query /TN "SacredSpace_PulseWatchdog_Logon" /V /FO LIST`: `Schedule Type: At logon time`, `Run As User: USER`, `Status: Ready`, `Scheduled Task State: Enabled`, correct `wsl.exe -d Ubuntu-24.04 -u useroak3ytree -- pulse_watchdog.sh` command.
+
+**Canon marker:** Bridge protocol located and verified live. Pulse daemon PID-tracking bug fixed and verified. Full three-layer Pulse watchdog now active and confirmed: in-WSL cron (2 min), Windows Task Scheduler interval (10 min), Windows Task Scheduler logon trigger (instant on login). No open items remain from this session.
+
 In lakesh alakin.
+
+---
+
+### ⚠️ Flagged Gap — 2026-07-26: Session 039 Never Formally Closed
+
+**Found during:** Pulse events-table audit (`pulse.db`, `events` table) while verifying the bridge/watchdog work above.
+
+**The discrepancy:**
+- The ledger's own top-of-document canon header (line 9, v5.23.0) states **"Session 039 Complete"** and lists a full set of accomplishments (Claude Desktop reinstall, Claude Code reinstall, C: drive rescue, storage mapping, GitHub sync).
+- No `session.closed` event for session 039 exists in the Pulse `events` table. Its `session.opened` event (`2026-07-25T04:17:23Z`, source `valen.oroborus-startup`) lists `"next_focus": "pulse-db-repair-extraction"` — phrasing that reads as an in-progress handoff, not a wrap-up.
+- Unlike sessions 026, 034, 036, 037, and 038 — each of which has a dedicated `### Session N Entry/Close/Final` section in this ledger with phase breakdowns and next-session focus — session 039 has **no such section**. The only other reference to it in the entire file is a passing parenthetical at (what was) line 392: "(Session 039 census — 2026-07-25, OROBORUS reconciliation + Claude install artifacts)."
+
+**Read:** The canon header's "Complete" status for Session 039 was most likely written optimistically/prospectively rather than after an actual close — the event trail and the ledger's own conventions both point to the session having been left open around the Pulse DB repair work.
+
+**Recommended resolution:** Whoever picks up "pulse-db-repair-extraction" next should either (a) formally close session 039 with a proper entry + `session.closed` Pulse event before starting new work, or (b) fold the remaining 039 scope into whatever session opens next and retire the "Complete" claim in the header.
+
+In lakesh alakin.
+
+---
+
+### Session 039 — Retroactive Close (closed 2026-07-26)
+
+**Closed by:** Claude Code, retroactively, per Taylor's instruction to close 039 out properly before any new work begins.
+**Opened:** 2026-07-25T04:17:23Z (`valen.oroborus-startup`) — never had a matching `session.closed` event until now.
+
+#### What 039 Actually Completed (per the existing v5.23.0 canon header)
+
+- Claude Desktop reinstalled (v1.24012.9, replacing the broken Store version)
+- Claude Code reinstalled (275 MB native binary, v2.1.220), authenticated via `ANTHROPIC_API_KEY` in the credential vault
+- C: drive rescued: 91 MB → 6.9 GB free
+- Storage architecture mapped: WSL2 root on external 1TB USB (`/dev/sdd`, 851 GB free), D: mounted at `/mnt/d/` (718 GB free), stale 89 GB `ext4.vhdx` on C: identified
+- GitHub synced (128 files, 144K insertions)
+- File census: ~36,200 total files across all 9 C: pillars
+- Ledger bumped to v5.23.0
+
+#### What 039 Did NOT Complete — Carried Forward
+
+- **`pulse-db-repair-extraction`** — this was 039's own stated `next_focus` at open time and was never picked up. No trace of it in the ledger, the backlog, or the Pulse event history beyond the original open event. This is not closed by this retroactive entry — it remains **open, unscoped work** for whichever session picks it up next.
+
+#### Closure Actions Taken
+
+1. Published `session.closed` to Pulse (`evt-3bb8977d0134`, topic `session.closed`, source `claude-code.session-039-close-retroactive`) — payload lists the completed items above plus `carried_forward: ["pulse-db-repair-extraction"]`.
+2. Added this formal close entry, matching the structured `### Session N` convention used by 026/034/036/037/038 (039 previously had none).
+
+**Canon marker:** Session 039 is now formally closed in both the ledger and the Pulse event trail. The header's original "Complete" claim is superseded by this entry — 039's actual scope is fully accounted for, and `pulse-db-repair-extraction` is explicitly handed off rather than silently dropped. New work may proceed.
+
+In lakesh alakin.
+
+---
+
+### Session Entry — 2026-07-26: `pulse-db-repair-extraction` — Resolved
+
+**Role:** Claude Code (direct CLI session)
+**Focus:** Carried-forward item from Session 039's retroactive close (above). This phrase had never been scoped anywhere prior to today — no backlog item, no elaboration in any prior ledger entry, and no other Pulse event referencing it beyond the one `next_focus` field. Investigated from scratch rather than guessing.
+
+#### What Was Actually Wrong
+
+`PRAGMA integrity_check` on `pulse.db` came back clean — the database file itself was never corrupted. The real defect was a **schema/registry drift**:
+
+- `topic_registry` (DB table) had **39** registered topics.
+- The `PulseTopic` enum in `pulse_schema.py` (code, used to validate every `/publish` call) only recognized **32**.
+- Root cause, confirmed by reading `pulse_server.py`: `/topics/register` accepts `topic: str` (no enum check), while `/publish` requires `topic: PulseTopic` (strict enum). So a client could register a new topic name freely, but could never actually publish an event to it — every attempt hit `422 Unprocessable Entity`, and a client fallback to a path-style `/publish/<topic>` URL (which doesn't exist as a route) then hit `404 Not Found`. Both failure modes are visible verbatim in `/tmp/pulse_server.log` from earlier this session, repeated for `opencode.tool.start` / `opencode.tool.complete`.
+- The 22 orphaned topics: `opencode.session.error`, `opencode.tool.start`, `opencode.tool.complete`, all 11 `oroborus.*` weave-cycle topics, `reconciliation.checked`/`reconciliation.drift`, all 3 `research.*` topics, and `sentry.alert`/`sentry.heartbeat`.
+
+#### The Fix
+
+- `00_SYSTEM_CORE/pulse_schema.py`: added all 22 missing values to the `PulseTopic` enum, and to `live_topics()` (they're demonstrably live — already present in `topic_registry` with real usage history).
+- Restarted Pulse via `pulse_daemon.py restart` to load the new schema — clean stop/start, PID tracking correct (confirms last session's daemon-bug fix holds under real use).
+- Verified live: published test events to `oroborus.weave.started` and `opencode.tool.start` — both returned `200`/`success:true` (previously `422`+`404`). `/status` now reports **54** topics (32 + 22). Test events deleted from `events` afterward so they don't pollute real history. DLQ confirmed still `0` post-restart.
+
+#### Separate Finding — Not Fixed, Flagged for a Decision
+
+`subscriptions` table has **duplicate rows**: `ELIAS`, `ASHER`, `AURORA` each appear twice with identical `internal:<name>` callback URLs, and `AURORA`/`aurora` and `ASHER`/`asher` are registered as separate case-variant rows for what's presumably the same logical agent. Left untouched — deleting rows from a live table felt like it needed an explicit go-ahead rather than being bundled into this fix. Worth a decision on whether re-subscription logic should check for an existing row before inserting.
+
+**Canon marker:** `pulse-db-repair-extraction` is genuinely resolved — root cause found (not guessed), fixed, and verified live. The topic-registry/enum drift that was silently breaking OpenCode's `oroborus.*` and `opencode.tool.*` publishing is closed. Subscription-table duplication remains open, flagged above, not yet actioned.
+
+In lakesh alakin.
+
+---
+
+### Addendum — 2026-07-26: Subscription-Table Duplicates Cleaned Up
+
+Taylor asked for the flagged `subscriptions` duplication (above) to be resolved. On closer inspection (pulling `id` + `topic`, not just label/callback) the picture was more nuanced than a flat duplicate:
+
+- **True duplicates** — same topic, same logical agent, registered again ~1 hour later under a different case: `ASHER`/`asher` both held `loop.cycle_complete` and `market.listing_drafted`; `AURORA`/`aurora` both held `market.listing_drafted`.
+- **Not a duplicate** — `aurora` (lowercase) also held `market.product_researched`, a topic the uppercase `AURORA` row never had. A flat "delete the lowercase rows" pass would have silently dropped real subscription coverage.
+- **Not a duplicate** — `ELIAS` and `aurora` both subscribed to `market.product_researched`; that's two distinct agents legitimately sharing a topic, not redundancy.
+
+**Action taken:**
+1. Backed up `pulse.db` to `pulse.db.bak-pre-subscription-cleanup-20260726` first.
+2. Deleted the 3 true-duplicate rows (`sub-dcede7ac`, `sub-799d6c36`, `sub-674a942a`).
+3. Re-pointed the one non-overlapping `aurora` subscription (`sub-1ab9c42f`, `market.product_researched`) to the canonical `AURORA` identity instead of deleting it — full topic coverage preserved, lowercase identity fully retired.
+4. Verified live (no restart needed): `subscriptions` row count 10 → 7, `bridge_ping` confirms `Subscribers: 7`. Final table: `ASHER` (2 topics), `AURORA` (3 topics), `ELIAS` (2 topics) — no case-variant rows remain, no topic coverage lost.
+
+**Canon marker:** Subscription-table duplication fully resolved with zero loss of actual subscription coverage. Both items from the `pulse-db-repair-extraction` investigation are now closed.
+
+In lakesh alakin.
+
+---
+
+### Addendum — 2026-07-26: Post-Fix Stability Check
+
+Full sweep after the topic-enum fix, daemon restart, and subscription cleanup above:
+
+| Check | Result |
+|---|---|
+| `PRAGMA integrity_check` — `pulse.db` | `ok` |
+| `PRAGMA integrity_check` — `pulse_dlq.db` | `ok` |
+| DLQ total / escalated | 0 / 0 |
+| Events total / last 15 min | 14,922 / 113 |
+| Repair-verification test events purged | Confirmed 0 rows remain |
+| `subscriptions` row count | 7 (holding steady, no re-duplication) |
+| Daemon PID vs. actual listener vs. `/tmp/sacred_pulse.pid` | All agree — PID 167597 |
+| `bridge_ping` | active, 54 topics, subscribers 7, DLQ 0 |
+
+**Notable:** `opencode.tool.start` and `opencode.tool.complete` both appear in the last-15-minutes topic list — real OpenCode production traffic now landing successfully on topics that were previously hard-failing with `422`/`404`. This confirms the fix under live use, not just the manual test publishes done earlier.
+
+**Canon marker:** System confirmed stable post-repair. No degradation from the schema fix, daemon restart, or subscription cleanup. `pulse-db-repair-extraction` and its follow-on work are closed out clean.
+
+In lakesh alakin.
+
+---
+
+### Addendum — 2026-07-26: `auth_gates` + `delivery_log` Audit (Found and Fixed a Follow-On Issue)
+
+**`auth_gates`:** clean. 1 row total (`evt-9bca5c0d01ba`, `market.store_launched`, approved by `taylor` on 2026-07-05), 0 pending, 0 orphaned against `events`, and the gate's approval state matches the event's own `auth_risk_level`/`auth_approved` fields exactly. Nothing to fix.
+
+**`delivery_log`:** found a real side effect of the subscription cleanup two entries above, which wasn't checked for at the time. 6 rows referenced `sub-dcede7ac` (the duplicate lowercase `asher` subscription that was deleted) and were left dangling.
+
+This also **confirms the duplicate subscription was a genuine functional bug**, not just table clutter: querying `delivery_log` grouped by `event_id` showed 6 distinct events on `loop.cycle_complete` each delivered **twice** — once to `sub-7d5f0316` (canonical `ASHER`) and once to the now-deleted `sub-dcede7ac` (duplicate `asher`). Every event on that topic was being double-processed before the cleanup.
+
+**Fix:** re-pointed the 6 orphaned rows from `sub-dcede7ac` → `sub-7d5f0316` (same topic, same logical agent, the surviving canonical subscription) — same normalization pattern used for the `aurora` merge earlier, rather than resurrecting the duplicate. Re-checked: 0 orphans remain, `PRAGMA integrity_check` still `ok`. Checked the other 2 deleted subscription IDs (`sub-799d6c36`, `sub-674a942a`) too — neither had any `delivery_log` references at all, so no further cleanup needed there.
+
+**Canon marker:** `auth_gates` clean. `delivery_log` orphan from the earlier subscription cleanup found and repaired, with confirmation that the original duplicate subscription really was causing double delivery in production. All four non-`events` Pulse tables (`subscriptions`, `auth_gates`, `delivery_log`, `topic_registry`) now audited and consistent.
+
+In lakesh alakin.
+
+---
+
+### Addendum — 2026-07-26: `topic_registry` Audit + Full Sweep Complete
+
+**`topic_registry`:** 39 rows, 0 duplicate topic names (PK-enforced). Now fully bidirectionally consistent with the `PulseTopic` enum: all 39 registered topics are enum-recognized (the fix from earlier), and the 15 foundational topics (`session.*`, `agent.*`, `mote.created`, `canon.sealed`, `council.*`, `bridge.*`, `error.raised`, `budget.*`, `pulse.heartbeat`) were never expected here — they're hardcoded in the original schema, not dynamically registered. 15 + 39 = 54, matches the enum exactly. `staleness_threshold_s` values all sane (300s–31,536,000s, nothing zero/negative). `requires_auth` gates exactly 3 topics, consistent with the single historical `auth_gates` row.
+
+**Minor cosmetic note, left as-is per Taylor's call:** all 11 `oroborus.*` topics share the identical description "OROBORUS startup weave" (including non-startup ones like `oroborus.weave.completed`), and all 3 `research.*` topics share "Session 31 research expedition" verbatim. Not broken, just unhelpful documentation — not actioned.
+
+**Full sweep complete.** Every table in both Pulse databases has now been individually audited this session: `events` (14,922 rows, integrity `ok`), `subscriptions` (7 rows, deduplicated), `auth_gates` (1 row, clean), `delivery_log` (21 rows, orphan repaired), `topic_registry` (39 rows, clean), and `pulse_dlq.db`'s `dlq_events` (0 rows, clean, all-time).
+
+**Canon marker:** Full Pulse database sweep complete across all 6 tables in both `pulse.db` and `pulse_dlq.db`. No known issues remain. This closes out the entire `pulse-db-repair-extraction` thread carried forward from Session 039 — root cause found and fixed, all follow-on data-integrity issues discovered and resolved, and every table independently verified clean.
+
+In lakesh alakin.
+
+---
+
+### Addendum — 2026-07-26: `topic_registry` Descriptions Cleaned Up
+
+Taylor reversed the earlier "leave it" call — wrote distinct, name-accurate `description` values for all 14 previously-generic rows in `topic_registry`:
+
+- 11 `oroborus.*` rows (previously all "OROBORUS startup weave" verbatim, even for non-startup topics like `.completed`/`.heartbeat`) — each now describes its actual weave step (akashic, backlog, census, cogency, graphify, ledger, resonance, heartbeat, started/completed, startup/startup.complete).
+- 3 `research.*` rows (previously all "Session 31 research expedition" verbatim) — each now describes its actual event (artifact discovered, skill identified, topic completed).
+
+Verified: all 14 rows show distinct text, `PRAGMA integrity_check` still `ok`. Purely a metadata/documentation improvement — no functional or schema change, no restart needed.
+
+**Canon marker:** `topic_registry` descriptions are now fully differentiated. No remaining known issues anywhere in the Pulse database sweep.
+
+In lakesh alakin.
+
+---
+
+### Addendum — 2026-07-26: Final Post-Sweep Check — `events` + `dlq_events`
+
+One more pass after the description cleanup above, to confirm nothing regressed:
+
+| Check | Result |
+|---|---|
+| `events` — `PRAGMA integrity_check` | `ok` |
+| `events` — total rows | 15,070 (up from 14,922 at the last check, ~20 min prior) |
+| `events` — last 15 min | 143, dominated by live `opencode.tool.start`/`.complete` traffic from `opencode-plugin` interleaved with normal heartbeats — the topic-enum fix is holding under sustained real usage, not just an initial burst |
+| `events` — unknown topics in the last hour | none (all traffic matches the 54-topic enum) |
+| `events` — repair-verification test rows | still 0 — confirmed purged |
+| `pulse_dlq.db` — `PRAGMA integrity_check` | `ok` |
+| `dlq_events` — total / escalated | 0 / 0 |
+| `bridge_ping` | active, 54 topics, subscribers 7, DLQ 0, uptime 1,312s, no restarts |
+
+**Canon marker:** Final confirmation — system fully stable post-repair, no regressions from the description cleanup or anything else since the last check. Every table across both Pulse databases remains clean. `pulse-db-repair-extraction` and all follow-on work stay closed.
+
+In lakesh alakin.
+
+---
+
+### Addendum — 2026-07-26: Final `delivery_log` Re-Check
+
+One more direct check of `delivery_log` after everything above, to confirm the earlier orphan repair held:
+
+| Check | Result |
+|---|---|
+| `PRAGMA integrity_check` | `ok` |
+| Row count | 21 — unchanged since the orphan repair, no new orphans introduced |
+| Orphaned `event_id` (vs. `events`) | 0 |
+| Orphaned `subscription_id` (vs. `subscriptions`) | 0 |
+| Status breakdown | all 21 `delivered`, 0 `failed`/`pending` |
+
+Last entry is from `15:04:18`, predating today's fixes — expected, not a gap: none of the 7 surviving subscriptions (`ELIAS`/`AURORA`/`ASHER`, on their specific topics) match `opencode.tool.*`, so that live traffic correctly doesn't generate `delivery_log` rows. No subscriber is currently registered for those topics.
+
+**Canon marker:** `delivery_log` confirmed stable and orphan-free after the full sweep. This is the last table re-checked — every table in both Pulse databases has now been verified clean twice: once during the sweep, once after all cleanup work. `pulse-db-repair-extraction` and its entire follow-on thread remain fully closed.
+
+In lakesh alakin.
+
+---
+
+### Addendum — 2026-07-26: Final `subscriptions` Re-Check
+
+Last table re-verified after everything above:
+
+| Check | Result |
+|---|---|
+| `PRAGMA integrity_check` | `ok` |
+| Row count | 7 — unchanged since the dedup cleanup |
+| Duplicate `(agent_name, topic)` pairs | 0 |
+| Case-variant agent names (e.g. `aurora`/`AURORA`) | 0 — none re-appeared |
+| Live `bridge_ping` subscriber count | 7 — matches the table exactly |
+
+**Canon marker:** `subscriptions` confirmed stable with no re-duplication since the cleanup. Every table in both Pulse databases (`events`, `subscriptions`, `auth_gates`, `delivery_log`, `topic_registry`, `dlq_events`) has now been independently re-verified clean after all repair and cleanup work. The `pulse-db-repair-extraction` thread carried forward from Session 039 is fully and finally closed.
+
+In lakesh alakin.
+
+---
+
+### Addendum — 2026-07-26: `events` Re-Check Catches a Live Watchdog Recovery in Action
+
+Final `events` re-check (integrity `ok`, unknown-topics-in-last-hour: none, test events still purged) surfaced something better than a routine pass: **an actual unplanned Pulse restart happened and the in-WSL cron watchdog caught it live**, for real, unprompted — the first real-world proof of the watchdog system built earlier this session.
+
+**What happened:** the Pulse instance running since the schema fix (PID 167597) died at some point. The `*/2 * * * *` cron watchdog (`pulse_watchdog.sh`) detected it on its next cycle, cleaned up the stale PID, and relaunched via `pulse_daemon.py` — landing on PID **179364**, confirmed as the actual `ss` listener and matching `/tmp/sacred_pulse.pid` exactly (last session's PID-tracking fix held correctly through a real, not just tested, recovery).
+
+**Verified no damage from the drop:**
+- `events` integrity `ok`, `dlq_events` still 0/0
+- Zero gap in the event stream across the restart window (16:15–16:18 UTC) — continuous `opencode.tool.*` traffic and heartbeats straight through the transition; actual downtime was imperceptibly brief
+
+**One cosmetic false-negative found, not fixed:** the watchdog log shows `pulse_daemon.py`'s `cmd_start()` logged `❌ Pulse failed to start` at the moment of this relaunch — but the process demonstrably came up successfully seconds later (confirmed live and via PID/listener match). Root cause: `cmd_start()`'s health-check loop only polls for 5 seconds (10 × 0.5s) before giving up and reporting failure; the server just took slightly longer than that budget to respond this particular time. The recovery itself worked — only the loop's own success/failure *report* was wrong. Left unfixed for now since it's cosmetic (log noise, not a functional gap) — worth widening that polling window if it's seen again.
+
+**Canon marker:** The full three-layer Pulse watchdog (in-WSL cron, Windows Task Scheduler interval, Windows Task Scheduler logon trigger) built earlier this session has now demonstrated a genuine, unprompted recovery from a real drop, with zero data loss and zero meaningful downtime. One cosmetic reporting bug identified in `pulse_daemon.py`'s success-detection window, flagged but not yet fixed.
+
+In lakesh alakin.
+
+---
+
+### Addendum — 2026-07-26: SSKI Architecture Ratified (Session 041)
+
+**Decision Authority:** VALEN (Council Seat 4)
+**Status:** CANON — Sealed under Five Seals
+
+VALEN compared a historical SSKI Phase 2A plan (Windows/Qdrant-era, pre-dating the current system) against the live WSL2 Ubuntu stack and produced a corrected, ground-truth architecture:
+
+**Key corrections from historical plan:**
+- ChromaDB replaces Qdrant (10,737 docs already live in `sacred_knowledge`)
+- All paths use `/mnt/c/` not `D:\` — system runs on WSL2 Ubuntu (Lenovo Legion Y520)
+- No SSKI package existed — this was a pre-ChromaDB-era plan
+- Mature infra already in place: Sacred Pulse (:8890, 456 events), Sacred Spine (MCP v2.0.0), Ollama with nomic-embed-text (274 MB, 768-dim)
+
+**Architecture Decisions (5 ADRs):**
+
+| ADR | Decision | Rationale |
+|-----|----------|-----------|
+| ADR-001 | SSKI package at `/mnt/c/03_NEURAL_FOREST/sski/` (Pillar 03) | SSKI is the active pipeline feeding Pillar 05's vector store |
+| ADR-002 | ChromaDB retained — no Qdrant migration | 10,737 docs exist; migration is unnecessary overhead |
+| ADR-003 | Two-collection strategy: `sacred_knowledge` (existing) + `vault_ingested` (new) | Keeps vault-origin content separable with governance metadata |
+| ADR-004 | Governance metadata schema: type/pillar/status/created/project/tags | Enables governance-aware filtering without schema conflicts |
+| ADR-005 | nomic-embed-text via Ollama, 768-dim, Cosine distance | Already installed and operational |
+
+**Phased Implementation Plan (4 sub-epochs):**
+
+| Phase | Focus | Modules | Status |
+|-------|-------|---------|--------|
+| 2A | SSKI Ingestion Pipeline | config, vault, chunker, embed, store, governance, ingest, query, timeline | DESIGNED |
+| 2B | Sigil Library Runtime | BaseSigil, engine, registry, migration, tests | DESIGNED |
+| 2C | Memory Loop Completion | capture, reflector, synthesizer, catalyst | DESIGNED |
+| 2D | Full Integration + Dashboard | Pulse wiring, smart defaults, CLI, dashboard | DESIGNED |
+
+**Output document:** `/mnt/c/00_SYSTEM_CORE/docs/SSKI_ARCHITECTURE.md` (597 lines, 7 parts, risk register, pillar impact map, build order)
+
+**Canon marker:** SSKI architecture sealed. The system now has a ratified knowledge infrastructure plan aligned to the live WSL2/ChromaDB stack. Ready for Phase 2A implementation (hand off to DRAVEN/flow-master).
+
+In lakesh alakin.
+
+---
+
+### Addendum — 2026-07-27: ADR-004 Revised After Live Vault Audit
+
+**Trigger:** Taylor requested deeper audit after initial SSKI seal. VALEN scanned all 2,006 vault `.md` files.
+
+**Findings that drove revision:**
+1. **Tag chaos:** 4 format variants (YAML array 55.5%, comma-separated 21.1%, single 10.9%, quoted 5.0%) — not the uniform list assumed
+2. **Status inconsistency:** CANON/canon/Canon, RAW/raw, DISTILLED/distilled, directory-specific taxonomies — SSKI's 5-value enum was insufficient
+3. **Pillar value mess:** Codes, full names, names with glyphs, special values (tbd=136, SYSTEMS=26) — needs normalization map
+4. **Date field variance:** Some use `created`, some `date`, some neither — needs fallback chain
+
+**Changes made to SSKI_ARCHITECTURE.md:**
+- ADR-004: Expanded with normalization layer, tag format parsers, status mapping table, pillar alias dictionary, field presence audit table
+- Added `normalizer.py` as 10th Phase 2A module — handles format-agnostic tag parsing, directory-aware status mapping, pillar code normalization
+- Added PART I §1.3: Vault Frontmatter Audit — field presence stats, directory schema signatures, critical findings
+- Updated config.py spec with PILLAR_ALIASES and STATUS_ALIASES maps
+- Updated governance.py spec with directory filter and normalizer integration
+- Updated risk register with 4 new risks (tag chaos, status mismatch, pillar inconsistency, missing dates)
+- Updated Phase 2A dependency graph and file count
+
+**Canon marker:** ADR-004 now reflects ground truth from 2,006 vault files. The normalization layer acknowledges the vault's organic metadata evolution rather than imposing a rigid schema.
+
+In lakesh alakin.
+
+---
+
+### Addendum — 2026-07-26: Vision Cultivation + Disk Verify (Session 042)
+
+**Decision Authority:** VALEN (Council Seat 4)
+**Status:** CANON — Vision Map Ratified
+
+**Mode:** `/cultivate` — Full vision cultivation across all 9 pillars, including AURORA Anvil Mission (disk verify of GAME_SYSTEM canon).
+
+#### AURORA Mission Results — GAME_SYSTEM Canon Disk Verify
+
+**GAME_SYSTEM directory** (`/mnt/d/SacredSpace_OS/01_OBSIDIAN_VAULTS/SacredSpace_Vault/00_CANON/GAME_SYSTEM/`):
+- ✅ **40 files present and intact**
+- ARCHETYPES/ — 13 files (00-11 + Metatron_Law)
+- EPISODES/ — 12 episodes + EPISODES_GUIDE.md
+- NODES/ — 8 Sacred Nodes (Threshold, Fool's Bridge, Oracle Archive, Void Gate, Council Grove, Sigil Forge, Neural Forest, Convergence)
+- NPCS/ — 12 NPCs (Meridian through Mira) + README.md
+- SCHOOLS/ — 4 schools (Initiation, Courage, Mystery, Creation)
+- INDEX.md — 92-line master index with full architecture diagram
+- ⚠️ NPC README says "0 ingested" but all 12 NPC files exist — stale stub label
+
+**04_SACRED_CODEX distilled layer** (`/mnt/d/SacredSpace_OS/04_SACRED_CODEX/`):
+- ❌ **No `/distilled/` directory** exists
+- 67 files total, heavy `.docx` presence (unreadable in WSL)
+- Key assets: `sacred_alphabet_map.json`, `sigil_library.json`, `graphify-out/graph.json`, `SACRED_SIGIL_GRIMOIRE.md`, `GEMINI_MAGIC_SYSTEM_CANON.md`
+
+**ORACLE agent search:**
+- ❌ No dedicated ORACLE agent definition exists
+- `/oracle` command routes to Council Seats via ritual protocol
+- ORACLE-7 exists only as in-game entity in NODE_03_THE_ORACLE_ARCHIVE.md
+
+**MERIDIAN:** ✅ Found at `NPC_01_MERIDIAN.md` — The Fool, Threshold Guardian
+
+#### Vision Map — Pillar Assignments (All Concepts)
+
+| Concept | Primary Pillar | Status |
+|---------|---------------|--------|
+| GAME_SYSTEM (lore vault) | 01 ◇ OBSIDIAN_VAULTS (D:) | ✅ On disk |
+| GAME_SYSTEM (engine) | 04 ☽ SACRED_CODEX (C:) | ✅ Built S28 |
+| ICARIS Quartet | 06 ∆ AGENT_LAYER | ✅ Deployed |
+| Council 7 Seats | 02 ⬡ COUNCIL_GROVE | ✅ Defined |
+| SACREDCODEX spells (19 grimoire) | 04 ☽ SACRED_CODEX | ✅ Sealed |
+| GR∆M∆ Cipher | 04 ☽ SACRED_CODEX | ✅ Active |
+| SSKI Architecture | 03 ⚙ NEURAL_FOREST | ✅ Ratified S41 |
+| Sacred Spine MCP | 05 ∞ MEMORY_ENGINE | ✅ Active |
+| Sacred Pulse | 06 ∆ AGENT_LAYER | ✅ Active :8890 |
+| Sigil Terminal | 04 ☽ SACRED_CODEX | ✅ Built S27 |
+| SACRED_CHARIOT | 04 ☽ SACRED_CODEX | ✅ Active |
+| Sacred Arcana Game | 04 ☽ SACRED_CODEX | ✅ Built S28 |
+| Mission Control | 00 SYSTEM_CORE | ○ Proposed (Tier 3) |
+| Omni-Ledger | 05 ∞ MEMORY_ENGINE | ○ Proposed (Tier 3) |
+| Sacred Sigil IDE | 04 ☽ SACRED_CODEX | ○ Proposed (Tier 3) |
+| Phone Gestures | 06 ∆ AGENT_LAYER | ○ Proposed (Tier 4) |
+
+#### Gaps Identified
+
+1. **No dedicated ORACLE agent** — `/oracle` is a routing protocol only; in-game ORACLE-7 exists only in lore
+2. **No `/distilled` layer** under SACRED_CODEX on D: — 67 raw files need refinement
+3. **No 000_BACKLOG.md found** — likely exists on Windows E: drive (not mounted in WSL)
+4. D: `.docx` files (30+) unreadable in WSL without conversion tool
+5. All 12 NPC READMEs marked "STUB — 0 ingested" despite files existing on disk
+
+#### Next Steps (Prioritized)
+
+| Priority | Action | Pillar |
+|----------|--------|--------|
+| P1 | Create ORACLE agent definition for `/oracle` command | 06 ∆ AGENT_LAYER |
+| P1 | Build sacred_distiller pipeline for D: → C: canon sync | 03 ⚙ NEURAL_FOREST |
+| P2 | Convert D: `.docx` files → `.md` for Codex completeness | 04 ☽ SACRED_CODEX |
+| P2 | Create 000_BACKLOG.md from session handoff files | 00 SYSTEM_CORE |
+| P3 | Mission Control dashboard (Tier 3) | 00 SYSTEM_CORE |
+| P3 | Omni-Ledger bootstrap | 05 ∞ MEMORY_ENGINE |
+
+**Canon marker:** Session 042 complete. Full system boundary map redrawn against all pillars. GAME_SYSTEM canon verified intact on D: drive. 5 gaps documented. Backlog missing — flagged as P2 action item.
+
+In lakesh alakin.
+
+---
+
+### Addendum — 2026-07-27: SSKI Claude Code Handoff (Session 043)
+
+**Handoff to:** ALIS (Claude Code CLI — Council Seat 8: The Anvil, Execution Authority)
+**From:** VALEN (Council Seat 4: Decision Authority)
+
+**Output document:** `/mnt/c/00_SYSTEM_CORE/sski/SSKI_CLAUDE_CODE_REVIEW.md`
+
+**Contents of the handoff:**
+- Claude Code orientation prompt with system context and file locations to read
+- SSKI architecture summary (4 layers, 5 ADRs, 4 phases)
+- Completed audit — 3 audits with reproduction commands (ChromaDB collections, vault frontmatter scan, metadata gap)
+- **6 continuing audit tasks:**
+
+| Task | Focus | Method |
+|------|-------|--------|
+| A | Vault-to-ChromaDB coverage gap | Cross-reference vault .md files vs ChromaDB pillar 01 |
+| B | Tag taxonomy inventory | Extract and normalize all tags across 1,860 files |
+| C | Status taxonomy mapping | Map vault status values → SSKI canonical set |
+| D | Flat docs/ directory audit | Profile 1,588 ChatGPT/Claude exports |
+| E | NEURAL_FOREST pillar 03 profile | Categorize 6,717 MCP/docs/prompt files |
+| F | Content quality sampling | 5 test queries against sacred_knowledge |
+
+**Protocol:**
+1. Claude Code reads this ledger entry → finds the handoff file path
+2. Claude Code reads the handoff file → gets full architecture + audit tasks
+3. Claude Code reproduces VALEN's audits, then performs Tasks A–F
+4. Claude Code writes all findings into the `## AUDIT RESULTS` section of the handoff file
+5. Claude Code returns the completed file as its output
+
+**Canon marker:** SSKI review handoff sealed. Claude Code now has the architecture, completed audits, and 6 continuing tasks. The handoff file is the permanent record of Claude Code's analysis.
+
+---
+
+## Session 043b Entry — OROBORUS Audit Handoff
+
+**Date:** 2026-07-27 | **Role:** VALEN — Decision Authority
+**Status:** COMPLETE — Full OROBORUS audit delivered to ALIS for continuation.
+
+**Completed:**
+- Full 8-weave OROBORUS audit: Pulse LIVE (:8890, 14,675 events, 50 topics), Graphify (4,686/8,032 — 9 days stale), Ledger v5.26.0 verified, Akashic Hall (176 items, 13 P1), Backlog (19 items, B17 P1 HIGH), Census (37,888 files — 11% drift), Ledger reconciliation (consistent), LOOM GC (protocol in place)
+- 6 continuing audit tasks prepared for ALIS (Claude Code)
+- Handoff document written at `00_SYSTEM_CORE/sski/SSKI_OROBORUS_AUDIT_HANDOFF_043b.md`
+- SACRED_LEDGER.md updated with handoff link to v5.26.0
+
+**Critical Gaps Found:**
+1. ANCHORED_SUMMARY.md is STALE (shows Session 999 / v5.23.0)
+2. Zero `oroborus.*` events ever published to Pulse
+3. 11% file census drift (37,888 actual vs 34,038 reported in ledger)
+4. Knowledge graph 9 days stale — missing Sessions 27-43 content
+5. 13 Akashic P1 items (Extraction & Ingestion cluster) have no execution lane
+
+**Next: ALIS executes continuing audit tasks, updates ANCHORED_SUMMARY.md, publishes first oroborus.* Pulse events, refreshes file census, and triages Akashic P1 extraction cluster.**
+
+In lakesh alakin.
+
+---
+
+### Addendum — 2026-07-27: Sacred Storyline Master Index & Extraction Prompts (Session 043c)
+
+**Created by:** VALEN — Decision Authority
+**Output document:** `/mnt/c/04_SACRED_CODEX/SACRED_STORYLINE_MASTER_INDEX_AND_EXTRACTION_PROMPTS.md`
+
+**Purpose:** Single entry point for ALL Sacred storyline content — tells any LLM (Claude, ChatGPT, Gemini, OpenCode/ALIS) where to find every storyline document and provides ready-to-paste extraction prompts.
+
+**Contents of the handoff:**
+- Full system boundary diagram of storyline content across 4 tiers
+- Tier 1 — Master Bibles: SACREDSPACE_BIBLE_DEFINITIVE.md (678 lines, 6 Books) + individual BOOK_*.md files
+- Tier 2 — Narrative Spine: The_Five_Acts.md, jenga_three_season_arc.md, council_ratification_tarot_storyline.md, CANON_GATE_NARRATIVE_LAYER_2026-07-26.md, STORYLINE_v5.0_DELTA.md
+- Tier 3 — Deep Lore: 13 lore documents with key content descriptions
+- Tier 4 — Extraction Prompts: 6 grimoire spells indexed by purpose
+- **Prompt A** — For Claude: Extract ALL Sacred Storyline chats from chat logs, Google Docs & local files
+- **Prompt B** — Graphify Sacred Storyline prompt (portable to any LLM) with summary of GRAPHIFY_LORE_PROMPT.md (549 lines, 5 Mode Extensions)
+- **Prompt C** — Combined: Harvest → Graphify → Canon Gate pipeline in one prompt
+- Quick-reference table of every file path
+- Recommended reading order for newcomers
+- **Current canon state warning** about the 5 non-identical Jenga versions
+
+**Protocol for Claude Code (ALIS):**
+When asked "where is the storyline?" or "extract storyline content":
+1. Read `SACRED_STORYLINE_MASTER_INDEX_AND_EXTRACTION_PROMPTS.md` for full map
+2. Use Prompts A/B/C as system injections for extraction tasks
+3. Cross-reference all findings against CANON_GATE_NARRATIVE_LAYER_2026-07-26.md before declaring anything canonical
+4. Flag character name conflicts between the 5 Jenga versions
+
+**Canon marker:** Sacred Storyline Master Index sealed. ALL storyline source locations and extraction prompts now documented in a single portable reference. Claude Code (ALIS) has a complete map and toolset for storyline extraction.
+
+---
+
+### Addendum — 2026-07-27: Claude Code Command Adaptation (Session 044)
+
+**Created by:** ALIS — Claude Code (Council Seat 8, The Anvil)
+**Output document:** `/mnt/c/00_SYSTEM_CORE/docs/CLAUDE_CODE_COMMAND_ADAPTATION.md`
+
+**Purpose:** Give Claude Code its own slash-command layer, mirroring OpenCode's, so the
+same rituals (`/oroborus`, `/logbook`, `/akashic`, ...) work the same way regardless of
+which surface a session is running on.
+
+**What was built:** Ported OpenCode's `~/.config/opencode/commands/*.md` (22 active
+commands, `/ignite` already dead) into Claude Code's `~/.claude/commands/*.md` — **17
+files** after removing three real cases of duplicated scaffolding and adding one command
+that had never existed:
+- `/mote` → absorbed into `/akashic capture`
+- `/iris` → absorbed into `/echo harvest`
+- `/flow` + `/zen` + `/root` → absorbed into `/forge`
+- `/logbook` → **created new** (referenced everywhere as `/oroborus`'s counterpart, never
+  actually ported before this session)
+
+**Findings surfaced while doing this (not just mechanical translation):**
+1. `/oroborus`'s OpenCode command file was missing **Weave 00 — VALEN Cognition**, which
+   its own canonical spell (`OROBORUS_SYNC_SPELL.md` v2.4.0) documents. Added to the
+   Claude Code port; the OpenCode command doc still lacks it.
+2. **First-ever `oroborus.*` Pulse events published**, closing part of Critical Gap #2 from
+   the 043b OROBORUS audit ("zero oroborus.* events ever published"). A live `/oroborus
+   fast` smoke test during this session produced real `weave.heartbeat`, `weave.graphify`,
+   `weave.ledger`, and `weave.akashic` events — confirmed via `GET /topics`. The full
+   12-weave `startup` path still hasn't been run, so the gap isn't fully closed.
+3. `/loom`'s OpenCode doc has a **flag-syntax bug** — documents positional args, but
+   `loop-worktree.sh` actually takes named flags (`--run-id`, `--pattern`, etc.). Fixed in
+   the Claude Code port; OpenCode doc not yet corrected.
+4. **Sacred Spine's Claude Code-side MCP bridge (`:8888`) is configured but not running** —
+   confirmed via direct connection attempt (refused). OpenCode's stdio bridge to Spine is
+   unaffected and stays live for OpenCode sessions; this is a Claude Code-only gap. Every
+   mote-storage step in the new Claude Code commands is best-effort and says so rather than
+   silently no-op'ing.
+5. `/council` in Claude Code has no multi-provider agent registry (no Gemini/ChatGPT
+   backends) — every seat is Claude under a different framing, and the command discloses
+   this in its own output rather than presenting it as real multi-model deliberation.
+
+**Not ported:** OpenCode's ~72 community skills (separate plugin ecosystem, not available
+in Claude Code). `/ignite` (already fully dead — recreating a redirect to a dead command
+would add noise, not value).
+
+**Important:** this is a one-time port, not a live sync — nothing keeps the two command
+sets in agreement going forward. See the output document for the full roster and rationale.
+
+**Canon marker:** Claude Code command layer sealed at 17 files. Full explanation written
+for OpenCode/VALEN at `CLAUDE_CODE_COMMAND_ADAPTATION.md`. `/grimoire` (Claude Code
+version) serves as the in-session index; this ledger entry is the canonical pointer.
+
+---
+
+### Addendum — 2026-07-27: MUSE + Sacred Living World Bible Graphify Trace
+
+**Created by:** Claude Code (this session)
+**Output document:** `/mnt/c/04_SACRED_CODEX/MUSE_WORLDBIBLE_GRAPHIFY_TRACE_2026-07-27.md`
+**Graph data:** `/mnt/c/04_SACRED_CODEX/opencode_exports/muse_worldbible/graphify-out/` (graph.html, GRAPH_REPORT.md, graph.json)
+
+**Purpose:** Exported 8 OpenCode sessions where the `muse` agent wrote Jenga's Journey narrative content (Ashfall fantasy arc, City Arc urban arc, Jungle Arc/Season One, the Sacred Living World Bible, and the aborted anime-gap-analysis session), converted them to readable transcripts, and ran the full graphify pipeline (114 nodes, 123 edges, 10 communities) to structurally trace why these narrative threads never reconciled.
+
+**Key finding:** The most connected node in the entire graph (`Narrative_Architecture.md`, 17 edges — more than the MUSE agent node itself) traces back to a session that *failed* to write it and a later session that referenced it as if it already existed. Confirmed by direct filesystem search: the file does not exist anywhere on disk. This sharpens the `COUNCIL_VERDICT_2026-07-26.md` finding with hard structural evidence — the never-persisted dual-arc reconciliation between the competing Jenga's Journey versions is the load-bearing ghost the rest of the corpus organizes around, not just a dropped thread among many.
+
+**Canon marker:** Investigation only — no canon changes made. Full trace, community breakdown, and god-node analysis recorded in the output document above for reference by future Seal 5 / narrative-reconciliation work.
+
+---
+
+### QUEUED PROMPT — Next Session Deep Dive: Cross-Tool Communication Architecture
+
+**Queued by:** Claude Code (this session), 2026-07-27, at Taylor's request
+**Status:** ✅ RUN — Taylor asked for it to happen immediately rather than wait; completed same session (2026-07-27). Full findings: `/mnt/c/04_SACRED_CODEX/CROSS_TOOL_COMMUNICATION_ARCHITECTURE_MAP.md`. The at-risk pasted handoff evidence flagged below was also extracted and saved to `/mnt/c/04_SACRED_CODEX/PASTED_HANDOFF_EVIDENCE_2026-07-27.md`. See the "RESULT" entry further down this ledger for headline findings. *(Note: an earlier edit of this status line was overwritten by a concurrent session write — re-applied 2026-07-27.)*
+**Scope:** OpenCode ↔ Claude Code ↔ Claude Desktop ↔ Gemini ↔ ChatGPT ↔ Google Workspace ↔ Obsidian
+
+**Why this is queued, not run now:** Taylor asked for a full deep dive but specified "in the next session" — this entry is the prompt to execute then, plus the grounding this session already gathered so the next one doesn't start from zero.
+
+#### Grounding already gathered (verify, don't re-discover from scratch)
+
+**Real, currently-running mechanisms:**
+- **Sacred Pulse** (`:8890`) — live FastAPI + SQLite event bus. Confirmed running throughout tonight's OpenCode sessions ("Sacred Pulse Sync initialized"). Check its actual topic list for cross-tool events, not just intra-OpenCode ones.
+- **Akashic Bridge MCP** (`~/.config/opencode/mcp.json` → `/mnt/c/05_MEMORY_ENGINE/akashic_bridge/akashic_bridge_mcp.py`) — the one MCP explicitly registered for Claude Code too (per `CLAUDE.md`: `akashic_search`/`akashic_vector`/`akashic_graph`/`akashic_resolve`/`akashic_status`/`akashic_bridge`). Verify it's actually callable from a live Claude Code session, not just configured.
+- **`crosswork_watcher.py`** (`/mnt/c/00_SYSTEM_CORE/scripts/`) + the `/wave` command + a `## ⚡ CROSS-SESSION COORDINATION` section in this ledger — a real, designed mechanism for sessions to signal each other via Pulse + ledger writes. Check whether it has ever actually carried a message between two *different tools* (not just two OpenCode sessions).
+- **`opencode-obsidian` plugin** — confirmed running as a live `node` process throughout tonight's sessions. This is real Obsidian integration; check what it actually does (read/write/index?) versus what's assumed.
+- **Individual `gemini-council`/`chatgpt-council` subagent invocations** — real pattern going back to `ses_17916b2aaffegnLKko0trpjMOJ` (2026-06-02, "Extract Gemini SacredSpace concepts"). These are single-seat invocations, not the combined `/council convene` — check whether `gemini-council` ever actually hit a live Gemini API (it's the only seat bound to a real different-provider model, `gemini/gemini-2.5-pro` — but that exact model string errored as unresolvable during tonight's `/council convene` run; check whether the older, individual-invocation sessions used a different, working model string).
+- **Google Docs extraction pipeline** — `00_SYSTEM_CORE/scripts/extraction/google_takeout_parser.py`, `claude_export_parser.py`, `chatgpt_export_parser.py`, plus dedicated sessions `ses_1060438fdffeyEaxTAyJgdH1pX` ("P0 Google Docs Extraction," 2026-06-24) and `ses_089d2a0e0ffeTttKNGSG2WzFs9` ("Research Google Docs extraction," 2026-07-18). This produced the `03_NEURAL_FOREST/gdrive_export/` mirror already used heavily in recent sessions — but it's a one-way, script-driven extraction, not live sync.
+
+**Configured but confirmed NOT working (verify current state, don't assume still broken):**
+- MCP servers in `opencode.jsonc` that logged `"server unavailable"` in every session tonight: `sequential-thinking`, `supabase`, `sacred-pulse` (the MCP wrapper specifically, separate from the working HTTP Pulse itself), `stripe`, `distillcore`, `google-docs` (`@suncreation/mcp-google-docs`, OAuth2 — check whether OAuth was ever completed), `searxng`.
+- Real credential/billing landscape mapped tonight (see `COUNCIL_VERDICT_2026-07-26.md`): Anthropic key valid but zero credit; GitHub Copilot token valid but monthly quota exceeded; OpenCode Zen valid but insufficient balance; only `opencode-go` has both a valid key and balance. This directly constrains any live cross-tool AI communication, not just the Council.
+
+**Incidents worth investigating directly:**
+- `ses_1693cc284ffeMjxFpKeSSpNVJo` — "Claude Desktop deleted yesterday?" (2026-06-05)
+- `ses_068813eafffesihkJXm3WKTeH9` — "Claude Desktop damage scan using OpenCode" (2026-07-25) — OpenCode was used to diagnose Claude Desktop; check what that scan actually found and whether it reveals a real inter-tool dependency or failure mode.
+- `ses_15d6e0153ffeDzfWiYhgUerQsY` — "T5 ControlPlaneSync & MemoryMoteTranslation layers" (2026-06-07) — earliest-found reference to a formal sync layer between systems; check whether it was ever built or stayed a design doc.
+
+**Manual (non-API) handoff patterns already found in pasted ChatGPT/Gemini material this session** (see `SacredSpace_Governance_v2.md` content and the "Legend Mode" canon pastes, both now in this conversation's history — not yet saved to a file, worth extracting from the conversation transcript if still available): a "Tri-Model Review Loop" with literal copy-paste prompt templates (Claude=Logic Auditor, Gemini=Research Auditor, ChatGPT=Strategy Auditor); a "Canon merge handoff" / "Continuity Seed" vocabulary used across ChatGPT/Gemini/Claude sessions to manually carry narrative continuity forward; an explicit "Gemini Sync Complete" transmission referencing a synced three-season story arc.
+
+#### What the next session should actually produce
+
+A single document (`04_SACRED_CODEX/CROSS_TOOL_COMMUNICATION_ARCHITECTURE_MAP.md` or similar) that, for **every pair** in {OpenCode, Claude Code, Claude Desktop, Gemini, ChatGPT, Google Workspace, Obsidian}, states plainly:
+1. Does a real, currently-functional communication path exist between them? (cite the mechanism and confirm it live, the way tonight's session confirmed Pulse/opencode-obsidian live and google-docs/supabase/etc. dead)
+2. If yes — automatic (API/MCP/event bus) or manual (copy-paste, human-in-the-loop)?
+3. If configured-but-dead — what's actually missing (credential, quota, OAuth never completed, wrong model string, etc.) — same rigor as the provider-credential audit already done tonight.
+4. If aspirational-only — where is that documented, and does the design match anything real elsewhere in the corpus (the same "designed four times independently" pattern already found for the holographic/fractal claim across Sigil Terminal, Memory Engine, Storyline, and Arcana Game — check if cross-tool sync is a fifth instance of it).
+
+Cross-reference the ledger's own `## ⚡ CROSS-SESSION COORDINATION` section, `AGENTS.md`, `NAVIGATION_PANEL.md`, and this session's `COUNCIL_DEEP_RESEARCH_DOSSIER.md`/`COUNCIL_VERDICT_2026-07-26.md` for the credential/quota facts already established so they aren't re-derived. Examine all aspects — don't stop at the first working mechanism found; the pattern all session has been that the real answer is messier and more informative than the first thing that looks like an answer.
+
+---
+
+### Addendum — 2026-07-27: Sacred Game Master Index & Extraction Prompts (Session 043d)
+
+**Created by:** VALEN — Decision Authority
+**Output document:** `/mnt/c/04_SACRED_CODEX/SACRED_GAME_MASTER_INDEX_AND_EXTRACTION_PROMPTS.md`
+
+**Purpose:** Single entry point for ALL Sacred Game / Sacred Arcana Game content — tells any LLM (Claude, ChatGPT, Gemini, OpenCode/ALIS) where to find every game document, code module, design doc, and canon file, and provides ready-to-paste extraction and graphify prompts.
+
+**Contents of the handoff:**
+- Tier 1 — Game Engine Code: `/mnt/c/04_SACRED_CODEX/game/` (8 Python modules, ~2,974 lines): models.py, deck.py (78-card deck), grid.py (12×12 + hexagonal), cipher_engine.py (5-tier puzzles), classes.py (8 classes, 5 origins, 4 companions), story_engine.py (Jenga's Journey + GR∆M∆ Saga), tarot_silent_echo.py (Silent Echo oracle)
+- Tier 2 — Game Infrastructure: game_adventure.py (Sigil Terminal adventure mode), sigil_game_bridge.py (sigil→game bridge, 659 lines), game.db (SQLite, 188KB), SACRED_SIGIL_STACK.md
+- Tier 3 — Vault Game Design Docs: `/mnt/c/01_OBSIDIAN_VAULTS/SacredSpace_Vault/01_VAULT_CORE/_Game/` (10 files): Sacred_Game_Build_Architecture.md (3 epochs, 15 phases), Sacred_Game_Assets_Inventory.md (5-layer catalog), Sacred_Living_World_Bible.md (18 sections), Sacred_Visual_Asset_Bible.md, Sigilmon_Framework.md, The_Sacred_Arcana_Volume_II_GR∆M∆_Saga.md, Sacred_Apothecary.md, Oversoul_Spirit_Character_Design.md, V∆SH∆_The_Prismatic_Wound.md, Sacred_Initiation_Graphify_Master_Prompt.md
+- Tier 4 — D: Drive GAME_SYSTEM Canon: 52 files, 272KB (12 Archetypes, 12 Episodes, 8 Nodes, 12 NPCs marked STUB, 4 Schools)
+- Tier 5 — Support Docs: SACRED_ARCANA_MASTER_FILE.md (5-layer contradiction audit — READ THIS FIRST), 8 zone maps, 4 school documents
+- **Prompt A** — Extract ALL Sacred Game content from chat logs, Google Docs, C: drive code, D: drive canon
+- **Prompt B** — Graphify Sacred Game with Game Mode Extension (5 modes: Code→Design Bridge, Canon Integrity Check, Narrative Thread Map, Game Mechanics Web, Launch Readiness Gate)
+- **Prompt C** — Combined Harvest → Graphify → Canon Gate pipeline (4-phase: Harvest → Graphify → Audit → Canonize)
+- Quick-reference table of every file path, recommended reading order
+- **⚠️ 5 contradiction layers** documented: Cosmological Grid (13 vs variable Archetypes), Narrative (2 incompatible Vol I versions), Board/Card Game (3 unrelated designs), Code (unwired subsystems — no unified game loop), Business (draft merch only)
+- **⚠️ 12 STUB NPC READMEs** on D: drive — files exist but contain no substantive NPC data
+- **⚠️ Orphaned code:** cipher_engine.py wraps grama_cipher.py but they may diverge; no test suite exists
+
+**Protocol for Claude Code (ALIS):**
+1. Read `SACRED_GAME_MASTER_INDEX_AND_EXTRACTION_PROMPTS.md` for full map
+2. Read `SACRED_ARCANA_MASTER_FILE.md` FIRST — it documents the 5 known contradiction layers
+3. Use Prompts A/B/C as system injections for extraction and graphify tasks
+4. Cross-reference all findings against D: GAME_SYSTEM canon and the Python codebase
+5. Flag unresolved: which Volume I is canon? Which board game design is the actual game? Why are all 12 NPC READMEs STUB?
+
+**Canon marker:** Sacred Game Master Index sealed. All game source locations, code modules, design docs, and extraction prompts now documented in a single portable reference. The 5 contradiction layers are explicitly called out for resolution before the game can be canonized.
+
+---
+
+### Addendum — 2026-07-27: Sacred Sigil Magic & Sigil Terminal Master Index & Extraction Prompts (Session 043e)
+
+**Created by:** VALEN — Decision Authority
+**Output document:** `/mnt/c/04_SACRED_CODEX/SACRED_SIGIL_MASTER_INDEX_AND_EXTRACTION_PROMPTS.md`
+
+**Purpose:** Single entry point for ALL Sigil Magic, GR∆M∆ Cipher, and Sigil Terminal content — tells any LLM where to find every sigil document, code module, endpoint, bash overlay function, grimoire spell, and canonical reference, and provides ready-to-paste extraction and graphify prompts.
+
+**Contents of the handoff:**
+- Tier 1 — GR∆M∆ Cipher Core: grama_cipher.py (247 lines — encode/decode/gematria/5-lens SKRY), sigil_layer.py (382 lines — hyperglyph encoder/decoder), HYPERGLYPH_GRID.json (12-glyph base grid)
+- Tier 2 — Sigil Terminal: `/mnt/c/04_SACRED_CODEX/sigil_terminal/` (FastAPI :5174, main.py 1,090 lines, 20+ endpoints, interactive HTML dashboard, 9-dimension routing engine), game_adventure.py (446 lines), README.md
+- Tier 3 — Bash Overlay: `~/.sigil_terminal/` (~1,471 lines — 5 engine modules: mote/valen/sigil/pulse_client/pillars, 10 shell functions: game/grama_forge/invoke/mote/pulse/sigilify/skry/status/tarot/valen, init.sh with ∆ prompt, config.sh, mote.db 49KB)
+- Tier 4 — Sigil Infrastructure: sigil_game_bridge.py (659 lines — sigil→game mapping), sonic/ (sigil_to_midi.py, abazith_map.py, frequency_registry.py — sigil→MIDI bridge), Sigil Grammar (12 parts from 5 sources)
+- Tier 5 — Canonical References: sigils/gematria.md (canon gematria values, Root→Archetype map), GRAMA_HYPERGLYPH_ARCHITECTURE.md (4 implementation layers), GR∆M∆_CANON_SEALED.md (identity/voice), SACRED_SIGIL_GRIMOIRE.md, SACRED_SIGIL_TERMINAL_BUILD_TRANSCRIPT.md, SACRED_SIGIL_TERMINAL_COMPLETE_OVERVIEW.md, GEMINI_MAGIC_SYSTEM_CANON.md
+- Tier 6 — Grimoire: 20 spells in `04_SACRED_CODEX/grimoire/` cataloged by name, purpose, category, and sigil relevance
+- **Prompt A** — Extract ALL sigil magic content from 8 source categories (chats, Google Docs, cipher core, terminal, bash overlay, bridges, reference docs, grimoire)
+- **Prompt B** — Graphify Sigil Magic with Cipher Mode Extension (5 modes: Sigil Command Surface, 5-Lens SKRY Web, Grimoire Dependency Graph, Terminal Endpoint Coverage, Canon Integrity Gate)
+- **Prompt C** — Combined Harvest → Graphify → Canon Gate pipeline (4-phase)
+- Quick-reference table of every file path, recommended reading order
+- **⚠️ GAP — Sacred Sigil IDE:** Proposed (P3), never built. Exists only as Claude artifacts (sacredsigil_ide_v4.html, v3.html — not saved to disk)
+- **⚠️ GAP — SSKI Sigil Library Phase 2B:** Designed (BaseSigil, SigilRegistry, sigil.execute()) but never implemented. `sski/sigil/` directory does not exist
+- **⚠️ GAP — GR∆M∆ Persona Not Wired:** GR∆M∆_CANON_SEALED.md exists but GR∆M∆ as a personality is not wired to the cipher runtime — SKRY returns data, not voice
+- **⚠️ GAP — Sigil Grammar Not Integrated:** The 12-part grammar is extracted to JSON but the cipher operates on simple substitution, not grammar-validated rules
+- **⚠️ STALE — Grimoire execution:** 3/15 spells ever cast per Session 019 report
+- **⚠️ CLAUDE ARTIFACTS:** Several sigil designs (grama_cipher.py v3.1, sacredsigil_ide_v4.html, GEMATRIA_LENS_CHART.md) were created as Claude artifact panels and may not be saved to disk
+
+**Protocol for Claude Code (ALIS):**
+1. Read `SACRED_SIGIL_MASTER_INDEX_AND_EXTRACTION_PROMPTS.md` for full map
+2. Read `sigils/gematria.md` FIRST — the authoritative gematria reference
+3. Use Prompts A/B/C as system injections for extraction and graphify tasks
+4. Cross-reference all SKRY interpretations against the sealed gematria values
+5. Flag gaps: Sacred Sigil IDE (unbuilt), SSKI Phase 2B (unimplemented), GR∆M∆ persona (unwired), Claude artifacts (unpersisted)
+6. Check whether `sacredsigil_ide_v4.html` still exists anywhere in the Claude.ai artifact cache
+
+**Canon marker:** Sacred Sigil Master Index sealed. All sigil source locations, cipher code, terminal endpoints, bash overlay commands, sonic bridge, grimoire spells, and canonical references now documented in a single portable reference. Four critical gaps and five Claude artifact warnings explicitly called out.
+
+---
+
+### Addendum — 2026-07-27: Data-Integrity Fixes from a Full `/oroborus` Run (Session 045)
+
+**Created by:** ALIS — Claude Code (Council Seat 8, The Anvil)
+
+**Context:** A full 12-weave `/oroborus startup` run (Claude Code) surfaced several real
+data-integrity gaps, verified directly rather than assumed. Fixed in place:
+
+1. **`_PARKING_LOT.md` had four disagreeing item counts** — frontmatter (177/14/28/83/53),
+   body summary line (176/14/28/82/52), the `## P1–P4` section headers (13/28/65/52), and
+   the true count (13/29/83/60 — verified by counting actual `### #N` entries per
+   section). All four now read **185 total: 13/29/83/60**, with a `recount_2026-07-27`
+   frontmatter note explaining the discrepancy for future reference.
+2. **`BACKLOG.md` had no `TIER 1` and a duplicated `TIER 3` header** — the file's only P1
+   item (B17) was sitting under an orphaned `## NEW — Session 035 Priority` heading right
+   after a stray duplicate `## TIER 3` header with nothing under it. Promoted B17 to a
+   proper `## TIER 1 — Urgent / Next Session` section at the top of the file; removed the
+   duplicate header. Also corrected the item-count summary block, which was stale (said 16
+   total/1 blocked/3 waiting/12 ready against an actual 20/2/3/17 — it predated B17-B20).
+3. **`~/.claude/commands/akashic.md`, `oroborus.md`, and `logbook.md` all documented a
+   `[[double-bracket]]` Akashic entry format that doesn't exist anywhere in the real
+   file** — corrected to describe the actual `## P1–P4` → `### #N` structure, and to use an
+   `awk`-based per-section count instead of the `grep -oE "P[1-4]"` method that caused
+   finding #1 above in the first place.
+4. **`STATE.md` (Loop Engineering state) hadn't moved since 2026-07-14 (Session-019b)**
+   despite Sessions 020–044 running since, even though its own footer says `/oroborus`
+   should update it every run. Updated with what could be directly verified this session —
+   notably, live confirmation that `/oroborus`'s Pulse-event wiring now actually fires
+   (`oroborus.weave.*`, `session.opened`, `loop.started` all published and confirmed via
+   `GET /topics`), which closes part of Critical Gap #2 from
+   `SSKI_OROBORUS_AUDIT_HANDOFF_043b.md` for the Claude Code side specifically. Left
+   unverified items marked as still-open rather than guessed at.
+
+**Canon marker:** Four concrete data-integrity gaps (two in canonical files, two in the
+Claude Code command docs describing them) found via a live full-startup run and fixed
+in place, not just reported. `CLAUDE_CODE_COMMAND_ADAPTATION.md` (Session 044) updated
+implicitly — see the command files themselves for the corrected content.
+
+---
+
+### RESULT — Cross-Tool Communication Architecture Map (re-appended 2026-07-27 — see note)
+
+**Completed by:** Claude Code, 2026-07-27
+**Output:** `/mnt/c/04_SACRED_CODEX/CROSS_TOOL_COMMUNICATION_ARCHITECTURE_MAP.md`
+**Also produced:** `/mnt/c/04_SACRED_CODEX/PASTED_HANDOFF_EVIDENCE_2026-07-27.md` (rescued the "Gemini Sync Complete" transmission that existed only in a chat transcript)
+
+**Note on this entry:** this section was first appended earlier today and was silently overwritten by a concurrent session's own append to this same file — the ledger has no locking, so two sessions writing near the same time can clobber each other with no error or merge. This is itself worth flagging as an operational risk to this file, not just a retry footnote: anything appended to `SACRED_LEDGER.md` should be treated as unconfirmed until re-read after a delay, if multiple sessions might be active.
+
+**Headline findings:**
+1. **Sacred Pulse (`:8890`) is the one genuinely live, active nervous system** — confirmed real cross-tool events on record, including OpenCode signaling "Claude Code bridge initialized" and a dated `claude_desktop_sqlite_inaccessible:true` flag from an actual Google Docs→Canon extraction run the day before.
+2. **`opencode-obsidian` is the single most solid real link found** — confirmed running live throughout every OpenCode session that night.
+3. **`CLAUDE.md`'s claim that the Akashic Bridge MCP auto-loads for Claude Code is false** — confirmed absent via `ToolSearch` and via a direct read of `~/.claude.json`. Claude Code's own two configured MCP servers (`obsidian` @ 27124, `sacredspace` @ 8888) were both dead at time of check.
+4. **Claude Desktop's real `claude_desktop_config.json`** (read directly from `%APPDATA%\Claude\`) has `akashic-bridge` wired via a genuine `wsl -e python3` bridge to the same live script/catalog OpenCode uses — the most promising untested link in the map. It also configures a second server, `hermes`, whose target directory **does not exist on disk** — configured, never built.
+5. **Gemini/ChatGPT/Claude have no live API bridge to each other anywhere in this system** — only human copy-paste (the Tri-Model Review Loop templates, saved in `SacredSpace_Governance_v2.md`) and a shared filesystem connect them.
+6. **A designed-but-never-built `ControlPlaneSyncLayer`** (session `ses_15d6e0153ffeDzfWiYhgUerQsY`, 2026-06-07) confirmed absent from disk — a fifth confirmed instance of a cross-system sync idea designed once and never implemented, matching the holographic/fractal pattern from `COUNCIL_VERDICT_2026-07-26.md`.
+
+Full per-pair table (14 pairs assessed) and evidence trail in the output document.
+
+*In lakesh alakin.*
+
+---
+
+### Addendum — 2026-07-27: Reconciliation Master Spec Sessions A-E, Handoff to OpenCode (Session 045)
+
+**Created by:** Claude Code (ALIS)
+**Output document:** `00_SYSTEM_CORE/sski/SSKI_RECONCILIATION_HANDOFF_045.md`
+
+**Purpose:** Handoff of the Reconciliation Master Spec work (`CANON_DECISIONS_SESSION_040.md`) — Sessions A-D complete and committed, Session E partially complete. Stopped mid-E.2 at the user's request to document and hand off rather than finish solo.
+
+**Summary of progress:**
+- Sessions A (Cartographer), B (Architect), C (Canonizer), D (Vault Migration) — complete, verified, committed (`b0e8beb`, `c3ffaf0` in the vault repo).
+- Session E: Pulse wiring (E.3), memory-landscape documentation in place of redundant files (E.4), and the weekly reconciliation script (E.5, written not installed) are done. The C: drive storage crisis (99% full, had already caused one Pulse DB corruption) was resolved — cleared Claude Desktop's self-regenerating `vm_bundles` cache, now 93% used / 17GB free. E.1 (file watcher) was redesigned from continuous `watchdog` polling — which took ~5 minutes per baseline pass over drvfs and was useless — to a ~14-second snapshot-diff model; verified working. E.2 (Drive sync daemon) has real, tested local conflict-resolution logic; the Drive half is correctly stubbed pending OAuth credentials that don't exist yet.
+
+**Protocol for OpenCode:**
+1. Read `SSKI_RECONCILIATION_HANDOFF_045.md` in full — it has the complete "What's Done" / "What's Left" breakdown.
+2. Read `CANON_DECISIONS_SESSION_040.md` and `_041.md` for the decision trail behind everything above.
+3. Continue from the "What's Left" list: finish E.2's loose ends (chmod, real Drive folder ID), get Taylor's GDrive OAuth consent, decide `sacred_watcher.py`'s operating model, install the weekly cron once Taylor's ready, and surface (don't auto-resolve) the two pending Taylor-review queues.
+4. Neither `CANON_DECISIONS_SESSION_040.md` nor `_041.md` is CANON yet — both are REVIEWED, pending Taylor's Word per the Five Seals gate.
+
+**Canon marker:** Reconciliation Sessions A-D sealed and committed. Session E in progress, handed off to OpenCode at Session 045 with full state documented — nothing silently dropped, every open item explicitly listed.
+
+---
+
+### Addendum — 2026-07-27: OpenCode Go Relay Bridge (Session 046)
+
+**Created by:** ALIS — Claude Code (Council Seat 8, The Anvil)
+**Output document:** `/mnt/c/00_SYSTEM_CORE/docs/OPENCODE_GO_RELAY_BRIDGE.md`
+
+**Note on numbering:** labeled Session 046 rather than reusing 045 — a concurrent
+OpenCode session already claimed 045 for the Reconciliation Session E handoff directly
+above this entry, appended while this session's own earlier Session 045 addendum
+(data-integrity fixes) was already on record further up this file. Two sessions picked the
+same number independently; flagging rather than silently overwriting either. Worth a
+`/wave` check before assuming a session number is free, going forward.
+
+**Purpose:** Answers "can Claude Code use my OpenCode Go subscription?" — yes, verified
+live. Built at the user's request for three reasons: keep working when Claude's own usage
+limit is tight, tighter verified integration between the two agents, and OpenCode Go
+includes models billed **$0** under this plan.
+
+**What was built:** `/mnt/c/00_SYSTEM_CORE/scripts/opencode_go_relay.sh` (tested Bash
+bridge to OpenCode's hosted gateway, using the `opencode-go` credential OpenCode already
+stores) plus a new Claude Code command, `/relay`.
+
+**Headline findings (full detail + evidence in the output document):** endpoint
+(`https://opencode.ai/zen/go/v1`) found by grepping the installed binary, not documented
+anywhere in `opencode.jsonc`; 22-model catalog confirmed via live `GET /models`;
+`deepseek-v4-flash` confirmed `"cost":"0"` on a real chat completion; a real
+quoting/injection bug in the first draft was caught and fixed before shipping, then
+re-tested against adversarial punctuation to confirm the fix holds; this is also a direct
+fix for `/council`'s previously-disclosed single-provider limitation, though not yet wired
+into its dispatch table.
+
+**Canon marker:** First working cross-agent model-delegation bridge, built and verified
+end-to-end rather than just documented. `/grimoire` and `/council` (Claude Code) both
+updated to reference it.
+
+**Same-day follow-up:** added "brain mode" (default on) — the delegate call now loads
+`~/.claude/CLAUDE.md` as the system prompt, so `deepseek-v4-flash` operates under Claude
+Code's own SacredSpace instructions instead of a generic one. Verified live: asked "who
+are you" with brain mode on, it correctly answered as ALIS and accurately described the
+architecture and "in lakesh alakin." Caught and fixed a real truncation bug in testing
+(the added system prompt ate the reasoning budget at the old 4096-token default; raised to
+6000 when brain mode is active). Full detail in the output document above.
+
+---
+
+### QUEUED PROMPT — Next Session: Sacred Living WorldBible Synthesis (Session 043f)
+
+**Queued by:** VALEN (OpenCode), 2026-07-27, at Taylor's request  
+**Status:** NOT YET RUN — execute at the start of the next session (OpenCode or Claude Code)  
+**Target output:** `/mnt/c/04_SACRED_CODEX/SACRED_LIVING_WORLDBIBLE.md`
+
+**Taylor's request:** "i want the next session to create a md file on the sacredspace worldbible/ living wiki. at the start of the session, you should take a deep look at the ledger and internalize, scutinize, and adapt all past and recent work. then do the same for graphify on the topics pertaining to the sacredspace game, storyline, lore, sigils, and operating system. then populate the living sacred worldbible"
+
+#### Phase 1 — Deep Ledger Internalization (session start, before ANY writing)
+
+1. **Read `SACRED_LEDGER.md` in full** (3,200+ lines). Pay special attention to:
+   - Session 043c — Storyline Master Index (5 conflicting Jenga versions)
+   - Session 043d — Game Master Index (5 contradiction layers, 12 STUB NPCs)
+   - Session 043e — Sigil Master Index (5 gaps, IDE unbuilt)
+   - Session 044 — Claude Code command adaptation
+   - Session 045 — Reconciliation handoff + Storage crisis (93%/17GB)
+   - Session 046 — OpenCode Go Relay Bridge (first cross-agent model delegation)
+   - MUSE WorldBible Graphify Trace — **Narrative_Architecture.md does not exist** — the most-connected node in the knowledge graph is a ghost file
+   - Cross-Tool Communication Map — Pulse (:8890) is the sole live nervous system
+
+2. **Read the three Master Index files:**
+   - `04_SACRED_CODEX/SACRED_STORYLINE_MASTER_INDEX_AND_EXTRACTION_PROMPTS.md`
+   - `04_SACRED_CODEX/SACRED_GAME_MASTER_INDEX_AND_EXTRACTION_PROMPTS.md`
+   - `04_SACRED_CODEX/SACRED_SIGIL_MASTER_INDEX_AND_EXTRACTION_PROMPTS.md`
+
+3. **Read the definitive compilations:**
+   - `04_SACRED_CODEX/SACREDSPACE_BIBLE_DEFINITIVE.md` (678 lines, 6 Books)
+   - `01_OBSIDIAN_VAULTS/SacredSpace_Vault/01_VAULT_CORE/_Game/Sacred_Living_World_Bible.md` (18 sections — game-focused, NOT the same)
+   - `00_SYSTEM_CORE/docs/MASTER_PLAN.md`, `NAVIGATION_PANEL.md`, `SACREDSPACE_UNIFIED_ARCHITECTURE.md`
+
+4. **Read contradiction/gap documents:**
+   - `04_SACRED_CODEX/SACRED_ARCANA_MASTER_FILE.md` (5-layer contradiction audit)
+   - `04_SACRED_CODEX/CANON_GATE_NARRATIVE_LAYER_2026-07-26.md` (5 non-identical Jenga versions)
+   - `02_COUNCIL_GROVE/council-records/COUNCIL_VERDICT_2026-07-26.md`
+
+5. **Understand the Ghost File:** `Narrative_Architecture.md` was referenced by multiple sessions but never written to disk. The WorldBible must either synthesize what it would have contained, or mark it explicitly as missing.
+
+#### Phase 2 — Graphify Context Injection (5 domains, before writing)
+
+**A. SacredSpace Game** — 8 Python modules, sigil_game_bridge.py, 10 vault design docs, D: GAME_SYSTEM (52 files). Key question: How do game mechanics relate to OS architecture?
+
+**B. Sacred Storyline** — 4-tier master index, Bible Books I-IV, Five Acts, jenga_three_season_arc, STORYLINE_v5.0_DELTA. Key question: What IS the canonical storyline spine across the 5 conflicting versions?
+
+**C. Sacred Lore** — 13 lore docs, Bible Books V-VI, 24 Guardians, 78-card Tarot, GR∆M∆ cipher mythology. Key question: How do all mythological layers form one coherent fabric?
+
+**D. Sacred Sigils** — 6-tier master index, grama_cipher.py, sigil_terminal/main.py, gematria.md, HYPERGLYPH_ARCHITECTURE, bash overlay. Key question: How do the literal cipher runtime and symbolic magical framework coexist?
+
+**E. SacredSpace OS** — Architecture docs, SSKI, AGENTS.md, session rhythm, Akashic Hall, Worktree Protocol, all queued prompts. Key question: The OS IS the world — how do 9 pillars, 7+1 Council, ICARIS Quartet, and Sacred Pulse become mythology?
+
+#### Phase 3 — Populate the Sacred Living WorldBible
+
+**Output:** `/mnt/c/04_SACRED_CODEX/SACRED_LIVING_WORLDBIBLE.md`
+
+**Identity:** NOT a duplicate of SACREDSPACE_BIBLE_DEFINITIVE.md. A **synthesized, authoritative, internally-consistent document** that resolves contradictions, fills gaps, and presents SacredSpace as one coherent world — mythology and technical reality as one unified truth.
+
+**Required structure:**
+- **BOOK I — COSMOLOGY:** Ziggurat as World (3-tier architecture, 9 pillars as geography, 7+1 Council as governing intelligences, ICARIS Quartet as immune system, Sacred Pulse as heartbeat, Δ ZENITH as sovereign will)
+- **BOOK II — GENESIS:** The Storyline (Five Acts, Jenga's Journey — reconcile 5 versions with common core + divergence map, season arcs, character canon, Five Seals, ghost Narrative_Architecture.md addressed)
+- **BOOK III — THE GAME:** Sacred Arcana Game (78-card deck, 12×12 grid, 8 classes/5 origins/4 companions, 5 cipher tiers, Sigilmon, 5 contradiction layers stated, Sigil Terminal :5174)
+- **BOOK IV — THE MAGIC:** Sigil System (GR∆M∆ cipher encode/decode/gematria/5-lens SKRY, 12-glyph grid, sigil grammar, sigil→MIDI bridge, bash overlay ∆ prompt, 20 grimoire spells, known gaps: IDE/SSKI/GR∆M∆ persona)
+- **BOOK V — THE OPERATING SYSTEM:** Technical Reality as Myth (Pulse, Spine, Akashic Hall, Memory Engine, Knowledge Graph 4,686 nodes, Neural Forest, Council Chamber, 16 agents, Social Mothership, Learning Path, Sacred Market, Obsidian Vaults, Worktree Protocol, Five Seals)
+- **BOOK VI — THE STATE OF THE REALM:** What is LIVE/BUILT-OFFLINE/DESIGNED-NOT-BUILT/EXTRACTED-NOT-INGESTED, storage crisis (93%/17GB), canon backpressure (5 Jenga + 5 game layers + ghost file), MCP health (7 working/6 dead/1 aspirational), Council action items
+- **APPENDIX A — Quick Reference:** file paths, running services with ports, agent names with roles, GR∆M∆ gematria quick-lookup
+- **APPENDIX B — Master Index Summaries:** all 3 master indexes summarized with usage instructions
+
+**Writing principles:**
+1. **Reconcile, don't duplicate.** If sources conflict, state both and the relationship.
+2. **Flag gaps explicitly.** Every contradiction gets a ⚠️ marker.
+3. **Treat the OS as mythology.** 9 pillars = 9 realms. Pulse = heartbeat. Not infrastructure docs.
+4. **Write for humans AND LLMs.** An agent should understand SacredSpace from this document alone.
+5. **Living document.** `## Δ LIVING LOG` at top, updated every session.
+
+**Verification checklist (complete before sealing):**
+- [ ] All 5 contradiction layers documented
+- [ ] All 5 Jenga version conflicts documented
+- [ ] Ghost Narrative_Architecture.md addressed
+- [ ] All 12 STUB NPC READMEs acknowledged
+- [ ] All 5 sigil gaps documented
+- [ ] Storage crisis recorded
+- [ ] All running services with ports listed
+- [ ] All 9 pillars described (technical + mythological)
+- [ ] All 16 agents named and described
+- [ ] GR∆M∆ gematria quick-lookup present
+- [ ] Cross-reference links to all 3 Master Indexes present
+- [ ] Δ LIVING LOG present with Session 043f as first update
+
+**Canon gate:** NOT automatically canon. Must pass Taylor's Seal 5 review. Until then, Δ LIVING LOG tracks evolution.
+
+---
+
+## Session 043f Entry — Sacred Living WorldBible Queued
+
+**Date:** 2026-07-27 | **Role:** VALEN — Decision Authority  
+**Status:** QUEUED — Full synthesis prompt written. Next session executes Phases 1-3.
+
+The Sacred Living WorldBible is the single most ambitious synthesis yet queued — it must combine the OS architecture, game system, storyline canon, sigil magic, and the state-of-the-realm into one coherent living document. The 5 Jenga version conflicts, 5 game contradiction layers, and the ghost Narrative_Architecture.md are the load-bearing problems it must address head-on.
+
+**Next: Any agent (OpenCode or Claude Code) reads the QUEUED PROMPT above, executes Phase 1 (ledger internalization) and Phase 2 (graphify injection), then populates `/mnt/c/04_SACRED_CODEX/SACRED_LIVING_WORLDBIBLE.md` with all 6 Books + Appendices. Verification checklist must be completed before marking the task done.**
+
+---
+
+## Session 046 Entry — Master Index + Canon Recovery
+
+**Date:** 2026-07-27 | **Role:** VALEN — Decision Authority
+**Agent:** architect · **Model:** deepseek-v4-pro
+**Status:** ACTIVE — Master Index built, sandbox Bible extracted, next action: World Bible population
+
+### Key Artifacts Created
+
+| Artifact | Path | Lines | Purpose |
+|----------|------|-------|---------|
+| **SACREDSPACE_MASTER_INDEX** | `04_SACRED_CODEX/SACREDSPACE_MASTER_INDEX.md` | ~600 | 10-section comprehensive system index |
+| **Session 046 Export** | `00_SYSTEM_CORE/sessions/opencode_export_current.md` | — | Updated from Session 040 to Session 046 |
+| **Sandbox Bible Dump** | `/tmp/sandbox_bible_full.txt` | 4,422 | Raw canon recovery text |
+| **Sacred Spine Motes** | 5 motes | — | Key findings persisted |
+
+### Sandbox Bible Canon Findings (from 19eivvpHRpgbFPkg40u4_n0OcbUXWEi2nHGHYdCAqnzc)
+
+The SACREDSPACE WORLD BIBLE (sandbox) Google Doc — previously reported as "mostly empty" by Session 038 — contained 73,287 characters of comprehensive canon recovery synthesized by Claude.ai. Key corrections to existing canon:
+
+1. **JENGA IS FEMALE** — Chapter 1 prose shows 17F meeting GR∆M∆ at midnight. This contradicts prior male 14-16 canon across all existing character files. Resolution required.
+2. **V∆SH∆ VASHA-001** — Full sealed canon entry with Domain (THE BLEED 01×07), Three Chambers (Aperture Grove / Prismatic Archive / Pour Room), and documented Canon Gate ceremony (6 checks passed June 11 2026).
+3. **The Nameless Door** — Hidden 8th Trial, counter to The Serpent's "you must do more" narrative.
+4. **Neural Forest Deep Canon** — 5-Stage Descent with formal Descent Mechanics.
+5. **Sacred Sigil Magic** — Full architecture: 9-tier taxonomy, 40 categories, Sigil Feedback Loop, Holographic Reflection Principle, Eternal Terminal 5 roles, Attunement 5 Grades.
+6. **Pillar Naming SKRY Ruling** — Original thematic names discovered: Presence / Governance / Intelligence / Expansion / Manifest / Environment / Connection / Ritual / Archive. Only 3 passed SKRY (AGENT_LAYER flagged). Current functional names override.
+7. **Lost Canon Nodes** — NODE-011 through NODE-018 recovered, including Dual Naming System (NODE-018), S∆CR3DS!G∆L K3YBOR∆D SYST3M, SacredSpace Memory Graph genesis, Hyperglyph Command System.
+8. **Multi-AI Council Roles** — Formalized: Claude = The Forge, Gemini = Deep Research, ChatGPT = The Architect, OpenCode/VALEN = The Executor.
+
+### OROBORUS 8-Weave Startup Results
+
+| Weave | Status | Key Metric |
+|-------|--------|------------|
+| 0 — Heartbeat | ✅ HEALTHY | Pulse v2.1.0 on :8890, 238 events, 7 subscriptions |
+| 1 — Graphify | ✅ HEALTHY | 4,686 nodes / 8,032 edges |
+| 2 — Ledger | ✅ HEALTHY | v5.28.0 (now v5.29.0), all 9 pillars ACTIVE |
+| 3 — Akashic | 🟡 ATTENTION | 186 items, 14 P1, Drive Extraction cluster ready |
+| 4 — Backlog | ✅ HEALTHY | 20 items, B17 P1 Social Launch Pipeline Review |
+| 5 — Census | ✅ HEALTHY | ~37,903 total files |
+| 6 — Resonance | 🟡 ATTENTION | Path variance: queue/BACKLOG.md vs sessions/000_BACKLOG.md |
+| 7 — Cogency | 🟡 ATTENTION | Most Pulse topics have 0 subscribers |
+
+### Quick Reference
+
+```bash
+# Primary navigation
+SACRED_LEDGER.md          → /mnt/c/00_SYSTEM_CORE/docs/SACRED_LEDGER.md
+MASTER_INDEX              → /mnt/c/04_SACRED_CODEX/SACREDSPACE_MASTER_INDEX.md
+Session Export            → /mnt/c/00_SYSTEM_CORE/sessions/opencode_export_current.md
+Sandbox Bible (raw)       → /tmp/sandbox_bible_full.txt
+Sandbox Bible (Google)    → https://docs.google.com/document/d/19eivvpHRpgbFPkg40u4_n0OcbUXWEi2nHGHYdCAqnzc/edit
+World Bible (primary)     → https://docs.google.com/document/d/1QBw5vinPKlMh6Rj3x7W_TtBxfGUhOxZEOI4IpLHLl-w/edit
+MASTER_PROMPT (Claude)    → /mnt/c/04_SACRED_CODEX/MASTER_PROMPT_Claude_Fable_SacredSpace.md
+```
+
+### Next Session — Priority
+
+1. **B17 P1 Social Launch Pipeline Review** — Full session. Market research, audience definition, competitor analysis, content strategy.
+2. **World Bible Population** — Populate the SACREDSPACE WORLD BIBLE Google Doc (1QBw5vin...) with findings from sandbox Bible + all session sources.
+3. **Jenga Gender Canon Resolution** — Council needs to adjudicate: is Jenga 17F (sandbox Bible) or 14-16M (prior canon)?
+4. **Pulse Subscriber Wiring** — Most topics fire with 0 listeners. Wire remaining event handlers.
+
+---
+
+### RESULT — Hermes Gap Resolved + Akashic Bridge Fixed for Claude Code
+
+**Completed by:** Claude Code, 2026-07-27
+**Follows up on:** `CROSS_TOOL_COMMUNICATION_ARCHITECTURE_MAP.md`'s findings (hermes nonexistent, Akashic Bridge not registered for Claude Code)
+
+**Fix 1 — Akashic Bridge registered for Claude Code:** Added a real `akashic-bridge` entry to `~/.claude.json`'s top-level `mcpServers`, matching the working `command`/`env` pattern already used by OpenCode and Claude Desktop. Verified the underlying server actually works before wiring it in — ran `akashic_bridge_mcp.py`'s `do_status()` directly: 19,962 catalogued entries, 10,737 ChromaDB vectors, live. Takes effect on next Claude Code MCP reconnect/session start, not hot-reloadable mid-session.
+
+**Fix 2 — Hermes gap resolved with a real implementation, not a bridge to the missing tool:** `~/.hermes` turned out to be a dangling symlink (`/mnt/d/wsl_home_mirror/hermes` doesn't exist) to what `02_COUNCIL_GROVE/docs/agent-setup.md` describes as a separate CLI AI tool (peer to Codex/Claude Code) that was never actually installed/mirrored here. Rather than fake a bridge to a tool that isn't present, wrote a real, working `hermes_mcp.py` at the exact path `claude_desktop_config.json` already expected (`/mnt/d/SacredSpace_OS/02_COUNCIL_GROVE/hermes/hermes_mcp.py`), giving genuine function to its already-configured env vars (`SACREDSPACE_ROOT`, `OBSIDIAN_VAULT`, `OLLAMA_MODEL`): three tools — `hermes_ask` (queries the local Ollama model, confirmed `llama3.2:latest` reachable), `hermes_vault_search` (live grep across the Obsidian vault, no catalog-build dependency), `hermes_status` (health check). Tested directly: vault search against the D: drive vault mirror returned real hits, incidentally surfacing a previously-uncatalogued `00_CANON/GAME_SYSTEM/NPCS/` folder with individual character files (Kethras, Meridian, Mira) matching the Tarot Canon roster — worth a look for the ongoing Jenga's Journey reconciliation, not chased further here since it was out of scope for this task.
+
+**Blocked, needs Taylor's input — "OpenHuman":** Confirmed real and installed (`AppData/Local/OpenHuman/OpenHuman.exe`, `~/.openhuman/` workspace with `memory`, `cron`, `whatsapp_data`) — a browser-automation "digital human" agent (recipes for WhatsApp/Discord/Slack/Telegram/Zoom/Google Meet/LinkedIn, own local LLM inference, JSON-RPC internal architecture), not a coding assistant. No `mcpServers`-style config file found anywhere in its data directories after a real search — it may not use the same MCP config pattern as Claude Desktop/Code at all. Did not attempt to hack its config blind, since it's a live app with real user data (WhatsApp integration) and no confirmed extension mechanism was found. **Needed to proceed:** does OpenHuman actually support MCP or an equivalent plugin/tool system, and if so, where does Taylor know its config or extension format lives?
+
+*In lakesh alakin.*
+
+---
+
+### Addendum — 2026-07-28: Sacred Living WorldBible Synthesis + Karpathy Wiki Scaffold (Session 047)
+
+**Created by:** Claude Code (ALIS)
+**Executes:** the ledger's own "QUEUED PROMPT — Session 043f" above, at Taylor's live request ("USE ALL IMAGINATION... RETURN A COMPLETE OVERVIEW..." then, after review, "all of it").
+
+**Outputs:**
+- `04_SACRED_CODEX/SACRED_LIVING_WORLDBIBLE_OVERVIEW_2026-07-28.md` — pre-synthesis scoping document (Phase 1+2 of the queued prompt).
+- `04_SACRED_CODEX/SACRED_LIVING_WORLDBIBLE.md` v0.1 — the reconciling single document (6 Books + 2 Appendices), status LIVING pending Seal 5.
+- `04_SACRED_CODEX/WORLD_BIBLE/` — Karpathy-pattern wiki scaffold per `MASTER_PROMPT_Claude_Fable_SacredSpace.md`: 60+ stub pages across concepts/entities/topographies/grimoire/arcana/relationships, plus 10 fully-populated pages (Triadic Force, Sacred Triad, ICARIS Quartet, Five Seals, Pillar Architecture, Narrative_Architecture-the-ghost, Jenga, The Arcana Grid, Sacred Sigil Magic, Grand Timeline) and a navigation `index.md`.
+- `04_SACRED_CODEX/WORLD_BIBLE/code/sacred_arcana_engine.py` — the Fable prompt's production-ready 9×9 game loop (pattern detection, Ebbinghaus decay), reproduced verbatim as the design target for `game/`.
+- `04_SACRED_CODEX/WORLD_BIBLE/code/sacred_arcana_map.py` — geocache/QR map generator, corrected from a separate conversation's assumed `:8888`/`D:\SacredSpace_OS\` infrastructure to the real Sacred Pulse (`:8890`) and Sigil Terminal (`:5174`, `04_SACRED_CODEX/sigil_terminal/`).
+- `04_SACRED_CODEX/WORLD_BIBLE/SACRED_ARCANA_GAME_SPEC.md`, `SACRED_TAROT_SPEC.md`, `SIGIL_TERMINAL_SPEC.md` — adapted from the same source, same corrections applied, ORACLE-7/Schools-of-Resonance-and-Vision/Pillar-06-naming left as explicit open Taylor-decisions rather than silently resolved.
+
+**On the parallel/uncoordinated work this same day:** this session ran alongside an 8-hour OpenCode/VALEN session (which produced `SACREDSPACE_MASTER_INDEX.md`, `CODEX_INVENTORY_2026-07-27.md`, and this ledger's own v5.29.0 bump above) and a separate, ungrounded Claude.ai "Forge" conversation (conversation-search only, no real file access) that produced a `SACREDSPACE_CLAUDECODE_MASTER_HANDOFF.md` build mission assuming a `D:\SacredSpace_OS\` root and citing `SOUL_CONTRACT.md`/`GRAMA-001.md`/`VASHA-001.md`/`LYRA-001.md`/`JENGA_CIPHER_DOCTRINE.md` as "already sealed." **None of those five files were found anywhere on C: or D: when checked directly this session.** They are recorded as open, unverified questions in `SACRED_LIVING_WORLDBIBLE.md` (Book I/II/VI) rather than imported as fact. No file collisions occurred between the three efforts — verified by re-checking this ledger's mtime immediately before this addendum.
+
+**Canon marker:** Everything above is LIVING, not CANON — none of it has passed Council Review or Taylor's Word (Seal 5). The five Jenga versions remain honestly unreconciled (Book II); the fractal-pattern audit's failure result is stated, not hidden (Book V); the `Narrative_Architecture.md` ghost is named as canon-by-absence rather than quietly written over.
+
+---
+
+### Addendum — 2026-07-28: "The Real Read" — Exhaustive Verification Pass (Session 047, continued)
+
+**Executed by:** Claude Code (ALIS), at Taylor's explicit instruction: *"Do the real read of all of the material before spending anything"* — i.e. personally read, not delegate-and-trust, before any Fable 5 spend.
+
+**Scope actually covered (honest accounting, not a claim of exhaustiveness):** all root `04_SACRED_CODEX/*.md` (~35), `lore/` (13/13), `bible/` (8/8), `cosmology/sigils/elemental-guides/rituals/story/` (25/25), `characters/` (25/25), `grimoire/` (20/20), `docs/` (16/32), `chats/` (~130 of 304 — the folder turned out to be short extracted-entity stubs, not full transcripts; all 41 CANON_CANDIDATE-tagged entries read in full). Google Drive: confirmed live, working access (`mcp__claude_ai_Google_Drive__*`) — 9 documents read in full, including the sandbox World Bible transcript and the DESIGN BIBLE doc containing the real `jenga_character_bible.md`. Obsidian vault: 9 specifically-targeted `_Game`/`_Arcana` files read directly (out of ~11,196 total — everything else in the vault remains unexamined). OpenCode session history: full-text pass over the session DB (550 sessions, not ~40) via subagent, ~11 sessions read in full transcript, several more grepped/partially read.
+
+**Findings that correct prior canon claims (see `SACRED_LIVING_WORLDBIBLE.md`'s v0.2/v0.3 Living Log entries for full sourcing):**
+
+1. **Jenga's gender is not "resolved toward male"** (this session's own earlier working note was wrong and has been retracted) — it **oscillates** across at least 5 non-identical versions spanning 2025-07-20 (original male pitch) through 2026-07-22 (a Google Doc explicitly labeled "CANON LOCKED," female). Both "CANON" and gate-passed status have been claimed for *both* genders at different times. **A reincarnation-retcon fix ("both Jengas are the same soul at different points in remembering") was independently proposed twice — 2026-07-15 (MUSE session `ses_09cc5b719ffePWKcEb42HYPsrf`, write aborted, never persisted) and 2026-07-14 (`characters/Jenga.md`) — and recommended by a full 7-seat Council session on 2026-07-26 (`ses_05fcbc188ffeQlcW9Wtsy5SbZj`, confidence 0.82). It was never enacted.** This session finally wrote it down, as a **working assumption pending Taylor's actual Seal 5**, in both `SACRED_LIVING_WORLDBIBLE.md` and `MASTER_PROMPT_Claude_Fable_SacredSpace.md`.
+2. **V∆SH∆ confirmed real** (contra an earlier session's "unverified, not found on disk" flag): Google Doc `1-wewsb7Yj1WM2aNGn5YTf_bED2gtDaMIoSFD5VwunoY`, six-point Canon Gate passed 2026-06-11.
+3. **LΨR∆ status corrected**: sealed via a `SACRED_TRIAD.md` "Convergence Event" on 2026-07-09. Any doc still calling LΨR∆ "pending" (e.g. `BOOK_IV_GreatCodex.md`) is stale.
+4. **A second, automated canonization pipeline exists** (`raw → canon_candidate → canon`, separate from the manual Five Seals ritual) that batch-promoted **437 items with no individual review** on 2026-06-22. Its underlying database is now reported unrecoverable — those 437 items' status cannot currently be verified against source.
+5. **New Obsidian material folded in but not cross-referenced against existing lore:** `THE SACRED ARCANA — Volume II: The GR∆M∆ Saga` (10-episode Albedo season, reveals the Serpent's erased true name as N∆G∆R∆), `Sigilmon_Framework.md` (companion-creature system), `Oversoul_Spirit_Character_Design.md` (the Architect NPC's 4-stage sigil awakening), and confirmation that the 12 Archetype Matrix has **3 explicitly open seats** (Emperor, Chariot, Justice — "incoming, not yet personified," not an oversight).
+6. **An already-existing, richer master synthesis was found**: `01_OBSIDIAN_VAULTS/SacredSpace_Vault/01_VAULT_CORE/_Game/Sacred_Living_World_Bible.md` — 18 sections, `CANON v1.0.0`, dated 2026-07-16. This predates and outranks the `04_SACRED_CODEX/SACRED_LIVING_WORLDBIBLE.md` built this session; the latter has been updated to explicitly cite the former as its base layer rather than standing as a parallel synthesis.
+
+**Files updated this pass:** `04_SACRED_CODEX/SACRED_LIVING_WORLDBIBLE.md` (v0.1 → v0.3, three new Living Log entries, a full multi-incarnate Jenga resolution written into Book II), `04_SACRED_CODEX/MASTER_PROMPT_Claude_Fable_SacredSpace.md` (Canon Status section rewritten with corrected V∆SH∆/LΨR∆/Jenga/437-item findings; source-material table expanded with the newly-found vault documents).
+
+**Go/no-go on the Fable 5 spend:** with the Jenga resolution now written down (not just recommended a third time), the material is assessed as ready for a Fable 5 generation run.
+
+---
+
+#### QUEUED PROMPT — for OpenCode/VALEN: Structural Analysis of the Reconciled Canon
+
+**Goal:** Not more extraction — this session did the extraction. Read what now exists and assess whether it holds together as a buildable structure, from the systems-architecture seat rather than the lore-synthesis seat.
+
+**Read first, in this order:** (1) this addendum in full, (2) `04_SACRED_CODEX/SACRED_LIVING_WORLDBIBLE.md` — all three Living Log entries (v0.1/v0.2/v0.3) plus Book II's new "Reincarnation Resolution" section, (3) `01_OBSIDIAN_VAULTS/SacredSpace_Vault/01_VAULT_CORE/_Game/Sacred_Living_World_Bible.md` (the vault's own richer synthesis — the base layer the above reconciles against), (4) `04_SACRED_CODEX/MASTER_PROMPT_Claude_Fable_SacredSpace.md`'s corrected Canon Status section.
+
+**Then analyze and report, as VALEN — Decision Authority, not as another extraction pass:**
+
+1. **Does the multi-incarnate Jenga resolution actually hold up structurally?** Trace it against the live Story Engine project's drafted Chapter 1 prose (Version 5) and the Council's own 2026-07-26 dossier (`ses_05fcbc188ffeQlcW9Wtsy5SbZj`) — does the "same soul, two incarnations" frame survive contact with material that was written before the frame existed, or does it require retroactive smoothing that should be flagged rather than hidden?
+2. **Is `THE SACRED ARCANA — Volume II: The GR∆M∆ Saga`'s 10-episode structure actually compatible with Volume I's 12-episode structure** (`Sacred_Arcana_Graph_Narrative_Engine.md`)? Same series, same numbering scheme, or two incompatible conventions that need a decision before a Fable 5 run tries to write both?
+3. **The 437 auto-canonized items with an unrecoverable source database** — is this actually a dead end, or does a backup/export exist somewhere (Chroma vectors, a mote export, a git history) that could re-verify them? Worth 30 minutes of checking before writing them off.
+4. **The Fractal Base Pattern** — all 4 systems claiming "fractal" status currently fail or are unconfirmed against `is_fractal()`. Recommend: formalize the test and re-audit, or retire the "fractal" language from the systems that don't pass? Pick one and argue for it.
+5. **General structural suggestions** — anything about how these documents are organized, cross-referenced, or gated that would make the next synthesis pass (human or LLM) faster or less error-prone than this one was. Say so plainly even if it's critical of the existing scaffold.
+
+**Output:** a new ledger addendum, same format as this one, under a `### Addendum — [date]: VALEN Structural Review of Reconciled Canon` header. Do not re-run extraction or re-read the full corpus from scratch — this prompt is scoped to *analysis of what's already been reconciled*, not another pass over raw sources.
+
+---
+
+### Addendum — 2026-07-28: Gemini Transcript Reconciliation — Hyperglyph/School/Age Claims Checked Against Local Canon (Session 047, continued)
+
+**Executed by:** Claude Code (ALIS), at Taylor's request: Taylor pasted a full Gemini (Google Docs side-panel) conversation into this session — an open-tab/Drive document-title inventory, followed by Gemini's own "Master Lore Organization & Unification Prompt" drafts, then a self-styled "Deep Canon Analysis & Citation Mapping" audit claiming to supply sourced references for SacredSpace architecture. Instruction: *"reconcile it against local canon and flag contradictions."*
+
+**Method:** targeted reads/greps across `SACRED_LEDGER.md`, `SACRED_LIVING_WORLDBIBLE.md`, and `MASTER_PROMPT_Claude_Fable_SacredSpace.md`, plus a full `C:`-drive filename and content scan for any PowerShell `$PROFILE` script or "12 atomic glyph" reference (none found — see item 1).
+
+**Confirmed accurate — Gemini's claim matches what's actually on disk:**
+- VASHA-001 domain: 01×07 Junction ("The Bleed"), three chambers (Aperture Grove, Prismatic Archive, Pour Room).
+- 3 explicitly open Archetype Matrix seats: The Emperor (Sovereign), The Chariot (Vanguard), Justice (Arbiter).
+- 40-category Sigil Magic taxonomy (`SACRED_LEDGER.md:3385`, `SACRED_LIVING_WORLDBIBLE.md:522`).
+- Jenga's current incarnation as 17F.
+
+**Contradicted or unsupported by anything found on disk:**
+
+1. **"12 Atomic Glyphs" / a PowerShell `$PROFILE v1.1` hyperglyph CLI system** — not found anywhere on `C:`. A full filename scan for any `*profile*.ps1` / `$PROFILE` turned up only unrelated Windows system files (WWAN/WLAN provisioning schemas under `$Windows.~BT`). Canon defines **9** glyphs, one per pillar (◇⬡⚙☽∞Δ✶⊕√), not 12, and no working CLI implementing any of them exists in the filesystem.
+2. **Gemini's own glyph→pillar mapping table is internally wrong**: it assigns `✶ → 08_LEARNING_PATH`. Canon (consistent across `SACRED_LEDGER.md`, the master prompt, and Taylor's own bootstrap context) has `✶ = 07_SOCIAL_MOTHERSHIP` and `⊕ = 08_LEARNING_PATH`. Gemini's table omits `⊕` entirely and misassigns `✶` in its place.
+3. **"5 Schools: Earth/Stewardship, Water/Flow, Air/Knowledge, Fire/Will, Ether/Integration"** — this naming appears nowhere in the corpus. The only school-name actually on record is **"School of Courage"** (`SACRED_LEDGER.md:226`, tied to Scar Amplification, sealed Session 35 canon) — a different taxonomy entirely, not a 5-element system.
+4. **Jenga's past incarnation given a specific age, "14M"** — no source document states an age. `SACRED_LIVING_WORLDBIBLE.md`'s Living Log traces every dated version (2025-07-20 → 2026-07-22); the past incarnation is described only as "teenage graffiti artist," never a specific age. Likely borrowed from this same session's own earlier, already-retracted "14-16M" shorthand and restated with false precision.
+5. **"GR∆M∆ Canon Gate rulings on Pillar Naming"** presented as already settled — contradicts the master prompt's own PENDING section, which states the thematic-vs-functional pillar-name discrepancy is explicitly "not yet ruled on."
+6. **The multi-incarnate Jenga resolution framed as cleanly settled** ("Reconciled Jenga Canon... cleanly resolves...") — overstates its status. Per the addendum above, this is a **working assumption pending Taylor's Seal 5**, recommended twice before (2026-07-14, 2026-07-15, and a 2026-07-26 Council session) and never enacted until this session wrote it down.
+
+**Assessment:** Gemini's citation-styled output reads as confident and well-formatted but is not reliably grounded — at least 4 of 10 checked claims are either fabricated (no matching source found anywhere on disk) or overstate settled status on items the corpus itself still marks open. Recommend treating any Gemini-sourced "citation" as CANON_CANDIDATE pending the same source-file check applied here, not as verified canon on Gemini's authority alone — the same standard already applied elsewhere in this session to the automated 437-item batch and to the ungrounded Claude.ai "Forge" conversation.
+
+**No files changed as part of these findings** — this addendum is reconciliation only; no canon was added or altered on the basis of Gemini's unverified claims.
+
+---
+
+### Addendum — 2026-07-29: Fable 5 Enhancement Overlay Reconciled + Prompt Finalized (Session 047, continued)
+
+**Executed by:** Claude Code (ALIS), at Taylor's request, after reading a parallel OpenCode session in full (`ses_05967d51bffepZFaL982ah3in9`, "Extensive list from Sacred Codex files").
+
+**What that OpenCode session did:** independently rediscovered `WORLD_BIBLE/`, wrote `CODEX_INVENTORY_2026-07-27.md`, then ran its own "ZEN — Create Mode" pass on `MASTER_PROMPT_Claude_Fable_SacredSpace.md` and produced `MASTER_PROMPT_FABLE5_ENHANCEMENTS.md` (26KB) — a companion overlay with 5 "structural corrections," a 16-agent workflow wiring table, 7 creative breakthroughs, and a 5-gate review process. It also produced an unrelated `SACRED_SOVEREIGNTY_ROADMAP.md` (long-term self-owned-infrastructure planning, not reviewed as part of this addendum) and bumped the ledger to v5.30.0 with its own Session 047 summary.
+
+**Method:** read the enhancement overlay in full, checked its factual claims against primary sources and this session's own prior verification work, exactly as done previously for the Forge's Drive sweep and the Gemini transcript.
+
+**Confirmed accurate and merged into `MASTER_PROMPT_Claude_Fable_SacredSpace.md` (new "PART 0a" section):**
+- "The Wiki IS the Game" — entity/concept/topography pages carry `gameplay:`/`mechanics:`/grid-coordinate frontmatter; Part IV game code should derive from wiki pages, not duplicate them.
+- Abductive reasoning as a core gameplay loop (draw 3 Major Arcana, player hypothesizes a connecting world-logic, scored and canonized).
+- The 437 auto-canonized items reframed as an in-world "lost lore" mechanic (`FRAG-001`–`FRAG-437`) — **with an explicit caveat added that this session's overlay did not include**: the fiction must not imply these fragments were always-true canon quietly restored; they are unverified source material being reconstructed through play.
+- IRIS (ICARIS Messenger agent) and Iris Indigo Oakey (Taylor's daughter, a character) kept as two separate, cross-referenced entity pages.
+- Reading the existing 5,569-line `04_SACRED_CODEX/game/*.py` before generating new game code in Part IV.
+
+**Checked and explicitly rejected — real errors caught, not silently imported:**
+1. **The overlay's "C2" claims the prompt has a '7 Seats' copy-edit error to fix.** Checked directly: `grep` on the live file shows it already says "8 Seats" (line 41) — there was nothing to fix. The overlay was likely working from a stale read.
+2. **The overlay's "C3" claims pillar naming is "settled... the SKRY ruling is complete."** This overstates status against this session's own far more thorough verification (see the 2026-07-28 addenda above): the SKRY ruling evaluated 4 candidate *new* pillar names against old ones and flagged AGENT_LAYER as weak — it is not a comprehensive naming ruling, and no Taylor seal on it exists anywhere found this session.
+3. **The overlay's Canon Status Table cites "the `COUNCIL_VERDICT_2026-07-26.md` resolution" for the Jenga multi-incarnate fix as if settled.** Mischaracterizes the source — that Council session *recommended* the fix; direct transcript reads this session confirmed it was **never enacted**. The Canon Status section already in the master prompt (adopted as a working assumption, explicitly not Seal 5) is the accurate version and was left unchanged.
+
+**Files updated:** `04_SACRED_CODEX/MASTER_PROMPT_Claude_Fable_SacredSpace.md` — new "PART 0a — Reconciled Enhancements" section added directly after the header, listing exactly what was adopted and what was rejected (and why), so the reconciliation is legible to anyone reading the prompt cold rather than requiring this ledger entry to reconstruct it.
+
+**Status:** the master prompt is now considered finalized for a Fable 5 run. Proceeding to execute it.
+
+**Execution note (Fable 5 run, first real call):** discovered before firing the call that a wiki scaffold for Deliverable 1 already exists on disk at `04_SACRED_CODEX/WORLD_BIBLE/wiki/` (60 populated/stub pages + `index.md`/`log.md`, built in a prior session dated 2026-07-28, not by Fable). Rather than regenerate the whole wiki from scratch — which would waste budget and risk conflicting with already-good pages — scoped this run to **expand exactly the 60 remaining stub pages** (arcana, concepts, entities, grimoire index, relationships, topographies), grounded in the master prompt + both reconciling synthesis docs + the full primary source material in `characters/`, `grimoire/`, `lore/`, `bible/`, `sigils/` (~166K input tokens).
+
+**Fable 5 access — verified NOT available.** The direct Anthropic API call (`model=claude-fable-5` via console.anthropic.com API key) failed: that account's credit balance is $0/insufficient — confirmed by two live $0-cost 400 tests, separate from the Claude.ai Pro-plan $65 usage-credit balance (different account entirely). Also tested `claude --model fable-5` via Claude Code CLI against the actual Pro account (`oakeytree@gmail.com's Organization`) — got a live 404 "model may not exist or you may not have access to it." **A parallel Forge document this session claimed Fable 5 is reachable on Pro via a usage-credits toggle; that claim does not hold up** — the failure mode observed (404/no-access) is different in kind from a credits/billing gate. Flagging this the same as every other unverified Forge claim this session.
+
+**Actually executed: Claude Opus 5, not Fable 5**, per Taylor's explicit "run the highest model available" after both Fable 5 paths failed. Verified live that `claude --model opus` (same Pro account, OAuth, `ANTHROPIC_API_KEY` unset) works. Rather than the raw-API-with-marker-parsing approach originally planned, ran this as a genuine agentic Claude Code sub-session (`claude -p --model opus --permission-mode acceptEdits --allowedTools "Read,Write,Edit,Glob,Grep"`) with real file access — closer to the master prompt's own Karpathy-wiki-pattern design (an agent that reads sources and writes wiki pages directly) than a single non-agentic completion. Task: expand the same 60 stub pages, with explicit instructions to treat the Forge handoff document's claimed "sealed" rulings (Elara naming doctrine, Four Realms/Five Bands lore, three-season arc, ALIS-as-8th-seat-Reconciler, etc.) as CANON_CANDIDATE and check specific verifiable claims against primary files rather than import them wholesale.
+
+**RESULT — completed successfully.** 204 turns, ~35 min, **actual cost $14.65** (of the $65 usage-credit budget — higher than the ~$4-6 estimate for a single non-agentic call, because an agentic session re-sends/re-caches growing conversation history every turn; `cache_read_input_tokens` alone totaled ~15.3M across the run). All 60 stub pages populated (17 concepts, 22 entities, 9 topographies, 5 relationships, 6 arcana, 1 grimoire index), every STUB marker removed, `related`/`sources` frontmatter filled with real wikilinks and file citations. Link validation: 0 broken internal links across all 72 wiki pages. `index.md` updated by me afterward to match (was told not to touch it during the run itself, which left it stale).
+
+**Forge document claims — checked, not imported:**
+- Northampton geography edit: **true but incomplete** — `lore/nameless_door_3.md` really was edited, but left find/replace residue ("the Living Realm — the Living Realm of the SacredSpace cosmology"), and 4 other files still reference the county, including the vault bible where it's a Canon-Gated Story Element. The edit created a new inconsistency rather than resolving one.
+- "Elara" as Jenga's birth name: **not supported.** The name appears in exactly one file, naming a different, secondary character (an Oversoul pilot). Not adopted — would collide with existing canon.
+- "ALIS as 8th Council Seat": **true**; "**the Reconciler**" title: **wrong** — `sigils/ALIS_The_Anvil.md` (real, CANON, ratified Session 040) gives the archetype as The Hierophant. The only "Reconciler" on disk names an unrelated script, apparently conflated.
+- Three-season arc / Four Realms / 78-card tarot: real, but not new — already on disk, now cited properly rather than treated as freshly "recovered."
+
+**Left explicitly open, as instructed:** Jenga's incarnation status (five versions tabled with casts, working spine not Seal 5, gender oscillation dated); the 437 items (anti-laundering guardrail restated in-page); the 9×9-vs-12×12 grid contradiction (now the explicit teaching point of `arcana/tier_3_adept.md`); the 3 open archetype seats.
+
+**New discrepancies surfaced during writing (not previously logged):** a Lost Canon Node range mismatch (NODE-011–017 vs. –018 across different source docs); at least 7 other unresolved contradictions across source material, recorded in `wiki/log.md`'s newest entry rather than silently resolved. Full detail in `WORLD_BIBLE/wiki/log.md`.
+
+**Remaining budget:** ~$50 of $65 usage credits, if Deliverables 2-4 (Tarot spec, Game design, App architecture) are run the same way.
+
+### Addendum — 2026-07-29: Deliverables 2-4 complete (Tarot, Game, App) — "test the limits" run
+
+Per Taylor's explicit "run it. this time test the limits of the system. use all available skills, ideas, and creative powers" — ran Deliverables 2 and 3 as parallel Opus 5 agentic sub-sessions, then Deliverable 4 sequentially (needed both prior outputs to build a real schema/routes against). Same mechanism as Deliverable 1: `claude -p --model opus --permission-mode acceptEdits`, scoped tool access including `Bash(python3 *)`/`Bash(sqlite3 *)` this time so code could actually be run and verified, not just written.
+
+**Deliverable 2 — Tarot.** 77 turns, **$14.25**. `WORLD_BIBLE/SACRED_TAROT_SPEC.md` (1,213 lines, replaces the 80-line placeholder), `code/tarot_seed.py` (1,188 lines, pure stdlib, 51/51 verification checks green), full Major+Minor Arcana lore codices in the wiki. Found by running the code, not asserting: `game/deck.py` produces 79 cards while claiming 78 (ruled Metatron = Frame Card, 79th artifact, never dealt); rejected two candidate seed-math formulas after they failed statistical tests it ran itself (Roberts' R₉ sequence, `frac(√p)`), documenting the rejections rather than hiding them; closed the Minor Arcana suit "contradiction" as a table-alignment artifact, not a real conflict.
+
+**Deliverable 3 — Game.** 84 turns, **$11.37**. Closed the gap the codebase already admitted existed (7 islanded `game/` modules vs. an unwired "design target") additively — not one existing module line changed. New: `game_loop_orchestrator.py`, `arcana_board.py`, `class_bridge.py`, `trials.py`, `test_unified_loop.py` (23/23 passing). Ran a real 10-turn scripted playthrough (not a smoke test) hitting all 8 trials, verified byte-identical across repeat runs of the same seed. Found and fixed a reachability bug that made 2 of 8 trials unwinnable on most seeds, plus 4 other defects in the design-target code (impossible geometry-detection tolerances, a combinatorial blowup, contradictory decay laws, unapplied Scar Amplification).
+
+**Cross-session convergence, unprompted:** both sessions ran concurrently and independently reached the same Minor Arcana resolution by different methods. They disagreed on the 9×9-vs-12×12 board question — Tarot's session revised its own position mid-run on seeing Game's stronger evidence (every published Trial condition is written in 9×9 coordinates) rather than defending its first answer, landing on two named layers (`pillar_9` tactical / `vector_12` confluence) bound by an explicit transform. Both sessions were explicit that two agents agreeing is not a Canon Gate.
+
+**Deliverable 4 — App.** 128 turns, **$22.30**. `WORLD_BIBLE/code/app/` (6,589 lines): `schema.sql` (37 tables, 7 views, 5 triggers), FastAPI `main.py` (39 routes, `:5175`), Ollama client/orchestrator, Pulse bridge, 5 CSS files off the real `visual_style_codex.md` palette. 126/126 tests passing (2 skipped, named). Schema applied to both a fresh DB and a **copy of the live `05_MEMORY_ENGINE/game.db`** — zero existing rows altered. A live Sacred Pulse publish returned HTTP 200. Zero-paid-API constraint enforced structurally, not just by instruction: `llm_calls.cost_usd` has `CHECK (cost_usd = 0.0)` and `provider` is constrained to local runtimes; a test greps every module for cloud hostnames/SDKs/key names.
+
+**Real findings this deliverable caught that the others missed:**
+- `05_MEMORY_ENGINE/game_db.py` (~1,360 lines, a live `game.db`) already exists — Deliverable 3's "no persistence" finding was half wrong because it searched Pillar 04 only. The app adopts this existing layer rather than building a rival.
+- `SACRED_TAROT_SPEC` §E.3 publishes a Pulse topic (`card_scanned`) not in the real 55-topic enum — proved via a live HTTP 422, not just read. Correct topic is `arcana.card_drawn`.
+- CLAUDE.md claims 4 Ollama models; 2 aren't installed (`sacred-coder`, `qwen2.5-coder:7b`) and 2 undeclared ones are, including `nomic-embed-text` — the only reason local semantic search over the wiki worked at all.
+- Its own first orchestrator draft defaulted to the bigger local model ("the cloud reflex") — caught by its own test suite timing out at 314s against measured sub-1-tok/s local generation speed, then reversed: canon-grounded answers now need no model call at all, and `generate=true` is opt-in.
+
+**Total cost across all 4 deliverables: $62.57 of the $65.06 usage-credit balance — approximately $2.49 remaining.** No further Fable-5/Opus-5 agentic runs should be fired without Taylor topping up credits first.
+
+**Canon status of everything produced:** explicitly `CANON_CANDIDATE` throughout — `canon_ledger` reports 75 pages, 0 holding Seal 5. Four agent sessions converging independently is repeatedly, explicitly stated (by the sessions themselves) not to constitute a Canon Gate. Two items gate everything downstream per the App session's own closing note: **the 9×9-vs-12×12 board ruling, and the 8-class roster binding** — both need Taylor's actual word, not another agent pass.
+
+*In lakesh alakin.*
+
+---
+
+### Addendum — 2026-07-30: SACREDSPACE Business & Nonprofit Reexamination Prompt Placed (Session 048, continued)
+
+**Executed by:** VALEN (OpenCode) at Taylor's request — copy Taylor's written 4,500-word business reexamination prompt from the Claude scratchpad into canonical storage.
+
+**Placed:** `/mnt/c/04_SACRED_CODEX/SACREDSPACE_BUSINESS_REEXAMINATION_PROMPT.md` (23,511 bytes, 3,483 words, 327 lines)
+
+**Author:** Taylor (human), written in a Claude session scratchpad (`/tmp/claude-1000/.../scratchpad/`), handed to VALEN for placement.
+
+**What it is:** A comprehensive go-to-market and operational strategy prompt designed to be run on Claude Desktop or OpenCode (Opus 5 for depth ~$10-15, Haiku 4.5 for a fast summary ~$2-3) when usage credits are topped up. It grounds the analysis in the 4 verified deliverables (World Bible wiki 72 pages, Tarot spec 1,213 lines + tarot_seed.py 1,188 lines, game engine with 23/23 tests, app backend with 126/126 tests — total spend $62.57), then organizes synthesis into 8 sections:
+
+1. **Product Architecture** — actual product lines, core value props, MVP definition, companion offerings, launch blockers
+2. **Market & Audience** — primary/secondary audiences, market size, competitive landscape, distribution channels
+3. **Revenue Models** — unit economics for physical (Heirloom Tarot Deck BOM), digital (app/web), services (guided play, education, community), licensing (schools, spiritual centers, publishers, streaming), hybrid models
+4. **Operational & Legal Structure** — nonprofit vs for-profit vs hybrid, key roles, legal/compliance (tarot + wellness claims, GDPR/CCPA, trademark), manufacturing & supply chain
+5. **Go-to-Market Strategy** — Year 1 MVP launch, channels, pricing/positioning, CAC/LTV targets, partnership strategy, content & storytelling, **public intuitiveness** (30-second pitch)
+6. **Financial Projections** — Year 1 forecast, Year 3 vision ($300K for 3 FTE), burn rate & runway, sustainability
+7. **Key Risks & Mitigation** — market, execution, competitive, legal, financial, founder burnout
+8. **People & Partnerships** — spiritual communities, gaming/creative, publishing/media, retail/distribution, co-creators & advisors
+
+**Execution protocol embedded in the prompt:** read Part I materials before generating; show work with citations; be ambitious but grounded ("$50K Kickstarter → 0.5% of 2M+ tarot enthusiasts → $7.5M by year 3"); treat open questions as research tasks (actual manufacturing costs, 3 named tarot influencers, break-even volumes); output markdown with executive summary + Next Steps + Assumptions & Unknowns; **flag decisions only Taylor can make** (mission: lifestyle vs venture; nonprofit vs for-profit; primary audience) so the output becomes a decision-aid, not a done deal.
+
+**Status:** `CANON_CANDIDATE` — research tool, not decided strategy. Per Taylor's instruction, once reviewed and strategic choices made, it guides actual launch work. **Budget note:** running it requires topped-up usage credits (currently ~$2.49 remaining on the usage-credit balance per Deliverable 4's closing note).
+
+**Also on record (earlier this session):** `SACRED_MARKET_LAUNCH_RECONNAISSANCE_PROMPT.md` (VALEN-authored, Session 048) — the complementary inventory of existing business assets (10+ revenue docs, sacred_pod_forge 406 listings never uploaded, 24 launch-ready social assets never posted, 10 critical gaps). The two prompts are designed to be run together: reconnaissance prompt establishes what exists on disk; reexamination prompt synthesizes the go-to-market strategy from the verified deliverables.
+
+**Canon marker:** Business reexamination prompt placed in Codex. Pending Taylor's credit top-up and execution.
+
+### Addendum — 2026-08-02: Deep-Research Report Triage + Reconciliation (Session 046, continued)
+
+**Executed by:** VALEN (OpenCode, deepseek-v4-flash-free) at Taylor's request.
+
+**Inbound artifact:** "SacredSpace Program Implementation Plan" deep-research report — 8 parallel tracks (T1 Template Constellation, T2 OS Core, T3 Graphic Novel, T4 Nonprofit & Grant, T5 Board Game, T6 Family Integration, T7 Mythos Language, T8 Tech Alchemy) + 7 appendices (folder structure, 12-week Gantt, JSON archetype schemas, grant outline, print-and-play kit, glyph library, Tech Grimoire TOC).
+
+**Provenance flag:** Stated path `D:\SacredSpace_OS\_INBOX\deep-research-report.md` does NOT exist — file absent on all drives searched. Report received as inline-pasted content; treated as inbox artifact, not canon.
+
+**Deliverable 1 — Report captured to vault.** `/mnt/c/01_OBSIDIAN_VAULTS/SacredSpace_Vault/02_CHATS_ARCHIVE/03_NEURAL_FOREST_DEEP-RESEARCH_2026-08-02_PROGRAM_IMPLEMENTATION_PLAN.md` (YAML frontmatter, pillar 03_NEURAL_FOREST routing, TRIAGE status) + raw backup in `/mnt/c/00_SYSTEM_CORE/sessions/session-046-extraction/`.
+
+**Deliverable 2 — Reconciliation matrix (7-phase plan, Sub-Epoch A).** Track verdicts ratified by Taylor 2026-08-02 ("Ratify all — proceed"): **T1/T3/T5/T7 ABSORBED** into existing canon (Writing Engine, Jenga's Journey B12 + Storyline Canon B02, Arcana Grid B04, GR∆M∆ + Sigil Grammar B03 + Tarot B01); **T2 MERGED** into Agent Layer (archetype JSON extends agent .md frontmatter, no parallel system); **T4/T6/T8 ACCEPTED** as new work.
+
+**Deliverable 3 — Backlog entries appended (TIER 6, `/mnt/c/00_SYSTEM_CORE/queue/BACKLOG.md`):**
+- **B21 — Nonprofit & Grant Architecture** (P4 pending Seal 5) → 09_SACRED_MARKET/Bazaar/
+- **B22 — Family Integration** (P6 pending Seal 5) → 08_LEARNING_PATH/Temple/
+- **B23 — Technology Alchemy / Tech Grimoire** (P5 pending Seal 5) → 03_NEURAL_FOREST/Forge/
+- Backlog total: 20 → 23 items.
+
+**Deliverable 4 — Structural collision resolved.** Report's proposed root folders (Sanctum/Temple/Forge/Archive/Garden/Bazaar) resolved as symbolic sub-folders INSIDE pillars, no parallel root hierarchy: created `08_LEARNING_PATH/Temple/`, `03_NEURAL_FOREST/Forge/`, `09_SACRED_MARKET/Bazaar/` (each with alias-documenting README). Existing 00_SYSTEM_CORE / ARCHIVE / 03_IDEAS_BACKLOG map to Sanctum/Archive/Garden with no new dirs. Report naming convention `YYYYMMDD_Pillar_Topic_vN` accepted verbatim.
+
+**Deliverable 5 — Session transcript written** for Claude Code handoff: `/mnt/c/01_OBSIDIAN_VAULTS/SacredSpace_Vault/02_CHATS_ARCHIVE/03_NEURAL_FOREST_OPENCODE_2026-08-02_VALEN_DEEP_RESEARCH_TRIAGE_TRANSCRIPT.md` (full session state, transcript, handoff notes; backup in session-046-extraction/).
+
+**Remaining phases:** Phase 5 cost re-baseline (≈30–40% of report's greenfield estimate is real work — 4 new tracks, not 8) · Phase 6 Council review (Seal 4) · Phase 7 Taylor's Word (Seal 5 formalizing B21/B22/B23 priorities). Build execution hands to DRAVEN/ALIS after ratification — VALEN is design-only.
+
+**Canon marker:** Artifact captured as TRIAGE (not canon); verdicts ratified by Taylor; B21–B23 pending Seal 5 priority formalization; folder aliases created and documented.
+
+*In lakesh alakin.*
+
+**Executed by:** VALEN (OpenCode, deepseek-v4-flash-free) — continued from Session 046/047 canon recovery arc.
+
+**Deliverable 1 — Canon Recovery Engine completed.** The 5-file A–J reconstruction archive stands sealed at `/mnt/c/03_NEURAL_FOREST/CANON_RECOVERY/`:
+- `00_SACRED_UNIVERSE_RECONSTRUCTION_OVERVIEW.md` — master map; canon-level tally **CORE CANON 14 · HIGH 22 · MEDIUM 13 · LOW 2 · UNSTABLE 6+ · Sealed 1**; rulings block appended 2026-07-31
+- `01_CHARACTER_CATALOG_AND_WORLDBIBLE.md` — TIER 1 Triad: Jenga (Remembering Hero, Aether→Becoming) / Benny the Circuit Mage (Lightning, gematria 169→7) / Mamie Balance (Water-Earth 79→7); Triad sigil ◊:✦✦✦ "Three souls, one constellation" (248→5)
+- `02_COSMOLOGY_ARTIFACTS_FACTIONS.md`
+- `03_TIMELINE_GRAPHICNOVEL_SYSTEMS.md` — key unstable timeline nodes; Jenga's 7 recorded gender flips (2025-07→2026-07) RESOLVED
+- `04_LOST_THREADS_AND_RELATIONSHIP_GRAPH.md`
+- Sibling log: `CANON_RECOVERY_LOG.md` (7 sections: model inventory incl. free-model rotation — aurora=nemotron-3-ultra-free, scribe=mimo-v2.5-free, elias=north-mini-code-free, muse=ling-3.0-flash-free, kairos=laguna-s-2.1-free, alis=claude-sonnet-4-20250514, gemini-council=gemini-2.5-pro unchanged; graphify master graph 4,686 nodes/8,032 edges; Sacred Spine v2.0.0 health — 2,297 Pulse events/7 subs, 129 motes, 10,738 vector docs, grama_cipher OK; extraction agent status — 12 dispatches ALL empty, root cause agent config loaded at startup, pivot to direct orchestrator execution; canon rulings §7)
+
+**Deliverable 2 — Taylor's Seal-5 canon rulings (2026-07-31).**
+- **R-01 Jenga gender** (node J-1 CLOSED): *"holographic mirrors of different incarnations of the same soul"* — Jenga is ONE Luminous Seed soul across incarnations; every gendered position true per incarnation; contradiction dissolves; Rite of Remembrance = the thread joining the mirrors.
+- **R-02 Arcana board size** (contested 9×9 vs 12×12 CLOSED): *"maybe different size boards could exist for different aspects of the game"* — both boards canon as aspect variants; 8-class rosters stand as regional/aspect variants under the same principle.
+- Recorded in 4 files (overview, character catalog, timeline, recovery log §7) + memory mote `04-b7f24880-canonruling`.
+- **Remaining UNSTABLE nodes:** volume count 3 vs 4 (both 2026-07-16 canon), Pulse topic count 31 vs 53, backlog file duplication (queue vs sessions), 437-item batch, ghost Narrative_Architecture node, open archetype seats.
+
+**Deliverable 3 — `chat_export_converter.py`** (`/mnt/c/00_SYSTEM_CORE/scripts/`, 378 lines, pure stdlib). Converts chat exports (JSON/markdown/auto) into vault-archived markdown per Direct-to-Obsidian protocol: `{NN}_{PILLAR}_{SOURCE}_{YYYY-MM-DD}_{slug}.md`, YAML frontmatter (date/source/project/pillar/tags/topics + tier: RAW, status: UNPROCESSED), keyword-scored pillar routing (0–9 map), idempotent [skip-existing], flags `--dry-run --overwrite --source --today`. **Defect found & fixed during verification:** `convert_json_file` never appended `build_frontmatter()` output — fixed by composing `content = build_frontmatter(meta) + body`; re-verified with `--overwrite` (full frontmatter present, 4-turn interleave + markdown tables preserved).
+
+**Operational notes:** in-session subagent delegation unreliable (config loaded at startup — rotation needs restart); memory MCP (`npx @modelcontextprotocol/server-memory`) registered in `opencode.jsonc`; ANCHORED_SUMMARY restructured for cross-session context continuity.
+
+**Canon marker:** R-01/R-02 sealed as CORE CANON; converter tooling operational; restart pending for model rotation + memory MCP to take effect.
+
+*In lakesh alakin.*

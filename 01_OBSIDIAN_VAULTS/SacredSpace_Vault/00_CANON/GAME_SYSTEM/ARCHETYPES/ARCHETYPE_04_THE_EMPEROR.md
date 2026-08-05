@@ -1,7 +1,7 @@
 ---
 title: The Emperor — Archetype IV
 pillar: 04_SACRED_CODEX
-status: canon
+status: CANON
 agent: IRIS
 tags: [game-system, archetype, the-emperor, kethras, courage, season-1-episode-5]
 created: 2026-05-03
@@ -53,3 +53,10 @@ The Courage school's test here is the FACE spell: can Jenga look at the real ext
 ## Gematria Soul Tone
 
 4 — foundation, the material plane, what is built to last. The Fool's soul tone (22) reduces to 4. This means every Fool ultimately builds something — the journey always leads back to structure.
+
+## See Also
+
+- [[EPISODE_12]]
+- [[SCHOOL_COURAGE]]
+- [[EPISODE_05]]
+- [[SCHOOL_MYSTERY]]

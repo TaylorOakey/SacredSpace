@@ -8,6 +8,7 @@ episode: 12
 status: GENERATED
 tags: [npc, justice, oracle-archive, season-1]
 created: 2026-05-04
+pillar: 04_SACRED_CODEX
 ---
 
 # Mira
@@ -50,3 +51,11 @@ What Mira names, Jenga must carry into The Convergence. There is no revision. Th
 
 **Cipher verse:**
 > *M◇R∆ does not judge — she names what was always already true, and the naming is the passage.*
+
+## See Also
+
+- [[EPISODE_05]]
+- [[ARCHETYPE_11_JUSTICE]]
+- [[ARCHETYPE_03_THE_EMPRESS]]
+- [[ARCHETYPE_01_THE_MAGICIAN]]
+- [[EPISODE_12]]
