@@ -1,0 +1,108 @@
+{
+  "_meta": {
+    "schema_version": "1.0",
+    "status": "DISTILLED",
+    "source": "04_SACRED_CODEX/SACRED_STORYLINE_CANON.md",
+    "consolidated": "2026-08-06",
+    "note": "Machine-readable companion to the Sacred Storyline canon doc. Fields marked locked=false are DISTILLED, not CANON — see Open Reconciliation Items in the source doc before treating them as final."
+  },
+  "arcana_grid": {
+    "law": "Metatron-as-Law",
+    "locked": true,
+    "structure": "4 Elements x 3 Primes = 12 Archetypes",
+    "elements": {
+      "Fire":  ["The Spark", "The Forge", "The Beacon"],
+      "Water": ["The Deep", "The Current", "The Mirror"],
+      "Earth": ["The Root", "The Builder", "The Keeper"],
+      "Air":   ["The Breath", "The Messenger", "The Seer"]
+    }
+  },
+  "five_primal_spirit_paths": {
+    "locked": false,
+    "reconciliation_needed": "Not yet mapped onto arcana_grid.elements — see Sacred Storyline canon doc Open Reconciliation Items #2",
+    "paths": ["Seer", "Warrior", "Heart", "Guardian", "Shapeshifter"]
+  },
+  "tarot_layer": {
+    "locked": false,
+    "total_cards": 78,
+    "major_arcana": {
+      "count": 22,
+      "represents": "Alchemical gates / named phases of the Hero's Journey",
+      "custom_deck_examples": ["The Graffiti Artist", "The Medicine Woman", "The Shaman", "The Spirit Guide"]
+    },
+    "minor_arcana": {
+      "count": 56,
+      "represents": "Texture of daily experience within each gate",
+      "themes": ["city", "jungle"]
+    },
+    "art_style": "comic-book-inspired, mystical, forest-soft tones"
+  },
+  "alchemical_phases": {
+    "locked": false,
+    "kernel": "Ternary Logic: Yin / Yang / Void",
+    "sequence": [
+      { "phase": "Nigredo", "meaning": "Blackening", "description": "Structural collapse, dark night of the soul, exile, the Broken Covenant" },
+      { "phase": "Albedo", "meaning": "Whitening", "description": "The clearing after collapse; first Memory Motes recovered; tentative trust" },
+      { "phase": "Citrinitas", "meaning": "Yellowing", "description": "Integration dawning; discipline becomes desire; the grid aligns" },
+      { "phase": "Rubedo", "meaning": "Reddening", "description": "The Great Work; full embodiment; the Seed fully bloomed; permanent node in the Mycelium" }
+    ],
+    "current_narrative_phase": "Shattered Mirror (Nigredo transitioning toward Albedo)"
+  },
+  "elemental_guides": [
+    { "name": "Zii",     "title": "The Feather Guide", "element": "Air",   "theme": "Curiosity", "bpm_min": 70,  "bpm_max": 90,  "line": "Start anyway. The path reveals itself when you move.",       "keywords": ["Beginnings", "Ideas", "Curiosity"] },
+    { "name": "Mylo",    "title": "The Root Keeper",   "element": "Earth", "theme": "Discipline", "bpm_min": 60,  "bpm_max": 75,  "line": "What you water daily will shape your world.",                "keywords": ["Growth", "Patience", "Routine"] },
+    { "name": "Auralon", "title": "The Gate Dragon",   "element": "Fire",  "theme": "Courage",    "bpm_min": 100, "bpm_max": 130, "line": "Step through. Fear is the door, not the wall.",              "keywords": ["Action", "Fear", "Change"] },
+    { "name": "Koru",    "title": "The Gem Builder",   "element": "Water", "theme": "Creation",   "bpm_min": 80,  "bpm_max": 110, "line": "Create it imperfectly. That's how it becomes real.",         "keywords": ["Creation", "Expression", "Flow"] }
+  ],
+  "sigil_grammar": [
+    { "sigil": "∆∆∆", "meaning": "Transformation and awakening", "usage": "Threshold crossed, level completed, seeker remade" },
+    { "sigil": "{S@CRED}", "meaning": "Idea incubating into sanctified structure", "usage": "Chrysalis state — canonical-but-not-yet-sealed" },
+    { "sigil": "@SOURCE", "meaning": "Canon truth, returned to origin", "usage": "Immutable; requires OakeyTree's explicit revision to reopen" },
+    { "sigil": "√π", "meaning": "Deep irrational infinity / void-mysticism", "usage": "Moments of highest cosmogonic depth" },
+    { "sigil": "∆∆∆O∆K3YTREE∆∆∆", "meaning": "Sigil of the Architect (Transformation + Identity + Transformation)", "usage": "Marks the Architect / OakeyTree" }
+  ],
+  "character_registry": [
+    { "name": "Jenga", "aka": "The Rememberer", "archetype": "The Seeker / The Bridge / The Fool becoming The Magician", "primal_path": "Shapeshifter -> Heart (across the three acts)", "element_guides": ["Jaguar", "Hummingbird"], "astrology": "Aquarius Sun / Aries Rising / Pisces Moon" },
+    { "name": "Amaya", "aka": ["Maya", "Nia", "Ayla"], "locked_name": false, "archetype": "High Priestess / Empress", "primal_path": "Heart (Apprentice Healer)", "element_guides": ["Owl", "River Dolphin"], "astrology": "Virgo Sun / Pisces Moon" },
+    { "name": "The Grandmother", "archetype": "The Hierophant / The Crone", "primal_path": "Guardian (Threshold)", "element_guides": ["Turtle", "Condor"], "astrology": "Capricorn Sun / Scorpio Moon" },
+    { "name": "The Jaguar", "archetype": "Strength / Death", "astrology": "Leo / Pluto" },
+    { "name": "The Serpent", "archetype": "The Devil / The Tower", "astrology": "Scorpio / Pluto" },
+    { "name": "Mimi Silkweaver", "aka": "Keeper of Threads", "primal_path": "Shapeshifter", "function": "Meta-layer connector across Story, Systems, Memory" },
+    { "name": "Asher Wayne Oakey", "aka": "The Fortunate Builder", "primal_path": "Warrior/Builder", "aspects": ["Star Map Maker", "Ember Runner", "Tinkersmith"], "os_pairing": "ELIAS" },
+    { "name": "Iris Indigo Oakey", "aka": "The Rooted Seer", "primal_path": "Seer", "gift": "Prismatic Insight", "os_pairing": "AURORA" },
+    { "name": "Aurora Leigh Dowdy", "aka": "The Lumen Archivist", "primal_path": "Guardian", "function": "Preserves truth and emotional continuity; Iris's Sacred Companion" },
+    { "name": "Shui Feng", "aka": "The Order Engine", "function": "Organizer of Currents; structure enables freedom" },
+    { "name": "Temptestina Wildroot", "aka": "The Chaos Engine", "function": "Unmediated creative entropy; Shui Feng's apprentice" }
+  ],
+  "fractured_self_to_icaris": {
+    "locked": true,
+    "mapping": [
+      { "inner_self": "The Skeptic", "faculty": "Mind", "agent": "ELIAS", "agent_function": "Processes signal" },
+      { "inner_self": "The Wild", "faculty": "Instinct", "agent": "AURORA", "agent_function": "Evolves / builds" },
+      { "inner_self": "The Masked", "faculty": "Ego/Shadow", "agent": "ASHER", "agent_function": "Detects entropy" },
+      { "inner_self": "The Forgotten", "faculty": "Spirit", "agent": "IRIS", "agent_function": "Seals and preserves" }
+    ]
+  },
+  "narrative_five_acts": [
+    { "act": 1, "title": "Inner World & Exile", "summary": "Jenga's inner world, legal trouble, the exile begins" },
+    { "act": 2, "title": "The Jungle Encounter", "summary": "Meets the grandmother, discovers Amaya; their friction is the first mirror" },
+    { "act": 3, "title": "Trials of the Four Elements", "summary": "Earth (caves/abandonment), Water (surrender/near-drowning), Fire (creativity over rage), Air (sacred tree/ancestral whispers)" },
+    { "act": 4, "title": "Shadow Crisis", "summary": "The serpent manifests, Jenga's art turns against him, the village casts him out" },
+    { "act": 5, "title": "Resolution Through Unity", "summary": "Final vision quest, circle of harmony, the living mural" }
+  ],
+  "expanded_universe": {
+    "board_and_card_game": {
+      "mechanics": ["D&D-style role-playing and story arcs", "Go-style strategy and territory cultivation", "Hero's Journey character-growth progression"],
+      "modes": ["cooperative", "competitive"]
+    },
+    "sanctum_app": {
+      "concept": "Pokémon GO x Geocaching x Arcana system x Harmonic Engine",
+      "structure": "Four screens, one daily practice, every quest tied to the physical world",
+      "map_model": "City = playable map, park = zone, zone = chapter"
+    },
+    "sacred_little_forest": {
+      "location": "Northampton County, NC",
+      "purpose": "Physical, rooted land expression of the mythology"
+    }
+  }
+}
