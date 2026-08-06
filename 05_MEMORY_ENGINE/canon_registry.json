@@ -1,5 +1,18 @@
 {
   "schema_version": "1.0",
   "created": "2026-03-12_02-56-17",
-  "entries": []
+  "entries": [
+    {
+      "name": "The Sacred Storyline (Jenga's Journey / Arcana Grid narrative canon)",
+      "tier": "DISTILLED",
+      "path": "04_SACRED_CODEX/SACRED_STORYLINE_CANON.md",
+      "companion_data": "09_SACRED_MARKET/arcana_grid/game_data.json",
+      "sourced": "Google Docs + April 3 Council session (Claude + Gemini synthesis) + uploaded PDF 'The Sacred Storyline — A Deep Innerstanding'",
+      "consolidated": "2026-08-06",
+      "open_items": [
+        "Amaya's canonical name not locked (Amaya/Maya/Nia/Ayla)",
+        "Five Primal Spirit Paths not reconciled against the canon-locked 12-Archetype Arcana Grid"
+      ]
+    }
+  ]
 }
