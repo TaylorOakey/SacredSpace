@@ -63,6 +63,32 @@
     { "name": "Auralon", "title": "The Gate Dragon",   "element": "Fire",  "theme": "Courage",    "bpm_min": 100, "bpm_max": 130, "line": "Step through. Fear is the door, not the wall.",              "keywords": ["Action", "Fear", "Change"] },
     { "name": "Koru",    "title": "The Gem Builder",   "element": "Water", "theme": "Creation",   "bpm_min": 80,  "bpm_max": 110, "line": "Create it imperfectly. That's how it becomes real.",         "keywords": ["Creation", "Expression", "Flow"] }
   ],
+  "sacred_sigil_stack": {
+    "locked": false,
+    "resolved": "2026-08-18",
+    "resolution_source": "SACREDSPACE-STORY.md v5.0 Update Delta (2026-06-16), Section 33",
+    "note": "Resolves the apparent conflict between the local Grimoire's 9 Dimension Glyphs and the Gemini-archive Sigil Engine's 6 Root Sigils as a missing layer boundary, not a contradiction. The unrelated 12-symbol Hyperglyph keyboard alphabet is a separate, still-unreconciled third system - not part of this stack.",
+    "tiers": [
+      { "tier": 1, "name": "Navigation Layer", "source": "Grimoire", "content": "9 Dimension Glyphs", "question": "WHERE - which domain of the OS" },
+      { "tier": 2, "name": "Operation Layer", "source": "Sigil Engine", "content": "6 Root Sigils", "question": "WHAT - which fundamental action" },
+      { "tier": 3, "name": "Sigil String", "source": "Composed form", "content": "Tier 1 + Tier 2 + modifier, e.g. AURORA.WEAVE = ∆+⊙:✦+╯", "question": "HOW - full invocation" }
+    ],
+    "root_sigils": [
+      { "glyph": "⟁", "name": "Gateway", "function": "Opening/Orientation - navigation, portals, realm-switching" },
+      { "glyph": "○•", "name": "Mote", "function": "Memory Particle - notes, tags, fragments, metadata" },
+      { "glyph": "✧", "name": "Quest", "function": "Path & Progression - tasks, roadmaps, story arcs" },
+      { "glyph": "⚒", "name": "Forge", "function": "Creation & Crafting - templates, generators, tools" },
+      { "glyph": "Ϟ", "name": "Maestro", "function": "Resonance & Rhythm - sound, emotional tuning, learning" },
+      { "glyph": "✦", "name": "Lantern", "function": "Illumination & Insight - reflection, analytics, wisdom" }
+    ],
+    "grammar_rules": [
+      "Shape carries purpose: curved = receptive/intuitive/storing, angular = active/directive/invoking, hybrid = transformation",
+      "Sigils compose left-to-right: Dimension:Operation:Modifier",
+      "Gesture activates: no sigil resolves without a paired gesture (tap, draw, hold, swipe, circle)"
+    ],
+    "execution_pipeline": ["INPUT", "GRAMMAR", "RESOLUTION", "MANIFESTATION", "ECHO"],
+    "critical_gap": "sigil_grammar.py (tokenizer/validator/macro expander) does not exist yet - spells are currently hardcoded functions, not parsed through this grammar"
+  },
   "sigil_grammar": [
     { "sigil": "∆∆∆", "meaning": "Transformation and awakening", "usage": "Threshold crossed, level completed, seeker remade" },
     { "sigil": "{S@CRED}", "meaning": "Idea incubating into sanctified structure", "usage": "Chrysalis state — canonical-but-not-yet-sealed" },
