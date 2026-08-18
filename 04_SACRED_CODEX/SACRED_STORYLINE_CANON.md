@@ -1,7 +1,7 @@
 # ∆∆∆ THE SACRED STORYLINE — CONSOLIDATED CANON ∆∆∆
 ## Jenga's Journey · The Arcana Grid · The Sacred Universe
 
-**Status:** DISTILLED — Consolidated & Gate-Checked · Pending Taylor confirmation on flagged items (see §11)
+**Status:** DISTILLED — Consolidated & Gate-Checked · Pending Taylor confirmation on flagged items (see §11 and §0)
 **Sourced from:** "The Sacred Storyline — A Deep Innerstanding" (uploaded PDF, synthesized by Claude from Google Docs + an April 3 Council session log integrating a Gemini research thread, the SS-OS v2.9 build, and the existing Master Codex), cross-referenced against `04_SACRED_CODEX/SACREDSPACE_COMPLETE_COUNCIL_SYNTHESIS.md` (April 23 session), which had flagged this exact material as an open gap: *"Jenga's Journey... Chapter Zero through The Threshold fully written but not yet canonized in Obsidian... Gap: Full origin arc written but not archived."* This document closes that gap.
 **Consolidated:** 2026-08-06
 **Canonical Path:** `04_SACRED_CODEX/SACRED_STORYLINE_CANON.md`
@@ -22,6 +22,28 @@
 | **Stored** | ✓ Pass (as of this doc) | Previously scattered across Google Docs, chat transcripts, and an uploaded PDF — i.e., spoken, not canon. Now stored at `04_SACRED_CODEX/`. |
 
 **Verdict:** Gate does not fully pass — **stored as DISTILLED**, not locked CANON. The Arcana Grid's own 12-archetype structure remains canon-locked as it already was (unchanged by this document). Everything else here is organized, sourced, and ready for Taylor to gate item-by-item. See §11 for the smallest concrete steps to close each open item.
+
+---
+
+## §0. Corpus-Wide Contradiction Ledger (added 2026-08-18)
+
+A follow-up deep dive scanned the wider corpus this doc was drawn from — the rest of this repo, two more repos (`sacredspace-os`, `sacred-the-grove`), and ~50 Google Drive documents — to check whether anything here gets contradicted or superseded elsewhere. Full report, with sourced quotes for every item: **[The Shattered Mirror — Canon Gate Review](https://claude.ai/code/artifact/74cbd34e-6309-4860-9755-a7085ba17b94)**.
+
+Short version: nothing in §1–§14 below got rewritten as a result — the core arc, the Grid table, the ICARIS quartet mapping, and the Four Elemental Guides were confirmed, not contested. But nine corpus-wide contradictions surfaced that this doc inherits and should not be read as having resolved:
+
+1. **Jenga's gender/age** has been flipped and independently "CANON LOCKED" at least five times across dated documents (male teen exile vs. female 17-year-old city artist).
+2. **A separate document uses a three-act structure** instead of the five acts in §5, with Amaya absent entirely — already logged elsewhere as "2 incompatible Volume I versions."
+3. **The ICARIS Quartet → Quintet question has two competing 5th-member proposals**: Mimi Silkweaver (per `sacredspace-os` repo canon) or KAIROS (per a separate Drive doc). §6 and §8 here describe only the uncontested quartet.
+4. **The Arcana Grid's game-board size has three different "finalized" specs**: 12×12, 9×9, and 7×7/9×9 — none of them the same document.
+5. **Three unrelated Major Arcana card-naming schemes** exist beyond the one in §13.
+6. **The Five Primal Spirit Paths (§11) were never found written out anywhere in the corpus** — only referenced. Two other, fuller character-class systems exist instead (8 Classes; a shipped 4-School React app).
+7. **"Hyperglyphs" names two unrelated systems** — the 12-symbol set implied in §10 is one of two, not confirmed as the referenced one.
+8. **The sigil cipher table in §10 has a second, expanded/conflicting version** in another document.
+9. **LΨR∆'s canon status is claimed both "sealed" and "gate still open"** in sources a month apart.
+
+A real, ~2,974-line Python game engine may already have picked answers for #4 and #6 (it reportedly implements a 12×12 grid and 8 classes) — it lives at `/mnt/c/04_SACRED_CODEX/game/` on Taylor's local machine and wasn't reachable from the session that ran this audit. Worth reading directly next time you're on that machine before ruling on those two.
+
+None of these are resolved by this document. They're Taylor calls.
 
 ---
 
