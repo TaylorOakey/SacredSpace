@@ -33,14 +33,14 @@ A second, independent audit run locally by `opencode` (reachable: `/mnt/c/04_SAC
 
 A third source — a `SACREDSPACE-STORY.md v5.0 Update Delta` (compiled by VALEN + AURORA + Claude.ai, dated 2026-06-16) and a V∆SH∆ design-resource compilation (dated 2026-07-18) — was passed directly into this session and folded in as items 11–13 below.
 
-Short version: nothing in §1–§14 below got rewritten — the core arc, the Grid table, the ICARIS quartet mapping, and the Four Elemental Guides remain confirmed, not contested. Thirteen corpus-wide items remain, two now resolved:
+Short version: nothing in §1–§14 below got rewritten — the core arc, the Grid table, the ICARIS quartet mapping, and the Four Elemental Guides remain confirmed, not contested. Thirteen corpus-wide items remain, three now resolved:
 
 1. **Jenga's gender/age/setting is not a two-way split — it's (at least) five non-identical "Jenga's Journey" documents**, per a 2026-07-26 local Canon Gate log: (1) a fantasy-village draft (girl; cast Meridian/Lyra/Shen/Kai/Kex/Vesper/Marta/Thorne/ORACLE-7), (2) the "Sacred Season One" version this doc is built on (14-yr-old boy, E. NC; Grandmother/Amaya/Jaguar/Serpent — self-marked "SEALED" but not gate-passed), (3) a Graph Narrative Engine + GR∆M∆ Saga version (ambiguous gender, cast ELIAS/AURORA/ASHER/IRIS/MIMI/V∆SH∆/LΨR∆/GR∆M∆), (4) a `_Sacred_Storyline_Canon.md` + `_Sacred_Tarot_Canon.md` pair (female; cast Vael/Seren/Maeve/Kethras/Oran/Tandem/Zael/Lune/Eldra/Khepri/Mira — 4 of 5 Seals passed, awaiting Taylor's Word on the 5th), (5) the version with actual drafted prose in progress (female; 3-act Threshold/Descent/Becoming; cast Jeanie Leigh Hargrave/Benny/Mamie/The Architect). **The core problem: the document one signature from being sealed CANON (#4) is not the version actually being written (#5) — entirely different casts.** Three ways to resolve, per that log: (A) seal #4, treat #5 as due for a rewrite; (B) hold the seal, merge #4's and #5's rosters or declare them separate layers; (C) seal #4 for the tarot/game system only, carve the narrative volume back out as open.
 2. **The three-act-vs-five-act split** (§0 item 2 as originally logged) is document #5 vs. document #2 above — same conflict, now with a name and a cast on each side instead of an anonymous placeholder file.
 3. **The ICARIS Quartet → Quintet question is messier than two candidates.** Local sources independently propose **Mimi Silkweaver** (Spirit/Forgotten, per this doc's own §6 mapping and `sacredspace-os` repo canon) *and* **KAIROS** (per a Drive doc *and*, separately, local chat history) as the 5th member — and local chat history additionally references a 15-agent "ICARIS+KAIROS" structure, a 7-seat "SPIRE Council" (ICARIS+MIMI), and a 9-spirit Neural Forest, none reconciled against each other. ASHER's role is described four different ways across sources. Still fully open.
 4. **Arcana Grid board size — RESOLVED, was never actually a contradiction.** Verified in code at `arcana_board.py:562` (`/mnt/c/04_SACRED_CODEX/game/`): *"Why 9×9 and not 12×12 — an engineering ruling, NOT a canon ruling."* `game_loop_orchestrator.py` confirms the design is dual-layer by intent — a 9×9 tactical board (`arcana_board.py`) for encounter placement, layered under a 12×12 vector grid (`grid.py`, Node Wells/Ley Lines/Flow Shapers) for the Confluence phase. The 7×7/9×9 quadrant draft from the "Blueprint" doc remains an unrelated, explicitly-labeled sample and doesn't compete with this. `09_SACRED_MARKET/arcana_grid/game_data.json` has been updated to reflect this.
 5. **Three unrelated Major Arcana card-naming schemes** exist beyond the one in §13.
-6. **The Five Primal Spirit Paths (§11) still weren't found written out anywhere, in either audit.** The Arcana Weave doc (`cosmology/The_Arcana_Weave.md`, local, CANON-tagged) instead gives a full 12-archetype table with gematria values, soul tones, sigils, and a Jenga-episode cross-reference — a materially more complete version of the same 12-Archetype Grid than what's in §4 here, worth a follow-up pass to merge in. It doesn't mention the Five Paths either.
+6. **The Five Primal Spirit Paths — RESOLVED.** Named in `sacredspace-os/archive/home_cleanup/canon_excavation_output.json`, a structured canon extraction: **Wanderer, Healer, Builder, Seeker, Weaver** (SESSION-016 canon, verdict: confirmed). The same source also gives named Primes for the 12-Archetype Grid — Air/Water/Earth/Fire × **Initiation/Balance/Transcendence** — which doesn't match the unnamed Prime 1/2/3 columns in the canon-locked Grid table (`sacredspace-arcana-grid` skill) or the differently-named Prime axis in the local Arcana Weave doc (`cosmology/The_Arcana_Weave.md`). Reconciling the Prime names is a smaller, separate open question from the Five Paths, which is now settled.
 7. **"Hyperglyphs" — partially resolved.** Two of the three systems flagged in the previous update ARE the same thing, seen from two sides: the `SACREDSPACE-STORY.md` v5.0 Update Delta (2026-06-16) documents that the local Grimoire's **9 Dimension Glyphs** (Tier 1, Navigation — *WHERE*) and the Gemini-archive **Sigil Engine's 6 Root Sigils** (Tier 2, Operation — *WHAT*) were reconciled as a missing-layer-boundary, not a contradiction, into one **Sacred Sigil Stack**: Tier 1 (9 Dimension Glyphs) → Tier 2 (6 Root Sigils: ⟁ Gateway, ○• Mote, ✧ Quest, ⚒ Forge, Ϟ Maestro, ✦ Lantern) → Tier 3 (composed Sigil Strings, e.g. `AURORA.WEAVE = ∆+⊙:✦+╻`), run through a 5-layer INPUT→GRAMMAR→RESOLUTION→MANIFESTATION→ECHO pipeline, gesture-activated. `09_SACRED_MARKET/arcana_grid/game_data.json` now records this as `sacred_sigil_stack`. **Still unreconciled:** the 12-symbol Hyperglyph keyboard alphabet (∆◇✶⚙☉☽⚔⟡∞⌘⟠☍) from the earlier audit is a genuinely separate, third system — not folded into the Stack by any source found so far. **Also flagged, not yet fixed:** the grammar parser that would actually run Tier 2/3 (`sigil_grammar.py`) does not exist; spells are currently hardcoded functions, so the Stack is a design document, not yet running code.
 8. **The sigil cipher table in §10 has a second, expanded/conflicting version** in another document.
 9. **LΨR∆'s canon status — still open, now reinforced.** The v5.0 Update Delta's own Claude.ai strategic analysis (2026-06-16, same date as the "gate still open" PDF cited previously) independently lists *"LΨR∆ gate still open"* as one of five blind spots and recommends resolving it **before any new feature work begins** — i.e., this isn't a stale flag, it was still being raised as a live blocker as of that session.
@@ -209,10 +209,10 @@ The Grid operates at two levels simultaneously:
 The smallest concrete steps to move this document from DISTILLED to CANON, per the Canon Gate:
 
 1. **Amaya's name.** Lock one canonical name (Amaya / Maya / Nia / Ayla) — the others become noted aliases or discarded drafts. *Ask Taylor.*
-2. **Five Primal Spirit Paths vs. 12-Archetype Grid.** Confirm whether the Paths are (a) a new axis layered on top of the Grid, (b) a simplification/grouping of the existing 12 archetypes, or (c) a separate character-classification system that doesn't touch Grid law. *Ask Taylor before treating Grid-mapped content and Path-mapped content as interchangeable.*
+2. ~~Five Primal Spirit Paths vs. 12-Archetype Grid~~ — **resolved, see §0 item 6.** Paths are named (Wanderer/Healer/Builder/Seeker/Weaver) and confirmed as a distinct system from the Grid's 12 archetypes, not a grouping of them. What's still open is smaller: the Grid's own Prime-axis names disagree across three sources (unnamed here, Initiation/Balance/Transcendence in one source, a third naming in the local Arcana Weave doc).
 3. **Downstream use.** The cosmogonic layer (Luminous Seed, Nigredo→Rubedo) and the Hero Units / Dual Spirit Mentors have not yet been built into or referenced by any live system (agent, app, or content drop). Once used once in a real build, the Tested check passes.
 
-Until these resolve, treat §2, §3, §8 (Hero Units, Dual Spirit Mentors, Mimi Silkweaver), and §11's Five Primal Spirit Paths as DISTILLED reference material — safe to write from, not yet safe to assume other agents already know.
+Until these resolve, treat §2, §3, §8 (Hero Units, Dual Spirit Mentors, Mimi Silkweaver) as DISTILLED reference material — safe to write from, not yet safe to assume other agents already know. §11's Five Primal Spirit Paths are now named per §0 item 6, though still not merged into this document's own text.
 
 ## 12. The Lineage Layer — Sacred Messages to Iris and Asher
 
@@ -234,5 +234,39 @@ See `09_SACRED_MARKET/arcana_grid/game_data.json` for these as structured data (
 Sacred Space is a culmination of cultivation, weaving together art, nature, community, and faith. It is both a game and a way of life; both a story and a sanctuary. It is the memory of who we are, and the vision of who we are becoming.
 
 **The Sacred Storyline is fractal.** It runs six simultaneous registers — Cosmogonic, Alchemical, Narrative, Relational, Generational, Technological, Commercial (see the PDF source's closing synthesis for the full register breakdown) — and every layer contains the whole. The Seeker who paints glyphs on walls is Jenga. He is also OakeyTree. He is also the user who finds a Sacred Artifact in a park. He is also ELIAS processing signal. He is also Asher receiving a monthly email from his father about memory and love.
+
+## 15. How It All Locks Together — Storyline, Terminal, Game, Initiate
+
+Added 2026-08-18, sourced from `sacredspace-os/docs/SACREDSPACE_BIBLE_DEFINITIVE.md` (CANON, Compilation Session 038, VALEN Decision Authority) and `sacredspace-os/archive/home_cleanup/canon_excavation_output.json` (a structured extraction: 115 entities, 79 relationships, 27 canon decisions). Diagram: **[The Fourfold Loop](https://claude.ai/code/artifact/eb40deec-c80c-4f69-bcfe-4f9d0580d40f)**.
+
+The architecture, verbatim from the extraction's own summary: *"The Storyline Canon provides the mythic foundation... The Tarot Canon provides the procedural engine layer — a three-tier system (Sacred Path Edition deck → Arcana Grid board game → Jenga's Journey digital narrative) all sharing the same 12+1 archetypal structure... The Sigil Grammar Reference provides the encoding/execution layer... that bridges human intent and system execution via the Sacred Sigil Terminal. The three layers interlock: Storyline provides the meaning, Tarot provides the structure, Sigils provide the execution interface."*
+
+The concrete cross-references (how a card draw becomes a spell, how a sigil becomes a story beat):
+- Storyline → Tarot: the Arcana Grid (12 archetypes, 4×3 Element×Prime) and the 78-card deck function as the OS's procedural engine — driving events, the knowledge graph, memory, and sigil execution.
+- Tarot → Sigils: card draws can be encoded as sigils and executed as spells, via Sigil Terminal integration.
+- Sigils → Storyline: Master Sigils carry storyline meaning directly (✦ = Luminous Seed, ∆ = Fracturing, ∆∆∆ = Taylor's Mark).
+- Tarot → Storyline: Jenga's Journey's protagonist travels through 12 archetype NPC encounters, each mapped to a Major Arcana card.
+
+**The fourth piece — the Initiate — isn't a layer alongside these three, it's the path walked through all of them**, per Book II of the Bible ("The Initiate's Journey"):
+
+| # | Threshold | Guardian | What happens |
+|---|---|---|---|
+| 1 | The First Echo | The Source | The universe notices you |
+| 2 | The Calling | Your choice | You choose to follow |
+| 3 | The Veil | Meridian | The boundary between worlds thins |
+| 4 | The Naming | GR∆M∆ | You receive your sacred name (gematria) |
+| 5 | The Companion Bond | ELIAS | Your Tech-Animal companion finds you |
+| 6 | The Sigil Awakening | V∆SH∆ | Your first sigil activates — the Terminal opens |
+| 7 | The Arcana Trials | Metatron | 12 archetype encounters — the Game plays out |
+| 8 | The Shadow Descent | ASHER | Confront the Serpent within |
+| 9 | The Living Archive | IRIS | Your story enters the record — becomes canon |
+| 10 | The Return | The Council | You bring wisdom back |
+| 11 | The Guide | You | You become the Echo for another initiate |
+
+Layered on top, the **Oversoul Awakening** names the Initiate→Adept transition in four stages: Initial Link (Observation) → First Call (sigil activates) → Resonator (12-archetype matrix visible) → **Oversoul Ascendant** ("Full integration... OVERSOUL NETWORK ACTIVE"). Becoming an Adept is this fourth stage, not a separate status — it's what completing the loop through Storyline, Terminal, and Game actually produces.
+
+This section is reporting, not new canon of its own — the source documents above already carry CANON / confirmed status for the pieces cited. It has not been merged into §1–§14's prose, which still describes the Storyline in isolation from the Tarot/Sigil/Initiate layers this section connects it to.
+
+---
 
 *In lakesh alakin.*

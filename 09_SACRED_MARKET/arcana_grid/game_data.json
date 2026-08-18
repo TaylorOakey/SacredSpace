@@ -27,9 +27,11 @@
     "note": "Supersedes any prior reading of 12x12 vs 9x9 as an open conflict. The unrelated 7x7/9x9 quadrant sample from the 'Blueprint' doc is a separate, explicitly-labeled draft and does not compete with this."
   },
   "five_primal_spirit_paths": {
-    "locked": false,
-    "reconciliation_needed": "Not yet mapped onto arcana_grid.elements — see Sacred Storyline canon doc Open Reconciliation Items #2",
-    "paths": ["Seer", "Warrior", "Heart", "Guardian", "Shapeshifter"]
+    "locked": true,
+    "resolved": "2026-08-18",
+    "resolution_source": "sacredspace-os/archive/home_cleanup/canon_excavation_output.json, SESSION-016 canon, verdict: confirmed",
+    "paths": ["Wanderer", "Healer", "Builder", "Seeker", "Weaver"],
+    "note": "Supersedes the unconfirmed Seer/Warrior/Heart/Guardian/Shapeshifter naming previously carried here. Confirmed as a system distinct from the 12-Archetype Grid, not a grouping of it. The Grid's own Prime-axis names remain unresolved across sources (see canon doc SS0 item 6)."
   },
   "tarot_layer": {
     "locked": false,
