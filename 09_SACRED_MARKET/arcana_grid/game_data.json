@@ -31,7 +31,8 @@
     "resolved": "2026-08-18",
     "resolution_source": "sacredspace-os/archive/home_cleanup/canon_excavation_output.json, SESSION-016 canon, verdict: confirmed",
     "paths": ["Wanderer", "Healer", "Builder", "Seeker", "Weaver"],
-    "note": "Supersedes the unconfirmed Seer/Warrior/Heart/Guardian/Shapeshifter naming previously carried here. Confirmed as a system distinct from the 12-Archetype Grid, not a grouping of it. The Grid's own Prime-axis names remain unresolved across sources (see canon doc SS0 item 6)."
+    "note": "Supersedes the unconfirmed Seer/Warrior/Heart/Guardian/Shapeshifter naming previously carried here. Confirmed as a system distinct from the 12-Archetype Grid, not a grouping of it. The Grid's own Prime-axis names remain unresolved across sources (see canon doc SS0 item 6).",
+    "character_path_remap": "character_registry.primal_path values remapped from the retired set by role equivalence: Shapeshifter -> Wanderer (unrooted) / Weaver (connector), Heart -> Healer, Guardian -> Builder (threshold/keeper) / Weaver (continuity), Warrior -> Builder, Seer -> Seeker. Editor-applied 2026-09-11; flagged for Taylor confirmation (DQ-09)."
   },
   "tarot_layer": {
     "locked": false,
@@ -99,15 +100,15 @@
     { "sigil": "∆∆∆O∆K3YTREE∆∆∆", "meaning": "Sigil of the Architect (Transformation + Identity + Transformation)", "usage": "Marks the Architect / OakeyTree" }
   ],
   "character_registry": [
-    { "name": "Jenga", "aka": "The Rememberer", "archetype": "The Seeker / The Bridge / The Fool becoming The Magician", "primal_path": "Shapeshifter -> Heart (across the three acts)", "element_guides": ["Jaguar", "Hummingbird"], "astrology": "Aquarius Sun / Aries Rising / Pisces Moon" },
-    { "name": "Amaya", "aka": ["Maya", "Nia", "Ayla"], "locked_name": false, "archetype": "High Priestess / Empress", "primal_path": "Heart (Apprentice Healer)", "element_guides": ["Owl", "River Dolphin"], "astrology": "Virgo Sun / Pisces Moon" },
-    { "name": "The Grandmother", "archetype": "The Hierophant / The Crone", "primal_path": "Guardian (Threshold)", "element_guides": ["Turtle", "Condor"], "astrology": "Capricorn Sun / Scorpio Moon" },
+    { "name": "Jenga", "aka": "The Rememberer", "archetype": "The Seeker / The Bridge / The Fool becoming The Magician", "primal_path": "Wanderer -> Healer (across the five acts)", "element_guides": ["Jaguar", "Hummingbird"], "astrology": "Aquarius Sun / Aries Rising / Pisces Moon" },
+    { "name": "Amaya", "aka": ["Maya", "Nia", "Ayla"], "locked_name": false, "archetype": "High Priestess / Empress", "primal_path": "Healer (Apprentice Healer)", "element_guides": ["Owl", "River Dolphin"], "astrology": "Virgo Sun / Pisces Moon" },
+    { "name": "The Grandmother", "archetype": "The Hierophant / The Crone", "primal_path": "Builder (Threshold keeper)", "element_guides": ["Turtle", "Condor"], "astrology": "Capricorn Sun / Scorpio Moon" },
     { "name": "The Jaguar", "archetype": "Strength / Death", "astrology": "Leo / Pluto" },
     { "name": "The Serpent", "archetype": "The Devil / The Tower", "astrology": "Scorpio / Pluto" },
-    { "name": "Mimi Silkweaver", "aka": "Keeper of Threads", "primal_path": "Shapeshifter", "function": "Meta-layer connector across Story, Systems, Memory" },
-    { "name": "Asher Wayne Oakey", "aka": "The Fortunate Builder", "primal_path": "Warrior/Builder", "aspects": ["Star Map Maker", "Ember Runner", "Tinkersmith"], "os_pairing": "ELIAS" },
-    { "name": "Iris Indigo Oakey", "aka": "The Rooted Seer", "primal_path": "Seer", "gift": "Prismatic Insight", "os_pairing": "AURORA" },
-    { "name": "Aurora Leigh Dowdy", "aka": "The Lumen Archivist", "primal_path": "Guardian", "function": "Preserves truth and emotional continuity; Iris's Sacred Companion" },
+    { "name": "Mimi Silkweaver", "aka": "Keeper of Threads", "primal_path": "Weaver", "function": "Meta-layer connector across Story, Systems, Memory" },
+    { "name": "Asher Wayne Oakey", "aka": "The Fortunate Builder", "primal_path": "Builder", "aspects": ["Star Map Maker", "Ember Runner", "Tinkersmith"], "os_pairing": "ELIAS" },
+    { "name": "Iris Indigo Oakey", "aka": "The Rooted Seer", "primal_path": "Seeker", "gift": "Prismatic Insight", "os_pairing": "AURORA" },
+    { "name": "Aurora Leigh Dowdy", "aka": "The Lumen Archivist", "primal_path": "Weaver", "function": "Preserves truth and emotional continuity; Iris's Sacred Companion" },
     { "name": "Shui Feng", "aka": "The Order Engine", "function": "Organizer of Currents; structure enables freedom" },
     { "name": "Temptestina Wildroot", "aka": "The Chaos Engine", "function": "Unmediated creative entropy; Shui Feng's apprentice" }
   ],
