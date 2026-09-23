@@ -738,7 +738,7 @@ echo "  ✓ Open Design launching (PID: $OD_PID)"
 
 # Wait and verify
 sleep 8
-if curl -s http://127.0.0.1:42603/ > /dev/null 2>&1; then
+if curl -sf http://127.0.0.1:42603/ > /dev/null 2>&1; then
   echo ""
   echo "  ✓ Open Design web UI: http://127.0.0.1:42603/"
   echo "  ✓ Daemon:             http://127.0.0.1:38161/"
@@ -794,13 +794,11 @@ fi
 echo "  · Installing OpenCode CLI..."
 
 # Try npm global install first (works on Node 22+)
-npm install -g opencode-ai 2>/dev/null \
-  || npx opencode@latest --version 2>/dev/null \
-  || {
-    # Fallback: direct binary
-    echo "  · Trying binary install..."
-    curl -fsSL https://opencode.ai/install.sh | bash
-  }
+npm install -g opencode-ai 2>/dev/null || {
+  # Fallback: direct binary installer (persists to PATH, unlike npx)
+  echo "  · npm global install failed — trying binary installer..."
+  curl -fsSL https://opencode.ai/install.sh | bash
+}
 
 # Verify
 command -v opencode > /dev/null 2>&1 \
