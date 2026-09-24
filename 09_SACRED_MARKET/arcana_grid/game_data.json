@@ -128,6 +128,31 @@
     { "act": 4, "title": "Shadow Crisis", "summary": "The serpent manifests, Jenga's art turns against him, the village casts him out" },
     { "act": 5, "title": "Resolution Through Unity", "summary": "Final vision quest, circle of harmony, the living mural" }
   ],
+  "arcana_board_reported": {
+    "locked": false,
+    "note": "Reported by pasted external sessions, not verified by this session - none of the cited engine files exist in this repo. See 04_SACRED_CODEX/ARCANA_BOARD_SPEC.md.",
+    "added": "2026-09-24",
+    "loop": ["Draw", "Seed", "Place & Shape", "Qualify", "Echo"],
+    "board_layers": { "tactical": "9x9 (arcana_board.py)", "confluence": "12x12 (grid.py)", "promotion_claim": "reported 'sealed' 2026-09-18 via map_9_to_12(), unconfirmed by Taylor" },
+    "trials_count": 8,
+    "nameless_door": { "trial_index": 6, "qualification": "states of being, not a score - known tone, a healed Scar, no unsealed Fracture, approach without fear", "source": "trials.py:182-228 (reported)" },
+    "victory_paths": ["Awakening", "Harmony", "Dominance"],
+    "sacred_classes_reported": ["Flamebearer", "Echowalker", "Grovekeeper", "Veilsmith", "Harmonic", "Lanternborn", "Tidecaller", "Ashen Witness"],
+    "sacred_classes_note": "8 classes (classes.py:65-180, reported) vs. the locked 12-Archetype Grid (4x3) - cardinality mismatch, unreconciled.",
+    "slot_viii_naming": {
+      "conflict": "three-way, unresolved",
+      "candidates": ["Rootwalker (reported, deck.py:45 / UNFURLING_THE_INFINITE_VISION.md:73)", "unnamed (multiple earlier uploads)", "The Flame (2025-10-31 Blueprint doc, explicitly labeled non-final)"]
+    },
+    "minor_arcana_suits": {
+      "conflict": "three lineages, unresolved",
+      "candidates": ["Leaves/Relics/Crystals/Shards (Jungle/City/Grove/Shadow) - confirmed by direct read", "Roots/Flow/Sparks/Winds (same Blueprint doc, second scheme)", "Roots/Flames/Currents/Winds (reported 'sealed', unverified)"]
+    },
+    "companion_tangle": {
+      "conflict": "four-way, mostly unresolved",
+      "canon_guides": ["Zii", "Mylo", "Auralon", "Koru"],
+      "non_overlapping_reports": ["Eagle/Jaguar/Child/Sage/Trickster (Blueprint archetype-animal cards)", "Stag (reported resolved as Taylor's own Oversoul tech-animal form, different register - not independently verified)", "Rook (reported, unsourced)", "Wolf/Owl/Serpent/Deer (Google Takeout export session)"]
+    }
+  },
   "expanded_universe": {
     "board_and_card_game": {
       "mechanics": ["D&D-style role-playing and story arcs", "Go-style strategy and territory cultivation", "Hero's Journey character-growth progression"],
