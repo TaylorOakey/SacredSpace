@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<!-- @dsCard group="UI Kit — Web" name="Oracle Mat" subtitle="457×610mm neoprene — Frame octagram, Three-Fold, Sacred Spiral, Nine Gates arc, Weather hexagram, Pulse, Echo pile, 8 edge nodes, QR on each position" viewport="916x1220" -->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=916">
+<title>Sacred Arcana — Oracle Mat</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+
+/* ── CODEX-VISUAL-001 TOKENS (CANON, sealed 2026-07-17) ── */
+:root {
+  --void:   #030508;
+  --grove:  #0A0D10;
+  --sur:    #0F1419;
+  --tp:     #EEF6EF;
+  --tpar:   #C8C4BB;
+  --tmut:   #6A6860;
+  --gold:   #C8A44A;
+  --gold-d: rgba(200,164,74,.28);
+  --gold-f: rgba(200,164,74,.07);
+  --gold-b: 1px solid rgba(200,164,74,.28);
+  --bio:    #72E87A;
+  --fire:   #D45A28;
+  --water:  #3878A0;
+  --earth:  #5A8850;
+  --air:    #78A8C8;
+  --aether: #7A5CA5;
+  --bronze: #8B7355;
+  --dim:    1px solid rgba(255,255,255,.07);
+  --fd:     'Cinzel', serif;
+  --fb:     'Cormorant Garamond', serif;
+  --fm:     'JetBrains Mono', monospace;
+}
+
+html, body {
+  width: 916px; background: var(--void);
+  color: var(--tp); font-family: var(--fb);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── MAT ROOT ── */
+.mat {
+  position: relative;
+  width: 916px; height: 1220px;
+  overflow: visible;
+  /* outer border + inner decorative border */
+  background: var(--void);
+  box-shadow: inset 0 0 0 3px rgba(200,164,74,.18),
+              inset 0 0 0 6px rgba(0,0,0,.8),
+              inset 0 0 0 9px rgba(200,164,74,.06);
+}
+
+/* grain texture */
+.mat::before {
+  content:''; position:absolute; inset:0; z-index:0; pointer-events:none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='.03'/%3E%3C/svg%3E");
+}
+
+/* ── SVG OVERLAY ── */
+.mat-svg {
+  position:absolute; top:0; left:0;
+  width:916px; height:1220px;
+  pointer-events:none; z-index:1;
+  overflow:visible;
+}
+
+/* ── CARD SLOT BASE ── */
+.cs {
+  position:absolute; width:64px; height:88px;
+  border: var(--gold-b); border-radius:2px;
+  background: rgba(10,13,16,.85);
+  z-index:5;
+  display:flex; flex-direction:column;
+  align-items:center; justify-content:center;
+  gap:3px;
+}
+.cs-frame {
+  width:90px; height:130px;
+  border: 1px solid rgba(200,164,74,.55);
+  box-shadow: 0 0 0 1px rgba(200,164,74,.08),
+              0 0 20px rgba(200,164,74,.14),
+              inset 0 0 30px rgba(3,5,8,.6);
+}
+
+/* element tints */
+.cs.fire   { border-color:rgba(212,90,40,.40); background:rgba(212,90,40,.04); }
+.cs.water  { border-color:rgba(56,120,160,.40); background:rgba(56,120,160,.04); }
+.cs.earth  { border-color:rgba(90,136,80,.40); background:rgba(90,136,80,.04); }
+.cs.air    { border-color:rgba(120,168,200,.40); background:rgba(120,168,200,.04); }
+.cs.source { border-color:rgba(200,164,74,.40); background:rgba(200,164,74,.04); }
+
+/* slot label */
+.slot-lbl {
+  font-family:var(--fm); font-size:7px; letter-spacing:.12em;
+  color:var(--gold); text-transform:uppercase; text-align:center;
+  line-height:1.2;
+}
+.cs.fire   .slot-lbl { color:var(--fire); }
+.cs.water  .slot-lbl { color:var(--water); }
+.cs.earth  .slot-lbl { color:var(--earth); }
+.cs.air    .slot-lbl { color:var(--air); }
+.cs.source .slot-lbl { color:rgba(200,164,74,.9); }
+
+/* slot sub-glyph */
+.slot-glyph { font-size:14px; color:var(--gold); opacity:.25; }
+.cs.fire   .slot-glyph { color:var(--fire); }
+.cs.water  .slot-glyph { color:var(--water); }
+.cs.earth  .slot-glyph { color:var(--earth); }
+.cs.air    .slot-glyph { color:var(--air); }
+
+/* QR mini */
+.slot-qr {
+  position:absolute; bottom:3px; left:3px;
+  width:12px; height:12px; opacity:.4;
+  display:grid; grid-template-columns:repeat(3,3.5px); gap:.5px;
+}
+.qr-c { background:var(--gold); border-radius:.3px; }
+.qr-e { background:transparent; }
+
+/* Gate number badge */
+.gate-num {
+  position:absolute; top:3px; right:4px;
+  font-family:var(--fm); font-size:6.5px; letter-spacing:.08em;
+  color:rgba(200,164,74,.55); line-height:1;
+}
+
+/* ── EDGE MEDALLIONS ── */
+.medallion {
+  position:absolute; z-index:6;
+  display:flex; flex-direction:column; align-items:center; gap:4px;
+}
+.med-circle {
+  width:60px; height:60px; border-radius:50%;
+  border: var(--gold-b);
+  background: rgba(10,13,16,.9);
+  box-shadow: 0 0 14px rgba(200,164,74,.10), inset 0 0 10px rgba(3,5,8,.5);
+  display:flex; align-items:center; justify-content:center;
+  flex-direction:column; gap:2px;
+}
+.med-icon { font-size:16px; color:var(--gold); opacity:.5; }
+.med-name {
+  font-family:var(--fd); font-size:6px; letter-spacing:.10em;
+  color:var(--tmut); text-align:center; line-height:1.3;
+  text-transform:uppercase; max-width:68px;
+}
+/* side medallions rotate label */
+.medallion.left .med-name,
+.medallion.right .med-name { writing-mode:horizontal-tb; }
+
+/* ── SECTION LABELS ── */
+.sec-tag {
+  position:absolute; z-index:6;
+  font-family:var(--fm); font-size:7.5px; letter-spacing:.18em;
+  color:var(--tmut); text-transform:uppercase;
+}
+
+/* ── WEATHER HEXAGRAM ── */
+.wx-zone {
+  position:absolute; z-index:5;
+  left:730px; top:600px;
+  display:flex; flex-direction:column-reverse; gap:3px;
+  /* "stacked bottom to top" = reverse flex order */
+}
+.wx-label {
+  position:absolute; z-index:6;
+  left:730px; top:584px;
+  font-family:var(--fm); font-size:7px; letter-spacing:.14em;
+  color:var(--tmut); text-transform:uppercase;
+  white-space:nowrap;
+}
+.wx-line {
+  display:flex; align-items:center; gap:0;
+  position:relative;
+}
+.wx-num {
+  font-family:var(--fm); font-size:6.5px;
+  color:var(--tmut); width:10px; margin-right:4px;
+  opacity:.5;
+}
+.wx-yang { height:11px; width:82px; background:rgba(200,164,74,.35); border-radius:1px; }
+.wx-yin {
+  height:11px; display:flex; gap:10px;
+}
+.wx-yin-half { height:11px; width:36px; background:rgba(200,164,74,.35); border-radius:1px; }
+
+/* ── PULSE + ECHO ── */
+.pulse-zone {
+  position:absolute; z-index:5;
+  left:170px; top:966px;
+}
+.pulse-label {
+  font-family:var(--fm); font-size:7px; letter-spacing:.14em;
+  color:var(--tmut); text-transform:uppercase; margin-bottom:5px;
+}
+.pulse-slot {
+  width:120px; height:64px;
+  border: var(--dim);
+  border-radius:2px;
+  background:rgba(10,13,16,.8);
+  display:flex; align-items:center; justify-content:center;
+  gap:6px;
+}
+.pulse-slot-icon { font-size:18px; color:var(--tmut); opacity:.3; }
+.pulse-slot-lbl {
+  font-family:var(--fm); font-size:7px; letter-spacing:.12em;
+  color:var(--tmut); text-transform:uppercase;
+}
+
+.echo-zone {
+  position:absolute; z-index:5;
+  left:540px; top:956px;
+}
+.echo-label {
+  font-family:var(--fm); font-size:7px; letter-spacing:.14em;
+  color:var(--tmut); text-transform:uppercase; margin-bottom:5px;
+}
+.echo-pile { position:relative; width:70px; height:90px; }
+.echo-card {
+  position:absolute;
+  width:56px; height:80px;
+  border-radius:2px;
+  background:rgba(10,13,16,.85);
+}
+.echo-card:nth-child(1) {
+  left:14px; top:10px;
+  border: 1px solid rgba(200,164,74,.12);
+  transform:rotate(4deg);
+}
+.echo-card:nth-child(2) {
+  left:7px; top:5px;
+  border: 1px solid rgba(200,164,74,.18);
+  transform:rotate(2deg);
+}
+.echo-card:nth-child(3) {
+  left:0; top:0;
+  border: var(--gold-b);
+  display:flex; align-items:center; justify-content:center;
+}
+.echo-card-icon { font-size:14px; color:var(--gold); opacity:.25; }
+
+/* ── BOTTOM STRIP ── */
+.mat-bottom {
+  position:absolute; z-index:5;
+  bottom:24px; left:0; right:0;
+  display:flex; align-items:center; justify-content:space-between;
+  padding:0 50px;
+}
+.mat-name-btm {
+  font-family:var(--fd); font-size:11px; letter-spacing:.18em;
+  color:rgba(200,164,74,.35); text-transform:uppercase;
+}
+.mat-qr-btm {
+  display:flex; flex-direction:column; align-items:center; gap:3px;
+}
+.mat-qr-box {
+  width:40px; height:40px;
+  border: var(--gold-b); border-radius:1px;
+  background:var(--grove);
+  display:grid; grid-template-columns:repeat(4,8px); grid-template-rows:repeat(4,8px);
+  gap:1px; padding:3px;
+}
+.mat-qr-cell { background:rgba(200,164,74,.32); border-radius:.3px; }
+.mat-qr-cell.e { background:transparent; }
+.mat-qr-label {
+  font-family:var(--fm); font-size:6px; letter-spacing:.08em;
+  color:var(--tmut); text-align:center;
+}
+.mat-delta-btm {
+  font-family:var(--fd); font-size:20px;
+  color:var(--gold); opacity:.25; line-height:1;
+}
+
+/* ── SPREAD HEADER TAGS ── */
+.spread-header {
+  position:absolute; z-index:5;
+  font-family:var(--fd); font-size:9px; letter-spacing:.14em;
+  color:rgba(200,164,74,.50); text-transform:uppercase;
+}
+
+/* ── RULING NOTE ── */
+.ruling-note {
+  position:absolute; z-index:6;
+  font-family:var(--fm); font-size:7px; letter-spacing:.10em;
+  color:rgba(200,164,74,.30); font-style:italic;
+}
+</style>
+</head>
+<body>
+
+<div class="mat">
+
+<!-- ═══════════════════════════════════════════════════
+     SVG: Background atmosphere, arc lines, spiral, octagram
+     ═══════════════════════════════════════════════════ -->
+<svg class="mat-svg" viewBox="0 0 916 1220" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="glow-frame" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#C8A44A" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#C8A44A" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow-mat" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#C8A44A" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#030508" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow-bio" cx="50%" cy="80%" r="40%">
+      <stop offset="0%" stop-color="#72E87A" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#72E87A" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- background atmosphere -->
+  <rect width="916" height="1220" fill="url(#glow-mat)"/>
+  <ellipse cx="458" cy="690" rx="300" ry="220" fill="url(#glow-frame)"/>
+  <ellipse cx="458" cy="1000" rx="200" ry="100" fill="url(#glow-bio)"/>
+
+  <!-- faint concentric geometry (Law 2: darkness is not empty) -->
+  <g opacity="0.035" stroke="#C8A44A" fill="none" stroke-width="0.8">
+    <circle cx="458" cy="690" r="60"/>
+    <circle cx="458" cy="690" r="120"/>
+    <circle cx="458" cy="690" r="180"/>
+    <circle cx="458" cy="690" r="240"/>
+    <circle cx="458" cy="690" r="300"/>
+    <!-- Metatron's Cube lines -->
+    <line x1="458" y1="390" x2="458" y2="990"/>
+    <line x1="158" y1="690" x2="758" y2="690"/>
+    <line x1="198" y1="430" x2="718" y2="950"/>
+    <line x1="718" y1="430" x2="198" y2="950"/>
+    <line x1="264" y1="370" x2="652" y2="1010"/>
+    <line x1="652" y1="370" x2="264" y2="1010"/>
+  </g>
+
+  <!-- ── NINE GATES ARC line ── -->
+  <!-- arc polyline through card centres -->
+  <polyline
+    points="277,265 307,219 351,181 403,158 458,150 513,158 566,181 609,219 639,265"
+    stroke="rgba(200,164,74,0.18)" stroke-width="1.5" fill="none"
+    stroke-dasharray="4 3"/>
+  <!-- arc connector to mat edge (visual flourish) -->
+  <line x1="277" y1="265" x2="200" y2="340" stroke="rgba(200,164,74,0.08)" stroke-width="1" stroke-dasharray="2 4"/>
+  <line x1="639" y1="265" x2="716" y2="340" stroke="rgba(200,164,74,0.08)" stroke-width="1" stroke-dasharray="2 4"/>
+
+  <!-- ── THREE-FOLD connector ── -->
+  <line x1="250" y1="394" x2="666" y2="394"
+    stroke="rgba(200,164,74,0.14)" stroke-width="1" stroke-dasharray="3 3"/>
+  <!-- tick marks at card centres -->
+  <line x1="250" y1="388" x2="250" y2="400" stroke="rgba(200,164,74,0.25)" stroke-width="1"/>
+  <line x1="458" y1="388" x2="458" y2="400" stroke="rgba(200,164,74,0.25)" stroke-width="1"/>
+  <line x1="666" y1="388" x2="666" y2="400" stroke="rgba(200,164,74,0.25)" stroke-width="1"/>
+
+  <!-- ── SACRED SPIRAL path ── -->
+  <!-- Source(458,500) → Flame(273,640) → Current(643,660) → Root(458,880) → Wind(263,790) -->
+  <path
+    d="M 458,500 C 400,555 270,590 273,640 C 276,690 580,645 643,660 C 710,675 510,820 458,880 C 430,850 290,830 263,790"
+    stroke="rgba(200,164,74,0.20)" stroke-width="1.5" fill="none"
+    stroke-dasharray="5 3"/>
+  <!-- spiral dots at turning points -->
+  <circle cx="458" cy="500" r="3" fill="rgba(200,164,74,0.30)"/>
+  <circle cx="273" cy="640" r="3" fill="rgba(212,90,40,0.35)"/>
+  <circle cx="643" cy="660" r="3" fill="rgba(56,120,160,0.35)"/>
+  <circle cx="458" cy="880" r="3" fill="rgba(90,136,80,0.35)"/>
+  <circle cx="263" cy="790" r="3" fill="rgba(120,168,200,0.35)"/>
+
+  <!-- ── FRAME OCTAGRAM ── -->
+  <!-- two overlapping squares centred at (458, 690) -->
+  <g transform="translate(413,625)" opacity="0.45">
+    <!-- outer decorative ring -->
+    <circle cx="45" cy="65" r="42" stroke="rgba(200,164,74,0.20)" stroke-width="0.5" fill="none"/>
+    <circle cx="45" cy="65" r="32" stroke="rgba(200,164,74,0.15)" stroke-width="0.5" fill="none"/>
+    <!-- square 1 (axis-aligned) -->
+    <rect x="13" y="33" width="64" height="64" fill="none" stroke="#C8A44A" stroke-width="0.9" opacity="0.6"/>
+    <!-- square 2 (rotated 45°) -->
+    <rect x="13" y="33" width="64" height="64" fill="none" stroke="#C8A44A" stroke-width="0.9" opacity="0.4"
+      transform="rotate(45 45 65)"/>
+    <!-- Metatron cross lines -->
+    <line x1="45" y1="10" x2="45" y2="120" stroke="#C8A44A" stroke-width="0.5" opacity="0.25"/>
+    <line x1="10" y1="65" x2="80" y2="65" stroke="#C8A44A" stroke-width="0.5" opacity="0.25"/>
+    <line x1="20" y1="30" x2="70" y2="100" stroke="#C8A44A" stroke-width="0.4" opacity="0.15"/>
+    <line x1="70" y1="30" x2="20" y2="100" stroke="#C8A44A" stroke-width="0.4" opacity="0.15"/>
+    <!-- central circle -->
+    <circle cx="45" cy="65" r="8" fill="rgba(200,164,74,0.08)" stroke="#C8A44A" stroke-width="0.7" opacity="0.6"/>
+  </g>
+
+  <!-- ── SECTION DIVIDER LINES ── -->
+  <line x1="50" y1="318" x2="866" y2="318" stroke="rgba(200,164,74,0.10)" stroke-width="1"/>
+  <line x1="50" y1="504" x2="866" y2="504" stroke="rgba(200,164,74,0.08)" stroke-width="0.5" stroke-dasharray="2 6"/>
+  <line x1="50" y1="940" x2="866" y2="940" stroke="rgba(200,164,74,0.08)" stroke-width="0.5" stroke-dasharray="2 6"/>
+  <line x1="50" y1="1080" x2="866" y2="1080" stroke="rgba(200,164,74,0.08)" stroke-width="0.5"/>
+
+  <!-- ── SPREAD ZONE BRACKETS (subtle) ── -->
+  <!-- Nine Gates bracket -->
+  <path d="M 50,84 L 30,84 L 30,318 L 50,318" fill="none" stroke="rgba(200,164,74,0.10)" stroke-width="0.8"/>
+  <path d="M 866,84 L 886,84 L 886,318 L 866,318" fill="none" stroke="rgba(200,164,74,0.10)" stroke-width="0.8"/>
+
+  <!-- ── WEATHER hex frame ── -->
+  <rect x="728" y="596" width="100" height="148"
+    fill="rgba(200,164,74,0.03)" stroke="rgba(200,164,74,0.15)" stroke-width="0.8" rx="2"/>
+  <!-- stacked label arrow -->
+  <text x="736" y="608" font-family="JetBrains Mono,monospace" font-size="6" fill="rgba(200,164,74,0.4)" letter-spacing="1">WEATHER</text>
+  <text x="736" y="618" font-family="JetBrains Mono,monospace" font-size="6" fill="rgba(200,164,74,0.4)" letter-spacing="1">LINE 1→6↑</text>
+
+  <!-- ── PULSE / ECHO SEPARATOR ── -->
+  <line x1="460" y1="950" x2="460" y2="1060" stroke="rgba(200,164,74,0.08)" stroke-width="0.5"/>
+
+  <!-- ── THREE-FOLD labels (SVG text for precise placement) ── -->
+  <text x="250" y="338" font-family="JetBrains Mono,monospace" font-size="7" fill="rgba(200,164,74,0.45)" text-anchor="middle" letter-spacing="2">PAST</text>
+  <text x="458" y="338" font-family="JetBrains Mono,monospace" font-size="7" fill="rgba(200,164,74,0.45)" text-anchor="middle" letter-spacing="2">PRESENT</text>
+  <text x="666" y="338" font-family="JetBrains Mono,monospace" font-size="7" fill="rgba(200,164,74,0.45)" text-anchor="middle" letter-spacing="2">BECOMING</text>
+
+  <!-- ── SPIRAL LABELS ── -->
+  <text x="458" y="510" font-family="JetBrains Mono,monospace" font-size="6.5" fill="rgba(200,164,74,0.40)" text-anchor="middle" letter-spacing="1">SOURCE</text>
+  <text x="218" y="645" font-family="JetBrains Mono,monospace" font-size="6.5" fill="rgba(212,90,40,0.55)" text-anchor="middle" letter-spacing="1">FLAME</text>
+  <text x="690" y="648" font-family="JetBrains Mono,monospace" font-size="6.5" fill="rgba(56,120,160,0.55)" text-anchor="middle" letter-spacing="1">CURRENT</text>
+  <text x="458" y="840" font-family="JetBrains Mono,monospace" font-size="6.5" fill="rgba(90,136,80,0.55)" text-anchor="middle" letter-spacing="1">ROOT</text>
+  <text x="218" y="788" font-family="JetBrains Mono,monospace" font-size="6.5" fill="rgba(120,168,200,0.55)" text-anchor="middle" letter-spacing="1">WIND</text>
+
+  <!-- ── FRAME label ── -->
+  <text x="458" y="620" font-family="Cinzel,serif" font-size="7" fill="rgba(200,164,74,0.50)" text-anchor="middle" letter-spacing="3">THE FRAME</text>
+  <text x="458" y="632" font-family="JetBrains Mono,monospace" font-size="6" fill="rgba(200,164,74,0.28)" text-anchor="middle" letter-spacing="2">Metatron · Law</text>
+</svg>
+
+
+<!-- ════════════════════════════════
+     HEADER
+     ════════════════════════════════ -->
+<div style="position:absolute;z-index:6;top:24px;left:0;right:0;display:flex;align-items:center;justify-content:space-between;padding:0 54px;">
+  <div style="font-family:var(--fd);font-size:12px;letter-spacing:.22em;color:rgba(200,164,74,.55);text-transform:uppercase;">Oracle Mat</div>
+  <div style="font-family:var(--fm);font-size:7.5px;letter-spacing:.14em;color:var(--tmut);">457 × 610 mm · Neoprene · Sacred Arcana</div>
+  <div style="font-family:var(--fd);font-size:12px;letter-spacing:.22em;color:rgba(200,164,74,.30);">∆</div>
+</div>
+
+
+<!-- ════════════════════════════════
+     EDGE MEDALLIONS
+     ════════════════════════════════ -->
+
+<!-- TL: The Threshold -->
+<div class="medallion" style="left:14px;top:14px;">
+  <div class="med-circle"><span class="med-icon">⟁</span></div>
+  <div class="med-name">The<br>Threshold</div>
+</div>
+
+<!-- TR: The Fool's Bridge -->
+<div class="medallion" style="right:14px;top:14px;align-items:flex-end;">
+  <div class="med-circle"><span class="med-icon">○•</span></div>
+  <div class="med-name" style="text-align:right;">The Fool's<br>Bridge</div>
+</div>
+
+<!-- Left upper: Council Grove -->
+<div class="medallion left" style="left:-30px;top:370px;">
+  <div class="med-circle"><span class="med-icon">⬡</span></div>
+  <div class="med-name">Council<br>Grove</div>
+</div>
+
+<!-- Right upper: Oracle Archive -->
+<div class="medallion right" style="right:-30px;top:370px;align-items:flex-end;">
+  <div class="med-circle"><span class="med-icon">∞</span></div>
+  <div class="med-name" style="text-align:right;">Oracle<br>Archive</div>
+</div>
+
+<!-- Left lower: Sigil Forge -->
+<div class="medallion left" style="left:-30px;top:790px;">
+  <div class="med-circle"><span class="med-icon">⚒</span></div>
+  <div class="med-name">Sigil<br>Forge</div>
+</div>
+
+<!-- Right lower: Void Gate -->
+<div class="medallion right" style="right:-30px;top:790px;align-items:flex-end;">
+  <div class="med-circle"><span class="med-icon">✦</span></div>
+  <div class="med-name" style="text-align:right;">Void<br>Gate</div>
+</div>
+
+<!-- BL: Neural Forest -->
+<div class="medallion" style="left:14px;bottom:14px;">
+  <div class="med-circle"><span class="med-icon">✶</span></div>
+  <div class="med-name">Neural<br>Forest</div>
+</div>
+
+<!-- BR: The Convergence -->
+<div class="medallion" style="right:14px;bottom:14px;align-items:flex-end;">
+  <div class="med-circle"><span class="med-icon">⊕</span></div>
+  <div class="med-name" style="text-align:right;">The<br>Convergence</div>
+</div>
+
+
+<!-- ════════════════════════════════
+     NINE GATES ARC  (positions I–IX)
+     Arc: cx=458 cy=350 R=200 angles 205°→335°
+     ════════════════════════════════ -->
+
+<!-- Section label -->
+<div class="spread-header" style="left:50%;top:68px;transform:translateX(-50%);">
+  Nine Gates Arc
+</div>
+
+<!-- Gate I -->
+<div class="cs" style="left:245px;top:221px;">
+  <span class="gate-num">I</span>
+  <span class="slot-glyph">◇</span>
+  <span class="slot-lbl">Gate I</span>
+  <div class="slot-qr"><span class="qr-c"></span><span class="qr-c"></span><span class="qr-e"></span><span class="qr-c"></span><span class="qr-e"></span><span class="qr-c"></span><span class="qr-c"></span><span class="qr-e"></span><span class="qr-c"></span></div>
+</div>
+<!-- Gate II -->
+<div class="cs" style="left:275px;top:175px;">
+  <span class="gate-num">II</span>
+  <span class="slot-glyph">◇</span>
+  <span class="slot-lbl">Gate II</span>
+  <div class="slot-qr"><span class="qr-c"></span><span class="qr-e"></span><span class="qr-c"></span><span class="qr-e"></span><span class="qr-c"></span><span class="qr-e"></span><span class="qr-c"></span><span class="qr-c"></span><span class="qr-e"></span></div>
+</div>
+<!-- Gate III -->
+<div class="cs" style="left:319px;top:137px;">
+  <span class="gate-num">III</span>
+  <span class="slot-glyph">◇</span>
+  <span class="slot-lbl">Gate III</span>
+  <div class="slot-qr"><span class="qr-c"></span><span class="qr-c"></span><span class="qr-c"></span><span class="qr-e"></span><span class="qr-e"></span><span class="qr-e"></span><span class="qr-c"></span><span class="qr-e"></span><span class="qr-c"></span></div>
+</div>
+<!-- Gate IV -->
+<div class="cs" style="left:371px;top:114px;">
+  <span class="gate-num">IV</span>
+  <span class="slot-glyph">◇</span>
+  <span class="slot-lbl">Gate IV</span>
+  <div class="slot-qr"><span class="qr-c"></span><span class="qr-e"></span><span class="qr-c"></span><span class="qr-c"></span><span class="qr-c"></span><span class="qr-e"></span><span class="qr-c"></span><span class="qr-e"></span><span class="qr-c"></span></div>
+</div>
+<!-- Gate V (centre) -->
+<div class="cs" style="left:426px;top:106px;border-color:rgba(200,164,74,.45);">
+  <span class="gate-num" style="color:rgba(200,164,74,.8);">V</span>
+  <span class="slot-glyph" style="color:var(--gold);opacity:.5;">✧</span>
+  <span class="slot-lbl" style="color:rgba(200,164,74,.8);">Gate V</span>
+  <div class="slot-qr"><span class="qr-c"></span><span class="qr-c"></span><span class="qr-e"></span><span class="qr-e"></span><span class="qr-c"></span><span class="qr-e"></span><span class="qr-c"></span><span class="qr-c"></span><span class="qr-c"></span></div>
+</div>
+<!-- Gate VI -->
+<div class="cs" style="left:482px;top:114px;">
+  <span class="gate-num">VI</span>
+  <span class="slot-glyph">◇</span>
+  <span class="slot-lbl">Gate VI</span>
+  <div class="slot-qr"><span class="qr-c"></span><span class="qr-e"></span><span class="qr-c"></span><span class="qr-e"></span><span class="qr-c"></span><span class="qr-c"></span><span class="qr-c"></span><span class="qr-e"></span><span class="qr-c"></span></div>
+</div>
+<!-- Gate VII -->
+<div class="cs" style="left:534px;top:137px;">
+  <span class="gate-num">VII</span>
+  <span class="slot-glyph">◇</span>
+  <span class="slot-lbl">Gate VII</span>
+  <div class="slot-qr"><span class="qr-e"></span><span class="qr-c"></span><span class="qr-c"></span><span class="qr-c"></span><span class="qr-e"></span><span class="qr-c"></span><span class="qr-c"></span><span class="qr-c"></span><span class="qr-e"></span></div>
+</div>
+<!-- Gate VIII -->
+<div class="cs" style="left:577px;top:175px;">
+  <span class="gate-num">VIII</span>
+  <span class="slot-glyph">◇</span>
+  <span class="slot-lbl">Gate VIII</span>
+  <div class="slot-qr"><span class="qr-c"></span><span class="qr-c"></span><span class="qr-c"></span><span class="qr-e"></span><span class="qr-c"></span><span class="qr-e"></span><span class="qr-e"></span><span class="qr-c"></span><span class="qr-c"></span></div>
+</div>
+<!-- Gate IX -->
+<div class="cs" style="left:607px;top:221px;">
+  <span class="gate-num">IX</span>
+  <span class="slot-glyph">◇</span>
+  <span class="slot-lbl">Gate IX</span>
+  <div class="slot-qr"><span class="qr-c"></span><span class="qr-e"></span><span class="qr-c"></span><span class="qr-c"></span><span class="qr-e"></span><span class="qr-c"></span><span class="qr-c"></span><span class="qr-c"></span><span class="qr-e"></span></div>
+</div>
+
+
+<!-- ════════════════════════════════
+     THREE-FOLD ROW
+     ════════════════════════════════ -->
+
+<div class="spread-header" style="left:50%;top:322px;transform:translateX(-50%);">
+  Three-Fold Row
+</div>
+
+<!-- Past -->
+<div class="cs" style="left:218px;top:350px;">
+  <span class="slot-glyph">◎</span>
+  <span class="slot-lbl">Past</span>
+  <div class="slot-qr"><span class="qr-c"></span><span class="qr-e"></span><span class="qr-c"></span><span class="qr-e"></span><span class="qr-c"></span><span class="qr-e"></span><span class="qr-c"></span><span class="qr-c"></span><span class="qr-e"></span></div>
+</div>
+<!-- Present -->
+<div class="cs" style="left:426px;top:350px;border-color:rgba(200,164,74,.40);">
+  <span class="slot-glyph" style="color:var(--gold);opacity:.5;">◉</span>
+  <span class="slot-lbl">Present</span>
+  <div class="slot-qr"><span class="qr-c"></span><span class="qr-c"></span><span class="qr-e"></span><span class="qr-c"></span><span class="qr-e"></span><span class="qr-c"></span><span class="qr-c"></span><span class="qr-e"></span><span class="qr-c"></span></div>
+</div>
+<!-- Becoming -->
+<div class="cs" style="left:634px;top:350px;">
+  <span class="slot-glyph">○</span>
+  <span class="slot-lbl">Becoming</span>
+  <div class="slot-qr"><span class="qr-e"></span><span class="qr-c"></span><span class="qr-c"></span><span class="qr-c"></span><span class="qr-e"></span><span class="qr-e"></span><span class="qr-c"></span><span class="qr-c"></span><span class="qr-c"></span></div>
+</div>
+
+
+<!-- ════════════════════════════════
+     FRAME SEAT (octagram, centre)
+     SVG octagram drawn in overlay above
+     ════════════════════════════════ -->
+
+<div class="cs cs-frame" style="left:413px;top:625px;">
+  <!-- octagram drawn in SVG overlay -->
+  <span style="font-family:var(--fd);font-size:8px;letter-spacing:.10em;color:rgba(200,164,74,.5);text-transform:uppercase;text-align:center;line-height:1.4;z-index:2;position:relative;">The<br>Frame<br><span style="font-size:6px;letter-spacing:.08em;color:rgba(200,164,74,.3);">Metatron</span></span>
+  <!-- no QR — Frame is always face-up, never drawn -->
+</div>
+
+
+<!-- ════════════════════════════════
+     SACRED SPIRAL (5 positions)
+     Source · Flame · Current · Root · Wind
+     ════════════════════════════════ -->
+
+<div class="spread-header" style="left:50%;top:508px;transform:translateX(-50%);">
+  Sacred Spiral
+</div>
+
+<!-- Source -->
+<div class="cs source" style="left:426px;top:520px;">
+  <span class="slot-glyph">✧</span>
+  <span class="slot-lbl">Source</span>
+  <div class="slot-qr"><span class="qr-c"></span><span class="qr-c"></span><span class="qr-e"></span><span class="qr-e"></span><span class="qr-c"></span><span class="qr-e"></span><span class="qr-c"></span><span class="qr-c"></span><span class="qr-c"></span></div>
+</div>
+<!-- Flame -->
+<div class="cs fire" style="left:241px;top:608px;">
+  <span class="slot-glyph">Ϟ</span>
+  <span class="slot-lbl">Flame</span>
+  <div class="slot-qr"><span class="qr-c"></span><span class="qr-e"></span><span class="qr-c"></span><span class="qr-c"></span><span class="qr-c"></span><span class="qr-e"></span><span class="qr-c"></span><span class="qr-e"></span><span class="qr-c"></span></div>
+</div>
+<!-- Current -->
+<div class="cs water" style="left:611px;top:616px;">
+  <span class="slot-glyph">⌁</span>
+  <span class="slot-lbl">Current</span>
+  <div class="slot-qr"><span class="qr-c"></span><span class="qr-c"></span><span class="qr-c"></span><span class="qr-e"></span><span class="qr-e"></span><span class="qr-e"></span><span class="qr-c"></span><span class="qr-e"></span><span class="qr-c"></span></div>
+</div>
+<!-- Root -->
+<div class="cs earth" style="left:426px;top:836px;">
+  <span class="slot-glyph">⊕</span>
+  <span class="slot-lbl">Root</span>
+  <div class="slot-qr"><span class="qr-c"></span><span class="qr-e"></span><span class="qr-c"></span><span class="qr-e"></span><span class="qr-c"></span><span class="qr-c"></span><span class="qr-c"></span><span class="qr-e"></span><span class="qr-e"></span></div>
+</div>
+<!-- Wind -->
+<div class="cs air" style="left:231px;top:746px;">
+  <span class="slot-glyph">⌀</span>
+  <span class="slot-lbl">Wind</span>
+  <div class="slot-qr"><span class="qr-e"></span><span class="qr-c"></span><span class="qr-c"></span><span class="qr-c"></span><span class="qr-e"></span><span class="qr-c"></span><span class="qr-c"></span><span class="qr-c"></span><span class="qr-e"></span></div>
+</div>
+
+
+<!-- ════════════════════════════════
+     WEATHER HEXAGRAM
+     Six I Ching line tiles, stacked bottom to top
+     (Ruling R5: no compass words)
+     ════════════════════════════════ -->
+
+<div class="wx-zone">
+  <!-- Line 1 (bottom) = Yin (broken) -->
+  <div class="wx-line">
+    <span class="wx-num">①</span>
+    <div class="wx-yin"><div class="wx-yin-half"></div><div class="wx-yin-half"></div></div>
+  </div>
+  <!-- Line 2 = Yang (solid) -->
+  <div class="wx-line">
+    <span class="wx-num">②</span>
+    <div class="wx-yang"></div>
+  </div>
+  <!-- Line 3 = Yang -->
+  <div class="wx-line">
+    <span class="wx-num">③</span>
+    <div class="wx-yang"></div>
+  </div>
+  <!-- Line 4 = Yin -->
+  <div class="wx-line">
+    <span class="wx-num">④</span>
+    <div class="wx-yin"><div class="wx-yin-half"></div><div class="wx-yin-half"></div></div>
+  </div>
+  <!-- Line 5 = Yang -->
+  <div class="wx-line">
+    <span class="wx-num">⑤</span>
+    <div class="wx-yang"></div>
+  </div>
+  <!-- Line 6 (top) = Yang -->
+  <div class="wx-line">
+    <span class="wx-num">⑥</span>
+    <div class="wx-yang"></div>
+  </div>
+</div>
+
+<!-- weather zone hexagram name -->
+<div style="position:absolute;z-index:6;left:742px;top:754px;font-family:var(--fb);font-style:italic;font-size:11px;color:rgba(200,164,74,.40);">Mountain</div>
+<div style="position:absolute;z-index:6;left:742px;top:768px;font-family:var(--fm);font-size:6.5px;letter-spacing:.10em;color:rgba(200,164,74,.25);text-transform:uppercase;">Stillness · ䷳</div>
+
+
+<!-- ════════════════════════════════
+     PULSE SLOT + ECHO PILE
+     ════════════════════════════════ -->
+
+<!-- Pulse Slot -->
+<div class="pulse-zone">
+  <div class="pulse-label">Pulse Slot</div>
+  <div class="pulse-slot">
+    <span class="pulse-slot-icon">▷</span>
+    <span class="pulse-slot-lbl">Pulse<br>one card</span>
+    <!-- QR -->
+    <div style="position:absolute;bottom:4px;left:4px;display:grid;grid-template-columns:repeat(3,3.5px);gap:.5px;opacity:.3;">
+      <span style="background:var(--gold);border-radius:.3px;height:3.5px;"></span>
+      <span style="border-radius:.3px;height:3.5px;"></span>
+      <span style="background:var(--gold);border-radius:.3px;height:3.5px;"></span>
+      <span style="border-radius:.3px;height:3.5px;"></span>
+      <span style="background:var(--gold);border-radius:.3px;height:3.5px;"></span>
+      <span style="border-radius:.3px;height:3.5px;"></span>
+      <span style="background:var(--gold);border-radius:.3px;height:3.5px;"></span>
+      <span style="border-radius:.3px;height:3.5px;"></span>
+      <span style="background:var(--gold);border-radius:.3px;height:3.5px;"></span>
+    </div>
+  </div>
+</div>
+
+<!-- Echo Pile -->
+<div class="echo-zone">
+  <div class="echo-label">Echo Pile</div>
+  <div class="echo-pile">
+    <div class="echo-card"></div>
+    <div class="echo-card"></div>
+    <div class="echo-card"><span class="echo-card-icon">⬡</span></div>
+  </div>
+</div>
+
+<!-- Spread area labels for Pulse/Echo -->
+<div style="position:absolute;z-index:5;left:50%;top:953px;transform:translateX(-50%);font-family:var(--fd);font-size:8px;letter-spacing:.14em;color:rgba(200,164,74,.30);text-transform:uppercase;white-space:nowrap;">
+  Pulse · Echo
+</div>
+
+
+<!-- ════════════════════════════════
+     RULING NOTE
+     ════════════════════════════════ -->
+<div class="ruling-note" style="left:50%;bottom:52px;transform:translateX(-50%);white-space:nowrap;text-align:center;">
+  R5 pending — no compass words printed until ruling settles which compass the set uses
+</div>
+
+
+<!-- ════════════════════════════════
+     BOTTOM STRIP: Name · QR · Delta
+     ════════════════════════════════ -->
+<div class="mat-bottom">
+  <div class="mat-name-btm">S∆CR3D ∆RC∆N∆ · Oracle Mat</div>
+
+  <div class="mat-qr-btm">
+    <div class="mat-qr-box">
+      <span class="mat-qr-cell"></span><span class="mat-qr-cell"></span><span class="mat-qr-cell e"></span><span class="mat-qr-cell"></span>
+      <span class="mat-qr-cell e"></span><span class="mat-qr-cell"></span><span class="mat-qr-cell"></span><span class="mat-qr-cell e"></span>
+      <span class="mat-qr-cell"></span><span class="mat-qr-cell e"></span><span class="mat-qr-cell e"></span><span class="mat-qr-cell"></span>
+      <span class="mat-qr-cell"></span><span class="mat-qr-cell"></span><span class="mat-qr-cell e"></span><span class="mat-qr-cell"></span>
+    </div>
+    <div class="mat-qr-label">/oracle-mat</div>
+  </div>
+
+  <div class="mat-delta-btm">∆</div>
+</div>
+
+</div><!-- /mat -->
+</body>
+</html>
