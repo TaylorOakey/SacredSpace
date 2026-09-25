@@ -1,0 +1,1225 @@
+<!DOCTYPE html>
+<!-- @dsCard group="UI Kit — Web" name="Initiate Mat" subtitle="A4 — Forge + Grove variants: identity block, Resonance dial, Scar/Seed ledger, Oversoul/Forest Totem track, Door lamps, hand slots, QR" viewport="794x1123" -->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=794">
+<title>Sacred Arcana — Initiate Mat</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+/* ── CODEX-VISUAL-001 TOKENS (CANON, sealed 2026-07-17) ── */
+:root {
+  --void:       #030508;
+  --grove:      #0A0D10;
+  --surface:    #0F1419;
+  --surface-hi: #141C24;
+  --text-pure:  #EEF6EF;
+  --text-par:   #C8C4BB;
+  --text-mute:  #6A6860;
+  --gold:       #C8A44A;
+  --gold-d:     rgba(200,164,74,0.30);
+  --gold-f:     rgba(200,164,74,0.08);
+  --gold-b:     1px solid rgba(200,164,74,0.28);
+  --bio:        #72E87A;
+  --bio-d:      rgba(114,232,122,0.18);
+  --bio-b:      1px solid rgba(114,232,122,0.28);
+  --fire:       #D45A28;
+  --water:      #3878A0;
+  --earth:      #5A8850;
+  --air:        #78A8C8;
+  --aether:     #7A5CA5;
+  --bronze:     #8B7355;
+  --fracture:   #D45A28;
+  --border-dim: 1px solid rgba(255,255,255,0.07);
+  --font-d:     'Cinzel', serif;
+  --font-b:     'Cormorant Garamond', serif;
+  --font-m:     'JetBrains Mono', monospace;
+  --radius:     2px;
+}
+
+html, body {
+  width: 794px;
+  min-height: 1123px;
+  background: var(--void);
+  color: var(--text-pure);
+  font-family: var(--font-b);
+  font-size: 13px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* subtle texture */
+body::before {
+  content: '';
+  position: fixed; inset: 0; z-index: 0; pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");
+  opacity: 0.6;
+}
+
+/* ── PAGE ── */
+.mat-page {
+  position: relative; z-index: 1;
+  width: 794px;
+  min-height: 1123px;
+  padding: 30px 32px 28px;
+  display: flex; flex-direction: column; gap: 0;
+}
+
+/* ── SECTION HELPERS ── */
+.sec-label {
+  font-family: var(--font-m);
+  font-size: 7.5px;
+  letter-spacing: 0.18em;
+  color: var(--text-mute);
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+.field-box {
+  background: var(--grove);
+  border: var(--border-dim);
+  border-radius: var(--radius);
+  padding: 5px 8px;
+  min-height: 26px;
+  font-family: var(--font-b);
+  font-size: 13px;
+  color: var(--text-par);
+}
+.hr-gold {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(200,164,74,0.22), transparent);
+  margin: 14px 0;
+}
+.hr-dim {
+  height: 1px;
+  background: rgba(255,255,255,0.05);
+  margin: 12px 0;
+}
+
+/* ── HEADER ── */
+.mat-header {
+  display: flex; align-items: center; justify-content: space-between;
+  margin-bottom: 16px;
+}
+.mat-title-block { display: flex; align-items: baseline; gap: 12px; }
+.mat-title {
+  font-family: var(--font-d);
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: var(--gold);
+  text-transform: uppercase;
+}
+.mat-subtitle {
+  font-family: var(--font-m);
+  font-size: 8px;
+  letter-spacing: 0.14em;
+  color: var(--text-mute);
+  text-transform: uppercase;
+}
+
+/* Variant Toggle */
+.variant-toggle {
+  display: flex; gap: 0;
+  border: var(--gold-b);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.variant-btn {
+  padding: 5px 14px;
+  font-family: var(--font-m);
+  font-size: 8px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  transition: background 200ms, color 200ms;
+  background: transparent;
+  color: var(--text-mute);
+}
+.variant-btn.active {
+  background: var(--gold-f);
+  color: var(--gold);
+}
+.variant-btn + .variant-btn {
+  border-left: var(--gold-b);
+}
+
+/* Grove variant active → bio color */
+body.grove .variant-btn.grove-btn { background: var(--bio-d); color: var(--bio); }
+body.grove .variant-btn.forge-btn { background: transparent; color: var(--text-mute); }
+
+/* ── IDENTITY BLOCK ── */
+.identity-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+.id-field { display: flex; flex-direction: column; gap: 3px; }
+.id-field .field-box { min-height: 30px; }
+
+.identity-row2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 8px;
+  margin-bottom: 0;
+}
+
+/* ── MAIN BODY ROW ── */
+.body-row {
+  display: grid;
+  grid-template-columns: 174px 1fr;
+  gap: 14px;
+  margin-top: 14px;
+}
+
+/* ── RESONANCE DIAL ── */
+.resonance-panel {
+  display: flex; flex-direction: column; align-items: center;
+  gap: 8px;
+}
+
+.dial-wrap { position: relative; width: 148px; height: 148px; }
+
+.dial-svg { width: 148px; height: 148px; }
+
+.dial-center {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  pointer-events: none;
+}
+.dial-value {
+  font-family: var(--font-m);
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--gold);
+  line-height: 1;
+  display: block;
+}
+.dial-max {
+  font-family: var(--font-m);
+  font-size: 8px;
+  letter-spacing: 0.10em;
+  color: var(--text-mute);
+  display: block;
+  margin-top: 2px;
+}
+
+.resonance-label {
+  font-family: var(--font-d);
+  font-size: 9px;
+  letter-spacing: 0.14em;
+  color: var(--gold);
+  text-transform: uppercase;
+  text-align: center;
+}
+.resonance-range {
+  font-family: var(--font-m);
+  font-size: 7.5px;
+  letter-spacing: 0.10em;
+  color: var(--text-mute);
+  text-align: center;
+}
+
+/* ── RIGHT COLUMN ── */
+.right-col { display: flex; flex-direction: column; gap: 10px; }
+
+/* Oversoul / Forest Totem Track */
+.track-block {}
+.track-stages {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 6px;
+  margin-top: 6px;
+}
+.track-stage {
+  background: var(--grove);
+  border: var(--border-dim);
+  border-radius: var(--radius);
+  padding: 7px 6px;
+  text-align: center;
+  position: relative;
+}
+.track-stage.current {
+  background: var(--gold-f);
+  border-color: rgba(200,164,74,0.30);
+}
+.track-stage.cleared {
+  background: rgba(114,232,122,0.05);
+  border-color: rgba(114,232,122,0.18);
+}
+.track-stage-num {
+  font-family: var(--font-m);
+  font-size: 7px;
+  color: var(--text-mute);
+  margin-bottom: 3px;
+}
+.track-stage-name {
+  font-family: var(--font-d);
+  font-size: 8px;
+  letter-spacing: 0.06em;
+  color: var(--text-par);
+  line-height: 1.2;
+}
+.track-stage.current .track-stage-name { color: var(--gold); }
+.track-stage.cleared .track-stage-name { color: var(--bio); }
+/* current indicator dot */
+.track-stage.current::after {
+  content: '●';
+  position: absolute;
+  bottom: 3px; left: 50%;
+  transform: translateX(-50%);
+  font-size: 5px;
+  color: var(--gold);
+}
+.track-stage.cleared::after {
+  content: '●';
+  position: absolute;
+  bottom: 3px; left: 50%;
+  transform: translateX(-50%);
+  font-size: 5px;
+  color: var(--bio);
+  opacity: 0.6;
+}
+/* connector line between stages */
+.track-stages-wrap {
+  position: relative;
+  margin-top: 6px;
+}
+.track-line {
+  position: absolute;
+  top: 50%; left: 12.5%; right: 12.5%;
+  height: 1px;
+  background: rgba(200,164,74,0.12);
+  z-index: 0;
+  pointer-events: none;
+}
+.track-stages { position: relative; z-index: 1; }
+
+/* Tech-Animal Form */
+.techform-stages {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 6px;
+  margin-top: 6px;
+}
+.techform-stage {
+  background: var(--grove);
+  border: var(--border-dim);
+  border-radius: var(--radius);
+  padding: 6px;
+  text-align: center;
+}
+.techform-stage.active {
+  background: rgba(122,92,165,0.10);
+  border-color: rgba(122,92,165,0.30);
+}
+.techform-icon {
+  font-size: 13px;
+  margin-bottom: 2px;
+  color: var(--text-mute);
+  display: block;
+}
+.techform-stage.active .techform-icon { color: var(--aether); }
+.techform-name {
+  font-family: var(--font-m);
+  font-size: 7.5px;
+  letter-spacing: 0.06em;
+  color: var(--text-mute);
+}
+.techform-stage.active .techform-name { color: var(--aether); }
+
+/* Sigil Tier Cap */
+.tier-cap-row {
+  display: flex; align-items: center; gap: 10px;
+}
+.tier-cap-label {
+  font-family: var(--font-m);
+  font-size: 8px;
+  letter-spacing: 0.14em;
+  color: var(--text-mute);
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.tier-cap-boxes {
+  display: flex; gap: 4px;
+}
+.tier-cap-box {
+  width: 22px; height: 22px;
+  border: var(--gold-b);
+  border-radius: var(--radius);
+  background: var(--grove);
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-m);
+  font-size: 9px;
+  color: var(--gold);
+}
+.tier-cap-box.fill { background: var(--gold-f); }
+
+/* ── LOWER ROW: Mote Well | Hand Slots | Door Lamps ── */
+.lower-row {
+  display: grid;
+  grid-template-columns: 174px 1fr 174px;
+  gap: 14px;
+  margin-top: 14px;
+}
+
+/* Mote Well */
+.mote-well {
+  display: flex; flex-direction: column; align-items: center; gap: 6px;
+}
+.mote-circle {
+  width: 88px; height: 88px;
+  border-radius: 50%;
+  border: var(--gold-b);
+  background: var(--grove);
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  box-shadow: inset 0 0 20px rgba(200,164,74,0.04);
+  position: relative;
+}
+.mote-count {
+  font-family: var(--font-m);
+  font-size: 28px;
+  font-weight: 500;
+  color: var(--gold);
+  line-height: 1;
+}
+.mote-unit {
+  font-family: var(--font-m);
+  font-size: 7.5px;
+  letter-spacing: 0.14em;
+  color: var(--text-mute);
+  text-transform: uppercase;
+  margin-top: 2px;
+}
+.mote-ring {
+  position: absolute; inset: 4px;
+  border-radius: 50%;
+  border: 1px solid rgba(200,164,74,0.08);
+}
+.mote-label {
+  font-family: var(--font-d);
+  font-size: 9px;
+  letter-spacing: 0.14em;
+  color: var(--gold);
+  text-transform: uppercase;
+}
+
+/* Grove: Echo artifacts */
+body.grove .mote-label.forge-word { display: none; }
+body.grove .mote-label.grove-word { display: block; }
+body.forge .mote-label.grove-word { display: none; }
+.mote-label.forge-word {}
+.mote-label.grove-word { display: none; }
+
+/* Hand Slots */
+.hand-slots {
+  display: flex; flex-direction: column; gap: 4px;
+}
+.hand-slots-row {
+  display: flex; gap: 8px;
+}
+.hand-slot {
+  flex: 1;
+  height: 66px;
+  border: var(--border-dim);
+  border-radius: var(--radius);
+  background: var(--grove);
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  gap: 3px;
+  position: relative;
+  overflow: hidden;
+}
+.hand-slot::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(160deg, rgba(200,164,74,0.03), transparent 60%);
+}
+.hand-slot-num {
+  font-family: var(--font-m);
+  font-size: 7px;
+  letter-spacing: 0.12em;
+  color: var(--text-mute);
+  text-transform: uppercase;
+}
+.hand-slot-icon { font-size: 18px; color: var(--text-mute); opacity: 0.3; }
+
+/* Door Lamps */
+.door-lamps {
+  display: flex; flex-direction: column; gap: 6px;
+}
+.lamp-row {
+  display: flex; align-items: center; gap: 8px;
+  background: var(--grove);
+  border: var(--border-dim);
+  border-radius: var(--radius);
+  padding: 7px 10px;
+}
+.lamp-indicator {
+  width: 10px; height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.lamp-row.lit .lamp-indicator {
+  background: var(--bio);
+  box-shadow: 0 0 6px var(--bio);
+}
+.lamp-row.unlit .lamp-indicator {
+  background: var(--grove);
+  border: 1px solid rgba(200,164,74,0.25);
+}
+.lamp-text {
+  font-family: var(--font-b);
+  font-size: 11px;
+  color: var(--text-par);
+  line-height: 1.2;
+}
+.lamp-row.lit .lamp-text { color: var(--text-pure); }
+.lamp-freq {
+  font-family: var(--font-m);
+  font-size: 7.5px;
+  letter-spacing: 0.08em;
+  color: var(--text-mute);
+  margin-left: auto;
+  white-space: nowrap;
+}
+.lamp-row.lit .lamp-freq { color: var(--bio); opacity: 0.8; }
+
+/* ── SCAR LEDGER ── */
+.scar-ledger { margin-top: 14px; }
+
+.scar-ledger-header {
+  display: flex; align-items: center; gap: 10px;
+  margin-bottom: 8px;
+}
+.scar-ledger-title {
+  font-family: var(--font-m);
+  font-size: 8px;
+  letter-spacing: 0.18em;
+  color: var(--text-mute);
+  text-transform: uppercase;
+}
+/* forge/grove word swap */
+.scar-ledger-title .forge-word {}
+.scar-ledger-title .grove-word { display: none; }
+body.grove .scar-ledger-title .forge-word { display: none; }
+body.grove .scar-ledger-title .grove-word { display: inline; }
+
+.scar-tiers {
+  display: flex; flex-direction: column; gap: 5px;
+}
+.scar-tier-row {
+  display: flex; align-items: center; gap: 6px;
+}
+.tier-num {
+  font-family: var(--font-m);
+  font-size: 7.5px;
+  letter-spacing: 0.10em;
+  color: var(--text-mute);
+  width: 36px;
+  text-align: right;
+  flex-shrink: 0;
+}
+.tier-boxes {
+  display: flex; gap: 4px;
+}
+.scar-box {
+  width: 46px; height: 22px;
+  border: var(--border-dim);
+  border-radius: var(--radius);
+  background: var(--grove);
+  position: relative;
+}
+.scar-box.filled::after {
+  content: '';
+  position: absolute;
+  inset: 3px;
+  background: rgba(200,164,74,0.22);
+  border-radius: 1px;
+}
+.scar-box.fracture {
+  border-color: rgba(212,90,40,0.40);
+  background: rgba(212,90,40,0.05);
+}
+body.grove .scar-box.fracture { display: none; }
+body.grove .scar-box.fracture-spacer { display: block; }
+.scar-box.fracture-spacer { display: none; border-color: transparent; background: transparent; }
+
+.scar-box.fracture .fracture-mark {
+  position: absolute;
+  inset: 0; display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-m);
+  font-size: 9px;
+  color: rgba(212,90,40,0.50);
+  font-weight: 600;
+}
+
+.tier-glyph {
+  font-family: var(--font-m);
+  font-size: 8px;
+  color: var(--text-mute);
+  opacity: 0.5;
+  width: 16px;
+}
+.tier-label {
+  font-family: var(--font-b);
+  font-style: italic;
+  font-size: 11px;
+  color: var(--text-mute);
+  opacity: 0.7;
+}
+.scar-tier-row.active .tier-num { color: var(--gold); }
+.scar-tier-row.active .tier-label { color: var(--text-par); opacity: 1; }
+.scar-tier-row.cleared .tier-num { color: var(--text-mute); opacity: 0.5; }
+
+/* Fracture legend */
+.fracture-legend {
+  display: flex; align-items: center; gap: 6px;
+  margin-top: 6px;
+  font-family: var(--font-m);
+  font-size: 7.5px;
+  color: var(--text-mute);
+  letter-spacing: 0.10em;
+}
+.fracture-swatch {
+  width: 10px; height: 10px;
+  border: 1px solid rgba(212,90,40,0.40);
+  background: rgba(212,90,40,0.08);
+  border-radius: 1px;
+  flex-shrink: 0;
+}
+body.grove .fracture-legend { display: none; }
+
+/* ── SCAR METER ── */
+.scar-meter { margin-top: 12px; }
+.scar-meter-label {
+  display: flex; align-items: center; justify-content: space-between;
+  margin-bottom: 5px;
+}
+.scar-meter-title {
+  font-family: var(--font-m);
+  font-size: 7.5px;
+  letter-spacing: 0.16em;
+  color: var(--text-mute);
+  text-transform: uppercase;
+}
+.scar-meter-title .forge-word {}
+.scar-meter-title .grove-word { display: none; }
+body.grove .scar-meter-title .forge-word { display: none; }
+body.grove .scar-meter-title .grove-word { display: inline; }
+.scar-meter-value {
+  font-family: var(--font-m);
+  font-size: 9px;
+  color: var(--gold);
+  letter-spacing: 0.08em;
+}
+.meter-track {
+  height: 10px;
+  background: var(--grove);
+  border: var(--border-dim);
+  border-radius: 1px;
+  position: relative;
+  overflow: hidden;
+}
+.meter-fill {
+  position: absolute;
+  top: 0; left: 0;
+  height: 100%;
+  width: 34%;
+  background: linear-gradient(90deg, rgba(200,164,74,0.40), rgba(200,164,74,0.20));
+  border-radius: 1px 0 0 1px;
+}
+.meter-ticks {
+  display: flex; justify-content: space-between;
+  margin-top: 3px;
+  padding: 0 1px;
+}
+.meter-tick {
+  font-family: var(--font-m);
+  font-size: 7px;
+  color: var(--text-mute);
+  letter-spacing: 0;
+}
+
+/* ── BOTTOM ROW: Sigil Tier Cap + QR + Delta ── */
+.bottom-row {
+  display: flex; align-items: flex-end; justify-content: space-between;
+  margin-top: 14px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(200,164,74,0.10);
+}
+
+.sigil-tier-block {
+  display: flex; flex-direction: column; gap: 4px;
+}
+.sigil-tier-label {
+  font-family: var(--font-m);
+  font-size: 7.5px;
+  letter-spacing: 0.16em;
+  color: var(--text-mute);
+  text-transform: uppercase;
+}
+.sigil-boxes { display: flex; gap: 4px; }
+.sigil-box {
+  width: 28px; height: 28px;
+  border: var(--gold-b);
+  border-radius: var(--radius);
+  background: var(--grove);
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-m);
+  font-size: 11px;
+  color: var(--gold);
+  opacity: 0.6;
+}
+.sigil-box.fill { background: var(--gold-f); opacity: 1; }
+
+/* QR placeholder */
+.qr-block { display: flex; flex-direction: column; align-items: center; gap: 4px; }
+.qr-placeholder {
+  width: 52px; height: 52px;
+  border: var(--gold-b);
+  border-radius: var(--radius);
+  background: var(--grove);
+  display: grid;
+  grid-template-columns: repeat(5,9px);
+  grid-template-rows: repeat(5,9px);
+  gap: 1px;
+  padding: 4px;
+  align-content: center;
+  justify-content: center;
+}
+.qr-cell { background: rgba(200,164,74,0.35); border-radius: 0.5px; }
+.qr-cell.e { background: transparent; }
+.qr-label {
+  font-family: var(--font-m);
+  font-size: 6.5px;
+  letter-spacing: 0.10em;
+  color: var(--text-mute);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Delta mark */
+.delta-mark {
+  font-family: var(--font-d);
+  font-size: 22px;
+  color: var(--gold);
+  opacity: 0.4;
+  line-height: 1;
+}
+
+/* ── GROVE VARIANT — label overrides via data-grove/data-forge attrs ── */
+.grove-word { display: none; }
+body.grove .forge-word { display: none; }
+body.grove .grove-word { display: inline; }
+
+/* Bio accent in grove mode */
+body.grove .resonance-label { color: var(--bio); }
+body.grove .dial-value { color: var(--bio); }
+body.grove .meter-fill { background: linear-gradient(90deg, rgba(114,232,122,0.40), rgba(114,232,122,0.20)); }
+body.grove .track-stage.current { background: rgba(114,232,122,0.08); border-color: rgba(114,232,122,0.28); }
+body.grove .track-stage.current .track-stage-name { color: var(--bio); }
+body.grove .track-stage.current::after { color: var(--bio); }
+body.grove .mote-circle { border-color: rgba(114,232,122,0.28); }
+body.grove .mote-count { color: var(--bio); }
+body.grove .mote-label { color: var(--bio); }
+body.grove .sigil-box { border-color: rgba(114,232,122,0.28); color: var(--bio); }
+body.grove .sigil-box.fill { background: var(--bio-d); }
+body.grove .scar-meter-value { color: var(--bio); }
+body.grove .mat-title { color: var(--bio); }
+
+</style>
+</head>
+<body class="forge" id="mat-body">
+
+<div class="mat-page">
+
+  <!-- HEADER -->
+  <div class="mat-header">
+    <div class="mat-title-block">
+      <span class="mat-title">
+        <span class="forge-word">Initiate Mat</span>
+        <span class="grove-word">Grove Mat</span>
+      </span>
+      <span class="mat-subtitle">
+        <span class="forge-word">Forge Variant · A4</span>
+        <span class="grove-word">Grove Variant · A4</span>
+      </span>
+    </div>
+    <div class="variant-toggle">
+      <button class="variant-btn forge-btn active" onclick="setVariant('forge')">Forge</button>
+      <button class="variant-btn grove-btn" onclick="setVariant('grove')">Grove</button>
+    </div>
+  </div>
+
+  <!-- IDENTITY BLOCK ROW 1: Name · Gematria Root · Element -->
+  <div class="identity-block">
+    <div class="id-field">
+      <div class="sec-label">Name</div>
+      <div class="field-box" style="min-height:30px;"></div>
+    </div>
+    <div class="id-field">
+      <div class="sec-label">Gematria Root</div>
+      <div class="field-box" style="min-height:30px; display:flex; align-items:center; gap:8px;">
+        <span style="font-family:var(--font-m);font-size:9px;color:var(--text-mute);letter-spacing:.10em;"></span>
+      </div>
+    </div>
+    <div class="id-field">
+      <div class="sec-label">Element</div>
+      <div class="field-box" style="min-height:30px; display:flex; gap:6px; flex-wrap:wrap; align-items:center;">
+        <span style="font-family:var(--font-m);font-size:8px;color:var(--fire);">Fire</span>
+        <span style="font-family:var(--font-m);font-size:8px;color:var(--text-mute);">·</span>
+        <span style="font-family:var(--font-m);font-size:8px;color:var(--water);">Water</span>
+        <span style="font-family:var(--font-m);font-size:8px;color:var(--text-mute);">·</span>
+        <span style="font-family:var(--font-m);font-size:8px;color:var(--earth);">Earth</span>
+        <span style="font-family:var(--font-m);font-size:8px;color:var(--text-mute);">·</span>
+        <span style="font-family:var(--font-m);font-size:8px;color:var(--air);">Air</span>
+        <span style="font-family:var(--font-m);font-size:8px;color:var(--text-mute);">·</span>
+        <span style="font-family:var(--font-m);font-size:8px;color:var(--aether);">Aether</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- IDENTITY BLOCK ROW 2: Gift · Shadow · Class / Origin / Companion -->
+  <div class="identity-row2">
+    <div class="id-field">
+      <div class="sec-label">Gift</div>
+      <div class="field-box" style="min-height:28px;"></div>
+    </div>
+    <div class="id-field">
+      <div class="sec-label">Shadow</div>
+      <div class="field-box" style="min-height:28px;"></div>
+    </div>
+    <div class="id-field">
+      <div class="sec-label" style="display:flex;gap:6px;">
+        <span>Class</span>
+        <span style="color:rgba(255,255,255,0.2);">·</span>
+        <span>Origin</span>
+        <span style="color:rgba(255,255,255,0.2);">·</span>
+        <span>Companion</span>
+      </div>
+      <div class="field-box" style="min-height:28px;"></div>
+    </div>
+  </div>
+
+  <div class="hr-gold"></div>
+
+  <!-- MAIN BODY ROW: Resonance Dial + Right Col -->
+  <div class="body-row">
+
+    <!-- LEFT: Resonance Dial -->
+    <div class="resonance-panel">
+      <div class="sec-label" style="align-self:flex-start;">Resonance</div>
+      <div class="dial-wrap">
+        <svg class="dial-svg" viewBox="0 0 148 148" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- outer tick ring -->
+          <circle cx="74" cy="74" r="66" stroke="rgba(200,164,74,0.08)" stroke-width="1"/>
+          <circle cx="74" cy="74" r="58" stroke="rgba(200,164,74,0.05)" stroke-width="0.5" stroke-dasharray="2 4"/>
+
+          <!-- tick marks at 0,25,50,75,100,125,150 (mapped to 220° arc) -->
+          <!-- Arc: starts at 200° (bottom-left), sweeps 320° clockwise to... actually let's use 230° start, 280° sweep -->
+          <!-- 150 steps, 0=start, 150=end. start angle = -220deg from top = 140deg, sweep = 260deg -->
+
+          <!-- background arc track -->
+          <path d="M 74 74 m -54 0 a 54 54 0 1 1 -0.001 0" stroke="rgba(200,164,74,0.10)" stroke-width="6" stroke-linecap="round" fill="none"
+            transform="rotate(130 74 74)"
+            stroke-dasharray="238 400"/>
+
+          <!-- value arc (73/150 = 48.7% of 238 = ~116) -->
+          <path d="M 74 74 m -54 0 a 54 54 0 1 1 -0.001 0" stroke="#C8A44A" stroke-width="6" stroke-linecap="round" fill="none"
+            transform="rotate(130 74 74)"
+            stroke-dasharray="116 400"
+            id="dial-arc"/>
+
+          <!-- tick labels -->
+          <text x="16" y="108" fill="rgba(200,164,74,0.45)" font-family="JetBrains Mono,monospace" font-size="7" text-anchor="middle">0</text>
+          <text x="20" y="48" fill="rgba(200,164,74,0.45)" font-family="JetBrains Mono,monospace" font-size="7" text-anchor="middle">50</text>
+          <text x="74" y="14" fill="rgba(200,164,74,0.45)" font-family="JetBrains Mono,monospace" font-size="7" text-anchor="middle">75</text>
+          <text x="128" y="48" fill="rgba(200,164,74,0.45)" font-family="JetBrains Mono,monospace" font-size="7" text-anchor="middle">100</text>
+          <text x="132" y="108" fill="rgba(200,164,74,0.45)" font-family="JetBrains Mono,monospace" font-size="7" text-anchor="middle">150</text>
+
+          <!-- inner ring decoration -->
+          <circle cx="74" cy="74" r="40" stroke="rgba(200,164,74,0.07)" stroke-width="0.5"/>
+          <circle cx="74" cy="74" r="30" stroke="rgba(200,164,74,0.05)" stroke-width="0.5"/>
+        </svg>
+        <div class="dial-center">
+          <span class="dial-value" id="dial-val">73</span>
+          <span class="dial-max">/ 150</span>
+        </div>
+      </div>
+      <div class="resonance-label">
+        <span class="forge-word">Resonance</span>
+        <span class="grove-word">Resonance</span>
+      </div>
+      <div class="resonance-range">0 ──────── 150</div>
+    </div>
+
+    <!-- RIGHT: Oversoul + Tech-Animal + Tier Cap -->
+    <div class="right-col">
+
+      <!-- Oversoul / Forest Totems Track -->
+      <div class="track-block">
+        <div class="sec-label">
+          <span class="forge-word">Oversoul Track</span>
+          <span class="grove-word">Forest Totem Track</span>
+        </div>
+        <div class="track-stages-wrap">
+          <div class="track-line"></div>
+          <div class="track-stages">
+            <div class="track-stage cleared">
+              <div class="track-stage-num">I</div>
+              <div class="track-stage-name forge-word">Observation</div>
+              <div class="track-stage-name grove-word">Seedling</div>
+            </div>
+            <div class="track-stage cleared">
+              <div class="track-stage-num">II</div>
+              <div class="track-stage-name forge-word">Activation</div>
+              <div class="track-stage-name grove-word">Sprout</div>
+            </div>
+            <div class="track-stage current">
+              <div class="track-stage-num">III</div>
+              <div class="track-stage-name forge-word">Resonance</div>
+              <div class="track-stage-name grove-word">Grove-Bond</div>
+            </div>
+            <div class="track-stage">
+              <div class="track-stage-num">IV</div>
+              <div class="track-stage-name forge-word">Ascendant</div>
+              <div class="track-stage-name grove-word">Canopy</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tech-Animal Form -->
+      <div class="track-block">
+        <div class="sec-label">Tech-Animal Form</div>
+        <div class="techform-stages">
+          <div class="techform-stage">
+            <span class="techform-icon">◦</span>
+            <div class="techform-name">Spark</div>
+          </div>
+          <div class="techform-stage active">
+            <span class="techform-icon">◈</span>
+            <div class="techform-name">Form</div>
+          </div>
+          <div class="techform-stage">
+            <span class="techform-icon">⊛</span>
+            <div class="techform-name">Operator</div>
+          </div>
+          <div class="techform-stage">
+            <span class="techform-icon">✦</span>
+            <div class="techform-name">Sovereign</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sigil Tier Cap -->
+      <div class="tier-cap-row">
+        <span class="tier-cap-label">Sigil Tier Cap</span>
+        <div class="sigil-boxes">
+          <div class="sigil-box fill">I</div>
+          <div class="sigil-box fill">II</div>
+          <div class="sigil-box">III</div>
+          <div class="sigil-box">IV</div>
+          <div class="sigil-box">V</div>
+          <div class="sigil-box">VI</div>
+          <div class="sigil-box">VII</div>
+          <div class="sigil-box">VIII</div>
+          <div class="sigil-box">IX</div>
+        </div>
+      </div>
+
+    </div><!-- /right-col -->
+  </div><!-- /body-row -->
+
+  <div class="hr-dim"></div>
+
+  <!-- LOWER ROW: Mote Well | Hand Slots | Door Lamps -->
+  <div class="lower-row">
+
+    <!-- Mote Well -->
+    <div class="mote-well">
+      <div class="sec-label" style="align-self:flex-start;">
+        <span class="forge-word">Mote Well</span>
+        <span class="grove-word">Echo Artifacts</span>
+      </div>
+      <div class="mote-circle">
+        <div class="mote-ring"></div>
+        <span class="mote-count">4</span>
+        <span class="mote-unit forge-word">motes</span>
+        <span class="mote-unit grove-word">echoes</span>
+      </div>
+      <span class="mote-label forge-word">Motes</span>
+      <span class="mote-label grove-word">Echo Artifacts</span>
+    </div>
+
+    <!-- Hand Slots -->
+    <div class="hand-slots">
+      <div class="sec-label">Hand (3 Slots)</div>
+      <div class="hand-slots-row">
+        <div class="hand-slot">
+          <span class="hand-slot-num">Slot I</span>
+          <span class="hand-slot-icon">▭</span>
+        </div>
+        <div class="hand-slot">
+          <span class="hand-slot-num">Slot II</span>
+          <span class="hand-slot-icon">▭</span>
+        </div>
+        <div class="hand-slot">
+          <span class="hand-slot-num">Slot III</span>
+          <span class="hand-slot-icon">▭</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Door Lamps -->
+    <div class="door-lamps">
+      <div class="sec-label">Door Lamps</div>
+      <div class="lamp-row lit">
+        <div class="lamp-indicator"></div>
+        <div class="lamp-text">174 Hz Known</div>
+        <div class="lamp-freq">174 Hz</div>
+      </div>
+      <div class="lamp-row unlit">
+        <div class="lamp-indicator"></div>
+        <div class="lamp-text forge-word">Healed Scar</div>
+        <div class="lamp-text grove-word" style="display:none;">Healed Seed</div>
+      </div>
+      <div class="lamp-row lit forge-lamp">
+        <div class="lamp-indicator"></div>
+        <div class="lamp-text forge-word">No Fracture</div>
+        <div class="lamp-text grove-word" style="display:none;">Clear</div>
+      </div>
+      <div class="lamp-row unlit">
+        <div class="lamp-indicator"></div>
+        <div class="lamp-text">No Fear</div>
+      </div>
+    </div>
+
+  </div><!-- /lower-row -->
+
+  <div class="hr-gold"></div>
+
+  <!-- SCAR LEDGER -->
+  <div class="scar-ledger">
+    <div class="scar-ledger-header">
+      <div class="scar-ledger-title">
+        <span class="forge-word">Scar Ledger</span>
+        <span class="grove-word">Seed Ledger</span>
+      </div>
+      <div style="margin-left:auto;font-family:var(--font-m);font-size:7.5px;letter-spacing:.12em;color:var(--text-mute);">
+        Tiers 1–9 · Five boxes each
+        <span class="forge-word"> · 5th = Fracture</span>
+      </div>
+    </div>
+
+    <div class="scar-tiers">
+      <!-- Tier 1 (cleared) -->
+      <div class="scar-tier-row cleared">
+        <div class="tier-num">Tier 1</div>
+        <div class="tier-boxes">
+          <div class="scar-box filled"></div>
+          <div class="scar-box filled"></div>
+          <div class="scar-box filled"></div>
+          <div class="scar-box filled"></div>
+          <div class="scar-box fracture"><div class="fracture-mark">✕</div></div>
+          <div class="scar-box fracture-spacer"></div>
+        </div>
+        <div class="tier-glyph">✓</div>
+        <div class="tier-label forge-word">Root Scar</div>
+        <div class="tier-label grove-word">Root Seed</div>
+      </div>
+      <!-- Tier 2 (cleared) -->
+      <div class="scar-tier-row cleared">
+        <div class="tier-num">Tier 2</div>
+        <div class="tier-boxes">
+          <div class="scar-box filled"></div>
+          <div class="scar-box filled"></div>
+          <div class="scar-box filled"></div>
+          <div class="scar-box filled"></div>
+          <div class="scar-box fracture"></div>
+          <div class="scar-box fracture-spacer"></div>
+        </div>
+        <div class="tier-glyph">✓</div>
+        <div class="tier-label forge-word">Flame Scar</div>
+        <div class="tier-label grove-word">Flame Seed</div>
+      </div>
+      <!-- Tier 3 (active) -->
+      <div class="scar-tier-row active">
+        <div class="tier-num">Tier 3</div>
+        <div class="tier-boxes">
+          <div class="scar-box filled"></div>
+          <div class="scar-box filled"></div>
+          <div class="scar-box"></div>
+          <div class="scar-box"></div>
+          <div class="scar-box fracture"></div>
+          <div class="scar-box fracture-spacer"></div>
+        </div>
+        <div class="tier-glyph">◈</div>
+        <div class="tier-label forge-word">Current Scar</div>
+        <div class="tier-label grove-word">Current Seed</div>
+      </div>
+      <!-- Tiers 4–9 (empty) -->
+      <div class="scar-tier-row">
+        <div class="tier-num">Tier 4</div>
+        <div class="tier-boxes">
+          <div class="scar-box"></div><div class="scar-box"></div><div class="scar-box"></div><div class="scar-box"></div>
+          <div class="scar-box fracture"></div>
+          <div class="scar-box fracture-spacer"></div>
+        </div>
+        <div class="tier-glyph"></div>
+        <div class="tier-label forge-word">Wind Scar</div>
+        <div class="tier-label grove-word">Wind Seed</div>
+      </div>
+      <div class="scar-tier-row">
+        <div class="tier-num">Tier 5</div>
+        <div class="tier-boxes">
+          <div class="scar-box"></div><div class="scar-box"></div><div class="scar-box"></div><div class="scar-box"></div>
+          <div class="scar-box fracture"></div>
+          <div class="scar-box fracture-spacer"></div>
+        </div>
+        <div class="tier-glyph"></div>
+        <div class="tier-label forge-word">Aether Scar</div>
+        <div class="tier-label grove-word">Aether Seed</div>
+      </div>
+      <div class="scar-tier-row">
+        <div class="tier-num">Tier 6</div>
+        <div class="tier-boxes">
+          <div class="scar-box"></div><div class="scar-box"></div><div class="scar-box"></div><div class="scar-box"></div>
+          <div class="scar-box fracture"></div>
+          <div class="scar-box fracture-spacer"></div>
+        </div>
+        <div class="tier-glyph"></div>
+        <div class="tier-label forge-word">Deep Scar</div>
+        <div class="tier-label grove-word">Deep Seed</div>
+      </div>
+      <div class="scar-tier-row">
+        <div class="tier-num">Tier 7</div>
+        <div class="tier-boxes">
+          <div class="scar-box"></div><div class="scar-box"></div><div class="scar-box"></div><div class="scar-box"></div>
+          <div class="scar-box fracture"></div>
+          <div class="scar-box fracture-spacer"></div>
+        </div>
+        <div class="tier-glyph"></div>
+        <div class="tier-label forge-word">Void Scar</div>
+        <div class="tier-label grove-word">Void Seed</div>
+      </div>
+      <div class="scar-tier-row">
+        <div class="tier-num">Tier 8</div>
+        <div class="tier-boxes">
+          <div class="scar-box"></div><div class="scar-box"></div><div class="scar-box"></div><div class="scar-box"></div>
+          <div class="scar-box fracture"></div>
+          <div class="scar-box fracture-spacer"></div>
+        </div>
+        <div class="tier-glyph"></div>
+        <div class="tier-label forge-word">Shadow Scar</div>
+        <div class="tier-label grove-word">Shadow Seed</div>
+      </div>
+      <div class="scar-tier-row">
+        <div class="tier-num">Tier 9</div>
+        <div class="tier-boxes">
+          <div class="scar-box"></div><div class="scar-box"></div><div class="scar-box"></div><div class="scar-box"></div>
+          <div class="scar-box fracture"></div>
+          <div class="scar-box fracture-spacer"></div>
+        </div>
+        <div class="tier-glyph"></div>
+        <div class="tier-label forge-word">Soul Scar</div>
+        <div class="tier-label grove-word">Soul Seed</div>
+      </div>
+    </div>
+
+    <!-- Fracture legend -->
+    <div class="fracture-legend">
+      <div class="fracture-swatch"></div>
+      <span>5th box = Fracture · triggers if marked when 4 prior boxes are filled</span>
+    </div>
+  </div>
+
+  <!-- SCAR METER -->
+  <div class="scar-meter">
+    <div class="scar-meter-label">
+      <div class="scar-meter-title">
+        <span class="forge-word">Scar Meter</span>
+        <span class="grove-word">Seed Meter</span>
+      </div>
+      <div class="scar-meter-value">34 / 100</div>
+    </div>
+    <div class="meter-track">
+      <div class="meter-fill"></div>
+    </div>
+    <div class="meter-ticks">
+      <span class="meter-tick">0</span>
+      <span class="meter-tick">25</span>
+      <span class="meter-tick">50</span>
+      <span class="meter-tick">75</span>
+      <span class="meter-tick">100</span>
+    </div>
+  </div>
+
+  <!-- BOTTOM ROW -->
+  <div class="bottom-row">
+
+    <!-- Sigil Tier Cap (compact) -->
+    <div class="sigil-tier-block">
+      <div class="sigil-tier-label">Sigil Tier Cap</div>
+      <div class="sigil-boxes">
+        <div class="sigil-box fill">I</div>
+        <div class="sigil-box fill">II</div>
+        <div class="sigil-box" style="opacity:.3;">III</div>
+        <div class="sigil-box" style="opacity:.2;">IV</div>
+        <div class="sigil-box" style="opacity:.15;">V</div>
+      </div>
+    </div>
+
+    <!-- QR placeholder -->
+    <div class="qr-block">
+      <div class="qr-placeholder">
+        <div class="qr-cell"></div><div class="qr-cell"></div><div class="qr-cell e"></div><div class="qr-cell"></div><div class="qr-cell"></div>
+        <div class="qr-cell"></div><div class="qr-cell e"></div><div class="qr-cell"></div><div class="qr-cell e"></div><div class="qr-cell"></div>
+        <div class="qr-cell e"></div><div class="qr-cell"></div><div class="qr-cell e"></div><div class="qr-cell"></div><div class="qr-cell e"></div>
+        <div class="qr-cell"></div><div class="qr-cell e"></div><div class="qr-cell"></div><div class="qr-cell e"></div><div class="qr-cell"></div>
+        <div class="qr-cell"></div><div class="qr-cell"></div><div class="qr-cell e"></div><div class="qr-cell"></div><div class="qr-cell"></div>
+      </div>
+      <div class="qr-label">/initiate/mat/{id}</div>
+    </div>
+
+    <!-- Delta mark -->
+    <div class="delta-mark">∆</div>
+
+  </div><!-- /bottom-row -->
+
+</div><!-- /mat-page -->
+
+<script>
+function setVariant(v) {
+  const body = document.getElementById('mat-body');
+  body.className = v;
+  document.querySelectorAll('.variant-btn').forEach(b => {
+    b.classList.toggle('active', b.classList.contains(v + '-btn'));
+  });
+  /* Grove: hide Fracture boxes, show spacers */
+  document.querySelectorAll('.lamp-row.forge-lamp').forEach(el => {
+    el.style.display = v === 'grove' ? 'none' : '';
+  });
+  /* Door lamp text swaps */
+  document.querySelectorAll('.lamp-text.forge-word').forEach(el => {
+    el.style.display = v === 'grove' ? 'none' : '';
+  });
+  document.querySelectorAll('.lamp-text.grove-word').forEach(el => {
+    el.style.display = v === 'grove' ? '' : 'none';
+  });
+}
+</script>
+
+</body>
+</html>
