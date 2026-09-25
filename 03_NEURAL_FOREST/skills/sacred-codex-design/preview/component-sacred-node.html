@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!-- @dsCard group="Components" name="Sacred Node" subtitle="Concentric ring badge — element, Metatron, and size variants" viewport="700x200" -->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=EB+Garamond:wght@400&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #F4ECD8; padding: 28px 32px; font-family: 'EB Garamond', serif; }
+  .label { font-family: 'Cinzel', serif; font-size: 9px; letter-spacing: 0.22em; text-transform: uppercase; color: #C9A14A; margin-bottom: 24px; }
+
+  .nodes-row { display: flex; gap: 28px; align-items: flex-end; flex-wrap: wrap; }
+
+  .node-group { display: flex; flex-direction: column; align-items: center; gap: 8px; }
+  .node-label { font-family: 'Cinzel', serif; font-size: 8.5px; letter-spacing: 0.16em; text-transform: uppercase; color: #7A6E65; text-align: center; }
+
+  .sacred-node {
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-shrink: 0;
+  }
+
+  /* Outer ring = gold, inner = element */
+  .node-ring-outer {
+    border-radius: 50%;
+    border: 2px solid #C9A14A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .node-ring-inner {
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .node-glyph { color: #F4ECD8; font-size: 1em; line-height: 1; }
+  .node-glyph-dark { color: #C9A14A; font-size: 1em; line-height: 1; }
+
+  /* Sizes */
+  .node-xl .node-ring-outer { width: 80px; height: 80px; padding: 6px; }
+  .node-xl .node-ring-inner { width: 100%; height: 100%; font-size: 28px; }
+  .node-lg .node-ring-outer { width: 60px; height: 60px; padding: 5px; }
+  .node-lg .node-ring-inner { width: 100%; height: 100%; font-size: 20px; }
+  .node-md .node-ring-outer { width: 44px; height: 44px; padding: 4px; }
+  .node-md .node-ring-inner { width: 100%; height: 100%; font-size: 14px; }
+  .node-sm .node-ring-outer { width: 30px; height: 30px; padding: 3px; }
+  .node-sm .node-ring-inner { width: 100%; height: 100%; font-size: 10px; }
+
+  .node-sublabel { font-family: 'EB Garamond', serif; font-style: italic; font-size: 11px; color: #7A6E65; text-align: center; max-width: 80px; line-height: 1.4; }
+</style>
+</head>
+<body>
+<div class="label">✦ Sacred Node — Concentric Ring Badge</div>
+
+<div class="nodes-row">
+
+  <div class="node-group">
+    <div class="node-label">Metatron<br>Void / Law</div>
+    <div class="node-xl">
+      <div class="node-ring-outer" style="border-color: #C9A14A; padding: 7px;">
+        <div class="node-ring-inner" style="background: #0B0A0F;">
+          <span class="node-glyph-dark">◯</span>
+        </div>
+      </div>
+    </div>
+    <div class="node-sublabel">Central Node</div>
+  </div>
+
+  <div class="node-group">
+    <div class="node-label">Fire<br>Element</div>
+    <div class="node-lg">
+      <div class="node-ring-outer">
+        <div class="node-ring-inner" style="background: #B7472A;">
+          <span class="node-glyph">△</span>
+        </div>
+      </div>
+    </div>
+    <div class="node-sublabel">Archetype Node</div>
+  </div>
+
+  <div class="node-group">
+    <div class="node-label">Water<br>Element</div>
+    <div class="node-lg">
+      <div class="node-ring-outer">
+        <div class="node-ring-inner" style="background: #2E5C7E;">
+          <span class="node-glyph">▽</span>
+        </div>
+      </div>
+    </div>
+    <div class="node-sublabel">Archetype Node</div>
+  </div>
+
+  <div class="node-group">
+    <div class="node-label">Earth<br>Element</div>
+    <div class="node-md">
+      <div class="node-ring-outer">
+        <div class="node-ring-inner" style="background: #5C6E3C;">
+          <span class="node-glyph" style="font-size:12px;">⊕</span>
+        </div>
+      </div>
+    </div>
+    <div class="node-sublabel">Small</div>
+  </div>
+
+  <div class="node-group">
+    <div class="node-label">Air<br>Element</div>
+    <div class="node-md">
+      <div class="node-ring-outer">
+        <div class="node-ring-inner" style="background: #B8A7C9;">
+          <span class="node-glyph" style="color: #1A1614; font-size:12px;">◯</span>
+        </div>
+      </div>
+    </div>
+    <div class="node-sublabel">Small</div>
+  </div>
+
+  <div class="node-group">
+    <div class="node-label">Gold<br>Prime</div>
+    <div class="node-sm">
+      <div class="node-ring-outer" style="border-color: #C9A14A;">
+        <div class="node-ring-inner" style="background: #C9A14A;">
+          <span class="node-glyph" style="color: #F4ECD8; font-size:9px;">✦</span>
+        </div>
+      </div>
+    </div>
+    <div class="node-sublabel">Micro</div>
+  </div>
+
+</div>
+</body>
+</html>
