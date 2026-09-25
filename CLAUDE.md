@@ -2,9 +2,6 @@
 ## ∆∆∆O∆K3YTREE∆∆∆ · Lenovo Legion Y520 · WSL2 Ubuntu 24.04
 ## Ground. Consolidate. Deploy. Document. Repeat.
 
-> **AGENTS.md** mirrors this file for OpenCode. Both files are source of truth.
-> OpenChamber = open-source tooling layer: OpenCode CLI + Open Design local server.
-
 ---
 
 ## WHO YOU ARE
@@ -90,16 +87,6 @@ SACRED CHROME EXTENSION:
 
 CODEX LOG:
   Entries               /mnt/d/01_VAULT/SacredSpace_Vault/04_SACRED_CODEX/CODEX_ENTRIES.md
-
-OPENCHAMBER (open-source tooling layer):
-  OpenCode config       /home/user/SacredSpace/AGENTS.md  ← OpenCode reads this on launch
-  Open Design root      /home/user/open-design/
-  Open Design web UI    http://127.0.0.1:<PORT>/          ← dynamic; check log on each boot
-  Open Design daemon    http://127.0.0.1:<DPORT>/         ← dynamic
-  Open Design log       /tmp/open_design.log              ← grep "Web:" to get live ports
-  Import API            http://127.0.0.1:<PORT>/api/import/claude-design  (POST multipart ZIP)
-  Sacred Codex DS       claude.ai/design/p/019dee3c-cbc3-756e-a296-ca23d39e386e
-  Imported DS path      /home/user/open-design/.od/projects/<name>/
 ```
 
 **D: not mounted? Run:**
@@ -111,75 +98,6 @@ ls /mnt/d/ 2>/dev/null || (sudo mkdir -p /mnt/d && sudo mount -t drvfs D: /mnt/d
 ```bash
 export OLLAMA_HOST="$(grep nameserver /etc/resolv.conf | awk '{print $2}'):11434"
 ```
-
----
-
-## OPENCHAMBER — OPEN-SOURCE TOOLING LAYER
-
-OpenChamber is the open-source runtime housed inside SacredSpace OS.
-It replaces proprietary cloud tools with locally-run equivalents:
-
-```
-TOOL              PATH / URL                                   PURPOSE
-─────────────────────────────────────────────────────────────────────────
-OpenCode CLI      opencode.ai · github.com/opencode-ai/opencode
-                  AGENTS.md = this system's OpenCode config     Multi-provider AI coding agent
-Open Design       /home/user/open-design/                       Local Claude Design alternative
-                  Ports are DYNAMIC — check /tmp/open_design.log on each boot:
-                    grep "Web:" /tmp/open_design.log | tail -1
-                  Import API: POST <web-url>/api/import/claude-design (multipart ZIP)
-Sacred Codex DS   claude.ai/design/p/019dee3c-cbc3-756e-a296-ca23d39e386e
-                  Export → ZIP → POST to import API (or drop on web UI)
-```
-
-**Get live Open Design port:**
-```bash
-grep "Web:" /tmp/open_design.log | tail -1
-```
-
-**OpenCode config location:** `AGENTS.md` (repo root) — OpenCode reads it on launch.
-**Open Design project root:** `/home/user/open-design/`
-**Imported projects land at:** `/home/user/open-design/.od/projects/<name>/`
-
-### Sacred Codex Design System (Claude Design → Open Design)
-
-Source project: `claude.ai/design/p/019dee3c-cbc3-756e-a296-ca23d39e386e`
-
-To import:
-1. Open the Claude Design link above → **Export → ZIP**
-2. Drop ZIP at `http://127.0.0.1:42603/` (Open Design welcome dialog)
-3. Project opens as a tab; entry file is at `.od/projects/sacred-codex-design-system/`
-
-Design tokens extracted from the Sacred Codex Design System (earthy palette):
-
-```css
-/* Core identity */
---void:       #060a07   /* near-black ground */
---gold:       #c8972a   /* primary accent — sacred gold */
---gold-dim:   #5a3d10   /* muted gold */
---gold-pale:  #e8c87a   /* highlight gold */
-
-/* Nature tones */
---forest:     #4a9e6a   /* pillar 3 · life */
---teal:       #3d9a8a   /* pillar 2 · flow */
---clay:       #c4724a   /* pillar 5 · earth */
---moss:       #7aaa5a   /* pillar 8 · growth */
---lavender:   #8a7a9a   /* pillar 1 · spirit */
---vine:       #b86a8a   /* pillar 7 · connection */
---honey:      #d4a83a   /* pillar 9 · abundance */
---spring:     #5a8a9a   /* pillar 6 · sky */
-
-/* Typography */
---text:       #a8a890   /* body text */
---text-hi:    #e0d8c0   /* heading / emphasis */
-
-/* Borders */
---border:     rgba(200,151,42,0.13)
---border-hi:  rgba(200,151,42,0.32)
-```
-
-Typography stack: `'Cinzel', serif` (headings) · `'IM Fell English', serif` (body)
-Font source: Google Fonts
 
 ---
 
@@ -267,9 +185,6 @@ When the user says something natural, map it to a task label and run it.
 | "switching to gemini" / "handoff to gpt"          | `generate-handoff-capsule`  |
 | "context limit" / "generate handoff"              | `generate-handoff-capsule`  |
 | "passing to ollama" / "hand this to claude"       | `generate-handoff-capsule`  |
-| "start open design" / "boot openchamber"          | `boot-openchamber`          |
-| "import from claude design" / "drop the zip"      | `import-claude-design`      |
-| "install opencode" / "set up opencode"            | `install-opencode`          |
 
 ---
 
@@ -716,110 +631,6 @@ echo "  NOTE: SACRED.CORE is already populated (Nine Pillar Architecture doc upl
 echo "  Upload source files to each notebook via notebooklm.google.com"
 echo "  Format: PDF, DOCX, TXT, or Google Doc link"
 ```
-
----
-
-### `TASK: boot-openchamber`
-**Intent:** Start the Open Design local server so the Sacred Codex Design System can be imported and edited.
-
-```bash
-OPEN_DESIGN="/home/user/open-design"
-
-# ASHER — check install
-[ -d "$OPEN_DESIGN" ] || {
-  echo "✗ open-design not cloned. Run:"
-  echo "  cd /home/user && git clone https://github.com/nexu-io/open-design.git"
-  echo "  cd open-design && corepack enable && pnpm install"
-  exit 1
-}
-
-# Kill any existing instance
-fuser -k 42603/tcp 2>/dev/null && echo "  · Killed existing Open Design instance"
-sleep 0.5
-
-# AURORA — launch
-cd "$OPEN_DESIGN"
-nohup pnpm tools-dev run web > /tmp/open_design.log 2>&1 &
-OD_PID=$!
-echo "  ✓ Open Design launching (PID: $OD_PID)"
-
-# Wait and read dynamic ports from log
-sleep 10
-WEB_URL=$(grep "Web:" /tmp/open_design.log | tail -1 | awk '{print $NF}')
-if [ -n "$WEB_URL" ] && curl -sf "$WEB_URL" > /dev/null 2>&1; then
-  echo ""
-  echo "  ✓ Open Design web UI: $WEB_URL"
-  echo "  ✓ Import API:         $WEB_URL/api/import/claude-design"
-  echo ""
-  echo "  → Export Sacred Codex DS from claude.ai/design/p/019dee3c-cbc3-756e-a296-ca23d39e386e"
-  echo "  → POST ZIP: curl -X POST $WEB_URL/api/import/claude-design -F 'file=@<path>.zip'"
-  echo "  → Or drop the ZIP on the Open Design welcome dialog"
-else
-  echo "  ⚠ Still starting or failed. Log:"
-  tail -15 /tmp/open_design.log
-fi
-```
-
-**Success:** Web UI reachable at :42603, drop zone ready for Claude Design ZIP.
-
----
-
-### `TASK: import-claude-design`
-**Intent:** Remind user to export + import the Sacred Codex Design System ZIP.
-
-```bash
-echo "∆ IMPORT SACRED CODEX DESIGN SYSTEM"
-echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-echo ""
-echo "  1. Open in browser:"
-echo "     https://claude.ai/design/p/019dee3c-cbc3-756e-a296-ca23d39e386e"
-echo ""
-echo "  2. Click  Export → ZIP"
-echo ""
-echo "  3. Open Open Design:"
-echo "     http://127.0.0.1:42603/"
-echo "     (run TASK: boot-openchamber first if not running)"
-echo ""
-echo "  4. Drop the ZIP on the welcome dialog drop zone."
-echo ""
-echo "  Imported project will be at:"
-echo "  /home/user/open-design/.od/projects/sacred-codex-design-system/"
-echo ""
-echo "  ∆ After import: continue editing with OpenCode or Claude Code."
-```
-
----
-
-### `TASK: install-opencode`
-**Intent:** Install OpenCode CLI for multi-provider AI coding from the terminal.
-
-```bash
-# ASHER — check if already installed
-if command -v opencode > /dev/null 2>&1; then
-  echo "  ✓ OpenCode already installed: $(opencode --version)"
-  exit 0
-fi
-
-echo "  · Installing OpenCode CLI..."
-
-# Try npm global install first (works on Node 22+)
-npm install -g opencode-ai 2>/dev/null || {
-  # Fallback: direct binary installer (persists to PATH, unlike npx)
-  echo "  · npm global install failed — trying binary installer..."
-  curl -fsSL https://opencode.ai/install.sh | bash
-}
-
-# Verify
-command -v opencode > /dev/null 2>&1 \
-  && echo "  ✓ OpenCode installed: $(opencode --version)" \
-  || echo "  ✗ Install failed — check https://opencode.ai/docs for manual steps"
-
-echo ""
-echo "  ∆ To use: cd /home/user/SacredSpace && opencode"
-echo "  ∆ OpenCode reads AGENTS.md automatically on launch."
-```
-
-**Success:** `opencode --version` returns a version. AGENTS.md is already present at repo root.
 
 ---
 
