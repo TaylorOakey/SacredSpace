@@ -87,6 +87,15 @@ SACRED CHROME EXTENSION:
 
 CODEX LOG:
   Entries               /mnt/d/01_VAULT/SacredSpace_Vault/04_SACRED_CODEX/CODEX_ENTRIES.md
+
+OPENCODE CONFIG (separate agent runtime, lives outside this repo/D: tree):
+  Root                  ~/.config/opencode/
+  Master config         ~/.config/opencode/opencode.jsonc        (models, MCP servers, plugins, permissions)
+  Agent definitions     ~/.config/opencode/agents/                (20 .md — Council Seats + ICARIS + Creative + Ops)
+  Slash commands        ~/.config/opencode/commands/              (23 .md — /oroborus /flow /zen /pulse etc.)
+  Plugins               ~/.config/opencode/plugins/               (Sacred Pulse Sync, Sacred Notify, Sacred Worktree Guard, Sacred VALEN Cognition)
+  Skills                ~/.config/opencode/skills/                (81 entries — graphify, python-pro, etc.)
+  Memory anchor         ~/.config/opencode/ANCHORED_SUMMARY.md    (cross-session memory, 1.9 KB)
 ```
 
 **D: not mounted? Run:**
@@ -168,6 +177,7 @@ When the user says something natural, map it to a task label and run it.
 
 | User says...                                      | Run task                    |
 |---------------------------------------------------|-----------------------------|
+| "start claude" / "launch claude code" / "boot claude"| `start-claude-code`         |
 | "deploy the extension"                            | `deploy-sacred-chrome`      |
 | "install sacred chrome" / "put it in chrome"      | `deploy-sacred-chrome`      |
 | "start the spine" / "fire up FastAPI"             | `start-fastapi-spine`       |
@@ -192,6 +202,41 @@ When the user says something natural, map it to a task label and run it.
 
 Each task is self-contained. Read the label, run the commands, verify success,
 write a codex entry, report in standard format.
+
+---
+
+### `TASK: start-claude-code`
+**Intent:** Get from a fresh Ubuntu/WSL2 terminal into Claude Code, rooted in this project.
+**Script:** `start_claude.sh` (repo root)
+
+```bash
+chmod +x start_claude.sh   # first time only
+./start_claude.sh          # opens Claude Code in SacredSpace_OS root
+./start_claude.sh /other/dir
+```
+
+Handles, in order: D: drive mount (WSL2 only), Claude Code CLI install-if-missing
+(node + `npm install -g @anthropic-ai/claude-code`), the Ollama/Tailscale
+`OLLAMA_HOST` bridge fix (opt-in via `SACRED_OLLAMA_ON_WINDOWS=1`), then `exec claude`
+in the target directory.
+
+**Optional alias (add to your local `~/.bashrc`, not this repo):**
+```bash
+echo 'alias ssc="~/SacredSpace/start_claude.sh"' >> ~/.bashrc
+source ~/.bashrc
+```
+Then `ssc` boots straight into Claude Code from anywhere.
+*(This must be run on your actual WSL2 machine — a remote/cloud Claude Code
+session cannot write to your local `~/.bashrc`.)*
+
+**Success:** `claude` launches with cwd set to the SacredSpace project root.
+
+**Note:** This project also runs under **OpenCode** as a parallel agent runtime,
+configured entirely outside this repo at `~/.config/opencode/` (see LIVE SYSTEM
+MAP above — master config, 20 agent defs, 23 slash commands, 4 plugins, 81
+skills, and `ANCHORED_SUMMARY.md` for cross-session memory). `start_claude.sh`
+does not touch that config; switching runtimes is a manual `opencode` invocation
+in the same project directory, not part of this script.
 
 ---
 
