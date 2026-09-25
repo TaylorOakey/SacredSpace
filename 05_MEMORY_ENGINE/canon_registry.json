@@ -19,14 +19,15 @@
       "tier": "DISTILLED",
       "path": "04_SACRED_CODEX/ARCANA_BOARD_SPEC.md",
       "companion_data": "09_SACRED_MARKET/arcana_grid/game_data.json (arcana_board_reported block)",
-      "sourced": "Two pasted 'architect session' outputs (ARCANA-BOARD-001 synthesis + build history), a second 'Claude Desktop' session reporting local disk access, and a 'SacredSpace Reality Layer' exploration prompt - all pasted directly into this session 2026-09-23/24. Underlying engine files not read by this session.",
+      "sourced": "Two pasted 'architect session' outputs (ARCANA-BOARD-001 synthesis + build history), a second 'Claude Desktop' session reporting local disk access, and a 'SacredSpace Reality Layer' exploration prompt - all pasted directly into this session 2026-09-23/24. Underlying engine files (deck.py, arcana_board.py, etc.) confirmed unreachable from any attached repo. 2026-09-25: TaylorOakey/sacredspace-os attached and read directly for independent verification - see verification_pass below.",
       "consolidated": "2026-09-24",
+      "verification_pass": "2026-09-25 - victory paths (Awakening/Harmony/Dominance), one Minor Arcana suit lineage (Leaves/Relics/Crystals/Shards), the resource economy, and Mimi Silkweaver's canon status all independently confirmed via sacredspace-os/docs/SACREDSPACE_UNIFIED_ARCHITECTURE.md (CANON, Session 035). Slot VIII's 'Rootwalker' candidate corroborated via canon_excavation_output.json:444 (NPC Lune, card VIII/Strength, confirmed).",
       "open_items": [
-        "Slot VIII naming: three-way conflict (Rootwalker / unnamed / The Flame)",
-        "9x9/12x12 board 'seal' claim (map_9_to_12) unconfirmed by Taylor",
-        "Minor Arcana suit names: three unreconciled lineages",
+        "Slot VIII naming: three-way conflict, Rootwalker now better-sourced but not settled (Rootwalker / unnamed / The Flame)",
+        "9x9/12x12 board 'seal' claim (map_9_to_12) still unconfirmed by Taylor - dual-layer architecture itself is corroborated",
+        "Minor Arcana suit names: Leaves/Relics/Crystals/Shards now CANON-tagged; two competing lineages not formally retired",
         "Companion/animal-guide four-way tangle beyond the four canon Elemental Guides",
-        "8 reported Sacred Classes vs. 12-Archetype Grid cardinality mismatch",
+        "8 reported Sacred Classes vs. 12-Archetype Grid cardinality mismatch - zero corroboration found in sacredspace-os",
         "Reality Layer ontology / narrative-binding / state-architecture choices entirely undecided"
       ]
     }

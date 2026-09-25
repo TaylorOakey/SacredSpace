@@ -130,27 +130,36 @@
   ],
   "arcana_board_reported": {
     "locked": false,
-    "note": "Reported by pasted external sessions, not verified by this session - none of the cited engine files exist in this repo. See 04_SACRED_CODEX/ARCANA_BOARD_SPEC.md.",
+    "note": "Reported by pasted external sessions; the actual engine files (deck.py, arcana_board.py, etc.) are unreachable from any repo this session can access (confirmed absent from both TaylorOakey/SacredSpace and TaylorOakey/sacredspace-os on 2026-09-25). Several claims below are independently verified against sacredspace-os/docs/SACREDSPACE_UNIFIED_ARCHITECTURE.md (CANON, Session 035) instead - see verified_2026-09-25 block. See 04_SACRED_CODEX/ARCANA_BOARD_SPEC.md for full detail.",
     "added": "2026-09-24",
+    "verification_pass": "2026-09-25",
     "loop": ["Draw", "Seed", "Place & Shape", "Qualify", "Echo"],
-    "board_layers": { "tactical": "9x9 (arcana_board.py)", "confluence": "12x12 (grid.py)", "promotion_claim": "reported 'sealed' 2026-09-18 via map_9_to_12(), unconfirmed by Taylor" },
+    "board_layers": { "tactical": "9x9 (arcana_board.py, unreachable)", "confluence": "12x12 (grid.py, unreachable)", "promotion_claim": "reported 'sealed' 2026-09-18 via map_9_to_12(), still unconfirmed by Taylor", "note_2026-09-25": "9x9 board and 12x12-designed-in-Tarot-doc both corroborated by sacredspace-os (docs/SACREDSPACE_UNIFIED_ARCHITECTURE.md, queue/BACKLOG.md item B04) - the specific map_9_to_12 seal claim is not." },
     "trials_count": 8,
-    "nameless_door": { "trial_index": 6, "qualification": "states of being, not a score - known tone, a healed Scar, no unsealed Fracture, approach without fear", "source": "trials.py:182-228 (reported)" },
+    "nameless_door": { "trial_index": 6, "qualification": "states of being, not a score - known tone, a healed Scar, no unsealed Fracture, approach without fear", "source": "trials.py:182-228 (reported, unreachable)" },
     "victory_paths": ["Awakening", "Harmony", "Dominance"],
+    "victory_paths_status": "CANON per sacredspace-os/docs/SACREDSPACE_UNIFIED_ARCHITECTURE.md - independently confirmed 2026-09-25, corroborating the earlier architect-session report",
     "sacred_classes_reported": ["Flamebearer", "Echowalker", "Grovekeeper", "Veilsmith", "Harmonic", "Lanternborn", "Tidecaller", "Ashen Witness"],
-    "sacred_classes_note": "8 classes (classes.py:65-180, reported) vs. the locked 12-Archetype Grid (4x3) - cardinality mismatch, unreconciled.",
+    "sacred_classes_note": "8 classes (classes.py:65-180, reported, unreachable) vs. the locked 12-Archetype Grid (4x3) - cardinality mismatch, unreconciled. Zero hits for any of these 8 names in a full-text search of sacredspace-os on 2026-09-25 - a negative signal, not proof of absence.",
     "slot_viii_naming": {
-      "conflict": "three-way, unresolved",
-      "candidates": ["Rootwalker (reported, deck.py:45 / UNFURLING_THE_INFINITE_VISION.md:73)", "unnamed (multiple earlier uploads)", "The Flame (2025-10-31 Blueprint doc, explicitly labeled non-final)"]
+      "conflict": "three-way, not fully resolved",
+      "candidates": ["Rootwalker (reported via deck.py:45, unreachable - but independently corroborated 2026-09-25 via sacredspace-os/archive/home_cleanup/canon_excavation_output.json:444, NPC 'Lune', card VIII/Strength, canon_status: confirmed)", "unnamed (multiple earlier uploads)", "The Flame (2025-10-31 Blueprint doc, explicitly labeled non-final)"]
     },
     "minor_arcana_suits": {
-      "conflict": "three lineages, unresolved",
-      "candidates": ["Leaves/Relics/Crystals/Shards (Jungle/City/Grove/Shadow) - confirmed by direct read", "Roots/Flow/Sparks/Winds (same Blueprint doc, second scheme)", "Roots/Flames/Currents/Winds (reported 'sealed', unverified)"]
+      "conflict": "three lineages, one now CANON-tagged",
+      "candidates": ["Leaves/Relics/Crystals/Shards (Jungle/City/Grove/Shadow) - confirmed by direct read, AND independently confirmed CANON status 2026-09-25 via sacredspace-os/docs/SACREDSPACE_UNIFIED_ARCHITECTURE.md", "Roots/Flow/Sparks/Winds (same Blueprint doc, second scheme)", "Roots/Flames/Currents/Winds (reported 'sealed', unverified, zero hits in sacredspace-os)"]
     },
     "companion_tangle": {
       "conflict": "four-way, mostly unresolved",
       "canon_guides": ["Zii", "Mylo", "Auralon", "Koru"],
       "non_overlapping_reports": ["Eagle/Jaguar/Child/Sage/Trickster (Blueprint archetype-animal cards)", "Stag (reported resolved as Taylor's own Oversoul tech-animal form, different register - not independently verified)", "Rook (reported, unsourced)", "Wolf/Owl/Serpent/Deer (Google Takeout export session)"]
+    },
+    "verified_2026-09-25": {
+      "source": "sacredspace-os/docs/SACREDSPACE_UNIFIED_ARCHITECTURE.md (frontmatter: status CANON, Session 035 Synthesis, dated 2026-07-17) and queue/BACKLOG.md",
+      "resources_confirmed_canon": ["Life Herbs", "Metal Relics", "Spirit Crystals", "Obsidian Shards"],
+      "board_confirmed_designed": "9x9 grid, hex tiles, 4 zones (City, Jungle, Sacred Grove, Shadow)",
+      "jenga_confirmed_canon": "teenage graffiti artist, he/him",
+      "mimi_silkweaver_confirmed": "elevated to CANON per queue/BACKLOG.md item B05"
     }
   },
   "expanded_universe": {
