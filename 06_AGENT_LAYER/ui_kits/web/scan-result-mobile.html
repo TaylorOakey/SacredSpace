@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<!-- @dsCard group="UI Kit — Web" name="Scan Result (Mobile)" subtitle="390×844 — QR scan from card or mat: card identity, reading position, Echo logged" viewport="390x844" -->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=390, initial-scale=1, maximum-scale=1">
+<title>Sacred Arcana — Scan Result</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+/* ── CODEX-VISUAL-001 TOKENS (CANON, sealed 2026-07-17) ── */
+:root {
+  --void:        #030508;
+  --grove:       #0A0D10;
+  --grove-soft:  #111820;
+  --surface:     #0F1419;
+  --surface-hi:  #161D24;
+  --text-pure:   #EEF6EF;
+  --text-par:    #C8C4BB;
+  --text-mute:   #7A7870;
+  --gold:        #C8A44A;
+  --gold-dim:    rgba(200,164,74,0.35);
+  --gold-faint:  rgba(200,164,74,0.10);
+  --gold-border: 1px solid rgba(200,164,74,0.30);
+  --bio:         #72E87A;
+  --bio-dim:     rgba(114,232,122,0.20);
+  --bio-border:  1px solid rgba(114,232,122,0.25);
+  --fire:        #D45A28;
+  --water:       #3878A0;
+  --earth:       #5A8850;
+  --air:         #78A8C8;
+  --aether:      #7A5CA5;
+  --bronze:      #8B7355;
+  --border-dim:  1px solid rgba(255,255,255,0.07);
+  --font-d:      'Cinzel', serif;
+  --font-b:      'Cormorant Garamond', serif;
+  --font-m:      'JetBrains Mono', monospace;
+  --ease:        cubic-bezier(.4,.0,.2,1);
+  --dur:         350ms;
+  /* Golden ratio */
+  --phi:         1.618;
+}
+
+html, body {
+  width: 390px;
+  height: 844px;
+  overflow: hidden;
+  background: var(--void);
+  color: var(--text-pure);
+  font-family: var(--font-b);
+  font-size: 15px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── VOID BACKDROP ── */
+.void-bg {
+  position: fixed; inset: 0; z-index: 0; pointer-events: none;
+  background:
+    radial-gradient(ellipse 90% 55% at 50% 0%, rgba(120,168,200,0.08), transparent 55%),
+    radial-gradient(ellipse 60% 40% at 10% 80%, rgba(114,232,122,0.05), transparent 50%),
+    radial-gradient(ellipse 40% 30% at 90% 30%, rgba(200,164,74,0.06), transparent 50%),
+    var(--void);
+}
+
+/* fine grain texture */
+.void-bg::after {
+  content: '';
+  position: absolute; inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+  opacity: 0.5;
+}
+
+/* ── SCROLL CONTAINER ── */
+.page {
+  position: relative; z-index: 1;
+  width: 390px; height: 844px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+.page::-webkit-scrollbar { display: none; }
+
+/* ── STATUS BAR ── */
+.status-bar {
+  display: flex; align-items: center; justify-content: space-between;
+  height: 44px;
+  padding: 12px 20px 0;
+  color: var(--text-par);
+  font-family: var(--font-m);
+  font-size: 10px;
+  letter-spacing: 0.04em;
+}
+.status-bar .time { font-weight: 500; font-size: 12px; color: var(--text-pure); }
+.status-icons { display: flex; gap: 6px; align-items: center; }
+.status-icons span { font-size: 10px; opacity: 0.7; }
+
+/* ── NAV BAR ── */
+.nav-bar {
+  display: flex; align-items: center; justify-content: space-between;
+  height: 48px;
+  padding: 0 16px;
+}
+.nav-back {
+  display: flex; align-items: center; gap: 6px;
+  color: var(--gold);
+  font-family: var(--font-m);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  opacity: 0.85;
+}
+.nav-back .arrow { font-size: 16px; line-height: 1; }
+.nav-title {
+  font-family: var(--font-d);
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  color: var(--text-par);
+  text-transform: uppercase;
+}
+.nav-sigil {
+  width: 28px; height: 28px;
+  border: 1px solid var(--gold-dim);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-d);
+  font-size: 12px;
+  color: var(--gold);
+  opacity: 0.8;
+}
+
+/* ── SCAN ORIGIN CHIP ── */
+.scan-origin {
+  margin: 0 16px 16px;
+  padding: 8px 14px;
+  background: var(--bio-dim);
+  border: var(--bio-border);
+  border-radius: 2px;
+  display: flex; align-items: center; gap: 8px;
+}
+.scan-dot {
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: var(--bio);
+  box-shadow: 0 0 8px var(--bio);
+  animation: pulse-dot 2s ease-in-out infinite;
+  flex-shrink: 0;
+}
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%       { opacity: 0.5; transform: scale(0.8); }
+}
+.scan-origin-text {
+  font-family: var(--font-m);
+  font-size: 9px;
+  letter-spacing: 0.12em;
+  color: var(--bio);
+  text-transform: uppercase;
+}
+.scan-origin-text strong {
+  color: var(--text-pure);
+  font-weight: 500;
+}
+.scan-position-badge {
+  margin-left: auto;
+  font-family: var(--font-d);
+  font-size: 9px;
+  letter-spacing: 0.14em;
+  color: var(--gold);
+  text-transform: uppercase;
+  border-left: 1px solid rgba(114,232,122,0.25);
+  padding-left: 8px;
+}
+
+/* ── CARD DISPLAY ── */
+.card-zone {
+  padding: 0 20px;
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.card-face {
+  flex-shrink: 0;
+  width: 120px;
+  height: 206px; /* 70×120mm golden ratio → 120:206 */
+  border-radius: 4px;
+  border: 1px solid var(--bronze);
+  box-shadow:
+    0 0 0 1px rgba(200,164,74,0.08),
+    0 0 20px rgba(200,164,74,0.18),
+    0 0 60px rgba(200,164,74,0.06),
+    inset 0 0 40px rgba(3,5,8,0.50);
+  background: var(--grove);
+  position: relative;
+  overflow: hidden;
+  animation: gold-fade 4s ease-out forwards;
+}
+
+@keyframes gold-fade {
+  0%   { box-shadow: 0 0 0 2px var(--gold), 0 0 40px rgba(200,164,74,0.55), inset 0 0 20px rgba(200,164,74,0.10); border-color: var(--gold); }
+  100% { box-shadow: 0 0 0 1px rgba(200,164,74,0.08), 0 0 20px rgba(200,164,74,0.18), 0 0 60px rgba(200,164,74,0.06), inset 0 0 40px rgba(3,5,8,0.50); border-color: var(--bronze); }
+}
+
+/* art window atmosphere */
+.card-art {
+  position: absolute;
+  left: 8px; right: 8px;
+  top: 30px; bottom: 42px;
+  background:
+    radial-gradient(ellipse 80% 50% at 50% 30%, rgba(120,168,200,0.15), transparent 65%),
+    radial-gradient(ellipse 60% 60% at 30% 70%, rgba(122,92,165,0.12), transparent 60%),
+    radial-gradient(ellipse 40% 40% at 80% 20%, rgba(200,164,74,0.08), transparent 50%),
+    #0D1220;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+/* star field in art window */
+.card-art::before {
+  content: '';
+  position: absolute; inset: 0;
+  background-image:
+    radial-gradient(circle 1px at 20% 15%, rgba(200,164,74,0.7) 0%, transparent 100%),
+    radial-gradient(circle 1px at 70% 25%, rgba(255,255,255,0.5) 0%, transparent 100%),
+    radial-gradient(circle 1px at 45% 55%, rgba(120,168,200,0.6) 0%, transparent 100%),
+    radial-gradient(circle 1px at 80% 65%, rgba(255,255,255,0.4) 0%, transparent 100%),
+    radial-gradient(circle 1.5px at 15% 70%, rgba(114,232,122,0.5) 0%, transparent 100%),
+    radial-gradient(circle 1px at 60% 80%, rgba(200,164,74,0.6) 0%, transparent 100%),
+    radial-gradient(circle 1px at 35% 40%, rgba(255,255,255,0.35) 0%, transparent 100%),
+    radial-gradient(circle 1px at 88% 45%, rgba(184,142,247,0.5) 0%, transparent 100%),
+    radial-gradient(circle 2px at 50% 35%, rgba(120,168,200,0.4) 0%, transparent 100%);
+}
+
+/* central starpath sigil in art */
+.card-art::after {
+  content: '✧';
+  position: absolute;
+  left: 50%; top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 22px;
+  color: var(--gold);
+  opacity: 0.4;
+  text-shadow: 0 0 12px var(--gold);
+  animation: star-breathe 3s ease-in-out infinite;
+}
+@keyframes star-breathe {
+  0%, 100% { opacity: 0.4; transform: translate(-50%, -50%) scale(1); }
+  50%       { opacity: 0.7; transform: translate(-50%, -50%) scale(1.05); }
+}
+
+/* numeral top */
+.card-numeral {
+  position: absolute;
+  top: 8px; left: 0; right: 0;
+  text-align: center;
+  font-family: var(--font-m);
+  font-size: 8px;
+  letter-spacing: 0.12em;
+  color: var(--gold);
+  opacity: 0.7;
+}
+
+/* card name bottom */
+.card-name-inner {
+  position: absolute;
+  bottom: 18px; left: 0; right: 0;
+  text-align: center;
+  font-family: var(--font-d);
+  font-size: 7.5px;
+  letter-spacing: 0.10em;
+  color: var(--text-par);
+  text-transform: uppercase;
+  line-height: 1.3;
+}
+
+/* element band */
+.card-element-band {
+  position: absolute;
+  bottom: 8px; left: 8px; right: 8px;
+  height: 3px;
+  background: var(--air);
+  border-radius: 1px;
+  opacity: 0.6;
+}
+
+/* QR placeholder & delta */
+.card-qr {
+  position: absolute;
+  bottom: 3px; left: 5px;
+  width: 10px; height: 10px;
+  opacity: 0.35;
+}
+.card-qr-grid {
+  display: grid; grid-template-columns: repeat(3,3px); gap: 0.5px;
+}
+.card-qr-grid span {
+  width: 3px; height: 3px;
+  background: var(--text-par);
+  border-radius: 0.3px;
+}
+.card-delta {
+  position: absolute;
+  bottom: 4px; right: 6px;
+  font-family: var(--font-m);
+  font-size: 7px;
+  color: var(--gold);
+  opacity: 0.5;
+}
+
+/* ── CARD META (right of card) ── */
+.card-meta {
+  flex: 1;
+  padding-top: 4px;
+}
+
+.card-realm-tag {
+  display: inline-flex; align-items: center; gap: 5px;
+  font-family: var(--font-m);
+  font-size: 9px;
+  letter-spacing: 0.14em;
+  color: var(--air);
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.realm-glyph { font-size: 11px; opacity: 0.8; }
+
+.card-numeral-large {
+  font-family: var(--font-m);
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  color: var(--text-mute);
+  margin-bottom: 2px;
+}
+
+.card-sacred-name {
+  font-family: var(--font-d);
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--text-pure);
+  line-height: 1.2;
+  margin-bottom: 4px;
+}
+
+.card-trad-name {
+  font-family: var(--font-b);
+  font-style: italic;
+  font-size: 13px;
+  color: var(--text-par);
+  opacity: 0.75;
+  margin-bottom: 12px;
+}
+
+.card-effect-row {
+  display: flex; align-items: flex-start; gap: 7px;
+  background: var(--gold-faint);
+  border: var(--gold-border);
+  border-radius: 2px;
+  padding: 7px 9px;
+}
+.effect-verb {
+  font-family: var(--font-m);
+  font-size: 8px;
+  letter-spacing: 0.14em;
+  color: var(--gold);
+  text-transform: uppercase;
+  opacity: 0.9;
+  white-space: nowrap;
+  padding-top: 1px;
+}
+.effect-text {
+  font-family: var(--font-b);
+  font-size: 12px;
+  color: var(--text-par);
+  line-height: 1.5;
+}
+
+/* ── DIVIDER ── */
+.section-divider {
+  margin: 18px 16px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(200,164,74,0.20), transparent);
+}
+
+/* ── READING POSITION BLOCK ── */
+.reading-block {
+  margin: 0 16px;
+}
+
+.reading-header {
+  display: flex; align-items: center; gap: 8px;
+  margin-bottom: 10px;
+}
+.reading-label {
+  font-family: var(--font-m);
+  font-size: 8.5px;
+  letter-spacing: 0.18em;
+  color: var(--text-mute);
+  text-transform: uppercase;
+}
+.reading-spread {
+  font-family: var(--font-m);
+  font-size: 8.5px;
+  letter-spacing: 0.12em;
+  color: var(--gold);
+  margin-left: auto;
+  opacity: 0.8;
+}
+
+/* Three-Fold mini-spread visualiser */
+.threefold-strip {
+  display: flex; gap: 6px;
+  margin-bottom: 12px;
+}
+.tf-pos {
+  flex: 1;
+  background: var(--grove-soft);
+  border: var(--border-dim);
+  border-radius: 2px;
+  padding: 8px 6px;
+  text-align: center;
+  position: relative;
+}
+.tf-pos.active {
+  background: rgba(120,168,200,0.07);
+  border-color: rgba(120,168,200,0.25);
+}
+.tf-pos-label {
+  font-family: var(--font-m);
+  font-size: 7px;
+  letter-spacing: 0.14em;
+  color: var(--text-mute);
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+.tf-pos.active .tf-pos-label { color: var(--air); opacity: 0.9; }
+.tf-pos-card {
+  font-family: var(--font-d);
+  font-size: 8px;
+  letter-spacing: 0.04em;
+  color: var(--text-par);
+  line-height: 1.3;
+}
+.tf-pos.active .tf-pos-card { color: var(--text-pure); }
+.tf-pos-glyph {
+  font-size: 14px;
+  color: var(--text-mute);
+  opacity: 0.4;
+  margin-bottom: 2px;
+}
+.tf-pos.active .tf-pos-glyph { color: var(--gold); opacity: 0.7; }
+/* active indicator */
+.tf-pos.active::after {
+  content: '';
+  position: absolute;
+  bottom: -1px; left: 20%; right: 20%;
+  height: 2px;
+  background: var(--air);
+  border-radius: 1px;
+  box-shadow: 0 0 6px var(--air);
+}
+
+.position-meaning {
+  background: var(--grove-soft);
+  border-left: 2px solid var(--air);
+  padding: 10px 12px;
+  border-radius: 0 2px 2px 0;
+  margin-bottom: 4px;
+}
+.pos-meaning-title {
+  font-family: var(--font-d);
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  color: var(--air);
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+.pos-meaning-body {
+  font-family: var(--font-b);
+  font-size: 14px;
+  color: var(--text-par);
+  line-height: 1.6;
+  font-style: italic;
+}
+
+/* ── ECHO LOG ── */
+.echo-block {
+  margin: 18px 16px 0;
+}
+
+.echo-log-card {
+  background: var(--grove);
+  border: var(--bio-border);
+  border-radius: 3px;
+  padding: 12px 14px;
+  display: flex; align-items: flex-start; gap: 10px;
+}
+.echo-icon {
+  width: 28px; height: 28px;
+  border-radius: 50%;
+  background: var(--bio-dim);
+  border: var(--bio-border);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 13px;
+  flex-shrink: 0;
+  color: var(--bio);
+}
+.echo-content { flex: 1; }
+.echo-title {
+  font-family: var(--font-m);
+  font-size: 9px;
+  letter-spacing: 0.14em;
+  color: var(--bio);
+  text-transform: uppercase;
+  margin-bottom: 3px;
+}
+.echo-detail {
+  font-family: var(--font-m);
+  font-size: 9.5px;
+  color: var(--text-par);
+  line-height: 1.5;
+}
+.echo-detail span { color: var(--text-pure); }
+.echo-timestamp {
+  font-family: var(--font-m);
+  font-size: 8.5px;
+  color: var(--text-mute);
+  margin-left: auto;
+  white-space: nowrap;
+  padding-top: 1px;
+}
+
+/* ── SESSION CONTEXT ── */
+.session-row {
+  margin: 10px 16px 0;
+  display: flex; align-items: center; gap: 8px;
+}
+.session-key {
+  font-family: var(--font-m);
+  font-size: 8.5px;
+  letter-spacing: 0.12em;
+  color: var(--text-mute);
+  text-transform: uppercase;
+}
+.session-val {
+  font-family: var(--font-m);
+  font-size: 8.5px;
+  color: var(--text-par);
+}
+.session-dot {
+  width: 4px; height: 4px;
+  border-radius: 50%;
+  background: var(--gold);
+  opacity: 0.5;
+}
+
+/* ── ACTIONS ── */
+.actions {
+  margin: 20px 16px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 8px;
+}
+.action-btn {
+  padding: 11px 6px;
+  border-radius: 2px;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-m);
+  font-size: 8.5px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  display: flex; flex-direction: column;
+  align-items: center; gap: 5px;
+  transition: all var(--dur) var(--ease);
+}
+.action-btn .btn-icon { font-size: 16px; }
+
+.action-btn.primary {
+  background: rgba(200,164,74,0.12);
+  border: var(--gold-border);
+  color: var(--gold);
+}
+.action-btn.primary:hover { background: rgba(200,164,74,0.20); }
+
+.action-btn.secondary {
+  background: var(--grove-soft);
+  border: var(--border-dim);
+  color: var(--text-par);
+}
+.action-btn.secondary:hover { background: var(--surface-hi); color: var(--text-pure); }
+
+/* ── HOME INDICATOR ── */
+.home-indicator {
+  display: flex; justify-content: center;
+  padding: 16px 0 8px;
+  margin-top: 16px;
+}
+.home-bar {
+  width: 130px; height: 5px;
+  background: rgba(255,255,255,0.18);
+  border-radius: 3px;
+}
+
+/* ── SWIPE UP HINT ── */
+.swipe-hint {
+  text-align: center;
+  margin-bottom: 0;
+  padding-bottom: 2px;
+  font-family: var(--font-m);
+  font-size: 8px;
+  letter-spacing: 0.10em;
+  color: var(--text-mute);
+  text-transform: uppercase;
+  opacity: 0.5;
+}
+</style>
+</head>
+<body>
+
+<div class="void-bg"></div>
+
+<div class="page">
+
+  <!-- STATUS BAR -->
+  <div class="status-bar">
+    <span class="time">9:41</span>
+    <div class="status-icons">
+      <span>▲▲▲</span>
+      <span>wifi</span>
+      <span>⬛</span>
+    </div>
+  </div>
+
+  <!-- NAV BAR -->
+  <div class="nav-bar">
+    <div class="nav-back">
+      <span class="arrow">←</span>
+      <span>ARCANA</span>
+    </div>
+    <div class="nav-title">Scan Result</div>
+    <div class="nav-sigil">∆</div>
+  </div>
+
+  <!-- SCAN ORIGIN -->
+  <div class="scan-origin">
+    <div class="scan-dot"></div>
+    <div class="scan-origin-text">
+      <strong>ORACLE MAT</strong> · Three-Fold Row
+    </div>
+    <div class="scan-position-badge">Becoming</div>
+  </div>
+
+  <!-- CARD + META -->
+  <div class="card-zone">
+
+    <!-- Card Face -->
+    <div class="card-face">
+      <div class="card-numeral">X V I I</div>
+      <div class="card-art"></div>
+      <div class="card-name-inner">The<br>Starpath</div>
+      <div class="card-element-band"></div>
+      <!-- QR placeholder -->
+      <div class="card-qr">
+        <div class="card-qr-grid">
+          <span></span><span style="opacity:0"></span><span></span>
+          <span style="opacity:0"></span><span></span><span style="opacity:0"></span>
+          <span></span><span style="opacity:0"></span><span></span>
+        </div>
+      </div>
+      <div class="card-delta">∆</div>
+    </div>
+
+    <!-- Card Meta -->
+    <div class="card-meta">
+      <div class="card-realm-tag">
+        <span class="realm-glyph">⌁</span>
+        Realm of Winds
+      </div>
+      <div class="card-numeral-large">XVII · MAJOR ARCANA</div>
+      <div class="card-sacred-name">The Starpath</div>
+      <div class="card-trad-name">The Star</div>
+      <div class="card-effect-row">
+        <div class="effect-verb">Skry</div>
+        <div class="effect-text">Draw 2. Place one face-down beneath any Gate cell as a Hidden tile.</div>
+      </div>
+    </div>
+
+  </div><!-- /card-zone -->
+
+  <div class="section-divider"></div>
+
+  <!-- READING POSITION -->
+  <div class="reading-block">
+    <div class="reading-header">
+      <span class="reading-label">Reading context</span>
+      <span class="reading-spread">Three-Fold · Oracle Mat</span>
+    </div>
+
+    <!-- Three-Fold strip -->
+    <div class="threefold-strip">
+      <div class="tf-pos">
+        <div class="tf-pos-glyph">◎</div>
+        <div class="tf-pos-label">Past</div>
+        <div class="tf-pos-card">XI<br>Death</div>
+      </div>
+      <div class="tf-pos">
+        <div class="tf-pos-glyph">◉</div>
+        <div class="tf-pos-label">Present</div>
+        <div class="tf-pos-card">XIV<br>Temperance</div>
+      </div>
+      <div class="tf-pos active">
+        <div class="tf-pos-glyph">✧</div>
+        <div class="tf-pos-label">Becoming</div>
+        <div class="tf-pos-card">XVII<br>The Starpath</div>
+      </div>
+    </div>
+
+    <!-- Position meaning -->
+    <div class="position-meaning">
+      <div class="pos-meaning-title">Becoming — what is crystallising</div>
+      <div class="pos-meaning-body">
+        The Starpath here names the current that is forming beneath the surface. What you have released (Death) and tempered (Temperance) now opens into a trail of light you cannot yet see the end of. The path is the point.
+      </div>
+    </div>
+  </div>
+
+  <div class="section-divider"></div>
+
+  <!-- ECHO LOG -->
+  <div class="echo-block">
+    <div class="echo-log-card">
+      <div class="echo-icon">⬡</div>
+      <div class="echo-content">
+        <div class="echo-title">Echo Logged</div>
+        <div class="echo-detail">
+          <span>XVII The Starpath</span> · Becoming<br>
+          Three-Fold · Oracle Mat Session #47
+        </div>
+      </div>
+      <div class="echo-timestamp">just now</div>
+    </div>
+
+    <div class="session-row">
+      <span class="session-key">Session</span>
+      <div class="session-dot"></div>
+      <span class="session-val">#47 · Pillar 04 · Sacred Codex</span>
+    </div>
+  </div>
+
+  <!-- ACTIONS -->
+  <div class="actions">
+    <button class="action-btn primary">
+      <span class="btn-icon">⊕</span>
+      Journal
+    </button>
+    <button class="action-btn secondary">
+      <span class="btn-icon">✶</span>
+      Full Card
+    </button>
+    <button class="action-btn secondary">
+      <span class="btn-icon">∞</span>
+      Share
+    </button>
+  </div>
+
+  <!-- HOME INDICATOR -->
+  <div class="swipe-hint">view echo log</div>
+  <div class="home-indicator">
+    <div class="home-bar"></div>
+  </div>
+
+</div><!-- /page -->
+
+</body>
+</html>
