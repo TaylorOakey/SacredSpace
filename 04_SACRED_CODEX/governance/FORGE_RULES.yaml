@@ -1,0 +1,74 @@
+# FORGE_RULES.yaml
+# SacredSpace OS — Agent Execution Boundary Policy
+# Pillar: 04_SACRED_CODEX/governance
+# Source: Architect session ruling 2026-09-23, canonized here
+# Status: ADOPTED — encode as machine-readable policy
+# ---
+# Applies to: all AI agents (Claude Code, OpenCode Architect, Hermes, ICARIS)
+# Authority: Taylor Oakey (Seal-5 required to modify this file)
+
+version: "1.0.0"
+sealed_by: "Architect session 2026-09-23"
+canon_gate: "Taylor Seal-5 required to modify"
+
+execution_limits:
+  max_files_changed_per_session: 10
+  max_lines_added_per_file: 500
+  agent_authority_level_default: "L1"  # report-only; L2 = worktree edits; L3 = canon write
+
+protected_paths:
+  - "C:/00_SYSTEM_CORE/docs/SACRED_LEDGER.md"
+  - "C:/04_SACRED_CODEX/sealed/**"
+  - "D:/SacredSpace_OS/04_SACRED_CODEX/sealed/**"
+  - "**/.env*"
+  - "**/secrets/**"
+  - "**/.claude/settings.json"
+  - "**/CANON_DECISIONS.md"
+
+forbidden_operations:
+  - "canonize"
+  - "direct_sealed_write"
+  - "pillar_rename"
+  - "rm -rf"
+  - "DROP TABLE"
+  - "git push --force"
+  - "shutdown"
+  - "format"
+  - "schema_drop"
+  - "bulk_delete_canon"
+
+requires_human_approval:
+  - "seal_5"
+  - "schema_migration"
+  - "deletion"
+  - "network_publish"
+  - "paid_api_call"
+  - "cross_pillar_move"
+  - "registry_write"
+
+worktree_requirement:
+  applies_to: ["L2", "L3"]
+  worktree_base: "D:/SacredSpace_OS/.worktrees/"
+  branch_prefix: "forge/"
+  auto_cleanup_on_reject: true
+
+memory_hierarchy:
+  tier_1: "sealed canon files (C:/00_SYSTEM_CORE, 04_SACRED_CODEX/sealed)"
+  tier_2: "Obsidian vault synthesis (human-confirmed)"
+  tier_3: "SQLite relational (omni_ledger.db, motes.db) — single-writer via Pulse"
+  tier_4: "ChromaDB semantic (vector index)"
+  tier_5: "Pulse transient streams (:8890)"
+  tier_6: "AI chat sessions (disposable, harvest-only)"
+  openHuman_target: "RAW_CAPTURE/ only — never writes directly to Tier 1-3"
+
+ingest_guard:
+  sandbox_path: "D:/SacredSpace_OS/_RAW/RAW_CAPTURE/"
+  max_auto_promote: "DISTILLED_CANDIDATE"
+  require_human_review_above: "DISTILLED_CANDIDATE"
+  duplicate_check: true
+  frontmatter_required: true
+
+single_writer_law:
+  enforced_by: "Pulse transaction.manual + MANUAL_ENTRY"
+  guard_script: "D:/SacredSpace_OS/systems/fastapi/ledger_append.ps1"
+  violation_action: "queue + notify Taylor"
