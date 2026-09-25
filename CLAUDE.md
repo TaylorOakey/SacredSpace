@@ -94,9 +94,10 @@ CODEX LOG:
 OPENCHAMBER (open-source tooling layer):
   OpenCode config       /home/user/SacredSpace/AGENTS.md  ← OpenCode reads this on launch
   Open Design root      /home/user/open-design/
-  Open Design web UI    http://127.0.0.1:42603/
-  Open Design daemon    http://127.0.0.1:38161/
-  Open Design log       /tmp/open_design.log
+  Open Design web UI    http://127.0.0.1:<PORT>/          ← dynamic; check log on each boot
+  Open Design daemon    http://127.0.0.1:<DPORT>/         ← dynamic
+  Open Design log       /tmp/open_design.log              ← grep "Web:" to get live ports
+  Import API            http://127.0.0.1:<PORT>/api/import/claude-design  (POST multipart ZIP)
   Sacred Codex DS       claude.ai/design/p/019dee3c-cbc3-756e-a296-ca23d39e386e
   Imported DS path      /home/user/open-design/.od/projects/<name>/
 ```
@@ -124,10 +125,16 @@ TOOL              PATH / URL                                   PURPOSE
 OpenCode CLI      opencode.ai · github.com/opencode-ai/opencode
                   AGENTS.md = this system's OpenCode config     Multi-provider AI coding agent
 Open Design       /home/user/open-design/                       Local Claude Design alternative
-                  Web UI: http://127.0.0.1:42603/              Drop Claude Design ZIPs here
-                  Daemon: http://127.0.0.1:38161/
+                  Ports are DYNAMIC — check /tmp/open_design.log on each boot:
+                    grep "Web:" /tmp/open_design.log | tail -1
+                  Import API: POST <web-url>/api/import/claude-design (multipart ZIP)
 Sacred Codex DS   claude.ai/design/p/019dee3c-cbc3-756e-a296-ca23d39e386e
-                  Export → ZIP → drop on Open Design welcome dialog
+                  Export → ZIP → POST to import API (or drop on web UI)
+```
+
+**Get live Open Design port:**
+```bash
+grep "Web:" /tmp/open_design.log | tail -1
 ```
 
 **OpenCode config location:** `AGENTS.md` (repo root) — OpenCode reads it on launch.
@@ -736,17 +743,19 @@ nohup pnpm tools-dev run web > /tmp/open_design.log 2>&1 &
 OD_PID=$!
 echo "  ✓ Open Design launching (PID: $OD_PID)"
 
-# Wait and verify
-sleep 8
-if curl -sf http://127.0.0.1:42603/ > /dev/null 2>&1; then
+# Wait and read dynamic ports from log
+sleep 10
+WEB_URL=$(grep "Web:" /tmp/open_design.log | tail -1 | awk '{print $NF}')
+if [ -n "$WEB_URL" ] && curl -sf "$WEB_URL" > /dev/null 2>&1; then
   echo ""
-  echo "  ✓ Open Design web UI: http://127.0.0.1:42603/"
-  echo "  ✓ Daemon:             http://127.0.0.1:38161/"
+  echo "  ✓ Open Design web UI: $WEB_URL"
+  echo "  ✓ Import API:         $WEB_URL/api/import/claude-design"
   echo ""
   echo "  → Export Sacred Codex DS from claude.ai/design/p/019dee3c-cbc3-756e-a296-ca23d39e386e"
-  echo "  → Drop the ZIP on the Open Design welcome dialog"
+  echo "  → POST ZIP: curl -X POST $WEB_URL/api/import/claude-design -F 'file=@<path>.zip'"
+  echo "  → Or drop the ZIP on the Open Design welcome dialog"
 else
-  echo "  ⚠ Still starting. Tail log:"
+  echo "  ⚠ Still starting or failed. Log:"
   tail -15 /tmp/open_design.log
 fi
 ```
