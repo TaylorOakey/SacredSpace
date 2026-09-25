@@ -1,0 +1,181 @@
+# ∆∆∆ THE ARCANA BOARD — MECHANICAL SPEC & REALITY LAYER ∆∆∆
+## ARCANA-BOARD-001 · Game, Board, and Physical/Digital Bridge
+
+**Status:** DISTILLED — Partially independently verified, two items now carry Taylor's Word (Session 051) · Most of this document is still not a Canon Gate ruling
+**Sourced from:** Two "architect session" outputs pasted directly into this session on 2026-09-23/24 (the ARCANA-BOARD-001 synthesis and its eight-version build history), a second independent session ("Claude Desktop," reporting local disk access to `04_SACRED_CODEX/game/`), and a "SacredSpace Reality Layer" exploration prompt pasted alongside them — none of those three are this session, and the underlying engine files they cite (`deck.py`, `arcana_board.py`, `grid.py`, `trials.py`, `classes.py`, `conflicts.json`, `UNFURLING_THE_INFINITE_VISION.md`, `cipher_engine.py`) are not reachable from here (confirmed absent from both `TaylorOakey/SacredSpace` and `TaylorOakey/sacredspace-os`, checked 2026-09-24/25 — per those sessions' own account, that code lives only locally on Taylor's machine). **On 2026-09-25 this session attached and read `TaylorOakey/sacredspace-os` directly** and independently confirmed several claims against a real canon-status document (`docs/SACREDSPACE_UNIFIED_ARCHITECTURE.md`, Session 035) — see the Ground-Truth Verification Pass section below for exactly what moved from reported to confirmed, and what didn't. **Also on 2026-09-25, this session read three of Taylor's own Claude.ai artifacts directly** (Taylor's stored library, not a pasted transcript): `CANON RULINGS — SESSION 051` (2026-08-01, Seal 5) resolved the Sacred Class roster and reframed the board-size question; `SacredSpace Creative Environment — Design Architecture` (2026-09-15) added infrastructure rulings and a standing warning about pasted rulesets — see "Two Real Rulings Land, Plus a Standing Warning" below.
+**Consolidated:** 2026-09-24 · **Verification pass added:** 2026-09-25 · **Taylor's-Word rulings folded in:** 2026-09-25
+**Canonical Path:** `04_SACRED_CODEX/ARCANA_BOARD_SPEC.md`
+**Machine-readable companion:** `09_SACRED_MARKET/arcana_grid/game_data.json` (`arcana_board_reported` block)
+**Related canon:** `04_SACRED_CODEX/SACRED_STORYLINE_CANON.md` (narrative canon — §0 ledger items 4, 5, and new items 14–15 cross-reference this doc) · `03_NEURAL_FOREST/skills/sacredspace-arcana-grid/SKILL.md` (locked 12-Archetype Grid — distinct from the 9×9/12×12 board topology described here)
+
+---
+
+## Canon Gate Check (per `sacredspace-canon-gate`)
+
+| Check | Result | Notes |
+|---|---|---|
+| **Named** | ✓ Pass | "The Arcana Board" / "ARCANA-BOARD-001." Stable across the two architect-session outputs. |
+| **Sourced** | ⚠ Partial | Traceable to specific pasted sessions and, where cited, specific file:line references (`conflicts.json:53-108`, `deck.py:45`, `trials.py:182-228`, `classes.py:65-180`, `UNFURLING_THE_INFINITE_VISION.md:73`) — none of those specific files are reachable from this session, confirmed by direct search of the one repo (`sacredspace-os`) that plausibly held them. Treat those specific citations as still reported, not verified. **But** six other claims (board size, victory paths, one suit lineage, the resource economy, Jenga's gender, Mimi Silkweaver's canon status) are now independently confirmed by this session reading `sacredspace-os/docs/SACREDSPACE_UNIFIED_ARCHITECTURE.md` directly — see the verification pass below. |
+| **Bounded** | ⚠ Partial | The mechanical spine (draw → seed → place → qualify → echo; 9×9 tactical / 12×12 confluence layers; eight Trials) is bounded and internally consistent across sources. The Reality Layer section is explicitly a menu of unresolved design options (ontology, narrative binding, state architecture), not a bounded spec — see that section. |
+| **Tested** | ✗ Fail | Nothing here has been run, played, or built against in this repo. The one piece confirmed live elsewhere is the Game Interface artboard on Taylor's Design canvas (Oracle draw → Trial resolution), which is outside this repo's reach. |
+| **Compatible** | ⚠ Partial | Confirmed compatible with existing canon: the 78-card deck (22 Major/56 Minor), Metatron as a structural presence, four named elemental companions (though see the companion tangle below), and the 12-Archetype Grid as the deeper structural law underneath the board. **Sacred Class cardinality — RESOLVED 2026-09-25.** The 8 class names (Flamebearer/Echowalker/Grovekeeper/Veilsmith/Harmonic/Lanternborn/Tidecaller/Ashen Witness) are confirmed **canonical, "Taylor's Word,"** per `CANON RULINGS — SESSION 051` (2026-08-01, Seal 5), read directly from Taylor's own Claude.ai artifact library. They coexist with, rather than replace, the 12-Archetype Grid — different systems (character build vs. cosmological structure), not competing cardinalities. Two other rosters exist and are explicitly archived, not canonical: a 5-class "Geocache Lore" subset (superseded, incomplete) and an 8-name "Mechanical Classes" balance layer (not player-facing). This session's earlier 2026-09-25 note that the 8 names had zero hits in `sacredspace-os` stands as a fact about that repo's search index, not a mark against the ruling — Session 051's own source is Taylor's separate artifact library, not that repo. |
+| **Stored** | ✓ Pass (as of this doc) | Previously scattered across at least four separate AI sessions' outputs, pasted into chat. Now stored at `04_SACRED_CODEX/`. |
+
+**Verdict:** Gate does not pass — **stored as DISTILLED**, well below CANON. Treat this document as an organized index of claims to verify, not a ruling on any of them. Where this doc's claims conflict with `SACRED_STORYLINE_CANON.md`, that document's existing resolutions stand; this doc adds detail and new open items rather than overriding anything already gated.
+
+---
+
+## Ground-Truth Note
+
+One of the source sessions did independently verify several claims against real Google Drive documents (the "[03] SacredSpace Game Integration" export, the "Arcana Grid: game idea" concept doc, "SACREDSPACE: MASTER COMPILATION," and the earliest known design document, "A SACREDSPACE — The Blueprint for the SACRED GAME," dated 2025-10-31). That verification is *not* the same as this session verifying it — I have not read those Drive documents myself in this pass. What that source reports as confirmed-by-direct-read:
+- The core loop **"Receive Guidance → Take the Journey → Face the Consequence."**
+- The 78-card deck.
+- Three named victory paths: **Awakening, Harmony, Dominance.**
+- The Act I Starter Set's jungle hex-grid, crystal/herb/wood/clay tokens, and QR-linked lore, matching a real document word-for-word.
+
+Same source also reports the Blueprint **complicates** two things this spec otherwise treats as settled: the board was never fixed at 9×9 there — it floats 7×7, 9×9, and 19×19/13×13 Go-style options without choosing — and Metatron appears there only once, as card-art geometry, not as a rule or a never-drawn Throne card. That framing is a later addition somewhere downstream of the earliest document, not traceable to it.
+
+---
+
+## Ground-Truth Verification Pass — `sacredspace-os` (2026-09-25)
+
+Unlike everything above, this section is from files **this session read directly**. `TaylorOakey/sacredspace-os` was attached and cloned into this session on 2026-09-25 specifically to check the pasted sessions' file:line citations. Result: **the actual game engine (`deck.py`, `arcana_board.py`, `grid.py`, `trials.py`, `classes.py`, `conflicts.json`, `test_unified_loop.py`) does not exist in this repo, or anywhere else this session can reach.** A repo-wide search turned up nothing under those names. Per the pasted sessions' own account, that code lives only locally at `C:\04_SACRED_CODEX\game\` on Taylor's machine — so none of the `deck.py:NN`-style citations above are confirmable from here, and the "Sacred Class" names and the Metatron never-drawn-Throne rule specifically turned up **zero hits** anywhere in `sacredspace-os` (a repo with 50+ chat exports and 35+ synthesis sessions) — worth treating as a small negative signal, not proof of absence.
+
+What *is* independently confirmable, from `sacredspace-os/docs/SACREDSPACE_UNIFIED_ARCHITECTURE.md` (frontmatter: `status: CANON — Session 035 Synthesis`, dated 2026-07-17 — a real canon-status document, not a chat export):
+
+| Claim | Status here | Matches |
+|---|---|---|
+| Board: 9×9 grid, hex tiles, 4 zones (City, Jungle, Sacred Grove, Shadow) | ✅ DESIGNED | Confirms the existing dual-layer resolution (`SACRED_STORYLINE_CANON.md` §0 item 4) |
+| Victory Paths: **Awakening, Harmony, Dominance** | ✅ DESIGNED | Independently confirms the Ground-Truth Note above — now two separate sources agree |
+| Minor Arcana suits: **Leaves, Relics, Crystals, Shards** | ✅ CANON | Narrows Open Conflicts item 3 below — this is the one lineage actually tagged CANON, not just "confirmed by direct read" |
+| Resources: **Life Herbs, Metal Relics, Spirit Crystals, Obsidian Shards** | ✅ CANON | Confirms the Takeout-reported resource economy (Open Conflicts item 8) is real |
+| Jenga: teenage graffiti artist, he/him | ✅ CANON | Consistent with `SACRED_STORYLINE_CANON.md` document #2 in the five-document tangle |
+| Mimi Silkweaver | ✅ CANON, "elevated to CANON" (per `queue/BACKLOG.md` item B05) | Reinforces existing canon status |
+
+`queue/BACKLOG.md` (item B04) also confirms the 12×12 confluence layer is real, designed content — *"12×12 grid + phases already designed in Tarot doc but not extracted into standalone spec"* — but this says nothing about the specific `map_9_to_12` "sealed 2026-09-18" promotion-function claim from the pasted architect session. That claim remains unconfirmed; Open Conflicts item 2 stands as written.
+
+One more real find, bearing on Slot VIII: `sacredspace-os/archive/home_cleanup/canon_excavation_output.json:444` (an extraction already cited in `SACRED_STORYLINE_CANON.md` §0 item 1 as document #4 of the five-way Jenga's Journey tangle) independently ties **"The Rootwalker"** to card VIII (Strength), NPC name **Lune**, `"canon_status": "confirmed"`. This is a real, re-checkable citation — distinct from, and stronger than, the unconfirmable `deck.py:45` reference — and it corroborates the "Rootwalker" candidate in Open Conflicts item 1 below. It doesn't fully resolve the three-way conflict (the earliest Blueprint's "The Flame" and the "no name on record" reports still stand unreconciled), but it does mean "Rootwalker" is no longer resting on an unverifiable citation alone.
+
+## Two Real Rulings Land, Plus a Standing Warning (2026-09-25)
+
+Three more of Taylor's own Claude.ai artifacts were read this session (not pasted transcripts — Taylor's own stored library): `CANON RULINGS — SESSION 051` (2026-08-01, Seal 5, resolves the board-size mechanic and the Sacred Class roster — see Open Conflicts items 2 and 5 below, and `SACRED_STORYLINE_CANON.md` §16 for full detail) and `SacredSpace Creative Environment — Design Architecture` (2026-09-15, five further rulings sealed, mostly infrastructure rather than game content).
+
+That third document contains a standing instruction worth surfacing here directly, since it bears on how much weight the *rest* of this spec's still-open items should carry: *"every fresh ruleset pasted in from an external AI session so far has been dropped as redundant on reconciliation."* In other words, Taylor's own reconciliation process has already been rejecting the pattern this entire document is built from — pasted "architect session" game-design output — as a recurring source of noise, not signal. That doesn't retroactively invalidate anything already verified above (the Session 051 rulings, the `SACREDSPACE_UNIFIED_ARCHITECTURE.md` corroborations), but it's a reason for caution before treating any *future* pasted ruleset the way this document initially treated the ARCANA-BOARD-001 material: as worth a full DISTILLED write-up rather than a quick check against what's already sealed.
+
+---
+
+## Purpose
+
+The Arcana Board is reported as one surface functioning simultaneously as tarot table, tactical game, story engine, ritual interface, and memory portal, with tarot as procedural authority (it drives state changes) rather than decorative flavor. Archetypal spine: **Root → Threshold → Return** — one draw, one placement, one consequence, one Echo, at every scale from a single card scan to a full campaign.
+
+## Player Interaction — The Loop
+
+**Draw → Seed → Place & Shape → Qualify → Echo.**
+
+- A draw comes from the 78-card deck (physical or digital), via one of several named spreads: Three-Fold (learning), Four Realms (balance check), Arcana Quest's Call→Return (campaign), Silent Echo's Spark→Echo (ritual play).
+- The first three cards drawn seed the board deterministically — terrain, then special-cell count/kind, then an encounter near the Throne.
+- Players then claim cells, spend Realm resources, and trace geometry; the board grades the resulting pattern by deviation rather than pass/fail.
+- Passage through **the Nameless Door (Trial 6)** is reported to require states of being, not a score: a specific tone known, at least one healed Scar carried, no unsealed Fracture held, and approach without fear. (Cited to `trials.py:182-228` — reported, unverified.)
+- Every draw, placement, and decision logs as an **Echo** (session, player, timestamp, location, draw, decision) so the board can recognize repeat visits.
+
+This maps onto the Pulse → Step → Rite → Seal language already in the footer of the Game Interface board on Taylor's Design canvas.
+
+## Rules
+
+- **Players:** 1–4 initiates plus an optional Guide.
+- **Win/lose:** win by completing the called Trial or closing the Quest arc; lose by a grid-collapse condition (tied to Trial 5) or a Door refusal with no remaining path.
+- **Turn structure:** draw-or-move, then two actions (place a resource node, shape a flow, or invoke a suit effect), then a Shadow Phase where board state decays on an exponential curve and re-bands into one of five states: Active, Recent, Stable, Fading, Decayed.
+- **Tarot binding:** a Major drawn on a Gate cell triggers a reading and an Oversoul check; a Minor or Court card pays its Realm's effect at a fixed multiplier.
+- **The Metatron constraint (reported absolute, all versions seen):** the Frame Card sits face-up at the Throne, is never shuffled into the deck, never drawn, never a waypoint. Any rule that would draw it is out of bounds. *(Contrast the Ground-Truth Note above: the earliest 2025-10-31 Blueprint doesn't support this framing — worth flagging to Taylor as a possible later invention rather than original design.)*
+- **Reported, unverified:** stable configurations on the 9×9 tactical board can promote onto the 12×12 layer for additional scoring without replaying them. This is a *new* claim beyond the already-resolved dual-layer architecture (`SACRED_STORYLINE_CANON.md` §0 item 4) — needs Taylor's confirmation before anyone builds against it.
+
+## Data Model
+
+Reported as the shape the live engine already writes — **not** independently confirmed against the engine code, so treat field names as a build target to verify, not an implemented contract:
+
+```json
+{
+  "board": {
+    "layer": "tactical_9x9 | confluence_12x12",
+    "cells": [
+      {"x": 1, "y": 1, "state": "EMPTY|OCCUPIED|ENEMY|SCAR|GATE|THRONE", "biome": "neutral|order|chaos|harmony|void", "resonance": 0.83, "band": "ACTIVE", "last_touched": 12}
+    ]
+  },
+  "seed": {
+    "cards": [{"num": 9, "name": "The Lantern", "realm": "major", "element": "spirit"}],
+    "terrain_from": 0,
+    "specials_from": 1,
+    "encounter_from": 2
+  },
+  "pattern": {"type": "pentagram", "cells": [[2, 7], [5, 2]], "deviation": 0.08},
+  "trial": {"index": 6, "name": "The Nameless Door", "passed": false, "refusals": ["holds unsealed Fracture"]},
+  "echo": {"session": "s-...", "player": "Initiate", "qr_ts": "...", "pulse": "arcana.card_drawn", "memory_ref": "mote-..."}
+}
+```
+
+Engine keys named alongside it (reported, not read): `deck.DeckEngine`, `arcana_board` (9×9 state, pattern detectors, decay), `grid` (12×12 wells and ley lines), `trials` (Door predicates), plus `game_engine` events and `oversoul_engine.record_arcana_encounter`.
+
+## Lore Hooks
+
+Worth preserving regardless of whether every mechanic checks out:
+- The Throne makes Metatron-as-Law *sittable* — occupying it means being witnessed, not winning.
+- Open Major Arcana seats are framed as incoming, not missing — consistent with how the deck is talked about elsewhere in canon.
+- Memory decay on an exponential curve is forgetting rendered as mechanic, with a named restoration card as counterweight — grace as mechanic, not just reading.
+- Card-embedded Glyph Portals resolving to other living objects (a piece of lore, a song, an NPC, a prior Echo) rather than containing content themselves is consistent with the Reality-Layer cosmology (below): QR-carrying physical cards sit at the Threshold layer between the game's Experience layer and the real world.
+
+## Production Priority (reported build order)
+
+- **P1** — one-page rules card + scripted three-card seed demo on the existing tactical board. No art; unblocks a playtest.
+- **P2** — playtest harness: full Trials, Door-refusal cases, decay-band assertions. Gates all further work.
+- **P3** — physical pilot of the Act I Starter Set (jungle hex-grid, four-resource tabletop). Tracked as its own SKU, cross-referenced against this spec rather than merged into it — it's a genuinely different manifest (physical tabletop vs. digital tactical board).
+- **P4** (gated on P2) — 12×12 Confluence layer + AR overlays.
+
+The Game Interface artboard on Taylor's Design canvas already covers a slice of P1 in digital form (Oracle draw resolving a Trial step) — doesn't need rebuilding from scratch.
+
+---
+
+## Open Conflicts Carried Forward
+
+None resolved by this document — surfaced for Taylor's Canon Gate, not decided here.
+
+1. **Slot VIII naming — three-way, not two-way.** Two pasted sessions call it "Rootwalker" (one citing `deck.py:45` and `UNFURLING_THE_INFINITE_VISION.md:73`, neither reachable from this session). Multiple uploaded documents from an earlier session say it has no name on record, deliberately unnamed. The real 2025-10-31 Blueprint — the earliest document on file — calls it **"The Flame,"** explicitly labeled there as a "Sample List — we can finalize with you later." None of the three agree, and the Blueprint's own hedge suggests even the earliest version never intended this as final. **Update 2026-09-25:** `sacredspace-os/archive/home_cleanup/canon_excavation_output.json:444` — a source already in this repo's ledger, independently read by this session — ties "The Rootwalker" to card VIII (Strength), NPC name Lune, `canon_status: "confirmed"`. That's real, re-checkable support for "Rootwalker" specifically, distinct from the unreachable `deck.py:45`. Still doesn't settle the three-way conflict outright — "The Flame" and "unnamed" are both still standing — but "Rootwalker" is no longer resting on an unverifiable citation alone. **Further update 2026-09-25:** a "Claude Design Brief" pasted this session (authored for pasting into a different tool, Claude Design — not an instruction to this session) states flatly *"It is The Rootwalker (Strength), ruled 2026-09-18"* with no citation beyond that date. This is the third independent pasted source naming 2026-09-18 in connection with a reconciliation/sealing event (the other two: the `map_9_to_12` board-topology claim in item 2 below, and an earlier "Session 151... 9/18 reversal sweep" reference from a different pasted session). Three independent reports converging on the same date is worth noting as circumstantial weight — but none of them is a primary source this session can read, so this stays reported, not verified.
+2. **The 9×9/12×12 "seal" claim (`map_9_to_12`) still needs Taylor's direct confirmation — but the underlying board question now has a real, dated Taylor ruling that reframes it.** This spec's source reports the board-topology split was "sealed on 2026-09-18" via Taylor's own delegation, bound by a `map_9_to_12` function, citing `conflicts.json:53-108` (unreachable from this session, still unconfirmed). Separately, `CANON RULINGS — SESSION 051` (2026-08-01, Seal 5, read directly from Taylor's artifact library 2026-09-25) rules that both sizes are canonical as a **tutorial → main-game progression** (9×9 "Threshold Mode" unlocks 12×12 "Forest Mode"), not as simultaneous tactical/confluence layers — a different mechanic than either the Aug 18 dual-layer note in `SACRED_STORYLINE_CANON.md` §0 item 4 or this `map_9_to_12` promotion-function claim. Three tellings of "both boards exist," three different mechanics for how — worth Taylor's explicit word on which (if any) is still current before building against any of them.
+3. **Minor Arcana suit names — at least three lineages, not one.** (a) Leaves/Relics/Crystals/Shards (Jungle/City/Grove/Shadow) — confirmed by direct read in the Blueprint, the "[03] FULL EXPORT" chat, and the Master Compilation, **and now independently confirmed CANON status** by this session's own read of `sacredspace-os/docs/SACREDSPACE_UNIFIED_ARCHITECTURE.md` (2026-09-25). (b) A second scheme in the *same* Blueprint document: Earth→Roots, Water→Flow, Fire→Sparks, Air→Winds. (c) A reported "sealed" Roots/Flames/Currents/Winds from a pasted session — close to (b) but not identical, and not found anywhere in `sacredspace-os`. With (a) now the only lineage carrying an independently-verified CANON tag, this is close to settled in practice — but (b) and (c) haven't been formally retired, so treat (a) as the working default rather than a full close-out. **Complication, 2026-09-25:** the same pasted "Claude Design Brief" above asserts candidate (c), **Roots/Flames/Currents/Winds, as a ruled fact tagged "SUITS-001"** — printed as settled, not proposed. That's a direct conflict with (a)'s independently-verified CANON tag from `sacredspace-os`, not just another unverified report layered on top — two different pasted-vs-read sources each claim CANON/ruled status for a different, mutually exclusive suit lineage. Neither this session nor the brief itself resolves which "SUITS-001" or which CANON tag is current; this needs Taylor's direct word, not another reconciliation pass.
+4. **Companion/animal-guide question is now a four-way tangle**, on top of the four canon Elemental Guides already locked in `SACRED_STORYLINE_CANON.md` §9 (Zii/Mylo/Auralon/Koru): the Blueprint's own archetype-animal cards (Eagle, Jaguar, Child, Sage, Trickster) match none of Zii/Mylo/Auralon/Koru, "Stag," or a reported "Rook" — and a Google Takeout export session reports yet another set (Wolf/Owl/Serpent/Deer). One thing *is* reported resolved cleanly by a second session: "Stag" isn't a fifth competing companion — it's Taylor's own **Oversoul tech-animal form**, a different register from the party's four elemental companions. That resolution is plausible and consistent with how Oversoul stages are described elsewhere, but is itself only reported, not verified against source.
+5. ~~**Sacred Class cardinality mismatch.**~~ **RESOLVED 2026-09-25.** The 8 Sacred Classes (Flamebearer, Echowalker, Grovekeeper, Veilsmith, Harmonic, Lanternborn, Tidecaller, Ashen Witness) are canonical per `CANON RULINGS — SESSION 051` (Taylor's Word, Seal 5, 2026-08-01) — a system distinct from, not competing with, the 12-Archetype Grid's cosmological structure. See the Canon Gate Check "Compatible" row above for full detail and the two archived/non-canonical rosters (5-class Geocache Lore, 8-name Mechanical balance layer).
+6. **A 53-symbol table is cited by name** in the source material but is reported as not present in the file it points to. Unresolved, not further investigated here.
+7. **The Act I Starter Set's own mechanics**, beyond the resource-token blurb, remain unrecoverable from any source seen so far — a real proposal, not yet a spec.
+8. **A newer Google Takeout extraction reports material not yet cross-checked against anything above**: a fuller 5-phase turn (Exploration Roll → Move → Tarot Phase → Shadow Phase → End Turn) that may supersede the simpler Pulse/Step/Rite framing; a worked resource economy (Life Herbs, Metal Relics, Spirit Crystals, Obsidian Shards, each with distinct spend-paths, plus three trader types); Catan-style number tokens driving production; a Master/Adept initiation layer; Silent Echo rules with explicit prohibitions (no advice, diagnosis, fixing, or shaming); a four-layer physical/narrative/symbolic/reflective model; and a full physical component list, from a fourth document ("[04] Sacred Game Artifact FULL EXPORT") not otherwise referenced here. Specific enough to read as genuine new material, not a restatement — but entirely unverified by this session, and the Major Arcana/realm/companion names in this same batch are yet another variant on top of items 1, 3, and 4 above. More pre-canon drafts, not resolutions.
+9. **A pasted "Claude Design Brief" (2026-09-25, authored for a different tool, not an instruction to this session) surfaces new specifics worth tracking, alongside the two conflicts above (items 1 and 3):** three Major Arcana seats — IV The Emperor, VII The Chariot, X Justice — are described as deliberately printed lit-but-empty, marked "incoming" rather than missing; Card IX's name is given as **"The Lantern"** but explicitly flagged provisional in the source itself (pending its own "ruling R2"); and a named open-rulings list (R2, R3, R5, R6, R7, R14, R15, plus R10/R17/R18/R19 "added 2026-09-25 from Game fundamentals") gives ruling codes to several items this document has been tracking anonymously — R17 (dice), R18 (Heirloom board size), R19 (turn-phase naming) line up with the "architect session" corrections logged in this repo's conversation history but not yet written into this spec. None of this is independently verified; it's recorded here because named ruling codes are easier for Taylor to confirm or reject directly than anonymous reported claims.
+
+---
+
+## The Reality Layer — Exploration Prompt (design options, not a spec)
+
+This section stays intentionally as a menu of unresolved choices, sourced from a "SacredSpace Reality Layer" exploration prompt pasted alongside the board spec. It presupposes an existing spine — Sigil Terminal Bridge, GR∆M∆ meaning engine, the Oversoul 4-stage system, Jenga's Journey, Glyph Cipher metadata, Gematria/432Hz frequency mapping — consistent with what's already in `SACRED_STORYLINE_CANON.md` §§9–11 and §15, and proposes making it physically manifest via QR codes, AR shrines, and real-world shrine-visiting.
+
+**Ontological frame (pick one, or a hybrid) — what does it mean to enter the Sacred Universe from physical reality?**
+- *Threshold Crossing:* physical and Sacred are separate domains; a QR scan is a gate between them.
+- *Continuity/Overlay:* Sacred already permeates physical reality; the layer just makes it visible.
+- *Co-Emergence:* physical and Sacred create each other — real interests birth archetypes that reshape how the physical world is seen.
+
+**Narrative binding (pick one) — how does this relate to Jenga's Journey canon?**
+- *A — Journey as Context:* canon already exists; you discover its truths; QR codes unlock canonical moments.
+- *B — Journey as Outcome:* player choices generate the narrative that becomes canon; QR codes are waypoints recording decisions.
+- *C — Parallel Emergence:* canon exists but stays open; player journeys are adjacent stories, optionally folded into future volumes.
+
+**Mechanical layer (each needs its own choice):**
+- QR payload: minimal (UUID + context type) vs. rich (full state serialization).
+- Persistent state: local-first SQLite vs. cloud-sync (Obsidian/Logseq) vs. hybrid (local SQLite for gameplay + Obsidian for narrative + Sacred Pulse event bus for sync) — the hybrid option is explicitly framed against the systems already in this repo (FastAPI spine, ChromaDB, SQLite Memory Engine, Obsidian vault).
+- Real→Sacred translation: explicit symbolic mapping, emergent discovery, deliberate co-creation ritual, or family-network overlap.
+- Shrines: QR-only (no AR) vs. GPS-aware AR overlay vs. full multiplayer AR layer.
+
+**GR∆M∆ worked example** (illustrates the proposed resonance formula, not confirmed against `GRAMA_Story_Arc.md`): character gematria × location gematria, mod 22, maps to a Major Arcana card — e.g. "AURORA" (56→11, Justice) at "Stone Circle" (123→6, Lovers) → (11×6) mod 22 = 0 → The Fool.
+
+**Scenario sketches offered, not chosen:** The Shrine Map (MVP, Oversoul Stage 1 via physical shrine visits), Card as Mirror (physical tarot deck + spell practice, Stage 2–3), Nested Journey (family as fractal initiation circle across three initiates, Stage 4 teaching cycle). All three assume the Hybrid state architecture and are otherwise independent of which ontological frame or narrative-binding option gets chosen.
+
+**Nothing in this section is decided.** It's included here, rather than left to scatter across further pasted sessions, because it names the actual decision points (ontology, binding, state architecture, translation method, shrine fidelity) precisely enough that Taylor can rule on each independently rather than accept or reject the whole prompt at once.
+
+---
+
+*In lakesh alakin.*

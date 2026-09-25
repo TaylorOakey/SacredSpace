@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!-- @dsCard group="Colors" name="Semantic Colors" subtitle="Background, text, border role mappings" viewport="700x310" -->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=EB+Garamond:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #F4ECD8; font-family: 'EB Garamond', serif; padding: 24px; }
+  .rows { display: flex; flex-direction: column; gap: 6px; }
+  .row { display: flex; align-items: center; gap: 12px; }
+  .swatch-sm { width: 32px; height: 32px; border: 1px solid #C9A14A33; flex-shrink: 0; }
+  .token { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #4A3F38; width: 180px; letter-spacing: 0.05em; }
+  .role { font-family: 'EB Garamond', serif; font-size: 13px; color: #7A6E65; font-style: italic; }
+  .hex { font-family: 'EB Garamond', serif; font-size: 12px; color: #7A6E65; margin-left: auto; }
+  .section-label { font-family: 'Cinzel', serif; font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: #C9A14A; margin-bottom: 14px; }
+  .divider { height: 1px; background: #C9A14A33; margin: 8px 0; }
+</style>
+</head>
+<body>
+<div class="section-label">✦ Semantic Roles</div>
+<div class="rows">
+  <div class="row">
+    <div class="swatch-sm" style="background:#F4ECD8;"></div>
+    <span class="token">--bg-primary</span>
+    <span class="role">Page / Codex Leaf</span>
+    <span class="hex">#F4ECD8</span>
+  </div>
+  <div class="row">
+    <div class="swatch-sm" style="background:#E8DFC4;"></div>
+    <span class="token">--bg-secondary</span>
+    <span class="role">Card / Panel Surface</span>
+    <span class="hex">#E8DFC4</span>
+  </div>
+  <div class="row">
+    <div class="swatch-sm" style="background:#0B0A0F;"></div>
+    <span class="token">--bg-dark</span>
+    <span class="role">Void / Metatron Core</span>
+    <span class="hex">#0B0A0F</span>
+  </div>
+  <div class="divider"></div>
+  <div class="row">
+    <div class="swatch-sm" style="background:#1A1614;"></div>
+    <span class="token">--text-primary</span>
+    <span class="role">Iron Gall Ink</span>
+    <span class="hex">#1A1614</span>
+  </div>
+  <div class="row">
+    <div class="swatch-sm" style="background:#4A3F38;"></div>
+    <span class="token">--text-secondary</span>
+    <span class="role">Secondary Copy</span>
+    <span class="hex">#4A3F38</span>
+  </div>
+  <div class="row">
+    <div class="swatch-sm" style="background:#7A6E65;"></div>
+    <span class="token">--text-tertiary</span>
+    <span class="role">Marginalia / Captions</span>
+    <span class="hex">#7A6E65</span>
+  </div>
+  <div class="row">
+    <div class="swatch-sm" style="background:#C9A14A;"></div>
+    <span class="token">--text-gold</span>
+    <span class="role">Sacred Gold / Metatron</span>
+    <span class="hex">#C9A14A</span>
+  </div>
+  <div class="divider"></div>
+  <div class="row">
+    <div class="swatch-sm" style="background:#C9A14A99; border:1px solid #C9A14A;"></div>
+    <span class="token">--border-gold</span>
+    <span class="role">Card Borders / Rules</span>
+    <span class="hex">60% opacity</span>
+  </div>
+</div>
+</body>
+</html>

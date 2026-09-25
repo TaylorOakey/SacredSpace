@@ -1,0 +1,1162 @@
+<!DOCTYPE html>
+<!-- @dsCard group="UI Kit — Web" name="Web Experience UI Kit" subtitle="Interactive portal — Landing, Arcana Map, Archetype Detail (click-thru)" viewport="1280x800" -->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sacred Codex — Web Experience</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=IM+Fell+English:ital@0;1&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* ── Reset & Base ── */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+:root {
+  --parchment: #F4ECD8;
+  --ivory: #E8DFC4;
+  --ink: #1A1614;
+  --gold: #C9A14A;
+  --gold-dim: rgba(201,161,74,0.5);
+  --gold-faint: rgba(201,161,74,0.12);
+  --void: #0B0A0F;
+  --fire: #B7472A;
+  --water: #2E5C7E;
+  --earth: #5C6E3C;
+  --air: #B8A7C9;
+  --text-2: #4A3F38;
+  --text-3: #7A6E65;
+  --font-display: 'Cinzel', serif;
+  --font-alt: 'IM Fell English', serif;
+  --font-body: 'EB Garamond', serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --ease: cubic-bezier(0.45,0.05,0.55,0.95);
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--parchment);
+  color: var(--ink);
+  font-size: 16px;
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* ── Screens ── */
+.screen { display: none; min-height: 100vh; }
+.screen.active { display: block; }
+
+/* ══════════════════════════════════════════
+   NAV
+══════════════════════════════════════════ */
+.sacred-nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  background: rgba(244,236,216,0.96);
+  backdrop-filter: blur(4px);
+  border-bottom: 1px solid var(--gold-dim);
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 48px;
+  height: 60px;
+}
+.nav-wordmark {
+  font-family: var(--font-display);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--ink);
+  cursor: pointer;
+  transition: color 400ms var(--ease);
+}
+.nav-wordmark:hover { color: var(--gold); }
+.nav-wordmark span { color: var(--gold); }
+
+.nav-links {
+  display: flex; gap: 32px; list-style: none;
+}
+.nav-links li a {
+  font-family: var(--font-display);
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--text-3);
+  text-decoration: none;
+  transition: color 400ms var(--ease);
+  cursor: pointer;
+}
+.nav-links li a:hover, .nav-links li a.active { color: var(--gold); }
+
+.nav-seal {
+  font-family: var(--font-body);
+  font-style: italic;
+  font-size: 11px;
+  color: var(--gold);
+  letter-spacing: 0.04em;
+  opacity: 0.8;
+}
+
+/* ══════════════════════════════════════════
+   SCREEN 1 — HERO PORTAL
+══════════════════════════════════════════ */
+#screen-portal {
+  background: var(--void);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  padding: 100px 48px 80px;
+}
+
+/* Sacred geometry background */
+.geo-bg {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 700px; height: 700px;
+  opacity: 0.08;
+  pointer-events: none;
+}
+
+.geo-ring {
+  position: absolute; top: 50%; left: 50%;
+  border-radius: 50%;
+  border: 1px solid var(--gold);
+  transform: translate(-50%, -50%);
+  animation: breathe 8s ease-in-out infinite;
+}
+.geo-ring:nth-child(1) { width: 120px; height: 120px; animation-delay: 0s; }
+.geo-ring:nth-child(2) { width: 240px; height: 240px; animation-delay: 0.5s; }
+.geo-ring:nth-child(3) { width: 380px; height: 380px; animation-delay: 1s; }
+.geo-ring:nth-child(4) { width: 520px; height: 520px; animation-delay: 1.5s; }
+.geo-ring:nth-child(5) { width: 660px; height: 660px; animation-delay: 2s; }
+
+@keyframes breathe {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 1; }
+}
+
+/* 12-point star lines */
+.geo-lines {
+  position: absolute; top: 50%; left: 50%;
+  width: 660px; height: 660px;
+  transform: translate(-50%, -50%);
+}
+.geo-line {
+  position: absolute; top: 50%; left: 50%;
+  width: 330px; height: 1px;
+  background: linear-gradient(to right, transparent, var(--gold), transparent);
+  transform-origin: 0 50%;
+  opacity: 0.25;
+}
+
+.portal-content {
+  position: relative; z-index: 2;
+  text-align: center;
+  display: flex; flex-direction: column;
+  align-items: center; gap: 28px;
+  max-width: 680px;
+}
+
+.portal-overline {
+  font-family: var(--font-display);
+  font-size: 9px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--gold);
+  opacity: 0.8;
+}
+
+.portal-node {
+  width: 80px; height: 80px;
+  border-radius: 50%;
+  border: 2px solid var(--gold);
+  background: var(--void);
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 0 0 8px rgba(201,161,74,0.08), 0 0 40px rgba(201,161,74,0.15);
+  animation: pulse-gold 4s ease-in-out infinite;
+}
+.portal-node-glyph { font-size: 32px; color: var(--gold); line-height: 1; }
+
+@keyframes pulse-gold {
+  0%, 100% { box-shadow: 0 0 0 8px rgba(201,161,74,0.08), 0 0 40px rgba(201,161,74,0.12); }
+  50% { box-shadow: 0 0 0 12px rgba(201,161,74,0.12), 0 0 60px rgba(201,161,74,0.22); }
+}
+
+.portal-title {
+  font-family: var(--font-display);
+  font-size: clamp(32px, 5vw, 56px);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--parchment);
+  line-height: 1.1;
+}
+.portal-title span { color: var(--gold); }
+
+.portal-subtitle {
+  font-family: var(--font-alt);
+  font-style: italic;
+  font-size: 20px;
+  color: rgba(244,236,216,0.6);
+  line-height: 1.6;
+}
+
+.portal-rule {
+  width: 120px; height: 1px;
+  background: linear-gradient(to right, transparent, var(--gold), transparent);
+}
+
+.portal-body {
+  font-family: var(--font-body);
+  font-size: 16px;
+  color: rgba(244,236,216,0.55);
+  line-height: 1.8;
+  max-width: 520px;
+}
+
+.portal-cta {
+  display: flex; gap: 16px; flex-wrap: wrap; justify-content: center;
+  margin-top: 8px;
+}
+
+.btn-primary {
+  font-family: var(--font-display);
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--void);
+  background: var(--gold);
+  border: 1px solid var(--gold);
+  padding: 14px 32px;
+  cursor: pointer;
+  transition: background 500ms var(--ease), color 500ms var(--ease);
+  text-decoration: none;
+}
+.btn-primary:hover { background: #A8823A; border-color: #A8823A; }
+
+.btn-secondary {
+  font-family: var(--font-display);
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  background: transparent;
+  border: 1px solid rgba(201,161,74,0.5);
+  padding: 14px 32px;
+  cursor: pointer;
+  transition: background 500ms var(--ease);
+  text-decoration: none;
+}
+.btn-secondary:hover { background: rgba(201,161,74,0.1); }
+
+.portal-seal {
+  font-family: var(--font-body);
+  font-style: italic;
+  font-size: 13px;
+  color: rgba(201,161,74,0.5);
+  letter-spacing: 0.05em;
+  margin-top: 16px;
+}
+
+/* ── Scroll indicator ── */
+.scroll-hint {
+  position: absolute; bottom: 32px; left: 50%;
+  transform: translateX(-50%);
+  display: flex; flex-direction: column; align-items: center; gap: 8px;
+  opacity: 0.4;
+  animation: fadeUpDown 2.5s ease-in-out infinite;
+}
+.scroll-hint span { font-family: var(--font-display); font-size: 8px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); }
+.scroll-hint-bar { width: 1px; height: 40px; background: linear-gradient(to bottom, var(--gold), transparent); }
+@keyframes fadeUpDown {
+  0%, 100% { opacity: 0.25; transform: translateX(-50%) translateY(0); }
+  50% { opacity: 0.5; transform: translateX(-50%) translateY(6px); }
+}
+
+/* ══════════════════════════════════════════
+   SCREEN 2 — ARCANA MAP
+══════════════════════════════════════════ */
+#screen-arcana {
+  background: var(--parchment);
+  padding-top: 80px;
+}
+
+.page-header {
+  padding: 64px 80px 48px;
+  border-bottom: 1px solid var(--gold-dim);
+  display: flex; align-items: flex-end; justify-content: space-between;
+}
+.page-header-left {}
+.page-overline {
+  font-family: var(--font-display);
+  font-size: 9px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 10px;
+}
+.page-title {
+  font-family: var(--font-display);
+  font-size: 38px;
+  font-weight: 500;
+  letter-spacing: 0.07em;
+  color: var(--ink);
+  line-height: 1.15;
+}
+.page-subtitle {
+  font-family: var(--font-alt);
+  font-style: italic;
+  font-size: 18px;
+  color: var(--text-3);
+  margin-top: 8px;
+}
+.page-header-right {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  color: var(--text-3);
+  text-align: right;
+  line-height: 1.9;
+}
+
+/* Arcana grid layout */
+.arcana-section {
+  padding: 48px 80px 80px;
+}
+
+.element-row {
+  margin-bottom: 40px;
+}
+.element-row-header {
+  display: flex; align-items: center; gap: 16px;
+  margin-bottom: 20px;
+}
+.element-row-glyph {
+  font-size: 22px;
+  line-height: 1;
+}
+.element-row-name {
+  font-family: var(--font-display);
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+.element-row-rule {
+  flex: 1; height: 1px;
+  background: linear-gradient(to right, currentColor, transparent);
+  opacity: 0.3;
+}
+
+.prime-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+/* Archetype card in grid */
+.arc-card {
+  background: var(--ivory);
+  border: 1px solid var(--gold-dim);
+  padding: 20px;
+  cursor: pointer;
+  position: relative;
+  transition: border-color 500ms var(--ease), background 500ms var(--ease);
+  display: flex; flex-direction: column; gap: 10px;
+}
+.arc-card::before, .arc-card::after {
+  content: '◈'; position: absolute; font-size: 12px; color: var(--gold); opacity: 0.4; line-height: 1;
+  transition: opacity 400ms var(--ease);
+}
+.arc-card::before { top: 6px; left: 8px; }
+.arc-card::after  { bottom: 6px; right: 8px; }
+.arc-card:hover { background: var(--parchment); }
+.arc-card:hover::before, .arc-card:hover::after { opacity: 1; }
+
+.arc-card-sigil {
+  font-size: 28px; line-height: 1; opacity: 0.8;
+  transition: opacity 400ms var(--ease), transform 500ms var(--ease);
+}
+.arc-card:hover .arc-card-sigil { opacity: 1; transform: scale(1.05); }
+
+.arc-card-name {
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.09em;
+  color: var(--ink);
+  line-height: 1.3;
+}
+
+.arc-card-tags { display: flex; gap: 6px; flex-wrap: wrap; }
+.arc-tag {
+  font-family: var(--font-display);
+  font-size: 7.5px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  padding: 3px 9px;
+  border: 1px solid;
+}
+
+.arc-card-rule { height: 1px; background: var(--gold-faint); }
+
+.arc-card-gematria {
+  font-family: var(--font-mono);
+  font-size: 9.5px;
+  letter-spacing: 0.1em;
+  color: var(--text-3);
+  line-height: 1.8;
+}
+.arc-card-gematria span { color: var(--gold); }
+
+/* Hover sigil reveal */
+.arc-card-hover-sigil {
+  position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 60px; color: var(--gold); opacity: 0;
+  transition: opacity 500ms var(--ease);
+  pointer-events: none;
+}
+.arc-card:hover .arc-card-hover-sigil { opacity: 0.06; }
+
+/* Element colors */
+.el-fire .arc-card-sigil, .el-fire .arc-tag  { color: #B7472A; }
+.el-fire .arc-tag { background: rgba(183,71,42,0.07); border-color: rgba(183,71,42,0.35); }
+.el-fire .element-row-glyph, .el-fire .element-row-name { color: #B7472A; }
+.el-fire .element-row-rule { background: linear-gradient(to right, #B7472A, transparent); opacity: 0.4; }
+
+.el-water .arc-card-sigil, .el-water .arc-tag  { color: #2E5C7E; }
+.el-water .arc-tag { background: rgba(46,92,126,0.07); border-color: rgba(46,92,126,0.35); }
+.el-water .element-row-glyph, .el-water .element-row-name { color: #2E5C7E; }
+.el-water .element-row-rule { background: linear-gradient(to right, #2E5C7E, transparent); opacity: 0.4; }
+
+.el-earth .arc-card-sigil, .el-earth .arc-tag  { color: #5C6E3C; }
+.el-earth .arc-tag { background: rgba(92,110,60,0.07); border-color: rgba(92,110,60,0.35); }
+.el-earth .element-row-glyph, .el-earth .element-row-name { color: #5C6E3C; }
+.el-earth .element-row-rule { background: linear-gradient(to right, #5C6E3C, transparent); opacity: 0.4; }
+
+.el-air .arc-card-sigil, .el-air .arc-tag  { color: #8B7AA0; }
+.el-air .arc-tag { background: rgba(184,167,201,0.15); border-color: rgba(184,167,201,0.45); }
+.el-air .element-row-glyph, .el-air .element-row-name { color: #8B7AA0; }
+.el-air .element-row-rule { background: linear-gradient(to right, #8B7AA0, transparent); opacity: 0.4; }
+
+/* Metatron center node strip */
+.metatron-strip {
+  background: var(--void);
+  padding: 40px 80px;
+  display: flex; align-items: center; gap: 40px;
+  border-top: 1px solid rgba(201,161,74,0.3);
+  border-bottom: 1px solid rgba(201,161,74,0.3);
+  margin: 0 0 40px;
+}
+.metatron-node-lg {
+  width: 72px; height: 72px;
+  border-radius: 50%;
+  border: 2px solid var(--gold);
+  background: var(--void);
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 0 0 6px rgba(201,161,74,0.08);
+  flex-shrink: 0;
+}
+.metatron-node-glyph { font-size: 28px; color: var(--gold); }
+.metatron-text {}
+.metatron-label {
+  font-family: var(--font-display);
+  font-size: 10px;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 6px;
+}
+.metatron-name {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  color: var(--parchment);
+}
+.metatron-desc {
+  font-family: var(--font-body);
+  font-style: italic;
+  font-size: 15px;
+  color: rgba(244,236,216,0.5);
+  margin-top: 4px;
+}
+
+/* ══════════════════════════════════════════
+   SCREEN 3 — ARCHETYPE DETAIL
+══════════════════════════════════════════ */
+#screen-detail {
+  background: var(--parchment);
+  padding-top: 80px;
+}
+
+.detail-hero {
+  background: var(--void);
+  padding: 64px 80px 56px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 64px;
+  align-items: center;
+}
+
+.detail-sigil-zone {
+  display: flex; align-items: center; justify-content: center;
+  position: relative;
+}
+.detail-sigil-outer {
+  width: 160px; height: 160px;
+  border-radius: 50%;
+  border: 2px solid var(--gold);
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 0 0 10px rgba(201,161,74,0.06), 0 0 60px rgba(201,161,74,0.12);
+}
+.detail-sigil {
+  font-size: 80px;
+  line-height: 1;
+}
+
+.detail-hero-text {}
+.detail-overline {
+  font-family: var(--font-display);
+  font-size: 9px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 12px;
+}
+.detail-name {
+  font-family: var(--font-display);
+  font-size: 48px;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  color: var(--parchment);
+  line-height: 1.1;
+  margin-bottom: 16px;
+}
+.detail-tags { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 20px; }
+.detail-tag {
+  font-family: var(--font-display);
+  font-size: 9px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding: 5px 14px;
+  border: 1px solid;
+}
+
+.detail-cipher {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.13em;
+  color: rgba(244,236,216,0.5);
+  line-height: 2;
+  border-top: 1px solid rgba(201,161,74,0.2);
+  padding-top: 16px;
+}
+.detail-cipher span { color: var(--gold); }
+
+/* Detail body — two column codex layout */
+.detail-body {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 0;
+  border-top: 1px solid var(--gold-dim);
+}
+
+.detail-margin {
+  background: var(--ivory);
+  border-right: 1px solid var(--gold-dim);
+  padding: 48px 24px;
+  display: flex; flex-direction: column; gap: 32px; align-items: center;
+}
+
+.margin-node {
+  width: 52px; height: 52px;
+  border-radius: 50%;
+  border: 2px solid var(--gold);
+  display: flex; align-items: center; justify-content: center;
+}
+.margin-node-glyph { font-size: 20px; color: var(--gold); }
+
+.margin-data {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  letter-spacing: 0.12em;
+  color: var(--text-3);
+  text-align: center;
+  line-height: 2.1;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  white-space: nowrap;
+}
+
+.margin-glyph { font-size: 20px; color: var(--gold); opacity: 0.5; }
+
+.detail-main {
+  padding: 48px 64px 64px;
+  display: flex; flex-direction: column; gap: 28px;
+}
+
+.detail-section-label {
+  font-family: var(--font-display);
+  font-size: 9px;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 10px;
+}
+
+.detail-lead {
+  font-family: var(--font-alt);
+  font-size: 20px;
+  font-style: italic;
+  line-height: 1.65;
+  color: var(--text-2);
+}
+
+.detail-text {
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.82;
+  color: var(--ink);
+}
+
+.codex-rule {
+  height: 1px;
+  background: var(--gold-faint);
+}
+
+.cipher-block {
+  background: var(--ivory);
+  border: 1px solid rgba(201,161,74,0.45);
+  border-top: 2px solid var(--gold);
+  padding: 20px 24px;
+}
+.cipher-block-header {
+  font-family: var(--font-display);
+  font-size: 9px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 14px;
+  display: flex; align-items: center; gap: 10px;
+}
+.cipher-block-header::after { content: ''; flex: 1; height: 1px; background: rgba(201,161,74,0.3); }
+.cipher-text {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.13em;
+  line-height: 2.0;
+  color: var(--ink);
+}
+.cipher-text .ck { color: var(--text-3); }
+.cipher-text .cv { color: var(--ink); }
+.cipher-text .cg { color: var(--gold); }
+.cipher-text .cf { color: #8C321B; }
+
+.detail-invocation {
+  font-family: var(--font-alt);
+  font-style: italic;
+  font-size: 18px;
+  line-height: 1.65;
+  color: var(--text-3);
+  border-left: 2px solid rgba(201,161,74,0.4);
+  padding-left: 20px;
+}
+
+.detail-seal {
+  font-family: var(--font-body);
+  font-style: italic;
+  font-size: 13px;
+  color: var(--gold);
+  letter-spacing: 0.05em;
+}
+
+.back-btn {
+  font-family: var(--font-display);
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-3);
+  background: none; border: none;
+  cursor: pointer;
+  padding: 8px 0;
+  transition: color 400ms var(--ease);
+  display: inline-flex; align-items: center; gap: 8px;
+}
+.back-btn:hover { color: var(--gold); }
+
+/* ══════════════════════════════════════════
+   FOOTER
+══════════════════════════════════════════ */
+.sacred-footer {
+  background: var(--void);
+  border-top: 1px solid rgba(201,161,74,0.25);
+  padding: 48px 80px;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.footer-wordmark {
+  font-family: var(--font-display);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--parchment);
+}
+.footer-wordmark span { color: var(--gold); }
+.footer-glyphs {
+  font-size: 14px; color: var(--gold); opacity: 0.4; letter-spacing: 0.3em;
+}
+.footer-seal {
+  font-family: var(--font-body);
+  font-style: italic;
+  font-size: 13px;
+  color: rgba(244,236,216,0.35);
+  letter-spacing: 0.05em;
+}
+
+/* ══════════════════════════════════════════
+   TRANSITIONS
+══════════════════════════════════════════ */
+.screen {
+  opacity: 0;
+  transition: opacity 600ms var(--ease);
+}
+.screen.active {
+  opacity: 1;
+}
+</style>
+</head>
+<body>
+
+<!-- ══ NAV ══ -->
+<nav class="sacred-nav">
+  <div class="nav-wordmark" onclick="goTo('portal')">Sacred <span>Codex</span></div>
+  <ul class="nav-links">
+    <li><a onclick="goTo('portal')" id="nav-portal" class="active">Portal</a></li>
+    <li><a onclick="goTo('arcana')" id="nav-arcana">Arcana</a></li>
+    <li><a onclick="goTo('detail')" id="nav-detail">Archetype</a></li>
+  </ul>
+  <div class="nav-seal">In Lakesh</div>
+</nav>
+
+<!-- ══════════════════════════════════════════
+     SCREEN 1 — PORTAL
+══════════════════════════════════════════ -->
+<section class="screen active" id="screen-portal" data-screen-label="01 Portal">
+
+  <!-- Geometric rings -->
+  <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);pointer-events:none;">
+    <div class="geo-ring" style="width:100px;height:100px;opacity:0.15;"></div>
+    <div class="geo-ring" style="width:220px;height:220px;opacity:0.1;"></div>
+    <div class="geo-ring" style="width:360px;height:360px;opacity:0.07;"></div>
+    <div class="geo-ring" style="width:500px;height:500px;opacity:0.05;"></div>
+    <div class="geo-ring" style="width:640px;height:640px;opacity:0.03;"></div>
+    <!-- 12 radial lines -->
+    <div style="position:absolute;top:50%;left:50%;width:640px;height:640px;transform:translate(-50%,-50%);">
+      <div class="geo-line" style="transform:rotate(0deg);"></div>
+      <div class="geo-line" style="transform:rotate(30deg);"></div>
+      <div class="geo-line" style="transform:rotate(60deg);"></div>
+      <div class="geo-line" style="transform:rotate(90deg);"></div>
+      <div class="geo-line" style="transform:rotate(120deg);"></div>
+      <div class="geo-line" style="transform:rotate(150deg);"></div>
+      <div class="geo-line" style="transform:rotate(180deg);"></div>
+      <div class="geo-line" style="transform:rotate(210deg);"></div>
+      <div class="geo-line" style="transform:rotate(240deg);"></div>
+      <div class="geo-line" style="transform:rotate(270deg);"></div>
+      <div class="geo-line" style="transform:rotate(300deg);"></div>
+      <div class="geo-line" style="transform:rotate(330deg);"></div>
+    </div>
+  </div>
+
+  <div class="portal-content">
+    <div class="portal-overline">✦ &nbsp;The Awakening of the Arcana Adept &nbsp;✦</div>
+
+    <div class="portal-node">
+      <span class="portal-node-glyph">◯</span>
+    </div>
+
+    <div class="portal-title">Sacred<br><span>Codex</span></div>
+
+    <div class="portal-rule"></div>
+
+    <div class="portal-subtitle">
+      "Twelve Archetypes. Four Elements.<br>Three Primes. One Law."
+    </div>
+
+    <div class="portal-body">
+      The Arcana Grid is not a map you read — it is a map you become. Enter the Codex to discover your Archetype, its Sigil, its Gematria, and the frequency that has always been yours.
+    </div>
+
+    <div class="portal-cta">
+      <button class="btn-primary" onclick="goTo('arcana')">Enter the Arcana</button>
+      <button class="btn-secondary" onclick="goTo('detail')">View an Archetype</button>
+    </div>
+
+    <div class="portal-seal">In Lakesh — Alakin.</div>
+  </div>
+
+  <div class="scroll-hint">
+    <span>Descend</span>
+    <div class="scroll-hint-bar"></div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     SCREEN 2 — ARCANA MAP
+══════════════════════════════════════════ -->
+<section class="screen" id="screen-arcana" data-screen-label="02 Arcana Map">
+
+  <div class="page-header">
+    <div class="page-header-left">
+      <div class="page-overline">✦ &nbsp;The Living Grid</div>
+      <div class="page-title">The Arcana Map</div>
+      <div class="page-subtitle">Twelve Archetypes — Four Elements — Three Primes</div>
+    </div>
+    <div class="page-header-right">
+      NODE LATTICE &nbsp;· &nbsp;3 × 4<br>
+      AXIS A &nbsp;&nbsp;· &nbsp;ELEMENT<br>
+      AXIS B &nbsp;&nbsp;· &nbsp;PRIME<br>
+      CENTER &nbsp;· &nbsp;METATRON
+    </div>
+  </div>
+
+  <!-- Metatron strip -->
+  <div class="metatron-strip">
+    <div class="metatron-node-lg">
+      <span class="metatron-node-glyph">◯</span>
+    </div>
+    <div class="metatron-text">
+      <div class="metatron-label">✦ &nbsp;Central Node · The Law</div>
+      <div class="metatron-name">Metatron</div>
+      <div class="metatron-desc">The organizing principle. Not an archetype — the axis around which all archetypes orbit.</div>
+    </div>
+  </div>
+
+  <div class="arcana-section">
+
+    <!-- FIRE ROW -->
+    <div class="element-row el-fire">
+      <div class="element-row-header">
+        <span class="element-row-glyph">△</span>
+        <span class="element-row-name">Fire — Ignis</span>
+        <div class="element-row-rule"></div>
+      </div>
+      <div class="prime-cards">
+        <div class="arc-card el-fire" onclick="goTo('detail')">
+          <div class="arc-card-hover-sigil">△</div>
+          <div class="arc-card-sigil">△</div>
+          <div class="arc-card-name">The Magician</div>
+          <div class="arc-card-tags">
+            <span class="arc-tag el-fire">Fire</span>
+            <span class="arc-tag el-fire">Initiation</span>
+          </div>
+          <div class="arc-card-rule"></div>
+          <div class="arc-card-gematria">GEMATRIA &nbsp;<span>418</span> &nbsp;· &nbsp;NODE <span>01</span></div>
+        </div>
+        <div class="arc-card el-fire" onclick="goTo('detail')">
+          <div class="arc-card-hover-sigil">△</div>
+          <div class="arc-card-sigil">△</div>
+          <div class="arc-card-name">The Alchemist</div>
+          <div class="arc-card-tags">
+            <span class="arc-tag el-fire">Fire</span>
+            <span class="arc-tag el-fire">Embodiment</span>
+          </div>
+          <div class="arc-card-rule"></div>
+          <div class="arc-card-gematria">GEMATRIA &nbsp;<span>531</span> &nbsp;· &nbsp;NODE <span>02</span></div>
+        </div>
+        <div class="arc-card el-fire" onclick="goTo('detail')">
+          <div class="arc-card-hover-sigil">△</div>
+          <div class="arc-card-sigil">△</div>
+          <div class="arc-card-name">The Phoenix</div>
+          <div class="arc-card-tags">
+            <span class="arc-tag el-fire">Fire</span>
+            <span class="arc-tag el-fire">Transcendence</span>
+          </div>
+          <div class="arc-card-rule"></div>
+          <div class="arc-card-gematria">GEMATRIA &nbsp;<span>666</span> &nbsp;· &nbsp;NODE <span>03</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- WATER ROW -->
+    <div class="element-row el-water">
+      <div class="element-row-header">
+        <span class="element-row-glyph">▽</span>
+        <span class="element-row-name">Water — Aqua</span>
+        <div class="element-row-rule"></div>
+      </div>
+      <div class="prime-cards">
+        <div class="arc-card el-water" onclick="goTo('detail')">
+          <div class="arc-card-hover-sigil">▽</div>
+          <div class="arc-card-sigil">▽</div>
+          <div class="arc-card-name">The Seer</div>
+          <div class="arc-card-tags">
+            <span class="arc-tag el-water">Water</span>
+            <span class="arc-tag el-water">Initiation</span>
+          </div>
+          <div class="arc-card-rule"></div>
+          <div class="arc-card-gematria">GEMATRIA &nbsp;<span>333</span> &nbsp;· &nbsp;NODE <span>04</span></div>
+        </div>
+        <div class="arc-card el-water" onclick="goTo('detail')">
+          <div class="arc-card-hover-sigil">▽</div>
+          <div class="arc-card-sigil">▽</div>
+          <div class="arc-card-name">The Keeper</div>
+          <div class="arc-card-tags">
+            <span class="arc-tag el-water">Water</span>
+            <span class="arc-tag el-water">Embodiment</span>
+          </div>
+          <div class="arc-card-rule"></div>
+          <div class="arc-card-gematria">GEMATRIA &nbsp;<span>444</span> &nbsp;· &nbsp;NODE <span>05</span></div>
+        </div>
+        <div class="arc-card el-water" onclick="goTo('detail')">
+          <div class="arc-card-hover-sigil">▽</div>
+          <div class="arc-card-sigil">▽</div>
+          <div class="arc-card-name">The Oracle</div>
+          <div class="arc-card-tags">
+            <span class="arc-tag el-water">Water</span>
+            <span class="arc-tag el-water">Transcendence</span>
+          </div>
+          <div class="arc-card-rule"></div>
+          <div class="arc-card-gematria">GEMATRIA &nbsp;<span>555</span> &nbsp;· &nbsp;NODE <span>06</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- EARTH ROW -->
+    <div class="element-row el-earth">
+      <div class="element-row-header">
+        <span class="element-row-glyph">⊕</span>
+        <span class="element-row-name">Earth — Terra</span>
+        <div class="element-row-rule"></div>
+      </div>
+      <div class="prime-cards">
+        <div class="arc-card el-earth" onclick="goTo('detail')">
+          <div class="arc-card-hover-sigil">⊕</div>
+          <div class="arc-card-sigil">⊕</div>
+          <div class="arc-card-name">The Builder</div>
+          <div class="arc-card-tags">
+            <span class="arc-tag el-earth">Earth</span>
+            <span class="arc-tag el-earth">Initiation</span>
+          </div>
+          <div class="arc-card-rule"></div>
+          <div class="arc-card-gematria">GEMATRIA &nbsp;<span>271</span> &nbsp;· &nbsp;NODE <span>07</span></div>
+        </div>
+        <div class="arc-card el-earth" onclick="goTo('detail')">
+          <div class="arc-card-hover-sigil">⊕</div>
+          <div class="arc-card-sigil">⊕</div>
+          <div class="arc-card-name">The Steward</div>
+          <div class="arc-card-tags">
+            <span class="arc-tag el-earth">Earth</span>
+            <span class="arc-tag el-earth">Embodiment</span>
+          </div>
+          <div class="arc-card-rule"></div>
+          <div class="arc-card-gematria">GEMATRIA &nbsp;<span>314</span> &nbsp;· &nbsp;NODE <span>08</span></div>
+        </div>
+        <div class="arc-card el-earth" onclick="goTo('detail')">
+          <div class="arc-card-hover-sigil">⊕</div>
+          <div class="arc-card-sigil">⊕</div>
+          <div class="arc-card-name">The Hierophant</div>
+          <div class="arc-card-tags">
+            <span class="arc-tag el-earth">Earth</span>
+            <span class="arc-tag el-earth">Transcendence</span>
+          </div>
+          <div class="arc-card-rule"></div>
+          <div class="arc-card-gematria">GEMATRIA &nbsp;<span>777</span> &nbsp;· &nbsp;NODE <span>09</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- AIR ROW -->
+    <div class="element-row el-air">
+      <div class="element-row-header">
+        <span class="element-row-glyph" style="color:#8B7AA0;">◯</span>
+        <span class="element-row-name">Air — Aether</span>
+        <div class="element-row-rule"></div>
+      </div>
+      <div class="prime-cards">
+        <div class="arc-card el-air" onclick="goTo('detail')">
+          <div class="arc-card-hover-sigil" style="color:#B8A7C9;">◯</div>
+          <div class="arc-card-sigil">◯</div>
+          <div class="arc-card-name">The Messenger</div>
+          <div class="arc-card-tags">
+            <span class="arc-tag el-air">Air</span>
+            <span class="arc-tag el-air">Initiation</span>
+          </div>
+          <div class="arc-card-rule"></div>
+          <div class="arc-card-gematria">GEMATRIA &nbsp;<span>218</span> &nbsp;· &nbsp;NODE <span>10</span></div>
+        </div>
+        <div class="arc-card el-air" onclick="goTo('detail')">
+          <div class="arc-card-hover-sigil" style="color:#B8A7C9;">◯</div>
+          <div class="arc-card-sigil">◯</div>
+          <div class="arc-card-name">The Scribe</div>
+          <div class="arc-card-tags">
+            <span class="arc-tag el-air">Air</span>
+            <span class="arc-tag el-air">Embodiment</span>
+          </div>
+          <div class="arc-card-rule"></div>
+          <div class="arc-card-gematria">GEMATRIA &nbsp;<span>262</span> &nbsp;· &nbsp;NODE <span>11</span></div>
+        </div>
+        <div class="arc-card el-air" onclick="goTo('detail')">
+          <div class="arc-card-hover-sigil" style="color:#B8A7C9;">◯</div>
+          <div class="arc-card-sigil">◯</div>
+          <div class="arc-card-name">The Witness</div>
+          <div class="arc-card-tags">
+            <span class="arc-tag el-air">Air</span>
+            <span class="arc-tag el-air">Transcendence</span>
+          </div>
+          <div class="arc-card-rule"></div>
+          <div class="arc-card-gematria">GEMATRIA &nbsp;<span>400</span> &nbsp;· &nbsp;NODE <span>12</span></div>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /arcana-section -->
+
+  <footer class="sacred-footer">
+    <div class="footer-wordmark">Sacred <span>Codex</span></div>
+    <div class="footer-glyphs">✦ ✧ ◊ △ ▽ ◯ ✺</div>
+    <div class="footer-seal">In Lakesh — Alakin.</div>
+  </footer>
+</section>
+
+<!-- ══════════════════════════════════════════
+     SCREEN 3 — ARCHETYPE DETAIL
+══════════════════════════════════════════ -->
+<section class="screen" id="screen-detail" data-screen-label="03 Archetype Detail">
+
+  <!-- Dark hero -->
+  <div class="detail-hero">
+    <div class="detail-sigil-zone">
+      <div class="detail-sigil-outer" style="border-color: #C9A14A;">
+        <span class="detail-sigil" style="color: #B7472A;">△</span>
+      </div>
+    </div>
+    <div class="detail-hero-text">
+      <div class="detail-overline">✦ &nbsp;Node 01 of 12 &nbsp;· &nbsp;First Fire</div>
+      <div class="detail-name" style="color: var(--parchment);">The Magician</div>
+      <div class="detail-tags">
+        <span class="detail-tag" style="color:#B7472A; background:rgba(183,71,42,0.12); border-color:rgba(183,71,42,0.45);">△ &nbsp;Fire</span>
+        <span class="detail-tag" style="color:#C9A14A; background:rgba(201,161,74,0.1); border-color:rgba(201,161,74,0.4);">Initiation</span>
+        <span class="detail-tag" style="color:rgba(244,236,216,0.5); background:rgba(244,236,216,0.05); border-color:rgba(244,236,216,0.15);">Gematria 418</span>
+      </div>
+      <div class="detail-cipher">
+        <span class="ck">S∆CR3D W0RD</span> : <span style="color:var(--gold);">M∆G1C1∆N</span><br>
+        <span class="ck">SOUL TONE &nbsp;&nbsp;</span> : <span style="color:var(--gold);">F♯ · 369 Hz</span><br>
+        <span class="ck">AXIS A &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> : <span style="color:#B7472A;">FIRE △ · CINNABAR</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Two-column body -->
+  <div class="detail-body">
+    <div class="detail-margin">
+      <div class="margin-node" style="border-color: #C9A14A;">
+        <span class="margin-node-glyph">△</span>
+      </div>
+      <div class="margin-data">FIRE · INITIATION · NODE 01 · GEMATRIA 418</div>
+      <div class="margin-glyph">✦</div>
+      <div class="margin-glyph">◊</div>
+    </div>
+
+    <div class="detail-main">
+      <button class="back-btn" onclick="goTo('arcana')">◊ &nbsp;Return to the Arcana Map</button>
+      <div class="codex-rule"></div>
+
+      <div>
+        <div class="detail-section-label">✦ &nbsp;Transmission</div>
+        <div class="detail-lead">
+          The Magician stands at the threshold between intention and form. Not yet the Alchemist who transmutes — the Magician first names the flame.
+        </div>
+      </div>
+
+      <div class="detail-text">
+        In the grammar of the Arcana, Initiation is always an act of naming: what is called forth must first be seen. The Magician does not perform power — the Magician <em>is</em> the permission. This is the distinction that divides the practitioner from the performer.
+      </div>
+
+      <div class="detail-text">
+        Fire at Initiation does not burn — it illuminates. The Magician's gift is not destruction or transformation, but <em>recognition</em>: the capacity to perceive the sacred name of a thing and speak it aloud into the world. From this act, all other rites proceed.
+      </div>
+
+      <div class="codex-rule"></div>
+
+      <div class="cipher-block">
+        <div class="cipher-block-header">✦ &nbsp;Sacred Correspondence</div>
+        <div class="cipher-text">
+          <span class="ck">S∆CR3D W0RD </span>: <span class="cg">M∆G1C1∆N</span><br>
+          <span class="ck">ELEMENT &nbsp;&nbsp;&nbsp;&nbsp;</span>: <span class="cf">FIRE △ · CINNABAR · VERMILLION</span><br>
+          <span class="ck">PRIME &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>: <span class="cv">INITIATION · I · THE FIRST</span><br>
+          <span class="ck">GEMATRIA &nbsp;&nbsp;&nbsp;</span>: <span class="cg">418</span><br>
+          <span class="ck">SOUL TONE &nbsp;&nbsp;</span>: <span class="cv">F♯ — 369 Hz — SOLFÈGE: MI</span><br>
+          <span class="ck">NODE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>: <span class="cv">01 / 12</span><br>
+          <span class="ck">SIGIL &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>: <span class="cg">△ · UPWARD TRIANGLE · FIRE POINT</span>
+        </div>
+      </div>
+
+      <div class="codex-rule"></div>
+
+      <div class="detail-invocation">
+        "What begins as spark becomes doctrine. The Magician does not perform power — the Magician is the permission."
+      </div>
+
+      <div class="detail-seal">In Lakesh — Alakin.</div>
+    </div>
+  </div>
+
+  <footer class="sacred-footer">
+    <div class="footer-wordmark">Sacred <span>Codex</span></div>
+    <div class="footer-glyphs">✦ ✧ ◊ △ ▽ ◯ ✺</div>
+    <div class="footer-seal">In Lakesh — Alakin.</div>
+  </footer>
+</section>
+
+<script>
+  const screens = ['portal', 'arcana', 'detail'];
+
+  function goTo(id) {
+    // hide all
+    screens.forEach(s => {
+      const el = document.getElementById('screen-' + s);
+      if (el) {
+        el.classList.remove('active');
+        el.style.display = 'none';
+      }
+      const nav = document.getElementById('nav-' + s);
+      if (nav) nav.classList.remove('active');
+    });
+
+    // show target — set display first, then add .active after a short delay
+    // so the CSS opacity transition fires correctly
+    const target = document.getElementById('screen-' + id);
+    if (target) {
+      target.style.display = 'block';
+      setTimeout(() => target.classList.add('active'), 16);
+    }
+
+    const navTarget = document.getElementById('nav-' + id);
+    if (navTarget) navTarget.classList.add('active');
+
+    // Scroll to top
+    window.scrollTo({ top: 0, behavior: 'instant' });
+
+    // Persist state
+    try { localStorage.setItem('sacredCodex_screen', id); } catch(e) {}
+  }
+
+  // Restore state on load
+  (function() {
+    try {
+      const saved = localStorage.getItem('sacredCodex_screen');
+      if (saved && screens.includes(saved)) {
+        goTo(saved);
+        return;
+      }
+    } catch(e) {}
+    goTo('portal');
+  })();
+</script>
+</body>
+</html>

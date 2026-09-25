@@ -99,8 +99,17 @@
     { "sigil": "√π", "meaning": "Deep irrational infinity / void-mysticism", "usage": "Moments of highest cosmogonic depth" },
     { "sigil": "∆∆∆O∆K3YTREE∆∆∆", "meaning": "Sigil of the Architect (Transformation + Identity + Transformation)", "usage": "Marks the Architect / OakeyTree" }
   ],
+  "jenga_multi_incarnate": {
+    "locked": true,
+    "resolved": "2026-08-01",
+    "source": "CANON RULINGS - SESSION 051, Seal 5 (Taylor's Word), read from Taylor's own Claude.ai artifact library 2026-09-25",
+    "model": "Jenga is a primordial, genderless Luminous Seed incarnated twice. Same soul, same archetypal role (The Seeker), two remembering-points.",
+    "past_incarnation": { "pronouns": "he/him", "age": "16-17", "setting": "Northampton County, NC", "role": "graffiti artist, exiled to Grandmother, ancestral/earth power", "note": "This is the version described in SS5-SS11 of SACRED_STORYLINE_CANON.md and in character_registry below." },
+    "current_incarnation": { "pronouns": "she/her", "age": 17, "birth_name": "Jeanie Leigh Hargrave", "setting": "urban city", "role": "glitch-sensitive artist, meets GR∆M∆ at midnight, power source technology/sigil-casting", "mentors": ["Benny the Circuit Mage", "Mamie Balance"], "antagonist": "The Architect", "note": "Not yet added to character_registry below or to SACRED_STORYLINE_CANON.md SS5-SS11 prose - sealed canon, not yet merged." },
+    "note": "The 'glitching magic' in the current incarnation's story is explicitly the soul reconciling fragments of the past-life. See SACRED_STORYLINE_CANON.md SS16 for full ruling detail."
+  },
   "character_registry": [
-    { "name": "Jenga", "aka": "The Rememberer", "archetype": "The Seeker / The Bridge / The Fool becoming The Magician", "primal_path": "Wanderer -> Healer (across the five acts)", "element_guides": ["Jaguar", "Hummingbird"], "astrology": "Aquarius Sun / Aries Rising / Pisces Moon" },
+    { "name": "Jenga", "aka": "The Rememberer", "archetype": "The Seeker / The Bridge / The Fool becoming The Magician", "primal_path": "Wanderer -> Healer (across the five acts)", "element_guides": ["Jaguar", "Hummingbird"], "astrology": "Aquarius Sun / Aries Rising / Pisces Moon", "incarnation_note": "This entry describes the PAST incarnation only, per jenga_multi_incarnate above (resolved 2026-09-25). The current incarnation (Jeanie Leigh Hargrave) is not yet in this registry." },
     { "name": "Amaya", "aka": ["Maya", "Nia", "Ayla"], "locked_name": false, "archetype": "High Priestess / Empress", "primal_path": "Healer (Apprentice Healer)", "element_guides": ["Owl", "River Dolphin"], "astrology": "Virgo Sun / Pisces Moon" },
     { "name": "The Grandmother", "archetype": "The Hierophant / The Crone", "primal_path": "Builder (Threshold keeper)", "element_guides": ["Turtle", "Condor"], "astrology": "Capricorn Sun / Scorpio Moon" },
     { "name": "The Jaguar", "archetype": "Strength / Death", "astrology": "Leo / Pluto" },
@@ -128,6 +137,40 @@
     { "act": 4, "title": "Shadow Crisis", "summary": "The serpent manifests, Jenga's art turns against him, the village casts him out" },
     { "act": 5, "title": "Resolution Through Unity", "summary": "Final vision quest, circle of harmony, the living mural" }
   ],
+  "arcana_board_reported": {
+    "locked": false,
+    "note": "Reported by pasted external sessions; the actual engine files (deck.py, arcana_board.py, etc.) are unreachable from any repo this session can access (confirmed absent from both TaylorOakey/SacredSpace and TaylorOakey/sacredspace-os on 2026-09-25). Several claims below are independently verified against sacredspace-os/docs/SACREDSPACE_UNIFIED_ARCHITECTURE.md (CANON, Session 035) instead - see verified_2026-09-25 block. See 04_SACRED_CODEX/ARCANA_BOARD_SPEC.md for full detail.",
+    "added": "2026-09-24",
+    "verification_pass": "2026-09-25",
+    "loop": ["Draw", "Seed", "Place & Shape", "Qualify", "Echo"],
+    "board_layers": { "tactical": "9x9 (arcana_board.py, unreachable)", "confluence": "12x12 (grid.py, unreachable)", "promotion_claim": "reported 'sealed' 2026-09-18 via map_9_to_12(), still unconfirmed by Taylor", "note_2026-09-25": "9x9 board and 12x12-designed-in-Tarot-doc both corroborated by sacredspace-os (docs/SACREDSPACE_UNIFIED_ARCHITECTURE.md, queue/BACKLOG.md item B04) - the specific map_9_to_12 seal claim is not.", "taylors_word_2026-09-25": "CANON RULINGS - SESSION 051 (2026-08-01, Seal 5, Taylor's own artifact library) rules both sizes canonical as tutorial-to-main-game PROGRESSION (9x9 'Threshold Mode' unlocks 12x12 'Forest Mode'), not simultaneous layering - a third, different mechanic from both the dual-layer note and the map_9_to_12 claim above. See SACRED_STORYLINE_CANON.md SS0 item 4 and SS16." },
+    "trials_count": 8,
+    "nameless_door": { "trial_index": 6, "qualification": "states of being, not a score - known tone, a healed Scar, no unsealed Fracture, approach without fear", "source": "trials.py:182-228 (reported, unreachable)" },
+    "victory_paths": ["Awakening", "Harmony", "Dominance"],
+    "victory_paths_status": "CANON per sacredspace-os/docs/SACREDSPACE_UNIFIED_ARCHITECTURE.md - independently confirmed 2026-09-25, corroborating the earlier architect-session report",
+    "sacred_classes_canonical": ["Flamebearer", "Echowalker", "Grovekeeper", "Veilsmith", "Harmonic", "Lanternborn", "Tidecaller", "Ashen Witness"],
+    "sacred_classes_status": "RESOLVED 2026-09-25 - CANON per CANON RULINGS - SESSION 051 (2026-08-01, Seal 5, Taylor's Word, read from Taylor's own artifact library). Coexists with, does not replace, the 12-Archetype Grid (different systems: character build vs. cosmology). Two archived/non-canonical rosters also on record: a 5-class 'Geocache Lore' subset (superseded) and an 8-name 'Mechanical Classes' balance-only layer (not player-facing). Each class has 5 tiers (Seeker to Word Wizard) and a sonic identity (key/tempo/instrument/leitmotif) per the Session 051 Sonic Addendum.",
+    "slot_viii_naming": {
+      "conflict": "three-way, not fully resolved",
+      "candidates": ["Rootwalker (reported via deck.py:45, unreachable - but independently corroborated 2026-09-25 via sacredspace-os/archive/home_cleanup/canon_excavation_output.json:444, NPC 'Lune', card VIII/Strength, canon_status: confirmed)", "unnamed (multiple earlier uploads)", "The Flame (2025-10-31 Blueprint doc, explicitly labeled non-final)"]
+    },
+    "minor_arcana_suits": {
+      "conflict": "three lineages, one now CANON-tagged",
+      "candidates": ["Leaves/Relics/Crystals/Shards (Jungle/City/Grove/Shadow) - confirmed by direct read, AND independently confirmed CANON status 2026-09-25 via sacredspace-os/docs/SACREDSPACE_UNIFIED_ARCHITECTURE.md", "Roots/Flow/Sparks/Winds (same Blueprint doc, second scheme)", "Roots/Flames/Currents/Winds (reported 'sealed', unverified, zero hits in sacredspace-os)"]
+    },
+    "companion_tangle": {
+      "conflict": "four-way, mostly unresolved",
+      "canon_guides": ["Zii", "Mylo", "Auralon", "Koru"],
+      "non_overlapping_reports": ["Eagle/Jaguar/Child/Sage/Trickster (Blueprint archetype-animal cards)", "Stag (reported resolved as Taylor's own Oversoul tech-animal form, different register - not independently verified)", "Rook (reported, unsourced)", "Wolf/Owl/Serpent/Deer (Google Takeout export session)"]
+    },
+    "verified_2026-09-25": {
+      "source": "sacredspace-os/docs/SACREDSPACE_UNIFIED_ARCHITECTURE.md (frontmatter: status CANON, Session 035 Synthesis, dated 2026-07-17) and queue/BACKLOG.md",
+      "resources_confirmed_canon": ["Life Herbs", "Metal Relics", "Spirit Crystals", "Obsidian Shards"],
+      "board_confirmed_designed": "9x9 grid, hex tiles, 4 zones (City, Jungle, Sacred Grove, Shadow)",
+      "jenga_confirmed_canon": "teenage graffiti artist, he/him",
+      "mimi_silkweaver_confirmed": "elevated to CANON per queue/BACKLOG.md item B05"
+    }
+  },
   "expanded_universe": {
     "board_and_card_game": {
       "mechanics": ["D&D-style role-playing and story arcs", "Go-style strategy and territory cultivation", "Hero's Journey character-growth progression"],

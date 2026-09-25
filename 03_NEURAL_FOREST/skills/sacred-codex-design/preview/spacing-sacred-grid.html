@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!-- @dsCard group="Spacing" name="Arcana Grid" subtitle="4 Elements × 3 Primes lattice with Metatron center node" viewport="700x340" -->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=EB+Garamond:wght@400&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #F4ECD8; padding: 20px 24px; }
+  .label { font-family: 'Cinzel', serif; font-size: 9px; letter-spacing: 0.22em; text-transform: uppercase; color: #C9A14A; margin-bottom: 16px; }
+  .grid-wrap { position: relative; display: flex; justify-content: center; }
+  .arcana-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 6px;
+    width: 380px;
+  }
+  .arcana-cell {
+    aspect-ratio: 1 / 1.25;
+    border: 1px solid #C9A14A55;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Cinzel', serif;
+    font-size: 8px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #7A6E65;
+    background: #E8DFC4;
+    gap: 4px;
+    position: relative;
+  }
+  .cell-glyph { font-size: 18px; opacity: 0.7; }
+  .cell-name { font-size: 7.5px; letter-spacing: 0.14em; color: #1A1614; text-align: center; line-height: 1.3; }
+  .cell-prime { font-size: 6.5px; letter-spacing: 0.1em; color: #C9A14A; }
+  .cell-fire   { border-color: #B7472A88; }
+  .cell-water  { border-color: #2E5C7E88; }
+  .cell-earth  { border-color: #5C6E3C88; }
+  .cell-air    { border-color: #B8A7C988; }
+  .cell-fire .cell-glyph   { color: #B7472A; }
+  .cell-water .cell-glyph  { color: #2E5C7E; }
+  .cell-earth .cell-glyph  { color: #5C6E3C; }
+  .cell-air .cell-glyph    { color: #B8A7C9; }
+  .metatron-wrap {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+  }
+  .metatron-node {
+    width: 56px; height: 56px;
+    border-radius: 50%;
+    background: #0B0A0F;
+    border: 2px solid #C9A14A;
+    display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 0 0 4px #F4ECD8, 0 0 0 5px #C9A14A44;
+  }
+  .metatron-glyph { font-size: 22px; color: #C9A14A; }
+  .legend { display: flex; gap: 16px; margin-top: 14px; justify-content: center; }
+  .legend-item { display: flex; align-items: center; gap: 5px; font-family: 'Cinzel', serif; font-size: 8px; letter-spacing: 0.12em; text-transform: uppercase; color: #7A6E65; }
+  .legend-dot { width: 10px; height: 10px; border-radius: 0; }
+</style>
+</head>
+<body>
+<div class="label">✦ Arcana Grid — 4 Elements × 3 Primes · Metatron Center</div>
+
+<div class="grid-wrap">
+  <div class="arcana-grid">
+    <!-- Fire row -->
+    <div class="arcana-cell cell-fire"><span class="cell-glyph">△</span><span class="cell-name">The Magician</span><span class="cell-prime">Fire · I</span></div>
+    <div class="arcana-cell cell-fire"><span class="cell-glyph">△</span><span class="cell-name">The Alchemist</span><span class="cell-prime">Fire · II</span></div>
+    <div class="arcana-cell cell-fire"><span class="cell-glyph">△</span><span class="cell-name">The Phoenix</span><span class="cell-prime">Fire · III</span></div>
+    <!-- spacer col for Metatron -->
+    <div class="arcana-cell cell-fire" style="opacity:0.35;"><span class="cell-glyph">△</span><span class="cell-name">·</span><span class="cell-prime">Fire · IV</span></div>
+
+    <!-- Water row -->
+    <div class="arcana-cell cell-water"><span class="cell-glyph">▽</span><span class="cell-name">The Seer</span><span class="cell-prime">Water · I</span></div>
+    <div class="arcana-cell cell-water"><span class="cell-glyph">▽</span><span class="cell-name">The Keeper</span><span class="cell-prime">Water · II</span></div>
+    <div class="arcana-cell cell-water"><span class="cell-glyph">▽</span><span class="cell-name">The Oracle</span><span class="cell-prime">Water · III</span></div>
+    <div class="arcana-cell cell-water" style="opacity:0.35;"><span class="cell-glyph">▽</span><span class="cell-name">·</span><span class="cell-prime">Water · IV</span></div>
+
+    <!-- Earth row -->
+    <div class="arcana-cell cell-earth"><span class="cell-glyph">⊕</span><span class="cell-name">The Builder</span><span class="cell-prime">Earth · I</span></div>
+    <div class="arcana-cell cell-earth"><span class="cell-glyph">⊕</span><span class="cell-name">The Steward</span><span class="cell-prime">Earth · II</span></div>
+    <div class="arcana-cell cell-earth"><span class="cell-glyph">⊕</span><span class="cell-name">The Hierophant</span><span class="cell-prime">Earth · III</span></div>
+    <div class="arcana-cell cell-earth" style="opacity:0.35;"><span class="cell-glyph">⊕</span><span class="cell-name">·</span><span class="cell-prime">Earth · IV</span></div>
+  </div>
+
+  <div class="metatron-wrap">
+    <div class="metatron-node">
+      <span class="metatron-glyph">◯</span>
+    </div>
+  </div>
+</div>
+
+<div class="legend">
+  <div class="legend-item"><div class="legend-dot" style="background:#B7472A;"></div>Fire</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#2E5C7E;"></div>Water</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#5C6E3C;"></div>Earth</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#B8A7C9;"></div>Air</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#0B0A0F; border:1px solid #C9A14A;"></div>Metatron</div>
+</div>
+</body>
+</html>

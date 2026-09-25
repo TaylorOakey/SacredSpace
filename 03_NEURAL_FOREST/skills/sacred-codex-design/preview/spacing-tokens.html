@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!-- @dsCard group="Spacing" name="Spacing & Shadow Tokens" subtitle="4px base spacing scale, border radius, shadow system" viewport="700x380" -->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #F4ECD8; padding: 24px; }
+  .label { font-family: 'Cinzel', serif; font-size: 9px; letter-spacing: 0.22em; text-transform: uppercase; color: #C9A14A; margin-bottom: 20px; }
+  .section { margin-bottom: 24px; }
+  .section-title { font-family: 'Cinzel', serif; font-size: 9px; letter-spacing: 0.18em; text-transform: uppercase; color: #7A6E65; margin-bottom: 12px; }
+  .tokens-grid { display: flex; flex-direction: column; gap: 7px; }
+  .token-row { display: flex; align-items: center; gap: 10px; }
+  .space-bar { background: #C9A14A; height: 10px; flex-shrink: 0; }
+  .token-name { font-family: 'JetBrains Mono', monospace; font-size: 10px; color: #4A3F38; letter-spacing: 0.08em; width: 80px; }
+  .token-val { font-family: 'JetBrains Mono', monospace; font-size: 10px; color: #7A6E65; letter-spacing: 0.05em; }
+  .radii-row { display: flex; gap: 20px; align-items: flex-end; }
+  .radius-swatch { text-align: center; }
+  .radius-box { width: 48px; height: 36px; border: 1px solid #C9A14A88; background: #E8DFC4; margin-bottom: 6px; }
+  .radius-label { font-family: 'Cinzel', serif; font-size: 9px; letter-spacing: 0.1em; text-transform: uppercase; color: #7A6E65; }
+  .radius-val { font-family: 'JetBrains Mono', monospace; font-size: 9px; color: #C9A14A; margin-top: 2px; }
+  .shadow-col { display: flex; flex-direction: column; gap: 12px; }
+  .shadow-box { width: 80px; height: 44px; background: #E8DFC4; border: 1px solid #C9A14A55; }
+  .shadow-meta { font-family: 'JetBrains Mono', monospace; font-size: 9px; color: #7A6E65; letter-spacing: 0.05em; margin-top: 4px; }
+  .shadow-row { display: flex; gap: 20px; align-items: flex-start; }
+  .divider { height: 1px; background: #C9A14A22; margin: 12px 0; }
+</style>
+</head>
+<body>
+<div class="label">✦ Spacing · Border · Shadow Tokens</div>
+
+<div class="section">
+  <div class="section-title">Spacing Scale — 4px Base Unit</div>
+  <div class="tokens-grid">
+    <div class="token-row"><div class="space-bar" style="width:4px;"></div><span class="token-name">--space-1</span><span class="token-val">4px</span></div>
+    <div class="token-row"><div class="space-bar" style="width:8px;"></div><span class="token-name">--space-2</span><span class="token-val">8px</span></div>
+    <div class="token-row"><div class="space-bar" style="width:12px;"></div><span class="token-name">--space-3</span><span class="token-val">12px</span></div>
+    <div class="token-row"><div class="space-bar" style="width:16px;"></div><span class="token-name">--space-4</span><span class="token-val">16px</span></div>
+    <div class="token-row"><div class="space-bar" style="width:24px;"></div><span class="token-name">--space-6</span><span class="token-val">24px</span></div>
+    <div class="token-row"><div class="space-bar" style="width:32px;"></div><span class="token-name">--space-8</span><span class="token-val">32px</span></div>
+    <div class="token-row"><div class="space-bar" style="width:48px;"></div><span class="token-name">--space-12</span><span class="token-val">48px</span></div>
+    <div class="token-row"><div class="space-bar" style="width:64px;"></div><span class="token-name">--space-16</span><span class="token-val">64px</span></div>
+    <div class="token-row"><div class="space-bar" style="width:96px;"></div><span class="token-name">--space-24</span><span class="token-val">96px</span></div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<div class="section">
+  <div class="section-title">Border Radius</div>
+  <div class="radii-row">
+    <div class="radius-swatch">
+      <div class="radius-box" style="border-radius:0;"></div>
+      <div class="radius-label">None</div>
+      <div class="radius-val">0px</div>
+    </div>
+    <div class="radius-swatch">
+      <div class="radius-box" style="border-radius:2px;"></div>
+      <div class="radius-label">Sm</div>
+      <div class="radius-val">2px</div>
+    </div>
+    <div class="radius-swatch">
+      <div class="radius-box" style="border-radius:50%; width:44px; height:44px;"></div>
+      <div class="radius-label">Circle</div>
+      <div class="radius-val">50%</div>
+    </div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<div class="section">
+  <div class="section-title">Shadow System — Warm, Inset-First</div>
+  <div class="shadow-row">
+    <div>
+      <div class="shadow-box" style="box-shadow: inset 0 1px 2px rgba(26,22,20,0.05);"></div>
+      <div class="shadow-meta">inset-sm · surface depth</div>
+    </div>
+    <div>
+      <div class="shadow-box" style="box-shadow: inset 0 1px 3px rgba(26,22,20,0.08);"></div>
+      <div class="shadow-meta">inset · parchment depth</div>
+    </div>
+    <div>
+      <div class="shadow-box" style="box-shadow: 0 1px 3px rgba(26,22,20,0.12);"></div>
+      <div class="shadow-meta">sm · card lift</div>
+    </div>
+    <div>
+      <div class="shadow-box" style="box-shadow: 0 4px 24px rgba(26,22,20,0.10);"></div>
+      <div class="shadow-meta">parchment · page</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

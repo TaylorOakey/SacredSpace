@@ -9,9 +9,31 @@
       "companion_data": "09_SACRED_MARKET/arcana_grid/game_data.json",
       "sourced": "Google Docs + April 3 Council session (Claude + Gemini synthesis) + uploaded PDF 'The Sacred Storyline — A Deep Innerstanding'",
       "consolidated": "2026-08-06",
+      "taylors_word_folded_in": "2026-09-25 - CANON RULINGS SESSION 051 (2026-08-01, Seal 5), read directly from Taylor's own Claude.ai artifact library: Jenga's Journey spine ratified as a multi-incarnate soul model (resolves the five-document tangle, §0 item 1), Sacred Classes (8) ratified canonical, board sizes ratified canonical as tutorial-progression. See doc §16.",
       "open_items": [
         "Amaya's canonical name not locked (Amaya/Maya/Nia/Ayla)",
-        "Five Primal Spirit Paths not reconciled against the canon-locked 12-Archetype Arcana Grid"
+        "Grid's own Prime-axis names disagree across sources (Five Primal Spirit Paths itself resolved 2026-08-18, see doc §0 item 6)",
+        "§5-§11 prose still describes the past incarnation only - the current incarnation (Jeanie Leigh Hargrave) is sealed canon per §16 but not yet merged into the narrative prose",
+        "ICARIS Quartet->Quintet question (§0 item 3) - not addressed by Session 051",
+        "Third competing visual-identity system logged (§0 item 13/15) - Sacred Codex Design System, alongside the earthy CLAUDE.md palette and V∆SH∆; Taylor has stated a mission/tone direction (sovereignty, creative expression, spiritual mysticism, loving awareness) but not picked a palette"
+      ]
+    },
+    {
+      "name": "The Arcana Board (mechanical spec + Reality Layer design options)",
+      "tier": "DISTILLED",
+      "path": "04_SACRED_CODEX/ARCANA_BOARD_SPEC.md",
+      "companion_data": "09_SACRED_MARKET/arcana_grid/game_data.json (arcana_board_reported block)",
+      "sourced": "Two pasted 'architect session' outputs (ARCANA-BOARD-001 synthesis + build history), a second 'Claude Desktop' session reporting local disk access, and a 'SacredSpace Reality Layer' exploration prompt - all pasted directly into this session 2026-09-23/24. Underlying engine files (deck.py, arcana_board.py, etc.) confirmed unreachable from any attached repo. 2026-09-25: TaylorOakey/sacredspace-os attached and read directly for independent verification - see verification_pass below.",
+      "consolidated": "2026-09-24",
+      "verification_pass": "2026-09-25 - victory paths (Awakening/Harmony/Dominance), one Minor Arcana suit lineage (Leaves/Relics/Crystals/Shards), the resource economy, and Mimi Silkweaver's canon status all independently confirmed via sacredspace-os/docs/SACREDSPACE_UNIFIED_ARCHITECTURE.md (CANON, Session 035). Slot VIII's 'Rootwalker' candidate corroborated via canon_excavation_output.json:444 (NPC Lune, card VIII/Strength, confirmed).",
+      "taylors_word_folded_in": "2026-09-25 - CANON RULINGS SESSION 051 (2026-08-01, Seal 5) resolves the Sacred Class cardinality conflict (8 classes canonical) and reframes the board-size question as tutorial-progression (a third mechanic alongside the dual-layer note and the map_9_to_12 claim). SacredSpace Creative Environment - Design Architecture (2026-09-15) warns that pasted external rulesets have repeatedly been dropped as redundant on Taylor's own reconciliation - context for weighing the items still open below.",
+      "open_items": [
+        "Slot VIII naming: three-way conflict, Rootwalker now better-sourced but not settled (Rootwalker / unnamed / The Flame)",
+        "9x9/12x12 'both exist' has three different proposed mechanics now (dual-layer / map_9_to_12 promotion / tutorial-progression) - none formally reconciled against the others",
+        "Minor Arcana suit names: Leaves/Relics/Crystals/Shards now CANON-tagged; two competing lineages not formally retired",
+        "Companion/animal-guide four-way tangle beyond the four canon Elemental Guides",
+        "Reality Layer ontology / narrative-binding / state-architecture choices entirely undecided",
+        "Sonic Architecture layer (Session 051 addendum - REIDOS grid, Maestro of Resonance, Abazith pipeline) not yet added to game_data.json"
       ]
     }
   ]
