@@ -56,7 +56,8 @@
 
 | Step | Gate (all must be true) | Cost |
 |---|---|---|
-| Stay a **sole proprietor** | Default. Log everything as `SOLE_PROP` | $0 (look into an assumed business name filing if selling as "SacredArcana Studios") |
+| Stay a **sole proprietor** | Default **only while one person is the seller of record**. Log everything as `SOLE_PROP` | $0 (look into an assumed business name filing if selling as "SacredArcana Studios") |
+| ⚠ **Two co-founders** | Taylor + Jeanie intend to co-own. Two people selling together for profit is a **general partnership by default** (a separate partnership tax return, personal liability for each other's business debts). Choose one: **(a)** Taylor is the sole seller of record until the LLC, with Jeanie's share settled when the LLC forms, or **(b)** form a **two-member LLC** now with a written operating agreement (this is where an operating agreement *does* belong). Ask the Small Business Center advisor which fits | (b): NC $125 + $200/yr |
 | Form an **LLC** | Revenue is steady for about 3 months, **or** there's real liability (physical products at markets, client contracts) | NC: $125 to file + $200/yr annual report |
 | **Trademark** "SacredSpace" / "Arcana Grid" | Before any Kickstarter or wholesale | Filing fees per class |
 | **Kickstarter** (Arcana game) | LLC in place · playtested prototype · manufacturing quote · email list (the Master Plan v2 says 1,000+ for its Day-1 target) | See Crowdfunding Master Plan v2 |
@@ -72,7 +73,7 @@ These errors appear in `CASHFLOW_MASTER/` and in Drive copies of the same plans:
 2. **Nonprofits can't have owners.** The "operating agreement with 50/50 ownership" for SacredSpace Sanctuary is LLC language. A 501(c)(3) runs on articles + bylaws + a board.
 3. **Unrelated business income is taxable**, not "tax-exempt". Form 990-T is required once gross UBI reaches $1,000. Passive royalties are often excluded, but not for the reason the old docs give.
 4. **Kickstarter does not allow revenue-share or equity rewards** (the "Partner" tier) or fundraising for charity. Reward pledges are purchases, not donations.
-5. **Pay and independence.** Founders who sit on the board and are also paid, next to a founder-owned LLC doing business with the nonprofit, is the pattern the IRS scrutinizes. Recruit independent directors and put related-party dealings on market terms.
+5. **Pay and independence.** Founders who sit on the board and are also paid, next to a founder-owned LLC doing business with the nonprofit, is the pattern the IRS scrutinizes. Recruit independent directors and put related-party dealings on market terms. With Taylor **and** Jeanie as intended co-founders of both entities, both are insiders, so the nonprofit board needs a **majority of unrelated directors** (at least 3 independents beside the two founders is a safe target).
 6. **One mission, not two.** "Land stewardship" and "community / learning / spiritual" appear as separate missions. Pick one sentence (for example, educational + environmental stewardship).
 7. **The Neural Forest grant proposal (v2, Drive) describes things as done that aren't:** "501(c)(3) tax-exempt", "independent Board", "full stack confirmed live", "zero AI-generated imagery". Reword to "in formation" / "planned" / accurate AI-use language before it goes to any funder.
 8. **EDPNC's 1-800 number is Business Link NC**, which helps small businesses, not nonprofit grants.
@@ -107,5 +108,9 @@ These errors appear in `CASHFLOW_MASTER/` and in Drive copies of the same plans:
 | 2026-09-26 | Treat SacredSpace business as a clean slate; old plans are a design library | Taylor |
 | 2026-09-26 | Product #1 = GR∆M∆ Decode + digital downloads; product #2 = POD prints (month 2) | Taylor |
 | 2026-09-26 | Operate as a sole proprietor until the §4 gates are met | Plan default, pending advisor |
+| 2026-09-26 | **Step 0 recorded:** LLC not formed · 501(c)(3) not filed · Kickstarter never launched · Etsy not live, $0 sales. §5 is therefore *fix-before-filing*; nothing needs amending | Taylor (via OpenCode) |
+| 2026-09-26 | Jeanie Leaf intended as co-founder of both entities → the sole-prop vs. two-member-LLC choice in §4 is now open | Taylor · decision pending |
+| — | Sell VaaS / AI-consulting service work? (currently parked, §2) | **Open — Taylor** |
+| — | Nonprofit: wait for business cash, or start in parallel via a fiscal sponsor? (currently wait, §4) | **Open — Taylor** |
 
 *Creation is Sacred · Commerce is Mechanical · Layer: DISTILLED*
