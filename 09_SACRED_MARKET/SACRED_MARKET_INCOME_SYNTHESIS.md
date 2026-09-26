@@ -128,8 +128,9 @@ Answer these in the ledger (`CLAUDE.md` Open Queue or a new `09_SACRED_MARKET/ST
 - The OS, Open Grove and land fund become the story, **not** the rewards.
 
 ### Step 5 — System work (AURORA can do this on request)
-- [ ] Add `sales` / `orders` tables and a `/merchant/ledger` endpoint to `merchant.py`, with each record tagged by entity (`LLC | NONPROFIT | PERSONAL`) and channel. This replaces the "1111 Flow Sheet" with a local-first ledger.
-- [ ] Add the `grants` table and routes.
+- [x] Add a `sales` table and `GET/POST /merchant/ledger` to `merchant.py`. Every row is tagged by entity (`LLC | NONPROFIT | PERSONAL | FISCAL_SPONSOR`), channel and kind. The table is append-only: reversals are `REFUND` rows, and a duplicate platform order id is rejected. `net_usd` is computed as gross − fees − COGS. The GET response includes First Flame progress, measured as cumulative LLC product net against $1,111.
+- [x] Add a `grants` table plus `GET/POST /merchant/grants` and `POST /merchant/grants/{id}/status`, covering the pipeline from RESEARCH to AWARDED/DECLINED, open deadlines coming due, and requested vs. awarded totals.
+- [ ] **Found while wiring the above:** `systems/fastapi/main.py` imports `grant_hunter` and `flow_tracker` (routes `/grant-hunter`, `/flow-tracker`, `/flow-dashboard`), but neither module exists in this repo or its git history. So `main.py` can't start from a fresh clone. They probably exist only on D:. Commit them, or decide whether `/merchant/grants` and `/merchant/ledger` replace them, so there aren't two grant pipelines and two money ledgers.
 - [ ] Consolidate `CASHFLOW_MASTER/`: keep about 8 canonical money docs and move duplicates and raw dumps to `archive/`. This is a Canon Gate call, so it needs Taylor's go-ahead.
 - [ ] Fix the `D:/` hardcoded paths in `economy/studios/*.py` (same pattern as the 2026-05-29 spine fix).
 - [ ] Correct `CLAUDE.md`'s merchant route: it lists `/merchant-sacred-artifacts`, but the code mounts `/merchant`.
