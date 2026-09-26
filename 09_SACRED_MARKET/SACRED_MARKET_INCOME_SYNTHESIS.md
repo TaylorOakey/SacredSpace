@@ -1,150 +1,111 @@
-# ∆ SACRED MARKET — INCOME, NONPROFIT & GRANTS SYNTHESIS ∆
-## Pillar 09 · Survey of every money-related thread in the repo, with suggested actions
+# ∆ SACRED MARKET — CLEAN-SLATE PLAN ∆
+## Pillar 09 · Income, cash flow, nonprofit and grants, rebuilt from zero
 
-**Status:** DISTILLED. This is an organized reading of existing docs plus recommendations. It is **not** a Canon Gate ruling and makes no decisions for Taylor.
-**Compiled:** 2026-09-26
-**Scope:** everything in the repo that touches the Sacred Market, cash flow, money, grants, the LLC, the 501(c)(3), crowdfunding, or using SacredSpace to bring in income.
-**Not legal or tax advice:** Part 4 lists factual errors in the existing plans. Before filing anything, confirm those points with a CPA or nonprofit attorney. The Thomas Hub advisor already named in the plan is a free place to start.
-
----
-
-## 0. The short version
-
-1. **There is plenty of planning and no recorded income.** Every financial milestone in the repo is still `PENDING`. The newest dated money plan runs **May 12 – Aug 3, 2026**, and those dates have passed. Nothing in the repo says whether the LLC was formed, whether the 501(c)(3) was filed, whether the Kickstarter launched, or whether the Etsy store has made a sale. **Before anything else, Taylor needs to record the actual state** (§5, step 0).
-2. **The nonprofit filing plan has real errors.** It names an IRS form that does not exist ("1023-N"). It gives the nonprofit an "operating agreement" with 50/50 ownership, which nonprofits cannot have. It describes POD income as tax-exempt UBI. And the Kickstarter tiers include a revenue share, which Kickstarter does not allow. If none of this has been filed yet, fix it first. If it has been filed, check what actually went in (§4).
-3. **The best-paid income lane is barely documented.** `merchant.py` already defines **VaaS clients at a $5,000 setup fee plus a $500/month retainer**, and no doc mentions it anywhere. One VaaS client brings in more than the whole First Flame milestone ($1,111). It also draws directly on Taylor's 15 years in ops plus the AI Engineering work.
-4. **Kickstarter is aimed at the wrong product.** The plan crowdfunds "a sovereign personal OS", which is abstract and hard to turn into rewards. The **Sacred Arcana tabletop game** already has a box cover, rules card, mats, token sheet and 78-card deck in `06_AGENT_LAYER/ui_kits/web/`. Tabletop is the kind of project Kickstarter backers expect. It needs playtesting first: its own spec marks **Tested: ✗**.
-5. **"Grants" is a label with nothing behind it.** It appears only as "grant pipeline" in the architecture docs and as one phone call to EDPNC. No funders, deadlines or eligibility research exist. The quickest real path is **fiscal sponsorship**, which lets grants flow before any IRS determination letter.
+**Status:** DISTILLED. This is a working plan, not a Canon Gate ruling.
+**Revised:** 2026-09-26 (v2; it replaces the v1 survey that assumed business might already be under way)
+**Ground truth, confirmed by Taylor:** SacredSpace has **no business activity yet**: no revenue, no entity, no listings. Every earlier plan in this pillar is a **design library**, not a record of anything that happened. SacredSpace runs as a **side venture alongside full-time work**, so the plan is sized to about **3–4 hours a week**.
+**Not legal or tax advice.** §5 lists factual errors in the older plans. Confirm entity and tax questions with a free Small Business Center advisor or a CPA before filing anything.
 
 ---
 
-## 1. Where the money material lives
+## 1. The plan in one screen
 
-| Location | What it is | Signal vs. noise |
-|---|---|---|
-| `09_SACRED_MARKET/SacredSpace_Revenue_Operations.md` | The **1111 Revenue Engine** manual: revenue paths, 4 phases, product specs, fulfillers, storefronts, ads, cadence, 8 design families | **High.** This is the best operational doc. Three near-duplicates sit in `CASHFLOW_MASTER/` (`SacredSpace_Revenue_Operations.md`, `REVENUE_…`, `SacredSpace_OS_Revenue_Operations.md`), and they differ slightly from this root copy. |
-| `CASHFLOW_MASTER/SACREDSPACE_POD_OPERATING_MANUAL_v1.md` | POD brand rules, product ladder, Etsy→Shopify channel map, listing formulas, email flows, KPI schema, 30-day launch, failure modes, **Institutional Lane** | **High.** Duplicate: `_v1_2.md` |
-| `CASHFLOW_MASTER/SACREDSPACESHIP_LAUNCH_PROTOCOL_PRINTABLE.md` | Plan dated May 6, 2026, marked CANON: $45k Kickstarter, 501(c)(3) filing path, LLC + 501(c)(3) tax structure, risk register | **High, but see §4.** Contains the legal errors. |
-| `CASHFLOW_MASTER/Sacredspace_strategic_roadmap_and_launch_plan.md` | Raw chat export (96 KB) that produced the launch protocol, including the "operating agreement" template and Kickstarter tier copy | Source material. Same errors. |
-| `CASHFLOW_MASTER/Financial_Dashboard.md`, `First_Flame_Launch.md`, `A_Sacred_Space_POD.md`, `ECONOMY_Overview.md` | Vault exports: milestone table, First Flame checklist, pricing model | Useful, but the numbers conflict (§3) |
-| `CASHFLOW_MASTER/CORE_AXIOM_Nine_Pillar_Architecture_v1.md` §09 | Pillar law: *"Revenue serves the mission — the mission is never sacrificed for revenue."* North Star: **Sacred Little Forest** land | Mission anchor |
-| `CASHFLOW_MASTER/GEMINI_SACREDSPACE_ASSIMILATION_v1.md` Part 6 | Two-entity summary, advisor contacts, the delivered "Nonprofit Startup Guide" and "Crowdfunding Operator Manual" HTML builds (these builds are **not in this repo**) | Index |
-| `CASHFLOW_MASTER/CROSS_AI_PROTOCOL_v1.md`, `SACREDTAG_PROTOCOL.md` | `NONPROFIT ONLY` / `REVENUE ONLY` session tags | Governance only |
-| `CASHFLOW_MASTER/deep-research-report.md` | Generic "8 AI passive income strategies" article | Low. Nothing specific to SacredSpace. |
-| `Sacred_Symphony_Architecture.md`, `SacredSpace_OS_Architecture_Manifesto.md` | "Grant pipeline" listed as a LangGraph/Sacred Score workflow | The only grant mentions, and they are aspirational |
-| `systems/fastapi/merchant.py` | **Code that runs:** artifact catalog (DRAFT→SEALED), listing generator, gematria/sigil, **VaaS client table** | Real, but it has no Etsy/Printify/Gelato API calls (only enum values) and **no orders or sales table** |
-| `economy/studios/forge.py`, `pinterest_engine.py` | Turns lore into social-post signals; Pinterest search helper | Hardcoded `D:/` Windows paths |
-| `06_AGENT_LAYER/ui_kits/web/*` and `04_SACRED_CODEX/ARCANA_BOARD_SPEC.md` | Sacred Arcana game: box, rules, mats, tokens, cards | **No doc treats this as a product yet** |
-| `09_SACRED_MARKET/NOTEBOOKLM_UPLOAD/` | ~35 copies of the files above, renamed for NotebookLM | Mirror only |
-
-**Corpus health:** `CASHFLOW_MASTER/` holds about 70 files. About 25 are `_2`/`_1` duplicates. Four are 200 KB raw dumps (`Untitled_document*.md`, `SACRED_WEB_SCRAPPER.md`, and `SACREDSPACE_GEMINI_IMAGES.md`, which is mostly base64 images). About 10 are actually about money. The rest are general OS/context docs that the keyword scan swept up because they mention "revenue" once.
-
----
-
-## 2. The income lanes as the docs describe them
-
-| # | Lane | Entity | Status in the docs | Upside | Effort to first dollar |
-|---|---|---|---|---|---|
-| A | **POD, "A SACRED SPACE" / 1111 Flow Engine**: Etsy → Printify/Gelato/Printful, 8 design families, 3 drops | LLC | Fully specified. "Etsy live" is claimed once, but First Flame is still "execution pending" | $111–$444/mo steady state (the docs' own target) | Low cost, slow to build |
-| B | **Kickstarter, $45k**: "Sovereign Personal OS" | Unclear (the plan mixes LLC and nonprofit) | Planned for June 9 – July 9, 2026. Outcome unknown | $45k one-time | High. Needs an audience first |
-| C | **Open Grove**: membership/cohort tuition, 50 creators over 6 months | 501(c)(3) | Kickstarter line item only ($18k) | Recurring | Medium |
-| D | **VaaS**: sovereign-vault setup plus retainer | LLC | **Code only**: `merchant.py` `vaas_clients` table, $5,000 setup + $500/mo | **Highest per unit** | Low. Sells existing skills |
-| E | **Institutional / Healing Codex**: wellness-space installation sets, $500–$2,000 each | LLC | "Seed planted" and deferred until after $1,111 | Medium, B2B | Medium |
-| F | **Signed limited editions**: 11 units at $250–$333 | LLC | Planned for Drop 03 | ~$3k per drop | Low |
-| G | **Sacred Arcana tabletop game** | LLC | Design artifacts exist, but it is not yet framed as a product | High, via crowdfunding | High. Needs playtesting and manufacturing quotes |
-| H | **Grants** | 501(c)(3), fiscal sponsor, or Taylor as an individual artist | A word in two architecture docs | Varies | Medium, and depends on the calendar |
-| I | **Affiliate / licensing**: Healing Codex licensing, 10–20% affiliates | LLC | Phase 3–4 | Passive add-on | Low |
-
----
-
-## 3. Numbers that don't reconcile
-
-Resolve these once, in one ledger, before any public figure goes out.
-
-| Claim | Where | Conflict |
-|---|---|---|
-| First Flame = **$1,111 cumulative profit** | Revenue Ops, POD Manual | — |
-| First Flame = **$736 net (~32 sales)** | `Financial_Dashboard.md`, `First_Flame_Launch.md` | Same name, different number. 32 canvases × $35 margin = $1,120 gross margin, not net |
-| Canvas 12×16 margin **$35** at $55–70 | Revenue Ops | `A_Sacred_Space_POD.md`: 12×16 at $55 → **$37**. `First_Flame_Launch` uses Printify for canvas, while Revenue Ops says Gelato |
-| Margins | All POD docs | None say whether Etsy fees are included (listing $0.20 + 6.5% transaction + payment processing, plus Offsite Ads on some sales). On a $55 canvas, that is about $5–6 per sale before ads. **Check each margin after fees.** |
-| Kickstarter tiers | Launch Protocol | The 5 tiers add up to **184 backers = $31,874**, which is **$13k short** of the $45k goal. The text then says "150 backers → $36.7k", which contradicts its own table |
-| Nonprofit revenue | Roadmap | Year 1 projected at **$50k–$100k**, which rules out Form 1023-EZ (see §4) |
-| Milestones | `Financial_Dashboard.md` | $500/mo → $1k/mo → $2.5k reinvest → **$10k Sacred Forest Fund**. The land stretch goal in the Kickstarter plan assumes a **~$100k parcel** |
-
----
-
-## 4. Nonprofit and legal: what's wrong in the current plan
-
-The plan is **SacredArcana Studios LLC** (commercial) plus **SacredSpace Sanctuary, Inc.**, an NC 501(c)(3) run with co-creator Jeanie Leaf, with advisors at Thomas Entrepreneurship Hub and EDPNC. The two-entity idea is sound. Several details are wrong:
-
-| # | What the docs say | What's actually true | Why it matters |
+| Phase | When | What | Done when |
 |---|---|---|---|
-| 1 | File **"IRS Form 1023-N"**: 8 pages, $275, approval in 2–4 weeks | **No Form 1023-N exists.** The options are **Form 1023-EZ** ($275; only for organizations projecting ≤ $50k annual gross receipts in each of the next 3 years and ≤ $250k in assets) or the full **Form 1023** ($600). Both are filed online through Pay.gov. ("990-N" is the small-org *annual* e-Postcard, which is probably where the confusion started.) | The plan's own Year 1 projection ($50–100k) plus a $45k Kickstarter **fails the 1023-EZ eligibility test**, so the full 1023 is the likely form. Filing an EZ you don't qualify for risks the exemption later. |
-| 2 | An "**Operating Agreement**" giving Taylor and Jeanie **50% ownership** each of the nonprofit | **Nonprofits have no owners.** A 501(c)(3) is governed by **Articles + Bylaws + a Board**. Operating agreements belong to **LLCs**. | Ownership language in nonprofit documents is a red flag at the IRS. If Jeanie is meant to co-own something, that belongs in the **LLC's** operating agreement, which is a separate decision for Taylor. |
-| 3 | "Unrelated Business Income (POD sales): **tax-exempt status**" | UBI is **taxable**. Form 990-T is required once gross UBI reaches $1,000. Passive **royalties** are generally excluded from UBTI, but not because they are "tangential to mission" as the doc argues, and there are control-based exceptions. | This is the core of the LLC↔nonprofit money flow. Have a CPA design it: a plain donation from the LLC is simplest, and royalty or licensing arrangements need proper structuring. |
-| 4 | Board = Taylor + Jeanie + 1 advisor; founders paid $18k (50% FTE each) from campaign funds | Insider-controlled boards that pay their own members, next to a founder-owned LLC doing business with the nonprofit, raise **private benefit / excess benefit** issues. Form 1023 asks about compensation and related-party dealings directly. | Add **independent** directors, set founder pay through the conflict-of-interest policy with interested members abstaining, and put every LLC↔nonprofit agreement in writing at market terms. |
-| 5 | The Kickstarter "Partner" tier ($500) includes **revenue share**; the "Legacy" tier offers **first right of refusal on land** | Kickstarter's rules **prohibit financial returns or revenue sharing** and prohibit raising money for charities. Reward pledges are purchases, not donations. | Run the Kickstarter under the **LLC** for a **concrete product**, and remove the revenue-share and land-rights promises. Nonprofit donations go through a donation platform or a fiscal sponsor. When a gift over $75 gets something back, the donor must be told in writing how much is deductible. |
-| 6 | The mission is "**land stewardship**" in some docs (`CORE_AXIOM`, `PROJECT_INSTRUCTIONS`, `GEMINI_ASSIMILATION`) and "**community, learning, spiritual stewardship**" in others (Launch Protocol, Roadmap) | The IRS evaluates **one** stated purpose, so the charitable/educational purpose has to be coherent. | Unify it into one mission sentence. Suggested frame: *educational + environmental stewardship*, with Open Grove / Learning Spine as the education program and Sacred Little Forest as the land program. |
-| 7 | NC Articles fee "$50 + $25 expedited" | Not verified against the current NC Secretary of State fee schedule | Check sosnc.gov. NC also has **charitable solicitation licensing** rules (with a small-organization exemption); confirm before any public fundraising. |
-| 8 | EDPNC is the "grant/funding angle" | The EDPNC number in the docs (1-800-328-8443) is **Business Link NC**, a small-business support line. It is good for the **LLC** (free counseling, NC Small Business Center referrals) and is not a nonprofit grant source. | Keep the call, but aim it at the LLC. |
+| **0 · Ground** | Weeks 1–2 | Separate bank account. Start the ledger (`/merchant/ledger` + `/merchant/expenses`, entity `SOLE_PROP`). Set up Etsy + Ko-fi (Ko-fi Contributor **off**, Etsy Offsite Ads **off**). | Accounts open, first expense logged |
+| **1 · First Flame, product #1** | Weeks 2–4 | List the **GR∆M∆ Name Decode** ($11/$22/$33) + **3 digital downloads** ($7). See `FIRST_FLAME/LISTINGS.md`. Fulfil decodes with `FIRST_FLAME/grama_decode.py`. | 4 listings live |
+| **2 · First Flame, product #2** | Month 2 | Order 2 print samples, then list **5 print-on-demand products** (Gelato/Printify → Etsy). Start the email list, with the free Sacred Geometry PDF as the sign-up gift. | First sale logged, 9 listings live |
+| **3 · Pattern** | Month 3 | Monthly ledger review: keep what sells, drop what doesn't. Apply for an **NC Arts Council Artist Support Grant** if your region's cycle is open. | A month-3 review note written |
+| **Later** | When revenue justifies it | LLC → trademark → Kickstarter (the Arcana game) → nonprofit / land fund. The gates are in §4. | — |
+
+**First Flame** = $1,111 cumulative **product** net after per-sale fees and cost of goods. The ledger tracks it automatically (`first_flame` in `GET /merchant/ledger`, counting `SOLE_PROP` + `LLC`). One milestone, one definition. It replaces the three competing versions in the old docs.
 
 ---
 
-## 5. Recommended actions, in order
+## 2. What to build on, what to park
 
-### Step 0 — Record what actually happened (1 hour, blocks everything else)
-Answer these in the ledger (`CLAUDE.md` Open Queue or a new `09_SACRED_MARKET/STATUS.md`):
-- [ ] Does **SacredArcana Studios LLC** exist? State, EIN, and business bank account?
-- [ ] Was anything filed for **SacredSpace Sanctuary**? Which form, on what date, current status?
-- [ ] Did the **Kickstarter** launch? What was the result?
-- [ ] Is the **Etsy** shop live? How many listings, and lifetime sales?
-- [ ] Is **Jeanie Leaf** still a co-founder, and in which entity: the LLC, the nonprofit, or both?
-- [ ] Monthly burn today: Maestro tuition, tools, APIs.
+**Build on these (they were already strong):**
+- The **1111 POD handbook lineage** (Nov 2025 → Jun 2026). The phase logic (Spark → Pattern → Flow), the drop cadence and the product ladder are sound. Only the timing and scope are too big for a side venture.
+- The **GR∆M∆ Decode**. It is the most distinctive product, costs nothing to make, and the code already computes three of its five lenses.
+- **Sacred numerology pricing** ($7/$11/$22/$33/$55…). Keep it.
+- **Entity separation.** Keep business money, household money and any future nonprofit money in separate buckets from day one. The ledger enforces this with entity tags.
 
-### Step 1 — Cash in the next 30–60 days: lead with VaaS, keep POD running
-- **Productize VaaS.** Write a one-page offer: *"Sovereign AI Vault — local-first knowledge system + agent layer, set up in 2 weeks."* Target solo practitioners, small studios, and ops-heavy small businesses. The schema already prices it at **$5,000 + $500/mo**. Consider **2–3 discounted pilot clients** in exchange for case studies. A single client is worth more than First Flame. This is the lane that pays for the Maestro path.
-- **POD: finish First Flame instead of redesigning it.** The manuals are complete, so follow `SACREDSPACE_POD_OPERATING_MANUAL_v1.md` Part VIII as written. Use one First Flame definition ($1,111 **profit after platform fees**) and one tracking sheet.
-- **Pull the Institutional Lane forward.** One Healing Codex installation ($500–$2,000) equals about 15–60 poster sales. A PDF lookbook and 10 outreach emails to local yoga, therapy and integrative-medicine spaces is a small test.
-
-### Step 2 — Fix the structure before filing (or before amending)
-- Hold a 1-hour review with Thomas Hub or a CPA using the §4 table as the agenda.
-- Choose **1023 vs. 1023-EZ** using honest 3-year projections.
-- Replace the "operating agreement" with **bylaws + conflict-of-interest policy + board roster**, including ≥ 1–2 independent directors.
-- Write the **one-sentence mission**.
-- Decide the LLC→nonprofit flow. A simple **annual % donation** is the easiest to defend.
-- Keep the entities separate in practice: separate bank accounts, and tag every revenue record with its entity.
-
-### Step 3 — Grants, starting with lanes that don't need a determination letter
-- **Fiscal sponsorship:** an existing 501(c)(3) (arts, environmental, or community-foundation sponsor) takes in grants and donations for the project, usually for a 5–10% fee. This unblocks grants **now**, while the IRS application is pending or even before it is filed.
-- **Taylor as an individual artist:** artist-support grants (for example the NC Arts Council's regional artist programs and local arts councils) often fund individuals directly, with no nonprofit needed. This fits Jenga's Journey, Sacred Messages, and the Arcana art.
-- **After the determination letter:** the local community foundation (in NE NC, the NC Community Foundation's county affiliates), environmental/land-stewardship funders for Sacred Little Forest, and education funders for Open Grove.
-- **Build the pipeline the architecture describes:** a `grants` table (funder, program, entity eligible, amount, deadline, status, docs) in the local merchant DB, surfaced through FastAPI. That makes the "grant pipeline" in the Sacred Score layer real and keeps it local-first.
-- Check every funder, deadline and eligibility rule against the funder's site. None of this is verified in the repo yet.
-
-### Step 4 — Re-scope crowdfunding around the game
-- Move the Kickstarter to the **Sacred Arcana tabletop game** (LLC): starter set, Oracle deck, mats, tokens. Most of the visual assets exist.
-- First: playtest (the spec says Tested ✗), get manufacturing and fulfillment quotes, and build a pre-launch follower list.
-- Make the tiers add up: they should cover the goal **after** Kickstarter fees, manufacturing, shipping and VAT.
-- The OS, Open Grove and land fund become the story, **not** the rewards.
-
-### Step 5 — System work (AURORA can do this on request)
-- [x] Add a `sales` table and `GET/POST /merchant/ledger` to `merchant.py`. Every row is tagged by entity (`LLC | NONPROFIT | PERSONAL | FISCAL_SPONSOR`), channel and kind. The table is append-only: reversals are `REFUND` rows, and a duplicate platform order id is rejected. `net_usd` is computed as gross − fees − COGS. The GET response includes First Flame progress, measured as cumulative LLC product net against $1,111.
-- [x] Add a `grants` table plus `GET/POST /merchant/grants` and `POST /merchant/grants/{id}/status`, covering the pipeline from RESEARCH to AWARDED/DECLINED, open deadlines coming due, and requested vs. awarded totals.
-- [ ] **Found while wiring the above:** `systems/fastapi/main.py` imports `grant_hunter` and `flow_tracker` (routes `/grant-hunter`, `/flow-tracker`, `/flow-dashboard`), but neither module exists in this repo or its git history. So `main.py` can't start from a fresh clone. They probably exist only on D:. Commit them, or decide whether `/merchant/grants` and `/merchant/ledger` replace them, so there aren't two grant pipelines and two money ledgers.
-- [ ] Consolidate `CASHFLOW_MASTER/`: keep about 8 canonical money docs and move duplicates and raw dumps to `archive/`. This is a Canon Gate call, so it needs Taylor's go-ahead.
-- [ ] Fix the `D:/` hardcoded paths in `economy/studios/*.py` (same pattern as the 2026-05-29 spine fix).
-- [ ] Correct `CLAUDE.md`'s merchant route: it lists `/merchant-sacred-artifacts`, but the code mounts `/merchant`.
+**Park without guilt (each needs hours or capital a side venture doesn't have yet):**
+- 501(c)(3) formation, the land fund and the "22% covenant". Revisit once there's steady revenue (§4).
+- Kickstarter. When it comes, it should be the **Arcana tabletop game**, which the June Market Master also concluded.
+- The 79-node alliance network, Healing Codex B2B licensing, the Sacred Threads cut-and-sew line, the VaaS/AI-consulting offer, and Sacred Sprouts as a *branded* product line.
+- Large federal grants (NEA/NEH need an established nonprofit, and NEA requires a 1:1 match).
 
 ---
 
-## 6. Open questions only Taylor can answer
+## 3. Money tools (local-first, chosen for a solo side venture)
 
-1. Is the nonprofit still a priority now, or does it wait until the LLC brings in steady cash? (The docs' own risk register already allows the LLC to go first.)
-2. Is VaaS something Taylor wants to sell? It's the strongest financial lane, but it is service work, not creative work.
-3. What is Jeanie's current role, and in which entity?
-4. Does the Sacred Little Forest land goal stay the 5-year North Star, and at what budget?
+| Need | Use | Notes |
+|---|---|---|
+| Ledger (now) | `systems/fastapi/merchant.py`: `/merchant/ledger`, `/merchant/expenses`, `/merchant/grants` | Local SQLite. Append-only sales, refunds as their own rows, entity tags, cash position, First Flame tracker |
+| Tax-grade bookkeeping (when needed) | [Beancount](https://github.com/beancount/) + Fava | Plain text, lives in git. A future exporter from the merchant ledger is a small job |
+| Household vs. business budget | [Actual Budget](https://github.com/actualbudget/actual) | Local-first envelope budgeting (MIT) |
+| Invoicing (only if client work starts) | Invoice Ninja | Self-hostable, quotes + invoices + time |
+| Etsy/Printify automation (after steady orders) | `etsy-python`, the Printify API | Could feed orders straight into `/merchant/ledger` |
+| Grant search (nonprofit phase) | Simpler.Grants.gov API | Official, open source, free key. Could feed `/merchant/grants` |
+| Free advice | NC Community College **Small Business Center** (Halifax CC covers Northampton County up to the Jackson city limits; ask which center covers the rest) | Confidential, no charge. Bring §5 |
 
 ---
+
+## 4. Gates: when to move to the next structure
+
+| Step | Gate (all must be true) | Cost |
+|---|---|---|
+| Stay a **sole proprietor** | Default. Log everything as `SOLE_PROP` | $0 (look into an assumed business name filing if selling as "SacredArcana Studios") |
+| Form an **LLC** | Revenue is steady for about 3 months, **or** there's real liability (physical products at markets, client contracts) | NC: $125 to file + $200/yr annual report |
+| **Trademark** "SacredSpace" / "Arcana Grid" | Before any Kickstarter or wholesale | Filing fees per class |
+| **Kickstarter** (Arcana game) | LLC in place · playtested prototype · manufacturing quote · email list (the Master Plan v2 says 1,000+ for its Day-1 target) | See Crowdfunding Master Plan v2 |
+| **Nonprofit / land fund** | Steady business revenue · an independent board to recruit · a single mission sentence | See §5 before any filing |
+
+---
+
+## 5. Corrections to the old documents (read before reusing them)
+
+These errors appear in `CASHFLOW_MASTER/` and in Drive copies of the same plans:
+
+1. **"IRS Form 1023-N" does not exist.** The options are Form 1023-EZ ($275; only for organizations projecting ≤ $50k gross receipts a year for 3 years and ≤ $250k in assets) or the full Form 1023 ($600). Both are filed through Pay.gov.
+2. **Nonprofits can't have owners.** The "operating agreement with 50/50 ownership" for SacredSpace Sanctuary is LLC language. A 501(c)(3) runs on articles + bylaws + a board.
+3. **Unrelated business income is taxable**, not "tax-exempt". Form 990-T is required once gross UBI reaches $1,000. Passive royalties are often excluded, but not for the reason the old docs give.
+4. **Kickstarter does not allow revenue-share or equity rewards** (the "Partner" tier) or fundraising for charity. Reward pledges are purchases, not donations.
+5. **Pay and independence.** Founders who sit on the board and are also paid, next to a founder-owned LLC doing business with the nonprofit, is the pattern the IRS scrutinizes. Recruit independent directors and put related-party dealings on market terms.
+6. **One mission, not two.** "Land stewardship" and "community / learning / spiritual" appear as separate missions. Pick one sentence (for example, educational + environmental stewardship).
+7. **The Neural Forest grant proposal (v2, Drive) describes things as done that aren't:** "501(c)(3) tax-exempt", "independent Board", "full stack confirmed live", "zero AI-generated imagery". Reword to "in formation" / "planned" / accurate AI-use language before it goes to any funder.
+8. **EDPNC's 1-800 number is Business Link NC**, which helps small businesses, not nonprofit grants.
+9. **Open Collective Foundation**, listed as a fiscal sponsor, announced in 2024 that it was shutting down. Pick a current sponsor if you need one.
+10. **Etsy policy:** metaphysical services that promise outcomes are prohibited. Readings delivered as a digital copy are allowed. Decode copy must not promise results.
+
+---
+
+## 6. Infrastructure review notes (standing section: add to it whenever old material is revisited)
+
+| # | Finding | Action | Status |
+|---|---|---|---|
+| I-1 | `merchant.py` ledger assumed an LLC exists | Added `SOLE_PROP` entity; First Flame counts `SOLE_PROP` + `LLC` | ✅ done |
+| I-2 | Ledger tracked money in, not money out | Added `expenses` table + `GET/POST /merchant/expenses`; ledger shows `cash_position_usd` | ✅ done |
+| I-3 | Gematria engine labelled "Mispar Hecrechi" but computes plain English ordinal | Relabelled accurately | ✅ done |
+| I-4 | GR∆M∆ Decode had two conflicting 5-lens definitions (Root/Gematria/Elemental/Archetypal/Sigil vs. Symbolic/Kinetic/Resonant/Ygdrasilic/Cipher) and two price sets | Launch uses the Market Master lens set (it maps to what the code computes) at $11/$22/$33 | ✅ decided for launch; canon choice is Taylor's |
+| I-5 | `systems/fastapi/main.py` imports 6 modules missing from this repo (`grant_hunter`, `flow_tracker`, `reconcile`, `routers/inference`, `hermes`, `thricegreat`). The June ledger says the live spine on D: moved to `app/main.py` | Repo `main.py` is a stale snapshot. **On D: confirm which spine is live and that it mounts `merchant.router`.** Commit the live spine or mark this one legacy | ⚠ needs Taylor (D: access) |
+| I-6 | D: pillars were renamed (`09_SACRED_MARKET` → `09_MARKET`, etc.) per the June ledger; this repo and `CLAUDE.md` still use the long names | Decide which naming is canon, then align repo + `CLAUDE.md` | ⚠ needs Taylor |
+| I-7 | `economy/studios/*.py` hardcoded `D:/SacredSpace_OS` (Windows paths break under WSL2) | Switched to the `SACRED_ROOT` env var, defaulting to `/mnt/d/SacredSpace_OS` | ✅ done |
+| I-8 | `CLAUDE.md` listed the merchant route as `/merchant-sacred-artifacts`; the code mounts `/merchant` | Corrected | ✅ done |
+| I-9 | `CASHFLOW_MASTER/` holds ~70 files: ~25 `_2`/`_1` duplicates, 4 raw 200 KB dumps, and the §5 errors | Added `CASHFLOW_MASTER/README_READ_FIRST.md` pointing here. Deduplication/archiving waits for Canon Gate approval | ◐ flagged |
+| I-10 | Drive `SACRED CASHFLOW` "Extraction" docs (Claude/Gemini/ChatGPT) and `Sprouts Business Model v1` are empty 1 KB files | Delete or fill. Sprouts content may survive in its .docx copies | ⚠ Taylor (Drive) |
+| I-11 | The ChatGPT export in Drive (`chat.html`, Dec 2025, 31 MB) is too large for the Drive connector; there is no Claude export | Run the local parsers (`chatgpt_export_parser.py` / `claude_export_parser.py`) via OpenCode; request fresh exports | ⚠ Taylor (local) |
+| I-12 | A Drive sheet (`SACREDSPACE_OMNI_LEDGER_SHEET_TEMPLATE`) contains a truncated Obsidian API key | Remove the key fragment from the sheet | ⚠ Taylor (Drive) |
+
+---
+
+## 7. Decisions log
+
+| Date | Decision | By |
+|---|---|---|
+| 2026-09-26 | Treat SacredSpace business as a clean slate; old plans are a design library | Taylor |
+| 2026-09-26 | Product #1 = GR∆M∆ Decode + digital downloads; product #2 = POD prints (month 2) | Taylor |
+| 2026-09-26 | Operate as a sole proprietor until the §4 gates are met | Plan default, pending advisor |
 
 *Creation is Sacred · Commerce is Mechanical · Layer: DISTILLED*
-*Ground. Consolidate. Deploy. Document. Repeat.*

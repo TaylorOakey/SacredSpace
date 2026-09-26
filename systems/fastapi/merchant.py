@@ -47,9 +47,9 @@ ARTIFACT_TYPES = [
 ]
 ARTIFACT_STATES = ["DRAFT", "FORGED", "LISTED", "ACTIVE", "ARCHIVED", "SEALED"]
 
-# ─── GR∆M∆ GEMATRIA ENGINE (Mispar Hecrechi — English approximation) ──────────
+# ─── GR∆M∆ GEMATRIA ENGINE (English Ordinal, A=1 … Z=26) ─────────────────────
 
-# English letters mapped to Hebrew positional values
+# Plain English ordinal values. Hebrew Mispar Hechrachi needs transliteration first.
 ORDINAL_VALUES = {
     'A': 1,  'B': 2,  'C': 3,  'D': 4,  'E': 5,
     'F': 6,  'G': 7,  'H': 8,  'I': 9,  'J': 10,
@@ -148,9 +148,11 @@ def _check_date(value: str, field: str) -> str:
 
 VAAS_STATUSES = ["PROSPECT", "ONBOARDING", "ACTIVE", "PAUSED", "CHURNED"]
 
-# Every ledger/grant row is tagged with the entity it belongs to, so the
-# LLC and the 501(c)(3) never share a bucket.
-ENTITIES = ["LLC", "NONPROFIT", "PERSONAL", "FISCAL_SPONSOR"]
+# Every ledger/grant row is tagged with the entity it belongs to, so business,
+# nonprofit and household money never share a bucket. SOLE_PROP is the starting
+# entity; LLC and NONPROFIT exist for when (if) those are formed.
+ENTITIES = ["SOLE_PROP", "LLC", "NONPROFIT", "PERSONAL", "FISCAL_SPONSOR"]
+COMMERCIAL_ENTITIES = ("SOLE_PROP", "LLC")
 SALE_CHANNELS = [
     "ETSY", "SHOPIFY", "KOFI", "REDBUBBLE", "TEEPUBLIC",
     "PRINTIFY", "GELATO", "PRINTFUL", "KICKSTARTER",
@@ -162,6 +164,17 @@ GRANT_STATUSES = [
     "AWARDED", "DECLINED", "WITHDRAWN", "CLOSED",
 ]
 FIRST_FLAME_TARGET_USD = 1111.0   # cumulative PRODUCT net, after platform fees + COGS
+# Money out that isn't tied to a single sale (per-sale fees/COGS live on the sale row).
+EXPENSE_CATEGORIES = [
+    "PLATFORM",      # Etsy listing renewals, Ko-fi Gold, Shopify plan
+    "SOFTWARE",      # Canva, domains, hosting
+    "SAMPLES",       # test prints / proof copies
+    "SUPPLIES",      # plant stock, packaging, art materials
+    "MARKETING",     # ads, printed cards
+    "LEGAL_FILING",  # LLC, annual report, trademark
+    "EQUIPMENT",
+    "OTHER",
+]
 
 
 def init_merchant_db():
@@ -262,6 +275,19 @@ def init_merchant_db():
             updated_at       TEXT NOT NULL
         );
         CREATE INDEX IF NOT EXISTS idx_grants_deadline ON grants(deadline);
+
+        CREATE TABLE IF NOT EXISTS expenses (
+            expense_id    INTEGER PRIMARY KEY AUTOINCREMENT,
+            expense_date  TEXT NOT NULL,           -- YYYY-MM-DD
+            entity        TEXT NOT NULL,           -- ENTITIES
+            category      TEXT NOT NULL,           -- EXPENSE_CATEGORIES
+            vendor        TEXT,
+            description   TEXT,
+            amount_usd    REAL NOT NULL,           -- always positive
+            notes         TEXT,
+            created_at    TEXT NOT NULL
+        );
+        CREATE INDEX IF NOT EXISTS idx_expenses_date ON expenses(expense_date);
     """)
     conn.commit()
     conn.close()
@@ -628,8 +654,22 @@ offerings rather than products.
         # First Flame is all-time, independent of the filters above.
         flame_net = conn.execute(
             "SELECT COALESCE(SUM(net_usd), 0) FROM sales "
-            "WHERE entity='LLC' AND kind IN ('PRODUCT', 'REFUND')"
+            "WHERE entity IN (?, ?) AND kind IN ('PRODUCT', 'REFUND')",
+            COMMERCIAL_ENTITIES,
         ).fetchone()[0]
+        # Expenses share the entity/date filters; channel doesn't apply to them.
+        eq = "SELECT * FROM expenses WHERE 1=1"
+        eparams = []
+        if entity:
+            eq += " AND entity=?"
+            eparams.append(_check_enum(entity, ENTITIES, "entity"))
+        if since:
+            eq += " AND expense_date>=?"
+            eparams.append(_check_date(since, "since"))
+        if until:
+            eq += " AND expense_date<=?"
+            eparams.append(_check_date(until, "until"))
+        expenses = [dict(r) for r in conn.execute(eq, eparams).fetchall()]
         conn.close()
 
         def _bucket(key: str) -> dict:
@@ -661,8 +701,20 @@ offerings rather than products.
             "by_entity":  _bucket("entity"),
             "by_channel": _bucket("channel"),
             "by_month":   dict(sorted(by_month.items())),
+            "expenses": {
+                "count":       len(expenses),
+                "total_usd":   round(sum(e["amount_usd"] for e in expenses), 2),
+                "by_category": {
+                    c: round(sum(e["amount_usd"] for e in expenses if e["category"] == c), 2)
+                    for c in sorted({e["category"] for e in expenses})
+                },
+            },
+            # Channel-filtered views exclude expenses, so a cash position there would mislead.
+            "cash_position_usd": None if channel else round(
+                sum(r["net_usd"] for r in rows) - sum(e["amount_usd"] for e in expenses), 2
+            ),
             "first_flame": {
-                "definition": "Cumulative LLC product net (PRODUCT + REFUND rows), after fees and COGS",
+                "definition": "Cumulative SOLE_PROP + LLC product net (PRODUCT + REFUND rows), after per-sale fees and COGS",
                 "target_usd": FIRST_FLAME_TARGET_USD,
                 "net_usd":    round(flame_net, 2),
                 "progress":   round(min(flame_net / FIRST_FLAME_TARGET_USD, 1.0), 4),
@@ -670,6 +722,52 @@ offerings rather than products.
             },
             "timestamp": datetime.now(timezone.utc).isoformat(),
         }
+
+    # ─── EXPENSES ──────────────────────────────────────────────────────────────
+
+    def record_expense(
+        self,
+        expense_date: str,
+        entity: str,
+        category: str,
+        amount_usd: float,
+        vendor: Optional[str] = None,
+        description: Optional[str] = None,
+        notes: Optional[str] = None,
+    ) -> dict:
+        """Append one expense (money out not tied to a single sale)."""
+        expense_date = _check_date(expense_date, "expense_date")
+        entity = _check_enum(entity, ENTITIES, "entity")
+        category = _check_enum(category, EXPENSE_CATEGORIES, "category")
+        if amount_usd <= 0:
+            raise ValueError("amount_usd must be > 0.")
+        now = datetime.now(timezone.utc).isoformat()
+        conn = _get_conn()
+        c = conn.cursor()
+        c.execute("""
+            INSERT INTO expenses
+            (expense_date, entity, category, vendor, description, amount_usd, notes, created_at)
+            VALUES (?,?,?,?,?,?,?,?)
+        """, (expense_date, entity, category, vendor, description, round(amount_usd, 2), notes, now))
+        conn.commit()
+        row = dict(conn.execute("SELECT * FROM expenses WHERE expense_id=?", (c.lastrowid,)).fetchone())
+        conn.close()
+        return row
+
+    def list_expenses(self, entity: Optional[str] = None, category: Optional[str] = None) -> List[dict]:
+        q = "SELECT * FROM expenses WHERE 1=1"
+        params = []
+        if entity:
+            q += " AND entity=?"
+            params.append(_check_enum(entity, ENTITIES, "entity"))
+        if category:
+            q += " AND category=?"
+            params.append(_check_enum(category, EXPENSE_CATEGORIES, "category"))
+        q += " ORDER BY expense_date DESC, expense_id DESC"
+        conn = _get_conn()
+        rows = [dict(r) for r in conn.execute(q, params).fetchall()]
+        conn.close()
+        return rows
 
     # ─── GRANT PIPELINE ────────────────────────────────────────────────────────
 
@@ -860,6 +958,15 @@ class RecordSaleRequest(BaseModel):
     external_ref: Optional[str] = None
     notes: Optional[str] = None
 
+class RecordExpenseRequest(BaseModel):
+    expense_date: str
+    entity: str
+    category: str
+    amount_usd: float
+    vendor: Optional[str] = None
+    description: Optional[str] = None
+    notes: Optional[str] = None
+
 class AddGrantRequest(BaseModel):
     funder: str
     applicant_entity: str
@@ -971,7 +1078,7 @@ def sales_ledger(
 ):
     """
     Sales ledger with totals by entity, channel and month, plus First Flame progress.
-    Filter by entity (LLC | NONPROFIT | PERSONAL | FISCAL_SPONSOR), channel, and
+    Filter by entity (SOLE_PROP | LLC | NONPROFIT | PERSONAL | FISCAL_SPONSOR), channel, and
     since/until dates (YYYY-MM-DD).
     """
     try:
@@ -989,6 +1096,28 @@ def record_sale(body: RecordSaleRequest):
     """
     try:
         return engine.record_sale(**body.model_dump())
+    except ValueError as e:
+        raise HTTPException(status_code=400, detail=str(e))
+
+
+@router.get("/expenses")
+def list_expenses(entity: Optional[str] = None, category: Optional[str] = None):
+    """List expenses. Filter by entity or category."""
+    try:
+        return engine.list_expenses(entity=entity, category=category)
+    except ValueError as e:
+        raise HTTPException(status_code=400, detail=str(e))
+
+
+@router.post("/expenses")
+def record_expense(body: RecordExpenseRequest):
+    """
+    Record money out that isn't tied to one sale (per-sale fees and COGS go on
+    the sale row). Categories: PLATFORM | SOFTWARE | SAMPLES | SUPPLIES |
+    MARKETING | LEGAL_FILING | EQUIPMENT | OTHER
+    """
+    try:
+        return engine.record_expense(**body.model_dump())
     except ValueError as e:
         raise HTTPException(status_code=400, detail=str(e))
 
