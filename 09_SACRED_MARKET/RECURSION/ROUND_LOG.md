@@ -48,3 +48,23 @@ So no single $11 product replaces a paycheck. The route is **audience (C2, C3, C
 3. **Archive mining:** parse the ChatGPT export (`chat.html`, Drive `ChatGPT_Export`, Dec 2025) with `chatgpt_export_parser.py`. List the 10 conversations with the most finished, sellable drafts (products, copy, templates, lore packs). Cite dates and titles only; don't commit the conversation text.
 4. **Confirm local claims:** does the 54-card Arcana Grid JSON exist (path, card count)? (This gates A5.) Which parts of the vault could ship as a *de-personalised* template (A4) without anything private or canon-locked?
 5. **Smoke test:** run `python3 09_SACRED_MARKET/FIRST_FLAME/grama_decode.py "Taylor Oakey" --tier mini`. Confirm it works on WSL2, and save the render (local only) as the listing demo.
+
+## Round 0 addendum · Claude Code · 2026-09-26: `REVENUE_CONSOLIDATE.md` (uploaded by Taylor)
+**Status:** it can't run from the cloud (this container has no D:/C: data; running it here would falsely report "complete" with 0 files). It moves to OpenCode's lane, but the original script was replaced with a hardened version first.
+**Hardened:** `09_SACRED_MARKET/tools/revenue_consolidate.py` fixes Step 1 of the original:
+- It writes a dry-run manifest by default and copies only with `--copy`.
+- Keyword matching is whole-word ("pod" no longer matches "episode", "grant" no longer matches "granted").
+- It skips the 140 GB `SACREDSPACE_ARCHIVE`, `_PERSONAL`, `NOTEBOOKLM_SAFE` and `Messages_*`.
+- It folds duplicates by content hash, and copy names are collision-safe (the original let every `README.md` overwrite the last one).
+- It refuses to write into the Obsidian vault without `--allow-vault`.
+
+Tested on trap files and on this repo's 09 pillar: 127 scanned → 75 unique financial files, 30 duplicates folded.
+
+**Problems found in the original Steps 2–5 (don't run them as written):**
+- Step 2 calls `localhost:8888/drive/search`, and no such route exists. Drive was already searched read-only this session (see the plan and PR #10).
+- Step 4 appends `revenue_query` to `hermes_mcp.py` using `_chroma_client`, `_ok` and `_err`. Confirm those helpers exist in the live file first. Add it only with Taylor's go-ahead, because it edits the live spine.
+- Step 5 uses `chromadb.HttpClient(port=8001)`, but the June ledger says **ChromaDB is embedded and :8001 is OmniParse** (APP_STATUS lists "ChromaDB :8001 NOT CHECKED"). Verify which is true before ingesting. Also chunk the documents instead of embedding 200 KB dumps as single documents, and match the pillar name to the renamed `09_MARKET` if that rename is canon (plan I-6).
+- Step 3 (`REVENUE_OPERATIONS_MASTER`): **Claude Code builds it next round, from OpenCode's manifest** plus the existing plan and IDEA_BANK, in Taylor's section template. It goes in the repo pillar, and into the vault only if Taylor says to canonize.
+
+**NEXT FOR OPENCODE (added, item 6):**
+6. On the Legion, run `python3 09_SACRED_MARKET/tools/revenue_consolidate.py` (dry run) and commit **only** `MANIFEST.md` (paths + keywords, no file contents) to `09_SACRED_MARKET/RECURSION/local_revenue_manifest.md`. First check that it contains no private paths or names. Report which of Steps 4–5 are safe, based on what the live spine and ChromaDB actually are.
