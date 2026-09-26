@@ -1,6 +1,9 @@
 import json
+import os
 from datetime import datetime
 from pathlib import Path
+
+ROOT = Path(os.environ.get("SACRED_ROOT", "/mnt/d/SacredSpace_OS"))
 
 REALMS = {
     "ZII": "sacred geometry forest architecture moss",
@@ -11,7 +14,7 @@ REALMS = {
 
 class PinterestEngine:
     def __init__(self):
-        self.resonance_path = Path("D:/SacredSpace_OS/economy/studios/seeds/pinterest_resonance.jsonl")
+        self.resonance_path = ROOT / "economy" / "studios" / "seeds" / "pinterest_resonance.jsonl"
 
     def generate_portal(self, realm):
         query = REALMS.get(realm.upper(), "sacred space aesthetic")

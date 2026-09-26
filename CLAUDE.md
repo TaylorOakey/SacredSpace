@@ -74,7 +74,7 @@ LIVE SYSTEMS:
 
 AGENT SCRIPTS (Pillar 06):
   kethras.py            → GET /kethras-learning-gate        (Pillar 08)
-  merchant.py           → GET /merchant-sacred-artifacts    (Pillar 09)
+  merchant.py           → /merchant/* (artifacts, ledger, expenses, grants, vaas)  (Pillar 09)
   lore_engine.py        → GET /lore-to-product-engine       (Pillar 04)
   vault_watcher.py      → GET /vault-watcher-obsidian-sync  (Pillar 01)
 
@@ -737,6 +737,12 @@ P0  FastAPI spine :8888 — DORMANT
     → Run: bash /mnt/d/SacredSpace_OS/spine_check.sh
     → Or tell Claude Code: "find and start the FastAPI spine"
     → If main.py missing: bash spine_check.sh --scaffold
+
+P1  First Flame launch — clean slate, sole prop, ~3–4 hrs/week
+    Plan:     09_SACRED_MARKET/SACRED_MARKET_INCOME_SYNTHESIS.md (§1 phases, §6 infra notes)
+    Listings: 09_SACRED_MARKET/FIRST_FLAME/LISTINGS.md
+    Fulfil:   python3 09_SACRED_MARKET/FIRST_FLAME/grama_decode.py "<Name>" --tier mini
+    Ledger:   POST /merchant/ledger · POST /merchant/expenses (entity SOLE_PROP)
 
 P1  NotebookLM — 5 notebooks unpopulated
     LORE.VAULT / GAME.SYSTEMS / KNOWLEDGE.VAULT / FAMILY.LEGACY / CREATION.LAB
