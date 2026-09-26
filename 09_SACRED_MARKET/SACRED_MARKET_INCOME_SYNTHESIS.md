@@ -22,6 +22,8 @@
 
 ---
 
+**Long-term goal (Taylor, 2026-09-26): SacredSpace becomes the family's main income.** The two-agent **Livelihood Loop** in `RECURSION/` (Claude Code researches, OpenCode verifies locally) grows the idea bank, runs at most 3 experiments at once, and tracks progress up the ladder to the **Leap Gate** in `RECURSION/LOOP.md` §1. The day job stays until that gate is met.
+
 ## 2. What to build on, what to park
 
 **Build on these (they were already strong):**
