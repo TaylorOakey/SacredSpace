@@ -68,3 +68,27 @@ Tested on trap files and on this repo's 09 pillar: 127 scanned → 75 unique fin
 
 **NEXT FOR OPENCODE (added, item 6):**
 6. On the Legion, run `python3 09_SACRED_MARKET/tools/revenue_consolidate.py` (dry run) and commit **only** `MANIFEST.md` (paths + keywords, no file contents) to `09_SACRED_MARKET/RECURSION/local_revenue_manifest.md`. First check that it contains no private paths or names. Report which of Steps 4–5 are safe, based on what the live spine and ChromaDB actually are.
+
+## Round 1 · Claude Code · 2026-09-26
+**Ladder rung:** no sales yet ($0).
+**Done from last NEXT list:** n/a (Taylor's turn: "yes to both C2 and A4").
+**Verified / refuted:**
+- The JS engine in the C2 page matches `merchant.calculate_gematria`, `generate_sigil(AETHER)` and `grama_decode.sigilify`. Checked on 300+ names (hyphens, apostrophes, accents, `ß`, emoji, all soul tones 1–9/11/22): **0 mismatches**.
+- The page renders at 360px wide with no horizontal scroll. A digits-only input hides the result.
+- `SALE_CHANNELS` was missing `GUMROAD`, even though A4 and the fee table plan to sell there. Added.
+
+**Ideas added:** none · **Re-scored:** none.
+**Experiments:**
+- Slot 1 First Flame: approved, not yet listed.
+- Slot 2 **C2**: EXPERIMENT. `FIRST_FLAME/decode_web/index.html` is built and waiting for Taylor to publish it (see its README). The 60-day clock starts at publish.
+- Slot 3 **A4**: EXPERIMENT. `A4_VAULT_TEMPLATE/SPEC.md` is written. The 60-day clock starts at launch.
+
+**Notes for Taylor:**
+1. C2 is ready to publish. Use a small separate public repo or an HF Static Space, **not** this repo. Fill in `SHOP` URLs once the Full and Deep listings exist.
+2. Tag sales so the kill metrics can be counted: add `via:decode_web` or `sku:A4` in the ledger `notes`.
+3. Still open: E2 seller of record, `TARGET_NET_MONTHLY`, `RUNWAY_MONTHS`.
+
+**NEXT FOR OPENCODE** (items 1–6 from Round 0 still stand; these are added):
+7. **A4 structure map:** write `RECURSION/local_vault_structure.md` with the live vault's folder tree (names and file counts only, no note titles in private areas). Mark each folder `structure` / `private` / `canon-locked`. This replaces Round 0 item 4b.
+8. **A4 build:** build `SovereignCreatorVault/` as a **new vault from the spec**, outside the repo, then run the spec's leak check and report the grep output. Never copy files out of the live vault.
+9. **C2 smoke test on WSL2:** open `decode_web/index.html?name=Taylor%20Oakey` in Chrome and confirm it matches `grama_decode.py "Taylor Oakey" --tier mini` (sum, tone, sigil).

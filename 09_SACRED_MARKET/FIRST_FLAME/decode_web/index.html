@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GR∆M∆ Name Decode — free Mini reading</title>
+<meta name="description" content="Decode the letters of your name: gematria pulse, soul tone archetype and a Core Identity Sigil. Free, instant, private — nothing leaves your browser.">
+<style>
+:root{--void:#060a07;--gold:#c8972a;--gold-dim:#5a3d10;--gold-pale:#e8c87a;--moss:#7aaa5a;--vine:#b86a8a;
+--text:#a8a890;--text-hi:#e0d8c0;--border:rgba(200,151,42,0.13);--border-hi:rgba(200,151,42,0.32)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--void);color:var(--text);font:16px/1.6 Georgia,"Times New Roman",serif}
+main{max-width:680px;margin:0 auto;padding:40px 16px 56px}
+h1{color:var(--gold-pale);font-weight:normal;letter-spacing:.08em;margin:0 0 4px;font-size:clamp(26px,6vw,36px)}
+.lede{margin:0 0 28px}
+form{display:flex;gap:8px;flex-wrap:wrap}
+input{flex:1 1 220px;min-width:0;background:transparent;color:var(--text-hi);border:1px solid var(--border-hi);
+border-radius:6px;padding:12px 14px;font:inherit}
+input:focus{outline:2px solid var(--gold);outline-offset:1px}
+button{background:var(--gold);color:var(--void);border:0;border-radius:6px;padding:12px 20px;font:inherit;cursor:pointer}
+button:hover{background:var(--gold-pale)}
+section{border-top:1px solid var(--border-hi);padding:18px 0}
+h2{color:var(--gold);font-size:14px;letter-spacing:.12em;text-transform:uppercase;margin:0 0 8px;font-weight:normal}
+b{color:var(--text-hi)}
+.grid{display:flex;flex-wrap:wrap;gap:4px;margin:8px 0}
+.cell{border:1px solid var(--border-hi);border-radius:4px;padding:3px 7px;text-align:center;font-size:13px;min-width:30px}
+.cell b{display:block}
+.shadow{color:var(--vine)} .sigil{font-size:clamp(28px,8vw,40px);color:var(--gold-pale);margin:4px 0;word-break:break-all}
+.cipher{color:var(--moss);letter-spacing:.2em;word-break:break-word}
+.offers{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-top:10px}
+.offer{border:1px solid var(--border-hi);border-radius:8px;padding:14px}
+.offer h3{margin:0 0 4px;color:var(--gold-pale);font-weight:normal;font-size:18px}
+.offer a{color:var(--gold-pale)}
+.soon{color:var(--text);font-style:italic}
+footer{border-top:1px solid var(--border);margin-top:28px;padding-top:12px;font-size:13px}
+[hidden]{display:none!important}
+</style>
+</head>
+<body>
+<main>
+  <h1>GR∆M∆ Name Decode</h1>
+  <p class="lede">Every name carries a pattern. Type a name to receive its free <b>Mini Decode</b>: the number map of its letters, the archetype its number carries, and its Core Identity Sigil. Nothing you type leaves this page.</p>
+
+  <form id="f" autocomplete="off">
+    <label for="name" hidden>Name to decode</label>
+    <input id="name" name="name" maxlength="80" placeholder="Full name, as you'd like it read" required>
+    <button type="submit">Decode</button>
+  </form>
+
+  <div id="out" hidden aria-live="polite">
+    <section><h2>II · Gematria Pulse</h2><div class="grid" id="grid"></div><p id="sum"></p></section>
+    <section><h2>IV · Archetypal Thread</h2><p><b id="title"></b></p><p class="shadow" id="shade"></p></section>
+    <section><h2>V · Core Identity Sigil</h2><p class="sigil" id="sigil"></p><p class="cipher" id="cipher"></p></section>
+    <section>
+      <h2>Go deeper</h2>
+      <p>The Mini reads three of the five lenses. The full decode adds your name's <b>Root Meaning</b> and its <b>Elemental Image</b>, written by hand and delivered as a keepsake PDF.</p>
+      <div class="offers">
+        <div class="offer"><h3>Full Decode · $22</h3><p>All five lenses, hand-written, as a PDF.</p><p id="full-link"></p></div>
+        <div class="offer"><h3>Deep Skry · $33</h3><p>Full Decode plus an extended personal reading.</p><p id="deep-link"></p></div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    A creative and reflective reading built from the letters of a name, offered for inspiration and self-reflection only.
+    It does not predict events or promise any outcome. English ordinal gematria (A=1 … Z=26).<br>
+    S∆CR3D.ARC∆N∆.STUDIØS · In lakesh alakin.
+  </footer>
+</main>
+
+<script>
+// ── Shop links: fill these in once the listings are live (leave "" until then) ──
+const SHOP = { full: "", deep: "" };
+
+// ENGINE-START — must stay in parity with systems/fastapi/merchant.py
+const SOUL_TONES = {
+  1:  ["The Pioneer",        "Isolation — the initiator who forgets to invite others."],
+  2:  ["The Bridge",         "Codependence — peacemaking that erases the self."],
+  3:  ["The Creator",        "Scattered expression — all spark, no vessel."],
+  4:  ["The Builder",        "Rigidity — structure that refuses to breathe."],
+  5:  ["The Explorer",       "Escapism — freedom that avoids the necessary."],
+  6:  ["The Nurturer",       "Self-neglect — tending others at cost of self."],
+  7:  ["The Seeker",         "Withdrawal — the mystic who never returns."],
+  8:  ["The Integrator",     "Control — mistaking order for wisdom."],
+  9:  ["The Cycle Elder",    "Martyrdom — wisdom weaponized as sacrifice."],
+  11: ["The Illuminator",    "Nervous imbalance — channeling without grounding."],
+  22: ["The Master Builder", "Overwhelm — vision too vast for the vessel."],
+};
+function gematria(word) {
+  const clean = word.toUpperCase().replace(/[ \-']/g, "");
+  const breakdown = [...clean].map(ch => {
+    const c = ch.charCodeAt(0);
+    return { letter: ch, value: (ch.length === 1 && c >= 65 && c <= 90) ? c - 64 : 0 };
+  });
+  const total = breakdown.reduce((s, b) => s + b.value, 0);
+  let reduced = total;
+  while (reduced > 9 && reduced !== 11 && reduced !== 22) {
+    reduced = [...String(reduced)].reduce((s, d) => s + Number(d), 0);
+  }
+  const [title, shadow] = SOUL_TONES[reduced] || SOUL_TONES[9];
+  return { breakdown, total, soul_tone: reduced, title, shadow };
+}
+function sigil(name, soulTone) {  // AETHER glyph for the free Mini tier
+  return "✦" + name.toUpperCase().replace(/ /g, "").slice(0, 4) + soulTone + "∆";
+}
+function sigilify(text) {
+  const map = { A: "∆", E: "3", I: "!", O: "0", S: "$", T: "7" };
+  return [...text.toUpperCase()].map(ch => map[ch] || ch).join("");
+}
+// ENGINE-END
+
+const $ = id => document.getElementById(id);
+function render(name) {
+  const g = gematria(name);
+  if (g.total === 0) { $("out").hidden = true; return; }
+  $("grid").replaceChildren(...g.breakdown.map(b => {
+    const d = document.createElement("div"); d.className = "cell";
+    const l = document.createElement("b"); l.textContent = b.letter;
+    d.append(l, String(b.value)); return d;
+  }));
+  $("sum").textContent = `Sum ${g.total} → Soul Tone ${g.soul_tone}`;
+  $("title").textContent = g.title;
+  $("shade").textContent = "Shadow to watch: " + g.shadow;
+  $("sigil").textContent = sigil(name, g.soul_tone);
+  $("cipher").textContent = sigilify(name);
+  for (const k of ["full", "deep"]) {
+    const slot = $(k + "-link"); slot.replaceChildren();
+    if (SHOP[k]) {
+      const a = document.createElement("a"); a.href = SHOP[k]; a.rel = "noopener";
+      a.textContent = "Order →"; slot.append(a);
+    } else {
+      const s = document.createElement("span"); s.className = "soon";
+      s.textContent = "Opening soon."; slot.append(s);
+    }
+  }
+  $("out").hidden = false;
+}
+$("f").addEventListener("submit", e => { e.preventDefault(); render($("name").value.trim()); });
+const pre = new URLSearchParams(location.search).get("name");
+if (pre) { $("name").value = pre.slice(0, 80); render(pre.slice(0, 80)); }
+</script>
+</body>
+</html>

@@ -744,6 +744,8 @@ P1  First Flame launch — clean slate, sole prop, ~3–4 hrs/week
     Fulfil:   python3 09_SACRED_MARKET/FIRST_FLAME/grama_decode.py "<Name>" --tier mini
     Ledger:   POST /merchant/ledger · POST /merchant/expenses (entity SOLE_PROP)
     Loop:     09_SACRED_MARKET/RECURSION/ — paste PROMPT_CLAUDE.md (cloud) / PROMPT_OPENCODE.md (local)
+    C2:       09_SACRED_MARKET/FIRST_FLAME/decode_web/ — free Mini page, Taylor publishes (README)
+    A4:       09_SACRED_MARKET/A4_VAULT_TEMPLATE/SPEC.md — vault template, built fresh, never copied
 
 P1  NotebookLM — 5 notebooks unpopulated
     LORE.VAULT / GAME.SYSTEMS / KNOWLEDGE.VAULT / FAMILY.LEGACY / CREATION.LAB
