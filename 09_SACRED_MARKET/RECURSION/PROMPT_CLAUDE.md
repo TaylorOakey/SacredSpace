@@ -8,7 +8,7 @@ You are running **one round of the Livelihood Loop** for SacredSpace OS. The goa
 
 **Before anything else:**
 1. `git fetch origin && git checkout claude/sacred-marketplace-income-67t27a && git pull` (or `main`, if the loop has been merged).
-2. Read, in order: `09_SACRED_MARKET/RECURSION/LOOP.md` (protocol, scoring, guardrails: follow it exactly), then the **last entry** of `09_SACRED_MARKET/RECURSION/ROUND_LOG.md`, then `09_SACRED_MARKET/RECURSION/IDEA_BANK.md`, then `09_SACRED_MARKET/SACRED_MARKET_INCOME_SYNTHESIS.md` §1, §4 and §7.
+2. Read, in order: `09_SACRED_MARKET/RECURSION/LOOP.md` (protocol, scoring, guardrails: follow it exactly), then the **last entry** of `09_SACRED_MARKET/RECURSION/ROUND_LOG.md`, then `09_SACRED_MARKET/RECURSION/IDEA_BANK.md`, then `09_SACRED_MARKET/SACRED_MARKET_INCOME_SYNTHESIS.md` §1, §4 and §7. Then build the Business Hub for this repo (`python3 09_SACRED_MARKET/tools/hub_build.py --roots .`), skim `09_SACRED_MARKET/HUB/INDEX.md`, and pick this round's search terms from `09_SACRED_MARKET/HUB/RESEARCH_LEXICON.md`.
 3. If the last line of ROUND_LOG is `LOOP: PAUSED`, stop and say so.
 
 **Your lane is the outside world.** OpenCode owns everything on Taylor's machine. You own:

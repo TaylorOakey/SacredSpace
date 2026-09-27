@@ -92,3 +92,18 @@ Tested on trap files and on this repo's 09 pillar: 127 scanned → 75 unique fin
 7. **A4 structure map:** write `RECURSION/local_vault_structure.md` with the live vault's folder tree (names and file counts only, no note titles in private areas). Mark each folder `structure` / `private` / `canon-locked`. This replaces Round 0 item 4b.
 8. **A4 build:** build `SovereignCreatorVault/` as a **new vault from the spec**, outside the repo, then run the spec's leak check and report the grep output. Never copy files out of the live vault.
 9. **C2 smoke test on WSL2:** open `decode_web/index.html?name=Taylor%20Oakey` in Chrome and confirm it matches `grama_decode.py "Taylor Oakey" --tier mini` (sum, tone, sigil).
+
+## Round 1 addendum · Claude Code · 2026-09-27: Business Hub + Research Lexicon (asked for by Taylor)
+**Built:**
+- `tools/hub_build.py` builds one auto-updated index (`HUB/INDEX.md` + `index.json`) of every cash-flow, business, nonprofit/grant, marketing, brand and culture document across the repo, D: and the vault. It reads everything, copies nothing, and adds a live read-only ledger snapshot.
+- `tools/install_hub_cron.sh` schedules the rebuild.
+- `HUB/RESEARCH_LEXICON.md` is the research word list.
+
+**Tested:**
+- Repo run: 221 scanned, 81 indexed, 28 duplicates folded, in under 2 s.
+- Test ledger: First Flame, net, expenses, cash position and due grants all match hand math.
+- Private folders skipped; vault output refused without `--allow-vault`.
+- Cron install is idempotent and `--remove` works.
+
+**NEXT FOR OPENCODE (added):**
+10. On the Legion, run `bash 09_SACRED_MARKET/tools/install_hub_cron.sh`. Report the per-topic document counts and the scan time (numbers only, no titles). List any document that landed in the wrong topic, so the keywords in `hub_config.json` can be tuned.

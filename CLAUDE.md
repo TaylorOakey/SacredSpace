@@ -185,6 +185,7 @@ When the user says something natural, map it to a task label and run it.
 | "switching to gemini" / "handoff to gpt"          | `generate-handoff-capsule`  |
 | "context limit" / "generate handoff"              | `generate-handoff-capsule`  |
 | "passing to ollama" / "hand this to claude"       | `generate-handoff-capsule`  |
+| "update the hub" / "where's the business stuff"   | `build-business-hub`        |
 
 ---
 
@@ -634,6 +635,20 @@ echo "  Format: PDF, DOCX, TXT, or Google Doc link"
 
 ---
 
+### `TASK: build-business-hub`
+**Intent:** Rebuild the one-place index of every cash-flow, business, nonprofit/grant, marketing, brand and culture document, plus a live ledger snapshot.
+**Read:** `09_SACRED_MARKET/HUB/README.md`. Config: `09_SACRED_MARKET/HUB/hub_config.json`.
+
+```bash
+cd /mnt/d/SacredSpace_OS && python3 09_SACRED_MARKET/tools/hub_build.py
+# first time only — schedule it (every 3 h + at WSL start):
+bash 09_SACRED_MARKET/tools/install_hub_cron.sh
+```
+
+**Success:** `09_SACRED_MARKET/HUB/INDEX.md` rewritten (gitignored; it contains vault titles, so it stays local).
+
+---
+
 ### `TASK: generate-handoff-capsule`
 **Intent:** Generate a context capsule so any agent can resume this session seamlessly.
 **Trigger:** "switching to gemini/gpt/ollama" / "context limit" / "handoff" / before session end
@@ -746,6 +761,8 @@ P1  First Flame launch — clean slate, sole prop, ~3–4 hrs/week
     Loop:     09_SACRED_MARKET/RECURSION/ — paste PROMPT_CLAUDE.md (cloud) / PROMPT_OPENCODE.md (local)
     C2:       09_SACRED_MARKET/FIRST_FLAME/decode_web/ — free Mini page, Taylor publishes (README)
     A4:       09_SACRED_MARKET/A4_VAULT_TEMPLATE/SPEC.md — vault template, built fresh, never copied
+    Hub:      09_SACRED_MARKET/HUB/INDEX.md — all business docs in one index (TASK: build-business-hub)
+    Research: 09_SACRED_MARKET/HUB/RESEARCH_LEXICON.md — keywords, terms, tools, funders, search strings
 
 P1  NotebookLM — 5 notebooks unpopulated
     LORE.VAULT / GAME.SYSTEMS / KNOWLEDGE.VAULT / FAMILY.LEGACY / CREATION.LAB
