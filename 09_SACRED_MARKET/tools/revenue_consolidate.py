@@ -22,6 +22,7 @@ Usage (on the Legion, WSL2):
 """
 
 import argparse
+import sys
 import hashlib
 import json
 import os
@@ -89,6 +90,8 @@ def main():
     ap.add_argument("--allow-vault", action="store_true",
                     help="Permit --out inside the Obsidian vault (source of record)")
     a = ap.parse_args()
+    if hasattr(sys.stdout, "reconfigure"):  # Windows consoles default to cp1252 and choke on ∆
+        sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
     if any(m in str(a.out) for m in VAULT_MARKERS) and not a.allow_vault:
         ap.error(f"--out {a.out} is inside the Obsidian vault; pass --allow-vault to confirm")

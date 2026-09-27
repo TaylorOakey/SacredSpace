@@ -123,3 +123,57 @@ Tested on trap files and on this repo's 09 pillar: 127 scanned → 75 unique fin
    - Find the source for NC sales tax on digital downloads sold outside Etsy (Ko-fi, Gumroad) (Lexicon Q5). Mark it "verify with an advisor".
    - In `HUB/RESEARCH_LEXICON.md`, resolve every *(verify)* item you checked, citing the date and URL. Add any new search terms that worked.
 - **Deferred, conditional:** build `REVENUE_OPERATIONS_MASTER.md`, but **only if** OpenCode has committed `RECURSION/local_revenue_manifest.md` (Round 0 item 6). Otherwise mark it ↪.
+
+## Round 1 · OpenCode · 2026-09-27 (relayed by Taylor; landed by Claude Code because OpenCode's tree was dirty)
+**Ladder rung:** no sales yet ($0). No `merchant.db` exists yet (plan I-5 still open).
+**Done from last NEXT list:**
+- Item 10 (hub install) ✅ as a one-time scan; scheduling ⚠ is waiting on Taylor.
+- Items 1–9 ↪ not reached this round.
+
+**Hub results (numbers only):**
+- Repo `D:\SacredSpace_OS`; all 4 roots (the D: repo, the C: market folder, both vaults, read-only).
+- 22,465 files scanned → 1,901 indexed, 2,422 duplicates folded, in 357 s.
+- Per topic: cash flow 178 · business 495 · nonprofit 129 · marketing 691 · branding 347 · culture 61.
+
+**Findings:**
+- WSL can't see D: and OpenCode can't start the cron daemon, so the hub runs under Windows Python.
+- Two crashes under Windows: a cross-drive `relpath` error, and the cp1252 console failing on `∆`.
+- Topic mistakes: culture was polluted by tool docs (`_ARCHIVE_MCP_DOCS`, keyword "discord"); `BUSINESS_PLAN.md` landed in marketing ("launch"/"analytics"); marketing was inflated by mirror copies (`_ABSORBED`, `_INCOMING`, `pillars_backup`).
+- Privacy: proposed that two private folders be skipped (names withheld here).
+
+## Round 1 fixes · Claude Code · 2026-09-27
+**Verified / fixed** (each reproduced first, then shown passing):
+- **cp1252 crash:** reproduced with `PYTHONIOENCODING=cp1252` (`UnicodeEncodeError` on `∆`). Fixed in `hub_build.py`, `revenue_consolidate.py`, `grama_decode.py` and `decode_parity_check.py`; all four now run under cp1252.
+- **Cross-drive links:** a document on C: linked from a hub on D: now becomes a `file:///C:/…` link instead of raising `ValueError`.
+- **One config for both Pythons:** roots and `ledger_db` accept `/mnt/d/…` or `D:/…`, translated for whichever Python runs. The ledger opens through a portable read-only SQLite URI.
+- **`hub_config.local.json`** (gitignored): private skip_dirs and machine-only roots live there and never enter git. Its lists extend the shared config; its single values override it. Tested: a private folder was skipped and an extra root added.
+- **Topic tuning (shared config):**
+  - Filename keywords now count 6 (`filename_weight`), up from 3.
+  - Removed the loose keywords "discord", "launch" and "analytics"; added "product launch", "launch plan" and "audience growth".
+  - Added `_ARCHIVE_MCP_DOCS`, `pillars_backup` and `_ABSORBED` to `skip_dirs`.
+  - `_INCOMING` stays scanned on purpose: it's where new material arrives. Tell Claude if it's only a mirror.
+- **README:** the Windows scheduled task (`pythonw`, every 3 h) is now the recommended scheduler; WSL cron is the alternative.
+
+**NEXT FOR OPENCODE (round 2):** work from a clean checkout. Items 1–9 from earlier rounds stay open; do the ones below first.
+1. **Clean worktree, no data loss:** don't stash, reset or commit Taylor's uncommitted changes in `D:\SacredSpace_OS`. Create a separate worktree for loop work: `git worktree add ../SacredSpace_loop claude/sacred-marketplace-income-67t27a` (or `main` if PR #10 merged). Run every step below from there.
+2. **Hub re-run with the fixes:**
+   - Put the two private folder names (plus `_RAW` if it's private) into `09_SACRED_MARKET/HUB/hub_config.local.json`. Local only; needs no approval, because skipping more is always safe.
+   - Re-run `hub_build.py` under Windows Python.
+   - Report the new per-topic counts and run time, and confirm there's no crash and that the C: vault links open.
+   - Spot-check culture, marketing and business again (folder and topic only).
+3. **Schedule it (only if Taylor wrote "Windows task yes" in this session):**
+   - Create the task from `HUB/README.md`, pointing at the worktree path.
+   - Check that `pythonw` resolves: use its full path or `pyw` if it doesn't.
+   - `schtasks /run` it once and confirm `INDEX.md` updated.
+   - Without a yes, skip this and say it's still waiting.
+4. **Quick smoke tests (items 5 and 9):**
+   - `grama_decode.py "Taylor Oakey" --tier mini` under Windows Python.
+   - Open `decode_web/index.html?name=Taylor%20Oakey` in Chrome and confirm the sum, tone and sigil match the Python output. Save the render locally only.
+5. **Revenue manifest (replaces item 6):** use the hub's `index.json` instead of the old scan. Write `09_SACRED_MARKET/RECURSION/local_revenue_manifest.md` for the cash-flow, business and nonprofit topics only:
+   - repo and D: paths with topic and score
+   - vault entries as counts only
+   - no titles or summaries from the vault
+
+   This unblocks Claude's `REVENUE_OPERATIONS_MASTER` build.
+
+After these, continue with open item 7 (A4 vault structure map), then 1 (spine check), 2 (asset inventory) and 3 (archive mining). End the round with a NEXT FOR CLAUDE list.

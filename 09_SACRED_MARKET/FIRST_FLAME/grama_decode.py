@@ -113,6 +113,8 @@ def main():
     ap.add_argument("--narrative-file", type=Path, help="Deep Skry extended reading (blank line = new paragraph)")
     ap.add_argument("--out", type=Path)
     a = ap.parse_args()
+    if hasattr(sys.stdout, "reconfigure"):  # Windows consoles default to cp1252 and choke on ∆
+        sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
     if a.tier != "mini" and not (a.meaning and a.image):
         ap.error("--meaning and --image are required for full and deep tiers")

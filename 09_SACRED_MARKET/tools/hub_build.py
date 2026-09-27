@@ -24,6 +24,7 @@ import json
 import os
 import re
 import sqlite3
+import sys
 from datetime import date, datetime, timedelta
 from pathlib import Path
 
@@ -41,10 +42,39 @@ def compile_domains(domains: dict) -> dict:
     }
 
 
+def native_path(r: str) -> Path:
+    """Accept both spellings in the config: /mnt/d/x on WSL and D:/x (or D:\\x) on Windows."""
+    r = os.path.expanduser(r)
+    win = re.match(r"^([A-Za-z]):[\\/](.*)", r)
+    wsl = re.match(r"^/mnt/([a-z])(?:/(.*))?$", r)
+    if os.name != "nt" and win:
+        return Path(f"/mnt/{win.group(1).lower()}", win.group(2).replace("\\", "/"))
+    if os.name == "nt" and wsl:
+        return Path(f"{wsl.group(1).upper()}:/", wsl.group(2) or "")
+    return Path(r)
+
+
+def load_config(path: Path) -> dict:
+    """hub_config.json, plus an optional gitignored hub_config.local.json beside it.
+    Local lists (roots, skip_dirs, extensions) extend the shared ones; local scalars override."""
+    cfg = json.loads(path.read_text(encoding="utf-8"))
+    local = path.with_name(path.stem + ".local.json")
+    if local.exists():
+        for k, v in json.loads(local.read_text(encoding="utf-8")).items():
+            if k.startswith("_"):
+                continue
+            if isinstance(v, list) and isinstance(cfg.get(k), list):
+                cfg[k] = cfg[k] + [x for x in v if x not in cfg[k]]
+            else:
+                cfg[k] = v
+        print(f"local overrides: {local}")
+    return cfg
+
+
 def resolve_roots(raw: list) -> list:
     roots, seen = [], set()
     for r in raw:
-        p = Path(os.path.expanduser(r))
+        p = native_path(r)
         p = (REPO / p) if not p.is_absolute() else p
         if not p.exists():
             print(f"skip (not found): {p}")
@@ -104,14 +134,15 @@ def summarize(text: str) -> tuple[str, str]:
     return title[:100], blurb
 
 
-def score(name: str, text: str, patterns: dict) -> dict:
-    """Per domain: 3 per keyword in the filename + 1 per distinct keyword in the content."""
+def score(name: str, text: str, patterns: dict, name_weight: int = 6) -> dict:
+    """Per domain: name_weight per keyword in the filename + 1 per distinct keyword in the content.
+    The filename is the author's own label, so it outweighs incidental words in the body."""
     out = {}
     name = name.replace("_", " ").replace("-", " ")
     for dom, pat in patterns.items():
         body = {m.group(1).lower() for m in pat.finditer(text)}
         title = {m.group(1).lower() for m in pat.finditer(name)}
-        s = 3 * len(title) + len(body)
+        s = name_weight * len(title) + len(body)
         if s:
             out[dom] = {"score": s, "keywords": sorted(title | body)[:6]}
     return out
@@ -121,7 +152,7 @@ def ledger_snapshot(db: Path) -> dict | None:
     if not db.exists():
         return None
     try:
-        conn = sqlite3.connect(f"file:{db}?mode=ro", uri=True)
+        conn = sqlite3.connect(db.resolve().as_uri() + "?mode=ro", uri=True)
         q = lambda sql, *a: conn.execute(sql, a).fetchall()
         product_net = q("SELECT COALESCE(SUM(net_usd),0) FROM sales WHERE kind IN ('PRODUCT','REFUND')")[0][0]
         net_all = q("SELECT COALESCE(SUM(net_usd),0) FROM sales")[0][0]
@@ -158,7 +189,9 @@ def main():
                     help="permit --out inside the Obsidian vault (source of record)")
     a = ap.parse_args()
 
-    cfg = json.loads(a.config.read_text(encoding="utf-8"))
+    if hasattr(sys.stdout, "reconfigure"):  # Windows consoles default to cp1252 and choke on ∆
+        sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    cfg = load_config(a.config)
     if any(m in str(a.out) for m in VAULT_MARKERS) and not a.allow_vault:
         ap.error(f"--out {a.out} is inside the Obsidian vault; pass --allow-vault to confirm")
     patterns = compile_domains(cfg["domains"])
@@ -182,7 +215,7 @@ def main():
                 continue
             name_only = rp.suffix.lower() in cfg["name_only_ext"]
             text = "" if name_only else read_text(rp, raw)
-            doms = score(rp.stem, text, patterns)
+            doms = score(rp.stem, text, patterns, cfg.get("filename_weight", 6))
             doms = {d: v for d, v in doms.items() if v["score"] >= cfg["min_score"]}
             if not doms:
                 continue
@@ -201,7 +234,7 @@ def main():
             seen_hash[digest] = doc
             docs.append(doc)
 
-    ledger = ledger_snapshot(Path(os.path.expanduser(cfg["ledger_db"])))
+    ledger = ledger_snapshot(native_path(cfg["ledger_db"]))
     stamp = datetime.now().strftime("%Y-%m-%d %H:%M")
     out.mkdir(parents=True, exist_ok=True)
     (out / "index.json").write_text(json.dumps(
@@ -210,7 +243,11 @@ def main():
 
     def link(d):
         label = ("REPO/" if Path(d["root"]) == REPO else Path(d["root"]).name + "/") + d["rel"]
-        return f"[{md_cell(label)}](<{os.path.relpath(d['path'], out)}>)"
+        try:
+            target = os.path.relpath(d["path"], out)
+        except ValueError:  # Windows: file on another drive (C: vault vs D: hub) has no relative path
+            target = Path(d["path"]).as_uri()
+        return f"[{md_cell(label)}](<{target}>)"
 
     L = [f"# ∆ SacredSpace Business Hub", "",
          f"*Auto-generated {stamp} by `09_SACRED_MARKET/tools/hub_build.py`. Don't edit this file: "

@@ -10,6 +10,8 @@ import json, os, re, subprocess, sys
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[2]
+if hasattr(sys.stdout, "reconfigure"):  # Windows consoles default to cp1252 and choke on ∆
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 sys.path[:0] = [str(REPO / "systems/fastapi"), str(REPO / "09_SACRED_MARKET/FIRST_FLAME")]
 from merchant import calculate_gematria, generate_sigil  # noqa: E402
 from grama_decode import sigilify  # noqa: E402
