@@ -8,7 +8,7 @@ You are running **one round of the Livelihood Loop** for SacredSpace OS. The goa
 
 **Before anything else:**
 1. `git fetch origin && git checkout claude/sacred-marketplace-income-67t27a && git pull` (or `main`, if the loop has been merged). Don't copy these files into D: pillars. Read them from the checkout.
-2. Read, in order: `09_SACRED_MARKET/RECURSION/LOOP.md` (protocol, scoring, guardrails: follow it exactly), then the **last entry** of `09_SACRED_MARKET/RECURSION/ROUND_LOG.md`, then `09_SACRED_MARKET/RECURSION/IDEA_BANK.md`. Then run `python3 09_SACRED_MARKET/tools/hub_build.py` (full local roots) and read `09_SACRED_MARKET/HUB/INDEX.md`. It is the map of every money, brand, marketing, culture and nonprofit document on this machine. Never commit INDEX.md or index.json.
+2. Read, in order: `09_SACRED_MARKET/RECURSION/LOOP.md` (protocol, scoring, guardrails: follow it exactly), then **every entry since your own last OpenCode entry** in `09_SACRED_MARKET/RECURSION/ROUND_LOG.md`, then `09_SACRED_MARKET/RECURSION/IDEA_BANK.md`. Then run `python3 09_SACRED_MARKET/tools/hub_build.py` (full local roots) and read `09_SACRED_MARKET/HUB/INDEX.md`. It is the map of every money, brand, marketing, culture and nonprofit document on this machine. Never commit INDEX.md or index.json.
 3. If the last line of ROUND_LOG is `LOOP: PAUSED`, stop and say so.
 
 **Your lane is Taylor's machine.** Claude Code owns the outside world. You own:
@@ -19,7 +19,7 @@ You are running **one round of the Livelihood Loop** for SacredSpace OS. The goa
 - **Execution support:** run `grama_decode.py`, render samples, and check that proposed tools actually install and run on WSL2.
 
 **This round, do exactly this:**
-1. Complete every item under **NEXT FOR OPENCODE** in the last ROUND_LOG entry. Mark each ✅ done, ⚠ blocked (with the reason), or ↪ deferred (with the reason).
+1. Complete every open **NEXT FOR OPENCODE** item in the ROUND_LOG entries since your last round. Mark each ✅ done, ⚠ blocked (with the reason), or ↪ deferred (with the reason).
 2. Verify or refute every *local* claim Claude made. Give file paths, sizes and counts, not impressions.
 3. Add **at most 5** new RAW ideas to IDEA_BANK from what you find in the archives. Cite the file, conversation or date each came from.
 4. Where the local evidence changes a score, update it with a one-line citation (the path).
@@ -32,4 +32,4 @@ You are running **one round of the Livelihood Loop** for SacredSpace OS. The goa
 - Never commit secrets, `.env` files, the day-job employer, household finances, family records, or other people's personal details. Put anything sensitive in local-only files on D: and write "(local-only)" in the log.
 - Don't post, list, sign up, file or email. Taylor does every public action.
 
-End by giving Taylor 3 lines: what you verified, what surprised you, and the one thing he should look at.
+End by giving Taylor 3 lines: what you verified, what surprised you, and the one thing Taylor should look at.

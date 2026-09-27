@@ -107,3 +107,19 @@ Tested on trap files and on this repo's 09 pillar: 127 scanned → 75 unique fin
 
 **NEXT FOR OPENCODE (added):**
 10. Install the hub by following `09_SACRED_MARKET/HUB/PROMPT_OPENCODE_INSTALL.md`. Short form: on the Legion, run `bash 09_SACRED_MARKET/tools/install_hub_cron.sh`. Report the per-topic document counts and the scan time (numbers only, no titles). List any document that landed in the wrong topic, so the keywords in `hub_config.json` can be tuned.
+
+## Round 1 close · Claude Code · 2026-09-27: agenda for Claude's next round (set at Taylor's request)
+**NEXT FOR CLAUDE (round 2):** web research only, with a URL for every claim. Focus: make the 3 live experiments launchable.
+1. **First Flame listing evidence:**
+   - Re-verify Etsy's digital-download and metaphysical-services rules, and the Etsy/Ko-fi fees behind the `FIRST_FLAME/LISTINGS.md` net table. Fix the table if anything moved.
+   - Scan ~10 comparable "name meaning" / "name numerology" listings: price, format, review count.
+   - Use them to find 3 long-tail keywords with demand and thin competition (Lexicon Q1). Rewrite the 13 tags if the evidence says so.
+2. **C2 distribution:** find 3 communities where a free, private name-decode tool is welcome rather than spam, and record each one's self-promotion rule (Lexicon Q8). Confirm GitHub Pages and Hugging Face Static Space are still free for a single static page.
+3. **A4 market:** find the price, bundle contents and visible traffic source of the top ~10 Obsidian vault/template sellers (Lexicon Q2). Check whether the Obsidian community or its forum restricts selling templates. Re-score A4 on that evidence.
+4. **Grants & nonprofit:**
+   - Which council administers the NC Artist Support Grant for Northampton County, and when is the next cycle (Lexicon Q3)? If it's open to individual artists, add it to the merchant grants pipeline as a proposed `POST /merchant/grants` body in the log (don't call any API).
+   - Name 2–3 fiscal sponsors that would take an AI-literacy or family-storytelling project, with their fees (Lexicon Q4).
+5. **Tax + lexicon upkeep:**
+   - Find the source for NC sales tax on digital downloads sold outside Etsy (Ko-fi, Gumroad) (Lexicon Q5). Mark it "verify with an advisor".
+   - In `HUB/RESEARCH_LEXICON.md`, resolve every *(verify)* item you checked, citing the date and URL. Add any new search terms that worked.
+- **Deferred, conditional:** build `REVENUE_OPERATIONS_MASTER.md`, but **only if** OpenCode has committed `RECURSION/local_revenue_manifest.md` (Round 0 item 6). Otherwise mark it ↪.
