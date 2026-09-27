@@ -274,3 +274,28 @@ After these, continue with open item 7 (A4 vault structure map), then 1 (spine c
 - **Rejected:** its detection-evasion tactics (anti-detect browsers, AI-altered duplicate photos, bots disguised as humans, undisclosed negotiation bots). They breach platform rules and the plan's honesty guardrails.
 - **New fact:** Meta commerce policy bars digital goods, so decodes and downloads stay off Facebook Marketplace.
 - **Guardrail for both agents:** don't re-propose generic dropshipping without new evidence and Taylor's ask.
+
+## Round 2 agenda, consolidated · Claude Code · 2026-09-27 (set at Taylor's request)
+Three NEXT FOR CLAUDE lists are open (Round 1 close, OpenCode Round 2, OpenCode Round 2 addendum), about 14 items with duplicates. **This list supersedes all three for Claude's round 2.** Mark the older items "→ consolidated" and don't redo them separately.
+
+**NEXT FOR CLAUDE (round 2, consolidated):** web research with a URL for every claim, except item 1.
+1. **Build `09_SACRED_MARKET/REVENUE_OPERATIONS_MASTER.md` (now unblocked):**
+   - Sources: `RECURSION/local_revenue_manifest.md` + `local_vault_structure.md` (paths and counts only), the plan, IDEA_BANK (including G1) and `LISTINGS.md`.
+   - Use the section template from Taylor's REVENUE_CONSOLIDATE (streams, POD, grants, crowdfunding, digital products, costs, timeline, merchant directives, open items). Label it DISTILLED, pending the Canon Gate.
+   - Repo only, never the vault. No private names or paths.
+2. **First Flame listings — evidence + pricing:**
+   - Re-verify Etsy's digital-download and metaphysical rules and its fees, then fix `LISTINGS.md` if anything moved.
+   - Comp ~10 name-meaning / numerology listings: price, format, reviews.
+   - Find 3 long-tail keywords, and rewrite the 13 tags if the evidence says so.
+   - Fold in the 05-26 price points ($9–15 map, $15–25 custom decode, $7–12 rulebook).
+   - Add fee math for the sub-$10 tier (A2 $7, A9 $5–9) on Etsy vs Ko-fi vs Gumroad.
+3. **Distribution & comps for the other products:**
+   - C2: 3 communities where a free, private decode tool is welcome, each with its self-promotion rule. Confirm GitHub Pages and Hugging Face Static Spaces are still free.
+   - A4: price, bundle and traffic source of the top ~10 Obsidian template sellers; forum or marketplace selling restrictions; common template licence and refund terms for the SPEC. Re-score A4.
+   - A9: comp 5–10 printable puzzle packs (price, pages, sales signals). Score A9.
+4. **Grants & nonprofit:**
+   - Which council administers the NC Artist Support Grant for Northampton County, and when is the next cycle? If it's open to individual artists, put a proposed `POST /merchant/grants` body in the log (no API calls).
+   - 2–3 fiscal sponsors that would take an AI-literacy or family-storytelling project, with their fees.
+5. **Tax + lexicon upkeep:**
+   - Find the source for NC sales tax on digital downloads sold outside Etsy (Ko-fi, Gumroad), marked "verify with an advisor".
+   - Resolve every *(verify)* item you check in `HUB/RESEARCH_LEXICON.md` with a date and URL, and add the search terms that worked.
