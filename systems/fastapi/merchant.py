@@ -18,6 +18,7 @@ Platform targets: Etsy · Printify · Gelato · Sacred Space Market
 import sqlite3
 import json
 from datetime import date, datetime, timedelta, timezone
+import os
 from pathlib import Path
 from typing import Optional, List
 
@@ -26,7 +27,9 @@ from pydantic import BaseModel
 
 # ─── CONFIG ────────────────────────────────────────────────────────────────────
 
-DB_PATH = Path("/mnt/d/SacredSpace_OS/05_MEMORY_ENGINE/merchant.db")
+# Same file under WSL (/mnt/d/...) and Windows Python (D:/...). MERCHANT_DB overrides both.
+_DEFAULT_DB = ("D:/SacredSpace_OS" if os.name == "nt" else "/mnt/d/SacredSpace_OS") + "/05_MEMORY_ENGINE/merchant.db"
+DB_PATH = Path(os.environ.get("MERCHANT_DB", _DEFAULT_DB))
 DB_PATH.parent.mkdir(parents=True, exist_ok=True)
 
 PLATFORMS = ["ETSY", "PRINTIFY", "GELATO", "SACRED_MARKET", "INTERNAL"]

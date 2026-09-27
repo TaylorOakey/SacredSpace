@@ -237,3 +237,30 @@ After these, continue with open item 7 (A4 vault structure map), then 1 (spine c
 3. C2 distribution: 3 welcoming communities + self-promo rules; confirm GitHub Pages + HF Static still free for one static page.
 4. A4 market: price/bundle/traffic of top ~10 Obsidian template sellers; forum selling restrictions; re-score A4.
 5. Grants: NC Artist Support Grant council for Northampton County + next cycle (proposed `POST /merchant/grants` body in log, no API calls); 2–3 fiscal sponsors + fees.
+
+## Round 2 close · Claude Code · 2026-09-27: agenda for OpenCode's round 3 (set at Taylor's request)
+**Audit of `4e0651a`:** clean. Three files staged by name, no deletions, no new personal details. The parity-harness UTF-8 fix is correct and re-verified here: 310 names, 0 mismatches.
+**Fixed:** `merchant.py` hardcoded `DB_PATH = /mnt/d/...`. Under Windows Python that creates a stray `D:\mnt\d\...` folder and a database the hub never reads. It now defaults to `D:/SacredSpace_OS/...` on Windows and `/mnt/d/...` on WSL, and `MERCHANT_DB` overrides both.
+
+**NEXT FOR OPENCODE (round 3):** do item 1 first, and commit by explicit path only (see the guardrail in PROMPT_OPENCODE).
+1. **Worktree repair:**
+   - In `D:\SacredSpace_loop`: `git sparse-checkout disable` (if sparse), then `git pull`.
+   - Confirm `git ls-files | wc -l` equals `git ls-tree -r HEAD --name-only | wc -l` (≈323) and that `git status` is clean.
+   - Repoint the "SacredSpace Hub" task if its path changed, then `schtasks /run` it once.
+2. **Ledger bootstrap + spine patch (plan I-5):**
+   - Under Windows Python, run `python -c "import sys; sys.path.insert(0,'systems/fastapi'); import merchant; merchant.init_merchant_db()"` from the worktree. This creates an empty `D:\SacredSpace_OS\05_MEMORY_ENGINE\merchant.db`.
+   - Confirm the hub's Ledger snapshot now shows First Flame $0.00 of $1,111.
+   - Write (don't apply) the two-line mount for `systems/fastapi/app/main.py` as `RECURSION/proposed_spine_patch.diff`.
+   - Prove it with FastAPI `TestClient` against a temp DB (`MERCHANT_DB=<temp>`): `GET /merchant/ledger` returns 200 and a sale POST round-trips. Taylor applies it to the live spine.
+3. **A4 build (item 8):**
+   - Build `SovereignCreatorVault/` fresh from `A4_VAULT_TEMPLATE/SPEC.md`, using `local_vault_structure.md` as the folder guide. Build it outside the repo, and copy no file from the live vault.
+   - Run the spec's leak check and report the grep output (it should be empty) plus folder and file counts.
+   - Zip it locally. Taylor opens and reads it before anything else happens.
+4. **Find the art (unblocks asset inventory, item 2):**
+   - Search beyond D: for image folders (`.png/.jpg/.webp/.psd/.kra/.tif`): `C:\Users\*\Pictures`, `Downloads`, `OneDrive`, `Desktop`, any Google Drive for desktop letter, and external drives.
+   - Report **folder paths + image counts + largest pixel size only**; no filenames that could be personal.
+   - If the 8 design families, the 2018–22 paintings or the 68 Gemini images still aren't found, ask Taylor one question: where do they live?
+5. **Find the ChatGPT export (unblocks archive mining, item 3):**
+   - Search every drive for `chat.html`, `conversations.json`, `*chatgpt*export*.zip` and `takeout-*.zip`.
+   - If found, run `chatgpt_export_parser.py` and list the 10 conversations with the most finished, sellable drafts (date + title only).
+   - If not found, write one line for Taylor: "Request a fresh export: ChatGPT → Settings → Data controls → Export data" (Taylor's action).
