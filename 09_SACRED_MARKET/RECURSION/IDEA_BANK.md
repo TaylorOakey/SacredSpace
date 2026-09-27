@@ -61,3 +61,10 @@ Round 0 was seeded by Claude Code on 2026-09-26 from the repo, Drive (read-only)
 |---|---|---|---|---|---|---|---|---|---|---|
 | E1 | NC Arts Council Artist Support Grant (individual artist, usually $500–2,000) | 1 | 3 | 3 | 5 | 2 | 5 | **23** | RAW | Regional deadlines ([NC Arts](https://www.ncarts.org/grants-resources/grants/grants-artists/artist-support-grants)). Funds the gear/art for A1–A5 |
 | E2 | Seller-of-record decision: Taylor as sole seller vs. a Taylor + Jeanie two-member LLC | — | — | — | — | — | — | — | **DECISION** | Plan §4. Round 2: Taylor's Step-0 intent = Jeanie co-founder in BOTH entities; LLC not yet formed — record sales as SOLE_PROP until formation |
+
+## F · Archive finds (OpenCode Round 2 addendum, 2026-09-27)
+
+| ID | Idea | R | S | H | C | A | V | Total | Status | Evidence / notes |
+|---|---|---|---|---|---|---|---|---|---|---|
+| F1 | Mine `C:\09_SACRED_MARKET\claude-project-import` (13 docs: revenue-ideas threads, financial-dashboard prompts, revenue-generation plan) for listing copy + comp research | 2 | 4 | 4 | 5 | 2 | 4 | **27** | RAW | Local-only dir, hub-indexed (business/cashflow). Feeds A1/A2/A4 copy without touching the vault |
+| F2 | Execute the two on-disk First Flame canvas-print plans (`C:\09_SACRED_MARKET\revenue\first_flame_canvas_prints.md` + `market-engine/first_flame_canvas_prints.md`, 2026-07-14) as the A3 POD pilot | 2 | 3 | 4 | 5 | 2 | 4 | **25** | RAW | Specs predate the loop; Gelato/Printify margins already in `LISTINGS.md` §4 |

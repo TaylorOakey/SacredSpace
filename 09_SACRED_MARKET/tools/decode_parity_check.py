@@ -27,7 +27,8 @@ js = engine + "\nconst N=" + json.dumps(names) + ";console.log(JSON.stringify(N.
      "const g=gematria(n);return [g.breakdown.map(b=>[b.letter,b.value]),g.total,g.soul_tone," \
      "g.title,g.shadow,sigil(n,g.soul_tone),sigilify(n)]})))"
 out = json.loads(subprocess.run([os.environ.get("NODE", "node"), "-e", js],
-                                capture_output=True, text=True, check=True).stdout)
+                                capture_output=True, text=True, encoding="utf-8",
+                                errors="strict", check=True).stdout)
 
 bad = 0
 for n, j in zip(names, out):
