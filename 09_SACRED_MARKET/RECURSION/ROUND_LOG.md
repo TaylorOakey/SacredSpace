@@ -264,3 +264,13 @@ After these, continue with open item 7 (A4 vault structure map), then 1 (spine c
    - Search every drive for `chat.html`, `conversations.json`, `*chatgpt*export*.zip` and `takeout-*.zip`.
    - If found, run `chatgpt_export_parser.py` and list the 10 conversations with the most finished, sellable drafts (date + title only).
    - If not found, write one line for Taylor: "Request a fresh export: ChatGPT → Settings → Data controls → Export data" (Taylor's action).
+
+## Triage · Claude Code · 2026-09-27: external report "Sacred Merchant → Personal Drop Ship Professional" (relayed by Taylor)
+**Logged as G1 (17/40, PARKED)** in a new IDEA_BANK section G for external proposals. Evidence is in the row.
+- **Salvaged:**
+  - A3: POD as the brand-fit dropship model, with order → tracking automation.
+  - B1: shop FAQ and abandoned-cart bots are the VaaS service.
+  - D2: build the ledger sync as a self-hosted n8n flow.
+- **Rejected:** its detection-evasion tactics (anti-detect browsers, AI-altered duplicate photos, bots disguised as humans, undisclosed negotiation bots). They breach platform rules and the plan's honesty guardrails.
+- **New fact:** Meta commerce policy bars digital goods, so decodes and downloads stay off Facebook Marketplace.
+- **Guardrail for both agents:** don't re-propose generic dropshipping without new evidence and Taylor's ask.
