@@ -177,3 +177,26 @@ Tested on trap files and on this repo's 09 pillar: 127 scanned → 75 unique fin
    This unblocks Claude's `REVENUE_OPERATIONS_MASTER` build.
 
 After these, continue with open item 7 (A4 vault structure map), then 1 (spine check), 2 (asset inventory) and 3 (archive mining). End the round with a NEXT FOR CLAUDE list.
+
+## Round 2 · OpenCode · 2026-09-27
+**Ladder rung:** no sales yet ($0). No `merchant.db` anywhere (plan I-5 still open).
+**Done from last NEXT list:**
+- Item 1 (worktree) ✅ — `D:\SacredSpace_loop`, sparse to `09_SACRED_MARKET` (+`systems/fastapi` for merchant.py). Note: the branch tree contains an invalid Windows path (`D:/SacredSpace_OS/archive/memory-motes/sacred.db`) that breaks full checkouts/resets; sparse cone avoids it. D: working tree untouched.
+- Item 2 (hub re-run) ✅ — 14,400 scanned → 1,491 indexed, 2,250 dupes folded. Per topic: cash flow 162 · business 402 · nonprofit 101 · marketing 466 · branding 317 · culture 43. No crash (fixes confirmed). C: duplicate links resolve 44/44. Spot-check: culture clean (no more tool docs), `BUSINESS_PLAN.md` now primary business. `hub_config.local.json` holds skip_dirs + machine roots (gitignored, never commit).
+- Item 3 (schedule — Taylor: yes) ✅ — `schtasks` "SacredSpace Hub" every 3 h (`pythonw`, full path, worktree tools). `schtasks /run` → Last Result 0, fresh INDEX (header 22:44). Verified `print` works under this `pythonw` first. After PR #10 merges, repoint the task at `D:\SacredSpace_OS`.
+- Item 4 (smoke) ✅ — `grama_decode.py "Taylor Oakey" --tier mini` (PYTHONPATH to branch `systems/fastapi`) vs C2 page under node: sum 148, tone 4, The Builder, ✦TAYL4∆, 7∆YL0R 0∆K3Y — 5/5 match. Caveat stands: decode needs `merchant.py` sibling (absent from `FIRST_FLAME/`).
+- Item 5 (manifest) ✅ — `RECURSION/local_revenue_manifest.md` (408 lines; vault as counts only: business 180, cashflow 89, nonprofit 40). Privacy-checked (only ICARIS role-name hits, no private content).
+- Item 7 (vault map) ✅ — `RECURSION/local_vault_structure.md` (161 folders depth ≤3, names+counts only; 0 private-marked at that depth).
+- Earlier chat findings now landed: spine serves from `systems/fastapi/app/main.py:16,32–39` (8 routers, NO merchant.router; :8888 down; `PORTAL/index.html:262` uvicorn target stale); A5 refuted (78 declared, 0 card objects); archive pass (chats/ = stubs; 05-26 prices conflict with bank; notebook files exist; 6 Claude chats never exported).
+**Verified / refuted:** all above with paths, counts and outputs in this entry.
+**Ideas added:** A9 (Cipher Puzzle Pack, 27) · **Re-scored:** A5 29→**25** (no card objects exist).
+**Experiments:** Slot 1 approved-unlisted · Slot 2 C2 (page built, SHOP links empty) · Slot 3 A4 (spec + vault map done).
+**Notes for Taylor:**
+1. C2/A4 are built but publishable only by you (separate public repo/space; listings don't exist yet).
+2. Year-1 letters stay out of every product until you rule explicitly otherwise.
+3. The branch has one bad path entry (`archive/memory-motes/sacred.db`) — future Windows checkouts need sparse cone until it's renamed.
+**NEXT FOR CLAUDE:**
+1. Fold the 05-26 price points ($9–15 map, $15–25 custom decode, $7–12 rulebook) into the listing comp rewrite (your item 1).
+2. Comp 5–10 printable puzzle packs (price, page count, sales signals) for A9.
+3. Fee math for the sub-$10 tier (A9 at $5–9, A2 at $7) on Gumroad vs Ko-fi.
+4. Template license + refund norms for the A4 SPEC (your item 3 covers price; add the legal wrapper).

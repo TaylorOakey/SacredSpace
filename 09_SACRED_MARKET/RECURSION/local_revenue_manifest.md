@@ -1,0 +1,408 @@
+# Local revenue manifest (OpenCode, Round 2)
+Source: hub `index.json` (re-run with fixes). Cash-flow, business and nonprofit topics only.
+Repo/D: paths listed with topic + score. Vault entries as counts only (no titles).
+
+- `D:\SacredSpace_loop\09_SACRED_MARKET\SACRED_MARKET_INCOME_SYNTHESIS.md` | business 23 | also: cashflow,nonprofit
+- `D:\SacredSpace_loop\09_SACRED_MARKET\SacredSpace_Revenue_Operations.md` | cashflow 14 | also: business,marketing,branding
+- `D:\SacredSpace_loop\09_SACRED_MARKET\CASHFLOW_MASTER\A_Sacred_Space_POD.md` | business 10 | also: cashflow,branding
+- `D:\SacredSpace_loop\09_SACRED_MARKET\CASHFLOW_MASTER\A_Sacred_Space_POD_2.md` | business 10 | also: cashflow,branding
+- `D:\SacredSpace_loop\09_SACRED_MARKET\CASHFLOW_MASTER\CLAUDE.md` | business 3 | also: -
+- `D:\SacredSpace_loop\09_SACRED_MARKET\CASHFLOW_MASTER\CLAUDE1.md` | cashflow 3 | also: business
+- `D:\SacredSpace_loop\09_SACRED_MARKET\CASHFLOW_MASTER\CLAUDE1_2.md` | cashflow 3 | also: business
+- `D:\SacredSpace_loop\09_SACRED_MARKET\CASHFLOW_MASTER\CLAUDE_3.md` | business 5 | also: -
+- `D:\SacredSpace_loop\09_SACRED_MARKET\CASHFLOW_MASTER\CLAUDE_4.md` | cashflow 3 | also: business
+- `D:\SacredSpace_loop\09_SACRED_MARKET\CASHFLOW_MASTER\CLAUDE_5.md` | cashflow 3 | also: business
+- `D:\SacredSpace_loop\09_SACRED_MARKET\CASHFLOW_MASTER\CORE_AXIOM_Nine_Pillar_Architecture_v1.md` | business 8 | also: cashflow,marketing,branding
+- `D:\SacredSpace_loop\09_SACRED_MARKET\CASHFLOW_MASTER\CROSS_AI_PROTOCOL_v1.md` | cashflow 3 | also: business
+- `D:\SacredSpace_loop\09_SACRED_MARKET\CASHFLOW_MASTER\ECONOMY_Overview.md` | business 5 | also: cashflow
+- `D:\SacredSpace_loop\09_SACRED_MARKET\CASHFLOW_MASTER\Financial_Dashboard.md` | cashflow 9 | also: -
+- `D:\SacredSpace_loop\09_SACRED_MARKET\CASHFLOW_MASTER\First_Flame_Launch.md` | cashflow 10 | also: business
+- `D:\SacredSpace_loop\09_SACRED_MARKET\CASHFLOW_MASTER\GEMINI_CHATGPT_EXTRACTION_MISSION.md` | cashflow 11 | also: business,marketing
+- `D:\SacredSpace_loop\09_SACRED_MARKET\CASHFLOW_MASTER\GEMINI_SACREDSPACE_ASSIMILATION_v1.md` | business 10 | also: cashflow,nonprofit,marketing,branding,culture
+- `D:\SacredSpace_loop\09_SACRED_MARKET\CASHFLOW_MASTER\README1.md` | business 4 | also: cashflow
+- `D:\SacredSpace_loop\09_SACRED_MARKET\CASHFLOW_MASTER\README_READ_FIRST.md` | cashflow 4 | also: business
+- `D:\SacredSpace_loop\09_SACRED_MARKET\CASHFLOW_MASTER\REVENUE_SACREDCODEX_Invocation_Ledger_v2.md` | cashflow 8 | also: -
+- `D:\SacredSpace_loop\09_SACRED_MARKET\CASHFLOW_MASTER\REVENUE_SacredSpace_Revenue_Operations.md` | cashflow 15 | also: business,marketing,branding
+- `D:\SacredSpace_loop\09_SACRED_MARKET\CASHFLOW_MASTER\SACREDSPACESHIP_LAUNCH_PROTOCOL_PRINTABLE.md` | business 11 | also: cashflow,nonprofit,marketing,culture
+- `D:\SacredSpace_loop\09_SACRED_MARKET\CASHFLOW_MASTER\SACREDSPACE_COMPLETE_COUNCIL_SYNTHESIS.md` | business 10 | also: cashflow,marketing,branding
+- `D:\SacredSpace_loop\09_SACRED_MARKET\CASHFLOW_MASTER\SACREDSPACE_COMPLETE_COUNCIL_SYNTHESIS_2.md` | business 10 | also: cashflow,marketing,branding
+- `D:\SacredSpace_loop\09_SACRED_MARKET\CASHFLOW_MASTER\SACREDSPACE_MASTER_CONTEXT.md` | business 6 | also: branding
+- `D:\SacredSpace_loop\09_SACRED_MARKET\CASHFLOW_MASTER\SACREDSPACE_MASTER_CONTEXT_2.md` | business 6 | also: branding
+- `D:\SacredSpace_loop\09_SACRED_MARKET\CASHFLOW_MASTER\SACREDSPACE_NOTEBOOKLM_ORIENTATION.md` | business 9 | also: cashflow
+- `D:\SacredSpace_loop\09_SACRED_MARKET\CASHFLOW_MASTER\SACREDSPACE_NOTEBOOKLM_ORIENTATION_2.md` | business 9 | also: cashflow
+- `D:\SacredSpace_loop\09_SACRED_MARKET\CASHFLOW_MASTER\SACREDSPACE_NOTEBOOKLM_SETUP_GUIDE.md` | cashflow 5 | also: business,branding
+- `D:\SacredSpace_loop\09_SACRED_MARKET\CASHFLOW_MASTER\SACREDSPACE_NOTEBOOKLM_SETUP_GUIDE_2.md` | cashflow 5 | also: business,branding
+- `D:\SacredSpace_loop\09_SACRED_MARKET\CASHFLOW_MASTER\SACREDSPACE_OS_COMPLETE_COUNCIL_SYNTHESIS.md` | business 10 | also: cashflow,marketing,branding
+- `D:\SacredSpace_loop\09_SACRED_MARKET\CASHFLOW_MASTER\SACREDSPACE_POD_OPERATING_MANUAL_v1.md` | business 18 | also: cashflow,marketing,branding
+- `D:\SacredSpace_loop\09_SACRED_MARKET\CASHFLOW_MASTER\SACREDSPACE_POD_OPERATING_MANUAL_v1_2.md` | business 18 | also: cashflow,marketing,branding
+- `D:\SacredSpace_loop\09_SACRED_MARKET\CASHFLOW_MASTER\SACREDSPACE_PROJECT_INSTRUCTIONS.md` | business 9 | also: branding
+- `D:\SacredSpace_loop\09_SACRED_MARKET\CASHFLOW_MASTER\SACREDSPACE_PROJECT_INSTRUCTIONS_2.md` | business 9 | also: branding
+- `D:\SacredSpace_loop\09_SACRED_MARKET\CASHFLOW_MASTER\SACREDTAG_PROTOCOL.md` | business 3 | also: -
+- `D:\SacredSpace_loop\09_SACRED_MARKET\CASHFLOW_MASTER\SACRED_PROGRESS_REPORT_72HR.md` | business 3 | also: -
+- `D:\SacredSpace_loop\09_SACRED_MARKET\CASHFLOW_MASTER\SACRED_PROGRESS_REPORT_72HR_2.md` | business 3 | also: -
+- `D:\SacredSpace_loop\09_SACRED_MARKET\CASHFLOW_MASTER\SACRED_WEB_SCRAPPER.md` | cashflow 7 | also: business,nonprofit,marketing,branding,culture
+- `D:\SacredSpace_loop\09_SACRED_MARKET\CASHFLOW_MASTER\SacredSpace_Master_Current.md` | cashflow 3 | also: business
+- `D:\SacredSpace_loop\09_SACRED_MARKET\CASHFLOW_MASTER\SacredSpace_Master_Current_2.md` | cashflow 3 | also: business
+- `D:\SacredSpace_loop\09_SACRED_MARKET\CASHFLOW_MASTER\SacredSpace_OS_Revenue_Operations.md` | cashflow 15 | also: business,marketing,branding
+- `D:\SacredSpace_loop\09_SACRED_MARKET\CASHFLOW_MASTER\SacredSpace_Revenue_Operations.md` | cashflow 15 | also: business,marketing,branding
+- `D:\SacredSpace_loop\09_SACRED_MARKET\CASHFLOW_MASTER\Sacredspace_strategic_roadmap_and_launch_plan.md` | cashflow 16 | also: business,nonprofit,marketing,branding,culture
+- `D:\SacredSpace_loop\09_SACRED_MARKET\CASHFLOW_MASTER\Untitled_document.md` | business 4 | also: cashflow,marketing
+- `D:\SacredSpace_loop\09_SACRED_MARKET\CASHFLOW_MASTER\copilot-instructions.md` | business 5 | also: -
+- `D:\SacredSpace_loop\09_SACRED_MARKET\CASHFLOW_MASTER\deep-research-report.md` | business 12 | also: cashflow,marketing
+- `D:\SacredSpace_loop\09_SACRED_MARKET\CASHFLOW_MASTER\merchant.md` | business 12 | also: -
+- `D:\SacredSpace_loop\09_SACRED_MARKET\FIRST_FLAME\LISTINGS.md` | business 17 | also: cashflow
+- `D:\SacredSpace_loop\09_SACRED_MARKET\FIRST_FLAME\decode_web\README.md` | business 5 | also: -
+- `D:\SacredSpace_loop\09_SACRED_MARKET\NOTEBOOKLM_UPLOAD\NOTEBOOKLM_INSTRUCTIONS.md` | business 8 | also: cashflow
+- `D:\SacredSpace_loop\09_SACRED_MARKET\NOTEBOOKLM_UPLOAD\REVENUE — DOC — AUDIT_REPORT — v1.md` | cashflow 8 | also: -
+- `D:\SacredSpace_loop\09_SACRED_MARKET\NOTEBOOKLM_UPLOAD\REVENUE — DOC — CLAUDE2 — v1.md` | cashflow 7 | also: -
+- `D:\SacredSpace_loop\09_SACRED_MARKET\NOTEBOOKLM_UPLOAD\REVENUE — DOC — CLAUDE_CODE_MISSION_BRIEF — v1.md` | cashflow 7 | also: -
+- `D:\SacredSpace_loop\09_SACRED_MARKET\NOTEBOOKLM_UPLOAD\REVENUE — DOC — MIGRATION_PLAN — v1.md` | cashflow 8 | also: -
+- `D:\SacredSpace_loop\09_SACRED_MARKET\NOTEBOOKLM_UPLOAD\REVENUE — DOC — SACREDCODEX_Invocation_Ledger_v2 — v1.md` | cashflow 7 | also: -
+- `D:\SacredSpace_loop\09_SACRED_MARKET\NOTEBOOKLM_UPLOAD\REVENUE — DOC — SACREDSPACE GEMINI IMAGES — v1.md` | cashflow 7 | also: -
+- `D:\SacredSpace_loop\09_SACRED_MARKET\NOTEBOOKLM_UPLOAD\REVENUE — DOC — SACRED_CODEX_PHASE_1_COMPLETE 1 — v1.md` | cashflow 7 | also: -
+- `D:\SacredSpace_loop\09_SACRED_MARKET\NOTEBOOKLM_UPLOAD\REVENUE — DOC — SACRED_CODEX_PHASE_1_COMPLETE — v1.md` | cashflow 7 | also: -
+- `D:\SacredSpace_loop\09_SACRED_MARKET\NOTEBOOKLM_UPLOAD\REVENUE — DOC — SacredSpace OS PowerShell Research Plan — v1.md` | cashflow 7 | also: -
+- `D:\SacredSpace_loop\09_SACRED_MARKET\NOTEBOOKLM_UPLOAD\REVENUE — DOC — State_Governor — v1.md` | cashflow 8 | also: -
+- `D:\SacredSpace_loop\09_SACRED_MARKET\RECURSION\IDEA_BANK.md` | business 12 | also: cashflow,nonprofit,marketing
+- `D:\SacredSpace_loop\09_SACRED_MARKET\RECURSION\LOOP.md` | cashflow 10 | also: business,nonprofit
+- `D:\SacredSpace_loop\09_SACRED_MARKET\RECURSION\PROMPT_OPENCODE.md` | business 3 | also: -
+- `D:\SacredSpace_loop\09_SACRED_MARKET\RECURSION\ROUND_LOG.md` | cashflow 9 | also: business,nonprofit,marketing,culture
+- `D:\SacredSpace_OS\00_SYSTEM_CORE\loop-budget.md` | cashflow 7 | also: -
+- `D:\SacredSpace_OS\00_SYSTEM_CORE\archive\home_cleanup\session-ses_10b1.md` | business 10 | also: cashflow,nonprofit,marketing,branding
+- `D:\SacredSpace_OS\00_SYSTEM_CORE\docs\ECONOMIC_GRAPHIFY_QUERY_TERMS.md` | business 19 | also: cashflow,nonprofit,marketing
+- `D:\SacredSpace_OS\00_SYSTEM_CORE\docs\INITIATE_ACCESS_DESIGN_2026-09-22.md` | business 4 | also: -
+- `D:\SacredSpace_OS\00_SYSTEM_CORE\docs\NAVIGATION_PANEL.md` | business 6 | also: -
+- `D:\SacredSpace_OS\00_SYSTEM_CORE\docs\PARKING_LOT_COUNCIL_INVENTORY.md` | business 10 | also: nonprofit,marketing,branding,culture
+- `D:\SacredSpace_OS\00_SYSTEM_CORE\docs\PARKING_LOT_QUICK_REF.md` | business 5 | also: nonprofit,marketing,culture
+- `D:\SacredSpace_OS\00_SYSTEM_CORE\docs\SACREDSPACE_BOARD_PRESENTATION.md` | nonprofit 11 | also: cashflow,business,marketing,culture
+- `D:\SacredSpace_OS\00_SYSTEM_CORE\docs\SACREDSPACE_BUILD_MANIFESTO.md` | business 4 | also: culture
+- `D:\SacredSpace_OS\00_SYSTEM_CORE\docs\SACREDSPACE_MASTER_INDEX.md` | business 9 | also: nonprofit
+- `D:\SacredSpace_OS\00_SYSTEM_CORE\docs\SACREDSPACE_UNIFIED_ARCHITECTURE.md` | nonprofit 6 | also: business,branding
+- `D:\SacredSpace_OS\00_SYSTEM_CORE\docs\SACRED_LEDGER.MERGED_CANDIDATE_2026-08-24.md` | business 16 | also: cashflow,nonprofit,marketing,branding
+- `D:\SacredSpace_OS\00_SYSTEM_CORE\docs\SACRED_MOTHERSHIP_ARCHITECTURE.md` | business 12 | also: cashflow,nonprofit,marketing,branding
+- `D:\SacredSpace_OS\00_SYSTEM_CORE\docs\SESSION_30_EXTRACTION_REPORT.md` | business 6 | also: cashflow,nonprofit,marketing
+- `D:\SacredSpace_OS\00_SYSTEM_CORE\docs\SESSION_30_STARTUP.md` | business 9 | also: nonprofit,marketing,branding
+- `D:\SacredSpace_OS\00_SYSTEM_CORE\docs\omni_ledger\INFINITE_GOAL_AND_LAUNCH.md` | business 7 | also: marketing,branding
+- `D:\SacredSpace_OS\00_SYSTEM_CORE\queue\BACKLOG.md` | nonprofit 3 | also: -
+- `D:\SacredSpace_OS\00_SYSTEM_CORE\scripts\CSV_EXPORT\The_Nine_Pillars_FOUNDATION.csv` | nonprofit 6 | also: -
+- `D:\SacredSpace_OS\00_SYSTEM_CORE\sessions\CLAUDECODE_SESSION_061_HANDOFF.md` | business 3 | also: marketing
+- `D:\SacredSpace_OS\00_SYSTEM_CORE\sessions\SESSION_031-032_COMPLETE.md` | business 3 | also: -
+- `D:\SacredSpace_OS\00_SYSTEM_CORE\sessions\session-019-extraction\01_sacred_market_revenue_plan.md` | business 11 | also: cashflow
+- `D:\SacredSpace_OS\00_SYSTEM_CORE\sessions\session-019-extraction\03_knowledge_gaps_blind_spots.md` | business 5 | also: -
+- `D:\SacredSpace_OS\00_SYSTEM_CORE\sessions\session-019-extraction\04_crowdfunding_strategy.md` | business 11 | also: cashflow
+- `D:\SacredSpace_OS\00_SYSTEM_CORE\sessions\session-019-extraction\06_omni_index_thalia_verdict.md` | nonprofit 3 | also: -
+- `D:\SacredSpace_OS\02_COUNCIL_GROVE\reports\CLAUDE_EXPORT_ANALYSIS_REPORT.md` | business 8 | also: marketing,branding
+- `D:\SacredSpace_OS\02_COUNCIL_GROVE\reports\GRAPH_RECONNECTION_AUDIT.md` | business 4 | also: branding
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_SESSION_EXPORTS\opencode_digest_2026-08-19.md` | business 15 | also: cashflow,nonprofit,marketing,branding,culture
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_Arcana landscapes brand voice and narrative strategy.md` | cashflow 4 | also: business,nonprofit,marketing,branding
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_Brand guidelines for sacred space.md` | business 4 | also: nonprofit,branding
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_Brand guidelines.md` | cashflow 3 | also: business,branding
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_Browser extensions for productivity and control.md` | business 3 | also: branding
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_Building a sacred space visual intelligence system.md` | business 3 | also: marketing,branding
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_Building an agent company inside an agency.md` | business 3 | also: marketing
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_Car repair parts cost estimate.md` | cashflow 3 | also: -
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_Claude Phase deployment for Sacred Space Studio Sanctuary.md` | nonprofit 3 | also: branding
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_Claude character design tools and personality.md` | business 6 | also: branding
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_Claude infrastructure and multi-agent system research.md` | business 4 | also: culture
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_Comprehensive chat thread artifact extraction and system mapping.md` | cashflow 6 | also: business,nonprofit,marketing
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_Council seat activation protocol.md` | business 5 | also: cashflow,marketing
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_Creating a sacred space guide for Jeanie Leaf.md` | business 3 | also: marketing,culture
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_Crowdfunding portfolio strategy for SACREDSPACE.md` | business 14 | also: cashflow,nonprofit,marketing,branding
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_Daily todo list with deck and library work.md` | nonprofit 5 | also: -
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_Database schema design.md` | cashflow 3 | also: -
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_Defining your creative domain.md` | business 4 | also: -
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_Egregores and AI-native knowledge systems.md` | business 5 | also: -
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_Etching the official context ledger.md` | business 3 | also: -
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_Evaluating SacredSpace documentation and architecture.md` | nonprofit 5 | also: -
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_Execution strategy and institutional dependencies.md` | cashflow 3 | also: nonprofit
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_Fastest way to organize Google Drive.md` | business 3 | also: nonprofit,branding
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_Financial dashboard prompts for business owners.md` | cashflow 10 | also: business
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_Fixing popup_html corruption issue.md` | business 3 | also: branding
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_GR_.md` | business 5 | also: -
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_GR_M_ Word Wizard system prompt toolkit.md` | business 3 | also: branding
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_Gematria name decode service product.md` | business 3 | also: branding
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_Google Sheets document link.md` | business 3 | also: -
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_H_NDDR_WN C_NON.md` | cashflow 7 | also: business,nonprofit,marketing,branding,culture
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_Image collection review.md` | business 6 | also: cashflow,branding
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_Incomplete conversation.md` | business 4 | also: branding
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_Intelligence synthesis and decision framework.md` | business 10 | also: cashflow,marketing,branding
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_Interactive spell invocation system.md` | business 12 | also: cashflow,nonprofit,marketing,branding
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_Job match analysis and application strategy.md` | business 3 | also: culture
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_List request for Taylor.md` | business 3 | also: marketing
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_Living operating system complete and locked.md` | business 3 | also: marketing
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_Local photo management_ Immich vs Syncthing _ ChromaDB.md` | business 3 | also: -
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_Memory update review.md` | business 4 | also: nonprofit,marketing
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_Merging configuration files with conflict resolution.md` | business 3 | also: -
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_Nine pillars of a sacred space.md` | business 9 | also: marketing,branding
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_NotebookLM document scribing guide.md` | business 8 | also: cashflow
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_Okoa.md` | business 3 | also: -
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_Open source tools for sacred space design.md` | business 14 | also: cashflow,nonprofit,marketing,branding,culture
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_Optimizing Claude code for token efficiency.md` | business 5 | also: -
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_Payment methods for business.md` | business 19 | also: cashflow,nonprofit,marketing
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_Populating sacred market notebook.md` | business 18 | also: cashflow
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_Portable Obsidian on external hard drive.md` | business 3 | also: branding,culture
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_Positive vibes.md` | business 4 | also: marketing
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_Prioritizing nonprofit formation execution.md` | nonprofit 8 | also: -
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_Professional shopping assistant with price comparison.md` | cashflow 4 | also: business,branding
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_Rebuilding missing system pillars safely.md` | business 3 | also: -
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_Revenue ideas for Sacredspace.md` | business 19 | also: cashflow,nonprofit,marketing,branding
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_SACREDSPACE OS MASTER PLAN.md` | nonprofit 4 | also: -
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_Sacred Market notebook population plan.md` | business 15 | also: -
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_Sacred council alignment and system stabilization.md` | business 6 | also: branding
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_Sacred flash drive transfer instructions.md` | business 7 | also: branding
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_Sacred game ideas and references compilation.md` | business 4 | also: cashflow,branding
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_Sacred hierarchy tab structure for Chrome organization.md` | business 5 | also: marketing,branding
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_Sacred market pre-launch strategy and culture building.md` | business 20 | also: cashflow,nonprofit,marketing,branding,culture
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_Sacred market report and implementation guide.md` | business 24 | also: cashflow,marketing
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_Sacred merchant commerce architecture.md` | business 7 | also: -
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_Sacred mission brief for Gemini.md` | nonprofit 3 | also: branding
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_Sacred pod business model research.md` | business 21 | also: cashflow,branding
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_Sacred progress report for council.md` | business 7 | also: cashflow,branding
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_Sacred scan triaged resources.md` | business 4 | also: -
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_Sacred space project documentation and assessment.md` | business 3 | also: -
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_Sacred space project journey and purpose.md` | cashflow 6 | also: business,marketing,branding
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_Sacred space project progress report.md` | business 3 | also: -
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_Sacred space system deployment and skill activation.md` | business 5 | also: -
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_SacredArcana Studios revenue launch plan.md` | cashflow 9 | also: business,marketing,branding
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_SacredSpace Master Codex.md` | business 4 | also: marketing,branding
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_SacredSpace OS architecture integration.md` | business 4 | also: branding
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_SacredSpace OS ecosystem analysis and architecture review.md` | business 7 | also: cashflow,branding
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_SacredSpace as a recursive meaning engine.md` | nonprofit 3 | also: -
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_SacredSpace ecosystem architecture overview.md` | business 4 | also: nonprofit
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_SacredSpace master index and organizational system.md` | business 7 | also: nonprofit,branding
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_SacredSpace social media progress report.md` | cashflow 3 | also: marketing,branding
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_SacredSpace system status and action items.md` | business 5 | also: -
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_Sacredspace strategic roadmap and launch plan.md` | cashflow 14 | also: business,nonprofit,marketing,branding,culture
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_Sacredspace system revenue generation plan.md` | cashflow 11 | also: business,branding
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_Search Google Drive for SacredSpace economy documents.md` | cashflow 14 | also: business,nonprofit,marketing
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_Selling broken F150 and cargo trailer.md` | cashflow 3 | also: -
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_Simplification request.md` | business 3 | also: marketing
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_Social media expansion framework for SACREDSPACE.md` | business 4 | also: nonprofit,marketing,branding
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_Strategic framing for institutional capital.md` | nonprofit 9 | also: cashflow,business,branding,culture
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_Strategic income design for AI systems builder.md` | cashflow 17 | also: business,nonprofit
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_Summarizing long chats for seamless continuation.md` | business 3 | also: marketing
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_System build completion checklist.md` | business 11 | also: cashflow,nonprofit,marketing,branding
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_System-builder skill module proposal.md` | cashflow 8 | also: business,nonprofit,marketing,branding
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_The Origin Mirror.md` | business 5 | also: -
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_Three-day itinerary for sacred council coordination.md` | business 6 | also: cashflow,nonprofit,branding
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_Top 50 businesses near Murfreesboro NC.md` | business 8 | also: branding
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_Unifying AI and productivity tools for sacred space.md` | cashflow 6 | also: branding
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_Updating the sacred co op portal.md` | business 8 | also: cashflow,nonprofit,branding
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_Widgets vs artifacts in chat.md` | business 9 | also: cashflow,marketing,branding
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON____ The Great Work _ April 2026 ___.md` | business 14 | also: cashflow,marketing,branding
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON__doc-coauthoring.md` | business 3 | also: -
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_canon_430.md` | business 7 | also: cashflow
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_sacred progress report_ what i___.md` | business 10 | also: cashflow,marketing,branding
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\LEDGER_Agent invoked _fallback__ _ROLE_ ASHER _ Shadow_ You are an adversarial analyst_.md` | nonprofit 3 | also: -
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\LEDGER_Agent invoked _fallback__ _ROLE_ AURORA _ Illuminator_ You are a synthesis engin.md` | nonprofit 3 | also: -
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\LEDGER_Agent invoked _fallback__ _ROLE_ ELIAS _ Pathfinder_ You are a systemic cartogra.md` | nonprofit 3 | also: -
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\LEDGER_Agent invoked _fallback__ _ROLE_ IRIS _ Messenger_ You are a bridge between visi.md` | nonprofit 3 | also: -
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\LEDGER_Agent invoked _fallback__ _ROLE_ KAIROS _ Ambient Intelligence_ You are a patter.md` | nonprofit 3 | also: -
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\LEDGER_Created order id_1 for _Test Customer_ __9_99_.md` | business 7 | also: -
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\LEDGER_Registered customer _Test Customer_ _id_1_.md` | business 7 | also: -
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\sacred-threads\ComfyUI\comfy\sd1_tokenizer\merges.txt` | business 5 | also: cashflow,marketing
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\sacred-threads\ComfyUI\comfy\text_encoders\hydit_clip_tokenizer\vocab.txt` | cashflow 15 | also: business,nonprofit,marketing,branding,culture
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\sacred-threads\ComfyUI\comfy\text_encoders\qwen25_tokenizer\merges.txt` | business 6 | also: cashflow,branding,culture
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\sacred-threads\ComfyUI\comfy\text_encoders\qwen35_tokenizer\merges.txt` | business 6 | also: cashflow,branding,culture
+- `D:\SacredSpace_OS\03_NEURAL_FOREST\sacred-threads\sacred_references\Google Gemini.html` | business 8 | also: cashflow,nonprofit,marketing,branding,culture
+- `D:\SacredSpace_OS\04_SACRED_CODEX\CLAUDE_CONVERSATIONS_CATALOG.md` | business 3 | also: -
+- `D:\SacredSpace_OS\04_SACRED_CODEX\CONVERSATIONS_OVERVIEW.md` | business 3 | also: -
+- `D:\SacredSpace_OS\04_SACRED_CODEX\GEMINI_ARCHAEOLOGY_CATALOG.md` | nonprofit 4 | also: cashflow
+- `D:\SacredSpace_OS\04_SACRED_CODEX\GRAMA_SEARCH_REPORT.md` | business 3 | also: -
+- `D:\SacredSpace_OS\04_SACRED_CODEX\SOUL_CONTRACT.md` | business 8 | also: -
+- `D:\SacredSpace_OS\04_SACRED_CODEX\STORYLINE_v5.0_DELTA.md` | cashflow 3 | also: -
+- `D:\SacredSpace_OS\04_SACRED_CODEX\_PARKING_LOT.md` | business 12 | also: cashflow,nonprofit,marketing,branding,culture
+- `D:\SacredSpace_OS\04_SACRED_CODEX\LORE\STORYLINE\SACREDSPACE-ARC-2026-06-16.md` | business 3 | also: -
+- `D:\SacredSpace_OS\04_SACRED_CODEX\ROOTBOOK\NOTEBOOK_CODEX_DEEP_DIVE_I_RECONSTRUCTED_2026-09-18.md` | business 6 | also: cashflow
+- `D:\SacredSpace_OS\04_SACRED_CODEX\ROOTBOOK\THE_ROOTBOOK_DEEP_DIVE_II.md` | cashflow 5 | also: -
+- `D:\SacredSpace_OS\04_SACRED_CODEX\canon\SACRED_UNIVERSE_IDEATION_ANALYSIS.md` | business 3 | also: -
+- `D:\SacredSpace_OS\04_SACRED_CODEX\canon\bible\BOOK_DEFINITIVE.md` | business 3 | also: marketing,branding
+- `D:\SacredSpace_OS\04_SACRED_CODEX\canon\sacred_vision\SACREDSPACE_MASTER_ARCHIVE.md` | nonprofit 3 | also: culture
+- `D:\SacredSpace_OS\04_SACRED_CODEX\game\GAME_KERNEL_STATE_EVENT_CONTRACT_DISTILLED.md` | business 7 | also: -
+- `D:\SacredSpace_OS\04_SACRED_CODEX\storyline\08_BUILD_AUDIT.md` | cashflow 3 | also: marketing
+- `D:\SacredSpace_OS\06_AGENT_GROVE\docs\2025-07-02_370_sacred-space-nonprofit-plan.md` | nonprofit 10 | also: branding,culture
+- `D:\SacredSpace_OS\06_AGENT_GROVE\docs\2025-08-12_351_sacred-space-grant-proposal.md` | nonprofit 12 | also: culture
+- `D:\SacredSpace_OS\06_AGENT_GROVE\docs\2025-11-09_316_personalized-learning-plan.md` | nonprofit 3 | also: marketing,branding,culture
+- `D:\SacredSpace_OS\06_AGENT_GROVE\docs\2025-11-15_299_ways-to-make-money.md` | cashflow 12 | also: business,nonprofit,marketing
+- `D:\SacredSpace_OS\06_AGENT_GROVE\docs\2025-11-26_093_12-month-wealth-blueprint.md` | cashflow 5 | also: business,marketing,branding
+- `D:\SacredSpace_OS\06_AGENT_GROVE\docs\2025-11-27_231_kimi-agent-mode-overview.md` | nonprofit 3 | also: marketing
+- `D:\SacredSpace_OS\06_AGENT_GROVE\docs\2025-11-30_204_notebooklm-data-import.md` | cashflow 10 | also: business,marketing,branding
+- `D:\SacredSpace_OS\06_AGENT_GROVE\docs\2025-12-03_157_manifest-revenue-conversation.md` | cashflow 7 | also: -
+- `D:\SacredSpace_OS\06_AGENT_GROVE\docs\2025-12-04_149_kimi-revenue-ideas-input.md` | cashflow 11 | also: business,nonprofit,branding
+- `D:\SacredSpace_OS\06_AGENT_GROVE\docs\2025-12-06_127_revitalized-revenue-engine.md` | cashflow 12 | also: business,culture
+- `D:\SacredSpace_OS\06_AGENT_GROVE\docs\2025-12-06_134_self-identity-skry-tool.md` | nonprofit 3 | also: -
+- `D:\SacredSpace_OS\06_AGENT_GROVE\docs\2025-12-08_103_city-of-presence-design.md` | nonprofit 3 | also: -
+- `D:\SacredSpace_OS\06_AGENT_GROVE\docs\2025-12-21_020_grants-recap-for-sacredspace.md` | nonprofit 15 | also: cashflow,culture
+- `D:\SacredSpace_OS\06_AGENT_GROVE\docs\2025-12-25_008_gemini-live-api-overview.md` | business 3 | also: -
+- `D:\SacredSpace_OS\06_AGENT_GROVE\graphify-out\GRAPH_REPORT.md` | cashflow 8 | also: business,nonprofit,marketing,branding,culture
+- `D:\SacredSpace_OS\06_AGENT_GROVE\prompts\2025-11-11_313_money-generation-prompt-test.md` | cashflow 16 | also: business,marketing,branding,culture
+- `D:\SacredSpace_OS\06_AGENT_GROVE\prompts\2025-11-17_289_grant-outreach-prompt-refinement.md` | nonprofit 13 | also: cashflow,marketing,culture
+- `D:\SacredSpace_OS\06_AGENT_GROVE\prompts\2025-12-14_055_ai-money-making-prompt-refinement.md` | business 14 | also: cashflow,marketing,branding
+- `D:\SacredSpace_OS\07_SOCIAL_MOTHERSHIP\UNFURLING_THE_INFINITE_VISION.md` | cashflow 4 | also: -
+- `D:\SacredSpace_OS\08_LEARNING_PATH\2021-09_youtube_watch.md` | business 4 | also: marketing
+- `D:\SacredSpace_OS\08_LEARNING_PATH\2021-10_youtube_watch.md` | business 4 | also: marketing
+- `D:\SacredSpace_OS\08_LEARNING_PATH\2025-04_youtube_watch.md` | cashflow 3 | also: marketing
+- `D:\SacredSpace_OS\08_LEARNING_PATH\2025-08_youtube_watch.md` | cashflow 3 | also: marketing,branding
+- `D:\SacredSpace_OS\08_LEARNING_PATH\2025-10_youtube_watch.md` | cashflow 3 | also: marketing
+- `D:\SacredSpace_OS\08_LEARNING_PATH\2025-12_youtube_watch.md` | business 4 | also: marketing,culture
+- `D:\SacredSpace_OS\09_SACRED_MARKET\nonprofit_nursery_proposal.txt` | nonprofit 7 | also: -
+- `D:\SacredSpace_OS\09_SACRED_MARKET\Sacred_Sprouts\Business Plans\Sprouts Business Model v1.docx` | business 6 | also: -
+- `D:\SacredSpace_OS\NOTEBOOKLM_STAGING\08_SACRED_MARKET\MARKET — GRANT — SacredSpace GrantCopyMatrix v1 — v1.docx` | nonprofit 6 | also: -
+- `D:\SacredSpace_OS\NOTEBOOKLM_STAGING\08_SACRED_MARKET\MARKET — GRANT — SacredSpace NeuralForest GrantProposal v2 — v2.docx` | nonprofit 6 | also: -
+- `D:\SacredSpace_OS\NOTEBOOKLM_STAGING\graphify-out\converted\MARKET — BUSINESS — Sprouts Business Model v1 — v1_af30c94d.md` | business 7 | also: -
+- `D:\SacredSpace_OS\NOTEBOOKLM_STAGING\graphify-out\converted\MARKET — GRANT — SacredSpace GrantCopyMatrix v1 — v1_82cbafe3.md` | nonprofit 12 | also: cashflow
+- `D:\SacredSpace_OS\NOTEBOOKLM_STAGING\graphify-out\converted\MARKET — GRANT — SacredSpace NeuralForest GrantProposal v2 — v2_06890777.md` | nonprofit 15 | also: cashflow,business,marketing
+- `D:\SacredSpace_OS\NOTEBOOKLM_STAGING\graphify-out\converted\SIGNAL — BRAND — sacredarcana brand bible v3 — v3_7bbdbdd9.md` | cashflow 4 | also: business,marketing,branding
+- `D:\SacredSpace_OS\OPEN CHAMBER\give-me-a-high-level-tour-of-this-codebase-2026-09-13.md` | nonprofit 3 | also: -
+- `D:\SacredSpace_OS\OPEN CHAMBER\oroborus-loop-agent-integration-weave-0-2026-09-13.md` | business 5 | also: marketing
+- `D:\SacredSpace_OS\OPEN CHAMBER\the-sacred-ledger-askashic-hall--2026-09-13.md` | business 4 | also: marketing
+- `D:\SacredSpace_OS\SACRED CLOUD\sacred-cloud-garage-docker-and-rclone-2026-09-13.md` | business 3 | also: -
+- `D:\SacredSpace_OS\SACREDSPACE STORYLINE\SACRED STORYLINE.md` | cashflow 9 | also: business,nonprofit,marketing,branding
+- `D:\SacredSpace_OS\_ARCHIVE\2026-06-23_SESSION_BRIDGE.md` | business 5 | also: -
+- `D:\SacredSpace_OS\_ARCHIVE\legacy-pillars\06_AGENT_GROVE\agents\MERCHANT\persona.md` | business 10 | also: -
+- `D:\SacredSpace_OS\_ARCHIVE\templates\SACRED_MARKET — PRODUCT_ENTRY_TEMPLATE — v1.0.docx` | business 6 | also: -
+- `D:\SacredSpace_OS\_INBOX\SACREDSPACE GRANT LIST FROM CHAT GPT.txt` | nonprofit 21 | also: cashflow,marketing,culture
+- `D:\SacredSpace_OS\_INBOX\SACREDSPACE WORLD BIBLE (sandbox).txt` | business 3 | also: -
+- `D:\SacredSpace_OS\_INBOX\SACREDSPACE_MasterPlan_v2 (1).txt` | cashflow 12 | also: business,marketing,branding
+- `D:\SacredSpace_OS\_INBOX\SACREDSPACE_SACRED_MARKET_MASTER_v1.txt` | business 27 | also: cashflow,nonprofit,marketing,branding
+- `D:\SacredSpace_OS\_INBOX\THE SACREDSPACE 1111 PRINT-ON-DEMAND SYSTEM.docx.txt` | business 18 | also: cashflow,marketing,branding
+- `D:\SacredSpace_OS\_INBOX\archive_browser.html` | cashflow 10 | also: business,nonprofit,marketing,branding
+- `D:\SacredSpace_OS\_INBOX\deep-research-report.md` | cashflow 3 | also: nonprofit,branding,culture
+- `D:\SacredSpace_OS\_INBOX\GDRIVE_BOARD_GAME_DOCS\Takeout__Drive__Google AI Studio__A SACREDSPACE MASTER ARCHIVE __A SACREDSPACE — The Blueprint for the SACRED GAME.docx.txt` | nonprofit 7 | also: cashflow,business,branding,culture
+- `D:\SacredSpace_OS\_INBOX\GDRIVE_BOARD_GAME_DOCS\Takeout__Drive__Google AI Studio__A SACREDSPACE MASTER ARCHIVE __SACREDSPACE CHAT-at-2025-08-19T08_44_33.785Z-p.docx.txt` | nonprofit 7 | also: cashflow,business,branding,culture
+- `D:\SacredSpace_OS\_INBOX\GDRIVE_BOARD_GAME_DOCS\Takeout__Drive__Google AI Studio__A SACREDSPACE MASTER ARCHIVE __SACREDSPACE CHAT.docx.txt` | nonprofit 7 | also: business,branding,culture
+- `D:\SacredSpace_OS\_INBOX\GDRIVE_BOARD_GAME_DOCS\Takeout__Drive__Google AI Studio__A SACREDSPACE MASTER ARCHIVE __SACREDSPACE _Game fundamentals_.docx.txt` | nonprofit 7 | also: cashflow,business,branding,culture
+- `D:\SacredSpace_OS\_INBOX\GDRIVE_BOARD_GAME_DOCS\Takeout__Drive__SACREDSPACE _ MASTER COMPILATION_.docx.md` | nonprofit 3 | also: -
+- `D:\SacredSpace_OS\_INBOX\SacredSpace-OpenCode-Workspace\source-material\Part6.md` | business 3 | also: -
+- `D:\SacredSpace_OS\_INBOX\SacredSpace-OpenCode-Workspace\source-material\Projects.md` | business 3 | also: -
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\_MERGE_MANIFEST.txt` | business 5 | also: cashflow,nonprofit,marketing,branding,culture
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\00_SYSTEM_CORE\docs\NAVIGATION_PANEL.md` | business 6 | also: marketing
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\00_SYSTEM_CORE\queue\BACKLOG.md` | nonprofit 3 | also: -
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\02_COUNCIL_GROVE\CONFLICTS_DETAILED.md` | cashflow 4 | also: business,nonprofit,marketing,branding
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\02_COUNCIL_GROVE\chamber\SESSION-032_STRATEGIC_BRIEFING.md` | cashflow 3 | also: business,nonprofit,marketing
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\02_COUNCIL_GROVE\council-records\SESSION-005_Creative_Realm_Map.html` | business 3 | also: nonprofit,marketing,branding,culture
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\02_COUNCIL_GROVE\council-records\SESSION-005_Creative_Realm_Map.md` | business 3 | also: nonprofit,marketing,branding,culture
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\02_COUNCIL_GROVE\council-records\SESSION-012_Cockpit_Architecture_Social_Market_Pivot.md` | business 4 | also: -
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\02_COUNCIL_GROVE\council-records\SESSION-013_Browser_Intelligence_Synthesis.md` | business 6 | also: nonprofit,marketing,branding
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\02_COUNCIL_GROVE\council-records\SESSION-013_Social_Market_Launch_Readiness_Report.md` | business 8 | also: cashflow,nonprofit,marketing
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\02_COUNCIL_GROVE\council-records\SESSION-014_Action_Plan_Synthesis.md` | business 9 | also: nonprofit,marketing,branding,culture
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\02_COUNCIL_GROVE\council-records\SESSION-014_Launch_Readiness_Report.md` | business 5 | also: cashflow,marketing,branding
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\02_COUNCIL_GROVE\council-records\SESSION-016_PROMPT.md` | cashflow 3 | also: -
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\02_COUNCIL_GROVE\council-records\SESSION-017_PROMPT.md` | cashflow 3 | also: business
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\02_COUNCIL_GROVE\council-records\SESSION-018_PROMPT.md` | business 3 | also: marketing,branding
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\02_COUNCIL_GROVE\council-records\SESSION-019_PROMPT.md` | cashflow 6 | also: business,marketing,branding
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\04_SACRED_CODEX\MASTER_PROMPT_Claude_Fable_SacredSpace.md` | cashflow 3 | also: nonprofit,branding
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\04_SACRED_CODEX\SACREDSPACE_BUSINESS_REEXAMINATION_PROMPT.md` | business 16 | also: cashflow,nonprofit,marketing,branding,culture
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\04_SACRED_CODEX\SACREDSPACE_MASTER_INDEX.md` | business 4 | also: marketing
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\04_SACRED_CODEX\SACRED_ARCANA_MASTER_FILE.md` | cashflow 5 | also: business,branding
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\04_SACRED_CODEX\SACRED_LIVING_WORLDBIBLE.md` | business 3 | also: marketing,branding
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\04_SACRED_CODEX\SACRED_MARKET_LAUNCH_RECONNAISSANCE_PROMPT.md` | business 19 | also: cashflow,nonprofit,marketing
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\04_SACRED_CODEX\SACRED_SOVEREIGNTY_ROADMAP.md` | business 3 | also: -
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\04_SACRED_CODEX\SIGIL_TERMINAL_AS_BRIDGE_COMPREHENSIVE.md` | nonprofit 3 | also: -
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\04_SACRED_CODEX\_PARKING_LOT.md` | business 11 | also: cashflow,nonprofit,marketing,branding,culture
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\04_SACRED_CODEX\WORLD_BIBLE\SACRED_TAROT_SPEC.md` | business 4 | also: branding
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\04_SACRED_CODEX\WORLD_BIBLE\wiki\entities\sacred_merchant.md` | business 14 | also: -
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\04_SACRED_CODEX\characters\extracted\Sacred_Merchant.md` | business 15 | also: -
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\04_SACRED_CODEX\chats\04_SACRED_CODEX_CHATGPT_2025-07-02_SACRED_SPACE_NONPROFIT_PLAN.md` | nonprofit 7 | also: -
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\04_SACRED_CODEX\chats\04_SACRED_CODEX_CHATGPT_2025-07-20_STARTING_SACRED_SPACES_NONPROFIT.md` | nonprofit 7 | also: -
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\04_SACRED_CODEX\chats\04_SACRED_CODEX_CHATGPT_2025-07-24_SACRED_SPACES_GRANT_OPPORTUNITIES.md` | nonprofit 8 | also: -
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\04_SACRED_CODEX\chats\04_SACRED_CODEX_CHATGPT_2025-08-11_SACRED_SPACE_GRANT_PROPOSAL.md` | nonprofit 7 | also: -
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\04_SACRED_CODEX\chats\04_SACRED_CODEX_CHATGPT_2025-09-15_INVOICE_TEMPLATE_FOR_CLEANING.md` | cashflow 7 | also: -
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\04_SACRED_CODEX\chats\04_SACRED_CODEX_CHATGPT_2025-10-13_USING_EIN_FOR_LOAN.md` | business 8 | also: -
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\04_SACRED_CODEX\chats\04_SACRED_CODEX_CHATGPT_2025-11-15_WAYS_TO_MAKE_MONEY.md` | cashflow 7 | also: -
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\04_SACRED_CODEX\chats\04_SACRED_CODEX_CHATGPT_2025-11-16_GRANT_OUTREACH_PROMPT_REFINEMENT.md` | nonprofit 7 | also: -
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\04_SACRED_CODEX\chats\04_SACRED_CODEX_CHATGPT_2025-12-14_AI_MONEY_MAKING_PROMPT_REFINEMENT.md` | cashflow 7 | also: -
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\04_SACRED_CODEX\chats\04_SACRED_CODEX_CHATGPT_2025-12-21_GRANTS_RECAP_FOR_SACREDSPACE.md` | nonprofit 7 | also: -
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\04_SACRED_CODEX\chats\04_SACRED_CODEX_CLAUDE_2026-05-30_THALIA_LOOP_VERDICT.md` | nonprofit 3 | also: -
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\04_SACRED_CODEX\docs\SACREDSPACE-ARC-2026-06-16.md` | business 3 | also: -
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\04_SACRED_CODEX\grimoire\SACRED_GRANT_LOOP.md` | nonprofit 11 | also: cashflow
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\04_SACRED_CODEX\grimoire\SACRED_MARKET_LOOP.md` | business 15 | also: cashflow,nonprofit,marketing
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\04_SACRED_CODEX\lore\STORYLINE\SACREDSPACE-ARC-2026-06-16.md` | business 3 | also: -
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\04_SACRED_CODEX\rituals\TEMPLE_OF_SACRED_CHARACTERS.md` | business 5 | also: -
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\04_SACRED_CODEX\study_mode\INBOX\Session_Drops\SS-002_SacredSpace_Character_Map.md` | business 8 | also: cashflow
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\04_SACRED_CODEX\study_mode\INBOX\Session_Drops\SS-005_SacredSpace_Canon_Integration.md` | business 4 | also: branding
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\04_SACRED_CODEX\study_mode\INBOX\Session_Drops\SS-006_SacredSpace_Cosmology_Ideas.md` | business 4 | also: -
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\04_SACRED_CODEX\study_mode\INBOX\Session_Drops\SS-008_Grama_Cipher_Sage_Backstory.md` | nonprofit 3 | also: marketing
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\04_SACRED_CODEX\study_mode\INBOX\Session_Drops\SS-014_SacredSpace_Symbolic_Architecture.md` | nonprofit 3 | also: -
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\04_SACRED_CODEX\study_mode\INBOX\Session_Drops\SS-015_Core_Purposes_and_Insights.md` | business 3 | also: marketing
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\04_SACRED_CODEX\study_mode\INBOX\Session_Drops\SS-017_Sacred_Space_and_Money.md` | cashflow 13 | also: nonprofit,culture
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\04_SACRED_CODEX\study_mode\INBOX\Session_Drops\SS-021_Memory_Export_Request.md` | nonprofit 3 | also: branding
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\04_SACRED_CODEX\study_mode\INBOX\Session_Drops\SS-022_Gemini_Google_Drive_Search.md` | business 20 | also: cashflow,nonprofit,marketing,branding,culture
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\04_SACRED_CODEX\study_mode\INBOX\Session_Drops\SS-025_Quantum_Control_Room.md` | nonprofit 3 | also: marketing
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\04_SACRED_CODEX\study_mode\INBOX\Session_Drops\SS-026_Message_Not_Received.md` | business 3 | also: -
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\05_MEMORY_ENGINE\motes\SESSION-013_extended_COMPLETE.md` | cashflow 3 | also: marketing
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\05_MEMORY_ENGINE\motes\mote_2026-07-05_pulse-v2.1.md` | business 3 | also: -
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\07_SOCIAL_MOTHERSHIP\07_LEDGER.md` | business 3 | also: marketing,branding
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\07_SOCIAL_MOTHERSHIP\brand\BRAND_BIBLE\sacredarcana_brand_bible_v3.md` | cashflow 4 | also: business,marketing,branding
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\07_SOCIAL_MOTHERSHIP\claude-imports\2026-02-20_Professional_shopping_assistant_with_price_comparison.md` | cashflow 4 | also: business,branding
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\07_SOCIAL_MOTHERSHIP\claude-imports\2026-03-12_Living_operating_system_complete_and_locked.md` | business 3 | also: marketing
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\07_SOCIAL_MOTHERSHIP\claude-imports\2026-03-12_Positive_vibes.md` | business 4 | also: -
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\07_SOCIAL_MOTHERSHIP\claude-imports\2026-03-30_Social_media_expansion_framework_for_SACREDSPACE.md` | business 4 | also: nonprofit,marketing,branding
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\07_SOCIAL_MOTHERSHIP\claude-imports\2026-03-31_Sacred_Space_Studios_social_media_setup.md` | business 3 | also: marketing,branding
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\07_SOCIAL_MOTHERSHIP\claude-imports\2026-04-04_SacredSpace_social_media_progress_report.md` | cashflow 3 | also: marketing,branding
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\07_SOCIAL_MOTHERSHIP\claude-imports\2026-04-06_Egregores_and_AI-native_knowledge_systems.md` | business 6 | also: -
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\07_SOCIAL_MOTHERSHIP\claude-imports\2026-04-23_Creating_a_sacred_space_guide_for_Jeanie_Leaf.md` | business 3 | also: marketing,culture
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\07_SOCIAL_MOTHERSHIP\claude-imports\2026-06-02_sacred_progress_report._what_i....md` | business 9 | also: cashflow,marketing,branding
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\08_LEARNING_PATH\chats\08_LEARNING_PATH_CHATGPT_2025-11-09_SACREDSPACE_FOUNDATION_IDEAS.md` | nonprofit 7 | also: -
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\09_SACRED_MARKET\09_LEDGER.md` | business 5 | also: -
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\09_SACRED_MARKET\SACREDSPACE_BUSINESS_PLAN.md` | business 15 | also: cashflow,nonprofit,marketing,culture
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\09_SACRED_MARKET\Bazaar\HEIRLOOM_EDITION_PRODUCTION_SPEC.md` | business 3 | also: -
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\09_SACRED_MARKET\chats\09_SACRED_MARKET_CHATGPT_2025-11-11_MONEY_GENERATION_PROMPT_TEST.md` | cashflow 7 | also: business
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\09_SACRED_MARKET\chats\09_SACRED_MARKET_CHATGPT_2025-12-02_MONEY_MAP_REVEALED.md` | cashflow 7 | also: business
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\09_SACRED_MARKET\chats\09_SACRED_MARKET_CHATGPT_2025-12-03_KIMI_REVENUE_IDEAS_INPUT.md` | cashflow 7 | also: business
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\09_SACRED_MARKET\chats\09_SACRED_MARKET_CHATGPT_2025-12-06_REVITALIZED_REVENUE_ENGINE.md` | cashflow 7 | also: business
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\09_SACRED_MARKET\chats\09_SACRED_MARKET_CLAUDE_2026-05-15_REVENUE_PLAN.md` | business 14 | also: cashflow
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\09_SACRED_MARKET\chats\09_SACRED_MARKET_CLAUDE_2026-05-30_CROWDFUNDING_STRATEGY.md` | business 18 | also: cashflow,marketing
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\09_SACRED_MARKET\chats\09_SACRED_MARKET_GEMINI_2025-07-02_SACRED_SPACE_NONPROFIT_PLAN.md` | nonprofit 7 | also: business
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\09_SACRED_MARKET\chats\09_SACRED_MARKET_GEMINI_2025-08-12_SACRED_SPACE_GRANT_PROPOSAL.md` | business 7 | also: nonprofit
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\09_SACRED_MARKET\chats\09_SACRED_MARKET_GEMINI_2025-11-11_MONEY_GENERATION_PROMPT_TEST.md` | cashflow 7 | also: business
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\09_SACRED_MARKET\chats\09_SACRED_MARKET_GEMINI_2025-11-15_WAYS_TO_MAKE_MONEY.md` | cashflow 7 | also: business
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\09_SACRED_MARKET\chats\09_SACRED_MARKET_GEMINI_2025-11-17_GRANT_OUTREACH_PROMPT_REFINEMENT.md` | nonprofit 7 | also: business
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\09_SACRED_MARKET\chats\09_SACRED_MARKET_GEMINI_2025-11-26_12_MONTH_WEALTH_BLUEPRINT.md` | business 6 | also: -
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\09_SACRED_MARKET\chats\09_SACRED_MARKET_GEMINI_2025-11-27_CAMPER_PANCAKE_TIPS.md` | business 6 | also: -
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\09_SACRED_MARKET\chats\09_SACRED_MARKET_GEMINI_2025-12-03_MANIFEST_REVENUE_CONVERSATION.md` | cashflow 7 | also: business
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\09_SACRED_MARKET\chats\09_SACRED_MARKET_GEMINI_2025-12-04_KIMI_REVENUE_IDEAS_INPUT.md` | cashflow 7 | also: business
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\09_SACRED_MARKET\chats\09_SACRED_MARKET_GEMINI_2025-12-06_REVITALIZED_REVENUE_ENGINE.md` | cashflow 7 | also: business
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\09_SACRED_MARKET\chats\09_SACRED_MARKET_GEMINI_2025-12-14_AI_MONEY_MAKING_PROMPT_REFINEMENT.md` | cashflow 7 | also: business
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\09_SACRED_MARKET\chats\09_SACRED_MARKET_GEMINI_2025-12-21_GRANTS_RECAP_FOR_SACREDSPACE.md` | nonprofit 7 | also: business
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\09_SACRED_MARKET\chats\09_SACRED_MARKET_GEMINI_2026-07-14_agentic_commerce_sacred_merchant_evolution.md` | business 30 | also: cashflow,nonprofit,marketing
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\09_SACRED_MARKET\chats\09_SACRED_MARKET_GEMINI_2026-07-14_revenue_operations_and_sacredspace_os.md` | cashflow 8 | also: business
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\09_SACRED_MARKET\claude-project-import\001_revenue_ideas_for_sacredspace_conversation.md` | cashflow 10 | also: business
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\09_SACRED_MARKET\claude-project-import\2026-03-01_Crowdfunding_portfolio_strategy_for_SACREDSPACE.md` | business 15 | also: cashflow,nonprofit,marketing,branding
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\09_SACRED_MARKET\claude-project-import\2026-03-13_Financial_dashboard_prompts_for_business_owners.md` | cashflow 10 | also: business
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\09_SACRED_MARKET\claude-project-import\2026-04-08_Sacredspace_system_revenue_generation_plan.md` | cashflow 9 | also: business,marketing,branding
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\09_SACRED_MARKET\claude-project-import\2026-04-09_Untitled.md` | business 6 | also: -
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\09_SACRED_MARKET\claude-project-import\2026-05-26_SacredArcana_Studios_revenue_launch_plan.md` | cashflow 9 | also: business,marketing,branding
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\09_SACRED_MARKET\claude-project-import\2026-05-27_Sacred_market_report_and_implementation_guide.md` | business 22 | also: cashflow,marketing
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\09_SACRED_MARKET\claude-project-import\2026-05-30_Payment_methods_for_business.md` | business 19 | also: cashflow,nonprofit,marketing
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\09_SACRED_MARKET\claude-project-import\2026-06-10_Sacred_market_pre-launch_strategy_and_culture_building.md` | business 20 | also: cashflow,nonprofit,marketing,branding,culture
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\09_SACRED_MARKET\claude-project-import\2026-06-11_Populating_sacred_market_notebook.md` | business 16 | also: cashflow
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\09_SACRED_MARKET\claude-project-import\2026-06-11_Sacred_Market_notebook_population_plan.md` | business 11 | also: -
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\09_SACRED_MARKET\claude-project-import\2026-06-17_SacredSpace_OS_ecosystem_analysis_and_architecture_review.md` | business 7 | also: cashflow,branding
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\09_SACRED_MARKET\claude-project-import\_conversation_index.md` | business 3 | also: -
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\09_SACRED_MARKET\claude-project-import\graphify-out\GRAPH_REPORT.md` | business 3 | also: -
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\09_SACRED_MARKET\dashboard\unified_market_dashboard.md` | cashflow 3 | also: -
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\09_SACRED_MARKET\grants\grant_loop_state_machine.md` | nonprofit 8 | also: -
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\09_SACRED_MARKET\market-engine\echo_feedback_wiring.md` | business 4 | also: -
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\09_SACRED_MARKET\market-engine\first_flame_canvas_prints.md` | cashflow 12 | also: business
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\09_SACRED_MARKET\market-engine\pulse_auth_gate.md` | business 3 | also: -
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\09_SACRED_MARKET\pod_catalog\pod_apparel_catalog.md` | business 9 | also: -
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\09_SACRED_MARKET\pod_catalog\pod_canvas_catalog.md` | business 14 | also: nonprofit,branding
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\09_SACRED_MARKET\pod_catalog\pod_master_index.md` | business 11 | also: -
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\09_SACRED_MARKET\pod_catalog\pod_poster_catalog.md` | business 14 | also: nonprofit,branding
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\09_SACRED_MARKET\pod_catalog\pod_tarot_catalog.md` | business 14 | also: nonprofit,branding
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\09_SACRED_MARKET\revenue\Financial_Dashboard.md` | cashflow 6 | also: -
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\09_SACRED_MARKET\revenue\first_flame_canvas_prints.md` | cashflow 13 | also: business,marketing
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\graphify-out\converted\9 PILLARS IN CLAUDE_13660b1f.md` | business 9 | also: marketing,branding
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\graphify-out\converted\Bookmarks_3ed49feb.md` | nonprofit 7 | also: cashflow,marketing,branding,culture
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\graphify-out\converted\CLAUDE.md_f3afb317.md` | business 3 | also: -
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\graphify-out\converted\CORE — AXIOM — Nine Pillar Architecture — v1.md_080f651b.md` | business 8 | also: marketing,branding
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\graphify-out\converted\CORE — AXIOM — Nine Pillar Architecture — v1.md_f41550ec.md` | business 8 | also: marketing,branding
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\graphify-out\converted\CROSS_AI_PROTOCOL_v1.md_c0bc17c1.md` | business 3 | also: -
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\graphify-out\converted\Free Terminal AI Agents for Research_12c90f0f.md` | cashflow 3 | also: marketing
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\graphify-out\converted\GEMINI_SACREDSPACE_ASSIMILATION_v1.md_518cadbd.md` | business 10 | also: cashflow,nonprofit,marketing,branding,culture
+- `D:\SacredSpace_OS\_INCOMING_FROM_C\graphify-out\converted\Game Idea Expansion Frameworks and Strategies_3907394e.md` | cashflow 3 | also: marketing
+
+Vault counts: cashflow 89, business 180, nonprofit 40
+
+Ledger: None
