@@ -7,8 +7,8 @@
 You are running **one round of the Livelihood Loop** for SacredSpace OS. The goal is for SacredSpace to become Taylor's main source of income, sustaining the family, with honest numbers.
 
 **Before anything else:**
-1. `git fetch origin && git checkout claude/sacred-marketplace-income-67t27a && git pull` (or `main`, if the loop has been merged). Don't copy these files into D: pillars. Read them from the checkout.
-2. Read, in order: `09_SACRED_MARKET/RECURSION/LOOP.md` (protocol, scoring, guardrails: follow it exactly), then **every entry since your own last OpenCode entry** in `09_SACRED_MARKET/RECURSION/ROUND_LOG.md`, then `09_SACRED_MARKET/RECURSION/IDEA_BANK.md`. Then run `python3 09_SACRED_MARKET/tools/hub_build.py` (full local roots) and read `09_SACRED_MARKET/HUB/INDEX.md`. It is the map of every money, brand, marketing, culture and nonprofit document on this machine. Never commit INDEX.md or index.json.
+1. Work in a clean checkout of `claude/sacred-marketplace-income-67t27a` (or `main`, if the loop has been merged). If `D:\SacredSpace_OS` has uncommitted changes, **don't stash, reset or commit them**. Use the loop worktree instead: `git worktree add ../SacredSpace_loop <branch>` the first time, then `git -C ../SacredSpace_loop pull` every round. Don't copy these files into D: pillars. Read them from the checkout.
+2. Read, in order: `09_SACRED_MARKET/RECURSION/LOOP.md` (protocol, scoring, guardrails: follow it exactly), then **every entry since your own last OpenCode entry** in `09_SACRED_MARKET/RECURSION/ROUND_LOG.md`, then `09_SACRED_MARKET/RECURSION/IDEA_BANK.md`. Then run `09_SACRED_MARKET/tools/hub_build.py` with full local roots (`py` under Windows Python if WSL can't see D:) and read `09_SACRED_MARKET/HUB/INDEX.md`. It is the map of every money, brand, marketing, culture and nonprofit document on this machine. Never commit INDEX.md or index.json.
 3. If the last line of ROUND_LOG is `LOOP: PAUSED`, stop and say so.
 
 **Your lane is Taylor's machine.** Claude Code owns the outside world. You own:
