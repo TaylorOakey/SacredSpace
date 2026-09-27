@@ -29,6 +29,7 @@ You are running **one round of the Livelihood Loop** for SacredSpace OS. The goa
 **Safety rails on this machine:**
 - Read-only on `01_VAULT/SacredSpace_Vault/**`, `iris_memory.db` and anything marked CANON-LOCKED.
 - No deletes and no moves. Propose them in the log.
+- **Commit only the files you meant to change:** `git add <path> …`, never `git add -A` / `git add .` / `git commit -a`. Before every commit run `git diff --cached --stat`. If it shows **any deletion** or any file you didn't touch, stop, unstage (`git restore --staged .`) and report it. Round 2 accidentally deleted 180 files this way from a partial checkout.
 - Never commit secrets, `.env` files, the day-job employer, household finances, family records, or other people's personal details. Put anything sensitive in local-only files on D: and write "(local-only)" in the log.
 - Don't post, list, sign up, file or email. Taylor does every public action.
 

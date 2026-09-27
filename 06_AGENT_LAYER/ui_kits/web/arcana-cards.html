@@ -1,0 +1,1191 @@
+<!-- @dsCard group="UI Kit — Web" name="Arcana Cards — Templates & Samples" subtitle="70×120mm · Major · Minor · Court · Frame · Trial · Quest · Echo · Seed · Class · Back" viewport="1600x1040" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1600">
+<title>Arcana Cards — Sacred Arcana</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* ── CODEX-VISUAL-001 tokens ── */
+:root {
+  --void:       #030508;
+  --void-2:     #080b12;
+  --parchment:  #C8C4BB;
+  --pure:       #EEF6EF;
+  --gold:       #C8A44A;
+  --gold-dim:   rgba(200,164,74,0.18);
+  --gold-faint: rgba(200,164,74,0.07);
+  --bronze:     #8B7355;
+  --bio:        #72E87A;
+  --fire:       #D45A28;
+  --water:      #3878A0;
+  --earth:      #5A8850;
+  --air:        #78A8C8;
+  --aether:     #7A5CA5;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: var(--void);
+  color: var(--pure);
+  font-family: 'Cinzel', serif;
+  padding: 32px 40px 56px;
+}
+
+h1 {
+  font-size: 12px;
+  letter-spacing: 0.25em;
+  color: var(--gold);
+  text-align: center;
+  margin-bottom: 6px;
+}
+.subtitle {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 13px;
+  font-style: italic;
+  color: var(--parchment);
+  opacity: 0.5;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+/* ── section headers ── */
+.sec {
+  font-size: 9px;
+  letter-spacing: 0.2em;
+  color: var(--gold);
+  opacity: 0.6;
+  margin: 32px 0 16px;
+  border-bottom: 1px solid var(--gold-dim);
+  padding-bottom: 8px;
+}
+
+/* ── card gallery row ── */
+.card-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  align-items: flex-start;
+}
+
+/* ── CARD BASE — 175×300px display (≈ 70×120mm at 2.5×) ── */
+.card {
+  width: 175px;
+  height: 300px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border: 1.5px solid var(--bronze);
+  border-radius: 6px;
+  overflow: hidden;
+  background: #0a0905;
+  box-shadow: 0 0 0 0.5px rgba(200,164,74,0.12), 0 4px 18px rgba(0,0,0,0.7);
+  flex-shrink: 0;
+  cursor: default;
+  transition: box-shadow 0.35s, border-color 0.35s;
+}
+.card:hover {
+  border-color: var(--gold);
+  box-shadow: 0 0 0 1px rgba(200,164,74,0.35), 0 0 24px rgba(200,164,74,0.18);
+}
+
+/* top strip: numeral + name */
+.card-top {
+  padding: 7px 8px 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1px;
+  background: rgba(0,0,0,0.35);
+  border-bottom: 1px solid var(--gold-dim);
+}
+.card-numeral {
+  font-family: 'Cinzel', serif;
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  color: var(--gold);
+  line-height: 1;
+}
+.card-name {
+  font-family: 'Cinzel', serif;
+  font-size: 7.5px;
+  letter-spacing: 0.14em;
+  color: var(--pure);
+  line-height: 1;
+  text-align: center;
+}
+
+/* art window — golden ratio: ~60% of card height */
+.art-window {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  background: #050408;
+}
+.art-window svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* traditional name row */
+.trad-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 10px;
+  color: var(--parchment);
+  opacity: 0.65;
+  text-align: center;
+  padding: 4px 8px 3px;
+  background: rgba(0,0,0,0.2);
+  letter-spacing: 0.04em;
+}
+
+/* element band */
+.element-band {
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8px;
+  background: rgba(200,164,74,0.06);
+  border-top: 1px solid var(--gold-dim);
+  border-bottom: 1px solid var(--gold-dim);
+}
+.realm-glyph {
+  font-size: 12px;
+  color: var(--gold);
+  opacity: 0.75;
+  line-height: 1;
+}
+.element-name {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 7px;
+  color: var(--parchment);
+  opacity: 0.45;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* effect line */
+.effect-line {
+  padding: 4px 8px;
+  display: flex;
+  align-items: flex-start;
+  gap: 4px;
+  min-height: 32px;
+}
+.verb-icon {
+  font-size: 9px;
+  color: var(--gold);
+  opacity: 0.8;
+  margin-top: 1px;
+  flex-shrink: 0;
+}
+.effect-text {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 8.5px;
+  color: var(--parchment);
+  opacity: 0.75;
+  line-height: 1.45;
+}
+
+/* card foot */
+.card-foot {
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 7px;
+  border-top: 1px solid var(--gold-dim);
+  background: rgba(0,0,0,0.3);
+}
+.qr-mark {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 6.5px;
+  color: var(--parchment);
+  opacity: 0.3;
+  letter-spacing: 0.05em;
+}
+.delta-mark {
+  font-size: 10px;
+  color: var(--gold);
+  opacity: 0.7;
+}
+
+/* ── CARD BACK ── */
+.card-back {
+  background: radial-gradient(ellipse at 50% 40%, #0d0a1a 0%, #050408 60%, #030508 100%);
+}
+.card-back .back-inner {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.stain-grid {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0; left: 0;
+}
+.stain {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 1px solid rgba(200,164,74,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.stain-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 5px;
+  color: var(--parchment);
+  opacity: 0.4;
+  text-align: center;
+  line-height: 1.2;
+}
+.stain.whisper   { top:14px; left:12px;   background: rgba(114,232,122,0.05); }
+.stain.resonance { top:14px; right:12px;  background: rgba(200,164,74,0.05); }
+.stain.echo      { bottom:30px; left:12px;  background: rgba(120,168,200,0.05); }
+.stain.soul      { bottom:30px; right:12px; background: rgba(122,92,165,0.05); }
+
+/* ── FRAME card special ── */
+.card-frame { border-color: var(--gold); border-width: 2px; }
+.card-frame .card-top { background: rgba(200,164,74,0.08); }
+
+/* ── template label chips ── */
+.template-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 7px;
+  letter-spacing: 0.1em;
+  color: var(--parchment);
+  opacity: 0.45;
+  margin-top: 6px;
+}
+
+/* ── realm colour overrides ── */
+.band-fire   { background: rgba(212,90,40,0.08); border-color: rgba(212,90,40,0.25); }
+.band-water  { background: rgba(56,120,160,0.08); border-color: rgba(56,120,160,0.25); }
+.band-earth  { background: rgba(90,136,80,0.08); border-color: rgba(90,136,80,0.25); }
+.band-air    { background: rgba(120,168,200,0.08); border-color: rgba(120,168,200,0.25); }
+.band-aether { background: rgba(122,92,165,0.08); border-color: rgba(122,92,165,0.25); }
+
+/* ── open items note ── */
+.ruling-note {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 7.5px;
+  color: var(--parchment);
+  opacity: 0.35;
+  letter-spacing: 0.06em;
+  margin-top: 4px;
+}
+</style>
+</head>
+<body>
+
+<h1>SACRED ARCANA — CARD SYSTEM</h1>
+<p class="subtitle">70 × 120 mm · bronze-patina edge · golden-ratio art window · QR sigil · ∆</p>
+
+<!-- ══ SECTION: CARD TEMPLATES ══ -->
+<div class="sec">TEMPLATES — FRONT FACES</div>
+<div class="card-row">
+
+  <!-- MAJOR template -->
+  <div>
+  <div class="card">
+    <div class="card-top">
+      <div class="card-numeral">· I ·</div>
+      <div class="card-name">THE SOURCE</div>
+    </div>
+    <div class="art-window">
+      <svg viewBox="0 0 175 165" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+        <rect width="175" height="165" fill="#050408"/>
+        <text x="88" y="90" text-anchor="middle" font-size="44" opacity="0.08" fill="#C8A44A">∞</text>
+        <circle cx="88" cy="82" r="55" fill="none" stroke="#C8A44A" stroke-width="0.5" opacity="0.18"/>
+        <circle cx="88" cy="82" r="38" fill="none" stroke="#C8A44A" stroke-width="0.5" opacity="0.15"/>
+        <circle cx="88" cy="82" r="20" fill="none" stroke="#C8A44A" stroke-width="0.5" opacity="0.25"/>
+        <circle cx="88" cy="82" r="5" fill="#C8A44A" opacity="0.5"/>
+        <text x="88" y="150" text-anchor="middle" font-family="Cinzel,serif" font-size="8" fill="#C8A44A" opacity="0.3" letter-spacing="0.15em">ART WINDOW</text>
+      </svg>
+    </div>
+    <div class="trad-name">Traditional Name</div>
+    <div class="element-band">
+      <span class="realm-glyph">⟁</span>
+      <span class="element-name">MAJOR · R7 PENDING</span>
+      <span class="realm-glyph" style="font-size:8px;opacity:0.4;">—</span>
+    </div>
+    <div class="effect-line">
+      <span class="verb-icon">◉</span>
+      <span class="effect-text">verb · effect text here (one line max)</span>
+    </div>
+    <div class="card-foot">
+      <div class="qr-mark">▣ /tarot/card/001</div>
+      <div class="delta-mark">∆</div>
+    </div>
+  </div>
+  <div class="template-label">MAJOR ARCANA</div>
+  <div class="ruling-note">R7: band neutral gold until ruling</div>
+  </div>
+
+  <!-- MINOR template (Flames example) -->
+  <div>
+  <div class="card">
+    <div class="card-top">
+      <div class="card-numeral" style="color:#D45A28;">FLAMES · 7</div>
+      <div class="card-name">SEVEN OF FLAMES</div>
+    </div>
+    <div class="art-window">
+      <svg viewBox="0 0 175 165" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+        <rect width="175" height="165" fill="#080504"/>
+        <g opacity="0.18" stroke="#D45A28" stroke-width="0.5" fill="none">
+          <line x1="88" y1="10" x2="88" y2="155"/>
+          <line x1="10" y1="82" x2="165" y2="82"/>
+          <circle cx="88" cy="82" r="50"/>
+        </g>
+        <text x="88" y="90" text-anchor="middle" font-size="32" opacity="0.12" fill="#D45A28">7</text>
+        <text x="88" y="150" text-anchor="middle" font-family="Cinzel,serif" font-size="8" fill="#C8A44A" opacity="0.3" letter-spacing="0.15em">ART WINDOW</text>
+      </svg>
+    </div>
+    <div class="trad-name">Seven of Wands</div>
+    <div class="element-band band-fire">
+      <span class="realm-glyph" style="color:#D45A28;">⚒</span>
+      <span class="element-name" style="color:#D45A28;">FLAMES · FIRE</span>
+      <span class="element-name">MOTES</span>
+    </div>
+    <div class="effect-line">
+      <span class="verb-icon" style="color:#D45A28;">⚒</span>
+      <span class="effect-text">mote · gain 2 Motes when you hold the high ground</span>
+    </div>
+    <div class="card-foot">
+      <div class="qr-mark">▣ /tarot/card/f07</div>
+      <div class="delta-mark">∆</div>
+    </div>
+  </div>
+  <div class="template-label">MINOR — FLAMES (FIRE)</div>
+  </div>
+
+  <!-- MINOR Roots -->
+  <div>
+  <div class="card">
+    <div class="card-top">
+      <div class="card-numeral" style="color:#5A8850;">ROOTS · 3</div>
+      <div class="card-name">THREE OF ROOTS</div>
+    </div>
+    <div class="art-window">
+      <svg viewBox="0 0 175 165" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+        <rect width="175" height="165" fill="#050807"/>
+        <g opacity="0.15" stroke="#5A8850" stroke-width="0.5" fill="none">
+          <circle cx="88" cy="82" r="45"/><circle cx="88" cy="82" r="25"/>
+        </g>
+        <text x="88" y="90" text-anchor="middle" font-size="32" opacity="0.1" fill="#5A8850">⚒</text>
+        <text x="88" y="150" text-anchor="middle" font-family="Cinzel,serif" font-size="8" fill="#C8A44A" opacity="0.3" letter-spacing="0.15em">ART WINDOW</text>
+      </svg>
+    </div>
+    <div class="trad-name">Three of Pentacles</div>
+    <div class="element-band band-earth">
+      <span class="realm-glyph" style="color:#5A8850;">⟁</span>
+      <span class="element-name" style="color:#5A8850;">ROOTS · EARTH</span>
+      <span class="element-name">GLYPHS</span>
+    </div>
+    <div class="effect-line">
+      <span class="verb-icon" style="color:#5A8850;">◈</span>
+      <span class="effect-text">sigilify · inscribe one Glyph on a cell you occupy</span>
+    </div>
+    <div class="card-foot">
+      <div class="qr-mark">▣ /tarot/card/r03</div>
+      <div class="delta-mark">∆</div>
+    </div>
+  </div>
+  <div class="template-label">MINOR — ROOTS (EARTH)</div>
+  </div>
+
+  <!-- MINOR Currents -->
+  <div>
+  <div class="card">
+    <div class="card-top">
+      <div class="card-numeral" style="color:#3878A0;">CURRENTS · 5</div>
+      <div class="card-name">FIVE OF CURRENTS</div>
+    </div>
+    <div class="art-window">
+      <svg viewBox="0 0 175 165" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+        <rect width="175" height="165" fill="#040608"/>
+        <g opacity="0.14" stroke="#3878A0" stroke-width="0.5" fill="none">
+          <path d="M 20,82 Q 55,40 88,82 Q 121,124 155,82" />
+          <path d="M 20,60 Q 55,20 88,60 Q 121,100 155,60" />
+          <circle cx="88" cy="82" r="40"/>
+        </g>
+        <text x="88" y="150" text-anchor="middle" font-family="Cinzel,serif" font-size="8" fill="#C8A44A" opacity="0.3" letter-spacing="0.15em">ART WINDOW</text>
+      </svg>
+    </div>
+    <div class="trad-name">Five of Cups</div>
+    <div class="element-band band-water">
+      <span class="realm-glyph" style="color:#3878A0;">☽</span>
+      <span class="element-name" style="color:#3878A0;">CURRENTS · WATER</span>
+      <span class="element-name">CIPHERS</span>
+    </div>
+    <div class="effect-line">
+      <span class="verb-icon" style="color:#3878A0;">☽</span>
+      <span class="effect-text">skry · look at the top 2 cards of any Spiral</span>
+    </div>
+    <div class="card-foot">
+      <div class="qr-mark">▣ /tarot/card/c05</div>
+      <div class="delta-mark">∆</div>
+    </div>
+  </div>
+  <div class="template-label">MINOR — CURRENTS (WATER)</div>
+  </div>
+
+  <!-- MINOR Winds -->
+  <div>
+  <div class="card">
+    <div class="card-top">
+      <div class="card-numeral" style="color:#78A8C8;">WINDS · 2</div>
+      <div class="card-name">TWO OF WINDS</div>
+    </div>
+    <div class="art-window">
+      <svg viewBox="0 0 175 165" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+        <rect width="175" height="165" fill="#040507"/>
+        <g opacity="0.14" stroke="#78A8C8" stroke-width="0.5" fill="none">
+          <path d="M 30,82 C 60,30 115,30 145,82" />
+          <path d="M 30,82 C 60,134 115,134 145,82" />
+          <circle cx="88" cy="82" r="35" stroke-dasharray="4,4"/>
+        </g>
+        <text x="88" y="150" text-anchor="middle" font-family="Cinzel,serif" font-size="8" fill="#C8A44A" opacity="0.3" letter-spacing="0.15em">ART WINDOW</text>
+      </svg>
+    </div>
+    <div class="trad-name">Two of Swords</div>
+    <div class="element-band band-air">
+      <span class="realm-glyph" style="color:#78A8C8;">✧</span>
+      <span class="element-name" style="color:#78A8C8;">WINDS · AIR</span>
+      <span class="element-name">SCARS</span>
+    </div>
+    <div class="effect-line">
+      <span class="verb-icon" style="color:#78A8C8;">✧</span>
+      <span class="effect-text">valen · reduce one Scar tier by 1 for an ally</span>
+    </div>
+    <div class="card-foot">
+      <div class="qr-mark">▣ /tarot/card/w02</div>
+      <div class="delta-mark">∆</div>
+    </div>
+  </div>
+  <div class="template-label">MINOR — WINDS (AIR)</div>
+  </div>
+
+  <!-- COURT template -->
+  <div>
+  <div class="card">
+    <div class="card-top">
+      <div class="card-numeral" style="color:#D45A28;">ROOT KEEPER</div>
+      <div class="card-name">COURT · ROOTS</div>
+    </div>
+    <div class="art-window">
+      <svg viewBox="0 0 175 165" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+        <rect width="175" height="165" fill="#050807"/>
+        <rect x="55" y="20" width="65" height="90" rx="4" fill="none" stroke="#5A8850" stroke-width="0.6" opacity="0.2"/>
+        <circle cx="88" cy="65" r="22" fill="none" stroke="#5A8850" stroke-width="0.5" opacity="0.25"/>
+        <text x="88" y="150" text-anchor="middle" font-family="Cinzel,serif" font-size="8" fill="#C8A44A" opacity="0.3" letter-spacing="0.15em">ART WINDOW</text>
+      </svg>
+    </div>
+    <div class="trad-name">Queen of Pentacles</div>
+    <div class="element-band band-earth">
+      <span class="realm-glyph" style="color:#5A8850;">⟁</span>
+      <span class="element-name" style="color:#5A8850;">ROOTS · KEEPER</span>
+      <span class="element-name">COURT</span>
+    </div>
+    <div class="effect-line">
+      <span class="verb-icon">◉</span>
+      <span class="effect-text">invoke · summon Root Keeper to hold a cell for 2 Rites</span>
+    </div>
+    <div class="card-foot">
+      <div class="qr-mark">▣ /tarot/card/rk</div>
+      <div class="delta-mark">∆</div>
+    </div>
+  </div>
+  <div class="template-label">COURT CARD</div>
+  <div class="ruling-note">16 court cards — briefs pending</div>
+  </div>
+
+  <!-- FRAME card -->
+  <div>
+  <div class="card card-frame">
+    <div class="card-top" style="background:rgba(200,164,74,0.10);">
+      <div class="card-numeral">∞</div>
+      <div class="card-name">METATRON'S LAW</div>
+    </div>
+    <div class="art-window">
+      <svg viewBox="0 0 175 165" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+        <rect width="175" height="165" fill="#06040a"/>
+        <g transform="translate(88,82)" stroke="#C8A44A" stroke-width="0.8" fill="none">
+          <rect x="-36" y="-36" width="72" height="72" opacity="0.75"/>
+          <rect x="-36" y="-36" width="72" height="72" opacity="0.75" transform="rotate(45)"/>
+          <circle r="50" stroke-width="0.4" opacity="0.25"/>
+          <circle r="38" stroke-width="0.4" opacity="0.18"/>
+          <line x1="-52" y1="0" x2="52" y2="0" stroke-width="0.4" opacity="0.4"/>
+          <line x1="0" y1="-52" x2="0" y2="52" stroke-width="0.4" opacity="0.4"/>
+          <line x1="-37" y1="-37" x2="37" y2="37" stroke-width="0.4" opacity="0.3"/>
+          <line x1="37" y1="-37" x2="-37" y2="37" stroke-width="0.4" opacity="0.3"/>
+          <circle r="5" fill="#C8A44A" opacity="0.9"/>
+          <circle r="14" stroke-width="0.6" opacity="0.5"/>
+        </g>
+        <radialGradient id="frameGlow" cx="50%" cy="50%" r="50%">
+          <stop offset="0%" stop-color="#C8A44A" stop-opacity="0.12"/>
+          <stop offset="100%" stop-color="#C8A44A" stop-opacity="0"/>
+        </radialGradient>
+        <rect width="175" height="165" fill="url(#frameGlow)"/>
+      </svg>
+    </div>
+    <div class="trad-name" style="color:var(--gold);opacity:0.85;">The Frame — always face-up</div>
+    <div class="element-band" style="background:rgba(200,164,74,0.09);border-color:rgba(200,164,74,0.3);">
+      <span class="realm-glyph">∆</span>
+      <span class="element-name" style="color:var(--gold);">THE LAW · DECK-001</span>
+      <span class="realm-glyph">∆</span>
+    </div>
+    <div class="effect-line">
+      <span class="verb-icon">∆</span>
+      <span class="effect-text">The Frame is never shuffled or drawn. It governs all.</span>
+    </div>
+    <div class="card-foot" style="border-color:rgba(200,164,74,0.25);">
+      <div class="qr-mark" style="opacity:0.5;">▣ /tarot/card/frame</div>
+      <div class="delta-mark" style="opacity:0.9;">∆</div>
+    </div>
+  </div>
+  <div class="template-label">THE FRAME (METATRON'S LAW)</div>
+  </div>
+
+  <!-- TRIAL template -->
+  <div>
+  <div class="card" style="border-color:#7A5CA5;">
+    <div class="card-top" style="background:rgba(122,92,165,0.08);">
+      <div class="card-numeral" style="color:#7A5CA5;">TRIAL</div>
+      <div class="card-name">THE VEIL CROSSING</div>
+    </div>
+    <div class="art-window" style="background:#050408;">
+      <svg viewBox="0 0 175 165" xmlns="http://www.w3.org/2000/svg">
+        <rect width="175" height="165" fill="#050408"/>
+        <path d="M 88,15 L 88,150" stroke="#7A5CA5" stroke-width="0.5" opacity="0.3"/>
+        <circle cx="88" cy="82" r="45" fill="none" stroke="#7A5CA5" stroke-width="0.5" opacity="0.2" stroke-dasharray="6,3"/>
+        <text x="88" y="90" text-anchor="middle" font-family="serif" font-size="28" fill="#7A5CA5" opacity="0.15">◇</text>
+      </svg>
+    </div>
+    <div class="trad-name" style="color:#7A5CA5;opacity:0.8;">Trial Condition</div>
+    <div class="element-band band-aether">
+      <span class="realm-glyph" style="color:#7A5CA5;">◇</span>
+      <span class="element-name" style="color:#7A5CA5;">TRIAL CARD</span>
+      <span class="element-name">AETHER</span>
+    </div>
+    <div class="effect-line">
+      <span class="verb-icon" style="color:#7A5CA5;">◇</span>
+      <span class="effect-text">pulse · trigger condition + consequence on all players</span>
+    </div>
+    <div class="card-foot">
+      <div class="qr-mark">▣ /tarot/card/t01</div>
+      <div class="delta-mark">∆</div>
+    </div>
+  </div>
+  <div class="template-label">TRIAL CARD</div>
+  </div>
+
+  <!-- QUEST template -->
+  <div>
+  <div class="card" style="border-color:#72E87A;">
+    <div class="card-top" style="background:rgba(114,232,122,0.06);">
+      <div class="card-numeral" style="color:#72E87A;">QUEST</div>
+      <div class="card-name">THE DEEP GROVE WALK</div>
+    </div>
+    <div class="art-window" style="background:#040807;">
+      <svg viewBox="0 0 175 165" xmlns="http://www.w3.org/2000/svg">
+        <rect width="175" height="165" fill="#040807"/>
+        <path d="M 88,10 C 60,40 40,60 40,90 C 40,125 60,150 88,155 C 116,150 136,125 136,90 C 136,60 116,40 88,10 Z" fill="none" stroke="#72E87A" stroke-width="0.5" opacity="0.18"/>
+        <circle cx="88" cy="90" r="18" fill="none" stroke="#72E87A" stroke-width="0.5" opacity="0.3"/>
+      </svg>
+    </div>
+    <div class="trad-name" style="color:#72E87A;opacity:0.75;">Quest Objective</div>
+    <div class="element-band" style="background:rgba(114,232,122,0.06);border-color:rgba(114,232,122,0.2);">
+      <span class="realm-glyph" style="color:#72E87A;">⬡</span>
+      <span class="element-name" style="color:#72E87A;">QUEST CARD</span>
+      <span class="element-name">GROVE</span>
+    </div>
+    <div class="effect-line">
+      <span class="verb-icon" style="color:#72E87A;">⬡</span>
+      <span class="effect-text">invoke · complete the objective to earn a Seed reward</span>
+    </div>
+    <div class="card-foot">
+      <div class="qr-mark">▣ /tarot/card/q01</div>
+      <div class="delta-mark">∆</div>
+    </div>
+  </div>
+  <div class="template-label">QUEST CARD</div>
+  </div>
+
+  <!-- ECHO template -->
+  <div>
+  <div class="card" style="border-color:#78A8C8;opacity:0.9;">
+    <div class="card-top" style="background:rgba(120,168,200,0.07);">
+      <div class="card-numeral" style="color:#78A8C8;">ECHO</div>
+      <div class="card-name">ECHO OF THE STARPATH</div>
+    </div>
+    <div class="art-window" style="background:#040507;">
+      <svg viewBox="0 0 175 165" xmlns="http://www.w3.org/2000/svg">
+        <rect width="175" height="165" fill="#040507"/>
+        <g opacity="0.15" stroke="#78A8C8" stroke-width="0.5" fill="none">
+          <ellipse cx="88" cy="82" rx="55" ry="40"/>
+          <ellipse cx="88" cy="82" rx="35" ry="25"/>
+          <ellipse cx="88" cy="82" rx="15" ry="10"/>
+        </g>
+        <circle cx="88" cy="82" r="4" fill="#78A8C8" opacity="0.4"/>
+      </svg>
+    </div>
+    <div class="trad-name" style="color:#78A8C8;opacity:0.75;">Memory Fragment</div>
+    <div class="element-band band-air">
+      <span class="realm-glyph" style="color:#78A8C8;">∞</span>
+      <span class="element-name" style="color:#78A8C8;">ECHO CARD</span>
+      <span class="element-name">AIR</span>
+    </div>
+    <div class="effect-line">
+      <span class="verb-icon" style="color:#78A8C8;">∞</span>
+      <span class="effect-text">skry · replay one card effect from this Rite</span>
+    </div>
+    <div class="card-foot">
+      <div class="qr-mark">▣ /tarot/card/e01</div>
+      <div class="delta-mark">∆</div>
+    </div>
+  </div>
+  <div class="template-label">ECHO CARD</div>
+  </div>
+
+  <!-- SEED template -->
+  <div>
+  <div class="card" style="border-color:#5A8850;">
+    <div class="card-top" style="background:rgba(90,136,80,0.07);">
+      <div class="card-numeral" style="color:#5A8850;">SEED</div>
+      <div class="card-name">SEED OF EMBER</div>
+    </div>
+    <div class="art-window" style="background:#050604;">
+      <svg viewBox="0 0 175 165" xmlns="http://www.w3.org/2000/svg">
+        <rect width="175" height="165" fill="#050604"/>
+        <ellipse cx="88" cy="100" rx="30" ry="45" fill="none" stroke="#5A8850" stroke-width="0.6" opacity="0.2"/>
+        <path d="M 88,55 L 88,100" stroke="#5A8850" stroke-width="0.6" opacity="0.3"/>
+        <path d="M 60,78 C 70,60 88,55 88,55 C 88,55 106,60 116,78" fill="none" stroke="#5A8850" stroke-width="0.5" opacity="0.25"/>
+      </svg>
+    </div>
+    <div class="trad-name" style="color:#5A8850;opacity:0.75;">Grove Reward</div>
+    <div class="element-band band-earth">
+      <span class="realm-glyph" style="color:#5A8850;">○•</span>
+      <span class="element-name" style="color:#5A8850;">SEED CARD</span>
+      <span class="element-name">EARTH</span>
+    </div>
+    <div class="effect-line">
+      <span class="verb-icon" style="color:#5A8850;">○</span>
+      <span class="effect-text">mote · plant to yield 3 Motes over 3 Rites</span>
+    </div>
+    <div class="card-foot">
+      <div class="qr-mark">▣ /tarot/card/s01</div>
+      <div class="delta-mark">∆</div>
+    </div>
+  </div>
+  <div class="template-label">SEED CARD (GROVE)</div>
+  </div>
+
+  <!-- CLASS template -->
+  <div>
+  <div class="card" style="border-color:#C8A44A;">
+    <div class="card-top" style="background:rgba(200,164,74,0.07);">
+      <div class="card-numeral">CLASS</div>
+      <div class="card-name">THE EMBER WALKER</div>
+    </div>
+    <div class="art-window" style="background:#060504;">
+      <svg viewBox="0 0 175 165" xmlns="http://www.w3.org/2000/svg">
+        <rect width="175" height="165" fill="#060504"/>
+        <path d="M 88,20 L 105,70 L 158,70 L 115,100 L 130,150 L 88,120 L 46,150 L 61,100 L 18,70 L 71,70 Z" fill="none" stroke="#C8A44A" stroke-width="0.5" opacity="0.18"/>
+        <circle cx="88" cy="90" r="18" fill="none" stroke="#C8A44A" stroke-width="0.5" opacity="0.3"/>
+        <circle cx="88" cy="90" r="4" fill="#C8A44A" opacity="0.5"/>
+      </svg>
+    </div>
+    <div class="trad-name">Class / Origin</div>
+    <div class="element-band" style="background:rgba(200,164,74,0.06);border-color:rgba(200,164,74,0.25);">
+      <span class="realm-glyph">✦</span>
+      <span class="element-name">CLASS CARD</span>
+      <span class="element-name">ORIGIN</span>
+    </div>
+    <div class="effect-line">
+      <span class="verb-icon">✦</span>
+      <span class="effect-text">invoke · class ability active each Seal until replaced</span>
+    </div>
+    <div class="card-foot">
+      <div class="qr-mark">▣ /tarot/card/class/01</div>
+      <div class="delta-mark">∆</div>
+    </div>
+  </div>
+  <div class="template-label">CLASS CARD</div>
+  </div>
+
+  <!-- CARD BACK -->
+  <div>
+  <div class="card card-back">
+    <div class="stain-grid">
+      <div class="stain whisper"><div class="stain-label">WHISPER</div></div>
+      <div class="stain resonance"><div class="stain-label">RESO&shy;NANCE</div></div>
+      <div class="stain echo"><div class="stain-label">ECHO STAIN</div></div>
+      <div class="stain soul"><div class="stain-label">SOUL MARK</div></div>
+    </div>
+    <div class="back-inner">
+      <svg viewBox="0 0 100 140" xmlns="http://www.w3.org/2000/svg" style="width:90px;height:126px;">
+        <!-- spiralling roots and stars sigil -->
+        <g stroke="#C8A44A" stroke-width="0.6" fill="none" opacity="0.55">
+          <circle cx="50" cy="70" r="38"/>
+          <circle cx="50" cy="70" r="26"/>
+          <circle cx="50" cy="70" r="14"/>
+          <!-- star (8-point) -->
+          <g transform="translate(50,70)">
+            <line x1="0" y1="-38" x2="0" y2="38" stroke-width="0.4" opacity="0.4"/>
+            <line x1="-38" y1="0" x2="38" y2="0" stroke-width="0.4" opacity="0.4"/>
+            <line x1="-27" y1="-27" x2="27" y2="27" stroke-width="0.4" opacity="0.4"/>
+            <line x1="27" y1="-27" x2="-27" y2="27" stroke-width="0.4" opacity="0.4"/>
+            <!-- root spirals -->
+            <path d="M 0,-26 C 8,-18 18,-8 18,0 C 18,10 10,18 0,18 C -10,18 -18,10 -18,0 C -18,-10 -10,-18 0,-26" stroke-width="0.5" opacity="0.5"/>
+            <!-- star points -->
+            <polygon points="0,-12 3,-4 12,-4 5,2 8,11 0,6 -8,11 -5,2 -12,-4 -3,-4" stroke-width="0.5" opacity="0.65"/>
+          </g>
+          <!-- outer ring glyphs -->
+          <text x="50" y="18" text-anchor="middle" font-family="serif" font-size="8" fill="#C8A44A" opacity="0.45">∆</text>
+          <text x="50" y="128" text-anchor="middle" font-family="serif" font-size="8" fill="#C8A44A" opacity="0.45">∆</text>
+        </g>
+      </svg>
+      <div style="font-family:'JetBrains Mono',monospace;font-size:6.5px;letter-spacing:0.15em;color:#C8A44A;opacity:0.4;text-align:center;margin-top:4px;">
+        S∆CR3D SP∆C3<br/>∆
+      </div>
+    </div>
+    <div class="card-foot" style="position:absolute;bottom:0;width:100%;background:transparent;border-top:1px solid rgba(200,164,74,0.1);">
+      <div class="qr-mark" style="opacity:0.2;">▣ sacred.space</div>
+      <div class="delta-mark" style="opacity:0.6;">∆</div>
+    </div>
+  </div>
+  <div class="template-label">CARD BACK (UNIVERSAL)</div>
+  </div>
+
+</div>
+
+<!-- ══ SECTION: SEVEN SAMPLE CARDS ══ -->
+<div class="sec">SEVEN SAMPLE CARDS</div>
+<div class="card-row">
+
+  <!-- 0: THE SOURCE -->
+  <div>
+  <div class="card">
+    <div class="card-top">
+      <div class="card-numeral">0</div>
+      <div class="card-name">THE SOURCE</div>
+    </div>
+    <div class="art-window">
+      <svg viewBox="0 0 175 165" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+        <defs>
+          <radialGradient id="srcGlow" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#C8A44A" stop-opacity="0.25"/>
+            <stop offset="100%" stop-color="#030508" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+        <rect width="175" height="165" fill="#030406"/>
+        <circle cx="88" cy="82" r="80" fill="url(#srcGlow)"/>
+        <!-- void point: concentric rings expanding from centre -->
+        <g fill="none" stroke="#C8A44A" opacity="0.12">
+          <circle cx="88" cy="82" r="65"/><circle cx="88" cy="82" r="52"/>
+          <circle cx="88" cy="82" r="40"/><circle cx="88" cy="82" r="30"/>
+          <circle cx="88" cy="82" r="20"/>
+        </g>
+        <!-- central void -->
+        <circle cx="88" cy="82" r="8" fill="#C8A44A" opacity="0.18"/>
+        <circle cx="88" cy="82" r="4" fill="#C8A44A" opacity="0.55"/>
+        <circle cx="88" cy="82" r="1.5" fill="#EEF6EF" opacity="0.9"/>
+        <!-- horizon line -->
+        <line x1="20" y1="82" x2="156" y2="82" stroke="#C8A44A" stroke-width="0.4" opacity="0.2"/>
+        <!-- stars (scattered points) -->
+        <g fill="#EEF6EF" opacity="0.45">
+          <circle cx="30" cy="25" r="1"/><circle cx="55" cy="40" r="0.8"/>
+          <circle cx="130" cy="30" r="1"/><circle cx="150" cy="55" r="0.8"/>
+          <circle cx="25" cy="120" r="0.8"/><circle cx="145" cy="130" r="1"/>
+          <circle cx="65" cy="20" r="0.6"/><circle cx="110" cy="145" r="0.8"/>
+          <circle cx="158" cy="100" r="0.6"/><circle cx="15" cy="65" r="0.8"/>
+        </g>
+      </svg>
+    </div>
+    <div class="trad-name">The Fool</div>
+    <div class="element-band">
+      <span class="realm-glyph">○•</span>
+      <span class="element-name">MAJOR · AETHER</span>
+      <span class="realm-glyph" style="font-size:8px;opacity:0.4;">R7</span>
+    </div>
+    <div class="effect-line">
+      <span class="verb-icon">◉</span>
+      <span class="effect-text">pulse · reset your Resonance to 0 and draw 3</span>
+    </div>
+    <div class="card-foot">
+      <div class="qr-mark">▣ /tarot/card/000</div>
+      <div class="delta-mark">∆</div>
+    </div>
+  </div>
+  <div class="template-label">0 · THE SOURCE</div>
+  </div>
+
+  <!-- VIII: THE ROOTWALKER -->
+  <div>
+  <div class="card">
+    <div class="card-top">
+      <div class="card-numeral">VIII</div>
+      <div class="card-name">THE ROOTWALKER</div>
+    </div>
+    <div class="art-window">
+      <svg viewBox="0 0 175 165" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+        <defs>
+          <radialGradient id="rootGlow" cx="50%" cy="60%" r="50%">
+            <stop offset="0%" stop-color="#5A8850" stop-opacity="0.2"/>
+            <stop offset="100%" stop-color="#030508" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+        <rect width="175" height="165" fill="#040604"/>
+        <rect width="175" height="165" fill="url(#rootGlow)"/>
+        <!-- root system spreading from below -->
+        <g stroke="#5A8850" stroke-width="0.6" fill="none" opacity="0.35">
+          <path d="M 88,165 L 88,110 L 60,80 L 40,55"/>
+          <path d="M 88,165 L 88,110 L 115,75 L 138,50"/>
+          <path d="M 88,165 L 88,110 L 88,70"/>
+          <path d="M 88,110 L 55,100 L 30,95"/>
+          <path d="M 88,110 L 120,102 L 148,98"/>
+          <path d="M 60,80 L 35,78 L 15,70"/>
+          <path d="M 115,75 L 142,74 L 162,68"/>
+        </g>
+        <!-- human silhouette standing over roots -->
+        <g stroke="#5A8850" stroke-width="0.7" fill="none" opacity="0.6">
+          <circle cx="88" cy="35" r="12"/>
+          <line x1="88" y1="47" x2="88" y2="90"/>
+          <line x1="65" y1="62" x2="88" y2="55"/>
+          <line x1="111" y1="62" x2="88" y2="55"/>
+          <line x1="72" y1="115" x2="80" y2="90"/>
+          <line x1="104" y1="115" x2="96" y2="90"/>
+        </g>
+        <!-- earth glow at feet -->
+        <ellipse cx="88" cy="115" rx="30" ry="8" fill="#5A8850" opacity="0.08"/>
+      </svg>
+    </div>
+    <div class="trad-name">Strength</div>
+    <div class="element-band band-earth">
+      <span class="realm-glyph" style="color:#5A8850;">⟁</span>
+      <span class="element-name" style="color:#5A8850;">MAJOR · EARTH</span>
+      <span class="realm-glyph" style="font-size:8px;opacity:0.4;">R7</span>
+    </div>
+    <div class="effect-line">
+      <span class="verb-icon" style="color:#5A8850;">⟁</span>
+      <span class="effect-text">invoke · ignore one Scar penalty this Rite</span>
+    </div>
+    <div class="card-foot">
+      <div class="qr-mark">▣ /tarot/card/008</div>
+      <div class="delta-mark">∆</div>
+    </div>
+  </div>
+  <div class="template-label">VIII · THE ROOTWALKER</div>
+  <div class="ruling-note">ruled 2026-09-18</div>
+  </div>
+
+  <!-- XIII: THE PHOENIX SEED -->
+  <div>
+  <div class="card">
+    <div class="card-top">
+      <div class="card-numeral">XIII</div>
+      <div class="card-name">THE PHOENIX SEED</div>
+    </div>
+    <div class="art-window">
+      <svg viewBox="0 0 175 165" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+        <defs>
+          <radialGradient id="ashGlow" cx="50%" cy="70%" r="55%">
+            <stop offset="0%" stop-color="#D45A28" stop-opacity="0.22"/>
+            <stop offset="100%" stop-color="#030508" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+        <rect width="175" height="165" fill="#060403"/>
+        <rect width="175" height="165" fill="url(#ashGlow)"/>
+        <!-- ash field at bottom -->
+        <rect x="0" y="120" width="175" height="45" fill="#0a0604" opacity="0.6"/>
+        <g stroke="#C8C4BB" stroke-width="0.4" opacity="0.08">
+          <line x1="20" y1="130" x2="50" y2="125"/><line x1="80" y1="132" x2="110" y2="128"/>
+          <line x1="130" y1="125" x2="155" y2="130"/>
+        </g>
+        <!-- seed/egg rising from ash with fire lines -->
+        <ellipse cx="88" cy="95" rx="18" ry="22" fill="none" stroke="#D45A28" stroke-width="0.7" opacity="0.55"/>
+        <ellipse cx="88" cy="95" rx="10" ry="12" fill="#D45A28" opacity="0.08"/>
+        <!-- flame tendrils rising -->
+        <g stroke="#D45A28" stroke-width="0.5" fill="none" opacity="0.4">
+          <path d="M 80,73 C 75,55 82,35 88,20"/>
+          <path d="M 96,73 C 101,55 94,35 88,20"/>
+          <path d="M 88,73 C 88,55 88,35 88,20"/>
+          <path d="M 75,80 C 65,62 70,42 72,25"/>
+          <path d="M 101,80 C 111,62 106,42 104,25"/>
+        </g>
+        <!-- gold inner spark -->
+        <circle cx="88" cy="95" r="4" fill="#C8A44A" opacity="0.6"/>
+      </svg>
+    </div>
+    <div class="trad-name">Death</div>
+    <div class="element-band band-fire">
+      <span class="realm-glyph" style="color:#D45A28;">⚒</span>
+      <span class="element-name" style="color:#D45A28;">MAJOR · FIRE</span>
+      <span class="realm-glyph" style="font-size:8px;opacity:0.4;">R7</span>
+    </div>
+    <div class="effect-line">
+      <span class="verb-icon" style="color:#D45A28;">⚒</span>
+      <span class="effect-text">pulse · discard hand, redraw 5, gain 1 Scar</span>
+    </div>
+    <div class="card-foot">
+      <div class="qr-mark">▣ /tarot/card/013</div>
+      <div class="delta-mark">∆</div>
+    </div>
+  </div>
+  <div class="template-label">XIII · THE PHOENIX SEED</div>
+  </div>
+
+  <!-- XVI: THE ECLIPSE -->
+  <div>
+  <div class="card">
+    <div class="card-top">
+      <div class="card-numeral">XVI</div>
+      <div class="card-name">THE ECLIPSE</div>
+    </div>
+    <div class="art-window">
+      <svg viewBox="0 0 175 165" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+        <defs>
+          <radialGradient id="eclipseHalo" cx="50%" cy="45%" r="45%">
+            <stop offset="60%" stop-color="#030508" stop-opacity="1"/>
+            <stop offset="80%" stop-color="#C8A44A" stop-opacity="0.35"/>
+            <stop offset="100%" stop-color="#030508" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+        <rect width="175" height="165" fill="#030406"/>
+        <!-- corona halo -->
+        <circle cx="88" cy="72" r="50" fill="url(#eclipseHalo)"/>
+        <!-- eclipse disc -->
+        <circle cx="88" cy="72" r="34" fill="#030406"/>
+        <!-- corona rays -->
+        <g stroke="#C8A44A" stroke-width="0.5" opacity="0.28">
+          <line x1="88" y1="20" x2="88" y2="10"/><line x1="88" y1="124" x2="88" y2="134"/>
+          <line x1="40" y1="72" x2="30" y2="72"/><line x1="136" y1="72" x2="146" y2="72"/>
+          <line x1="52" y1="36" x2="45" y2="29"/><line x1="124" y1="36" x2="131" y2="29"/>
+          <line x1="52" y1="108" x2="45" y2="115"/><line x1="124" y1="108" x2="131" y2="115"/>
+        </g>
+        <!-- falling structures -->
+        <g stroke="#C8A44A" stroke-width="0.5" opacity="0.25">
+          <line x1="45" y1="120" x2="35" y2="155"/><line x1="55" y1="115" x2="50" y2="155"/>
+          <line x1="130" y1="120" x2="140" y2="155"/><line x1="120" y1="115" x2="125" y2="155"/>
+        </g>
+        <!-- disc inner glow ring -->
+        <circle cx="88" cy="72" r="34" fill="none" stroke="#C8A44A" stroke-width="1" opacity="0.45"/>
+      </svg>
+    </div>
+    <div class="trad-name">The Tower</div>
+    <div class="element-band">
+      <span class="realm-glyph">Ϟ</span>
+      <span class="element-name">MAJOR · AETHER</span>
+      <span class="realm-glyph" style="font-size:8px;opacity:0.4;">R7</span>
+    </div>
+    <div class="effect-line">
+      <span class="verb-icon">Ϟ</span>
+      <span class="effect-text">pulse · clear all Anomaly tiles from the board</span>
+    </div>
+    <div class="card-foot">
+      <div class="qr-mark">▣ /tarot/card/016</div>
+      <div class="delta-mark">∆</div>
+    </div>
+  </div>
+  <div class="template-label">XVI · THE ECLIPSE</div>
+  </div>
+
+  <!-- XVII: THE STARPATH -->
+  <div>
+  <div class="card">
+    <div class="card-top">
+      <div class="card-numeral">XVII</div>
+      <div class="card-name">THE STARPATH</div>
+    </div>
+    <div class="art-window">
+      <svg viewBox="0 0 175 165" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+        <defs>
+          <radialGradient id="starGlow" cx="50%" cy="30%" r="45%">
+            <stop offset="0%" stop-color="#78A8C8" stop-opacity="0.28"/>
+            <stop offset="100%" stop-color="#030508" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+        <rect width="175" height="165" fill="#030407"/>
+        <rect width="175" height="165" fill="url(#starGlow)"/>
+        <!-- star field -->
+        <g fill="#EEF6EF">
+          <circle cx="88" cy="28" r="3" opacity="0.9"/>
+          <circle cx="88" cy="28" r="7" fill="none" stroke="#78A8C8" stroke-width="0.5" opacity="0.4"/>
+          <circle cx="60" cy="48" r="1.5" opacity="0.65"/><circle cx="116" cy="42" r="1.2" opacity="0.55"/>
+          <circle cx="35" cy="35" r="1" opacity="0.45"/><circle cx="140" cy="58" r="1" opacity="0.45"/>
+          <circle cx="75" cy="65" r="0.8" opacity="0.35"/><circle cx="105" cy="70" r="0.8" opacity="0.35"/>
+          <circle cx="25" cy="75" r="1" opacity="0.4"/><circle cx="155" cy="80" r="0.8" opacity="0.35"/>
+        </g>
+        <!-- starpath trail descending -->
+        <path d="M 88,35 C 88,60 60,80 45,100 C 30,120 35,145 35,155" stroke="#78A8C8" stroke-width="0.6" fill="none" opacity="0.4"/>
+        <path d="M 88,35 C 88,60 116,80 131,100 C 146,120 141,145 141,155" stroke="#78A8C8" stroke-width="0.4" fill="none" opacity="0.25"/>
+        <!-- water pool at base (star reflected) -->
+        <ellipse cx="88" cy="148" rx="40" ry="10" fill="none" stroke="#78A8C8" stroke-width="0.4" opacity="0.2"/>
+        <ellipse cx="88" cy="148" rx="3" ry="2" fill="#78A8C8" opacity="0.3"/>
+        <!-- figure pouring -->
+        <g stroke="#EEF6EF" stroke-width="0.5" fill="none" opacity="0.3">
+          <circle cx="88" cy="95" r="7"/>
+          <line x1="88" y1="102" x2="88" y2="120"/>
+          <line x1="75" y1="108" x2="88" y2="105"/>
+          <line x1="101" y1="108" x2="88" y2="105"/>
+        </g>
+      </svg>
+    </div>
+    <div class="trad-name">The Star</div>
+    <div class="element-band band-air">
+      <span class="realm-glyph" style="color:#78A8C8;">✧</span>
+      <span class="element-name" style="color:#78A8C8;">MAJOR · AIR</span>
+      <span class="realm-glyph" style="font-size:8px;opacity:0.4;">R7</span>
+    </div>
+    <div class="effect-line">
+      <span class="verb-icon" style="color:#78A8C8;">✧</span>
+      <span class="effect-text">skry · reveal the next 3 cards in your Spiral</span>
+    </div>
+    <div class="card-foot">
+      <div class="qr-mark">▣ /tarot/card/017</div>
+      <div class="delta-mark">∆</div>
+    </div>
+  </div>
+  <div class="template-label">XVII · THE STARPATH</div>
+  </div>
+
+  <!-- XXI: THE RETURN -->
+  <div>
+  <div class="card">
+    <div class="card-top">
+      <div class="card-numeral">XXI</div>
+      <div class="card-name">THE RETURN</div>
+    </div>
+    <div class="art-window">
+      <svg viewBox="0 0 175 165" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+        <defs>
+          <radialGradient id="retGlow" cx="50%" cy="50%" r="55%">
+            <stop offset="0%" stop-color="#72E87A" stop-opacity="0.15"/>
+            <stop offset="70%" stop-color="#C8A44A" stop-opacity="0.08"/>
+            <stop offset="100%" stop-color="#030508" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+        <rect width="175" height="165" fill="#040508"/>
+        <rect width="175" height="165" fill="url(#retGlow)"/>
+        <!-- wreath of completion (golden oval ring) -->
+        <ellipse cx="88" cy="82" rx="55" ry="68" fill="none" stroke="#5A8850" stroke-width="1.2" opacity="0.35"/>
+        <ellipse cx="88" cy="82" rx="50" ry="63" fill="none" stroke="#72E87A" stroke-width="0.4" opacity="0.22"/>
+        <!-- inner ring: all elements -->
+        <g fill="none" opacity="0.3">
+          <circle cx="88" cy="22" r="6" stroke="#D45A28" stroke-width="0.6"/>
+          <circle cx="88" cy="142" r="6" stroke="#3878A0" stroke-width="0.6"/>
+          <circle cx="35" cy="82" r="6" stroke="#78A8C8" stroke-width="0.6"/>
+          <circle cx="141" cy="82" r="6" stroke="#5A8850" stroke-width="0.6"/>
+        </g>
+        <!-- central dancer figure -->
+        <g stroke="#C8A44A" stroke-width="0.6" fill="none" opacity="0.6">
+          <circle cx="88" cy="62" r="10"/>
+          <path d="M 88,72 C 85,82 80,90 76,100 C 72,110 74,118 78,124"/>
+          <path d="M 88,72 C 91,82 96,90 100,100 C 104,110 102,118 98,124"/>
+          <line x1="70" y1="80" x2="88" y2="76"/>
+          <line x1="106" y1="80" x2="88" y2="76"/>
+        </g>
+        <!-- gold centre glow -->
+        <circle cx="88" cy="82" r="8" fill="#C8A44A" opacity="0.06"/>
+      </svg>
+    </div>
+    <div class="trad-name">The World</div>
+    <div class="element-band" style="background:linear-gradient(90deg,rgba(212,90,40,0.06),rgba(90,136,80,0.06),rgba(56,120,160,0.06),rgba(120,168,200,0.06));border-color:rgba(200,164,74,0.2);">
+      <span class="realm-glyph">⊕</span>
+      <span class="element-name">MAJOR · ALL REALMS</span>
+      <span class="realm-glyph" style="font-size:8px;opacity:0.4;">R7</span>
+    </div>
+    <div class="effect-line">
+      <span class="verb-icon">⊕</span>
+      <span class="effect-text">valen · complete the Seal and trigger Ascendant rite</span>
+    </div>
+    <div class="card-foot">
+      <div class="qr-mark">▣ /tarot/card/021</div>
+      <div class="delta-mark">∆</div>
+    </div>
+  </div>
+  <div class="template-label">XXI · THE RETURN</div>
+  </div>
+
+  <!-- THE FRAME (sample) -->
+  <div>
+  <div class="card card-frame" style="border-width:2px;">
+    <div class="card-top" style="background:rgba(200,164,74,0.12);">
+      <div class="card-numeral" style="font-size:14px;">∞</div>
+      <div class="card-name">THE FRAME</div>
+    </div>
+    <div class="art-window" style="background:#06040a;">
+      <svg viewBox="0 0 175 165" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+        <defs>
+          <radialGradient id="frameGlow2" cx="50%" cy="50%" r="55%">
+            <stop offset="0%" stop-color="#C8A44A" stop-opacity="0.22"/>
+            <stop offset="100%" stop-color="#030508" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+        <rect width="175" height="165" fill="#06040a"/>
+        <rect width="175" height="165" fill="url(#frameGlow2)"/>
+        <!-- Metatron's Cube / octagram centrepiece -->
+        <g transform="translate(88,82)" stroke="#C8A44A" stroke-width="0.8" fill="none">
+          <circle r="55" opacity="0.12"/><circle r="44" opacity="0.15"/>
+          <circle r="32" opacity="0.2"/><circle r="20" opacity="0.3"/>
+          <rect x="-32" y="-32" width="64" height="64" opacity="0.65"/>
+          <rect x="-32" y="-32" width="64" height="64" opacity="0.65" transform="rotate(45)"/>
+          <line x1="-50" y1="0" x2="50" y2="0" stroke-width="0.4" opacity="0.4"/>
+          <line x1="0" y1="-50" x2="0" y2="50" stroke-width="0.4" opacity="0.4"/>
+          <line x1="-36" y1="-36" x2="36" y2="36" stroke-width="0.4" opacity="0.35"/>
+          <line x1="36" y1="-36" x2="-36" y2="36" stroke-width="0.4" opacity="0.35"/>
+          <circle r="8" fill="#C8A44A" opacity="0.55"/>
+          <circle r="3" fill="#EEF6EF" opacity="0.9"/>
+          <!-- 8 outer nodes -->
+          <g fill="#C8A44A" opacity="0.5">
+            <circle cx="0" cy="-44" r="2.5"/><circle cx="0" cy="44" r="2.5"/>
+            <circle cx="-44" cy="0" r="2.5"/><circle cx="44" cy="0" r="2.5"/>
+            <circle cx="-31" cy="-31" r="2"/><circle cx="31" cy="-31" r="2"/>
+            <circle cx="-31" cy="31" r="2"/><circle cx="31" cy="31" r="2"/>
+          </g>
+        </g>
+      </svg>
+    </div>
+    <div class="trad-name" style="color:var(--gold);opacity:0.9;font-size:11px;">Metatron's Law</div>
+    <div class="element-band" style="background:rgba(200,164,74,0.1);border-color:rgba(200,164,74,0.35);">
+      <span class="realm-glyph" style="font-size:14px;">∆</span>
+      <span class="element-name" style="color:var(--gold);font-size:7px;">THE FRAME — DECK-001</span>
+      <span class="realm-glyph" style="font-size:14px;">∆</span>
+    </div>
+    <div class="effect-line">
+      <span class="verb-icon" style="font-size:11px;">∆</span>
+      <span class="effect-text" style="font-style:italic;font-size:9px;">Always face-up. Centre of the Oracle Mat. Never shuffled or drawn.</span>
+    </div>
+    <div class="card-foot" style="border-color:rgba(200,164,74,0.3);">
+      <div class="qr-mark" style="opacity:0.6;">▣ /tarot/card/frame</div>
+      <div class="delta-mark" style="opacity:1;font-size:13px;">∆</div>
+    </div>
+  </div>
+  <div class="template-label">THE FRAME (METATRON'S LAW)</div>
+  </div>
+
+</div>
+
+<div style="margin-top:28px;font-family:'JetBrains Mono',monospace;font-size:7.5px;color:#C8C4BB;opacity:0.3;letter-spacing:0.08em;text-align:center;line-height:2;">
+  OPEN: R7 Major element band (neutral gold until ruling) · R14 gematria sigils (placeholder) · R10 Mote variants (one generic) · 16 Court card art briefs pending<br>
+  CANON: card size 70×120mm · bronze patina edge · golden-ratio art window · Cinzel caps · Cormorant Garamond italic · QR + ∆ required on all print · DECK-001
+</div>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+name,color,description
+canon,5319e7,Canon or canon review related
+governance,1d76db,Governance and policy work
+enhancement,a2eeef,New capability or improvement
+bug,d73a4a,Something is broken
+docs,0075ca,Documentation work
+experiment,fef2c0,Experimental branch or idea
+automation,0e8a16,Scripts workflows and automation
+agent,c5def5,Agent-role or prompt system work
+priority-high,b60205,High priority
+help-wanted,008672,Useful place for collaboration

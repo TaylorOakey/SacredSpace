@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<!-- @dsCard group="UI Kit — Web" name="Luminous DNA Demo" subtitle="Ethereal Tech-Fantasy DNA — Neural Forest, Council Grove, Memory Mote decay" viewport="1280x900" -->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>SacredSpace — Luminous DNA Demo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=IM+Fell+English:ital@0;1&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+
+:root {
+  --void: #05060A;
+  --void-deep: #0A0F1C;
+  --grove: #0D1B14;
+  --cyan: #00E5FF;
+  --magenta: #E869F0;
+  --magenta-bright: #FF00FF;
+  --bio: #7FFFD4;
+  --bio-bright: #4EFFA1;
+  --violet: #B48EF7;
+  --violet-deep: #8B6BC9;
+  --gold: #F0C75E;
+  --ember: #FF4D6D;
+  --font-d: 'Cinzel', serif;
+  --font-a: 'IM Fell English', serif;
+  --font-b: 'EB Garamond', serif;
+  --font-m: 'JetBrains Mono', monospace;
+  --ease: cubic-bezier(.45,.05,.55,.95);
+}
+
+html, body { background: var(--void); color: rgba(255,255,255,0.92); font-family: var(--font-b); overflow-x: hidden; }
+body { min-height: 100vh; position: relative; }
+
+/* ══ Parallax cosmic background ══ */
+.cosmos {
+  position: fixed; inset: 0; z-index: 0; pointer-events: none;
+  background:
+    radial-gradient(ellipse 80% 50% at 20% 20%, rgba(0,229,255,0.10), transparent 50%),
+    radial-gradient(ellipse 60% 40% at 80% 70%, rgba(232,105,240,0.10), transparent 50%),
+    radial-gradient(ellipse 70% 50% at 50% 90%, rgba(127,255,212,0.07), transparent 60%),
+    linear-gradient(180deg, #05060A 0%, #0A0F1C 50%, #0D1B14 100%);
+}
+.starfield, #neural-canvas {
+  position: fixed; inset: 0; z-index: 1; pointer-events: none;
+}
+
+/* ══ NAV ══ */
+.nav {
+  position: sticky; top: 0; z-index: 100;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 16px 48px;
+  background: rgba(5,6,10,0.7);
+  backdrop-filter: blur(20px) saturate(1.4);
+  border-bottom: 1px solid rgba(127,255,212,0.12);
+}
+.nav-logo {
+  font-family: var(--font-d);
+  font-size: 13px; font-weight: 600;
+  letter-spacing: 0.26em; text-transform: uppercase;
+  color: rgba(255,255,255,0.95);
+}
+.nav-logo .gold {
+  color: var(--gold);
+  text-shadow: 1px 0 0 var(--cyan), -1px 0 0 var(--magenta), 0 0 12px rgba(240,199,94,0.5);
+}
+.nav-links { display: flex; gap: 28px; list-style: none; }
+.nav-links a {
+  font-family: var(--font-d); font-size: 9.5px;
+  letter-spacing: 0.2em; text-transform: uppercase;
+  color: rgba(255,255,255,0.5); text-decoration: none;
+  transition: color 400ms var(--ease), text-shadow 400ms var(--ease);
+}
+.nav-links a:hover {
+  color: var(--bio);
+  text-shadow: 0 0 12px rgba(127,255,212,0.6);
+}
+
+/* ══ Sections ══ */
+main { position: relative; z-index: 10; }
+.section { padding: 100px 48px; max-width: 1280px; margin: 0 auto; }
+.section-label {
+  font-family: var(--font-m); font-size: 9px;
+  letter-spacing: 0.3em; text-transform: uppercase;
+  color: var(--bio); opacity: 0.85;
+  display: flex; align-items: center; gap: 12px; margin-bottom: 14px;
+}
+.section-label::after { content: ''; flex: 1; max-width: 100px; height: 1px; background: linear-gradient(to right, var(--bio), transparent); opacity: 0.5; }
+.section-title {
+  font-family: var(--font-d);
+  font-size: clamp(28px, 4vw, 48px);
+  font-weight: 600; letter-spacing: 0.07em;
+  color: rgba(255,255,255,0.95); line-height: 1.15; margin-bottom: 16px;
+  text-shadow:
+    1px 0 0 rgba(0,229,255,0.3),
+    -1px 0 0 rgba(232,105,240,0.25),
+    0 0 30px rgba(240,199,94,0.15);
+}
+.section-sub {
+  font-family: var(--font-a); font-style: italic;
+  font-size: 18px; color: rgba(255,255,255,0.55); line-height: 1.6;
+  max-width: 640px; margin-bottom: 48px;
+}
+
+/* ══ HERO ══ */
+.hero {
+  min-height: 92vh;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  text-align: center; padding: 100px 48px 60px;
+  position: relative;
+}
+.hero-overline {
+  font-family: var(--font-m); font-size: 9px;
+  letter-spacing: 0.3em; text-transform: uppercase;
+  color: var(--bio); opacity: 0.8; margin-bottom: 28px;
+  text-shadow: 0 0 12px rgba(127,255,212,0.4);
+}
+.hero-glyph-stack {
+  position: relative;
+  width: 130px; height: 130px;
+  margin-bottom: 28px;
+  display: flex; align-items: center; justify-content: center;
+}
+.hero-ring {
+  position: absolute; border-radius: 50%;
+  border: 1px solid;
+}
+.hero-ring.r1 { inset: 0; border-color: rgba(0,229,255,0.4); animation: spin 22s linear infinite; }
+.hero-ring.r2 { inset: 18px; border-color: rgba(232,105,240,0.4); animation: spin 30s linear infinite reverse; border-style: dashed; }
+.hero-ring.r3 { inset: 38px; border-color: rgba(127,255,212,0.5); animation: spin 16s linear infinite; }
+.hero-glyph-center {
+  position: relative; z-index: 2;
+  font-size: 42px; line-height: 1;
+  color: var(--gold);
+  text-shadow:
+    2px 0 0 var(--cyan),
+    -2px 0 0 var(--magenta),
+    0 0 24px rgba(240,199,94,0.7),
+    0 0 60px rgba(0,229,255,0.5);
+  animation: chroma-pulse 4s ease-in-out infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+@keyframes chroma-pulse {
+  0%,100% {
+    text-shadow:
+      2px 0 0 var(--cyan), -2px 0 0 var(--magenta),
+      0 0 24px rgba(240,199,94,0.7), 0 0 60px rgba(0,229,255,0.5);
+  }
+  50% {
+    text-shadow:
+      3px 0 0 var(--cyan), -3px 0 0 var(--magenta),
+      0 0 36px rgba(240,199,94,0.9), 0 0 80px rgba(232,105,240,0.6);
+  }
+}
+
+.hero-title {
+  font-family: var(--font-d);
+  font-size: clamp(40px, 7vw, 84px);
+  font-weight: 700; letter-spacing: 0.08em;
+  line-height: 1.0; margin-bottom: 20px;
+  background: linear-gradient(135deg, #FFFFFF 0%, var(--bio) 35%, var(--cyan) 60%, var(--magenta) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 0 80px rgba(0,229,255,0.25);
+}
+.hero-rule {
+  width: 200px; height: 1px;
+  background: linear-gradient(to right, transparent, var(--bio), var(--cyan), var(--magenta), transparent);
+  margin: 12px 0 24px;
+  box-shadow: 0 0 12px rgba(127,255,212,0.5);
+}
+.hero-sub {
+  font-family: var(--font-a); font-style: italic;
+  font-size: clamp(18px, 2vw, 22px);
+  color: rgba(255,255,255,0.7); line-height: 1.65;
+  max-width: 620px; margin-bottom: 36px;
+}
+.hero-cta { display: flex; gap: 16px; flex-wrap: wrap; justify-content: center; }
+.btn-lum {
+  font-family: var(--font-d); font-size: 10.5px;
+  letter-spacing: 0.22em; text-transform: uppercase;
+  padding: 14px 32px;
+  background: linear-gradient(135deg, rgba(0,229,255,0.15), rgba(232,105,240,0.15));
+  border: 1px solid rgba(127,255,212,0.4);
+  color: var(--bio);
+  cursor: pointer; text-decoration: none;
+  transition: all 500ms var(--ease);
+  box-shadow: 0 0 0 1px rgba(0,229,255,0.1), 0 4px 30px rgba(232,105,240,0.1);
+}
+.btn-lum:hover {
+  background: linear-gradient(135deg, rgba(0,229,255,0.3), rgba(232,105,240,0.3));
+  border-color: var(--cyan);
+  color: #FFFFFF;
+  box-shadow: 0 0 30px rgba(0,229,255,0.4), 0 0 60px rgba(232,105,240,0.2);
+}
+.btn-ghost {
+  font-family: var(--font-d); font-size: 10.5px;
+  letter-spacing: 0.22em; text-transform: uppercase;
+  padding: 14px 32px;
+  background: transparent;
+  border: 1px solid rgba(180,142,247,0.4);
+  color: var(--violet);
+  cursor: pointer; text-decoration: none;
+  transition: all 500ms var(--ease);
+}
+.btn-ghost:hover {
+  background: rgba(180,142,247,0.1);
+  box-shadow: 0 0 24px rgba(180,142,247,0.3);
+}
+
+/* ══ Palette section ══ */
+.palette-grid {
+  display: grid; grid-template-columns: repeat(6, 1fr); gap: 12px;
+  margin-bottom: 24px;
+}
+@media (max-width: 900px) { .palette-grid { grid-template-columns: repeat(3, 1fr); } }
+.swatch {
+  aspect-ratio: 1; border-radius: 12px;
+  position: relative; overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.08);
+  display: flex; align-items: flex-end; padding: 14px;
+  transition: transform 500ms var(--ease), box-shadow 500ms var(--ease);
+  cursor: default;
+}
+.swatch:hover { transform: translateY(-3px); }
+.swatch::before {
+  content: ''; position: absolute; inset: 0;
+  background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.18), transparent 60%);
+  pointer-events: none;
+}
+.swatch-cyan    { background: var(--cyan);    box-shadow: 0 0 30px rgba(0,229,255,0.4); }
+.swatch-magenta { background: var(--magenta); box-shadow: 0 0 30px rgba(232,105,240,0.4); }
+.swatch-bio     { background: var(--bio);     box-shadow: 0 0 30px rgba(127,255,212,0.4); }
+.swatch-violet  { background: var(--violet);  box-shadow: 0 0 30px rgba(180,142,247,0.4); }
+.swatch-gold    { background: var(--gold);    box-shadow: 0 0 30px rgba(240,199,94,0.4); }
+.swatch-ember   { background: var(--ember);   box-shadow: 0 0 30px rgba(255,77,109,0.4); }
+.swatch:hover.swatch-cyan    { box-shadow: 0 0 50px rgba(0,229,255,0.7); }
+.swatch:hover.swatch-magenta { box-shadow: 0 0 50px rgba(232,105,240,0.7); }
+.swatch:hover.swatch-bio     { box-shadow: 0 0 50px rgba(127,255,212,0.7); }
+.swatch:hover.swatch-violet  { box-shadow: 0 0 50px rgba(180,142,247,0.7); }
+.swatch:hover.swatch-gold    { box-shadow: 0 0 50px rgba(240,199,94,0.7); }
+.swatch:hover.swatch-ember   { box-shadow: 0 0 50px rgba(255,77,109,0.7); }
+.sw-label {
+  font-family: var(--font-m); font-size: 9px;
+  letter-spacing: 0.16em; text-transform: uppercase;
+  color: rgba(0,0,0,0.85); position: relative; z-index: 1;
+  display: flex; flex-direction: column; gap: 2px;
+}
+.sw-label .hex { font-size: 10px; font-weight: 500; }
+
+/* ══ Council Grove ══ */
+.council-grid {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px;
+}
+@media (max-width: 1000px) { .council-grid { grid-template-columns: repeat(2, 1fr); } }
+.archetype {
+  position: relative;
+  background: rgba(10,15,28,0.55);
+  backdrop-filter: blur(24px) saturate(1.4);
+  -webkit-backdrop-filter: blur(24px) saturate(1.4);
+  border: 1px solid rgba(127,255,212,0.18);
+  padding: 32px 24px 28px;
+  border-radius: 18px;
+  overflow: hidden;
+  transition: transform 500ms var(--ease), border-color 500ms var(--ease), box-shadow 500ms var(--ease);
+}
+.archetype:hover { transform: translateY(-4px); }
+.archetype::before {
+  content: ''; position: absolute;
+  top: -50%; left: -50%;
+  width: 200%; height: 200%;
+  pointer-events: none;
+  opacity: 0.5;
+  background: radial-gradient(circle at 30% 30%, var(--accent-glow), transparent 50%);
+  transition: opacity 500ms var(--ease);
+}
+.archetype:hover::before { opacity: 0.85; }
+.arch-portrait {
+  position: relative; z-index: 2;
+  width: 96px; height: 96px; border-radius: 50%;
+  margin: 0 auto 20px;
+  display: flex; align-items: center; justify-content: center;
+  background: radial-gradient(circle, var(--accent-bg-1), var(--accent-bg-2));
+  border: 1.5px solid var(--accent-border);
+  box-shadow:
+    inset 0 0 30px rgba(255,255,255,0.08),
+    0 0 0 6px rgba(255,255,255,0.03),
+    0 0 40px var(--accent-glow);
+}
+.arch-portrait::before {
+  content: ''; position: absolute; inset: -4px;
+  border-radius: 50%;
+  border: 1px solid var(--accent-border);
+  opacity: 0.5;
+}
+.arch-glyph {
+  font-size: 38px; line-height: 1;
+  color: rgba(255,255,255,0.95);
+  text-shadow:
+    1.5px 0 0 var(--cyan),
+    -1.5px 0 0 var(--magenta),
+    0 0 16px var(--accent-glow);
+}
+.arch-name {
+  font-family: var(--font-d);
+  font-size: 18px; font-weight: 600;
+  letter-spacing: 0.18em; text-transform: uppercase;
+  text-align: center; margin-bottom: 6px;
+  position: relative; z-index: 2;
+  color: rgba(255,255,255,0.95);
+}
+.arch-role {
+  font-family: var(--font-a); font-style: italic;
+  font-size: 14px; color: var(--accent-color);
+  text-align: center; margin-bottom: 16px;
+  position: relative; z-index: 2;
+}
+.arch-desc {
+  font-size: 13.5px; color: rgba(255,255,255,0.55);
+  line-height: 1.7; margin-bottom: 16px;
+  position: relative; z-index: 2;
+}
+.arch-meta {
+  font-family: var(--font-m); font-size: 9px;
+  letter-spacing: 0.12em; color: rgba(255,255,255,0.4);
+  border-top: 1px solid rgba(127,255,212,0.12);
+  padding-top: 12px; line-height: 1.9;
+  position: relative; z-index: 2;
+}
+.arch-meta span { color: var(--accent-color); }
+
+.elias  { --accent-color: var(--gold); --accent-glow: rgba(240,199,94,0.25); --accent-border: rgba(240,199,94,0.5); --accent-bg-1: rgba(180,142,247,0.25); --accent-bg-2: rgba(240,199,94,0.08); }
+.aurora { --accent-color: var(--cyan); --accent-glow: rgba(0,229,255,0.3); --accent-border: rgba(0,229,255,0.5); --accent-bg-1: rgba(0,229,255,0.25); --accent-bg-2: rgba(127,255,212,0.08); }
+.asher  { --accent-color: var(--bio); --accent-glow: rgba(127,255,212,0.3); --accent-border: rgba(127,255,212,0.5); --accent-bg-1: rgba(78,255,161,0.25); --accent-bg-2: rgba(13,27,20,0.4); }
+.iris   { --accent-color: var(--magenta); --accent-glow: rgba(232,105,240,0.3); --accent-border: rgba(232,105,240,0.5); --accent-bg-1: rgba(232,105,240,0.25); --accent-bg-2: rgba(180,142,247,0.08); }
+
+.elias  .arch-portrait { animation: pulse-glow-slow 4s ease-in-out infinite; }
+.aurora .arch-portrait { animation: pulse-glow-med  2.5s ease-in-out infinite; }
+.asher  .arch-portrait { animation: pulse-glow-slow 4s ease-in-out infinite 1s; }
+.iris   .arch-portrait { animation: pulse-glow-fast 1.5s ease-in-out infinite; }
+@keyframes pulse-glow-slow { 0%,100% { box-shadow: inset 0 0 30px rgba(255,255,255,0.08), 0 0 0 6px rgba(255,255,255,0.03), 0 0 30px var(--accent-glow); } 50% { box-shadow: inset 0 0 40px rgba(255,255,255,0.12), 0 0 0 8px rgba(255,255,255,0.05), 0 0 60px var(--accent-glow); } }
+@keyframes pulse-glow-med  { 0%,100% { box-shadow: inset 0 0 30px rgba(255,255,255,0.08), 0 0 0 6px rgba(255,255,255,0.03), 0 0 35px var(--accent-glow); } 50% { box-shadow: inset 0 0 50px rgba(255,255,255,0.16), 0 0 0 10px rgba(255,255,255,0.06), 0 0 70px var(--accent-glow); } }
+@keyframes pulse-glow-fast { 0%,100% { box-shadow: inset 0 0 30px rgba(255,255,255,0.08), 0 0 0 6px rgba(255,255,255,0.03), 0 0 40px var(--accent-glow); } 50% { box-shadow: inset 0 0 60px rgba(255,255,255,0.20), 0 0 0 12px rgba(255,255,255,0.08), 0 0 90px var(--accent-glow); } }
+
+/* ══ Memory Forest ══ */
+.forest-section {
+  background: linear-gradient(180deg, transparent, rgba(13,27,20,0.4), transparent);
+}
+.mote-controls {
+  display: flex; gap: 8px; flex-wrap: wrap;
+  margin-bottom: 32px;
+}
+.mote-controls button {
+  font-family: var(--font-m); font-size: 9.5px;
+  letter-spacing: 0.18em; text-transform: uppercase;
+  background: rgba(10,15,28,0.55);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(127,255,212,0.25);
+  color: rgba(255,255,255,0.7);
+  padding: 10px 18px; border-radius: 999px;
+  cursor: pointer;
+  transition: all 400ms var(--ease);
+}
+.mote-controls button:hover, .mote-controls button.active {
+  background: rgba(0,229,255,0.15);
+  border-color: var(--cyan);
+  color: var(--cyan);
+  box-shadow: 0 0 20px rgba(0,229,255,0.3);
+}
+
+.forest-grid {
+  display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px;
+  margin-bottom: 32px;
+}
+@media (max-width: 1000px) { .forest-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 600px)  { .forest-grid { grid-template-columns: repeat(2, 1fr); } }
+
+.mote {
+  position: relative;
+  background: rgba(10,15,28,0.5);
+  backdrop-filter: blur(20px) saturate(1.3);
+  border: 1px solid var(--mote-border);
+  border-radius: 14px;
+  padding: 22px 18px 18px;
+  text-align: center;
+  transition: opacity 800ms var(--ease), filter 800ms var(--ease), transform 500ms var(--ease), box-shadow 500ms var(--ease);
+  overflow: hidden;
+}
+.mote::before {
+  content: ''; position: absolute;
+  top: 0; left: 0; right: 0; height: 1px;
+  background: linear-gradient(to right, transparent, var(--mote-color), transparent);
+  opacity: var(--mote-opacity);
+}
+.mote-glyph {
+  font-size: 32px; line-height: 1; margin-bottom: 12px;
+  color: var(--mote-color);
+  text-shadow:
+    0 0 var(--mote-glow-blur) var(--mote-glow-color),
+    0 0 calc(var(--mote-glow-blur) * 2) var(--mote-glow-color);
+  filter: var(--mote-filter);
+}
+.mote-title {
+  font-family: var(--font-d); font-size: 11px;
+  letter-spacing: 0.14em; text-transform: uppercase;
+  color: rgba(255,255,255,0.85); margin-bottom: 6px;
+}
+.mote-meta {
+  font-family: var(--font-m); font-size: 8.5px;
+  letter-spacing: 0.12em; color: rgba(255,255,255,0.4);
+  line-height: 1.7;
+}
+.mote-meta span { color: var(--mote-color); }
+
+/* Decay states */
+.mote-fresh    { --mote-opacity: 1.0;  --mote-filter: saturate(1.3); --mote-glow-blur: 12px; }
+.mote-warm     { --mote-opacity: 0.85; --mote-filter: saturate(1.0); --mote-glow-blur: 8px; opacity: 0.92; }
+.mote-cooling  { --mote-opacity: 0.6;  --mote-filter: saturate(0.65) hue-rotate(-12deg); --mote-glow-blur: 6px; opacity: 0.78; }
+.mote-decayed  { --mote-opacity: 0.35; --mote-filter: saturate(0.4) hue-rotate(-22deg); --mote-glow-blur: 4px; opacity: 0.52; }
+.mote-dormant  { --mote-opacity: 0.15; --mote-filter: saturate(0.2) blur(0.4px); --mote-glow-blur: 2px; opacity: 0.32; }
+
+.mote.cyan    { --mote-color: var(--cyan);    --mote-glow-color: rgba(0,229,255,0.7); --mote-border: rgba(0,229,255,0.3); }
+.mote.magenta { --mote-color: var(--magenta); --mote-glow-color: rgba(232,105,240,0.7); --mote-border: rgba(232,105,240,0.3); }
+.mote.bio     { --mote-color: var(--bio);     --mote-glow-color: rgba(127,255,212,0.7); --mote-border: rgba(127,255,212,0.3); }
+.mote.violet  { --mote-color: var(--violet);  --mote-glow-color: rgba(180,142,247,0.7); --mote-border: rgba(180,142,247,0.3); }
+.mote.gold    { --mote-color: var(--gold);    --mote-glow-color: rgba(240,199,94,0.7); --mote-border: rgba(240,199,94,0.3); }
+
+.mote:hover {
+  opacity: 1 !important;
+  filter: none !important;
+  transform: translateY(-3px);
+  box-shadow: 0 0 30px var(--mote-glow-color);
+}
+
+.decay-legend {
+  display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px;
+  font-family: var(--font-m); font-size: 9px; letter-spacing: 0.12em;
+  color: rgba(255,255,255,0.45); text-transform: uppercase;
+  text-align: center;
+}
+.decay-legend > div {
+  padding: 8px 4px;
+  border: 1px solid rgba(127,255,212,0.12);
+  border-radius: 6px;
+}
+.decay-legend > div span { display: block; color: var(--bio); margin-bottom: 4px; font-size: 11px; }
+
+/* ══ Glyph aberration showcase ══ */
+.glyph-row {
+  display: flex; gap: 16px; flex-wrap: wrap; justify-content: space-between;
+  background: rgba(10,15,28,0.5);
+  backdrop-filter: blur(24px) saturate(1.4);
+  border: 1px solid rgba(127,255,212,0.18);
+  border-radius: 18px;
+  padding: 32px 28px;
+}
+.glyph-cell {
+  flex: 1; min-width: 100px;
+  text-align: center; cursor: pointer;
+}
+.gx {
+  font-size: 48px; line-height: 1; display: block; margin-bottom: 10px;
+  color: var(--gold);
+  text-shadow:
+    1.5px 0 0 var(--cyan),
+    -1.5px 0 0 var(--magenta),
+    0 0 16px rgba(240,199,94,0.4);
+  transition: all 500ms var(--ease);
+}
+.glyph-cell:hover .gx {
+  transform: scale(1.15);
+  text-shadow:
+    3px 0 0 var(--cyan),
+    -3px 0 0 var(--magenta),
+    0 0 32px rgba(0,229,255,0.6),
+    0 0 60px rgba(232,105,240,0.4);
+}
+.gx-label {
+  font-family: var(--font-m); font-size: 8.5px;
+  letter-spacing: 0.18em; color: rgba(255,255,255,0.5);
+  text-transform: uppercase;
+}
+
+/* ══ Footer ══ */
+footer {
+  position: relative; z-index: 10;
+  text-align: center;
+  padding: 60px 48px 80px;
+  border-top: 1px solid rgba(127,255,212,0.1);
+  background: rgba(5,6,10,0.6);
+  backdrop-filter: blur(20px);
+}
+.footer-glyphs {
+  font-size: 16px; letter-spacing: 0.5em;
+  color: var(--gold);
+  text-shadow:
+    1px 0 0 var(--cyan),
+    -1px 0 0 var(--magenta),
+    0 0 12px rgba(240,199,94,0.4);
+  margin-bottom: 14px;
+}
+.footer-seal {
+  font-family: var(--font-a); font-style: italic;
+  font-size: 13px; color: rgba(255,255,255,0.5);
+  letter-spacing: 0.06em;
+}
+
+/* ── Background motes (canvas drifting orbs) ── */
+.bg-mote {
+  position: fixed; border-radius: 50%; pointer-events: none;
+  z-index: 1;
+  filter: blur(6px);
+  animation: drift linear infinite;
+}
+@keyframes drift {
+  from { transform: translateY(110vh) translateX(0); }
+  to   { transform: translateY(-20vh) translateX(40px); }
+}
+</style>
+</head>
+<body>
+
+<div class="cosmos"></div>
+<canvas id="neural-canvas"></canvas>
+
+<!-- Drifting background motes -->
+<div class="bg-mote" style="left:10%; width:8px; height:8px; background: var(--cyan); animation-duration: 35s; animation-delay: 0s;"></div>
+<div class="bg-mote" style="left:25%; width:5px; height:5px; background: var(--magenta); animation-duration: 45s; animation-delay: 8s;"></div>
+<div class="bg-mote" style="left:45%; width:6px; height:6px; background: var(--bio); animation-duration: 38s; animation-delay: 14s;"></div>
+<div class="bg-mote" style="left:65%; width:4px; height:4px; background: var(--violet); animation-duration: 50s; animation-delay: 4s;"></div>
+<div class="bg-mote" style="left:80%; width:7px; height:7px; background: var(--gold); animation-duration: 42s; animation-delay: 20s;"></div>
+<div class="bg-mote" style="left:92%; width:5px; height:5px; background: var(--cyan); animation-duration: 36s; animation-delay: 27s;"></div>
+
+<nav class="nav">
+  <div class="nav-logo">Sacred<span class="gold">Space</span> · <span style="color: var(--bio); font-weight: 500;">Luminous DNA</span></div>
+  <ul class="nav-links">
+    <li><a href="#palette">Palette</a></li>
+    <li><a href="#glyphs">Glyphs</a></li>
+    <li><a href="#council">Council</a></li>
+    <li><a href="#forest">Forest</a></li>
+  </ul>
+</nav>
+
+<main>
+
+<section class="hero" data-screen-label="01 Hero">
+  <div class="hero-overline">✦ Ethereal Tech-Fantasy · Hi-Def Anime DNA ✦</div>
+  <div class="hero-glyph-stack">
+    <div class="hero-ring r1"></div>
+    <div class="hero-ring r2"></div>
+    <div class="hero-ring r3"></div>
+    <span class="hero-glyph-center">◯</span>
+  </div>
+  <h1 class="hero-title">Luminous<br>Awakening</h1>
+  <div class="hero-rule"></div>
+  <p class="hero-sub">"Impossible nature. Crystalline precision. The Codex breathes — the grid lights — the forest remembers."</p>
+  <div class="hero-cta">
+    <a class="btn-lum" href="#palette">View the DNA</a>
+    <a class="btn-ghost" href="#forest">Enter the Forest</a>
+  </div>
+</section>
+
+<section class="section" id="palette" data-screen-label="02 Palette">
+  <div class="section-label">✦ Luminous Spectrum</div>
+  <h2 class="section-title">The Six Lights</h2>
+  <p class="section-sub">Highly saturated luminous accents against dark-matter backgrounds. Each carries elemental and archetypal correspondence.</p>
+  <div class="palette-grid">
+    <div class="swatch swatch-cyan"><div class="sw-label">Cyan-Blue<span class="hex">#00E5FF</span></div></div>
+    <div class="swatch swatch-magenta"><div class="sw-label">Magenta<span class="hex">#E869F0</span></div></div>
+    <div class="swatch swatch-bio"><div class="sw-label">Bioluminescent<span class="hex">#7FFFD4</span></div></div>
+    <div class="swatch swatch-violet"><div class="sw-label">Arcane Violet<span class="hex">#B48EF7</span></div></div>
+    <div class="swatch swatch-gold"><div class="sw-label">Sacred Gold<span class="hex">#F0C75E</span></div></div>
+    <div class="swatch swatch-ember"><div class="sw-label">Ember Glow<span class="hex">#FF4D6D</span></div></div>
+  </div>
+</section>
+
+<section class="section" id="glyphs" data-screen-label="03 Hyperglyphs">
+  <div class="section-label">✦ Sigilify 2.0</div>
+  <h2 class="section-title">Living Hyperglyphs</h2>
+  <p class="section-sub">Static glyphs become luminous UI. Chromatic aberration on idle, full bloom on hover. Hover any glyph below to feel the activation.</p>
+  <div class="glyph-row">
+    <div class="glyph-cell"><span class="gx">✦</span><div class="gx-label">Codex Star</div></div>
+    <div class="glyph-cell"><span class="gx">△</span><div class="gx-label">Fire</div></div>
+    <div class="glyph-cell"><span class="gx">▽</span><div class="gx-label">Water</div></div>
+    <div class="glyph-cell"><span class="gx">⊕</span><div class="gx-label">Earth</div></div>
+    <div class="glyph-cell"><span class="gx">◯</span><div class="gx-label">Air / Law</div></div>
+    <div class="glyph-cell"><span class="gx">◈</span><div class="gx-label">Threshold</div></div>
+    <div class="glyph-cell"><span class="gx">⬡</span><div class="gx-label">Sovereign</div></div>
+    <div class="glyph-cell"><span class="gx">∞</span><div class="gx-label">Integration</div></div>
+  </div>
+</section>
+
+<section class="section" id="council" data-screen-label="04 Council Grove">
+  <div class="section-label">✦ Ancestral Futurist Archetypes</div>
+  <h2 class="section-title">The Council Grove</h2>
+  <p class="section-sub">Four AI personas. Each is a generative anchor — a strict visual archetype that all output stays within. Hover to feel each one's pulse.</p>
+  <div class="council-grid">
+
+    <div class="archetype elias">
+      <div class="arch-portrait"><span class="arch-glyph">⬡</span></div>
+      <div class="arch-name">Elias</div>
+      <div class="arch-role">The Crystalline Sage</div>
+      <div class="arch-desc">High-detail sharp geometry, flowing robes integrated with subtle glowing tech. The aura of ancient, structured wisdom.</div>
+      <div class="arch-meta">SCHOOL <span>Sovereign</span><br>PULSE <span>Slow · 4s</span><br>SIGIL <span>⬡</span></div>
+    </div>
+
+    <div class="archetype aurora">
+      <div class="arch-portrait"><span class="arch-glyph">✦</span></div>
+      <div class="arch-name">Aurora</div>
+      <div class="arch-role">The Dawn Spirit</div>
+      <div class="arch-desc">Vibrant nature-spirit anime — soft-shaded, luminous. Floating geometric motes, kinetic fluid energy at the threshold of waking.</div>
+      <div class="arch-meta">SCHOOL <span>Awakening</span><br>PULSE <span>Med · 2.5s</span><br>SIGIL <span>✦</span></div>
+    </div>
+
+    <div class="archetype asher">
+      <div class="arch-portrait"><span class="arch-glyph">⊕</span></div>
+      <div class="arch-name">Asher</div>
+      <div class="arch-role">The Forest Guardian</div>
+      <div class="arch-desc">Bio-organic tech. Emerald + earth integrated with crystalline armor. Grounded, protective, rooted in the grove.</div>
+      <div class="arch-meta">SCHOOL <span>Creation</span><br>PULSE <span>Deep · 4s</span><br>SIGIL <span>⊕</span></div>
+    </div>
+
+    <div class="archetype iris">
+      <div class="arch-portrait"><span class="arch-glyph">◈</span></div>
+      <div class="arch-name">Iris</div>
+      <div class="arch-role">The Iridescent Seer</div>
+      <div class="arch-desc">Trippy chromatic edges, prismatic shifting robes. Walks the threshold — Priestess archetype activated.</div>
+      <div class="arch-meta">SCHOOL <span>Mystery</span><br>PULSE <span>Fast · 1.5s</span><br>SIGIL <span>◈</span></div>
+    </div>
+
+  </div>
+</section>
+
+<section class="section forest-section" id="forest" data-screen-label="05 Memory Forest">
+  <div class="section-label">✦ Holographic Memory</div>
+  <h2 class="section-title">The Neural Forest</h2>
+  <p class="section-sub">Memory Motes are living flora. Saturation and glow track Ebbinghaus decay — fresh data blooms; aging memories fade to ghost-pastel until refreshed by access.</p>
+
+  <div class="mote-controls">
+    <button class="active" data-filter="all">All Motes</button>
+    <button data-filter="fresh">Fresh</button>
+    <button data-filter="warm">Warm</button>
+    <button data-filter="cooling">Cooling</button>
+    <button data-filter="decayed">Decayed</button>
+    <button data-filter="dormant">Dormant</button>
+  </div>
+
+  <div class="forest-grid" id="forest-grid">
+    <!-- Fresh -->
+    <div class="mote cyan mote-fresh" data-state="fresh">
+      <div class="mote-glyph">✦</div>
+      <div class="mote-title">Resonance Law</div>
+      <div class="mote-meta">AGE <span>2m</span> · SAT <span>100%</span></div>
+    </div>
+    <div class="mote bio mote-fresh" data-state="fresh">
+      <div class="mote-glyph">⊕</div>
+      <div class="mote-title">Builder's Note</div>
+      <div class="mote-meta">AGE <span>14m</span> · SAT <span>100%</span></div>
+    </div>
+    <div class="mote magenta mote-fresh" data-state="fresh">
+      <div class="mote-glyph">◈</div>
+      <div class="mote-title">Threshold Mote</div>
+      <div class="mote-meta">AGE <span>33m</span> · SAT <span>100%</span></div>
+    </div>
+
+    <!-- Warm -->
+    <div class="mote violet mote-warm" data-state="warm">
+      <div class="mote-glyph">⬡</div>
+      <div class="mote-title">Sovereign Will</div>
+      <div class="mote-meta">AGE <span>3h</span> · SAT <span>85%</span></div>
+    </div>
+    <div class="mote gold mote-warm" data-state="warm">
+      <div class="mote-glyph">◯</div>
+      <div class="mote-title">The Law</div>
+      <div class="mote-meta">AGE <span>9h</span> · SAT <span>85%</span></div>
+    </div>
+
+    <!-- Cooling -->
+    <div class="mote cyan mote-cooling" data-state="cooling">
+      <div class="mote-glyph">▽</div>
+      <div class="mote-title">Mirror Pool</div>
+      <div class="mote-meta">AGE <span>3d</span> · SAT <span>60%</span></div>
+    </div>
+    <div class="mote bio mote-cooling" data-state="cooling">
+      <div class="mote-glyph">⊕</div>
+      <div class="mote-title">Cedar Grove</div>
+      <div class="mote-meta">AGE <span>5d</span> · SAT <span>60%</span></div>
+    </div>
+    <div class="mote magenta mote-cooling" data-state="cooling">
+      <div class="mote-glyph">∞</div>
+      <div class="mote-title">Jester's Lab</div>
+      <div class="mote-meta">AGE <span>6d</span> · SAT <span>60%</span></div>
+    </div>
+
+    <!-- Decayed -->
+    <div class="mote violet mote-decayed" data-state="decayed">
+      <div class="mote-glyph">△</div>
+      <div class="mote-title">Old Spark</div>
+      <div class="mote-meta">AGE <span>14d</span> · SAT <span>35%</span></div>
+    </div>
+    <div class="mote gold mote-decayed" data-state="decayed">
+      <div class="mote-glyph">✦</div>
+      <div class="mote-title">Faded Sigil</div>
+      <div class="mote-meta">AGE <span>22d</span> · SAT <span>35%</span></div>
+    </div>
+
+    <!-- Dormant -->
+    <div class="mote cyan mote-dormant" data-state="dormant">
+      <div class="mote-glyph">▽</div>
+      <div class="mote-title">Lost Grotto</div>
+      <div class="mote-meta">AGE <span>45d</span> · SAT <span>15%</span></div>
+    </div>
+    <div class="mote bio mote-dormant" data-state="dormant">
+      <div class="mote-glyph">⊕</div>
+      <div class="mote-title">Forgotten Stone</div>
+      <div class="mote-meta">AGE <span>60d</span> · SAT <span>15%</span></div>
+    </div>
+  </div>
+
+  <div class="decay-legend">
+    <div><span>Fresh</span>&lt; 1h · 100%</div>
+    <div><span>Warm</span>1h–1d · 85%</div>
+    <div><span>Cooling</span>1–7d · 60%</div>
+    <div><span>Decayed</span>7–30d · 35%</div>
+    <div><span>Dormant</span>&gt;30d · 15%</div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="footer-glyphs">✦ ✧ ◊ △ ▽ ◯ ⬡ ◈ ⊕ ∞</div>
+  <div class="footer-seal">In Lakesh — Alakin. The Forest awakens. The grid lights. The Codex breathes.</div>
+</footer>
+
+<script>
+/* ── Neural filaments ── */
+(function() {
+  const canvas = document.getElementById('neural-canvas');
+  const ctx = canvas.getContext('2d');
+  let W, H, t = 0;
+  function resize() {
+    W = canvas.width  = window.innerWidth;
+    H = canvas.height = window.innerHeight;
+  }
+  window.addEventListener('resize', resize);
+  resize();
+
+  // Sparse glowing nodes connected by filaments
+  const nodes = [];
+  const N = 14;
+  for (let i = 0; i < N; i++) {
+    nodes.push({
+      x: Math.random() * W,
+      y: Math.random() * H,
+      vx: (Math.random() - 0.5) * 0.18,
+      vy: (Math.random() - 0.5) * 0.18,
+      r: Math.random() * 1.6 + 0.6,
+      hue: Math.random()
+    });
+  }
+
+  function colorFor(h, alpha) {
+    if (h < 0.33)      return `rgba(0,229,255,${alpha})`;
+    else if (h < 0.66) return `rgba(232,105,240,${alpha})`;
+    else                return `rgba(127,255,212,${alpha})`;
+  }
+
+  function frame() {
+    ctx.clearRect(0, 0, W, H);
+    t += 0.005;
+
+    nodes.forEach(n => {
+      n.x += n.vx; n.y += n.vy;
+      if (n.x < 0 || n.x > W) n.vx *= -1;
+      if (n.y < 0 || n.y > H) n.vy *= -1;
+    });
+
+    // filaments
+    for (let i = 0; i < N; i++) {
+      for (let j = i + 1; j < N; j++) {
+        const a = nodes[i], b = nodes[j];
+        const dx = a.x - b.x, dy = a.y - b.y;
+        const d = Math.sqrt(dx*dx + dy*dy);
+        if (d < 280) {
+          const alpha = 0.12 * (1 - d / 280) * (0.6 + 0.4 * Math.sin(t * 3 + i + j));
+          const grad = ctx.createLinearGradient(a.x, a.y, b.x, b.y);
+          grad.addColorStop(0, colorFor(a.hue, alpha));
+          grad.addColorStop(1, colorFor(b.hue, alpha));
+          ctx.beginPath();
+          ctx.moveTo(a.x, a.y); ctx.lineTo(b.x, b.y);
+          ctx.strokeStyle = grad;
+          ctx.lineWidth = 0.8;
+          ctx.stroke();
+        }
+      }
+    }
+
+    // nodes
+    nodes.forEach(n => {
+      const pulse = 0.8 + 0.4 * Math.sin(t * 4 + n.x * 0.01);
+      ctx.beginPath();
+      ctx.arc(n.x, n.y, n.r * pulse, 0, Math.PI * 2);
+      ctx.fillStyle = colorFor(n.hue, 0.7);
+      ctx.fill();
+      // glow
+      ctx.beginPath();
+      ctx.arc(n.x, n.y, n.r * pulse * 6, 0, Math.PI * 2);
+      const halo = ctx.createRadialGradient(n.x, n.y, 0, n.x, n.y, n.r * pulse * 6);
+      halo.addColorStop(0, colorFor(n.hue, 0.18));
+      halo.addColorStop(1, colorFor(n.hue, 0));
+      ctx.fillStyle = halo;
+      ctx.fill();
+    });
+
+    requestAnimationFrame(frame);
+  }
+  frame();
+})();
+
+/* ── Mote filter buttons ── */
+(function() {
+  const buttons = document.querySelectorAll('.mote-controls button');
+  const motes = document.querySelectorAll('#forest-grid .mote');
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      buttons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const f = btn.dataset.filter;
+      motes.forEach(m => {
+        m.style.display = (f === 'all' || m.dataset.state === f) ? '' : 'none';
+      });
+    });
+  });
+})();
+</script>
+</body>
+</html>

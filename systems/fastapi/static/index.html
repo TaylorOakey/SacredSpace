@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>⟁ S∆CR3DSP∆CΞ // ZENITH-TERMINAL v4.0</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Space+Mono:wght@400;700&family=EB+Garamond:ital@1&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --void: #060608; --deep: #0d0d12; --oak: #c9a84c; --emerald: #10b981;
+            --violet: #7b5ea7; --ash: #a8a8c0; --solar: #f5f3ff; --flame: #e8763a;
+        }
+
+        * { box-sizing: border-box; cursor: crosshair; }
+        body {
+            background-color: var(--void);
+            background-image: radial-gradient(circle at center, #1a1a2e 0%, var(--void) 100%);
+            color: var(--oak);
+            font-family: 'Space Mono', monospace;
+            margin: 0; padding: 20px;
+            height: 100vh; overflow: hidden;
+            display: grid;
+            grid-template-columns: 280px 1fr 300px;
+            grid-template-rows: 60px 1fr 40px;
+            gap: 15px;
+        }
+
+        /* --- UI DECORATION --- */
+        .scanline {
+            width: 100%; height: 100px; z-index: 999; position: fixed; top: 0;
+            background: linear-gradient(to bottom, transparent, rgba(201,168,76,0.03), transparent);
+            animation: scan 8s linear infinite; pointer-events: none;
+        }
+        @keyframes scan { from { top: -100px; } to { top: 100%; } }
+
+        /* --- HEADER --- */
+        header {
+            grid-column: 1 / -1;
+            border: 1px solid var(--oak);
+            background: rgba(201,168,76,0.05);
+            display: flex; align-items: center; padding: 0 20px;
+            justify-content: space-between;
+            text-transform: uppercase; letter-spacing: 2px; font-size: 0.8rem;
+        }
+        .logo { font-family: 'Cinzel Decorative'; font-size: 1.2rem; color: var(--solar); text-shadow: 0 0 10px var(--oak); }
+
+        /* --- SIDEBARS --- */
+        aside {
+            border: 1px solid rgba(201,168,76,0.2);
+            background: var(--deep);
+            padding: 15px; display: flex; flex-direction: column; gap: 10px;
+        }
+        .panel-title { font-size: 0.7rem; color: var(--ash); border-bottom: 1px solid var(--oak); margin-bottom: 10px; padding-bottom: 5px; }
+
+        /* --- HYPERGLYPH KEYPAD --- */
+        .glyph-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+        .glyph-btn {
+            border: 1px solid var(--oak); padding: 10px; text-align: center;
+            font-size: 1.2rem; transition: 0.3s; background: transparent; color: var(--oak);
+        }
+        .glyph-btn:hover { background: var(--oak); color: var(--void); box-shadow: 0 0 15px var(--oak); }
+
+        /* --- TERMINAL CORE --- */
+        main {
+            border: 2px solid var(--oak);
+            background: rgba(13, 13, 18, 0.95);
+            box-shadow: inset 0 0 30px rgba(0,0,0,1), 0 0 20px rgba(123,94,167,0.2);
+            display: flex; flex-direction: column;
+            position: relative;
+        }
+        #output {
+            flex: 1; overflow-y: auto; padding: 25px;
+            font-family: 'Space Mono', monospace; font-size: 0.95rem;
+            line-height: 1.5; color: var(--ash);
+            scrollbar-width: thin; scrollbar-color: var(--oak) transparent;
+        }
+        .input-wrapper {
+            background: #1c1c26; border-top: 1px solid var(--oak);
+            display: flex; align-items: center; padding: 0 15px;
+        }
+        .prompt-sigil { color: var(--emerald); font-weight: bold; margin-right: 10px; }
+        input {
+            flex: 1; background: transparent; border: none; padding: 20px 0;
+            color: var(--solar); font-size: 1rem; outline: none; font-family: 'Space Mono';
+        }
+
+        /* --- SYSTEM VITALS --- */
+        .vital-row { display: flex; justify-content: space-between; font-size: 0.7rem; margin-bottom: 8px; }
+        .status-on { color: var(--emerald); text-shadow: 0 0 5px var(--emerald); }
+        .bar-bg { width: 100%; height: 4px; background: #1c1c26; margin-top: 4px; }
+        .bar-fill { height: 100%; background: var(--oak); transition: 0.5s; }
+
+        /* --- MESSAGE STYLES --- */
+        .msg-user { color: var(--solar); margin-top: 20px; border-left: 2px solid var(--oak); padding-left: 10px; }
+        .msg-ai { color: var(--ash); background: rgba(123,94,167,0.05); padding: 15px; margin: 10px 0; border-radius: 4px; }
+        .ai-header { font-weight: bold; color: var(--violet); margin-bottom: 5px; font-size: 0.8rem; }
+        .mantra-italics { font-family: 'EB Garamond', serif; font-style: italic; font-size: 1.1rem; }
+
+        /* --- FOOTER --- */
+        footer {
+            grid-column: 1 / -1; font-size: 0.6rem; color: #3a3a50;
+            display: flex; justify-content: center; align-items: center; letter-spacing: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="scanline"></div>
+
+    <header>
+        <div class="logo">S∆CR3DSP∆CΞ 0S</div>
+        <div>NODE: LENOVO_LEGION_Y520 // P-PHASE: ZENITH</div>
+        <div id="clock">00:00:00</div>
+    </header>
+
+    <!-- LEFT: THE TOOLS -->
+    <aside>
+        <div class="panel-title">HYPERGLYPH FORGE</div>
+        <div class="glyph-grid">
+            <button class="glyph-btn" onclick="add('∆')">∆</button>
+            <button class="glyph-btn" onclick="add('◇')">◇</button>
+            <button class="glyph-btn" onclick="add('✶')">✶</button>
+            <button class="glyph-btn" onclick="add('⚙')">⚙</button>
+            <button class="glyph-btn" onclick="add('☉')">☉</button>
+            <button class="glyph-btn" onclick="add('☽')">☽</button>
+            <button class="glyph-btn" onclick="add('⚔')">⚔</button>
+            <button class="glyph-btn" onclick="add('⟡')">⟡</button>
+            <button class="glyph-btn" onclick="add('∞')">∞</button>
+        </div>
+        <div class="panel-title" style="margin-top:20px;">PILLAR NAVIGATION</div>
+        <div style="font-size: 0.7rem; color: var(--oak);">
+            / CORE<br>/ SYSTEMS<br>/ LEARNING<br>/ ECONOMY<br>/ HABITAT<br>/ CREATION
+        </div>
+    </aside>
+
+    <!-- CENTER: THE TERMINAL -->
+    <main>
+        <div id="output">
+[INITIALIZING SYSTEMS...]
+✓ LOCAL_OLLAMA: CONNECTED
+✓ REDIS_STREAM: ACTIVE
+✓ CHROMA_DB: READY
+✓ VEIL_STABILITY: 100%
+
+S@CRΞD S0URC3 Awakened.
+The Neural Forest awaits your signal.
+        </div>
+        <div class="input-wrapper">
+            <span class="prompt-sigil">>></span>
+            <input type="text" id="cmdInput" placeholder="Enter incantation..." autofocus>
+        </div>
+    </main>
+
+    <!-- RIGHT: VITALS -->
+    <aside>
+        <div class="panel-title">SYSTEM VITALS</div>
+        <div class="vital-row"><span>ENGINE</span> <span class="status-on">OLLAMA/MISTRAL</span></div>
+        <div class="vital-row"><span>GPU LOAD</span> <span id="gpuVal">22%</span></div>
+        <div class="bar-bg"><div class="bar-fill" style="width: 22%"></div></div>
+        
+        <div class="vital-row" style="margin-top:15px;"><span>ARCANA RESERVE</span> <span id="resVal">18.42</span></div>
+        <div class="bar-bg"><div class="bar-fill" style="width: 75%; background: var(--emerald);"></div></div>
+
+        <div class="panel-title" style="margin-top:30px;">COUNCIL STATUS</div>
+        <div class="vital-row"><span>ELIAS</span> <span class="status-on">●</span></div>
+        <div class="vital-row"><span>AURORA</span> <span class="status-on">●</span></div>
+        <div class="vital-row"><span>ASHER</span> <span class="status-on">●</span></div>
+        <div class="vital-row"><span>IRIS</span> <span class="status-on">●</span></div>
+
+        <div class="panel-title" style="margin-top:30px;">SESSION LOG</div>
+        <div id="miniLog" style="font-size: 0.6rem; color: var(--ash); overflow: hidden;">
+            - Session v4.0 Started<br>
+            - Master Adept Authenticated
+        </div>
+    </aside>
+
+    <footer>
+        GROUND · CONSOLIDATE · DEPLOY · DOCUMENT · REPEAT
+    </footer>
+
+    <script>
+        const input = document.getElementById('cmdInput');
+        const output = document.getElementById('output');
+        const clock = document.getElementById('clock');
+
+        // Real-time Clock
+        setInterval(() => { clock.innerText = new Date().toLocaleTimeString(); }, 1000);
+
+        function add(g) { input.value += g; input.focus(); }
+
+        input.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') handleCommand();
+        });
+
+        async function handleCommand() {
+            const val = input.value;
+            if (!val) return;
+            input.value = '';
+
+            output.innerHTML += `<div class="msg-user">>> ${val}</div>`;
+            output.innerHTML += `<div id="loader" class="status-on" style="font-size:0.7rem; margin-top:5px;">∆ CONSULTING THE COUNCIL...</div>`;
+            output.scrollTop = output.scrollHeight;
+
+            try {
+                const res = await fetch('/signal', {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify({text: val})
+                });
+                const data = await res.json();
+                document.getElementById('loader').remove();
+
+                output.innerHTML += `
+                    <div class="msg-ai">
+                        <div class="ai-header">⟁ ${data.seat} // ${data.pillar}</div>
+                        <div class="mantra-italics">${data.response}</div>
+                    </div>
+                `;
+                
+                // Add to miniLog
+                const log = document.getElementById('miniLog');
+                log.innerHTML = `- ${val.substring(0,15)}... handled by ${data.seat}<br>` + log.innerHTML;
+                
+            } catch (e) {
+                document.getElementById('loader').innerText = "!! CONNECTION BREACHED !!";
+            }
+            output.scrollTop = output.scrollHeight;
+        }
+    </script>
+</body>
+</html>

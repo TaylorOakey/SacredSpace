@@ -108,7 +108,7 @@ Root: canonical vault (names + file counts only; no note titles).
 - `04_STORY_ENGINE\graphify-out\cache` | structure | 0 md / 1 files
 - `05_LEDGER` | structure | 1 md / 1 files
 - `05_MEMORY_ENGINE` | structure | 91 md / 91 files
-- `05_MEMORY_ENGINE\2026-07-05_jeanie_profile_created_-_the_equinox_sovereign_` | structure | 1 md / 1 files
+- `(personal file — name redacted)` | structure | 1 md / 1 files
 - `05_MEMORY_ENGINE\2026-07-10_p6_executed_populated_4_empty_directories_with_index` | structure | 1 md / 1 files
 - `05_MEMORY_ENGINE\2026-07-11_p10_complete_-_organized_pillar_01_docs` | structure | 1 md / 1 files
 - `05_MEMORY_ENGINE\2026-07-11_p11_complete_cleaned_pillar_08_docs` | structure | 1 md / 1 files

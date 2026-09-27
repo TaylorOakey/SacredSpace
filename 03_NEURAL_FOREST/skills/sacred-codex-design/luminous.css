@@ -1,0 +1,122 @@
+/* ════════════════════════════════════════════════
+   SACREDSPACE — LUMINOUS UI TOKENS
+   Ethereal Tech-Fantasy / Hi-Def Anime DNA
+   Pair with colors_and_type.css (Codex base)
+═════════════════════════════════════════════════ */
+
+:root {
+  /* ── DARK MATTER BACKGROUNDS ── */
+  --lum-void:        #05060A;
+  --lum-void-deep:   #0A0F1C;
+  --lum-grove:       #0D1B14;
+  --lum-panel:       rgba(10, 15, 28, 0.55);
+
+  /* ── LUMINOUS ACCENTS ── */
+  --lum-cyan:        #00E5FF;
+  --lum-cyan-soft:   #82E9FF;
+  --lum-magenta:     #FF00FF;
+  --lum-magenta-soft:#E869F0;
+  --lum-bio:         #7FFFD4;
+  --lum-bio-bright:  #4EFFA1;
+  --lum-violet:      #B48EF7;
+  --lum-violet-deep: #8B6BC9;
+  --lum-gold:        #F0C75E;
+  --lum-ember:       #FF4D6D;
+
+  /* ── ELEMENT (LUMINOUS MODE) ── */
+  --lum-fire:   var(--lum-ember);
+  --lum-water:  var(--lum-cyan);
+  --lum-earth:  var(--lum-bio);
+  --lum-air:    var(--lum-magenta-soft);
+  --lum-law:    var(--lum-gold);
+
+  /* ── GLASSMORPHISM ── */
+  --glass-bg:        rgba(10, 15, 28, 0.55);
+  --glass-bg-warm:   rgba(28, 14, 22, 0.55);
+  --glass-blur:      blur(24px) saturate(1.4);
+  --glass-border:    1px solid rgba(127, 255, 212, 0.18);
+  --glass-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.08),
+    0 8px 60px rgba(0, 229, 255, 0.08),
+    0 0 0 1px rgba(180, 142, 247, 0.12);
+
+  /* ── BLOOM / GLOW ── */
+  --bloom-cyan:    0 0 20px rgba(0, 229, 255, 0.5), 0 0 40px rgba(0, 229, 255, 0.25);
+  --bloom-magenta: 0 0 20px rgba(232, 105, 240, 0.5), 0 0 40px rgba(232, 105, 240, 0.25);
+  --bloom-bio:     0 0 20px rgba(127, 255, 212, 0.5), 0 0 40px rgba(127, 255, 212, 0.25);
+  --bloom-gold:    0 0 20px rgba(240, 199, 94, 0.5), 0 0 40px rgba(240, 199, 94, 0.25);
+
+  /* ── CHROMATIC ABERRATION ── */
+  --chroma-shadow:
+    1px 0 0 rgba(0, 229, 255, 0.7),
+    -1px 0 0 rgba(255, 0, 255, 0.5),
+    0 0 12px rgba(240, 199, 94, 0.4);
+  --chroma-shadow-soft:
+    0.5px 0 0 rgba(0, 229, 255, 0.5),
+    -0.5px 0 0 rgba(232, 105, 240, 0.4),
+    0 0 8px rgba(240, 199, 94, 0.3);
+
+  /* ── PARALLAX LAYERS ── */
+  --layer-far:  0.2;
+  --layer-mid:  0.5;
+  --layer-near: 1.0;
+}
+
+/* ── BASE LUMINOUS SURFACE ── */
+.luminous {
+  background: var(--lum-void-deep);
+  color: rgba(255, 255, 255, 0.92);
+}
+
+/* ── GLASS PANEL ── */
+.glass-panel {
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: var(--glass-border);
+  box-shadow: var(--glass-shadow);
+}
+
+/* ── LUMINOUS GLYPH (chromatic aberration) ── */
+.lum-glyph {
+  color: var(--lum-gold);
+  text-shadow: var(--chroma-shadow);
+  transition: text-shadow 600ms ease, transform 600ms ease;
+}
+.lum-glyph:hover {
+  text-shadow:
+    2px 0 0 rgba(0, 229, 255, 0.9),
+    -2px 0 0 rgba(255, 0, 255, 0.7),
+    0 0 24px rgba(240, 199, 94, 0.7);
+  transform: scale(1.05);
+}
+
+/* ── BLOOM HOVERS ── */
+.bloom-cyan:hover    { box-shadow: var(--bloom-cyan); }
+.bloom-magenta:hover { box-shadow: var(--bloom-magenta); }
+.bloom-bio:hover     { box-shadow: var(--bloom-bio); }
+.bloom-gold:hover    { box-shadow: var(--bloom-gold); }
+
+/* ── DECAY STATES (Memory Motes) ── */
+.mote-fresh    { opacity: 1.00; filter: saturate(1.2); }
+.mote-warm     { opacity: 0.85; filter: saturate(1.0); }
+.mote-cooling  { opacity: 0.60; filter: saturate(0.7) hue-rotate(-10deg); }
+.mote-decayed  { opacity: 0.35; filter: saturate(0.4) hue-rotate(-20deg) blur(0.3px); }
+.mote-dormant  { opacity: 0.15; filter: saturate(0.2) blur(0.5px); }
+
+/* ── PULSE ANIMATIONS ── */
+@keyframes lum-pulse-slow {
+  0%, 100% { opacity: 0.7; transform: scale(1); }
+  50%      { opacity: 1.0; transform: scale(1.04); }
+}
+@keyframes lum-pulse-med {
+  0%, 100% { opacity: 0.75; transform: scale(1); }
+  50%      { opacity: 1.0; transform: scale(1.06); }
+}
+@keyframes lum-pulse-fast {
+  0%, 100% { opacity: 0.8; transform: scale(1); }
+  50%      { opacity: 1.0; transform: scale(1.08); }
+}
+.pulse-slow  { animation: lum-pulse-slow 4s ease-in-out infinite; }
+.pulse-med   { animation: lum-pulse-med 2.5s ease-in-out infinite; }
+.pulse-fast  { animation: lum-pulse-fast 1.5s ease-in-out infinite; }

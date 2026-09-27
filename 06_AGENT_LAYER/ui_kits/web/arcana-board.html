@@ -1,0 +1,749 @@
+<!-- @dsCard group="UI Kit — Web" name="Arcana Board — Face A & B" subtitle="9×9 tactical · 12×12 Confluence · 610×610mm print" viewport="1220x1220" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1220">
+<title>Arcana Board — Sacred Arcana</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* ── CODEX-VISUAL-001 tokens ── */
+:root {
+  --void:        #030508;
+  --void-deep:   #010203;
+  --parchment:   #C8C4BB;
+  --pure:        #EEF6EF;
+  --gold:        #C8A44A;
+  --gold-dim:    rgba(200,164,74,0.18);
+  --gold-faint:  rgba(200,164,74,0.06);
+  --bronze:      #8B7355;
+  --bio:         #72E87A;
+  --fire:        #D45A28;
+  --water:       #3878A0;
+  --earth:       #5A8850;
+  --air:         #78A8C8;
+  --aether:      #7A5CA5;
+  --fire-tint:   rgba(212,90,40,0.07);
+  --water-tint:  rgba(56,120,160,0.07);
+  --air-tint:    rgba(120,168,200,0.07);
+  --earth-tint:  rgba(90,136,80,0.07);
+  --aether-tint: rgba(122,92,165,0.07);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: var(--void);
+  color: var(--pure);
+  font-family: 'Cinzel', serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 0 48px;
+  gap: 20px;
+}
+
+/* ── face toggle ── */
+.face-toggle {
+  display: flex;
+  gap: 2px;
+  border: 1px solid var(--gold-dim);
+  border-radius: 4px;
+  overflow: hidden;
+}
+.face-btn {
+  padding: 8px 24px;
+  background: transparent;
+  border: none;
+  color: var(--parchment);
+  font-family: 'Cinzel', serif;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.face-btn.active {
+  background: var(--gold);
+  color: var(--void);
+}
+.face-btn:not(.active):hover { background: var(--gold-dim); }
+
+/* ── board wrapper ── */
+.board-wrap {
+  position: relative;
+  width: 1220px;
+  height: 1220px;
+  background: #0e0c08;
+  border: 1px solid var(--gold-dim);
+}
+
+/* ── fold marks (corner crop marks at bleed) ── */
+.fold-mark {
+  position: absolute;
+  background: var(--gold);
+  opacity: 0.5;
+}
+.fold-h { width: 20px; height: 1px; }
+.fold-v { width: 1px; height: 20px; }
+/* four-panel fold: horizontal centre + vertical centre */
+.fold-hc-top    { top: 0; left: 50%; transform: translateX(-50%); width:1px; height:20px; }
+.fold-hc-bottom { bottom: 0; left: 50%; transform: translateX(-50%); width:1px; height:20px; }
+.fold-vc-left   { left: 0; top: 50%; transform: translateY(-50%); width:20px; height:1px; }
+.fold-vc-right  { right: 0; top: 50%; transform: translateY(-50%); width:20px; height:1px; }
+
+/* ── ring ── */
+.ring {
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+  pointer-events: none;
+}
+
+/* corner school panels */
+.corner-panel {
+  position: absolute;
+  width: 118px;
+  height: 118px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: 10px;
+  border: 1px solid var(--gold-dim);
+  pointer-events: all;
+}
+.corner-panel.fire   { top:3px; left:3px;   background: rgba(212,90,40,0.10); }
+.corner-panel.earth  { top:3px; right:3px;  background: rgba(90,136,80,0.10); }
+.corner-panel.water  { bottom:3px; right:3px; background: rgba(56,120,160,0.10); }
+.corner-panel.air    { bottom:3px; left:3px;  background: rgba(120,168,200,0.10); }
+.corner-glyph {
+  font-size: 22px;
+  line-height: 1;
+  opacity: 0.85;
+}
+.corner-school {
+  font-family: 'Cinzel', serif;
+  font-size: 8px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold);
+  text-align: center;
+  line-height: 1.3;
+}
+.corner-guides {
+  font-family: 'EB Garamond', serif;
+  font-size: 9px;
+  font-style: italic;
+  color: var(--parchment);
+  opacity: 0.7;
+  text-align: center;
+  line-height: 1.4;
+}
+.corner-school .grove-line {
+  color: var(--bio);
+  display: block;
+  font-size: 7.5px;
+}
+
+/* seat medallions along ring edges */
+.seat {
+  position: absolute;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  border: 1px solid var(--gold-dim);
+  background: rgba(200,164,74,0.04);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1px;
+  transform: translate(-50%, -50%);
+}
+.seat.open {
+  border-color: var(--gold);
+  background: rgba(200,164,74,0.08);
+  box-shadow: 0 0 12px rgba(200,164,74,0.15);
+}
+.seat-num {
+  font-family: 'Cinzel', serif;
+  font-size: 9px;
+  color: var(--gold);
+  letter-spacing: 0.1em;
+}
+.seat-name {
+  font-family: 'EB Garamond', serif;
+  font-size: 8.5px;
+  color: var(--parchment);
+  text-align: center;
+  line-height: 1.2;
+  padding: 0 4px;
+}
+.seat.open .seat-name { color: var(--gold); }
+.seat-tag {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 7px;
+  color: var(--parchment);
+  opacity: 0.5;
+  letter-spacing: 0.05em;
+}
+.seat.open .seat-tag { opacity: 0; }
+.open-badge {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 6.5px;
+  color: var(--gold);
+  letter-spacing: 0.08em;
+  margin-top: 1px;
+}
+
+/* coord labels */
+.coord-label {
+  position: absolute;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  color: var(--parchment);
+  opacity: 0.4;
+  z-index: 15;
+  line-height: 1;
+}
+
+/* edge legend */
+.edge-legend {
+  position: absolute;
+  bottom: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 16px;
+  z-index: 20;
+  pointer-events: none;
+}
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 8px;
+  color: var(--parchment);
+  opacity: 0.55;
+  letter-spacing: 0.05em;
+}
+.legend-icon {
+  font-size: 10px;
+  opacity: 0.8;
+}
+
+/* face B specific */
+.face-b { display: none; }
+body.face-b .face-a { display: none; }
+body.face-b .face-b { display: block; }
+
+/* R-label for open seats */
+.r-mark {
+  font-size: 6px;
+  color: var(--parchment);
+  opacity: 0.45;
+  font-family: 'JetBrains Mono', monospace;
+}
+</style>
+</head>
+<body class="face-a">
+
+<div class="face-toggle">
+  <button class="face-btn active" id="btn-a" onclick="setFace('a')">FACE A — 9×9 TACTICAL</button>
+  <button class="face-btn" id="btn-b" onclick="setFace('b')">FACE B — 12×12 CONFLUENCE</button>
+</div>
+
+<div class="board-wrap" id="board">
+
+  <!-- fold marks -->
+  <div class="fold-mark fold-hc-top"></div>
+  <div class="fold-mark fold-hc-bottom"></div>
+  <div class="fold-mark fold-vc-left"></div>
+  <div class="fold-mark fold-vc-right"></div>
+
+  <!-- ══ FACE A — 9×9 SVG ══ -->
+  <svg class="face-a" id="svg-a" style="position:absolute;inset:0;width:1220px;height:1220px;overflow:visible;" viewBox="0 0 1220 1220" xmlns="http://www.w3.org/2000/svg">
+
+    <!-- Metatron's Cube / Flower of Life underlay (Law 2: darkness is not empty) -->
+    <g opacity="0.030" stroke="#C8A44A" stroke-width="0.5" fill="none">
+      <!-- Flower of Life: central hexagon ring of circles, R=108 -->
+      <circle cx="610" cy="610" r="108"/>
+      <circle cx="610" cy="502" r="108"/>
+      <circle cx="610" cy="718" r="108"/>
+      <circle cx="703.6" cy="556" r="108"/>
+      <circle cx="703.6" cy="664" r="108"/>
+      <circle cx="516.4" cy="556" r="108"/>
+      <circle cx="516.4" cy="664" r="108"/>
+      <!-- outer ring -->
+      <circle cx="610" cy="394" r="108"/>
+      <circle cx="610" cy="826" r="108"/>
+      <circle cx="797.2" cy="502" r="108"/>
+      <circle cx="797.2" cy="718" r="108"/>
+      <circle cx="422.8" cy="502" r="108"/>
+      <circle cx="422.8" cy="718" r="108"/>
+      <!-- Metatron's Cube lines (13 centres connected) -->
+      <line x1="610" y1="502" x2="703.6" y2="664"/>
+      <line x1="610" y1="502" x2="516.4" y2="664"/>
+      <line x1="610" y1="718" x2="703.6" y2="556"/>
+      <line x1="610" y1="718" x2="516.4" y2="556"/>
+      <line x1="703.6" y1="556" x2="703.6" y2="664"/>
+      <line x1="516.4" y1="556" x2="516.4" y2="664"/>
+      <line x1="610" y1="502" x2="610" y2="718"/>
+      <line x1="516.4" y1="556" x2="703.6" y2="664"/>
+      <line x1="703.6" y1="556" x2="516.4" y2="664"/>
+      <!-- outer spokes -->
+      <line x1="610" y1="394" x2="610" y2="826"/>
+      <line x1="422.8" y1="502" x2="797.2" y2="718"/>
+      <line x1="797.2" y1="502" x2="422.8" y2="718"/>
+      <circle cx="610" cy="610" r="324"/>
+      <circle cx="610" cy="610" r="216"/>
+      <circle cx="610" cy="610" r="432"/>
+    </g>
+
+    <!-- column tints: fire/water/air/earth/aether/fire/water/air/earth -->
+    <!-- grid field: x=124..1096, y=124..1096 (972px), each cell=108px -->
+    <rect x="124"  y="124" width="108" height="972" fill="#D45A28" opacity="0.055"/><!-- col1 fire -->
+    <rect x="232"  y="124" width="108" height="972" fill="#3878A0" opacity="0.055"/><!-- col2 water -->
+    <rect x="340"  y="124" width="108" height="972" fill="#78A8C8" opacity="0.055"/><!-- col3 air -->
+    <rect x="448"  y="124" width="108" height="972" fill="#5A8850" opacity="0.055"/><!-- col4 earth -->
+    <rect x="556"  y="124" width="108" height="972" fill="#7A5CA5" opacity="0.060"/><!-- col5 aether -->
+    <rect x="664"  y="124" width="108" height="972" fill="#D45A28" opacity="0.055"/><!-- col6 fire -->
+    <rect x="772"  y="124" width="108" height="972" fill="#3878A0" opacity="0.055"/><!-- col7 water -->
+    <rect x="880"  y="124" width="108" height="972" fill="#78A8C8" opacity="0.055"/><!-- col8 air -->
+    <rect x="988"  y="124" width="108" height="972" fill="#5A8850" opacity="0.055"/><!-- col9 earth -->
+
+    <!-- Prime row bands at left edge (3 bands × 3 rows = 9) -->
+    <!-- Band A (rows 1-3): ◇ · Band B (rows 4-6): ⬡ · Band C (rows 7-9): ⚙ -->
+    <rect x="108" y="124" width="16" height="324" fill="#C8A44A" opacity="0.12"/>
+    <rect x="108" y="448" width="16" height="324" fill="#C8A44A" opacity="0.09"/>
+    <rect x="108" y="772" width="16" height="324" fill="#C8A44A" opacity="0.12"/>
+    <!-- right edge bands -->
+    <rect x="1096" y="124" width="16" height="324" fill="#C8A44A" opacity="0.12"/>
+    <rect x="1096" y="448" width="16" height="324" fill="#C8A44A" opacity="0.09"/>
+    <rect x="1096" y="772" width="16" height="324" fill="#C8A44A" opacity="0.12"/>
+
+    <!-- Prime band glyphs -->
+    <text x="116" y="292" text-anchor="middle" font-family="serif" font-size="11" fill="#C8A44A" opacity="0.6">◇</text>
+    <text x="116" y="616" text-anchor="middle" font-family="serif" font-size="11" fill="#C8A44A" opacity="0.5">⬡</text>
+    <text x="116" y="940" text-anchor="middle" font-family="serif" font-size="11" fill="#C8A44A" opacity="0.6">⚙</text>
+    <text x="1104" y="292" text-anchor="middle" font-family="serif" font-size="11" fill="#C8A44A" opacity="0.6">◇</text>
+    <text x="1104" y="616" text-anchor="middle" font-family="serif" font-size="11" fill="#C8A44A" opacity="0.5">⬡</text>
+    <text x="1104" y="940" text-anchor="middle" font-family="serif" font-size="11" fill="#C8A44A" opacity="0.6">⚙</text>
+
+    <!-- grid lines -->
+    <g stroke="#C8A44A" stroke-width="0.5" opacity="0.28">
+      <!-- horizontal lines y=124 to y=1096 step 108 -->
+      <line x1="124" y1="124" x2="1096" y2="124"/>
+      <line x1="124" y1="232" x2="1096" y2="232"/>
+      <line x1="124" y1="340" x2="1096" y2="340"/>
+      <line x1="124" y1="448" x2="1096" y2="448"/>
+      <line x1="124" y1="556" x2="1096" y2="556"/>
+      <line x1="124" y1="664" x2="1096" y2="664"/>
+      <line x1="124" y1="772" x2="1096" y2="772"/>
+      <line x1="124" y1="880" x2="1096" y2="880"/>
+      <line x1="124" y1="988" x2="1096" y2="988"/>
+      <line x1="124" y1="1096" x2="1096" y2="1096"/>
+      <!-- vertical lines x=124 to x=1096 step 108 -->
+      <line x1="124"  y1="124" x2="124"  y2="1096"/>
+      <line x1="232"  y1="124" x2="232"  y2="1096"/>
+      <line x1="340"  y1="124" x2="340"  y2="1096"/>
+      <line x1="448"  y1="124" x2="448"  y2="1096"/>
+      <line x1="556"  y1="124" x2="556"  y2="1096"/>
+      <line x1="664"  y1="124" x2="664"  y2="1096"/>
+      <line x1="772"  y1="124" x2="772"  y2="1096"/>
+      <line x1="880"  y1="124" x2="880"  y2="1096"/>
+      <line x1="988"  y1="124" x2="988"  y2="1096"/>
+      <line x1="1096" y1="124" x2="1096" y2="1096"/>
+    </g>
+
+    <!-- ring border (outer + inner) -->
+    <rect x="4" y="4" width="1212" height="1212" fill="none" stroke="#C8A44A" stroke-width="1" opacity="0.35"/>
+    <rect x="122" y="122" width="976" height="976" fill="none" stroke="#C8A44A" stroke-width="1" opacity="0.25"/>
+
+    <!-- THRONE (5,5) octagram at centre: cell centre x=610, y=610 -->
+    <!-- octagram = two overlapping squares -->
+    <g transform="translate(610,610)">
+      <rect x="-28" y="-28" width="56" height="56" fill="none" stroke="#C8A44A" stroke-width="1.2" opacity="0.9" transform="rotate(0)"/>
+      <rect x="-28" y="-28" width="56" height="56" fill="none" stroke="#C8A44A" stroke-width="1.2" opacity="0.9" transform="rotate(45)"/>
+      <circle r="4" fill="#C8A44A" opacity="0.8"/>
+      <circle r="22" fill="none" stroke="#C8A44A" stroke-width="0.5" opacity="0.4"/>
+      <!-- Metatron cross lines through octagram -->
+      <line x1="-38" y1="0" x2="38" y2="0" stroke="#C8A44A" stroke-width="0.5" opacity="0.4"/>
+      <line x1="0" y1="-38" x2="0" y2="38" stroke="#C8A44A" stroke-width="0.5" opacity="0.4"/>
+      <line x1="-27" y1="-27" x2="27" y2="27" stroke="#C8A44A" stroke-width="0.5" opacity="0.4"/>
+      <line x1="27" y1="-27" x2="-27" y2="27" stroke="#C8A44A" stroke-width="0.5" opacity="0.4"/>
+      <!-- glow halo -->
+      <circle r="50" fill="rgba(200,164,74,0.04)"/>
+    </g>
+    <text x="610" y="688" text-anchor="middle" font-family="Cinzel,serif" font-size="7.5" fill="#C8A44A" opacity="0.55" letter-spacing="0.1em">∆ THRONE</text>
+
+    <!-- GATES at four corners: (1,1) (9,1) (9,9) (1,9) -->
+    <!-- cell centres: (1,1)=178,178 · (9,1)=1042,178 · (9,9)=1042,1042 · (1,9)=178,1042 -->
+    <g stroke="#7A5CA5" stroke-width="1.2" fill="none" opacity="0.85">
+      <!-- gate (1,1) -->
+      <polygon points="178,152 202,178 178,204 154,178" stroke-width="1"/>
+      <circle cx="178" cy="178" r="6" fill="#7A5CA5" opacity="0.5"/>
+      <!-- gate (9,1) -->
+      <polygon points="1042,152 1066,178 1042,204 1018,178" stroke-width="1"/>
+      <circle cx="1042" cy="178" r="6" fill="#7A5CA5" opacity="0.5"/>
+      <!-- gate (9,9) -->
+      <polygon points="1042,1016 1066,1042 1042,1068 1018,1042" stroke-width="1"/>
+      <circle cx="1042" cy="1042" r="6" fill="#7A5CA5" opacity="0.5"/>
+      <!-- gate (1,9) -->
+      <polygon points="178,1016 202,1042 178,1068 154,1042" stroke-width="1"/>
+      <circle cx="178" cy="1042" r="6" fill="#7A5CA5" opacity="0.5"/>
+    </g>
+
+    <!-- coordinate labels — x-axis top (cols 1-9) and y-axis left (rows 1-9) -->
+    <g font-family="JetBrains Mono,monospace" font-size="10" fill="#C8C4BB" opacity="0.40">
+      <!-- top x coords -->
+      <text x="178" y="115" text-anchor="middle">1</text>
+      <text x="286" y="115" text-anchor="middle">2</text>
+      <text x="394" y="115" text-anchor="middle">3</text>
+      <text x="502" y="115" text-anchor="middle">4</text>
+      <text x="610" y="115" text-anchor="middle">5</text>
+      <text x="718" y="115" text-anchor="middle">6</text>
+      <text x="826" y="115" text-anchor="middle">7</text>
+      <text x="934" y="115" text-anchor="middle">8</text>
+      <text x="1042" y="115" text-anchor="middle">9</text>
+      <!-- bottom x coords -->
+      <text x="178" y="1113" text-anchor="middle">1</text>
+      <text x="286" y="1113" text-anchor="middle">2</text>
+      <text x="394" y="1113" text-anchor="middle">3</text>
+      <text x="502" y="1113" text-anchor="middle">4</text>
+      <text x="610" y="1113" text-anchor="middle">5</text>
+      <text x="718" y="1113" text-anchor="middle">6</text>
+      <text x="826" y="1113" text-anchor="middle">7</text>
+      <text x="934" y="1113" text-anchor="middle">8</text>
+      <text x="1042" y="1113" text-anchor="middle">9</text>
+      <!-- left y coords -->
+      <text x="112" y="182" text-anchor="middle">1</text>
+      <text x="112" y="290" text-anchor="middle">2</text>
+      <text x="112" y="398" text-anchor="middle">3</text>
+      <text x="112" y="506" text-anchor="middle">4</text>
+      <text x="112" y="614" text-anchor="middle">5</text>
+      <text x="112" y="722" text-anchor="middle">6</text>
+      <text x="112" y="830" text-anchor="middle">7</text>
+      <text x="112" y="938" text-anchor="middle">8</text>
+      <text x="112" y="1046" text-anchor="middle">9</text>
+      <!-- right y coords -->
+      <text x="1108" y="182" text-anchor="middle">1</text>
+      <text x="1108" y="290" text-anchor="middle">2</text>
+      <text x="1108" y="398" text-anchor="middle">3</text>
+      <text x="1108" y="506" text-anchor="middle">4</text>
+      <text x="1108" y="614" text-anchor="middle">5</text>
+      <text x="1108" y="722" text-anchor="middle">6</text>
+      <text x="1108" y="830" text-anchor="middle">7</text>
+      <text x="1108" y="938" text-anchor="middle">8</text>
+      <text x="1108" y="1046" text-anchor="middle">9</text>
+    </g>
+
+    <!-- Face B coordinate pairs in each cell corner (tiny, per spec) -->
+    <!-- Sample shown for a few representative cells; full table from 05_board_geometry.json -->
+    <g font-family="JetBrains Mono,monospace" font-size="6" fill="#C8C4BB" opacity="0.22">
+      <!-- Row 1 -->
+      <text x="130" y="134">(1,1)</text><text x="238" y="134">(2,1)</text><text x="346" y="134">(3,1)</text>
+      <text x="454" y="134">(4,1)</text><text x="562" y="134">(5,1)</text><text x="670" y="134">(6,1)</text>
+      <text x="778" y="134">(7,1)</text><text x="886" y="134">(8,1)</text><text x="994" y="134">(9,1)</text>
+      <!-- Row 5 (centre) -->
+      <text x="130" y="566">(1,5)</text><text x="238" y="566">(2,5)</text><text x="346" y="566">(3,5)</text>
+      <text x="454" y="566">(4,5)</text><text x="562" y="566">(5,5)</text><text x="670" y="566">(6,5)</text>
+      <text x="778" y="566">(7,5)</text><text x="886" y="566">(8,5)</text><text x="994" y="566">(9,5)</text>
+      <!-- Row 9 -->
+      <text x="130" y="998">(1,9)</text><text x="238" y="998">(2,9)</text><text x="346" y="998">(3,9)</text>
+      <text x="454" y="998">(4,9)</text><text x="562" y="998">(5,9)</text><text x="670" y="998">(6,9)</text>
+      <text x="778" y="998">(7,9)</text><text x="886" y="998">(8,9)</text><text x="994" y="998">(9,9)</text>
+    </g>
+
+    <!-- element glyph labels per column (subtle, at grid top) -->
+    <g font-family="serif" font-size="9" text-anchor="middle" opacity="0.30">
+      <text x="178" y="143" fill="#D45A28">🔥</text>
+      <text x="286" y="143" fill="#3878A0">💧</text>
+      <text x="394" y="143" fill="#78A8C8">🌬</text>
+      <text x="502" y="143" fill="#5A8850">🌿</text>
+      <text x="610" y="143" fill="#7A5CA5">✦</text>
+      <text x="718" y="143" fill="#D45A28">🔥</text>
+      <text x="826" y="143" fill="#3878A0">💧</text>
+      <text x="934" y="143" fill="#78A8C8">🌬</text>
+      <text x="1042" y="143" fill="#5A8850">🌿</text>
+    </g>
+
+  </svg>
+
+  <!-- ══ FACE B — 12×12 SVG ══ -->
+  <svg class="face-b" id="svg-b" style="position:absolute;inset:0;width:1220px;height:1220px;display:none;" viewBox="0 0 1220 1220" xmlns="http://www.w3.org/2000/svg">
+
+    <!-- same Metatron underlay as Face A -->
+    <g opacity="0.025" stroke="#C8A44A" stroke-width="0.5" fill="none">
+      <circle cx="610" cy="610" r="108"/><circle cx="610" cy="502" r="108"/>
+      <circle cx="610" cy="718" r="108"/><circle cx="703.6" cy="556" r="108"/>
+      <circle cx="703.6" cy="664" r="108"/><circle cx="516.4" cy="556" r="108"/>
+      <circle cx="516.4" cy="664" r="108"/>
+      <circle cx="610" cy="610" r="324"/><circle cx="610" cy="610" r="216"/>
+      <circle cx="610" cy="610" r="486"/>
+    </g>
+
+    <!-- 12×12 grid: field 972×972, origin (124,124), cell=81px -->
+    <!-- Ley lines: orthogonal (all grid lines) + diagonals (through field) -->
+    <g stroke="#C8A44A" stroke-width="0.4" opacity="0.22">
+      <!-- horizontal lines -->
+      <line x1="124" y1="124"  x2="1096" y2="124"/>
+      <line x1="124" y1="205"  x2="1096" y2="205"/>
+      <line x1="124" y1="286"  x2="1096" y2="286"/>
+      <line x1="124" y1="367"  x2="1096" y2="367"/>
+      <line x1="124" y1="448"  x2="1096" y2="448"/>
+      <line x1="124" y1="529"  x2="1096" y2="529"/>
+      <line x1="124" y1="610"  x2="1096" y2="610"/>
+      <line x1="124" y1="691"  x2="1096" y2="691"/>
+      <line x1="124" y1="772"  x2="1096" y2="772"/>
+      <line x1="124" y1="853"  x2="1096" y2="853"/>
+      <line x1="124" y1="934"  x2="1096" y2="934"/>
+      <line x1="124" y1="1015" x2="1096" y2="1015"/>
+      <line x1="124" y1="1096" x2="1096" y2="1096"/>
+      <!-- vertical lines -->
+      <line x1="124"  y1="124" x2="124"  y2="1096"/>
+      <line x1="205"  y1="124" x2="205"  y2="1096"/>
+      <line x1="286"  y1="124" x2="286"  y2="1096"/>
+      <line x1="367"  y1="124" x2="367"  y2="1096"/>
+      <line x1="448"  y1="124" x2="448"  y2="1096"/>
+      <line x1="529"  y1="124" x2="529"  y2="1096"/>
+      <line x1="610"  y1="124" x2="610"  y2="1096"/>
+      <line x1="691"  y1="124" x2="691"  y2="1096"/>
+      <line x1="772"  y1="124" x2="772"  y2="1096"/>
+      <line x1="853"  y1="124" x2="853"  y2="1096"/>
+      <line x1="934"  y1="124" x2="934"  y2="1096"/>
+      <line x1="1015" y1="124" x2="1015" y2="1096"/>
+      <line x1="1096" y1="124" x2="1096" y2="1096"/>
+    </g>
+
+    <!-- diagonal Ley Lines (primary diagonals across full field) -->
+    <g stroke="#C8A44A" stroke-width="0.35" opacity="0.14" stroke-dasharray="4,4">
+      <line x1="124" y1="124" x2="1096" y2="1096"/>
+      <line x1="1096" y1="124" x2="124" y2="1096"/>
+      <!-- sub-diagonals offset by 3 cells -->
+      <line x1="367" y1="124" x2="1096" y2="853"/>
+      <line x1="124" y1="367" x2="853" y2="1096"/>
+      <line x1="853" y1="124" x2="124" y2="853"/>
+      <line x1="1096" y1="367" x2="367" y2="1096"/>
+    </g>
+
+    <!-- Node Wells at all 13×13 intersections -->
+    <g fill="#C8A44A" opacity="0.45">
+      <!-- generated for all 169 intersections: x = 124 + i*81, y = 124 + j*81 for i,j in 0..12 -->
+      <!-- special: Nexus at centre vertex (6,6) = x=610, y=610 gets larger treatment -->
+    </g>
+
+    <!-- Node wells script-generated inline for compactness -->
+    <g id="node-wells"></g>
+
+    <!-- Nexus at centre vertex (intersection of col6/row6) = (610,610) -->
+    <g transform="translate(610,610)">
+      <circle r="14" fill="none" stroke="#C8A44A" stroke-width="1.5" opacity="0.9"/>
+      <circle r="5" fill="#C8A44A" opacity="0.9"/>
+      <circle r="24" fill="none" stroke="#C8A44A" stroke-width="0.5" opacity="0.4" stroke-dasharray="3,3"/>
+      <line x1="-18" y1="0" x2="18" y2="0" stroke="#C8A44A" stroke-width="0.7" opacity="0.5"/>
+      <line x1="0" y1="-18" x2="0" y2="18" stroke="#C8A44A" stroke-width="0.7" opacity="0.5"/>
+    </g>
+    <text x="610" y="644" text-anchor="middle" font-family="Cinzel,serif" font-size="7.5" fill="#C8A44A" opacity="0.6" letter-spacing="0.1em">NEXUS</text>
+
+    <!-- ring border -->
+    <rect x="4" y="4" width="1212" height="1212" fill="none" stroke="#C8A44A" stroke-width="1" opacity="0.35"/>
+    <rect x="122" y="122" width="976" height="976" fill="none" stroke="#C8A44A" stroke-width="1" opacity="0.25"/>
+
+    <!-- coordinate labels 1-12 -->
+    <g font-family="JetBrains Mono,monospace" font-size="9" fill="#C8C4BB" opacity="0.35" text-anchor="middle">
+      <text x="164.5" y="115">1</text><text x="245.5" y="115">2</text><text x="326.5" y="115">3</text>
+      <text x="407.5" y="115">4</text><text x="488.5" y="115">5</text><text x="569.5" y="115">6</text>
+      <text x="650.5" y="115">7</text><text x="731.5" y="115">8</text><text x="812.5" y="115">9</text>
+      <text x="893.5" y="115">10</text><text x="974.5" y="115">11</text><text x="1055.5" y="115">12</text>
+      <text x="164.5" y="1113">1</text><text x="245.5" y="1113">2</text><text x="326.5" y="1113">3</text>
+      <text x="407.5" y="1113">4</text><text x="488.5" y="1113">5</text><text x="569.5" y="1113">6</text>
+      <text x="650.5" y="1113">7</text><text x="731.5" y="1113">8</text><text x="812.5" y="1113">9</text>
+      <text x="893.5" y="1113">10</text><text x="974.5" y="1113">11</text><text x="1055.5" y="1113">12</text>
+      <text x="112" y="168.5">1</text><text x="112" y="249.5">2</text><text x="112" y="330.5">3</text>
+      <text x="112" y="411.5">4</text><text x="112" y="492.5">5</text><text x="112" y="573.5">6</text>
+      <text x="112" y="654.5">7</text><text x="112" y="735.5">8</text><text x="112" y="816.5">9</text>
+      <text x="112" y="897.5">10</text><text x="112" y="978.5">11</text><text x="112" y="1059.5">12</text>
+      <text x="1108" y="168.5">1</text><text x="1108" y="249.5">2</text><text x="1108" y="330.5">3</text>
+      <text x="1108" y="411.5">4</text><text x="1108" y="492.5">5</text><text x="1108" y="573.5">6</text>
+      <text x="1108" y="654.5">7</text><text x="1108" y="735.5">8</text><text x="1108" y="816.5">9</text>
+      <text x="1108" y="897.5">10</text><text x="1108" y="978.5">11</text><text x="1108" y="1059.5">12</text>
+    </g>
+
+    <!-- Face B label -->
+    <text x="610" y="68" text-anchor="middle" font-family="Cinzel,serif" font-size="11" fill="#C8A44A" opacity="0.5" letter-spacing="0.2em">FACE B — CONFLUENCE · 12×12</text>
+
+  </svg>
+
+  <!-- ══ RING — shared by both faces ══ -->
+  <div class="ring" id="ring">
+
+    <!-- Corner school panels -->
+    <!-- TL: Initiation / Fire / ELIAS · Auralon -->
+    <div class="corner-panel fire" style="top:4px;left:4px;">
+      <div class="corner-glyph" style="color:#D45A28;">∆</div>
+      <div class="corner-school">INITIATION<span class="grove-line">Fire · ELIAS</span></div>
+      <div class="corner-guides">Auralon</div>
+    </div>
+
+    <!-- TR: Courage / Earth / ASHER · Mylo -->
+    <div class="corner-panel earth" style="top:4px;right:4px;">
+      <div class="corner-glyph" style="color:#5A8850;">⚒</div>
+      <div class="corner-school">COURAGE<span class="grove-line">Earth · ASHER</span></div>
+      <div class="corner-guides">Mylo</div>
+    </div>
+
+    <!-- BR: Mystery / Water / IRIS · Koru -->
+    <div class="corner-panel water" style="bottom:4px;right:4px;">
+      <div class="corner-glyph" style="color:#3878A0;">☽</div>
+      <div class="corner-school">MYSTERY<span class="grove-line">Water · IRIS</span></div>
+      <div class="corner-guides">Koru</div>
+    </div>
+
+    <!-- BL: Creation / Air / AURORA · Zii -->
+    <div class="corner-panel air" style="bottom:4px;left:4px;">
+      <div class="corner-glyph" style="color:#78A8C8;">✧</div>
+      <div class="corner-school">CREATION<span class="grove-line">Air · AURORA</span></div>
+      <div class="corner-guides">Zii</div>
+    </div>
+
+    <!-- 12 seats: 3 per side, clockwise from TL -->
+    <!-- TOP side (left→right): I II III — y=62px, x spaced at 1/4 · 2/4 · 3/4 of 1220 -->
+    <div class="seat" style="left:306px;top:62px;">
+      <div class="seat-num">I</div>
+      <div class="seat-name">The Fool</div>
+      <div class="seat-tag">SPRING</div>
+    </div>
+    <div class="seat" style="left:610px;top:62px;">
+      <div class="seat-num">II</div>
+      <div class="seat-name">Magician</div>
+      <div class="seat-tag">FIRE</div>
+    </div>
+    <div class="seat" style="left:914px;top:62px;">
+      <div class="seat-num">III</div>
+      <div class="seat-name">High Priestess</div>
+      <div class="seat-tag">WATER</div>
+    </div>
+
+    <!-- RIGHT side (top→bottom): IV V VI — x=1158px -->
+    <div class="seat open" style="left:1158px;top:306px;">
+      <div class="seat-num">IV</div>
+      <div class="seat-name">Emperor</div>
+      <div class="open-badge">INCOMING</div>
+    </div>
+    <div class="seat" style="left:1158px;top:610px;">
+      <div class="seat-num">V</div>
+      <div class="seat-name">Hierophant</div>
+      <div class="seat-tag">EARTH</div>
+    </div>
+    <div class="seat" style="left:1158px;top:914px;">
+      <div class="seat-num">VI</div>
+      <div class="seat-name">The Lovers</div>
+      <div class="seat-tag">AIR</div>
+    </div>
+
+    <!-- BOTTOM side (right→left): VII VIII IX — y=1158px -->
+    <div class="seat open" style="left:914px;top:1158px;">
+      <div class="seat-num">VII</div>
+      <div class="seat-name">Chariot</div>
+      <div class="open-badge">INCOMING</div>
+    </div>
+    <div class="seat" style="left:610px;top:1158px;">
+      <div class="seat-num">VIII</div>
+      <div class="seat-name">The Hermit</div>
+      <div class="seat-tag">EARTH</div>
+    </div>
+    <div class="seat" style="left:306px;top:1158px;">
+      <div class="seat-num">IX</div>
+      <div class="seat-name">Wheel</div>
+      <div class="r-mark">· R2</div>
+    </div>
+
+    <!-- LEFT side (bottom→top): X XI XII — x=62px -->
+    <div class="seat open" style="left:62px;top:914px;">
+      <div class="seat-num">X</div>
+      <div class="seat-name">Justice</div>
+      <div class="open-badge">INCOMING</div>
+    </div>
+    <div class="seat" style="left:62px;top:610px;">
+      <div class="seat-num">XI</div>
+      <div class="seat-name">Death</div>
+      <div class="seat-tag">WATER</div>
+    </div>
+    <div class="seat" style="left:62px;top:306px;">
+      <div class="seat-num">XII</div>
+      <div class="seat-name">The Devil</div>
+      <div class="seat-tag">FIRE</div>
+    </div>
+
+  </div><!-- /ring -->
+
+  <!-- edge legend -->
+  <div class="edge-legend face-a">
+    <div class="legend-item"><span class="legend-icon">∆</span> Throne</div>
+    <div class="legend-item"><span class="legend-icon">◇</span> Gate</div>
+    <div class="legend-item"><span class="legend-icon">✦</span> Anomaly</div>
+    <div class="legend-item"><span class="legend-icon">※</span> Scar</div>
+    <div class="legend-item"><span class="legend-icon">?</span> Hidden</div>
+    <div class="legend-item"><span class="legend-icon">✖</span> Warden</div>
+  </div>
+  <div class="edge-legend face-b" style="display:none;">
+    <div class="legend-item"><span class="legend-icon">●</span> Node Well</div>
+    <div class="legend-item"><span class="legend-icon">─</span> Ley Line</div>
+    <div class="legend-item"><span class="legend-icon">⊕</span> Nexus</div>
+  </div>
+
+</div><!-- /board-wrap -->
+
+<!-- board title + subtitle -->
+<div style="text-align:center;opacity:0.45;">
+  <div style="font-family:'Cinzel',serif;font-size:11px;letter-spacing:0.22em;color:#C8A44A;">
+    SACRED ARCANA · ARCANA BOARD
+  </div>
+  <div style="font-family:'EB Garamond',serif;font-size:10px;color:#C8C4BB;margin-top:4px;">
+    610 × 610 mm · matte linen · four-panel fold · 3 mm bleed
+  </div>
+</div>
+
+<script>
+// Render all 169 node wells for Face B
+(function() {
+  const g = document.getElementById('node-wells');
+  if (!g) return;
+  let html = '';
+  for (let i = 0; i <= 12; i++) {
+    for (let j = 0; j <= 12; j++) {
+      const x = 124 + i * 81;
+      const y = 124 + j * 81;
+      // Nexus handled separately
+      if (i === 6 && j === 6) continue;
+      const r = (i % 3 === 0 && j % 3 === 0) ? 3.5 : 2;
+      const op = (i % 3 === 0 && j % 3 === 0) ? 0.6 : 0.35;
+      html += `<circle cx="${x}" cy="${y}" r="${r}" fill="#C8A44A" opacity="${op}"/>`;
+    }
+  }
+  g.innerHTML = html;
+})();
+
+function setFace(f) {
+  document.body.className = 'face-' + f;
+  document.getElementById('btn-a').classList.toggle('active', f === 'a');
+  document.getElementById('btn-b').classList.toggle('active', f === 'b');
+  const svgA = document.getElementById('svg-a');
+  const svgB = document.getElementById('svg-b');
+  const legA = document.querySelectorAll('.edge-legend.face-a');
+  const legB = document.querySelectorAll('.edge-legend.face-b');
+  svgA.style.display = f === 'a' ? 'block' : 'none';
+  svgB.style.display = f === 'b' ? 'block' : 'none';
+  legA.forEach(el => el.style.display = f === 'a' ? 'flex' : 'none');
+  legB.forEach(el => el.style.display = f === 'b' ? 'flex' : 'none');
+}
+// init
+setFace('a');
+</script>
+
+</body>
+</html>

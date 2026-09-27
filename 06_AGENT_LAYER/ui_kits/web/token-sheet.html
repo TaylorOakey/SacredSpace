@@ -1,0 +1,572 @@
+<!-- @dsCard group="UI Kit — Web" name="Token Sheet" subtitle="A3 print · Activation Stones · Motes · Scar/Hidden/Anomaly tiles · Fracture · Warden standees · Geometry Lens" viewport="594x900" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=640">
+<title>Token Sheet — Sacred Arcana</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* ── CODEX-VISUAL-001 tokens — Codex mode (print) ── */
+:root {
+  --void:       #030508;
+  --void-2:     #0a0c0f;
+  --parchment:  #C8C4BB;
+  --pure:       #EEF6EF;
+  --gold:       #C8A44A;
+  --gold-dim:   rgba(200,164,74,0.18);
+  --gold-faint: rgba(200,164,74,0.06);
+  --bronze:     #8B7355;
+  --bio:        #72E87A;
+  --fire:       #D45A28;
+  --water:      #3878A0;
+  --earth:      #5A8850;
+  --air:        #78A8C8;
+  --aether:     #7A5CA5;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: var(--void);
+  color: var(--pure);
+  font-family: 'Cinzel', serif;
+  padding: 0;
+  width: 594px;
+  min-height: 840px;
+}
+
+/* ── sheet wrapper (A3 = 594×840px at 2px/mm) ── */
+.sheet {
+  width: 594px;
+  min-height: 840px;
+  background: var(--void-2);
+  border: 1px solid var(--gold-dim);
+  display: flex;
+  flex-direction: column;
+  padding: 20px 22px 24px;
+  gap: 0;
+  position: relative;
+}
+
+/* ── header ── */
+.sheet-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--gold-dim);
+  margin-bottom: 18px;
+}
+.sheet-title {
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  color: var(--gold);
+}
+.sheet-meta {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 7px;
+  color: var(--parchment);
+  opacity: 0.4;
+  letter-spacing: 0.08em;
+}
+
+/* ── section ── */
+.section {
+  margin-bottom: 20px;
+}
+.section-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 7.5px;
+  letter-spacing: 0.15em;
+  color: var(--gold);
+  opacity: 0.6;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.section-label::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--gold-dim);
+}
+
+/* ── token row ── */
+.token-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: flex-end;
+}
+
+/* ── token wrapper ── */
+.token-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+.token-name {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 6.5px;
+  color: var(--parchment);
+  opacity: 0.45;
+  letter-spacing: 0.06em;
+  text-align: center;
+}
+.token-count {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 6px;
+  color: var(--gold);
+  opacity: 0.5;
+  letter-spacing: 0.05em;
+}
+
+/* ── cut line (dashed border around token) ── */
+.cut {
+  border: 1px dashed rgba(200,164,74,0.22);
+  border-radius: 2px;
+  padding: 4px;
+}
+.cut-circle { border-radius: 50%; padding: 4px; }
+.cut-hex    { border-radius: 4px; padding: 4px; }
+
+/* ── geometry lens dividers ── */
+.lens-row {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+.lens-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+.lens-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 6.5px;
+  color: var(--parchment);
+  opacity: 0.4;
+  letter-spacing: 0.08em;
+  text-align: center;
+}
+
+/* ── open items footer ── */
+.footer {
+  margin-top: auto;
+  padding-top: 12px;
+  border-top: 1px solid var(--gold-dim);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 6.5px;
+  color: var(--parchment);
+  opacity: 0.3;
+  line-height: 1.8;
+  letter-spacing: 0.06em;
+}
+
+/* standee base line */
+.standee-base {
+  width: 100%;
+  height: 2px;
+  background: var(--gold);
+  opacity: 0.4;
+  border-radius: 1px;
+  margin-top: 2px;
+}
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <div class="sheet-header">
+    <div class="sheet-title">SACRED ARCANA — TOKEN SHEET</div>
+    <div class="sheet-meta">A3 · 297×420 mm · print &amp; cut · CODEX-VISUAL-001</div>
+  </div>
+
+  <!-- ══ ACTIVATION STONES ══ -->
+  <div class="section">
+    <div class="section-label">ACTIVATION STONES — bright face + dim face</div>
+    <div class="token-row">
+
+      <!-- BRIGHT face ×6 -->
+      <div class="token-wrap">
+        <div class="cut cut-circle">
+          <svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <radialGradient id="stBright" cx="38%" cy="32%" r="65%">
+                <stop offset="0%" stop-color="#EEF6EF" stop-opacity="0.9"/>
+                <stop offset="55%" stop-color="#C8A44A" stop-opacity="0.7"/>
+                <stop offset="100%" stop-color="#8B5E10" stop-opacity="1"/>
+              </radialGradient>
+              <filter id="glow"><feGaussianBlur stdDeviation="2" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+            </defs>
+            <circle cx="24" cy="24" r="22" fill="url(#stBright)"/>
+            <circle cx="24" cy="24" r="22" fill="none" stroke="#C8A44A" stroke-width="0.8" opacity="0.7"/>
+            <circle cx="18" cy="17" r="5" fill="#EEF6EF" opacity="0.35"/>
+            <circle cx="24" cy="24" r="6" fill="none" stroke="#EEF6EF" stroke-width="0.5" opacity="0.45" filter="url(#glow)"/>
+            <!-- octagram in stone -->
+            <g transform="translate(24,24)" stroke="#8B5E10" stroke-width="0.5" fill="none" opacity="0.4">
+              <rect x="-7" y="-7" width="14" height="14"/>
+              <rect x="-7" y="-7" width="14" height="14" transform="rotate(45)"/>
+            </g>
+          </svg>
+        </div>
+        <div class="token-name">BRIGHT</div>
+        <div class="token-count">×6 per player</div>
+      </div>
+
+      <!-- BRIGHT ×5 more (smaller repeat strip) -->
+      <div class="token-wrap" style="flex-direction:row;gap:6px;align-items:flex-end;">
+        <svg width="38" height="38" viewBox="0 0 48 48"><defs><radialGradient id="stB2" cx="38%" cy="32%" r="65%"><stop offset="0%" stop-color="#EEF6EF" stop-opacity="0.9"/><stop offset="55%" stop-color="#C8A44A" stop-opacity="0.7"/><stop offset="100%" stop-color="#8B5E10" stop-opacity="1"/></radialGradient></defs><circle cx="24" cy="24" r="22" fill="url(#stB2)"/><circle cx="24" cy="24" r="22" fill="none" stroke="#C8A44A" stroke-width="0.8" opacity="0.7"/><circle cx="18" cy="17" r="5" fill="#EEF6EF" opacity="0.35"/></svg>
+        <svg width="38" height="38" viewBox="0 0 48 48"><circle cx="24" cy="24" r="22" fill="url(#stB2)"/><circle cx="24" cy="24" r="22" fill="none" stroke="#C8A44A" stroke-width="0.8" opacity="0.7"/><circle cx="18" cy="17" r="5" fill="#EEF6EF" opacity="0.35"/></svg>
+        <svg width="38" height="38" viewBox="0 0 48 48"><circle cx="24" cy="24" r="22" fill="url(#stB2)"/><circle cx="24" cy="24" r="22" fill="none" stroke="#C8A44A" stroke-width="0.8" opacity="0.7"/><circle cx="18" cy="17" r="5" fill="#EEF6EF" opacity="0.35"/></svg>
+        <svg width="38" height="38" viewBox="0 0 48 48"><circle cx="24" cy="24" r="22" fill="url(#stB2)"/><circle cx="24" cy="24" r="22" fill="none" stroke="#C8A44A" stroke-width="0.8" opacity="0.7"/><circle cx="18" cy="17" r="5" fill="#EEF6EF" opacity="0.35"/></svg>
+        <svg width="38" height="38" viewBox="0 0 48 48"><circle cx="24" cy="24" r="22" fill="url(#stB2)"/><circle cx="24" cy="24" r="22" fill="none" stroke="#C8A44A" stroke-width="0.8" opacity="0.7"/><circle cx="18" cy="17" r="5" fill="#EEF6EF" opacity="0.35"/></svg>
+      </div>
+
+      <!-- separator -->
+      <div style="width:1px;height:56px;background:var(--gold-dim);align-self:center;margin:0 4px;"></div>
+
+      <!-- DIM face ×6 -->
+      <div class="token-wrap">
+        <div class="cut cut-circle">
+          <svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <radialGradient id="stDim" cx="38%" cy="32%" r="65%">
+                <stop offset="0%" stop-color="#3A3228" stop-opacity="0.9"/>
+                <stop offset="55%" stop-color="#1E1810" stop-opacity="0.9"/>
+                <stop offset="100%" stop-color="#0C0A07" stop-opacity="1"/>
+              </radialGradient>
+            </defs>
+            <circle cx="24" cy="24" r="22" fill="url(#stDim)"/>
+            <circle cx="24" cy="24" r="22" fill="none" stroke="#8B7355" stroke-width="0.8" opacity="0.5"/>
+            <circle cx="18" cy="17" r="5" fill="#8B7355" opacity="0.12"/>
+            <!-- faded octagram -->
+            <g transform="translate(24,24)" stroke="#8B7355" stroke-width="0.5" fill="none" opacity="0.25">
+              <rect x="-7" y="-7" width="14" height="14"/>
+              <rect x="-7" y="-7" width="14" height="14" transform="rotate(45)"/>
+            </g>
+            <!-- dim dot centre -->
+            <circle cx="24" cy="24" r="3" fill="#8B7355" opacity="0.3"/>
+          </svg>
+        </div>
+        <div class="token-name">DIM</div>
+        <div class="token-count">×6 per player</div>
+      </div>
+
+      <!-- DIM ×5 -->
+      <div class="token-wrap" style="flex-direction:row;gap:6px;align-items:flex-end;">
+        <svg width="38" height="38" viewBox="0 0 48 48"><defs><radialGradient id="stD2" cx="38%" cy="32%" r="65%"><stop offset="0%" stop-color="#3A3228" stop-opacity="0.9"/><stop offset="100%" stop-color="#0C0A07" stop-opacity="1"/></radialGradient></defs><circle cx="24" cy="24" r="22" fill="url(#stD2)"/><circle cx="24" cy="24" r="22" fill="none" stroke="#8B7355" stroke-width="0.8" opacity="0.5"/><circle cx="18" cy="17" r="5" fill="#8B7355" opacity="0.12"/></svg>
+        <svg width="38" height="38" viewBox="0 0 48 48"><circle cx="24" cy="24" r="22" fill="url(#stD2)"/><circle cx="24" cy="24" r="22" fill="none" stroke="#8B7355" stroke-width="0.8" opacity="0.5"/><circle cx="18" cy="17" r="5" fill="#8B7355" opacity="0.12"/></svg>
+        <svg width="38" height="38" viewBox="0 0 48 48"><circle cx="24" cy="24" r="22" fill="url(#stD2)"/><circle cx="24" cy="24" r="22" fill="none" stroke="#8B7355" stroke-width="0.8" opacity="0.5"/><circle cx="18" cy="17" r="5" fill="#8B7355" opacity="0.12"/></svg>
+        <svg width="38" height="38" viewBox="0 0 48 48"><circle cx="24" cy="24" r="22" fill="url(#stD2)"/><circle cx="24" cy="24" r="22" fill="none" stroke="#8B7355" stroke-width="0.8" opacity="0.5"/><circle cx="18" cy="17" r="5" fill="#8B7355" opacity="0.12"/></svg>
+        <svg width="38" height="38" viewBox="0 0 48 48"><circle cx="24" cy="24" r="22" fill="url(#stD2)"/><circle cx="24" cy="24" r="22" fill="none" stroke="#8B7355" stroke-width="0.8" opacity="0.5"/><circle cx="18" cy="17" r="5" fill="#8B7355" opacity="0.12"/></svg>
+      </div>
+
+    </div><!-- /token-row -->
+
+    <!-- glyph key -->
+    <div style="margin-top:8px;display:flex;gap:18px;">
+      <div style="font-family:'JetBrains Mono',monospace;font-size:7px;color:var(--parchment);opacity:0.35;letter-spacing:0.06em;">◉ bright (active) &nbsp;&nbsp; ◍ dim (spent) &nbsp;&nbsp; ○ empty well &nbsp;&nbsp; · trace</div>
+    </div>
+  </div>
+
+  <!-- ══ MOTES ══ -->
+  <div class="section">
+    <div class="section-label">MOTES — generic (R10: one type, no realm variants yet)</div>
+    <div class="token-row">
+      <!-- 8 generic motes -->
+      <div class="token-wrap">
+        <div class="cut cut-circle">
+          <svg width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <radialGradient id="moteG" cx="40%" cy="35%" r="60%">
+                <stop offset="0%" stop-color="#EEF6EF" stop-opacity="0.7"/>
+                <stop offset="100%" stop-color="#72E87A" stop-opacity="0.5"/>
+              </radialGradient>
+            </defs>
+            <circle cx="18" cy="18" r="16" fill="#0a1209"/>
+            <circle cx="18" cy="18" r="16" fill="none" stroke="#72E87A" stroke-width="0.8" opacity="0.6"/>
+            <circle cx="18" cy="18" r="9" fill="url(#moteG)" opacity="0.7"/>
+            <!-- inner star -->
+            <g transform="translate(18,18)" stroke="#72E87A" stroke-width="0.5" fill="none" opacity="0.55">
+              <line x1="0" y1="-6" x2="0" y2="6"/><line x1="-6" y1="0" x2="6" y2="0"/>
+              <line x1="-4" y1="-4" x2="4" y2="4"/><line x1="4" y1="-4" x2="-4" y2="4"/>
+            </g>
+            <circle cx="18" cy="18" r="2.5" fill="#72E87A" opacity="0.8"/>
+          </svg>
+        </div>
+        <div class="token-name">MOTE</div>
+      </div>
+      <!-- 7 more motes in a row -->
+      <div class="token-wrap" style="flex-direction:row;gap:5px;align-items:flex-end;">
+        <svg width="28" height="28" viewBox="0 0 36 36"><circle cx="18" cy="18" r="16" fill="#0a1209"/><circle cx="18" cy="18" r="16" fill="none" stroke="#72E87A" stroke-width="0.8" opacity="0.6"/><circle cx="18" cy="18" r="9" fill="url(#moteG)" opacity="0.7"/><circle cx="18" cy="18" r="2.5" fill="#72E87A" opacity="0.8"/></svg>
+        <svg width="28" height="28" viewBox="0 0 36 36"><circle cx="18" cy="18" r="16" fill="#0a1209"/><circle cx="18" cy="18" r="16" fill="none" stroke="#72E87A" stroke-width="0.8" opacity="0.6"/><circle cx="18" cy="18" r="9" fill="url(#moteG)" opacity="0.7"/><circle cx="18" cy="18" r="2.5" fill="#72E87A" opacity="0.8"/></svg>
+        <svg width="28" height="28" viewBox="0 0 36 36"><circle cx="18" cy="18" r="16" fill="#0a1209"/><circle cx="18" cy="18" r="16" fill="none" stroke="#72E87A" stroke-width="0.8" opacity="0.6"/><circle cx="18" cy="18" r="9" fill="url(#moteG)" opacity="0.7"/><circle cx="18" cy="18" r="2.5" fill="#72E87A" opacity="0.8"/></svg>
+        <svg width="28" height="28" viewBox="0 0 36 36"><circle cx="18" cy="18" r="16" fill="#0a1209"/><circle cx="18" cy="18" r="16" fill="none" stroke="#72E87A" stroke-width="0.8" opacity="0.6"/><circle cx="18" cy="18" r="9" fill="url(#moteG)" opacity="0.7"/><circle cx="18" cy="18" r="2.5" fill="#72E87A" opacity="0.8"/></svg>
+        <svg width="28" height="28" viewBox="0 0 36 36"><circle cx="18" cy="18" r="16" fill="#0a1209"/><circle cx="18" cy="18" r="16" fill="none" stroke="#72E87A" stroke-width="0.8" opacity="0.6"/><circle cx="18" cy="18" r="9" fill="url(#moteG)" opacity="0.7"/><circle cx="18" cy="18" r="2.5" fill="#72E87A" opacity="0.8"/></svg>
+        <svg width="28" height="28" viewBox="0 0 36 36"><circle cx="18" cy="18" r="16" fill="#0a1209"/><circle cx="18" cy="18" r="16" fill="none" stroke="#72E87A" stroke-width="0.8" opacity="0.6"/><circle cx="18" cy="18" r="9" fill="url(#moteG)" opacity="0.7"/><circle cx="18" cy="18" r="2.5" fill="#72E87A" opacity="0.8"/></svg>
+        <svg width="28" height="28" viewBox="0 0 36 36"><circle cx="18" cy="18" r="16" fill="#0a1209"/><circle cx="18" cy="18" r="16" fill="none" stroke="#72E87A" stroke-width="0.8" opacity="0.6"/><circle cx="18" cy="18" r="9" fill="url(#moteG)" opacity="0.7"/><circle cx="18" cy="18" r="2.5" fill="#72E87A" opacity="0.8"/></svg>
+      </div>
+      <div style="font-family:'JetBrains Mono',monospace;font-size:6.5px;color:var(--parchment);opacity:0.3;align-self:flex-end;letter-spacing:0.06em;">×8 per player · R10: herb/relic/crystal/shard variants pending</div>
+    </div>
+  </div>
+
+  <!-- ══ BOARD STATE TILES ══ -->
+  <div class="section">
+    <div class="section-label">BOARD STATE TILES — Scar · Hidden · Anomaly (R19: no Shadow tile yet)</div>
+    <div class="token-row">
+
+      <!-- SCAR ×4 -->
+      <div class="token-wrap">
+        <div class="cut">
+          <svg width="46" height="46" viewBox="0 0 46 46" xmlns="http://www.w3.org/2000/svg">
+            <rect width="46" height="46" rx="4" fill="#0d0806"/>
+            <rect width="46" height="46" rx="4" fill="none" stroke="#D45A28" stroke-width="1" opacity="0.55"/>
+            <!-- scar glyph ※ -->
+            <text x="23" y="29" text-anchor="middle" font-family="serif" font-size="22" fill="#D45A28" opacity="0.75">※</text>
+            <!-- crack lines -->
+            <g stroke="#D45A28" stroke-width="0.5" opacity="0.3">
+              <line x1="10" y1="10" x2="20" y2="20"/><line x1="36" y1="10" x2="26" y2="20"/>
+              <line x1="10" y1="36" x2="20" y2="26"/><line x1="36" y1="36" x2="26" y2="26"/>
+            </g>
+          </svg>
+        </div>
+        <div class="token-name">SCAR ※</div>
+        <div class="token-count">×4</div>
+      </div>
+      <!-- 3 more scars -->
+      <svg width="36" height="36" viewBox="0 0 46 46"><rect width="46" height="46" rx="4" fill="#0d0806"/><rect width="46" height="46" rx="4" fill="none" stroke="#D45A28" stroke-width="1" opacity="0.55"/><text x="23" y="29" text-anchor="middle" font-family="serif" font-size="22" fill="#D45A28" opacity="0.75">※</text></svg>
+      <svg width="36" height="36" viewBox="0 0 46 46"><rect width="46" height="46" rx="4" fill="#0d0806"/><rect width="46" height="46" rx="4" fill="none" stroke="#D45A28" stroke-width="1" opacity="0.55"/><text x="23" y="29" text-anchor="middle" font-family="serif" font-size="22" fill="#D45A28" opacity="0.75">※</text></svg>
+      <svg width="36" height="36" viewBox="0 0 46 46"><rect width="46" height="46" rx="4" fill="#0d0806"/><rect width="46" height="46" rx="4" fill="none" stroke="#D45A28" stroke-width="1" opacity="0.55"/><text x="23" y="29" text-anchor="middle" font-family="serif" font-size="22" fill="#D45A28" opacity="0.75">※</text></svg>
+
+      <div style="width:1px;height:50px;background:var(--gold-dim);align-self:center;margin:0 6px;"></div>
+
+      <!-- HIDDEN ×4 -->
+      <div class="token-wrap">
+        <div class="cut">
+          <svg width="46" height="46" viewBox="0 0 46 46" xmlns="http://www.w3.org/2000/svg">
+            <rect width="46" height="46" rx="4" fill="#080a0d"/>
+            <rect width="46" height="46" rx="4" fill="none" stroke="#78A8C8" stroke-width="1" opacity="0.45"/>
+            <text x="23" y="31" text-anchor="middle" font-family="Cinzel,serif" font-size="24" fill="#78A8C8" opacity="0.7">?</text>
+            <!-- mystery dots -->
+            <g fill="#78A8C8" opacity="0.25">
+              <circle cx="8" cy="8" r="2"/><circle cx="38" cy="8" r="2"/>
+              <circle cx="8" cy="38" r="2"/><circle cx="38" cy="38" r="2"/>
+            </g>
+          </svg>
+        </div>
+        <div class="token-name">HIDDEN ?</div>
+        <div class="token-count">×4</div>
+      </div>
+      <svg width="36" height="36" viewBox="0 0 46 46"><rect width="46" height="46" rx="4" fill="#080a0d"/><rect width="46" height="46" rx="4" fill="none" stroke="#78A8C8" stroke-width="1" opacity="0.45"/><text x="23" y="31" text-anchor="middle" font-family="Cinzel,serif" font-size="24" fill="#78A8C8" opacity="0.7">?</text></svg>
+      <svg width="36" height="36" viewBox="0 0 46 46"><rect width="46" height="46" rx="4" fill="#080a0d"/><rect width="46" height="46" rx="4" fill="none" stroke="#78A8C8" stroke-width="1" opacity="0.45"/><text x="23" y="31" text-anchor="middle" font-family="Cinzel,serif" font-size="24" fill="#78A8C8" opacity="0.7">?</text></svg>
+      <svg width="36" height="36" viewBox="0 0 46 46"><rect width="46" height="46" rx="4" fill="#080a0d"/><rect width="46" height="46" rx="4" fill="none" stroke="#78A8C8" stroke-width="1" opacity="0.45"/><text x="23" y="31" text-anchor="middle" font-family="Cinzel,serif" font-size="24" fill="#78A8C8" opacity="0.7">?</text></svg>
+
+      <div style="width:1px;height:50px;background:var(--gold-dim);align-self:center;margin:0 6px;"></div>
+
+      <!-- ANOMALY ×4 -->
+      <div class="token-wrap">
+        <div class="cut">
+          <svg width="46" height="46" viewBox="0 0 46 46" xmlns="http://www.w3.org/2000/svg">
+            <rect width="46" height="46" rx="4" fill="#0a080d"/>
+            <rect width="46" height="46" rx="4" fill="none" stroke="#7A5CA5" stroke-width="1" opacity="0.55"/>
+            <text x="23" y="30" text-anchor="middle" font-family="serif" font-size="20" fill="#7A5CA5" opacity="0.75">✦</text>
+            <!-- radiating lines -->
+            <g stroke="#7A5CA5" stroke-width="0.4" opacity="0.3">
+              <line x1="23" y1="5" x2="23" y2="12"/><line x1="23" y1="34" x2="23" y2="41"/>
+              <line x1="5" y1="23" x2="12" y2="23"/><line x1="34" y1="23" x2="41" y2="23"/>
+              <line x1="9" y1="9" x2="14" y2="14"/><line x1="37" y1="9" x2="32" y2="14"/>
+              <line x1="9" y1="37" x2="14" y2="32"/><line x1="37" y1="37" x2="32" y2="32"/>
+            </g>
+          </svg>
+        </div>
+        <div class="token-name">ANOMALY ✦</div>
+        <div class="token-count">×4</div>
+      </div>
+      <svg width="36" height="36" viewBox="0 0 46 46"><rect width="46" height="46" rx="4" fill="#0a080d"/><rect width="46" height="46" rx="4" fill="none" stroke="#7A5CA5" stroke-width="1" opacity="0.55"/><text x="23" y="30" text-anchor="middle" font-family="serif" font-size="20" fill="#7A5CA5" opacity="0.75">✦</text></svg>
+      <svg width="36" height="36" viewBox="0 0 46 46"><rect width="46" height="46" rx="4" fill="#0a080d"/><rect width="46" height="46" rx="4" fill="none" stroke="#7A5CA5" stroke-width="1" opacity="0.55"/><text x="23" y="30" text-anchor="middle" font-family="serif" font-size="20" fill="#7A5CA5" opacity="0.75">✦</text></svg>
+      <svg width="36" height="36" viewBox="0 0 46 46"><rect width="46" height="46" rx="4" fill="#0a080d"/><rect width="46" height="46" rx="4" fill="none" stroke="#7A5CA5" stroke-width="1" opacity="0.55"/><text x="23" y="30" text-anchor="middle" font-family="serif" font-size="20" fill="#7A5CA5" opacity="0.75">✦</text></svg>
+
+    </div>
+  </div>
+
+  <!-- ══ FRACTURE MARKER ══ -->
+  <div class="section">
+    <div class="section-label">FRACTURE MARKER — one per player</div>
+    <div class="token-row">
+      <div class="token-wrap">
+        <div class="cut cut-hex">
+          <svg width="64" height="56" viewBox="0 0 64 56" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <radialGradient id="fracG" cx="50%" cy="40%" r="60%">
+                <stop offset="0%" stop-color="#FF6B3A" stop-opacity="0.5"/>
+                <stop offset="100%" stop-color="#8B2010" stop-opacity="0.8"/>
+              </radialGradient>
+            </defs>
+            <!-- hexagon -->
+            <polygon points="32,3 59,18 59,38 32,53 5,38 5,18" fill="url(#fracG)"/>
+            <polygon points="32,3 59,18 59,38 32,53 5,38 5,18" fill="none" stroke="#D45A28" stroke-width="1.5" opacity="0.85"/>
+            <!-- fracture cracks radiating from centre -->
+            <g stroke="#FF8855" stroke-width="0.8" opacity="0.7">
+              <line x1="32" y1="28" x2="32" y2="8"/>
+              <line x1="32" y1="28" x2="52" y2="40"/>
+              <line x1="32" y1="28" x2="12" y2="40"/>
+              <line x1="32" y1="28" x2="48" y2="18"/>
+              <line x1="32" y1="28" x2="16" y2="18"/>
+              <line x1="32" y1="28" x2="32" y2="50"/>
+            </g>
+            <!-- inner glow -->
+            <circle cx="32" cy="28" r="7" fill="#D45A28" opacity="0.5"/>
+            <circle cx="32" cy="28" r="3" fill="#FF8855" opacity="0.9"/>
+            <!-- fracture symbol (✖) -->
+            <g transform="translate(32,28)" stroke="#FF8855" stroke-width="1.5" opacity="0.9">
+              <line x1="-4" y1="-4" x2="4" y2="4"/>
+              <line x1="4" y1="-4" x2="-4" y2="4"/>
+            </g>
+          </svg>
+        </div>
+        <div class="token-name">FRACTURE</div>
+        <div class="token-count">×1 per player</div>
+      </div>
+      <div style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:10px;color:var(--parchment);opacity:0.4;align-self:flex-end;max-width:280px;line-height:1.5;">
+        Placed when Scar ledger tier 5 box is filled. Triggers Fracture consequence. Grove variant: no Fracture box — this marker not used in Grove play.
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ WARDEN STANDEES ══ -->
+  <div class="section">
+    <div class="section-label">WARDEN STANDEES — ✖</div>
+    <div class="token-row">
+
+      <!-- Standee shape: pawn silhouette (die-cut) -->
+      <div class="token-wrap">
+        <div class="cut">
+          <svg width="32" height="60" viewBox="0 0 32 60" xmlns="http://www.w3.org/2000/svg">
+            <!-- pawn body -->
+            <path d="M 16,4 C 10,4 6,8 6,13 C 6,17 8,20 12,22 L 10,42 C 10,44 8,46 6,46 L 4,46 L 4,56 L 28,56 L 28,46 L 26,46 C 24,46 22,44 22,42 L 20,22 C 24,20 26,17 26,13 C 26,8 22,4 16,4 Z" fill="#0d0c14" stroke="#7A5CA5" stroke-width="0.8" opacity="0.9"/>
+            <!-- warden glyph -->
+            <text x="16" y="16" text-anchor="middle" font-family="serif" font-size="10" fill="#7A5CA5" opacity="0.8">✖</text>
+            <!-- base -->
+            <rect x="2" y="52" width="28" height="4" rx="2" fill="#7A5CA5" opacity="0.4"/>
+          </svg>
+        </div>
+        <div class="token-name">WARDEN ✖</div>
+        <div class="token-count">×4 total</div>
+      </div>
+
+      <!-- 3 more standees -->
+      <svg width="26" height="50" viewBox="0 0 32 60"><path d="M 16,4 C 10,4 6,8 6,13 C 6,17 8,20 12,22 L 10,42 C 10,44 8,46 6,46 L 4,46 L 4,56 L 28,56 L 28,46 L 26,46 C 24,46 22,44 22,42 L 20,22 C 24,20 26,17 26,13 C 26,8 22,4 16,4 Z" fill="#0d0c14" stroke="#7A5CA5" stroke-width="0.8" opacity="0.9"/><text x="16" y="16" text-anchor="middle" font-family="serif" font-size="10" fill="#7A5CA5" opacity="0.8">✖</text><rect x="2" y="52" width="28" height="4" rx="2" fill="#7A5CA5" opacity="0.4"/></svg>
+      <svg width="26" height="50" viewBox="0 0 32 60"><path d="M 16,4 C 10,4 6,8 6,13 C 6,17 8,20 12,22 L 10,42 C 10,44 8,46 6,46 L 4,46 L 4,56 L 28,56 L 28,46 L 26,46 C 24,46 22,44 22,42 L 20,22 C 24,20 26,17 26,13 C 26,8 22,4 16,4 Z" fill="#0d0c14" stroke="#7A5CA5" stroke-width="0.8" opacity="0.9"/><text x="16" y="16" text-anchor="middle" font-family="serif" font-size="10" fill="#7A5CA5" opacity="0.8">✖</text><rect x="2" y="52" width="28" height="4" rx="2" fill="#7A5CA5" opacity="0.4"/></svg>
+      <svg width="26" height="50" viewBox="0 0 32 60"><path d="M 16,4 C 10,4 6,8 6,13 C 6,17 8,20 12,22 L 10,42 C 10,44 8,46 6,46 L 4,46 L 4,56 L 28,56 L 28,46 L 26,46 C 24,46 22,44 22,42 L 20,22 C 24,20 26,17 26,13 C 26,8 22,4 16,4 Z" fill="#0d0c14" stroke="#7A5CA5" stroke-width="0.8" opacity="0.9"/><text x="16" y="16" text-anchor="middle" font-family="serif" font-size="10" fill="#7A5CA5" opacity="0.8">✖</text><rect x="2" y="52" width="28" height="4" rx="2" fill="#7A5CA5" opacity="0.4"/></svg>
+
+      <div style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:10px;color:var(--parchment);opacity:0.4;align-self:flex-end;max-width:260px;line-height:1.5;">
+        Place on any cell to mark Warden presence. Marks the cell as blocked until removed by a Warden effect card.
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ GEOMETRY LENS OUTLINES ══ -->
+  <div class="section">
+    <div class="section-label">GEOMETRY LENS OUTLINES — ×3 overlay templates</div>
+    <div class="lens-row">
+
+      <!-- Lens 1: 3×3 sub-grid overlay -->
+      <div class="lens-wrap">
+        <svg width="130" height="130" viewBox="0 0 130 130" xmlns="http://www.w3.org/2000/svg">
+          <!-- outer frame -->
+          <rect x="4" y="4" width="122" height="122" rx="4" fill="rgba(200,164,74,0.03)" stroke="#C8A44A" stroke-width="1" opacity="0.5"/>
+          <!-- 3×3 internal grid (aligns to three Face A cells) -->
+          <g stroke="#C8A44A" stroke-width="0.5" opacity="0.35">
+            <line x1="45" y1="4" x2="45" y2="126"/><line x1="85" y1="4" x2="85" y2="126"/>
+            <line x1="4" y1="45" x2="126" y2="45"/><line x1="4" y1="85" x2="126" y2="85"/>
+          </g>
+          <!-- centre mark -->
+          <circle cx="65" cy="65" r="5" fill="none" stroke="#C8A44A" stroke-width="0.8" opacity="0.6"/>
+          <circle cx="65" cy="65" r="1.5" fill="#C8A44A" opacity="0.7"/>
+          <!-- corner alignment dots -->
+          <g fill="#C8A44A" opacity="0.4">
+            <circle cx="4" cy="4" r="2.5"/><circle cx="126" cy="4" r="2.5"/>
+            <circle cx="4" cy="126" r="2.5"/><circle cx="126" cy="126" r="2.5"/>
+          </g>
+          <!-- diagonal guides -->
+          <line x1="4" y1="4" x2="126" y2="126" stroke="#C8A44A" stroke-width="0.3" opacity="0.2"/>
+          <line x1="126" y1="4" x2="4" y2="126" stroke="#C8A44A" stroke-width="0.3" opacity="0.2"/>
+        </svg>
+        <div class="lens-label">3×3 FOCUS<br/>aligns to Face A cells</div>
+      </div>
+
+      <!-- Lens 2: Spiral / Sacred Pattern overlay -->
+      <div class="lens-wrap">
+        <svg width="130" height="130" viewBox="0 0 130 130" xmlns="http://www.w3.org/2000/svg">
+          <rect x="4" y="4" width="122" height="122" rx="4" fill="rgba(114,232,122,0.02)" stroke="#72E87A" stroke-width="1" opacity="0.4"/>
+          <!-- sacred spiral path -->
+          <path d="M 65,65 C 65,50 80,42 90,50 C 105,60 105,85 88,95 C 68,108 40,100 30,80 C 15,52 35,22 65,18 C 100,14 125,42 122,75" fill="none" stroke="#72E87A" stroke-width="0.8" opacity="0.5"/>
+          <!-- Fibonacci squares hint -->
+          <g stroke="#72E87A" stroke-width="0.4" opacity="0.2">
+            <rect x="45" y="45" width="40" height="40"/>
+            <rect x="60" y="45" width="25" height="25"/>
+            <rect x="60" y="55" width="15" height="15"/>
+          </g>
+          <!-- centre point -->
+          <circle cx="65" cy="65" r="4" fill="none" stroke="#72E87A" stroke-width="0.6" opacity="0.55"/>
+          <circle cx="65" cy="65" r="1.5" fill="#72E87A" opacity="0.6"/>
+          <g fill="#72E87A" opacity="0.35">
+            <circle cx="4" cy="4" r="2.5"/><circle cx="126" cy="4" r="2.5"/>
+            <circle cx="4" cy="126" r="2.5"/><circle cx="126" cy="126" r="2.5"/>
+          </g>
+        </svg>
+        <div class="lens-label">SPIRAL LENS<br/>Sacred Spiral spread overlay</div>
+      </div>
+
+      <!-- Lens 3: Nine Gates arc overlay -->
+      <div class="lens-wrap">
+        <svg width="130" height="130" viewBox="0 0 130 130" xmlns="http://www.w3.org/2000/svg">
+          <rect x="4" y="4" width="122" height="122" rx="4" fill="rgba(120,168,200,0.02)" stroke="#78A8C8" stroke-width="1" opacity="0.4"/>
+          <!-- arc of 9 positions -->
+          <path d="M 15,95 Q 65,10 115,95" fill="none" stroke="#78A8C8" stroke-width="0.7" opacity="0.45"/>
+          <!-- 9 gate dots on arc -->
+          <g fill="#78A8C8" opacity="0.55">
+            <circle cx="15" cy="95" r="3"/>
+            <circle cx="27" cy="62" r="3"/>
+            <circle cx="41" cy="38" r="3"/>
+            <circle cx="57" cy="23" r="3"/>
+            <circle cx="65" cy="18" r="3"/>
+            <circle cx="73" cy="23" r="3"/>
+            <circle cx="89" cy="38" r="3"/>
+            <circle cx="103" cy="62" r="3"/>
+            <circle cx="115" cy="95" r="3"/>
+          </g>
+          <!-- centre radiant lines from arc apex -->
+          <g stroke="#78A8C8" stroke-width="0.3" opacity="0.2">
+            <line x1="65" y1="18" x2="65" y2="126"/>
+            <line x1="65" y1="18" x2="4" y2="100"/>
+            <line x1="65" y1="18" x2="126" y2="100"/>
+          </g>
+          <g fill="#78A8C8" opacity="0.35">
+            <circle cx="4" cy="4" r="2.5"/><circle cx="126" cy="4" r="2.5"/>
+            <circle cx="4" cy="126" r="2.5"/><circle cx="126" cy="126" r="2.5"/>
+          </g>
+        </svg>
+        <div class="lens-label">NINE GATES ARC<br/>Oracle Mat alignment</div>
+      </div>
+
+    </div>
+    <div style="margin-top:8px;font-family:'JetBrains Mono',monospace;font-size:6.5px;color:var(--parchment);opacity:0.3;letter-spacing:0.06em;">
+      Lens overlays are transparent acetate overlays for reading positions on Face A/B. Print on clear film. Corner dots align to grid corners.
+    </div>
+  </div>
+
+  <!-- ══ FOOTER ══ -->
+  <div class="footer">
+    OPEN RULINGS — R10: one generic Mote printed; herb/relic/crystal/shard variants pending ruling · R17: no dice on this sheet; one empty slot reserved in box insert · R19: no Shadow tile yet; Scar/Hidden/Anomaly only<br>
+    CANON — Activation stones: bright ◉ / dim ◍ · Board state glyphs: ※ Scar · ? Hidden · ✦ Anomaly · ✖ Warden · Fracture = tier-5 Scar box filled · CODEX-VISUAL-001 · ∆
+  </div>
+
+</div>
+</body>
+</html>

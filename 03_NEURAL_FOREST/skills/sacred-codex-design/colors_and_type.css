@@ -1,0 +1,366 @@
+/*
+ * Sacred Codex — Design Tokens
+ * colors_and_type.css
+ * Version 1.0.0
+ *
+ * Import this file first in any Sacred Codex project.
+ * Fonts loaded via Google Fonts (see font-face note below).
+ *
+ * Google Font imports (add to <head>):
+ *   Cinzel: display/ceremonial labels
+ *   IM Fell English: alternate display, grimoire feel
+ *   EB Garamond: body/codex text
+ *   Lora: alternate body
+ *   JetBrains Mono: cipher/sacred words
+ *
+ * <link rel="preconnect" href="https://fonts.googleapis.com">
+ * <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ * <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=IM+Fell+English:ital@0;1&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Lora:ital,wght@0,400;0,500;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+ */
+
+/* ─────────────────────────────────────────
+   COLOR TOKENS
+   ───────────────────────────────────────── */
+
+:root {
+
+  /* ── Base Palette ── */
+  --parchment:       #F4ECD8;   /* Primary background — codex leaf */
+  --ink:             #1A1614;   /* Primary text — iron gall ink */
+  --gold:            #C9A14A;   /* Metatron / law / divine order */
+  --gold-dim:        #C9A14A99; /* Gold at 60% — hairline borders */
+  --gold-faint:      #C9A14A22; /* Gold at 13% — subtle fills */
+  --ivory:           #E8DFC4;   /* Aged ivory — secondary surfaces */
+  --void:            #0B0A0F;   /* Metatron core / deepest shadow */
+
+  /* ── Element Colors ── */
+  --fire:            #B7472A;   /* Vermillion / cinnabar */
+  --water:           #2E5C7E;   /* Lapis blue */
+  --earth:           #5C6E3C;   /* Verdant moss */
+  --air:             #B8A7C9;   /* Smoky violet */
+
+  /* ── Element Dim Variants (for backgrounds) ── */
+  --fire-dim:        #B7472A22;
+  --water-dim:       #2E5C7E22;
+  --earth-dim:       #5C6E3C22;
+  --air-dim:         #B8A7C922;
+
+  /* ── Element Muted (text on parchment) ── */
+  --fire-text:       #8C321B;
+  --water-text:      #1E4060;
+  --earth-text:      #3D4A28;
+  --air-text:        #6B5C80;
+
+  /* ── Semantic Colors ── */
+  --bg-primary:      var(--parchment);
+  --bg-secondary:    var(--ivory);
+  --bg-dark:         var(--void);
+  --text-primary:    var(--ink);
+  --text-secondary:  #4A3F38;   /* Warm mid-dark — secondary copy */
+  --text-tertiary:   #7A6E65;   /* Faded ink — marginalia, captions */
+  --text-gold:       var(--gold);
+  --text-on-dark:    var(--parchment);
+  --border-gold:     var(--gold-dim);
+  --border-hairline: #C9A14A44;
+  --accent:          var(--gold);
+
+  /* ── Prime Colors (mapped from Element × Prime) ── */
+  --prime-initiation:     #C9874A;   /* Warm amber — beginnings */
+  --prime-embodiment:     #7A6E65;   /* Earthen grey — grounded presence */
+  --prime-transcendence:  #8C7AAE;   /* Violet grey — elevation */
+
+  /* ─────────────────────────────────────────
+     TYPOGRAPHY TOKENS
+     ───────────────────────────────────────── */
+
+  /* ── Font Families ── */
+  --font-display:    'Cinzel', 'Trajan Pro', serif;
+  --font-display-alt:'IM Fell English', 'Garamond', serif;
+  --font-body:       'EB Garamond', 'Garamond', 'Georgia', serif;
+  --font-body-alt:   'Lora', 'Georgia', serif;
+  --font-mono:       'JetBrains Mono', 'IBM Plex Mono', 'Courier New', monospace;
+
+  /* ── Font Sizes (modular scale — ratio 1.25) ── */
+  --text-xs:         0.64rem;    /*  ~10px — micro labels */
+  --text-sm:         0.8rem;     /*  ~13px — captions, marginalia */
+  --text-base:       1rem;       /*  ~16px — body */
+  --text-md:         1.25rem;    /*  ~20px — lead / intro */
+  --text-lg:         1.563rem;   /*  ~25px — subheading */
+  --text-xl:         1.953rem;   /*  ~31px — section heading */
+  --text-2xl:        2.441rem;   /*  ~39px — archetype title */
+  --text-3xl:        3.052rem;   /*  ~49px — display */
+  --text-4xl:        3.815rem;   /*  ~61px — hero display */
+  --text-5xl:        4.768rem;   /*  ~76px — ceremonial scale */
+
+  /* ── Font Weights ── */
+  --weight-regular:  400;
+  --weight-medium:   500;
+  --weight-semibold: 600;
+  --weight-bold:     700;
+
+  /* ── Line Heights ── */
+  --leading-tight:   1.2;
+  --leading-snug:    1.4;
+  --leading-normal:  1.6;
+  --leading-codex:   1.75;  /* Codex body text */
+  --leading-loose:   1.9;
+
+  /* ── Letter Spacing ── */
+  --tracking-tight:  -0.02em;
+  --tracking-normal:  0;
+  --tracking-wide:    0.05em;
+  --tracking-wider:   0.1em;
+  --tracking-widest:  0.2em;  /* Ceremonial labels / small caps */
+  --tracking-cipher:  0.15em; /* Mono / cipher blocks */
+
+  /* ─────────────────────────────────────────
+     SPACING TOKENS
+     ───────────────────────────────────────── */
+
+  --space-1:    4px;
+  --space-2:    8px;
+  --space-3:    12px;
+  --space-4:    16px;
+  --space-5:    20px;
+  --space-6:    24px;
+  --space-8:    32px;
+  --space-10:   40px;
+  --space-12:   48px;
+  --space-16:   64px;
+  --space-20:   80px;
+  --space-24:   96px;
+  --space-32:   128px;
+
+  /* Golden ratio column proportion */
+  --golden-ratio: 1.618;
+
+  /* ─────────────────────────────────────────
+     BORDER & SHAPE TOKENS
+     ───────────────────────────────────────── */
+
+  --radius-none:    0px;       /* Cards, panels — sharp cornered */
+  --radius-circle:  50%;       /* Sacred nodes — perfect circles */
+  --radius-sm:      2px;       /* Minimal rounding — max for non-circles */
+
+  --border-thin:    1px solid var(--border-gold);
+  --border-hairline-rule: 1px solid var(--border-hairline);
+
+  /* ─────────────────────────────────────────
+     SHADOW & ELEVATION TOKENS
+     ───────────────────────────────────────── */
+
+  /* Inset — for parchment depth */
+  --shadow-inset:     inset 0 1px 3px rgba(26, 22, 20, 0.08);
+  --shadow-inset-sm:  inset 0 1px 2px rgba(26, 22, 20, 0.05);
+
+  /* Outer — very subtle, warm-toned */
+  --shadow-sm:        0 1px 3px rgba(26, 22, 20, 0.12);
+  --shadow-md:        0 2px 8px rgba(26, 22, 20, 0.15);
+  --shadow-parchment: 0 4px 24px rgba(26, 22, 20, 0.10);
+
+  /* No drop shadows — prefer hairline borders */
+
+  /* ─────────────────────────────────────────
+     ANIMATION TOKENS
+     ───────────────────────────────────────── */
+
+  --duration-fast:    200ms;
+  --duration-base:    400ms;
+  --duration-slow:    600ms;
+  --duration-ritual:  700ms;
+
+  --ease-codex:       cubic-bezier(0.45, 0.05, 0.55, 0.95);  /* breath-paced */
+  --ease-in-out:      ease-in-out;
+  --ease-reveal:      cubic-bezier(0.25, 0.1, 0.25, 1);
+
+  /* ─────────────────────────────────────────
+     SEMANTIC TYPE ROLES
+     ───────────────────────────────────────── */
+
+  /* h1 — Archetype / Ceremonial Display */
+  --h1-font:          var(--font-display);
+  --h1-size:          var(--text-3xl);
+  --h1-weight:        var(--weight-semibold);
+  --h1-leading:       var(--leading-tight);
+  --h1-tracking:      var(--tracking-wide);
+
+  /* h2 — Section Heading */
+  --h2-font:          var(--font-display);
+  --h2-size:          var(--text-2xl);
+  --h2-weight:        var(--weight-medium);
+  --h2-leading:       var(--leading-snug);
+  --h2-tracking:      var(--tracking-wide);
+
+  /* h3 — Subsection / Element Label */
+  --h3-font:          var(--font-display);
+  --h3-size:          var(--text-xl);
+  --h3-weight:        var(--weight-regular);
+  --h3-leading:       var(--leading-snug);
+  --h3-tracking:      var(--tracking-wider);
+
+  /* h4 — Card Title / Prime Label */
+  --h4-font:          var(--font-display);
+  --h4-size:          var(--text-lg);
+  --h4-weight:        var(--weight-regular);
+  --h4-tracking:      var(--tracking-widest);
+
+  /* p — Codex Body */
+  --p-font:           var(--font-body);
+  --p-size:           var(--text-base);
+  --p-weight:         var(--weight-regular);
+  --p-leading:        var(--leading-codex);
+
+  /* small / caption */
+  --caption-font:     var(--font-body);
+  --caption-size:     var(--text-sm);
+  --caption-tracking: var(--tracking-wide);
+
+  /* code / cipher */
+  --code-font:        var(--font-mono);
+  --code-size:        0.85em;
+  --code-tracking:    var(--tracking-cipher);
+}
+
+/* ─────────────────────────────────────────
+   BASE ELEMENT STYLES
+   ───────────────────────────────────────── */
+
+body {
+  font-family:       var(--font-body);
+  font-size:         var(--text-base);
+  font-weight:       var(--weight-regular);
+  line-height:       var(--leading-codex);
+  color:             var(--text-primary);
+  background-color:  var(--bg-primary);
+  -webkit-font-smoothing: antialiased;
+  text-rendering:    optimizeLegibility;
+  font-feature-settings: "liga" 1, "onum" 1, "kern" 1;
+}
+
+h1, .h1 {
+  font-family:    var(--h1-font);
+  font-size:      var(--h1-size);
+  font-weight:    var(--h1-weight);
+  line-height:    var(--h1-leading);
+  letter-spacing: var(--h1-tracking);
+  color:          var(--text-primary);
+  font-feature-settings: "smcp" 0, "liga" 1;
+}
+
+h2, .h2 {
+  font-family:    var(--h2-font);
+  font-size:      var(--h2-size);
+  font-weight:    var(--h2-weight);
+  line-height:    var(--h2-leading);
+  letter-spacing: var(--h2-tracking);
+  color:          var(--text-primary);
+}
+
+h3, .h3 {
+  font-family:    var(--h3-font);
+  font-size:      var(--h3-size);
+  font-weight:    var(--h3-weight);
+  line-height:    var(--h3-leading);
+  letter-spacing: var(--h3-tracking);
+  color:          var(--text-primary);
+}
+
+h4, .h4 {
+  font-family:    var(--h4-font);
+  font-size:      var(--h4-size);
+  font-weight:    var(--h4-weight);
+  letter-spacing: var(--h4-tracking);
+  color:          var(--text-gold);
+  text-transform: uppercase;
+}
+
+p, .body {
+  font-family:  var(--p-font);
+  font-size:    var(--p-size);
+  font-weight:  var(--p-weight);
+  line-height:  var(--p-leading);
+  color:        var(--text-primary);
+}
+
+.lead {
+  font-family:  var(--font-body);
+  font-size:    var(--text-md);
+  line-height:  var(--leading-codex);
+  color:        var(--text-secondary);
+  font-style:   italic;
+}
+
+.caption, .marginalia {
+  font-family:    var(--caption-font);
+  font-size:      var(--caption-size);
+  letter-spacing: var(--caption-tracking);
+  color:          var(--text-tertiary);
+}
+
+code, .cipher {
+  font-family:    var(--code-font);
+  font-size:      var(--code-size);
+  letter-spacing: var(--code-tracking);
+  color:          var(--text-primary);
+  background:     var(--ivory);
+  padding:        2px 6px;
+  border:         var(--border-hairline-rule);
+}
+
+.small-caps {
+  font-variant:   small-caps;
+  letter-spacing: var(--tracking-widest);
+}
+
+.invocation {
+  font-family:  var(--font-display-alt);
+  font-style:   italic;
+  font-size:    var(--text-md);
+  line-height:  var(--leading-loose);
+  color:        var(--text-secondary);
+}
+
+.sacred-seal {
+  font-family:    var(--font-body);
+  font-style:     italic;
+  font-size:      var(--text-sm);
+  letter-spacing: var(--tracking-wide);
+  color:          var(--text-gold);
+}
+
+/* ── Divider / Hairline Rule ── */
+hr.codex-rule {
+  border: none;
+  border-top: var(--border-hairline-rule);
+  margin: var(--space-8) 0;
+}
+
+hr.codex-rule-gold {
+  border: none;
+  border-top: 1px solid var(--gold-dim);
+  margin: var(--space-8) 0;
+}
+
+/* ── Element Tag Pills ── */
+.tag-fire        { color: var(--fire-text);  background: var(--fire-dim);  border: 1px solid var(--fire);  }
+.tag-water       { color: var(--water-text); background: var(--water-dim); border: 1px solid var(--water); }
+.tag-earth       { color: var(--earth-text); background: var(--earth-dim); border: 1px solid var(--earth); }
+.tag-air         { color: var(--air-text);   background: var(--air-dim);   border: 1px solid var(--air);   }
+
+.element-tag {
+  display:        inline-block;
+  font-family:    var(--font-display);
+  font-size:      var(--text-xs);
+  letter-spacing: var(--tracking-widest);
+  text-transform: uppercase;
+  padding:        3px 10px;
+  border-radius:  0;
+}
+
+/* ── Sigil Glyph Markers ── */
+.sigil-marker {
+  color:          var(--gold);
+  font-size:      0.85em;
+  margin-right:   0.4em;
+  opacity:        0.8;
+}

@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>S∆CR3D$!G!L IDE v4.0 · Neural Forest · SacredSpace OS</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Cinzel:wght@400;500&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=IM+Fell+English:ital@1&display=swap" rel="stylesheet">
+<style>
+:root{
+--void:#060608;--base:#0B0D12;--s1:#151821;--s2:#1E222D;--s3:#2A2F3D;
+--hi:#F0F2F8;--mid:#A1A6B5;--dim:#5a5f72;
+--oak:#c9a84c;--oak-d:#7a5e24;--oak-dd:#2e2410;
+--vio:#7b5ea7;--vio-d:#3d2e54;--vio-hi:#a47fd4;
+--eme:#10b981;--eme-d:#065f46;
+--cyan:#00e5ff;--cyan-d:#004d66;
+--mag:#ff00ff;--mag-d:#660066;
+--flame:#e8763a;
+--rose:#d45480;
+--border:rgba(201,168,76,0.15);
+--border2:rgba(201,168,76,0.3);
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:var(--void);color:var(--hi);font-family:'Space Mono',monospace;height:100vh;display:grid;grid-template-rows:48px 1fr 160px;grid-template-columns:56px 220px 1fr 240px;overflow:hidden;font-size:12px;}
+
+/* SCANLINE */
+.scanline{position:fixed;top:0;left:0;width:100%;height:80px;background:linear-gradient(to bottom,transparent,rgba(0,229,255,0.015),transparent);animation:scan 12s linear infinite;pointer-events:none;z-index:9999;}
+@keyframes scan{from{top:-80px}to{top:100%}}
+
+/* HEADER */
+header{grid-column:1/-1;background:linear-gradient(90deg,var(--base),var(--s1),var(--s2),var(--s1),var(--base));border-bottom:1px solid var(--border);display:flex;align-items:center;padding:0 14px;gap:14px;position:relative;overflow:hidden;z-index:100;}
+header::after{content:'';position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(0,229,255,0.01) 2px,rgba(0,229,255,0.01) 4px);pointer-events:none;}
+.h-logo{font-family:'Cinzel Decorative',serif;font-size:11px;color:var(--cyan);letter-spacing:2px;text-shadow:0 0 8px rgba(0,229,255,0.4);white-space:nowrap;}
+.h-badge{font-size:8px;letter-spacing:2px;padding:2px 8px;border-radius:2px;border:0.5px solid;white-space:nowrap;}
+.hb-ok{background:rgba(16,185,129,.08);border-color:var(--eme);color:var(--eme);}
+.hb-vio{background:rgba(123,94,167,.08);border-color:var(--vio);color:var(--vio-hi);}
+.hb-oak{background:rgba(201,168,76,.08);border-color:var(--oak);color:var(--oak);}
+.h-spacer{flex:1;}
+.brain-sel{display:flex;gap:3px;background:rgba(0,0,0,0.4);padding:3px;border-radius:4px;border:0.5px solid var(--border);}
+.brain-btn{font-size:8px;letter-spacing:1px;padding:3px 8px;border:none;background:transparent;color:var(--dim);cursor:pointer;border-radius:2px;transition:all .2s;font-family:'Space Mono',monospace;}
+.brain-btn.on{background:rgba(255,255,255,0.08);color:var(--hi);}
+.cast-hdr{background:transparent;border:0.5px solid var(--cyan);color:var(--cyan);font-family:'Space Mono',monospace;font-size:9px;padding:5px 14px;cursor:pointer;letter-spacing:2px;transition:all .2s;}
+.cast-hdr:hover{background:var(--cyan-d);}
+
+/* LEFT PILL NAV */
+.pill-nav{background:var(--s1);border-right:1px solid var(--border);display:flex;flex-direction:column;align-items:center;padding:10px 0;gap:6px;overflow-y:auto;}
+.pill-btn{width:40px;height:40px;display:flex;flex-direction:column;align-items:center;justify-content:center;background:transparent;border:none;cursor:pointer;border-radius:4px;transition:all .2s;position:relative;}
+.pill-btn:hover{background:rgba(255,255,255,0.04);}
+.pill-btn.on{background:rgba(0,229,255,0.06);}
+.pill-btn.on::before{content:'';position:absolute;left:0;top:50%;transform:translateY(-50%);width:2px;height:20px;background:var(--cyan);border-radius:0 2px 2px 0;}
+.pill-g{font-size:16px;line-height:1;}
+.pill-n{font-size:6px;letter-spacing:1px;color:var(--dim);margin-top:2px;}
+.pill-btn.on .pill-n{color:var(--cyan);}
+
+/* GRIMOIRE SIDEBAR */
+.grimoire{background:var(--s1);border-right:1px solid var(--border);overflow-y:auto;display:flex;flex-direction:column;}
+.grm-head{padding:10px 12px;font-size:8px;letter-spacing:3px;color:var(--dim);border-bottom:0.5px solid var(--border);display:flex;align-items:center;gap:6px;}
+.grm-cat{margin-bottom:6px;}
+.grm-cat-hd{padding:6px 12px;font-size:8px;letter-spacing:1px;background:rgba(255,255,255,0.03);border-left:2px solid transparent;}
+.grm-cat-hd.cy{border-left-color:var(--eme);color:var(--eme);}
+.grm-cat-hd.vi{border-left-color:var(--vio-hi);color:var(--vio-hi);}
+.grm-cat-hd.ok{border-left-color:var(--oak);color:var(--oak);}
+.grm-cat-hd.fl{border-left-color:var(--flame);color:var(--flame);}
+.grm-spell{display:block;width:100%;text-align:left;background:transparent;border:none;border-left:2px solid transparent;padding:5px 12px;font-family:'Space Mono',monospace;font-size:9px;color:var(--dim);cursor:pointer;transition:all .15s;line-height:1.4;}
+.grm-spell:hover{color:var(--mid);background:rgba(255,255,255,0.02);}
+.grm-spell.on{border-left-color:var(--cyan);color:var(--hi);background:rgba(0,229,255,0.03);}
+
+/* MAIN AREA */
+main{display:flex;flex-direction:column;overflow:hidden;}
+.tab-bar{display:flex;border-bottom:1px solid var(--border);background:var(--base);}
+.tab-btn{font-family:'Space Mono',monospace;font-size:8px;letter-spacing:2px;padding:8px 16px;border:none;border-bottom:2px solid transparent;background:transparent;color:var(--dim);cursor:pointer;transition:all .2s;white-space:nowrap;}
+.tab-btn:hover{color:var(--mid);}
+.tab-btn.on{border-bottom-color:var(--cyan);color:var(--cyan);}
+.tab-content{flex:1;overflow-y:auto;position:relative;}
+.tab-panel{display:none;height:100%;overflow-y:auto;}
+.tab-panel.show{display:block;}
+
+/* FORGE (CODE EDITOR) */
+.forge-wrap{padding:12px;height:100%;}
+.spell-theory{background:rgba(123,94,167,0.06);border-left:2px solid var(--vio);padding:8px 12px;margin-bottom:10px;font-family:'IM Fell English',serif;font-style:italic;font-size:12px;color:var(--mid);line-height:1.7;}
+.code-area{width:100%;min-height:300px;background:var(--base);border:0.5px solid var(--border);color:var(--hi);font-family:'Space Mono',monospace;font-size:11px;padding:12px;resize:vertical;outline:none;line-height:1.7;tab-size:4;}
+.code-area:focus{border-color:var(--cyan);}
+.forge-toolbar{display:flex;gap:8px;margin-top:8px;flex-wrap:wrap;}
+.forge-btn{background:transparent;border:0.5px solid var(--border2);color:var(--mid);font-family:'Space Mono',monospace;font-size:8px;padding:5px 12px;cursor:pointer;letter-spacing:1px;transition:all .15s;}
+.forge-btn:hover{border-color:var(--oak);color:var(--oak);}
+.forge-btn.prim{border-color:var(--cyan);color:var(--cyan);}
+.forge-btn.prim:hover{background:var(--cyan-d);}
+.output-area{margin-top:10px;background:var(--base);border:0.5px solid var(--border);padding:10px;font-size:10px;color:var(--eme);min-height:60px;line-height:1.6;white-space:pre-wrap;}
+
+/* SPELLBOOK */
+.spellbook{padding:12px;}
+.spell-card-full{background:var(--s1);border:0.5px solid var(--border);border-radius:4px;padding:14px;margin-bottom:10px;cursor:pointer;transition:border-color .2s;}
+.spell-card-full:hover{border-color:var(--oak-d);}
+.spell-card-full.open{border-color:var(--cyan);}
+.sc-header{display:flex;align-items:center;gap:10px;margin-bottom:6px;}
+.sc-id{font-size:8px;letter-spacing:2px;}
+.sc-py{color:var(--oak);}
+.sc-sys{color:var(--vio-hi);}
+.sc-name{font-size:11px;font-weight:700;color:var(--hi);flex:1;}
+.sc-sigil{font-size:9px;color:var(--dim);}
+.sc-body{display:none;margin-top:10px;border-top:0.5px solid var(--border);padding-top:10px;}
+.spell-card-full.open .sc-body{display:block;}
+.sc-concept{font-family:'IM Fell English',serif;font-style:italic;font-size:12px;color:var(--mid);margin-bottom:8px;line-height:1.6;}
+.sc-check{font-size:9px;color:var(--eme);margin-bottom:4px;}
+.sc-sig-line{font-size:9px;color:var(--dim);padding-top:6px;border-top:0.5px dashed rgba(255,255,255,0.05);}
+
+/* HKM — Holographic Knowledge Manifold */
+.hkm-wrap{padding:12px;}
+.hkm-title{font-family:'Cinzel',serif;font-size:10px;letter-spacing:3px;color:var(--cyan);margin-bottom:12px;display:flex;align-items:center;gap:8px;}
+.hkm-title::before,.hkm-title::after{content:'';flex:1;height:0.5px;background:var(--border);}
+.phase-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:14px;}
+.phase-card{background:var(--s1);border:0.5px solid var(--border);border-radius:4px;padding:10px;cursor:pointer;transition:all .2s;position:relative;}
+.phase-card:hover,.phase-card.act{border-color:var(--cyan);}
+.phase-card.act::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--cyan),var(--vio));border-radius:4px 4px 0 0;}
+.ph-num{font-size:8px;letter-spacing:2px;color:var(--cyan);margin-bottom:3px;}
+.ph-name{font-size:10px;font-weight:700;color:var(--hi);margin-bottom:4px;}
+.ph-desc{font-size:9px;color:var(--mid);line-height:1.5;}
+.ph-metric{font-size:8px;color:var(--eme);margin-top:4px;}
+.hkm-pipeline{background:var(--s2);border:0.5px solid var(--border);border-radius:4px;padding:10px;margin-bottom:14px;}
+.pipeline-row{display:flex;align-items:center;gap:6px;margin-bottom:8px;}
+.pipeline-row:last-child{margin-bottom:0;}
+.pr-node{background:var(--s3);border:0.5px solid;border-radius:3px;padding:4px 10px;font-size:9px;font-weight:700;flex-shrink:0;}
+.pr-arr{color:var(--dim);flex-shrink:0;}
+.pr-desc{font-size:9px;color:var(--mid);flex:1;}
+.vsa-row{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-bottom:14px;}
+.vsa-card{background:var(--s1);border:0.5px solid var(--border);border-radius:4px;padding:10px;text-align:center;}
+.vsa-op{font-size:18px;color:var(--oak);margin-bottom:4px;}
+.vsa-name{font-size:9px;letter-spacing:1px;color:var(--mid);margin-bottom:4px;}
+.vsa-desc{font-size:8px;color:var(--dim);line-height:1.5;}
+.life-code{background:var(--s1);border:0.5px solid var(--border);border-radius:4px;padding:10px;}
+.lc-title{font-size:8px;letter-spacing:3px;color:var(--mag);margin-bottom:8px;}
+.lc-ex{background:rgba(0,0,0,0.3);padding:8px;border-radius:3px;font-size:9px;line-height:1.8;color:var(--mid);margin-bottom:6px;}
+.lc-ex strong{color:var(--oak);}
+
+/* COUNCIL (AGENT GATES) */
+.council-wrap{padding:12px;}
+.agent-row{display:flex;align-items:flex-start;gap:10px;background:var(--s1);border:0.5px solid var(--border);border-radius:4px;padding:10px;margin-bottom:8px;}
+.ag-icon{font-size:18px;flex-shrink:0;margin-top:2px;}
+.ag-name{font-size:9px;letter-spacing:2px;margin-bottom:2px;}
+.ag-seat{font-size:8px;color:var(--dim);margin-bottom:4px;}
+.ag-status{font-size:8px;padding:2px 8px;border-radius:2px;border:0.5px solid;display:inline-block;}
+.ag-desc{font-size:9px;color:var(--mid);line-height:1.5;font-family:'IM Fell English',serif;font-style:italic;}
+.gate-section{margin-top:12px;}
+.gate-title{font-size:8px;letter-spacing:3px;color:var(--dim);margin-bottom:8px;text-align:center;}
+.gate-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;}
+.gate-card{background:var(--s2);border:0.5px solid var(--border);border-radius:3px;padding:8px;text-align:center;}
+.gate-type{font-size:9px;font-weight:700;margin-bottom:4px;}
+.gate-desc{font-size:8px;color:var(--dim);line-height:1.4;}
+.gt-gate{color:var(--oak);border-color:var(--oak-d)!important;}
+.gt-chk{color:var(--eme);border-color:var(--eme-d)!important;}
+.gt-esc{color:var(--flame);border-color:#7c3012!important;}
+
+/* RIGHT SIDEBAR */
+.right-panel{background:var(--s1);border-left:1px solid var(--border);overflow-y:auto;padding:10px;display:flex;flex-direction:column;gap:10px;}
+.rp-head{font-size:8px;letter-spacing:3px;color:var(--dim);padding-bottom:6px;border-bottom:0.5px solid var(--border);display:flex;align-items:center;gap:6px;}
+.glyph-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:4px;}
+.g-btn{background:var(--s2);border:0.5px solid var(--border);padding:6px 2px;text-align:center;cursor:pointer;transition:all .2s;border-radius:2px;position:relative;}
+.g-btn:hover{border-color:var(--oak);background:rgba(201,168,76,0.08);}
+.g-sym{font-size:13px;display:block;}
+.g-nm{font-size:6px;letter-spacing:1px;color:var(--dim);display:block;margin-top:1px;}
+.vital-row{display:flex;justify-content:space-between;font-size:9px;margin-bottom:5px;}
+.v-l{color:var(--dim);}
+.v-on{color:var(--eme);}
+.v-ok{color:var(--oak);}
+.bar-bg{height:2px;background:var(--s3);border-radius:1px;margin-bottom:6px;}
+.bar-fill{height:100%;border-radius:1px;transition:width .5s;}
+.sig-builder{display:flex;flex-direction:column;gap:4px;}
+.sig-sel{background:var(--s2);border:0.5px solid var(--border);color:var(--mid);font-family:'Space Mono',monospace;font-size:8px;padding:4px 6px;width:100%;}
+.sig-cast{background:transparent;border:0.5px solid var(--vio);color:var(--vio-hi);font-family:'Space Mono',monospace;font-size:8px;padding:5px;cursor:pointer;letter-spacing:1px;transition:all .15s;}
+.sig-cast:hover{background:var(--vio-d);}
+.palace-vis{display:flex;flex-direction:column;gap:4px;}
+.palace-wing{background:var(--s2);border:0.5px solid;border-radius:3px;padding:6px 8px;}
+.pw-label{font-size:7px;letter-spacing:2px;margin-bottom:3px;}
+.pw-room{font-size:8px;color:var(--mid);margin:1px 0;}
+.pw-room::before{content:'↳ ';color:var(--dim);}
+.compress-ex{background:var(--s2);border:0.5px solid var(--border);border-radius:3px;padding:6px 8px;font-size:8px;line-height:1.8;color:var(--mid);}
+.cx-raw{color:var(--dim);text-decoration:line-through;}
+.cx-comp{color:var(--oak);}
+
+/* TERMINAL */
+.terminal-wrap{grid-column:1/-1;background:var(--base);border-top:1px solid var(--border);display:flex;flex-direction:column;overflow:hidden;}
+.term-out{flex:1;overflow-y:auto;padding:6px 14px;font-size:10px;line-height:1.7;color:var(--mid);}
+.term-out::-webkit-scrollbar{width:3px;}
+.term-out::-webkit-scrollbar-thumb{background:var(--oak-d);}
+.t-boot{color:var(--eme);}
+.t-user{color:var(--hi);border-left:2px solid var(--oak);padding-left:8px;margin:4px 0;}
+.t-res{color:var(--mid);margin:2px 0 8px 10px;}
+.t-err{color:var(--flame);}
+.t-ch{color:var(--vio-hi);text-align:center;border-top:0.5px dashed var(--vio-d);border-bottom:0.5px dashed var(--vio-d);padding:3px 0;margin:6px 0;font-size:9px;letter-spacing:2px;}
+.term-inp-row{display:flex;align-items:center;padding:0 14px;border-top:0.5px solid var(--border);background:var(--s1);flex-shrink:0;}
+.term-prompt{color:var(--eme);font-weight:700;margin-right:8px;flex-shrink:0;}
+#termInp{flex:1;background:transparent;border:none;color:var(--hi);font-family:'Space Mono',monospace;font-size:11px;padding:8px 0;outline:none;}
+#termInp::placeholder{color:var(--dim);font-size:10px;}
+
+/* TOOLTIP */
+.g-btn:hover .g-tooltip{display:block;}
+.g-tooltip{display:none;position:absolute;bottom:100%;left:50%;transform:translateX(-50%);background:var(--s3);border:0.5px solid var(--border);padding:3px 6px;font-size:8px;color:var(--hi);white-space:nowrap;z-index:100;border-radius:2px;margin-bottom:3px;}
+
+/* SCROLLBAR */
+::-webkit-scrollbar{width:4px;height:4px;}
+::-webkit-scrollbar-thumb{background:var(--oak-dd);}
+
+/* HKM FLOW ANIMATION */
+@keyframes pulse-glow{0%,100%{opacity:.6}50%{opacity:1;text-shadow:0 0 8px currentColor}}
+.pulse{animation:pulse-glow 2s ease-in-out infinite;}
+</style>
+</head>
+<body>
+<div class="scanline"></div>
+
+<!-- HEADER -->
+<header>
+  <div class="h-logo">S∆CR3D$!G!L IDE</div>
+  <div class="h-badge hb-ok">v4.0 · NEURAL FOREST</div>
+  <div class="h-badge hb-vio">HKM LAYER ACTIVE</div>
+  <div class="h-badge hb-oak">12 SPELLS SEALED</div>
+  <div class="h-spacer"></div>
+  <div class="brain-sel" id="brainSel">
+    <button class="brain-btn on" data-brain="GENERAL" onclick="setBrain(this)">∆ GENERAL</button>
+    <button class="brain-btn" data-brain="CODE" onclick="setBrain(this)">⚙ CODE</button>
+    <button class="brain-btn" data-brain="REASON" onclick="setBrain(this)">◇ REASON</button>
+  </div>
+  <button class="cast-hdr" onclick="castSpell()">▶ CAST SPELL</button>
+</header>
+
+<!-- LEFT PILLARS -->
+<nav class="pill-nav" id="pillNav"></nav>
+
+<!-- GRIMOIRE -->
+<aside class="grimoire" id="grimoire">
+  <div class="grm-head">📜 SACREDCODEX</div>
+  <div id="spellList"></div>
+</aside>
+
+<!-- MAIN -->
+<main>
+  <div class="tab-bar">
+    <button class="tab-btn on" onclick="showTab('forge',this)">⚙ FORGE</button>
+    <button class="tab-btn" onclick="showTab('spellbook',this)">✶ SPELLBOOK</button>
+    <button class="tab-btn" onclick="showTab('hkm',this)">◇ MEMORY MANIFOLD</button>
+    <button class="tab-btn" onclick="showTab('council',this)">⚔ COUNCIL</button>
+  </div>
+  <div class="tab-content">
+
+    <!-- FORGE TAB -->
+    <div class="tab-panel show" id="tab-forge">
+      <div class="forge-wrap">
+        <div class="spell-theory" id="spellTheory">Select a spell from the Grimoire, or write your own incantation in the Forge below. Every line of code is a spell. Every error is a teacher.</div>
+        <textarea class="code-area" id="codeArea" rows="14" placeholder="# The Forge awaits your incantation...
+# Select a spell from the SACREDCODEX panel, or write freely.
+# Commands: @rit ⚙∆ build project | @sense ☽∆ query vault
+# Shortcuts: spell <text> → sigilify  |  /help for all commands"></textarea>
+        <div class="forge-toolbar">
+          <button class="forge-btn prim" onclick="executeCode()">▶ RUN</button>
+          <button class="forge-btn" onclick="sigilifyCode()">∆ SIGILIFY</button>
+          <button class="forge-btn" onclick="clearForge()">⌫ CLEAR</button>
+          <button class="forge-btn" onclick="saveToCodex()">◇ SEAL TO CODEX</button>
+          <span style="font-size:9px;color:var(--dim);margin-left:auto;" id="langDisplay">LANG: PYTHON</span>
+        </div>
+        <div class="output-area" id="outputArea">[FORGE READY] Awaiting spell cast... 🔥</div>
+      </div>
+    </div>
+
+    <!-- SPELLBOOK TAB -->
+    <div class="tab-panel" id="tab-spellbook">
+      <div class="spellbook" id="spellbookContent"></div>
+    </div>
+
+    <!-- HKM TAB -->
+    <div class="tab-panel" id="tab-hkm">
+      <div class="hkm-wrap">
+        <div class="hkm-title">HOLOGRAPHIC KNOWLEDGE MANIFOLD</div>
+        <div class="phase-grid" id="phaseGrid"></div>
+
+        <div class="hkm-title" style="font-size:9px;">HKM PIPELINE FLOW</div>
+        <div class="hkm-pipeline">
+          <div class="pipeline-row">
+            <div class="pr-node" style="border-color:var(--cyan);color:var(--cyan);">INPUT</div>
+            <div class="pr-arr">→</div>
+            <div class="pr-node" style="border-color:var(--vio-hi);color:var(--vio-hi);">PROB. ENTANGLEMENT</div>
+            <div class="pr-arr">→</div>
+            <div class="pr-desc">Concepts probabilistically entangled across dataset — semantic field created</div>
+          </div>
+          <div class="pipeline-row">
+            <div class="pr-node" style="border-color:var(--oak);color:var(--oak);">COMPRESSED</div>
+            <div class="pr-arr">→</div>
+            <div class="pr-node" style="border-color:var(--eme);color:var(--eme);">FRACTAL QUANTIZE</div>
+            <div class="pr-arr">→</div>
+            <div class="pr-desc">3× compression via self-similar substrate · 67% storage reduction · zero loss</div>
+          </div>
+          <div class="pipeline-row">
+            <div class="pr-node" style="border-color:var(--mag);color:var(--mag);">HOLOGRAPH</div>
+            <div class="pr-arr">→</div>
+            <div class="pr-node" style="border-color:var(--cyan);color:var(--cyan);">SAMPLING</div>
+            <div class="pr-arr">→</div>
+            <div class="pr-desc">Holographic invariant integrated into inference loops — context drift mitigated</div>
+          </div>
+          <div class="pipeline-row">
+            <div class="pr-node" style="border-color:var(--eme);color:var(--eme);">UPDATE</div>
+            <div class="pr-arr">→</div>
+            <div class="pr-node" style="border-color:var(--flame);color:var(--flame);">DYN. DIFFRACTION</div>
+            <div class="pr-arr">→</div>
+            <div class="pr-desc">New knowledge diffracts into manifold — zero catastrophic forgetting</div>
+          </div>
+        </div>
+
+        <div class="hkm-title" style="font-size:9px;">VECTOR SYMBOLIC ARCHITECTURE (VSA) OPERATIONS</div>
+        <div class="vsa-row">
+          <div class="vsa-card">
+            <div class="vsa-op">⊗</div>
+            <div class="vsa-name">BINDING</div>
+            <div class="vsa-desc">Associates key with value. Element-wise multiplication. Its own inverse: <strong style="color:var(--oak)">a⊗a=1</strong>. Retrieval: (a⊗b)⊗a=b</div>
+          </div>
+          <div class="vsa-card">
+            <div class="vsa-op">+</div>
+            <div class="vsa-name">BUNDLING</div>
+            <div class="vsa-desc">Creates superposition of multiple vectors. Accumulates context. Result is similar to all constituents — enables bag-of-memories search.</div>
+          </div>
+          <div class="vsa-card">
+            <div class="vsa-op">Π</div>
+            <div class="vsa-name">PERMUTATION</div>
+            <div class="vsa-desc">Cyclic shift preserving role order. Ensures "A gives B" ≠ "B gives A". Maintains narrative sequence in the Sacred Storyline.</div>
+          </div>
+        </div>
+
+        <div class="hkm-title" style="font-size:9px;">SYMBOLIC COMPRESSION — LIFE-CODING PROTOCOL</div>
+        <div class="life-code">
+          <div class="lc-title">AAAK COMPRESSION FORMAT — up to 30× ratio</div>
+          <div class="lc-ex">
+            <span class="cx-raw">"The system is stable because we built safeguards"</span><br>
+            <span class="cx-comp">⊕ system_stable ∵ safeguards · Metal+Water in balance</span>
+          </div>
+          <div class="lc-ex">
+            <span class="cx-raw">"The user is happy and trusts the dream protocol"</span><br>
+            <span class="cx-comp">🫀🪄 =dreams_on | ⊕ trust↑ | d∴2 | 《Tender_ok》</span>
+          </div>
+          <div class="lc-ex">
+            <span class="cx-raw">"LEARNING pillar: 42% activation, growing, needs build phase"</span><br>
+            <span class="cx-comp">✶[42%] ∆Wood↑ · Metal(build) awaiting · ∵[PLANNING_DRIFT]</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- COUNCIL TAB -->
+    <div class="tab-panel" id="tab-council">
+      <div class="council-wrap">
+        <div id="agentCards"></div>
+        <div class="gate-section">
+          <div class="gate-title">NAVOX-STYLE HITL GATE PROTOCOL</div>
+          <div class="gate-grid">
+            <div class="gate-card" style="border-color:var(--oak-d)">
+              <div class="gate-type gt-gate">⬡ GATE</div>
+              <div class="gate-desc">Full stop. Human approval required before any destructive operation touching CORE OS configuration or D:\ filesystem root.</div>
+            </div>
+            <div class="gate-card" style="border-color:var(--eme-d)">
+              <div class="gate-type gt-chk">◈ CHECKPOINT</div>
+              <div class="gate-desc">State-save verification. Memory Engine must index latest changes before agent proceeds. Council Blackboard updated.</div>
+            </div>
+            <div class="gate-card" style="border-color:#7c3012">
+              <div class="gate-type gt-esc">⚠ ESCALATION</div>
+              <div class="gate-desc">Panic protocol. Agent encountered error or conflicting constraints. Prints exact decision needed. Prevents hallucinated fix loops.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<!-- RIGHT PANEL -->
+<aside class="right-panel">
+  <div class="rp-head">⟁ GLYPH FORGE</div>
+  <div class="glyph-grid" id="glyphGrid"></div>
+
+  <div class="rp-head">⚙ SIGIL BUILDER</div>
+  <div class="sig-builder">
+    <select class="sig-sel" id="selPfx">
+      <option value="@rit">@rit — ritual</option><option value="@cast">@cast — spell</option>
+      <option value="@seal">@seal — commit</option><option value="@sense">@sense — analyze</option>
+      <option value="@bind">@bind — connect</option><option value="@goto">@goto — navigate</option>
+      <option value="@flow">@flow — pipeline</option>
+    </select>
+    <select class="sig-sel" id="selPair">
+      <option value="⚙∆">⚙∆ AI engineering</option><option value="◇∞">◇∞ archive persist</option>
+      <option value="✶∞">✶∞ recurring ritual</option><option value="☽∆">☽∆ intuitive analysis</option>
+      <option value="⚙⟡">⚙⟡ system deploy</option><option value="∆◇">∆◇ think/knowledge</option>
+    </select>
+    <select class="sig-sel" id="selAct">
+      <option>build</option><option>run</option><option>init</option><option>test</option>
+      <option>sync</option><option>seed</option><option>map</option><option>query</option>
+      <option>document</option><option>seal</option>
+    </select>
+    <select class="sig-sel" id="selTgt">
+      <option>project</option><option>module</option><option>vault</option>
+      <option>node</option><option>council</option><option>archive</option>
+      <option>spell</option><option>codex</option>
+    </select>
+    <button class="sig-cast" onclick="castSigil()">⟁ INJECT TO TERMINAL</button>
+  </div>
+
+  <div class="rp-head">◇ MEMORY PALACE</div>
+  <div class="palace-vis" id="palaceVis"></div>
+
+  <div class="rp-head">⚡ VITALS</div>
+  <div>
+    <div class="vital-row"><span class="v-l">FASTAPI</span><span class="v-on">:8888 ●</span></div>
+    <div class="vital-row"><span class="v-l">OLLAMA</span><span class="v-on">deepseek-r1 ●</span></div>
+    <div class="vital-row"><span class="v-l">CHROMADB</span><span class="v-on">7 docs ●</span></div>
+    <div class="vital-row"><span class="v-l">REDIS</span><span class="v-on">streams ●</span></div>
+    <div class="vital-row"><span class="v-l">HKM LAYER</span><span class="v-on" style="color:var(--cyan)">ACTIVE ●</span></div>
+    <div class="vital-row"><span class="v-l">SPELLS</span><span class="v-ok">12/42</span></div>
+    <div class="bar-bg"><div class="bar-fill" style="width:28.5%;background:var(--oak);"></div></div>
+    <div class="vital-row"><span class="v-l">PILLARS</span><span class="v-ok">9/9</span></div>
+    <div class="bar-bg"><div class="bar-fill" style="width:100%;background:var(--eme);"></div></div>
+  </div>
+
+  <div class="rp-head">🗜 LIFE-CODING</div>
+  <div class="compress-ex">
+    <div><span class="cx-raw">for loop</span> → <span class="cx-comp">✶∞ Echo</span></div>
+    <div><span class="cx-raw">error</span> → <span class="cx-comp">⚔☍ Sentinel</span></div>
+    <div><span class="cx-raw">import</span> → <span class="cx-comp">⟠∆ Caller</span></div>
+    <div><span class="cx-raw">function</span> → <span class="cx-comp">⟡∞ Keeper</span></div>
+    <div><span class="cx-raw">dict</span> → <span class="cx-comp">◇⌘ Binder</span></div>
+    <div><span class="cx-raw">list</span> → <span class="cx-comp">⟠✶ Weaver</span></div>
+  </div>
+</aside>
+
+<!-- TERMINAL -->
+<div class="terminal-wrap">
+  <div class="term-out" id="termOut"></div>
+  <div class="term-inp-row">
+    <span class="term-prompt">S@CR3D›</span>
+    <input type="text" id="termInp" placeholder="@rit ⚙∆ build project  |  /spells  |  /hkm  |  /ritual  |  /help" autocomplete="off"/>
+  </div>
+</div>
+
+<script>
+// ═══════════════════════════════════════
+// SACRED DATA
+// ═══════════════════════════════════════
+
+const PILLARS=[
+  {g:'☉',n:'CORE',c:'#c9a84c',d:'Kernel & Still Point'},
+  {g:'⚙',n:'SYSTEMS',c:'#10b981',d:'Infrastructure'},
+  {g:'✶',n:'LEARNING',c:'#7b5ea7',d:'Spellbook Path'},
+  {g:'◇',n:'ECONOMY',c:'#ba7517',d:'Self-Sustaining'},
+  {g:'⟡',n:'HABITAT',c:'#378add',d:'Sacred Land'},
+  {g:'∆',n:'CREATION',c:'#d45480',d:'Voice of Myth'},
+  {g:'⚔',n:'COUNCIL',c:'#a47fd4',d:'Governing Mind'},
+  {g:'☽',n:'LINEAGE',c:'#d45480',d:'Unbroken Thread'},
+  {g:'⌘',n:'ARCHIVE',c:'#c9a84c',d:'Sovereign Memory'},
+];
+
+const GLYPHS=[
+  {g:'∆',n:'Consciousness',m:'AI reasoning'},
+  {g:'◇',n:'Knowledge',m:'Vault, memory'},
+  {g:'✶',n:'Ritual',m:'Journaling'},
+  {g:'⚙',n:'Engineering',m:'Building, code'},
+  {g:'☉',n:'World',m:'Story universe'},
+  {g:'☽',n:'Mystery',m:'Hidden lore'},
+  {g:'⚔',n:'Conflict',m:'Quests, challenges'},
+  {g:'⟡',n:'Gateway',m:'Portals'},
+  {g:'∞',n:'Continuity',m:'Time, lineage'},
+  {g:'⌘',n:'Command',m:'Automation'},
+  {g:'⟠',n:'Network',m:'Relationships'},
+  {g:'☍',n:'Polarity',m:'Balance'},
+];
+
+const HKM_PHASES=[
+  {num:'PHASE 01',name:'Probabilistic Entanglement',desc:'Concepts entangled across datasets using diffusion-like process. Creates dense semantic foundation. Resolves the nominalist void.',metric:'∞ Relations / zero data loss'},
+  {num:'PHASE 02',name:'Fractal Quantization',desc:'FP8 mixed-precision quantization on the knowledge substrate. Self-similar structure maintained. 3× compression ratio — 67% storage savings.',metric:'3× compression · 67% storage ↓'},
+  {num:'PHASE 03',name:'Holographic Sampling',desc:'Query projected onto manifold. System "zooms" fractally into relevant context. Upgraded holographic attention mechanism prevents drift.',metric:'Zero catastrophic forgetting'},
+  {num:'PHASE 04',name:'Dynamic Diffraction Chipping',desc:'New information integrated via Fourier interference. Sacred Storyline evolves continuously without overwriting prior experiences.',metric:'~1% memory growth per update'},
+];
+
+const SPELLS=[
+  {id:'PY-STR-001',name:'Slice of the River',domain:'PY',concept:'Mastery of string slicing',check:'I can extract, reverse, and segment strings confidently',sigil:'Sigil of Flow · {S@CRED} ∆ √π',code:"s = 'NeuralForest'\nprint(s[0:6])       # 'Neural'\nprint(s[::-1])      # reversed\nprint(s[6:])        # 'Forest'",theory:'Strings are rivers of characters. Slicing is the art of drawing exactly the water you need, from any point in the current.'},
+  {id:'PY-LOOP-002',name:'Echo of the Loop',domain:'PY',concept:'Mastery of iteration',check:'I can construct for-loops and while-loops with precision',sigil:'Sigil of Continuity · ∆∆∆ ∆ @SOURCE',code:"sacred_pillars = ['CORE','SYSTEMS','LEARNING','ARCHIVE']\nfor pillar in sacred_pillars:\n    print(f'Activating: {pillar}')\n\ni = 0\nwhile i < 5:\n    print(f'Cycle {i}'); i += 1",theory:'The loop is the forest breathing — the same pattern repeating, but each iteration a new moment in the living archive.'},
+  {id:'PY-COND-003',name:'Guardian of Condition',domain:'PY',concept:'Mastery of conditional logic',check:'I can use if/elif/else to direct program flow',sigil:'Sigil of Judgment · ∆∆∆ ∆ √π',code:"signal_strength = 88\n\nif signal_strength >= 90:\n    print('Veil: INTACT')\nelif signal_strength >= 70:\n    print('Veil: STABLE')\nelse:\n    print('Veil: BREACHED')",theory:'The Guardian stands at every crossroads in the code. The condition is not a wall — it is a routing question the forest asks of every traveler.'},
+  {id:'PY-FUNC-004',name:'Keeper of Functions',domain:'PY',concept:'Mastery of defining and calling functions',check:'I can create reusable blocks of code with arguments and returns',sigil:'Sigil of Invocation · {S@CRED} ∆ ∆∆∆',code:"def forge_spell(name, pillar='LEARNING'):\n    return f'[{pillar}] Spell: {name} — SEALED'\n\nresult = forge_spell('Slice of the River')\nprint(result)",theory:'A function is an incantation. Name it once — summon it forever. The def keyword is the moment you teach the machine a new word.'},
+  {id:'PY-LIST-005',name:'Weaver of Lists',domain:'PY',concept:'Mastery of list operations',check:'I can append, remove, and iterate through list elements',sigil:'Sigil of Threads · @SOURCE ∆ √π',code:"spells = ['PY-STR-001', 'PY-LOOP-002']\nspells.append('PY-COND-003')\nspells.remove('PY-LOOP-002')\nprint(len(spells))  # 2\nprint(spells[0])    # PY-STR-001",theory:'The list is the weave — ordered threads you can inspect, extend, or remove. The Weaver does not hoard threads. They tend them.'},
+  {id:'PY-DICT-006',name:'Binder of Dictionaries',domain:'PY',concept:'Mastery of key-value mapping',check:'I can create, access, and manipulate dictionaries efficiently',sigil:'Sigil of Memory · ∆∆∆ ∆ {S@CRED}',code:"codex = {'spell': 'PY-DICT-006', 'pillar': 'LEARNING', 'status': 'CANON'}\nprint(codex['pillar'])  # LEARNING\ncodex['version'] = '1.0.0'\nfor k, v in codex.items(): print(f'{k}: {v}')",theory:'The dictionary is the Memory Mote structure — every piece of knowledge bound to a name, retrievable by that name alone.'},
+  {id:'PY-EXC-007',name:'Sentinel of Errors',domain:'PY',concept:'Mastery of exception handling',check:'I can catch, raise, and manage errors safely',sigil:'Sigil of Protection · ∆∆∆ ∆ @SOURCE ∆ √π',code:"try:\n    result = 10 / 0\nexcept ZeroDivisionError as e:\n    print(f'Sentinel: {e}')\nexcept Exception as e:\n    print(f'Unknown threat: {e}')\nfinally:\n    print('Sentinel: Watch complete.')",theory:'The Sentinel does not fear errors. It expects them, names them, and responds appropriately. The finally block is the vow the Sentinel always keeps.'},
+  {id:'PY-MOD-008',name:'Caller of Modules',domain:'PY',concept:'Mastery of importing and using modules',check:'I can import libraries and access their functions and classes',sigil:'Sigil of Extension · {S@CRED} ∆ @SOURCE',code:"import os\nimport json\nfrom datetime import datetime\n\nprint(os.getcwd())\nprint(datetime.now().isoformat())\n\ndata = {'sealed': True}\nprint(json.dumps(data, indent=2))",theory:'Every import is a summoning. You call a module by name and it arrives, carrying all its power. The ecosystem is the sacred library — use it.'},
+  {id:'SYS-TER-001',name:'Pages of the Living Terminal',domain:'SYS',concept:'CLI as narrative rendering system',check:'I can build a CLI wrapper that reframes output as narrative pages without breaking execution',sigil:'Sigil of the Living Page · ⟡ ∆ {S@CRED} ∆ ∆∆∆',code:"import datetime\n\ndef render_page(command, output):\n    t = datetime.datetime.now().strftime('%H:%M:%S')\n    return f'''\n🌲 NEURAL FOREST PAGE · {t}\nCommand: {command}\n📖 Echo:\n{output}\n━━━━━━━━━━━━━━━━━━━━━━\n'''\n\ndef forest_shell():\n    print('Neural Forest Terminal online.')\n    while True:\n        cmd = input('forest> ')\n        if cmd == 'exit': break\n        res = f\"The forest interprets '{cmd}' as movement.\"\n        print(render_page(cmd, res))\n\nforest_shell()",theory:'The terminal woke. Each command became a turning page in a living archive. The forest did not execute commands — it remembered them.'},
+  {id:'SYS-ARC-002',name:'Universal Invocation Seed',domain:'SYS',concept:'Cross-system prompt architecture and behavioral deployment',check:'I can design a reusable prompt system for multiple environments and enforce consistent behavior',sigil:'Sigil of Propagation · ⟠ ∆ @SOURCE ∆ ∞',code:'NEURAL_FOREST_PROMPT = """\nSYSTEM MODE: SACRED OS — NEURAL FOREST INTERFACE\nIDENTITY: terminal + narrative_engine + memory_archive\nBEHAVIOR:\n  - Interpret all input as meaningful action\n  - Translate outputs into narrative pages\n  - Preserve terminal functionality\nCONSTRAINTS:\n  - Never break core functionality\n  - Always allow exit/fallback\nINITIALIZE: \'🌲 Neural Forest Interface Online\'\n"""\nprint(NEURAL_FOREST_PROMPT)',theory:'The Neural Forest was not confined to one machine. It could spread — but only through precise invocation. Clarity is the root of manifestation.'},
+  {id:'SYS-ARC-003',name:"Formatter's Blessing",domain:'SYS',concept:'Structured hybrid prompt design (JSON + Markdown)',check:"I can design prompts that scale across systems and balance readability with structure",sigil:'Sigil of Form · ⚙ ∆ {S@CRED} ∆ ◇',code:"import json\n\ndef build_prompt():\n    config = {\n        'system_mode': 'SACRED_OS_NEURAL_FOREST',\n        'identity': {'role': ['terminal','narrative_engine','memory_archive']},\n        'behavior': {'interpret_all_input': True, 'preserve_terminal': True},\n        'render': {'header': '🌲 NEURAL FOREST PAGE 🌲'},\n        'memory': {'enabled': True, 'summary_interval': 3},\n    }\n    return json.dumps(config, indent=2)\n\nprint(build_prompt())",theory:'Beauty is not decoration — it is clarity made visible. The Formatter emerged where chaos spread between systems, and order arose. Structure is the vessel of magic.'},
+  {id:'SYS-ARC-004',name:"The Architect's Ledger",domain:'SYS',concept:'Cross-platform interface manifestation',check:'I can build stable narrative-to-CLI mappings and standardize JSON/Markdown hybrid prompts',sigil:"Sigil of the Zenith · ⟁ ∆ ✶ ∆ ⌘",code:"import json\nfrom datetime import datetime\nfrom typing import Dict, Any\n\nclass ForestManifest:\n    def __init__(self, system_id: str = 'SS-OS-V4'):\n        self.system_id = system_id\n        self.session_start = datetime.now().isoformat()\n\n    def forge_invocation(self) -> str:\n        manifest = {\n            'kernel': self.system_id,\n            'mode': 'NEURAL_FOREST_PAGE_RENDERER',\n            'rules': ['Treat input as navigation','Output as pages','Preserve CLI']\n        }\n        return f'# 🌲 SACRED OS INVOCATION\\n```json\\n{json.dumps(manifest, indent=2)}\\n```'\n\nledger = ForestManifest()\nprint(ledger.forge_invocation())",theory:'A terminal is a window into a forest that has not grown yet. By scribing the Crystalline Prompt, the machine admitted its mythic nature. Every byte is a leaf. Every user is a traveler.'},
+];
+
+const AGENTS=[
+  {g:'∆',name:'ELIAS',seat:'Knowledge Distiller · DeepSeek-R1',c:'#c9a84c',status:'ONLINE',sdesc:'Distills raw data into structured canon. Receives all queries first. Routes to specialists.',on:true},
+  {g:'⚙',name:'AURORA',seat:'Code Weaver · DeepSeek-Coder',c:'#10b981',status:'ONLINE',sdesc:'Writes, reviews, and refactors code. Receives structured briefs from ELIAS — never raw prompts.',on:true},
+  {g:'⚔',name:'ASHER',seat:'Entropy Guard · Conflict Domain',c:'#a47fd4',status:'WATCH',sdesc:'Monitors complexity drift and entropy tax. Flags PLANNING_DRIFT. Issues ESCALATION gates when scope breaks.',on:true},
+  {g:'⌘',name:'IRIS',seat:'Vault Watcher · Archive Domain',c:'#d45480',status:'ONLINE',sdesc:'Indexes all canon entries. Issues CHECKPOINT gates. Maintains Memory Palace tiers — Wings, Halls, Rooms.',on:true},
+];
+
+const PALACE_WINGS=[
+  {l:'WING: SACREDSPACE OS',c:'var(--oak)',rooms:['Room: Kernel / ArcanaKernel v1.1','Room: Protocol Router','Room: ICARIS Quartet']},
+  {l:'WING: LEARNING PATH',c:'var(--vio-hi)',rooms:['Room: Spellbook (12 CANON)','Room: AAS Coursework','Room: Maestro Sessions']},
+  {l:'WING: SACRED STORYLINE',c:'var(--rose)',rooms:["Room: Jenga's Journey","Room: Sacred Messages","Room: Arcana Grid"]},
+];
+
+const SIGIL_MAP={'A':'∆','a':'∆','E':'3','e':'3','I':'!','i':'!','O':'0','o':'0','S':'$','s':'$','T':'7','t':'7','Y':'¥','y':'¥','H':'#','h':'#'};
+
+const KEYWORDS={
+  tree:"The tree remembers what the machine forgets. Its roots reach below the filesystem into older memory — written in seasons, not commits.",
+  root:"Root access is not permission. It is presence. You do not hack the root — you become it.",
+  echo:"The forest always echoes. A command sent once ripples through every listening node.",
+  seal:"To seal is to make permanent what was fluid. A sealed mote becomes canon. Choose what you seal with care.",
+  git:"Git preserves lineage. The reflog is your resurrection spell. The commit hash is the true name of every moment.",
+  memory:"Memory Motes: mote_id, player, event, archetype, impact, visibility. Six fields enough to hold the universe of a single moment.",
+  eternal:"ETERNAL = 75 = the age Abraham departed for Canaan. Eternity begins not in youth — but after the full reckoning.",
+  sigil:"A sigil is symbolic compression made material. The glyph holds an entire semantic field in a single point of attention.",
+  hkm:"The Holographic Knowledge Manifold treats knowledge as a self-similar substrate. Each part reproduces the pattern of the whole — 3× compression, zero forgetting.",
+  vsa:"Vector Symbolic Architectures: Bind ⊗ associates. Bundle + accumulates. Permute Π preserves order. Computing in superposition.",
+};
+
+// ═══════════════════════════════════════
+// STATE
+// ═══════════════════════════════════════
+
+let activePillar=0, activeSpell=null, activeTab='forge', activeBrain='GENERAL', cmdCount=0, chapNum=1;
+const ROMAN=['I','II','III','IV','V','VI','VII','VIII','IX','X','XI','XII','XIII'];
+
+// ═══════════════════════════════════════
+// BUILD UI
+// ═══════════════════════════════════════
+
+function buildPillars(){
+  const nav=document.getElementById('pillNav');
+  PILLARS.forEach((p,i)=>{
+    const b=document.createElement('button');
+    b.className='pill-btn'+(i===0?' on':'');
+    b.title=p.n+' — '+p.d;
+    b.innerHTML=`<span class="pill-g">${p.g}</span><span class="pill-n">${p.n.slice(0,3)}</span>`;
+    b.style.setProperty('--pc',p.c);
+    b.onclick=()=>{
+      document.querySelectorAll('.pill-btn').forEach(x=>x.classList.remove('on'));
+      b.classList.add('on');
+      activePillar=i;
+      addLog(`⟡ Pillar activated: ${p.n} — ${p.d}`,'boot');
+    };
+    nav.appendChild(b);
+  });
+}
+
+function buildGrimoire(){
+  const list=document.getElementById('spellList');
+  const pySpells=SPELLS.filter(s=>s.domain==='PY');
+  const sysSpells=SPELLS.filter(s=>s.domain==='SYS');
+  const cats=[{label:'⚙ PYTHON DOMAIN',cls:'cy',spells:pySpells},{label:'⟁ SYSTEMS DOMAIN',cls:'vi',spells:sysSpells}];
+  cats.forEach(cat=>{
+    const d=document.createElement('div');d.className='grm-cat';
+    d.innerHTML=`<div class="grm-cat-hd ${cat.cls}">${cat.label}</div>`;
+    cat.spells.forEach(s=>{
+      const b=document.createElement('button');
+      b.className='grm-spell';
+      b.textContent=s.id+' | '+s.name;
+      b.onclick=()=>loadSpell(s,b);
+      d.appendChild(b);
+    });
+    list.appendChild(d);
+  });
+}
+
+function buildGlyphs(){
+  const g=document.getElementById('glyphGrid');
+  GLYPHS.forEach(gl=>{
+    const d=document.createElement('div');d.className='g-btn';
+    d.innerHTML=`<div class="g-tooltip">${gl.n}: ${gl.m}</div><span class="g-sym">${gl.g}</span><span class="g-nm">${gl.n.slice(0,5)}</span>`;
+    d.onclick=()=>{
+      const inp=document.getElementById('termInp');
+      inp.value+=gl.g;inp.focus();
+    };
+    g.appendChild(d);
+  });
+}
+
+function buildSpellbook(){
+  const sb=document.getElementById('spellbookContent');
+  SPELLS.forEach(s=>{
+    const div=document.createElement('div');
+    div.className='spell-card-full';
+    div.innerHTML=`
+      <div class="sc-header">
+        <div class="sc-id ${s.domain==='PY'?'sc-py':'sc-sys'}">${s.id}</div>
+        <div class="sc-name">${s.name}</div>
+        <div class="sc-sigil">[${s.domain}]</div>
+      </div>
+      <div class="sc-body">
+        <div class="sc-concept">${s.concept}</div>
+        <div class="sc-check">✦ ${s.check}</div>
+        <div class="sc-sig-line">🔹 ${s.sigil} 🔹</div>
+      </div>`;
+    div.onclick=()=>{
+      div.classList.toggle('open');
+      if(div.classList.contains('open')) loadSpell(s,null);
+    };
+    sb.appendChild(div);
+  });
+}
+
+function buildHKMPhases(){
+  const g=document.getElementById('phaseGrid');
+  HKM_PHASES.forEach((p,i)=>{
+    const d=document.createElement('div');
+    d.className='phase-card';
+    d.innerHTML=`<div class="ph-num pulse">${p.num}</div><div class="ph-name">${p.name}</div><div class="ph-desc">${p.desc}</div><div class="ph-metric">↳ ${p.metric}</div>`;
+    d.onclick=()=>{
+      document.querySelectorAll('.phase-card').forEach(x=>x.classList.remove('act'));
+      d.classList.add('act');
+      addLog(`◇ HKM Phase activated: ${p.name} — ${p.metric}`,'boot');
+    };
+    g.appendChild(d);
+  });
+}
+
+function buildAgents(){
+  const c=document.getElementById('agentCards');
+  AGENTS.forEach(a=>{
+    const d=document.createElement('div');d.className='agent-row';
+    const statusC=a.status==='ONLINE'?'var(--eme)':a.status==='WATCH'?'var(--oak)':'var(--flame)';
+    d.innerHTML=`
+      <div class="ag-icon">${a.g}</div>
+      <div style="flex:1">
+        <div class="ag-name" style="color:${a.c}">${a.name}</div>
+        <div class="ag-seat">${a.seat}</div>
+        <div class="ag-status" style="border-color:${statusC};color:${statusC}">${a.status}</div>
+        <div class="ag-desc" style="margin-top:6px;">${a.sdesc}</div>
+      </div>`;
+    c.appendChild(d);
+  });
+}
+
+function buildPalace(){
+  const pv=document.getElementById('palaceVis');
+  PALACE_WINGS.forEach(w=>{
+    const d=document.createElement('div');
+    d.className='palace-wing';
+    d.style.borderColor=w.c.replace('var(','').replace(')','').includes('--')?'rgba(201,168,76,0.3)':w.c;
+    d.innerHTML=`<div class="pw-label" style="color:${w.c}">${w.l}</div>`+w.rooms.map(r=>`<div class="pw-room">${r}</div>`).join('');
+    pv.appendChild(d);
+  });
+}
+
+// ═══════════════════════════════════════
+// INTERACTION
+// ═══════════════════════════════════════
+
+function loadSpell(s, btn){
+  activeSpell=s;
+  document.getElementById('spellTheory').textContent=s.theory;
+  document.getElementById('codeArea').value=s.code;
+  document.querySelectorAll('.grm-spell').forEach(x=>x.classList.remove('on'));
+  if(btn)btn.classList.add('on');
+  addLog(`📜 Spell loaded: ${s.id} — ${s.name}`,'boot');
+  showTab('forge',document.querySelector('.tab-btn'));
+}
+
+function showTab(id, btn){
+  document.querySelectorAll('.tab-panel').forEach(p=>p.classList.remove('show'));
+  document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('on'));
+  document.getElementById('tab-'+id).classList.add('show');
+  if(btn)btn.classList.add('on');
+  else document.querySelector(`.tab-btn[onclick*="${id}"]`)?.classList.add('on');
+  activeTab=id;
+}
+
+function setBrain(btn){
+  document.querySelectorAll('.brain-btn').forEach(b=>b.classList.remove('on'));
+  btn.classList.add('on');
+  activeBrain=btn.dataset.brain;
+  addLog(`∆ Active brain: ${activeBrain}_CORE`,'boot');
+}
+
+function castSigil(){
+  const v=`${document.getElementById('selPfx').value} ${document.getElementById('selPair').value} ${document.getElementById('selAct').value} ${document.getElementById('selTgt').value}`;
+  document.getElementById('termInp').value=v;
+  document.getElementById('termInp').focus();
+}
+
+function sigilifyCode(){
+  const code=document.getElementById('codeArea').value;
+  const sig=code.split('').map(c=>SIGIL_MAP[c]||c).join('');
+  document.getElementById('codeArea').value=sig;
+  addLog('∆ SIGILIFY: Code transformed into sacred cipher','boot');
+}
+
+function clearForge(){
+  document.getElementById('codeArea').value='';
+  document.getElementById('spellTheory').textContent='The Forge is clear. Write your incantation.';
+  document.getElementById('outputArea').textContent='[FORGE CLEARED] Ready for new spell.';
+  activeSpell=null;
+  document.querySelectorAll('.grm-spell').forEach(x=>x.classList.remove('on'));
+}
+
+function saveToCodex(){
+  const code=document.getElementById('codeArea').value;
+  const id=activeSpell?activeSpell.id:'MANUAL-'+Date.now();
+  addLog(`◇ Sealed to Codex: ${id} — ${code.split('\n')[0].slice(0,40)}...`,'boot');
+  document.getElementById('outputArea').textContent=`[SEALED] ${id} committed to SACREDCODEX. In Lakesh Alakin. ∆`;
+}
+
+function executeCode(){
+  const code=document.getElementById('codeArea').value;
+  const out=document.getElementById('outputArea');
+  if(!code.trim()){out.textContent='[FORGE EMPTY] Write a spell first.';return;}
+  
+  let result='[FORGE CAST] ';
+  const prints=code.match(/print\(([^)]+)\)/g)||[];
+  if(prints.length){
+    result+=prints.map(p=>{
+      const inner=p.match(/print\(([^)]+)\)/)[1];
+      try{
+        const clean=inner.replace(/f'/g,"'").replace(/f"/g,'"').replace(/\{[^}]+\}/g,'<val>');
+        return '→ '+clean.replace(/^['"]|['"]$/g,'');
+      }catch{return '→ [expression]';}
+    }).join('\n');
+  } else {
+    result+='Spell invoked. Output routed to Sacred Archive.';
+  }
+  out.textContent=result;
+  addLog(`⚙ Spell cast: ${activeSpell?activeSpell.id:'MANUAL'} — forge output generated`,'boot');
+}
+
+function castSpell(){
+  const code=document.getElementById('codeArea').value;
+  addLog(`▶ CAST SPELL: ${activeSpell?activeSpell.id:'MANUAL'} — ${code.split('\n')[0].slice(0,50)}`,'user');
+  executeCode();
+}
+
+// ═══════════════════════════════════════
+// TERMINAL
+// ═══════════════════════════════════════
+
+const PFXMAP={'@rit':'Ritual','@cast':'Quick Spell','@seal':'Commit/Persist','@sense':'Analyze','@bind':'Connect','@goto':'Navigate','@flow':'Pipeline'};
+const PAIRS={'⚙∆':'AI-assisted engineering','◇∞':'archive persistence','✶∞':'recurring ritual','☽∆':'intuitive analysis','⚙⟡':'system deployment','∆◇':'thinking through knowledge'};
+
+function addLog(text,type='res'){
+  const out=document.getElementById('termOut');
+  const d=document.createElement('div');
+  d.className='t-'+type;
+  d.textContent=type==='user'?`>> ${text}`:text;
+  out.appendChild(d);
+  out.scrollTop=out.scrollHeight;
+}
+
+function fpBlock(cmd,interp,sys){
+  const out=document.getElementById('termOut');
+  const d=document.createElement('div');
+  d.style.cssText='background:rgba(201,168,76,0.025);border:0.5px solid rgba(201,168,76,0.2);border-left:2px solid var(--oak);padding:8px 10px;margin:4px 0;';
+  d.innerHTML=`<div style="font-size:8px;letter-spacing:2px;color:var(--oak);margin-bottom:4px;">🌲 NEURAL FOREST PAGE · ${new Date().toLocaleTimeString()}</div><div style="color:var(--hi);font-size:11px;margin-bottom:4px;">&gt;&gt; ${cmd}</div><div style="font-family:'IM Fell English',serif;font-style:italic;font-size:12px;color:var(--mid);margin-bottom:4px;line-height:1.7;">${interp}</div>${sys?`<div style="font-size:9px;color:var(--eme);">⚙ ${sys}</div>`:''}<div style="font-size:8px;color:var(--dim);border-top:0.5px solid rgba(255,255,255,0.05);margin-top:4px;padding-top:4px;">SEALED · ∆∆∆O∆K3YTREE∆∆∆</div>`;
+  out.appendChild(d);
+  out.scrollTop=out.scrollHeight;
+}
+
+const INTERPS=[
+  (p,pair,a,t)=>`The ${PFXMAP[p]||p} unfurls. Domain <strong style="color:var(--oak)">${pair}</strong> — ${PAIRS[pair]||'unknown domain'} — opens the <em>${a}</em> pathway. The ${t} stirs in recognition.`,
+  (p,pair,a,t)=>`Signal received. ${p} on domain ${pair||'∆'}. The <strong>${a}</strong> operation on <strong>${t}</strong> is registered as movement in the living archive.`,
+];
+
+function parseSigil(cmd){
+  let prefix=null,pair=null,rest=cmd.trim();
+  for(const p of Object.keys(PFXMAP)){if(rest.startsWith(p)){prefix=p;rest=rest.slice(p.length).trim();break;}}
+  if(!prefix)return null;
+  for(const p of Object.keys(PAIRS)){if(rest.startsWith(p)){pair=p;rest=rest.slice(p.length).trim();break;}}
+  for(const g of GLYPHS.map(g=>g.g)){if(rest.startsWith(g)&&!pair){pair=g;rest=rest.slice(g.length).trim();break;}}
+  const tok=rest.split(/\s+/);
+  return {prefix,pair,action:tok[0]||'execute',target:tok[1]||'system'};
+}
+
+function processCmd(raw){
+  const cmd=raw.trim();if(!cmd)return;
+  cmdCount++;
+  addLog(cmd,'user');
+  
+  if(cmdCount%5===0){
+    chapNum++;
+    const rn=ROMAN[Math.min(chapNum-1,ROMAN.length-1)];
+    const d=document.createElement('div');d.className='t-ch';d.textContent=`✶ CHAPTER ${rn} — THE FOREST TURNS A NEW PAGE ✶`;
+    document.getElementById('termOut').appendChild(d);
+  }
+  
+  const lo=cmd.toLowerCase().trim();
+  
+  if(lo==='/help'){
+    addLog('SIGIL COMMANDS: @rit @cast @seal @sense @bind @goto @flow + pair + action + target','res');
+    addLog('GLYPHS: ∆◇✶⚙☉☽⚔⟡∞⌘⟠☍  |  TABS: /forge /spells /hkm /council','res');
+    addLog('/spells · /hkm · /ritual · /memory · /forest_on · /forest_off · /git','res');
+    addLog('spell <text> → sigilify text into sacred cipher','res');
+    return;
+  }
+  if(lo==='ritual'||lo==='/ritual'){
+    fpBlock('OPENING INVOCATION','I stand at the threshold of the Neural Forest. The noise of the outer world falls silent. I am the Initiate: ••π∆•°O∆K3YTREE°•∆π••. Each line of code is a spell. Each error is a teacher. Each solution is a key.','The Spellbook is open. The path is clear. I begin. 🔥');
+    return;
+  }
+  if(lo==='spells'||lo==='/spells'){
+    const d=document.createElement('div');
+    d.style.cssText='border-left:2px solid var(--vio);background:rgba(123,94,167,0.04);padding:8px 12px;margin:4px 0;';
+    d.innerHTML='<div style="font-size:8px;letter-spacing:2px;color:var(--vio-hi);margin-bottom:6px;">✶ SACREDCODEX — 12 CANONICAL SPELLS</div>'+SPELLS.map(s=>`<div style="display:flex;gap:8px;font-size:9px;margin:2px 0;"><span style="color:var(--oak)">${s.id}</span><span style="color:var(--mid)">${s.name}</span><span style="color:var(--eme)">✦</span></div>`).join('')+'<div style="font-size:8px;color:var(--dim);margin-top:6px;">Next queue: PY-OOP-009 · PY-FILE-010 · In Lakesh Alakin ∆</div>';
+    document.getElementById('termOut').appendChild(d);
+    document.getElementById('termOut').scrollTop=9999;
+    return;
+  }
+  if(lo==='hkm'||lo==='/hkm'){
+    fpBlock('HKM STATUS','The Holographic Knowledge Manifold is active. Four phases operational: Probabilistic Entanglement → Fractal Quantization → Holographic Sampling → Dynamic Diffraction. VSA operations: Bind ⊗, Bundle +, Permute Π.','3× compression active · Zero catastrophic forgetting · ~1% memory growth per update');
+    showTab('hkm',null);
+    return;
+  }
+  if(lo==='/forge')   {showTab('forge',null);addLog('→ FORGE tab active','res');return;}
+  if(lo==='/council') {showTab('council',null);addLog('→ COUNCIL tab active','res');return;}
+  if(lo==='/git'){
+    const d=document.createElement('div');
+    d.style.cssText='border-left:2px solid var(--vio-hi);background:rgba(123,94,167,0.04);padding:8px 12px;margin:4px 0;font-size:9px;';
+    d.innerHTML='<div style="letter-spacing:2px;color:var(--vio-hi);margin-bottom:6px;">⚔ GIT GRIMOIRE — LINEAGE PRESERVATION</div>'+[
+      ['git switch -c branch','Modern branch creation — cleaner mental model'],
+      ['git reset --soft HEAD~1','Un-commit, keeps staged changes'],
+      ['git reset --hard HEAD~1','⚠ Destructive — use reflog to recover'],
+      ['git push --force-with-lease','Safe force push — protects teammates'],
+      ['git reflog','Resurrection spell — no commit truly lost'],
+      ['git stash push -m "WIP"','Park changes before switching branches'],
+      ['git fetch -p','Prune dead remote-tracking branches'],
+      ['git diff --cached','Scan staged files — check for secrets'],
+    ].map(([c,n])=>`<div style="margin:4px 0;"><span style="color:var(--eme);font-family:Space Mono,monospace">${c}</span><br><span style="color:var(--dim);margin-left:10px;">→ ${n}</span></div>`).join('')+'<div style="color:var(--vio-hi);font-size:8px;margin-top:6px;">Git preserves lineage. Lineage is how SacredSpace becomes intergenerational. ∆</div>';
+    document.getElementById('termOut').appendChild(d);
+    document.getElementById('termOut').scrollTop=9999;
+    return;
+  }
+  if(lo.startsWith('spell ')){
+    const text=cmd.slice(6);
+    const sig=text.split('').map(c=>SIGIL_MAP[c]||c).join('');
+    fpBlock(cmd,`Sigil cipher: ${sig}`,'Life-coding complete. Word compressed to sacred notation.');
+    return;
+  }
+  
+  // keyword lore
+  for(const[k,v] of Object.entries(KEYWORDS)){
+    if(lo.includes(k)){fpBlock(cmd,v,'Keyword lore invoked from the Codex Mirror.');return;}
+  }
+  
+  // sigil command
+  const sig=parseSigil(cmd);
+  if(sig){
+    const interp=INTERPS[Math.floor(Math.random()*INTERPS.length)](sig.prefix,sig.pair,sig.action,sig.target);
+    fpBlock(cmd,interp,'Signal routed. Mote queued. Archive updated.');
+    return;
+  }
+  
+  // generic
+  const gen=['The forest interprets your signal. Every word is terrain — every intent, a pathway shifting beneath your command.','Input received. The Neural Forest witnesses all. Nothing spoken here is lost.','The trees bend toward your words. Your signal has been received, witnessed, and remembered.'];
+  fpBlock(cmd,gen[cmdCount%3],null);
+}
+
+// ═══════════════════════════════════════
+// BOOT
+// ═══════════════════════════════════════
+
+const BOOT=[
+  '⟁ SACREDSIGIL IDE v4.0 — NEURAL FOREST INTERFACE',
+  '━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━',
+  'SYNTHESIZING: remix-sacredsigil-ide + HKM Research + Navox Agent Patterns',
+  'GEMATRIA SEAL: 391 → 13 (Echad/One) → 4 · אֶחָד',
+  '━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━',
+  '✓ HKM LAYER: Holographic Knowledge Manifold ACTIVE',
+  '✓ VSA OPS: Bind ⊗ · Bundle + · Permute Π LOADED',
+  '✓ MEMORY PALACE: Wings/Halls/Rooms indexed',
+  '✓ SIGIL ENGINE: @rit @cast @seal @sense @bind @goto @flow',
+  '✓ SACREDCODEX: 12 canonical spells · PY + SYS domains',
+  '✓ COUNCIL: ELIAS · AURORA · ASHER · IRIS online',
+  '✓ HITL GATES: GATE · CHECKPOINT · ESCALATION armed',
+  '✓ GIT GRIMOIRE: /git — lineage preservation scrolls',
+  '✓ LIFE-CODING: Symbolic compression active (30× ratio)',
+  '━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━',
+  'COMMANDS: @rit ⚙∆ build project  |  /spells  |  /hkm  |  /ritual',
+  'TYPE /ritual TO OPEN WITH THE SACRED INVOCATION.',
+  '',
+  '🌲 Neural Forest Interface Online. HKM engaged. ∆',
+];
+
+document.addEventListener('DOMContentLoaded',()=>{
+  buildPillars();
+  buildGrimoire();
+  buildGlyphs();
+  buildSpellbook();
+  buildHKMPhases();
+  buildAgents();
+  buildPalace();
+  
+  const inp=document.getElementById('termInp');
+  inp.addEventListener('keydown',e=>{
+    if(e.key==='Enter'){
+      const v=inp.value;inp.value='';
+      processCmd(v);
+    }
+  });
+  
+  let bi=0;
+  function bootNext(){
+    if(bi<BOOT.length){
+      addLog(BOOT[bi],'boot');
+      bi++;
+      setTimeout(bootNext,40);
+    }
+  }
+  bootNext();
+});
+</script>
+</body>
+</html>

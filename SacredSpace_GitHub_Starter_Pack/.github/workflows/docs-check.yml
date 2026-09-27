@@ -1,0 +1,15 @@
+name: Docs Check
+
+on:
+  pull_request:
+  push:
+    branches: [main, dev]
+
+jobs:
+  markdown-lint-placeholder:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Placeholder check
+        run: |
+          echo "Add markdown linting or link checks here."

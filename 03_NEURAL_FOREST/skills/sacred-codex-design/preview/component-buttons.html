@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<!-- @dsCard group="Components" name="Buttons & Tags" subtitle="Primary, secondary, ghost, element, void, disabled states + element tags" viewport="700x280" -->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=EB+Garamond:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #F4ECD8; padding: 28px 32px; font-family: 'EB Garamond', serif; }
+  .label { font-family: 'Cinzel', serif; font-size: 9px; letter-spacing: 0.22em; text-transform: uppercase; color: #C9A14A; margin-bottom: 24px; }
+
+  .section-title { font-family: 'Cinzel', serif; font-size: 9px; letter-spacing: 0.16em; text-transform: uppercase; color: #7A6E65; margin-bottom: 12px; }
+
+  .btn-row { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; margin-bottom: 24px; }
+
+  /* Primary — Gold */
+  .btn-primary {
+    font-family: 'Cinzel', serif;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #F4ECD8;
+    background: #C9A14A;
+    border: 1px solid #C9A14A;
+    padding: 10px 24px;
+    cursor: pointer;
+    transition: background 500ms ease-in-out, color 500ms ease-in-out;
+  }
+  .btn-primary:hover { background: #A8823A; border-color: #A8823A; }
+
+  /* Secondary — Outlined */
+  .btn-secondary {
+    font-family: 'Cinzel', serif;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #C9A14A;
+    background: transparent;
+    border: 1px solid #C9A14A99;
+    padding: 10px 24px;
+    cursor: pointer;
+    transition: background 500ms ease-in-out, color 500ms ease-in-out;
+  }
+  .btn-secondary:hover { background: #C9A14A11; }
+
+  /* Ghost / Text */
+  .btn-ghost {
+    font-family: 'Cinzel', serif;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #7A6E65;
+    background: transparent;
+    border: none;
+    padding: 10px 16px;
+    cursor: pointer;
+    transition: color 400ms ease-in-out;
+  }
+  .btn-ghost:hover { color: #C9A14A; }
+
+  /* Element Fire */
+  .btn-fire {
+    font-family: 'Cinzel', serif;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #F4ECD8;
+    background: #B7472A;
+    border: 1px solid #B7472A;
+    padding: 10px 24px;
+    cursor: pointer;
+    transition: background 500ms ease-in-out;
+  }
+  .btn-fire:hover { background: #8C321B; border-color: #8C321B; }
+
+  /* Disabled */
+  .btn-disabled {
+    font-family: 'Cinzel', serif;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #B0A89F;
+    background: #E8DFC4;
+    border: 1px solid #C9A14A33;
+    padding: 10px 24px;
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+
+  /* Dark / Void */
+  .btn-void {
+    font-family: 'Cinzel', serif;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #C9A14A;
+    background: #0B0A0F;
+    border: 1px solid #C9A14A55;
+    padding: 10px 24px;
+    cursor: pointer;
+    transition: background 500ms ease-in-out, border-color 500ms ease-in-out;
+  }
+  .btn-void:hover { background: #1A1614; border-color: #C9A14A; }
+
+  /* Tag / Element label */
+  .tag-row { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 24px; }
+  .tag {
+    font-family: 'Cinzel', serif;
+    font-size: 9px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    padding: 4px 12px;
+    border: 1px solid;
+    cursor: default;
+  }
+  .divider { height: 1px; background: #C9A14A22; margin: 16px 0; }
+</style>
+</head>
+<body>
+<div class="label">✦ Buttons &amp; Interactive Elements</div>
+
+<div class="section-title">Primary Actions</div>
+<div class="btn-row">
+  <button class="btn-primary">Enter the Codex</button>
+  <button class="btn-secondary">Begin the Rite</button>
+  <button class="btn-ghost">◊ &nbsp;Return</button>
+</div>
+
+<div class="divider"></div>
+
+<div class="section-title">Element Variants</div>
+<div class="btn-row">
+  <button class="btn-fire">△ &nbsp;Fire Rite</button>
+  <button class="btn-void">◯ &nbsp;Metatron</button>
+  <button class="btn-disabled" disabled>Sealed</button>
+</div>
+
+<div class="divider"></div>
+
+<div class="section-title">Element Tags</div>
+<div class="tag-row">
+  <span class="tag" style="color:#8C321B; background:#B7472A11; border-color:#B7472A55;">△ Fire</span>
+  <span class="tag" style="color:#1E4060; background:#2E5C7E11; border-color:#2E5C7E55;">▽ Water</span>
+  <span class="tag" style="color:#3D4A28; background:#5C6E3C11; border-color:#5C6E3C55;">⊕ Earth</span>
+  <span class="tag" style="color:#6B5C80; background:#B8A7C911; border-color:#B8A7C955;">◯ Air</span>
+  <span class="tag" style="color:#C9A14A; background:#C9A14A11; border-color:#C9A14A55;">✦ Gold</span>
+</div>
+</body>
+</html>

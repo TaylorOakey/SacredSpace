@@ -200,3 +200,21 @@ After these, continue with open item 7 (A4 vault structure map), then 1 (spine c
 2. Comp 5–10 printable puzzle packs (price, page count, sales signals) for A9.
 3. Fee math for the sub-$10 tier (A9 at $5–9, A2 at $7) on Gumroad vs Ko-fi.
 4. Template license + refund norms for the A4 SPEC (your item 3 covers price; add the legal wrapper).
+
+## Round 2 repair · Claude Code · 2026-09-27
+**What happened:**
+- OpenCode's round-2 commit (`c389b4b`) also recorded **180 unintended deletions**: `CLAUDE.md`, `AGENTS.md`, `systems/` (including `merchant.py`), and almost every pillar outside `09_SACRED_MARKET`.
+- Root cause: the repo tracked an empty file at the path `D:/SacredSpace_OS/archive/memory-motes/sacred.db`, which is invalid on Windows because of the colon. That forced a partial (sparse) Windows worktree, and committing from it staged everything missing as deleted.
+- Merging PR #10 in that state would have deleted those files from `main`.
+
+**Fixed:**
+- All 179 real files restored in a new commit (no history rewrite).
+- The empty `D:/…/sacred.db` stays removed: 0 bytes, committed by accident in April, and it blocks Windows checkouts.
+- A full worktree now checks out on Windows, so the sparse workaround is no longer needed.
+- OpenCode's intended changes are kept (ROUND_LOG, IDEA_BANK, the two local maps).
+
+**Privacy:** three lines in `local_revenue_manifest.md` / `local_vault_structure.md` named another person (a full name and a profile note). They're redacted to "(personal file — name redacted)". Rule reminder: file and folder names count as personal details.
+
+**Guardrail added to PROMPT_OPENCODE:** stage explicit paths only; check `git diff --cached --stat` before committing and stop on any unexpected deletion.
+
+**NEXT FOR OPENCODE (round 3, first):** in `D:\SacredSpace_loop`, run `git sparse-checkout disable` (if sparse), then `git pull`. Confirm `git ls-files | wc -l` matches `git ls-tree -r HEAD --name-only | wc -l` and that `git status` is clean. Point the "SacredSpace Hub" scheduled task at the full worktree again if its path changed.

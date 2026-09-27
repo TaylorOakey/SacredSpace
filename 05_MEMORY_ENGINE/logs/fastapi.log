@@ -1,0 +1,18 @@
+nohup: ignoring input
+INFO:     Will watch for changes in these directories: ['/mnt/d/SacredSpace_OS/03_NEURAL_FOREST']
+INFO:     Uvicorn running on http://0.0.0.0:8888 (Press CTRL+C to quit)
+INFO:     Started reloader process [743] using WatchFiles
+ERROR:    Error loading ASGI app. Could not import module "main".
+nohup: ignoring input
+INFO:     Will watch for changes in these directories: ['/mnt/d/SacredSpace_OS/systems/fastapi']
+INFO:     Uvicorn running on http://0.0.0.0:8888 (Press CTRL+C to quit)
+INFO:     Started reloader process [766] using WatchFiles
+[VAULT WATCHER] 20:20:52 — INFO — Vault Watcher initialized. Vault: D:\SacredSpace_OS\01_OBSIDIAN_VAULTS\SacredSpace_Vault
+INFO:     Started server process [768]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+[KETHRAS] Database initialized. The gate is open.
+[M3RCH∆NT] The market is open. Sacred artifacts ready to forge.
+[LORE ENGINE] Initialized. Vault: /mnt/d/01_VAULT/SacredSpace_Vault
+INFO:     127.0.0.1:53150 - "POST /merchant/artifacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34382 - "POST /merchant/artifacts/1/advance HTTP/1.1" 200 OK

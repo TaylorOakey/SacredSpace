@@ -1,0 +1,764 @@
+<!-- @dsCard group="UI Kit — Web" name="Rules Card + Box Cover" subtitle="Rules card A4 (Grove front · Forge back) · Box cover 300×300mm" viewport="1400x900" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1440">
+<title>Rules Card + Box Cover — Sacred Arcana</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* ── CODEX-VISUAL-001 tokens ── */
+:root {
+  --void:       #030508;
+  --void-2:     #080b10;
+  --parchment:  #C8C4BB;
+  --pure:       #EEF6EF;
+  --gold:       #C8A44A;
+  --gold-dim:   rgba(200,164,74,0.18);
+  --gold-faint: rgba(200,164,74,0.06);
+  --bronze:     #8B7355;
+  --bio:        #72E87A;
+  --fire:       #D45A28;
+  --water:      #3878A0;
+  --earth:      #5A8850;
+  --air:        #78A8C8;
+  --aether:     #7A5CA5;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: #010204;
+  color: var(--pure);
+  font-family: 'Cinzel', serif;
+  padding: 32px 40px 56px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0;
+}
+
+h1 {
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  color: var(--gold);
+  margin-bottom: 28px;
+}
+
+.page-row {
+  display: flex;
+  gap: 36px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.piece-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.piece-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 7.5px;
+  letter-spacing: 0.14em;
+  color: var(--parchment);
+  opacity: 0.4;
+  text-align: center;
+}
+
+/* ══ BOX COVER — 600×600px ══ */
+.box-cover {
+  width: 600px;
+  height: 600px;
+  position: relative;
+  background: var(--void);
+  border: 2px solid var(--gold);
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+/* ══ RULES CARD — 420×594px (A4 at 2px/mm) ══ */
+.rules-card {
+  width: 420px;
+  height: 594px;
+  position: relative;
+  overflow: hidden;
+  border: 1.5px solid var(--gold-dim);
+  flex-shrink: 0;
+}
+
+/* ── Grove (front) ── */
+.grove-front {
+  background: #040a06;
+}
+.grove-front .rc-header {
+  background: linear-gradient(135deg, rgba(90,136,80,0.18) 0%, rgba(114,232,122,0.08) 100%);
+  border-bottom: 1px solid rgba(114,232,122,0.2);
+}
+.grove-front .rc-accent { color: var(--bio); }
+.grove-front .rc-border { border-color: rgba(114,232,122,0.15); }
+.grove-front .step-num { background: rgba(114,232,122,0.12); border-color: rgba(114,232,122,0.3); color: var(--bio); }
+
+/* ── Forge (back) ── */
+.forge-back {
+  background: var(--void-2);
+}
+.forge-back .rc-header {
+  background: linear-gradient(135deg, rgba(200,164,74,0.12) 0%, rgba(122,92,165,0.06) 100%);
+  border-bottom: 1px solid var(--gold-dim);
+}
+.forge-back .rc-accent { color: var(--gold); }
+.forge-back .rc-border { border-color: var(--gold-dim); }
+.forge-back .step-num { background: rgba(200,164,74,0.1); border-color: var(--gold-dim); color: var(--gold); }
+
+/* rules card internals */
+.rc-header {
+  padding: 14px 16px 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.rc-title-block { display: flex; flex-direction: column; gap: 3px; }
+.rc-variant {
+  font-size: 8px;
+  letter-spacing: 0.18em;
+  opacity: 0.7;
+}
+.rc-title {
+  font-size: 13px;
+  letter-spacing: 0.12em;
+}
+.rc-sub {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 10px;
+  color: var(--parchment);
+  opacity: 0.55;
+}
+.rc-meta {
+  text-align: right;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 7px;
+  color: var(--parchment);
+  opacity: 0.4;
+  letter-spacing: 0.06em;
+  line-height: 1.7;
+}
+
+.rc-body {
+  padding: 12px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.rc-section-head {
+  font-size: 7.5px;
+  letter-spacing: 0.16em;
+  opacity: 0.55;
+  margin-bottom: 6px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid;
+}
+
+/* turn steps */
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.step {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+.step-num {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 7.5px;
+  font-weight: 500;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+.step-content { flex: 1; }
+.step-name {
+  font-size: 8px;
+  letter-spacing: 0.1em;
+  line-height: 1;
+  margin-bottom: 2px;
+}
+.step-desc {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 9.5px;
+  color: var(--parchment);
+  opacity: 0.65;
+  line-height: 1.45;
+}
+
+/* two-col layout */
+.two-col {
+  display: flex;
+  gap: 12px;
+}
+.col { flex: 1; }
+
+/* realm chips */
+.realm-chips {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.realm-chip {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 6px;
+  border-radius: 3px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 7px;
+  letter-spacing: 0.06em;
+}
+
+/* small table */
+.mini-table { width: 100%; }
+.mini-table td {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 7px;
+  color: var(--parchment);
+  padding: 2px 0;
+  line-height: 1.5;
+  vertical-align: top;
+}
+.mini-table td:first-child {
+  width: 22px;
+  opacity: 0.6;
+}
+.mini-table td:nth-child(2) {
+  color: var(--gold);
+  width: 70px;
+  opacity: 0.8;
+}
+.mini-table td:last-child { opacity: 0.55; }
+
+/* phrase list */
+.phrase-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.phrase-row {
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+}
+.phrase-glyph {
+  font-size: 10px;
+  flex-shrink: 0;
+  width: 14px;
+}
+.phrase-text {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 9.5px;
+  color: var(--parchment);
+  opacity: 0.7;
+  line-height: 1.4;
+}
+.phrase-key {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 7px;
+  opacity: 0.45;
+  flex-shrink: 0;
+}
+
+/* rc footer */
+.rc-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  border-top: 1px solid;
+}
+.rc-footer-text {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 6.5px;
+  color: var(--parchment);
+  opacity: 0.3;
+  letter-spacing: 0.06em;
+}
+.rc-delta {
+  font-size: 12px;
+  color: var(--gold);
+  opacity: 0.6;
+}
+
+/* oversoul track (Grove = forest totems) */
+.track {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+.track-node {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  flex: 1;
+}
+.track-dot {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 1px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 7px;
+}
+.track-name {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 6px;
+  color: var(--parchment);
+  opacity: 0.5;
+  text-align: center;
+  line-height: 1.3;
+  letter-spacing: 0.03em;
+}
+.track-arrow {
+  font-size: 9px;
+  opacity: 0.3;
+  flex-shrink: 0;
+  margin-bottom: 10px;
+}
+
+/* door lamps row */
+.lamps {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.lamp {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 6.5px;
+  color: var(--parchment);
+  opacity: 0.5;
+  letter-spacing: 0.04em;
+}
+.lamp-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 1px solid;
+  flex-shrink: 0;
+}
+.lamp-dot.lit { background: var(--bio); border-color: var(--bio); }
+.lamp-dot.unlit { background: transparent; border-color: rgba(200,164,74,0.3); }
+</style>
+</head>
+<body>
+
+<h1>SACRED ARCANA — RULES CARD &amp; BOX COVER</h1>
+
+<div class="page-row">
+
+  <!-- ══ BOX COVER ══ -->
+  <div class="piece-wrap">
+  <div class="box-cover">
+
+    <!-- SVG background art -->
+    <svg style="position:absolute;inset:0;width:600px;height:600px;" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <radialGradient id="bxGlow1" cx="50%" cy="45%" r="55%">
+          <stop offset="0%" stop-color="#7A5CA5" stop-opacity="0.22"/>
+          <stop offset="55%" stop-color="#C8A44A" stop-opacity="0.08"/>
+          <stop offset="100%" stop-color="#030508" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="bxGlow2" cx="50%" cy="50%" r="50%">
+          <stop offset="0%" stop-color="#C8A44A" stop-opacity="0.12"/>
+          <stop offset="100%" stop-color="#030508" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="bxEdge" cx="50%" cy="50%" r="70%">
+          <stop offset="60%" stop-color="#030508" stop-opacity="0"/>
+          <stop offset="100%" stop-color="#030508" stop-opacity="0.8"/>
+        </radialGradient>
+      </defs>
+      <rect width="600" height="600" fill="#030508"/>
+      <rect width="600" height="600" fill="url(#bxGlow1)"/>
+
+      <!-- Metatron's Cube linework (full board geometry) -->
+      <g opacity="0.055" stroke="#C8A44A" stroke-width="0.6" fill="none">
+        <circle cx="300" cy="300" r="200"/>
+        <circle cx="300" cy="300" r="150"/>
+        <circle cx="300" cy="300" r="100"/>
+        <circle cx="300" cy="300" r="50"/>
+        <!-- Flower of Life petals -->
+        <circle cx="300" cy="200" r="100"/><circle cx="300" cy="400" r="100"/>
+        <circle cx="387" cy="250" r="100"/><circle cx="387" cy="350" r="100"/>
+        <circle cx="213" cy="250" r="100"/><circle cx="213" cy="350" r="100"/>
+        <!-- outer ring -->
+        <circle cx="300" cy="100" r="100"/><circle cx="300" cy="500" r="100"/>
+        <circle cx="474" cy="200" r="100"/><circle cx="474" cy="400" r="100"/>
+        <circle cx="126" cy="200" r="100"/><circle cx="126" cy="400" r="100"/>
+        <!-- Metatron lines -->
+        <line x1="300" y1="100" x2="387" y2="350"/><line x1="300" y1="100" x2="213" y2="350"/>
+        <line x1="300" y1="500" x2="387" y2="250"/><line x1="300" y1="500" x2="213" y2="250"/>
+        <line x1="474" y1="200" x2="126" y2="400"/><line x1="474" y1="400" x2="126" y2="200"/>
+        <line x1="474" y1="200" x2="474" y2="400"/><line x1="126" y1="200" x2="126" y2="400"/>
+        <line x1="300" y1="100" x2="300" y2="500"/>
+      </g>
+
+      <!-- central octagram (Metatron's Law) -->
+      <g transform="translate(300,300)" stroke="#C8A44A" stroke-width="1.2" fill="none">
+        <rect x="-80" y="-80" width="160" height="160" opacity="0.7"/>
+        <rect x="-80" y="-80" width="160" height="160" opacity="0.7" transform="rotate(45)"/>
+        <circle r="110" stroke-width="0.5" opacity="0.35"/>
+        <circle r="80" stroke-width="0.5" opacity="0.22"/>
+        <circle r="55" stroke-width="0.5" opacity="0.18"/>
+        <!-- cross lines -->
+        <line x1="-115" y1="0" x2="115" y2="0" stroke-width="0.5" opacity="0.4"/>
+        <line x1="0" y1="-115" x2="0" y2="115" stroke-width="0.5" opacity="0.4"/>
+        <line x1="-82" y1="-82" x2="82" y2="82" stroke-width="0.5" opacity="0.3"/>
+        <line x1="82" y1="-82" x2="-82" y2="82" stroke-width="0.5" opacity="0.3"/>
+        <!-- 8 outer nodes -->
+        <g fill="#C8A44A" opacity="0.65">
+          <circle cx="0" cy="-110" r="4"/><circle cx="0" cy="110" r="4"/>
+          <circle cx="-110" cy="0" r="4"/><circle cx="110" cy="0" r="4"/>
+          <circle cx="-78" cy="-78" r="3"/><circle cx="78" cy="-78" r="3"/>
+          <circle cx="-78" cy="78" r="3"/><circle cx="78" cy="78" r="3"/>
+        </g>
+        <!-- centre -->
+        <circle r="18" fill="rgba(200,164,74,0.15)"/>
+        <circle r="8" fill="#C8A44A" opacity="0.55"/>
+        <circle r="3" fill="#EEF6EF" opacity="0.9"/>
+      </g>
+
+      <!-- glow overlay -->
+      <rect width="600" height="600" fill="url(#bxGlow2)"/>
+      <rect width="600" height="600" fill="url(#bxEdge)"/>
+
+      <!-- element accents at corners -->
+      <text x="28" y="52" font-family="serif" font-size="22" fill="#D45A28" opacity="0.35">∆</text>
+      <text x="556" y="52" font-family="serif" font-size="22" fill="#5A8850" opacity="0.35">∆</text>
+      <text x="28" y="580" font-family="serif" font-size="22" fill="#78A8C8" opacity="0.35">∆</text>
+      <text x="556" y="580" font-family="serif" font-size="22" fill="#3878A0" opacity="0.35">∆</text>
+
+      <!-- stars scattered -->
+      <g fill="#EEF6EF" opacity="0.4">
+        <circle cx="60" cy="90" r="1.2"/><circle cx="540" cy="80" r="1"/>
+        <circle cx="90" cy="510" r="1.2"/><circle cx="510" cy="520" r="1"/>
+        <circle cx="150" cy="160" r="0.8"/><circle cx="450" cy="155" r="0.8"/>
+        <circle cx="160" cy="450" r="0.8"/><circle cx="440" cy="455" r="0.8"/>
+      </g>
+    </svg>
+
+    <!-- text overlay -->
+    <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:space-between;padding:36px 32px 32px;">
+
+      <!-- top badge -->
+      <div style="font-family:'JetBrains Mono',monospace;font-size:8.5px;letter-spacing:0.22em;color:var(--parchment);opacity:0.45;text-align:center;">
+        S∆CR3D SP∆C3 · PRESENTS
+      </div>
+
+      <!-- main title block -->
+      <div style="display:flex;flex-direction:column;align-items:center;gap:10px;text-align:center;">
+        <div style="font-family:'Cinzel',serif;font-size:46px;letter-spacing:0.12em;color:var(--gold);line-height:1;text-shadow:0 0 40px rgba(200,164,74,0.4);">
+          SACRED<br>ARCANA
+        </div>
+        <div style="width:200px;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);opacity:0.6;"></div>
+        <div style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:15px;color:var(--parchment);opacity:0.65;letter-spacing:0.06em;">
+          A Game of Sacred Geometry<br>and Arcane Power
+        </div>
+      </div>
+
+      <!-- bottom info row -->
+      <div style="display:flex;justify-content:space-between;width:100%;align-items:flex-end;">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:8px;color:var(--parchment);opacity:0.4;letter-spacing:0.08em;line-height:1.7;">
+          2–4 PLAYERS<br>AGES 8+ (FORGE)<br>AGES 6+ (GROVE)<br>60–120 MIN
+        </div>
+        <div style="font-size:28px;color:var(--gold);opacity:0.7;">∆</div>
+        <div style="font-family:'JetBrains Mono',monospace;font-size:8px;color:var(--parchment);opacity:0.4;letter-spacing:0.08em;line-height:1.7;text-align:right;">
+          78 + FRAME DECK<br>9×9 / 12×12 BOARD<br>ORACLE MAT<br>INITIATE MATS
+        </div>
+      </div>
+
+    </div>
+
+    <!-- gold border inset -->
+    <div style="position:absolute;inset:8px;border:1px solid rgba(200,164,74,0.25);pointer-events:none;"></div>
+    <div style="position:absolute;inset:12px;border:1px solid rgba(200,164,74,0.1);pointer-events:none;"></div>
+  </div>
+  <div class="piece-label">BOX COVER — 300×300 mm</div>
+  </div>
+
+  <!-- ══ RULES CARD column ══ -->
+  <div style="display:flex;flex-direction:column;gap:24px;">
+
+    <!-- GROVE FRONT -->
+    <div class="piece-wrap">
+    <div class="rules-card grove-front">
+
+      <div class="rc-header">
+        <div class="rc-title-block">
+          <div class="rc-variant rc-accent">GROVE VARIANT</div>
+          <div class="rc-title rc-accent">HOW TO PLAY</div>
+          <div class="rc-sub">Sacred Arcana — for young explorers</div>
+        </div>
+        <div class="rc-meta">
+          2–4 PLAYERS<br>AGES 6+<br>45–60 MIN<br>∆
+        </div>
+      </div>
+
+      <div class="rc-body">
+
+        <!-- GOAL -->
+        <div>
+          <div class="rc-section-head rc-accent rc-border" style="border-bottom:1px solid;">THE GOAL</div>
+          <div style="font-family:'Cormorant Garamond',serif;font-size:10px;color:var(--parchment);opacity:0.7;line-height:1.55;margin-top:4px;">
+            Work together to complete the Sacred Spiral journey. Each player is an Initiate exploring the magical forest. Draw cards, help your friends, and discover the mysteries of the Arcana.
+          </div>
+        </div>
+
+        <!-- YOUR TURN -->
+        <div>
+          <div class="rc-section-head rc-accent rc-border" style="border-bottom:1px solid;">YOUR TURN — four moments</div>
+          <div class="steps" style="margin-top:6px;">
+            <div class="step">
+              <div class="step-num">1</div>
+              <div class="step-content">
+                <div class="step-name rc-accent">PULSE — breathe &amp; feel</div>
+                <div class="step-desc">Take a breath. Place your Activation Stone face-up. You are present.</div>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-num">2</div>
+              <div class="step-content">
+                <div class="step-name rc-accent">STEP — move &amp; draw</div>
+                <div class="step-desc">Move your piece 1–3 spaces on the board. Draw one card from the Arcana deck.</div>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-num">3</div>
+              <div class="step-content">
+                <div class="step-name rc-accent">RITE — play a card</div>
+                <div class="step-desc">Play one card from your hand. Read it aloud and do what it says. You may help a friend instead of yourself.</div>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-num">4</div>
+              <div class="step-content">
+                <div class="step-name rc-accent">SEAL — complete &amp; log</div>
+                <div class="step-desc">Log any Echo artifacts you gained. Turn your Stone dim. Pass the sacred flame.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- GROVE LANGUAGE -->
+        <div>
+          <div class="rc-section-head rc-accent rc-border" style="border-bottom:1px solid;">YOUR FOREST WORLD</div>
+          <div class="phrase-list" style="margin-top:5px;">
+            <div class="phrase-row">
+              <span class="phrase-glyph" style="color:var(--bio);">⬡</span>
+              <span class="phrase-text"><strong style="color:var(--bio);">Echo Artifacts</strong> are the magical objects you collect on your journey.</span>
+            </div>
+            <div class="phrase-row">
+              <span class="phrase-glyph" style="color:var(--earth);">○</span>
+              <span class="phrase-text"><strong style="color:var(--earth);">Seeds</strong> are challenges — each one you overcome helps you grow.</span>
+            </div>
+            <div class="phrase-row">
+              <span class="phrase-glyph" style="color:var(--gold);">✦</span>
+              <span class="phrase-text"><strong style="color:var(--gold);">Forest Totems</strong> mark your journey stages: Seedling → Sapling → Grove-Keeper → Elder.</span>
+            </div>
+            <div class="phrase-row">
+              <span class="phrase-glyph" style="color:var(--air);">∆</span>
+              <span class="phrase-text"><strong style="color:var(--air);">The Frame card</strong> is always in the centre — it watches over everyone.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- DOOR LAMPS (Grove) -->
+        <div>
+          <div class="rc-section-head rc-accent rc-border" style="border-bottom:1px solid;">THE FOUR LANTERNS — your readiness</div>
+          <div class="lamps" style="margin-top:6px;">
+            <div class="lamp"><div class="lamp-dot lit"></div>You know your tone (174 Hz)</div>
+            <div class="lamp"><div class="lamp-dot unlit"></div>A Seed is healed</div>
+            <div class="lamp"><div class="lamp-dot lit"></div>Your heart is open</div>
+            <div class="lamp"><div class="lamp-dot unlit"></div>No fear in this step</div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="rc-footer rc-border" style="border-top:1px solid;">
+        <div class="rc-footer-text">GROVE FRONT · sacred-arcana.space · ∆ CODEX-VISUAL-001</div>
+        <div class="rc-delta">∆</div>
+      </div>
+
+    </div>
+    <div class="piece-label">RULES CARD FRONT — GROVE (A4 / 420×594px)</div>
+    </div>
+
+    <!-- FORGE BACK -->
+    <div class="piece-wrap">
+    <div class="rules-card forge-back">
+
+      <div class="rc-header">
+        <div class="rc-title-block">
+          <div class="rc-variant rc-accent">FORGE VARIANT</div>
+          <div class="rc-title rc-accent">RULES REFERENCE</div>
+          <div class="rc-sub">Sacred Arcana — full game</div>
+        </div>
+        <div class="rc-meta">
+          2–4 PLAYERS<br>AGES 8+<br>60–120 MIN<br>∆
+        </div>
+      </div>
+
+      <div class="rc-body">
+
+        <!-- TURN STRUCTURE -->
+        <div>
+          <div class="rc-section-head rc-accent rc-border" style="border-bottom:1px solid;">TURN STRUCTURE — Pulse · Step · Rite · Seal</div>
+          <div class="two-col" style="margin-top:6px;">
+            <div class="col">
+              <table class="mini-table">
+                <tr><td>◉</td><td>PULSE</td><td>Activate Stone; check Door Lamps; set weather if Seal I</td></tr>
+                <tr><td>→</td><td>STEP</td><td>Move 1–4 cells; trigger cell effects; draw 1 card</td></tr>
+                <tr><td>✦</td><td>RITE</td><td>Play up to 2 cards; resolve effects; place board-state tiles</td></tr>
+                <tr><td>∆</td><td>SEAL</td><td>Log Echo; resolve Oversoul; dim Stone; pass</td></tr>
+              </table>
+            </div>
+            <div class="col">
+              <div style="font-family:'JetBrains Mono',monospace;font-size:6.5px;color:var(--parchment);opacity:0.45;line-height:1.8;letter-spacing:0.04em;">
+                FOUR SEALS = one full Rite<br>
+                THREE RITES = one Spiral<br>
+                ASCENDANT = complete Oversoul<br>
+                track → trigger Return rite
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- OVERSOUL + REALMS -->
+        <div class="two-col">
+          <div class="col">
+            <div class="rc-section-head rc-accent rc-border" style="border-bottom:1px solid;margin-bottom:6px;">OVERSOUL TRACK</div>
+            <div class="track">
+              <div class="track-node">
+                <div class="track-dot" style="border-color:rgba(200,164,74,0.3);color:var(--parchment);opacity:0.5;">◎</div>
+                <div class="track-name">OBSER&shy;VATION</div>
+              </div>
+              <div class="track-arrow">›</div>
+              <div class="track-node">
+                <div class="track-dot" style="border-color:rgba(200,164,74,0.5);color:var(--gold);">◉</div>
+                <div class="track-name">ACTIV&shy;ATION</div>
+              </div>
+              <div class="track-arrow">›</div>
+              <div class="track-node">
+                <div class="track-dot" style="border-color:var(--aether);color:var(--aether);">◉</div>
+                <div class="track-name">RESON&shy;ANCE</div>
+              </div>
+              <div class="track-arrow">›</div>
+              <div class="track-node">
+                <div class="track-dot" style="border-color:var(--gold);background:rgba(200,164,74,0.15);color:var(--gold);">∆</div>
+                <div class="track-name">ASCEND&shy;ANT</div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="rc-section-head rc-accent rc-border" style="border-bottom:1px solid;margin-bottom:6px;">FOUR REALMS</div>
+            <div class="realm-chips">
+              <div class="realm-chip" style="background:rgba(212,90,40,0.08);border-left:2px solid #D45A28;">
+                <span style="color:#D45A28;">⚒</span>
+                <span style="font-size:7px;color:#D45A28;">FLAMES</span>
+                <span style="font-size:6.5px;color:var(--parchment);opacity:0.45;">· fire · motes</span>
+              </div>
+              <div class="realm-chip" style="background:rgba(90,136,80,0.08);border-left:2px solid #5A8850;">
+                <span style="color:#5A8850;">⟁</span>
+                <span style="font-size:7px;color:#5A8850;">ROOTS</span>
+                <span style="font-size:6.5px;color:var(--parchment);opacity:0.45;">· earth · glyphs</span>
+              </div>
+              <div class="realm-chip" style="background:rgba(56,120,160,0.08);border-left:2px solid #3878A0;">
+                <span style="color:#3878A0;">☽</span>
+                <span style="font-size:7px;color:#3878A0;">CURRENTS</span>
+                <span style="font-size:6.5px;color:var(--parchment);opacity:0.45;">· water · ciphers</span>
+              </div>
+              <div class="realm-chip" style="background:rgba(120,168,200,0.08);border-left:2px solid #78A8C8;">
+                <span style="color:#78A8C8;">✧</span>
+                <span style="font-size:7px;color:#78A8C8;">WINDS</span>
+                <span style="font-size:6.5px;color:var(--parchment);opacity:0.45;">· air · scars</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SCAR / DOOR LAMPS / SPECIAL -->
+        <div class="two-col">
+          <div class="col">
+            <div class="rc-section-head rc-accent rc-border" style="border-bottom:1px solid;margin-bottom:5px;">SCAR LEDGER</div>
+            <div style="font-family:'JetBrains Mono',monospace;font-size:6.5px;color:var(--parchment);opacity:0.5;line-height:1.8;letter-spacing:0.04em;">
+              9 TIERS · 5 BOXES EACH<br>
+              BOX 5 = ✖ FRACTURE<br>
+              METER 0–100<br>
+              SCAR tier reduces at Rite seal
+            </div>
+          </div>
+          <div class="col">
+            <div class="rc-section-head rc-accent rc-border" style="border-bottom:1px solid;margin-bottom:5px;">DOOR LAMPS</div>
+            <div class="lamps">
+              <div class="lamp"><div class="lamp-dot lit"></div>174 Hz known</div>
+              <div class="lamp"><div class="lamp-dot unlit"></div>healed Scar</div>
+              <div class="lamp"><div class="lamp-dot lit"></div>no Fracture</div>
+              <div class="lamp"><div class="lamp-dot unlit"></div>no fear</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- BOARD + SPECIAL CELLS -->
+        <div>
+          <div class="rc-section-head rc-accent rc-border" style="border-bottom:1px solid;margin-bottom:5px;">BOARD · SPECIAL CELLS — Face A (9×9)</div>
+          <table class="mini-table">
+            <tr><td>∆</td><td>THRONE (5,5)</td><td>Metatron's Law; octagram inlay; +1 Resonance on entry</td></tr>
+            <tr><td>◇</td><td>GATE (corners)</td><td>(1,1)(9,1)(9,9)(1,9) — cross-face transit point</td></tr>
+            <tr><td>✦</td><td>ANOMALY</td><td>Draw Anomaly tile; resolve immediately</td></tr>
+            <tr><td>※</td><td>SCAR</td><td>Mark Scar ledger; gain Scar tile on cell</td></tr>
+            <tr><td>?</td><td>HIDDEN</td><td>Flip Hidden tile; reveal and resolve</td></tr>
+            <tr><td>✖</td><td>WARDEN</td><td>Blocked cell; remove with Warden card effect</td></tr>
+          </table>
+        </div>
+
+        <!-- OPEN SEATS NOTE -->
+        <div style="font-family:'JetBrains Mono',monospace;font-size:6.5px;color:var(--parchment);opacity:0.3;letter-spacing:0.05em;line-height:1.7;">
+          RING OPEN SEATS: IV Emperor · VII Chariot · X Justice — lit &amp; empty (incoming) · Seat IX: The Lantern (R2 provisional)
+        </div>
+
+      </div>
+
+      <div class="rc-footer rc-border" style="border-top:1px solid;">
+        <div class="rc-footer-text">FORGE BACK · sacred-arcana.space · ∆ CODEX-VISUAL-001</div>
+        <div class="rc-delta">∆</div>
+      </div>
+
+    </div>
+    <div class="piece-label">RULES CARD BACK — FORGE (A4 / 420×594px)</div>
+    </div>
+
+  </div><!-- /rules column -->
+
+</div><!-- /page-row -->
+
+</body>
+</html>

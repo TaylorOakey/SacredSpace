@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<!-- @dsCard group="Components" name="Codex Entry" subtitle="Two-column layout with marginalia, body text, and invocation" viewport="700x260" -->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=IM+Fell+English:ital@1&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #F4ECD8; padding: 0; font-family: 'EB Garamond', serif; }
+
+  .codex-entry {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    min-height: 260px;
+    border: 1px solid #C9A14A55;
+  }
+
+  /* Wide margin / marginalia column */
+  .codex-margin {
+    background: #E8DFC4;
+    border-right: 1px solid #C9A14A44;
+    padding: 24px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .margin-sigil {
+    font-size: 32px;
+    color: #C9A14A;
+    opacity: 0.7;
+    line-height: 1;
+  }
+
+  .margin-cipher {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 0.12em;
+    color: #7A6E65;
+    text-align: center;
+    line-height: 1.9;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    white-space: nowrap;
+  }
+
+  .margin-rule { width: 1px; flex: 1; background: #C9A14A33; }
+
+  /* Main text column */
+  .codex-main {
+    padding: 24px 28px 24px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .entry-header { border-bottom: 1px solid #C9A14A33; padding-bottom: 12px; }
+
+  .entry-label {
+    font-family: 'Cinzel', serif;
+    font-size: 9px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: #C9A14A;
+    margin-bottom: 5px;
+  }
+
+  .entry-title {
+    font-family: 'Cinzel', serif;
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 0.07em;
+    color: #1A1614;
+    line-height: 1.2;
+  }
+
+  .entry-subtitle {
+    font-family: 'EB Garamond', serif;
+    font-style: italic;
+    font-size: 14px;
+    color: #7A6E65;
+    margin-top: 4px;
+  }
+
+  .entry-body {
+    font-family: 'EB Garamond', serif;
+    font-size: 15px;
+    line-height: 1.78;
+    color: #1A1614;
+  }
+
+  .entry-invocation {
+    font-family: 'IM Fell English', serif;
+    font-style: italic;
+    font-size: 14px;
+    line-height: 1.65;
+    color: #7A6E65;
+    border-left: 2px solid #C9A14A55;
+    padding-left: 14px;
+  }
+
+  .entry-seal {
+    font-family: 'EB Garamond', serif;
+    font-style: italic;
+    font-size: 12px;
+    color: #C9A14A;
+    letter-spacing: 0.05em;
+  }
+</style>
+</head>
+<body>
+<div class="codex-entry">
+  <div class="codex-margin">
+    <div class="margin-sigil">△</div>
+    <div class="margin-cipher">FIRE · INITIATION · NODE 01</div>
+    <div class="margin-rule"></div>
+    <div class="margin-sigil" style="font-size:18px;">✦</div>
+  </div>
+
+  <div class="codex-main">
+    <div class="entry-header">
+      <div class="entry-label">✦ &nbsp;Archetype · First Fire</div>
+      <div class="entry-title">The Magician</div>
+      <div class="entry-subtitle">Fire · Initiation · Node 01 of 12</div>
+    </div>
+
+    <div class="entry-body">
+      The Magician stands at the threshold between intention and form. Not yet the Alchemist who transmutes — the Magician first names the flame. In the grammar of the Arcana, Initiation is always an act of naming: what is called forth must first be seen.
+    </div>
+
+    <div class="entry-invocation">
+      "What begins as spark becomes doctrine. The Magician does not perform power — the Magician <em>is</em> the permission."
+    </div>
+
+    <div class="entry-seal">In Lakesh — Alakin.</div>
+  </div>
+</div>
+</body>
+</html>

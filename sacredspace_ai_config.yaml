@@ -1,0 +1,51 @@
+# SacredSpace OS — Canon Config v2.0
+# Mantra: Ground. Consolidate. Deploy. Document. Repeat.
+
+os:
+  name: SacredSpace OS
+  version: "2.0"
+  root: D:/SacredSpace_OS
+  mantra: "Ground. Consolidate. Deploy. Document. Repeat."
+
+pillars:
+  - CORE
+  - SYSTEMS
+  - LEARNING
+  - ECONOMY
+  - HABITAT
+  - CREATION
+  - COUNCIL
+  - LINEAGE
+  - ARCHIVE
+
+agents:
+  icaris:
+    ELIAS:  { role: knowledge_distillation, pillar: LEARNING }
+    AURORA: { role: code_generation,        pillar: CREATION }
+    ASHER:  { role: entropy_detection,      pillar: SYSTEMS  }
+    IRIS:   { role: vault_watching,         pillar: ARCHIVE  }
+  household:
+    shui_feng:         { role: digital_flow_order, pillar: HABITAT }
+    temptestina_wildroot: { role: physical_nurture, pillar: HABITAT }
+
+services:
+  ollama:   { host: localhost, port: 11434 }
+  chromadb: { host: localhost, port: 8000  }
+  redis:    { host: localhost, port: 6379  }
+  fastapi:  { host: 0.0.0.0,  port: 8888  }
+  webui:    { host: localhost, port: 8080  }
+
+memory:
+  tiers:
+    - RAW
+    - DISTILLED
+    - CANON
+  sqlite_path: D:/SacredSpace_OS/archive/memory-motes/sacred.db
+  chroma_path: D:/SacredSpace_OS/archive/memory-motes/chroma
+  collection:  sacred_canon
+
+sigils:
+  delta:   "∆∆∆"
+  sacred:  "{S@CRED}"
+  source:  "@SOURCE"
+  rootpi:  "√π"

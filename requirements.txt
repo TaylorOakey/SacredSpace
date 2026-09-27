@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+chromadb
+langchain
+pyyaml
+requests
+ollama

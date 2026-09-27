@@ -1,0 +1,1795 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>∆ SacredArcana Studios · Brand Bible ∆</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;600;700&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --void: #060608;
+    --deep: #0d0d12;
+    --grove: #111118;
+    --bark: #1c1c26;
+    --moss: #252533;
+    --stone: #3a3a50;
+    --ash: #6b6b88;
+    --mist: #a8a8c0;
+    --light: #e8e6f0;
+    --pure: #f5f3ff;
+
+    --gold: #c9a84c;
+    --gold-bright: #e8c76a;
+    --gold-dim: #7a6530;
+    --ember: #c4512a;
+    --flame: #e8763a;
+    --aurora: #7b5ea7;
+    --aurora-bright: #a07dd4;
+    --forest: #3d6b4f;
+    --sage: #5c9470;
+    --sky: #4a7fa0;
+    --ice: #88c4e8;
+
+    --glow-gold: 0 0 30px rgba(201,168,76,0.4);
+    --glow-aurora: 0 0 30px rgba(123,94,167,0.4);
+    --glow-ember: 0 0 30px rgba(196,81,42,0.3);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--void);
+    color: var(--light);
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: 17px;
+    line-height: 1.7;
+    overflow-x: hidden;
+  }
+
+  /* ── SACRED GEOMETRY CANVAS ── */
+  #sacred-bg {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    z-index: 0;
+    pointer-events: none;
+    opacity: 0.07;
+  }
+
+  /* ── NAVIGATION ── */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    background: rgba(6,6,8,0.92);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(201,168,76,0.15);
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    gap: 0;
+  }
+
+  .nav-logo {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 0.75rem;
+    color: var(--gold);
+    letter-spacing: 0.15em;
+    white-space: nowrap;
+    margin-right: auto;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 0;
+    list-style: none;
+    overflow-x: auto;
+  }
+
+  .nav-links li a {
+    display: block;
+    padding: 0 0.75rem;
+    height: 60px;
+    line-height: 60px;
+    font-family: 'Cinzel', serif;
+    font-size: 0.62rem;
+    letter-spacing: 0.1em;
+    color: var(--ash);
+    text-decoration: none;
+    transition: color 0.3s, background 0.3s;
+    white-space: nowrap;
+  }
+
+  .nav-links li a:hover {
+    color: var(--gold);
+    background: rgba(201,168,76,0.05);
+  }
+
+  /* ── SECTIONS ── */
+  section {
+    position: relative;
+    z-index: 1;
+    min-height: 100vh;
+    padding: 100px 0 80px;
+  }
+
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  /* ── HERO ── */
+  #hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+    padding: 0 2rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-glyph {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    animation: pulse-glow 3s ease-in-out infinite;
+    filter: drop-shadow(0 0 20px rgba(201,168,76,0.6));
+  }
+
+  @keyframes pulse-glow {
+    0%, 100% { filter: drop-shadow(0 0 20px rgba(201,168,76,0.6)); transform: scale(1); }
+    50% { filter: drop-shadow(0 0 40px rgba(201,168,76,0.9)); transform: scale(1.05); }
+  }
+
+  .hero-studio {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.4em;
+    color: var(--gold-dim);
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-title {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: clamp(2.2rem, 6vw, 4.5rem);
+    font-weight: 900;
+    color: var(--pure);
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+    text-shadow: var(--glow-gold);
+  }
+
+  .hero-title span {
+    color: var(--gold);
+  }
+
+  .hero-sub {
+    font-family: 'Cinzel', serif;
+    font-size: clamp(1rem, 2.5vw, 1.6rem);
+    color: var(--aurora-bright);
+    letter-spacing: 0.2em;
+    margin-bottom: 2rem;
+  }
+
+  .hero-tagline {
+    font-family: 'EB Garamond', serif;
+    font-style: italic;
+    font-size: clamp(1.1rem, 2vw, 1.4rem);
+    color: var(--mist);
+    max-width: 600px;
+    margin-bottom: 3rem;
+  }
+
+  .hero-handles {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 3rem;
+  }
+
+  .handle-pill {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+    padding: 0.5rem 1.2rem;
+    border: 1px solid rgba(201,168,76,0.3);
+    border-radius: 2px;
+    color: var(--gold);
+    background: rgba(201,168,76,0.05);
+    transition: all 0.3s;
+  }
+
+  .handle-pill:hover {
+    border-color: var(--gold);
+    background: rgba(201,168,76,0.1);
+    box-shadow: var(--glow-gold);
+  }
+
+  .scroll-cue {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Space Mono', monospace;
+    font-size: 0.6rem;
+    letter-spacing: 0.3em;
+    color: var(--ash);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    animation: float-up 2s ease-in-out infinite;
+  }
+
+  @keyframes float-up {
+    0%, 100% { transform: translateX(-50%) translateY(0); opacity: 0.5; }
+    50% { transform: translateX(-50%) translateY(-8px); opacity: 1; }
+  }
+
+  .scroll-line {
+    width: 1px;
+    height: 40px;
+    background: linear-gradient(to bottom, var(--gold), transparent);
+  }
+
+  /* ── SECTION HEADERS ── */
+  .section-header {
+    text-align: center;
+    margin-bottom: 4rem;
+    position: relative;
+  }
+
+  .section-num {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.4em;
+    color: var(--gold-dim);
+    display: block;
+    margin-bottom: 0.75rem;
+  }
+
+  .section-title {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: clamp(1.6rem, 4vw, 2.8rem);
+    color: var(--pure);
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+
+  .section-rule {
+    width: 80px;
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--gold), transparent);
+    margin: 1.2rem auto;
+  }
+
+  .section-desc {
+    font-style: italic;
+    color: var(--mist);
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  /* ── TAGLINE SYSTEM ── */
+  .tagline-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5px;
+    margin-bottom: 4rem;
+    background: rgba(201,168,76,0.1);
+  }
+
+  .tagline-card {
+    background: var(--deep);
+    padding: 2.5rem 2rem;
+    text-align: center;
+    transition: background 0.4s;
+  }
+
+  .tagline-card:hover {
+    background: var(--bark);
+  }
+
+  .tagline-type {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.6rem;
+    letter-spacing: 0.3em;
+    color: var(--ash);
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+
+  .tagline-text {
+    font-family: 'Cinzel', serif;
+    font-size: 1.1rem;
+    color: var(--gold);
+    line-height: 1.4;
+    margin-bottom: 0.75rem;
+  }
+
+  .tagline-context {
+    font-size: 0.9rem;
+    color: var(--ash);
+    font-style: italic;
+  }
+
+  /* ── VOICE PILLARS ── */
+  .pillars-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1px;
+    background: rgba(201,168,76,0.08);
+    margin-bottom: 3rem;
+  }
+
+  .pillar-card {
+    background: var(--deep);
+    padding: 2rem 1.2rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s;
+  }
+
+  .pillar-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: var(--accent, var(--gold));
+    transform: scaleX(0);
+    transition: transform 0.4s;
+  }
+
+  .pillar-card:hover::before { transform: scaleX(1); }
+  .pillar-card:hover { background: var(--bark); }
+
+  .pillar-icon {
+    font-size: 1.8rem;
+    margin-bottom: 0.75rem;
+    display: block;
+  }
+
+  .pillar-name {
+    font-family: 'Cinzel', serif;
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    color: var(--gold);
+    margin-bottom: 0.5rem;
+  }
+
+  .pillar-line {
+    font-size: 0.85rem;
+    color: var(--mist);
+    font-style: italic;
+  }
+
+  /* ── COLOR PALETTE ── */
+  .palette-row {
+    display: flex;
+    gap: 0;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  .swatch {
+    flex: 1;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 0.5rem;
+    position: relative;
+    cursor: pointer;
+    transition: flex 0.3s;
+  }
+
+  .swatch:hover { flex: 2; }
+
+  .swatch-label {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.55rem;
+    letter-spacing: 0.1em;
+    color: rgba(255,255,255,0.7);
+    text-shadow: 0 1px 3px rgba(0,0,0,0.8);
+  }
+
+  .swatch-hex {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.6rem;
+    color: rgba(255,255,255,0.5);
+    text-shadow: 0 1px 3px rgba(0,0,0,0.8);
+  }
+
+  /* ── DESIGN FAMILIES ── */
+  .families-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5px;
+    background: rgba(201,168,76,0.06);
+  }
+
+  .family-card {
+    background: var(--deep);
+    padding: 2rem 1.5rem;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s;
+    cursor: pointer;
+  }
+
+  .family-card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, var(--fam-color, rgba(201,168,76,0.1)) 0%, transparent 60%);
+    opacity: 0;
+    transition: opacity 0.4s;
+  }
+
+  .family-card:hover::after { opacity: 1; }
+  .family-card:hover { background: var(--bark); }
+
+  .family-sigil {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    display: block;
+  }
+
+  .family-name {
+    font-family: 'Cinzel', serif;
+    font-size: 0.85rem;
+    letter-spacing: 0.12em;
+    color: var(--gold);
+    margin-bottom: 0.5rem;
+  }
+
+  .family-desc {
+    font-size: 0.85rem;
+    color: var(--ash);
+    line-height: 1.5;
+    margin-bottom: 0.75rem;
+  }
+
+  .family-badge {
+    display: inline-block;
+    font-family: 'Space Mono', monospace;
+    font-size: 0.55rem;
+    letter-spacing: 0.1em;
+    padding: 0.2rem 0.5rem;
+    border: 1px solid;
+    border-radius: 1px;
+  }
+
+  .badge-moat { border-color: var(--flame); color: var(--flame); }
+  .badge-core { border-color: var(--gold-dim); color: var(--gold-dim); }
+  .badge-arch { border-color: var(--aurora); color: var(--aurora); }
+
+  /* ── REALMS (4 ELEMENTALS) ── */
+  .realms-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2px;
+    background: rgba(201,168,76,0.05);
+  }
+
+  .realm-card {
+    background: var(--deep);
+    padding: 3rem 2.5rem;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s;
+  }
+
+  .realm-card:hover { background: var(--bark); }
+
+  .realm-sigil-wrap {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+
+  .realm-name {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 1.8rem;
+    margin-bottom: 0.25rem;
+    text-align: center;
+  }
+
+  .realm-element {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.3em;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    opacity: 0.6;
+  }
+
+  .realm-quote {
+    font-style: italic;
+    text-align: center;
+    color: var(--mist);
+    border-top: 1px solid rgba(255,255,255,0.08);
+    padding-top: 1.25rem;
+    line-height: 1.6;
+  }
+
+  .realm-bpm {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.2em;
+    text-align: center;
+    margin-top: 1rem;
+    opacity: 0.5;
+  }
+
+  /* ── COMPANIONS ── */
+  .companions-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2px;
+    background: rgba(201,168,76,0.05);
+    margin-bottom: 4rem;
+  }
+
+  .companion-card {
+    background: var(--deep);
+    padding: 3rem 2.5rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s;
+  }
+
+  .companion-card:hover { background: var(--bark); }
+
+  .companion-avatar {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    display: block;
+    filter: drop-shadow(0 0 15px rgba(201,168,76,0.4));
+  }
+
+  .companion-name {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 1.4rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .companion-child {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.25em;
+    color: var(--ash);
+    margin-bottom: 1rem;
+  }
+
+  .companion-role {
+    font-style: italic;
+    color: var(--mist);
+    max-width: 360px;
+    margin: 0 auto 1.5rem;
+    font-size: 0.95rem;
+  }
+
+  .companion-agent {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.6rem;
+    letter-spacing: 0.15em;
+    padding: 0.3rem 0.75rem;
+    border: 1px solid rgba(201,168,76,0.2);
+    color: var(--gold-dim);
+    display: inline-block;
+  }
+
+  /* ── DROPS ── */
+  .drops-timeline {
+    position: relative;
+    padding-left: 3rem;
+  }
+
+  .drops-timeline::before {
+    content: '';
+    position: absolute;
+    left: 0.5rem;
+    top: 0; bottom: 0;
+    width: 1px;
+    background: linear-gradient(to bottom, var(--gold-dim), transparent);
+  }
+
+  .drop-item {
+    position: relative;
+    margin-bottom: 3rem;
+    padding: 2rem 2rem;
+    background: var(--deep);
+    border: 1px solid rgba(201,168,76,0.08);
+    transition: all 0.3s;
+  }
+
+  .drop-item:hover {
+    border-color: rgba(201,168,76,0.25);
+    background: var(--bark);
+  }
+
+  .drop-item::before {
+    content: '';
+    position: absolute;
+    left: -2.75rem;
+    top: 2rem;
+    width: 10px; height: 10px;
+    background: var(--gold);
+    border-radius: 50%;
+    box-shadow: var(--glow-gold);
+  }
+
+  .drop-phase {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.6rem;
+    letter-spacing: 0.3em;
+    color: var(--gold-dim);
+    margin-bottom: 0.5rem;
+  }
+
+  .drop-name {
+    font-family: 'Cinzel', serif;
+    font-size: 1.3rem;
+    color: var(--gold);
+    margin-bottom: 0.75rem;
+  }
+
+  .drop-desc {
+    color: var(--mist);
+    font-style: italic;
+    margin-bottom: 1rem;
+  }
+
+  .drop-anchors {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+
+  .anchor-tag {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.55rem;
+    letter-spacing: 0.1em;
+    padding: 0.2rem 0.5rem;
+    background: rgba(201,168,76,0.06);
+    border: 1px solid rgba(201,168,76,0.15);
+    color: var(--ash);
+  }
+
+  /* ── SIGNAL / PLATFORMS ── */
+  .platforms-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5px;
+    background: rgba(201,168,76,0.06);
+    margin-bottom: 3rem;
+  }
+
+  .platform-card {
+    background: var(--deep);
+    padding: 1.75rem 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: all 0.3s;
+  }
+
+  .platform-card:hover { background: var(--bark); }
+
+  .platform-icon {
+    font-size: 1.5rem;
+    flex-shrink: 0;
+  }
+
+  .platform-info { flex: 1; }
+
+  .platform-name {
+    font-family: 'Cinzel', serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+    color: var(--light);
+    margin-bottom: 0.25rem;
+  }
+
+  .platform-handle {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.65rem;
+    color: var(--ash);
+  }
+
+  .platform-priority {
+    display: flex;
+    gap: 2px;
+  }
+
+  .star { color: var(--gold); font-size: 0.7rem; }
+  .star-dim { color: var(--stone); font-size: 0.7rem; }
+
+  /* ── 1111 ENGINE ── */
+  .engine-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2px;
+    background: rgba(201,168,76,0.05);
+    margin-bottom: 3rem;
+  }
+
+  .engine-card {
+    background: var(--deep);
+    padding: 2.5rem 2rem;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s;
+  }
+
+  .engine-card:hover { background: var(--bark); }
+
+  .engine-number {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 3rem;
+    color: rgba(201,168,76,0.12);
+    position: absolute;
+    top: 1rem; right: 1.5rem;
+    line-height: 1;
+  }
+
+  .engine-label {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.6rem;
+    letter-spacing: 0.3em;
+    color: var(--gold-dim);
+    margin-bottom: 0.5rem;
+  }
+
+  .engine-title {
+    font-family: 'Cinzel', serif;
+    font-size: 1.1rem;
+    color: var(--gold);
+    margin-bottom: 0.75rem;
+  }
+
+  .engine-desc {
+    color: var(--mist);
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  .engine-target {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.75rem;
+    color: var(--flame);
+    margin-top: 1rem;
+    font-weight: 700;
+  }
+
+  /* ── POD LADDER ── */
+  .pod-ladder {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    background: rgba(201,168,76,0.05);
+    margin-bottom: 3rem;
+  }
+
+  .pod-tier {
+    background: var(--deep);
+    padding: 1.75rem 2rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+
+  .pod-tier:hover { background: var(--bark); }
+
+  .pod-tier-num {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 2rem;
+    color: var(--gold-dim);
+    min-width: 3rem;
+  }
+
+  .pod-tier-info { flex: 1; }
+
+  .pod-tier-name {
+    font-family: 'Cinzel', serif;
+    font-size: 1rem;
+    color: var(--gold);
+    margin-bottom: 0.25rem;
+  }
+
+  .pod-tier-desc {
+    font-size: 0.9rem;
+    color: var(--ash);
+  }
+
+  .pod-tier-price {
+    font-family: 'Space Mono', monospace;
+    font-size: 1rem;
+    color: var(--flame);
+    text-align: right;
+    min-width: 5rem;
+  }
+
+  /* ── SOCIAL BLOCK ── */
+  .social-wrap {
+    background: var(--deep);
+    border: 1px solid rgba(201,168,76,0.1);
+    padding: 3rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .social-wrap::before {
+    content: '∆';
+    position: absolute;
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 20rem;
+    color: rgba(201,168,76,0.02);
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+  }
+
+  .social-email {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.85rem;
+    color: var(--gold);
+    margin-bottom: 2rem;
+    display: block;
+  }
+
+  .social-bio {
+    font-family: 'Cinzel', serif;
+    font-size: 1.2rem;
+    color: var(--mist);
+    font-style: italic;
+    margin-bottom: 2rem;
+  }
+
+  .social-platforms {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .soc-btn {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.1em;
+    padding: 0.6rem 1.2rem;
+    border: 1px solid rgba(201,168,76,0.2);
+    color: var(--ash);
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+
+  .soc-btn:hover {
+    border-color: var(--gold);
+    color: var(--gold);
+    background: rgba(201,168,76,0.05);
+  }
+
+  /* ── MANTRA FOOTER ── */
+  #mantra {
+    background: var(--void);
+    border-top: 1px solid rgba(201,168,76,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 60vh;
+    padding: 6rem 2rem;
+  }
+
+  .mantra-glyph {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    opacity: 0.6;
+    animation: pulse-glow 4s ease-in-out infinite;
+  }
+
+  .mantra-text {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: clamp(1.2rem, 3vw, 2rem);
+    color: var(--gold);
+    letter-spacing: 0.1em;
+    line-height: 1.6;
+    max-width: 700px;
+    margin-bottom: 2rem;
+  }
+
+  .mantra-sub {
+    font-family: 'EB Garamond', serif;
+    font-style: italic;
+    color: var(--ash);
+    font-size: 1.1rem;
+  }
+
+  .version-stamp {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.6rem;
+    letter-spacing: 0.3em;
+    color: var(--stone);
+    margin-top: 4rem;
+  }
+
+  /* ── SVG SIGILS ── */
+  .sigil-svg {
+    animation: sigil-rotate 20s linear infinite;
+  }
+
+  @keyframes sigil-rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+
+  .sigil-inner {
+    animation: sigil-rotate 12s linear infinite reverse;
+  }
+
+  /* ── DIVIDER ── */
+  .sacred-divider {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin: 4rem 0;
+    opacity: 0.3;
+  }
+
+  .sacred-divider::before,
+  .sacred-divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--gold));
+  }
+
+  .sacred-divider::after {
+    background: linear-gradient(to left, transparent, var(--gold));
+  }
+
+  .divider-glyph {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 0.8rem;
+    color: var(--gold-dim);
+    letter-spacing: 0.2em;
+  }
+
+  /* ── REVEAL ANIMATIONS ── */
+  .reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 768px) {
+    .tagline-grid { grid-template-columns: 1fr; }
+    .pillars-grid { grid-template-columns: repeat(3, 1fr); }
+    .families-grid { grid-template-columns: repeat(2, 1fr); }
+    .realms-grid { grid-template-columns: 1fr; }
+    .companions-wrap { grid-template-columns: 1fr; }
+    .platforms-grid { grid-template-columns: repeat(2, 1fr); }
+    .engine-grid { grid-template-columns: 1fr; }
+    nav { padding: 0 1rem; }
+    .nav-logo { font-size: 0.65rem; }
+  }
+
+  @media (max-width: 500px) {
+    .pillars-grid { grid-template-columns: repeat(2, 1fr); }
+    .families-grid { grid-template-columns: 1fr; }
+    .platforms-grid { grid-template-columns: 1fr; }
+    nav { padding: 0 0.75rem; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Sacred Geometry Background -->
+<canvas id="sacred-bg"></canvas>
+
+<!-- Navigation -->
+<nav>
+  <div class="nav-logo">∆ SACREDARCANA</div>
+  <ul class="nav-links">
+    <li><a href="#identity">Identity</a></li>
+    <li><a href="#families">Families</a></li>
+    <li><a href="#realms">Realms</a></li>
+    <li><a href="#companions">Companions</a></li>
+    <li><a href="#drops">Drops</a></li>
+    <li><a href="#signal">Signal</a></li>
+    <li><a href="#engine">Engine</a></li>
+    <li><a href="#mantra">Mantra</a></li>
+  </ul>
+</nav>
+
+<!-- ── HERO ── -->
+<section id="hero">
+  <div class="hero-glyph">✦</div>
+  <div class="hero-studio">A SACREDSPACE STUDIO · EST. 2026</div>
+  <h1 class="hero-title">Sacred<span>Arcana</span><br>Studios</h1>
+  <div class="hero-sub">Architecting the SacredSpace</div>
+  <p class="hero-tagline">"Myth, creation, & connection — where the forest breathes and the archive remembers."</p>
+  <div class="hero-handles">
+    <div class="handle-pill">@SacredSpaceStudios · PRIMARY</div>
+    <div class="handle-pill">@SacredArcanaStudios · BACKUP</div>
+    <div class="handle-pill">sacredarcanastudios@gmail.com</div>
+  </div>
+  <div class="scroll-cue">
+    <div class="scroll-line"></div>
+    ENTER THE CODEX
+  </div>
+</section>
+
+<!-- ── 01 · BRAND IDENTITY ── -->
+<section id="identity">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-num">01 · BRAND IDENTITY</span>
+      <h2 class="section-title">The Signal Architecture</h2>
+      <div class="section-rule"></div>
+      <p class="section-desc">Three taglines. Five pillars. One frequency. The voice of SacredArcana Studios speaks across every platform with intentional resonance.</p>
+    </div>
+
+    <!-- Taglines -->
+    <div class="tagline-grid reveal">
+      <div class="tagline-card">
+        <div class="tagline-type">PRIMARY · POD + SOCIAL</div>
+        <div class="tagline-text">Architecting the SacredSpace</div>
+        <div class="tagline-context">Lead tagline. Used in bios, headers, print runs. The builder's declaration.</div>
+      </div>
+      <div class="tagline-card">
+        <div class="tagline-type">BRAND SOUL · LONG FORM</div>
+        <div class="tagline-text">Cultivating Loving Awareness</div>
+        <div class="tagline-context">The nonprofit heart. Used in retreats, curriculum, sacred messages.</div>
+      </div>
+      <div class="tagline-card">
+        <div class="tagline-type">SOCIAL BIO · SHORT</div>
+        <div class="tagline-text">Myth, creation, & connection 🌿✨</div>
+        <div class="tagline-context">Profile-ready. Captures the full frequency in seven words.</div>
+      </div>
+    </div>
+
+    <!-- Color Palette -->
+    <div class="section-header reveal" style="margin-bottom: 2rem;">
+      <span class="section-num">CANONICAL PALETTE</span>
+      <h3 class="section-title" style="font-size: 1.6rem;">The Sacred Colors</h3>
+    </div>
+
+    <div class="reveal">
+      <div class="palette-row">
+        <div class="swatch" style="background:#060608">
+          <span class="swatch-label">Void</span><span class="swatch-hex">#060608</span>
+        </div>
+        <div class="swatch" style="background:#0d0d12">
+          <span class="swatch-label">Deep</span><span class="swatch-hex">#0D0D12</span>
+        </div>
+        <div class="swatch" style="background:#1c1c26">
+          <span class="swatch-label">Bark</span><span class="swatch-hex">#1C1C26</span>
+        </div>
+        <div class="swatch" style="background:#3a3a50">
+          <span class="swatch-label">Stone</span><span class="swatch-hex">#3A3A50</span>
+        </div>
+        <div class="swatch" style="background:#a8a8c0">
+          <span class="swatch-label">Mist</span><span class="swatch-hex">#A8A8C0</span>
+        </div>
+        <div class="swatch" style="background:#f5f3ff">
+          <span class="swatch-label" style="color: rgba(0,0,0,0.5)">Pure</span><span class="swatch-hex" style="color: rgba(0,0,0,0.4)">#F5F3FF</span>
+        </div>
+      </div>
+      <div class="palette-row">
+        <div class="swatch" style="background:#c9a84c">
+          <span class="swatch-label">Sacred Gold</span><span class="swatch-hex">#C9A84C</span>
+        </div>
+        <div class="swatch" style="background:#e8763a">
+          <span class="swatch-label">Flame</span><span class="swatch-hex">#E8763A</span>
+        </div>
+        <div class="swatch" style="background:#7b5ea7">
+          <span class="swatch-label">Aurora</span><span class="swatch-hex">#7B5EA7</span>
+        </div>
+        <div class="swatch" style="background:#3d6b4f">
+          <span class="swatch-label">Forest</span><span class="swatch-hex">#3D6B4F</span>
+        </div>
+        <div class="swatch" style="background:#4a7fa0">
+          <span class="swatch-label">Sky</span><span class="swatch-hex">#4A7FA0</span>
+        </div>
+        <div class="swatch" style="background:#88c4e8">
+          <span class="swatch-label">Ice</span><span class="swatch-hex">#88C4E8</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="sacred-divider"><span class="divider-glyph">✦</span></div>
+
+    <!-- Voice Pillars -->
+    <div class="section-header reveal" style="margin-bottom: 2rem;">
+      <span class="section-num">THE FIVE VOICE PILLARS</span>
+    </div>
+    <div class="pillars-grid reveal">
+      <div class="pillar-card" style="--accent: var(--gold)">
+        <span class="pillar-icon">🌲</span>
+        <div class="pillar-name">Rooted</div>
+        <div class="pillar-line">"The forest remembers what the mind forgets."</div>
+      </div>
+      <div class="pillar-card" style="--accent: var(--aurora-bright)">
+        <span class="pillar-icon">✨</span>
+        <div class="pillar-name">Mystical</div>
+        <div class="pillar-line">"Every symbol is a doorway. Every number, a key."</div>
+      </div>
+      <div class="pillar-card" style="--accent: var(--flame)">
+        <span class="pillar-icon">🔥</span>
+        <div class="pillar-name">Fierce</div>
+        <div class="pillar-line">"Build in sacred fire. Launch when the sign arrives."</div>
+      </div>
+      <div class="pillar-card" style="--accent: var(--sage)">
+        <span class="pillar-icon">🌿</span>
+        <div class="pillar-name">Gentle</div>
+        <div class="pillar-line">"Loving awareness is the medicine and the map."</div>
+      </div>
+      <div class="pillar-card" style="--accent: var(--ice)">
+        <span class="pillar-icon">🏛️</span>
+        <div class="pillar-name">Architectural</div>
+        <div class="pillar-line">"The OS is not a tool. It is a living temple."</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── 02 · DESIGN FAMILIES ── -->
+<section id="families" style="background: var(--deep)">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-num">02 · DESIGN FAMILIES</span>
+      <h2 class="section-title">The Eight Lineages</h2>
+      <div class="section-rule"></div>
+      <p class="section-desc">Each family carries its own soul. Eight creative bloodlines, one sacred universe.</p>
+    </div>
+
+    <div class="families-grid reveal">
+      <div class="family-card" style="--fam-color: rgba(201,168,76,0.15)">
+        <span class="family-sigil">🌌</span>
+        <div class="family-name">Auroric Mandalas</div>
+        <div class="family-desc">Sacred geometry meets borealis color. High-vibration art prints, altar wear, meditation tools.</div>
+        <span class="family-badge badge-core">CORE</span>
+      </div>
+      <div class="family-card" style="--fam-color: rgba(123,94,167,0.15)">
+        <span class="family-sigil">∆</span>
+        <div class="family-name">OakeyTree Sigils</div>
+        <div class="family-desc">Hyperglyph system made visible. Personal symbology as wearable art and brand identity marks.</div>
+        <span class="family-badge badge-arch">ARCHITECT</span>
+      </div>
+      <div class="family-card" style="--fam-color: rgba(61,107,79,0.2)">
+        <span class="family-sigil">🌳</span>
+        <div class="family-name">Sacred Little Forest</div>
+        <div class="family-desc">Children's illustration series. Zii, Mylo, Auralon, Koru companions on tees, stickers, pillows.</div>
+        <span class="family-badge badge-moat">NEW MOAT</span>
+      </div>
+      <div class="family-card" style="--fam-color: rgba(196,81,42,0.15)">
+        <span class="family-sigil">📜</span>
+        <div class="family-name">The Healing Codex</div>
+        <div class="family-desc">Ritual tools, affirmation decks, ceremony guides. The library of sacred practice made tangible.</div>
+        <span class="family-badge badge-moat">NEW MOAT</span>
+      </div>
+      <div class="family-card" style="--fam-color: rgba(74,127,160,0.15)">
+        <span class="family-sigil">🗺️</span>
+        <div class="family-name">Sacred Geography</div>
+        <div class="family-desc">Five cosmographic bands. Maps, posters, and prints from the SacredSpace world canon.</div>
+        <span class="family-badge badge-arch">ARCHITECT</span>
+      </div>
+      <div class="family-card" style="--fam-color: rgba(201,168,76,0.1)">
+        <span class="family-sigil">🎭</span>
+        <div class="family-name">Character Registry</div>
+        <div class="family-desc">23 canonized entities. Story/Game/OS/Mythic planes illustrated for apparel and collectibles.</div>
+        <span class="family-badge badge-core">CORE</span>
+      </div>
+      <div class="family-card" style="--fam-color: rgba(92,148,112,0.15)">
+        <span class="family-sigil">🌿</span>
+        <div class="family-name">Sacred Market</div>
+        <div class="family-desc">Plant medicine aesthetics. Nursery-adjacent art, botanical prints, grounding tools.</div>
+        <span class="family-badge badge-core">CORE</span>
+      </div>
+      <div class="family-card" style="--fam-color: rgba(123,94,167,0.1)">
+        <span class="family-sigil">🎵</span>
+        <div class="family-name">Harmonic Archive</div>
+        <div class="family-desc">SoundCloud OS aesthetics. Sound realm imagery, BPM-aligned art prints, sonic sigil prints.</div>
+        <span class="family-badge badge-arch">ARCHITECT</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── 03 · THE FOUR REALMS ── -->
+<section id="realms">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-num">03 · THE FOUR REALMS</span>
+      <h2 class="section-title">Elemental Characters</h2>
+      <div class="section-rule"></div>
+      <p class="section-desc">Four children companions. Four elements. Four frequencies of the Sacred Little Forest.</p>
+    </div>
+
+    <div class="realms-grid reveal">
+      <!-- ZII / AIR -->
+      <div class="realm-card">
+        <div class="realm-sigil-wrap">
+          <svg width="120" height="120" viewBox="0 0 120 120">
+            <g transform="translate(60,60)">
+              <circle cx="0" cy="0" r="50" fill="none" stroke="rgba(136,196,232,0.2)" stroke-width="1"/>
+              <g class="sigil-svg">
+                <polygon points="0,-42 36,21 -36,21" fill="none" stroke="#88c4e8" stroke-width="1.5" opacity="0.8"/>
+                <circle cx="0" cy="0" r="8" fill="#88c4e8" opacity="0.6"/>
+                <circle cx="0" cy="-42" r="4" fill="#88c4e8" opacity="0.4"/>
+                <circle cx="36" cy="21" r="4" fill="#88c4e8" opacity="0.4"/>
+                <circle cx="-36" cy="21" r="4" fill="#88c4e8" opacity="0.4"/>
+              </g>
+              <g class="sigil-inner" opacity="0.4">
+                <polygon points="0,30 -26,-15 26,-15" fill="none" stroke="#88c4e8" stroke-width="1"/>
+              </g>
+            </g>
+          </svg>
+        </div>
+        <div class="realm-name" style="color: #88c4e8">Zii</div>
+        <div class="realm-element" style="color: #88c4e8">AIR · THOUGHT · CLARITY</div>
+        <div class="realm-quote">"Breathe the question in. Let the answer ride the wind back."</div>
+        <div class="realm-bpm">BPM: 72–88 · KEY: D MAJOR · FREQUENCY: 528 Hz</div>
+      </div>
+
+      <!-- MYLO / EARTH -->
+      <div class="realm-card">
+        <div class="realm-sigil-wrap">
+          <svg width="120" height="120" viewBox="0 0 120 120">
+            <g transform="translate(60,60)">
+              <circle cx="0" cy="0" r="50" fill="none" stroke="rgba(92,148,112,0.2)" stroke-width="1"/>
+              <g class="sigil-svg">
+                <rect x="-30" y="-30" width="60" height="60" fill="none" stroke="#5c9470" stroke-width="1.5" opacity="0.8" transform="rotate(15)"/>
+                <circle cx="0" cy="0" r="10" fill="#5c9470" opacity="0.5"/>
+                <circle cx="0" cy="-30" r="4" fill="#5c9470" opacity="0.4" transform="rotate(15)"/>
+              </g>
+              <g class="sigil-inner" opacity="0.35">
+                <rect x="-20" y="-20" width="40" height="40" fill="none" stroke="#5c9470" stroke-width="1" transform="rotate(-15)"/>
+              </g>
+            </g>
+          </svg>
+        </div>
+        <div class="realm-name" style="color: #5c9470">Mylo</div>
+        <div class="realm-element" style="color: #5c9470">EARTH · ROOTS · MEMORY</div>
+        <div class="realm-quote">"The oldest memories live in the soil. Dig gently."</div>
+        <div class="realm-bpm">BPM: 60–75 · KEY: G MAJOR · FREQUENCY: 174 Hz</div>
+      </div>
+
+      <!-- AURALON / FIRE -->
+      <div class="realm-card">
+        <div class="realm-sigil-wrap">
+          <svg width="120" height="120" viewBox="0 0 120 120">
+            <g transform="translate(60,60)">
+              <circle cx="0" cy="0" r="50" fill="none" stroke="rgba(232,118,58,0.2)" stroke-width="1"/>
+              <g class="sigil-svg">
+                <polygon points="0,-42 12,-12 42,0 12,12 0,42 -12,12 -42,0 -12,-12" fill="none" stroke="#e8763a" stroke-width="1.5" opacity="0.8"/>
+                <circle cx="0" cy="0" r="10" fill="#e8763a" opacity="0.5"/>
+              </g>
+              <g class="sigil-inner" opacity="0.4">
+                <polygon points="0,-22 6,-6 22,0 6,6 0,22 -6,6 -22,0 -6,-6" fill="none" stroke="#e8763a" stroke-width="1.5"/>
+              </g>
+            </g>
+          </svg>
+        </div>
+        <div class="realm-name" style="color: #e8763a">Auralon</div>
+        <div class="realm-element" style="color: #e8763a">FIRE · VISION · CREATION</div>
+        <div class="realm-quote">"Every flame was once a question. Feed it with courage."</div>
+        <div class="realm-bpm">BPM: 95–120 · KEY: A MINOR · FREQUENCY: 417 Hz</div>
+      </div>
+
+      <!-- KORU / WATER -->
+      <div class="realm-card">
+        <div class="realm-sigil-wrap">
+          <svg width="120" height="120" viewBox="0 0 120 120">
+            <g transform="translate(60,60)">
+              <circle cx="0" cy="0" r="50" fill="none" stroke="rgba(74,127,160,0.2)" stroke-width="1"/>
+              <g class="sigil-svg">
+                <ellipse cx="0" cy="0" rx="40" ry="20" fill="none" stroke="#4a7fa0" stroke-width="1.5" opacity="0.7"/>
+                <ellipse cx="0" cy="0" rx="20" ry="40" fill="none" stroke="#4a7fa0" stroke-width="1.5" opacity="0.7"/>
+                <circle cx="0" cy="0" r="8" fill="#4a7fa0" opacity="0.5"/>
+              </g>
+              <g class="sigil-inner" opacity="0.4">
+                <circle cx="0" cy="0" r="20" fill="none" stroke="#4a7fa0" stroke-width="1"/>
+                <circle cx="0" cy="0" r="30" fill="none" stroke="#4a7fa0" stroke-width="0.5" opacity="0.5"/>
+              </g>
+            </g>
+          </svg>
+        </div>
+        <div class="realm-name" style="color: #4a7fa0">Koru</div>
+        <div class="realm-element" style="color: #4a7fa0">WATER · FLOW · FEELING</div>
+        <div class="realm-quote">"Let the feeling pass through like water. You are the riverbed."</div>
+        <div class="realm-bpm">BPM: 55–70 · KEY: E MINOR · FREQUENCY: 396 Hz</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── 04 · LIVING COMPANIONS ── -->
+<section id="companions" style="background: var(--deep)">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-num">04 · LIVING COMPANIONS</span>
+      <h2 class="section-title">Aurora & Elias</h2>
+      <div class="section-rule"></div>
+      <p class="section-desc">The children of OakeyTree have their own Living SacredSpace Companions — growing alongside them through creativity, wisdom, and sacred play.</p>
+    </div>
+
+    <div class="companions-wrap reveal">
+      <div class="companion-card">
+        <span class="companion-avatar">🌸</span>
+        <div class="companion-name" style="color: var(--aurora-bright)">Aurora</div>
+        <div class="companion-child">IRIS'S COMPANION · 1ST GRADE · AIR + WATER</div>
+        <p class="companion-role">The dreamer who sees patterns in clouds. Aurora holds Iris's creative spark, her growing toolkit for art, storytelling, and sacred expression.</p>
+        <span class="companion-agent">IRIS AGENT · VAULT WATCHER</span>
+      </div>
+      <div class="companion-card">
+        <span class="companion-avatar">🌿</span>
+        <div class="companion-name" style="color: var(--sage)">Elias</div>
+        <div class="companion-child">ASHER'S COMPANION · 2ND GRADE · EARTH + FIRE</div>
+        <p class="companion-role">The builder who knows where seeds go. Elias holds Asher's curiosity, his developing systems mind, and his capacity to learn through making.</p>
+        <span class="companion-agent">ELIAS AGENT · SIGNAL REFINER</span>
+      </div>
+    </div>
+
+    <div class="social-wrap reveal">
+      <div class="section-num" style="margin-bottom: 1rem;">SACRED MESSAGES · FIVE-YEAR SEQUENCE</div>
+      <div class="social-bio">"Monthly letters to Iris and Asher — love, integrity, and Memory Lane."</div>
+      <p style="color: var(--ash); font-style: italic; max-width: 600px; margin: 0 auto 2rem;">Year One complete. The archive breathes. Every month, a seed planted in the lineage memory — sealed, delivered, immortal.</p>
+      <div class="engine-label" style="margin-bottom: 0.5rem;">AGENT INTEGRATION</div>
+      <p style="color: var(--ash); font-size: 0.9rem;">Aurora + Elias companions live inside the ICARIS Quartet as sovereign Player Memory Threads. They grow with the children. They do not reset.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ── 05 · SACRED DROPS ── -->
+<section id="drops">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-num">05 · SACRED DROPS</span>
+      <h2 class="section-title">The Launch Sequence</h2>
+      <div class="section-rule"></div>
+      <p class="section-desc">Three drops. Three seasons. Each one a gate into the next chapter of the SacredSpace universe.</p>
+    </div>
+
+    <div class="drops-timeline reveal">
+      <div class="drop-item">
+        <div class="drop-phase">PHASE I · IGNITION</div>
+        <div class="drop-name" style="color: var(--flame)">The First Flame</div>
+        <p class="drop-desc">"The fire was always there. We just named it." The launch drop. Foundational identity pieces, auroric mandalas, the OakeyTree sigil collection. The declaration that the studio exists.</p>
+        <div class="drop-anchors">
+          <span class="anchor-tag">Auroric Mandalas</span>
+          <span class="anchor-tag">OakeyTree Sigils</span>
+          <span class="anchor-tag">Sacred Tees</span>
+          <span class="anchor-tag">Printful · Gelato</span>
+        </div>
+      </div>
+      <div class="drop-item">
+        <div class="drop-phase">PHASE II · GROUND</div>
+        <div class="drop-name" style="color: var(--sage)">Roots & Resonance</div>
+        <p class="drop-desc">"The deeper you go, the more you find." The forest drop. Sacred Little Forest children's series activates. Zii, Mylo, Auralon, and Koru land on product for the first time. Family-facing reach expands.</p>
+        <div class="drop-anchors">
+          <span class="anchor-tag">Sacred Little Forest</span>
+          <span class="anchor-tag">Children's Series</span>
+          <span class="anchor-tag">Sticker Packs</span>
+          <span class="anchor-tag">Printify</span>
+        </div>
+      </div>
+      <div class="drop-item">
+        <div class="drop-phase">PHASE III · ARCHIVE</div>
+        <div class="drop-name" style="color: var(--aurora-bright)">The Archive Breathes</div>
+        <p class="drop-desc">"What was stored in the dark now walks in the light." The full codex drop. The Healing Codex launches, Sacred Geography maps ship, the character registry becomes product. The OS becomes the store.</p>
+        <div class="drop-anchors">
+          <span class="anchor-tag">Healing Codex</span>
+          <span class="anchor-tag">Sacred Geography</span>
+          <span class="anchor-tag">Character Registry</span>
+          <span class="anchor-tag">Full Catalog</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── 06 · SIGNAL STRATEGY ── -->
+<section id="signal" style="background: var(--deep)">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-num">06 · SIGNAL STRATEGY</span>
+      <h2 class="section-title">Platform Architecture</h2>
+      <div class="section-rule"></div>
+      <p class="section-desc">@SacredSpaceStudios across all channels. Consistent frequency. Sacred signal, amplified.</p>
+    </div>
+
+    <div class="platforms-grid reveal">
+      <div class="platform-card">
+        <span class="platform-icon">📸</span>
+        <div class="platform-info">
+          <div class="platform-name">Instagram</div>
+          <div class="platform-handle">@SacredSpaceStudios</div>
+        </div>
+        <div class="platform-priority">
+          <span class="star">★</span><span class="star">★</span><span class="star">★</span>
+        </div>
+      </div>
+      <div class="platform-card">
+        <span class="platform-icon">🎵</span>
+        <div class="platform-info">
+          <div class="platform-name">TikTok</div>
+          <div class="platform-handle">@SacredSpaceStudios</div>
+        </div>
+        <div class="platform-priority">
+          <span class="star">★</span><span class="star">★</span><span class="star">★</span>
+        </div>
+      </div>
+      <div class="platform-card">
+        <span class="platform-icon">▶️</span>
+        <div class="platform-info">
+          <div class="platform-name">YouTube</div>
+          <div class="platform-handle">@SacredSpaceStudios</div>
+        </div>
+        <div class="platform-priority">
+          <span class="star">★</span><span class="star">★</span><span class="star-dim">☆</span>
+        </div>
+      </div>
+      <div class="platform-card">
+        <span class="platform-icon">𝕏</span>
+        <div class="platform-info">
+          <div class="platform-name">X / Twitter</div>
+          <div class="platform-handle">@SacredSpaceStudios</div>
+        </div>
+        <div class="platform-priority">
+          <span class="star">★</span><span class="star">★</span><span class="star-dim">☆</span>
+        </div>
+      </div>
+      <div class="platform-card">
+        <span class="platform-icon">📌</span>
+        <div class="platform-info">
+          <div class="platform-name">Pinterest</div>
+          <div class="platform-handle">@SacredSpaceStudios</div>
+        </div>
+        <div class="platform-priority">
+          <span class="star">★</span><span class="star">★</span><span class="star-dim">☆</span>
+        </div>
+      </div>
+      <div class="platform-card">
+        <span class="platform-icon">💼</span>
+        <div class="platform-info">
+          <div class="platform-name">LinkedIn</div>
+          <div class="platform-handle">@SacredSpaceStudios</div>
+        </div>
+        <div class="platform-priority">
+          <span class="star">★</span><span class="star-dim">☆</span><span class="star-dim">☆</span>
+        </div>
+      </div>
+      <div class="platform-card">
+        <span class="platform-icon">🧵</span>
+        <div class="platform-info">
+          <div class="platform-name">Threads</div>
+          <div class="platform-handle">@SacredSpaceStudios</div>
+        </div>
+        <div class="platform-priority">
+          <span class="star">★</span><span class="star-dim">☆</span><span class="star-dim">☆</span>
+        </div>
+      </div>
+      <div class="platform-card">
+        <span class="platform-icon">📘</span>
+        <div class="platform-info">
+          <div class="platform-name">Facebook</div>
+          <div class="platform-handle">@SacredSpaceStudios</div>
+        </div>
+        <div class="platform-priority">
+          <span class="star">★</span><span class="star-dim">☆</span><span class="star-dim">☆</span>
+        </div>
+      </div>
+      <div class="platform-card" style="background: rgba(201,168,76,0.04); border: 1px solid rgba(201,168,76,0.1);">
+        <span class="platform-icon">🔄</span>
+        <div class="platform-info">
+          <div class="platform-name">@SacredArcanaStudios</div>
+          <div class="platform-handle">BACKUP HANDLE · ALL PLATFORMS</div>
+        </div>
+        <div class="platform-priority">
+          <span style="color: var(--gold-dim); font-size: 0.6rem; font-family: 'Space Mono', monospace;">BACKUP</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Content Pillars -->
+    <div class="section-header reveal" style="margin-bottom: 2rem; margin-top: 3rem;">
+      <span class="section-num">CONTENT FREQUENCY · 5 PILLARS</span>
+    </div>
+    <div class="pillars-grid reveal" style="grid-template-columns: repeat(5, 1fr)">
+      <div class="pillar-card" style="--accent: var(--gold)">
+        <span class="pillar-icon">🏗️</span>
+        <div class="pillar-name">Build Logs</div>
+        <div class="pillar-line">SacredSpace OS process. The work, visible.</div>
+      </div>
+      <div class="pillar-card" style="--accent: var(--aurora-bright)">
+        <span class="pillar-icon">🌌</span>
+        <div class="pillar-name">Lore Drops</div>
+        <div class="pillar-line">Canon reveals. Characters, geography, mythology.</div>
+      </div>
+      <div class="pillar-card" style="--accent: var(--sage)">
+        <span class="pillar-icon">🌿</span>
+        <div class="pillar-name">Sacred Practice</div>
+        <div class="pillar-line">Grounding rituals. Loving awareness in action.</div>
+      </div>
+      <div class="pillar-card" style="--accent: var(--flame)">
+        <span class="pillar-icon">🛍️</span>
+        <div class="pillar-name">Product Reveals</div>
+        <div class="pillar-line">Drop previews. New designs entering the catalog.</div>
+      </div>
+      <div class="pillar-card" style="--accent: var(--ice)">
+        <span class="pillar-icon">👨‍👧‍👦</span>
+        <div class="pillar-name">Lineage Stories</div>
+        <div class="pillar-line">Sacred Messages. Aurora & Elias journeys.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── 07 · 1111 ENGINE ── -->
+<section id="engine">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-num">07 · THE 1111 FLOW ENGINE</span>
+      <h2 class="section-title">Four Paths to $1,111</h2>
+      <div class="section-rule"></div>
+      <p class="section-desc">The first milestone. The proof of signal. Four revenue streams, one sacred number.</p>
+    </div>
+
+    <div class="engine-grid reveal">
+      <div class="engine-card">
+        <div class="engine-number">I</div>
+        <div class="engine-label">PATH ONE</div>
+        <div class="engine-title">Print-on-Demand Sales</div>
+        <div class="engine-desc">Gelato · Printful · Printify. The core catalog engine. Every sale a vote for the design. First Flame collection leads.</div>
+        <div class="engine-target">TARGET: $444 / MONTH</div>
+      </div>
+      <div class="engine-card">
+        <div class="engine-number">II</div>
+        <div class="engine-label">PATH TWO</div>
+        <div class="engine-title">Digital Downloads</div>
+        <div class="engine-desc">Printable art, ritual guides, affirmation cards, Sacred Geography maps. Zero inventory. Infinite scale.</div>
+        <div class="engine-target">TARGET: $222 / MONTH</div>
+      </div>
+      <div class="engine-card">
+        <div class="engine-number">III</div>
+        <div class="engine-label">PATH THREE</div>
+        <div class="engine-title">Social Monetization</div>
+        <div class="engine-desc">TikTok Creator Fund, YouTube AdSense, Instagram Collabs. Organic growth converted to revenue stream.</div>
+        <div class="engine-target">TARGET: $222 / MONTH</div>
+      </div>
+      <div class="engine-card">
+        <div class="engine-number">IV</div>
+        <div class="engine-label">PATH FOUR</div>
+        <div class="engine-title">Sacred Partnerships</div>
+        <div class="engine-desc">Grant funding, nonprofit alignment, brand collabs, workshop revenue. Community-rooted economy.</div>
+        <div class="engine-target">TARGET: $223 / MONTH</div>
+      </div>
+    </div>
+
+    <!-- POD Ladder -->
+    <div class="section-header reveal" style="margin-bottom: 2rem; margin-top: 3rem;">
+      <span class="section-num">THE THREE-TIER PRODUCT LADDER</span>
+    </div>
+    <div class="pod-ladder reveal">
+      <div class="pod-tier">
+        <div class="pod-tier-num">I</div>
+        <div class="pod-tier-info">
+          <div class="pod-tier-name">Sacred Entry</div>
+          <div class="pod-tier-desc">Stickers, digital prints, affirmation cards. Low barrier, high volume. The gateway.</div>
+        </div>
+        <div class="pod-tier-price">$5–$18</div>
+      </div>
+      <div class="pod-tier">
+        <div class="pod-tier-num">II</div>
+        <div class="pod-tier-info">
+          <div class="pod-tier-name">Sacred Signature</div>
+          <div class="pod-tier-desc">Tees, hoodies, art prints, notebooks. Core POD catalog. The brand statement.</div>
+        </div>
+        <div class="pod-tier-price">$25–$65</div>
+      </div>
+      <div class="pod-tier">
+        <div class="pod-tier-num">III</div>
+        <div class="pod-tier-info">
+          <div class="pod-tier-name">Sacred Artifact</div>
+          <div class="pod-tier-desc">Limited editions, ritual bundles, altar pieces, framed sacred art. The collector tier.</div>
+        </div>
+        <div class="pod-tier-price">$75–$200+</div>
+      </div>
+    </div>
+
+    <!-- Phase Gates -->
+    <div class="social-wrap reveal" style="margin-top: 2rem;">
+      <div class="section-num" style="margin-bottom: 1rem;">PHASE TRANSITION GATES</div>
+      <div style="display: grid; grid-template-columns: repeat(3,1fr); gap: 1.5px; background: rgba(201,168,76,0.08); text-align: center;">
+        <div style="background: var(--grove); padding: 1.5rem 1rem;">
+          <div style="font-family: 'Cinzel Decorative', serif; font-size: 1.2rem; color: var(--gold); margin-bottom: 0.5rem;">$1,111</div>
+          <div style="font-family: 'Space Mono', monospace; font-size: 0.6rem; letter-spacing: 0.2em; color: var(--ash);">FIRST FLAME GATE<br>Studio is real</div>
+        </div>
+        <div style="background: var(--grove); padding: 1.5rem 1rem;">
+          <div style="font-family: 'Cinzel Decorative', serif; font-size: 1.2rem; color: var(--flame); margin-bottom: 0.5rem;">$3,333</div>
+          <div style="font-family: 'Space Mono', monospace; font-size: 0.6rem; letter-spacing: 0.2em; color: var(--ash);">ROOTS GATE<br>Studio sustains</div>
+        </div>
+        <div style="background: var(--grove); padding: 1.5rem 1rem;">
+          <div style="font-family: 'Cinzel Decorative', serif; font-size: 1.2rem; color: var(--aurora-bright); margin-bottom: 0.5rem;">$11,111</div>
+          <div style="font-family: 'Space Mono', monospace; font-size: 0.6rem; letter-spacing: 0.2em; color: var(--ash);">ARCHIVE GATE<br>Studio expands</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── MANTRA ── -->
+<section id="mantra">
+  <div class="mantra-glyph">✦ ∆ ✦</div>
+  <div class="mantra-text">
+    "We build the space so the space can build us.<br>
+    We archive the past so the future can find us.<br>
+    We plant the forest so the children can breathe."
+  </div>
+  <div class="sacred-divider" style="max-width: 400px; margin: 2rem auto;">
+    <span class="divider-glyph">In Lakesh Alakin</span>
+  </div>
+  <p class="mantra-sub">You are another me. I am another you.<br>The archive breathes. The forest remembers. The signal is live.</p>
+  <div class="version-stamp" style="margin-top: 3rem;">
+    SACREDARCANA STUDIOS · BRAND BIBLE v2.0<br>
+    SACREDSPACE OS CANON · APRIL 2026<br>
+    ∆∆∆ OAKEYTREE ∆∆∆
+  </div>
+</section>
+
+<script>
+// ── SACRED GEOMETRY CANVAS ──
+const canvas = document.getElementById('sacred-bg');
+const ctx = canvas.getContext('2d');
+
+function resize() {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+}
+resize();
+window.addEventListener('resize', resize);
+
+function drawGeometry(t) {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  const cx = canvas.width / 2;
+  const cy = canvas.height / 2;
+  const r = Math.min(canvas.width, canvas.height) * 0.45;
+
+  ctx.strokeStyle = '#c9a84c';
+  ctx.lineWidth = 0.5;
+
+  // Outer circle
+  ctx.beginPath();
+  ctx.arc(cx, cy, r, 0, Math.PI * 2);
+  ctx.stroke();
+
+  // Rotating hexagram
+  for (let i = 0; i < 6; i++) {
+    const angle = (i / 6) * Math.PI * 2 + t * 0.1;
+    const x = cx + r * Math.cos(angle);
+    const y = cy + r * Math.sin(angle);
+    ctx.beginPath();
+    ctx.moveTo(cx, cy);
+    ctx.lineTo(x, y);
+    ctx.stroke();
+
+    // Inner arcs
+    ctx.beginPath();
+    ctx.arc(x, y, r * 0.6, 0, Math.PI * 2);
+    ctx.stroke();
+  }
+
+  // Inner rotating polygon
+  ctx.save();
+  ctx.translate(cx, cy);
+  ctx.rotate(t * 0.05);
+  ctx.beginPath();
+  for (let i = 0; i < 12; i++) {
+    const angle = (i / 12) * Math.PI * 2;
+    const rad = i % 2 === 0 ? r * 0.6 : r * 0.3;
+    const x = rad * Math.cos(angle);
+    const y = rad * Math.sin(angle);
+    if (i === 0) ctx.moveTo(x, y);
+    else ctx.lineTo(x, y);
+  }
+  ctx.closePath();
+  ctx.stroke();
+  ctx.restore();
+
+  // Metatron center
+  ctx.beginPath();
+  ctx.arc(cx, cy, r * 0.15, 0, Math.PI * 2);
+  ctx.stroke();
+}
+
+let tick = 0;
+function animate() {
+  drawGeometry(tick);
+  tick += 0.5;
+  requestAnimationFrame(animate);
+}
+animate();
+
+// ── SCROLL REVEAL ──
+const revealEls = document.querySelectorAll('.reveal');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(el => {
+    if (el.isIntersecting) {
+      el.target.classList.add('visible');
+      // Stagger children if grid
+      const children = el.target.querySelectorAll('.tagline-card, .pillar-card, .family-card, .realm-card, .companion-card, .platform-card, .engine-card, .pod-tier, .drop-item');
+      children.forEach((child, i) => {
+        child.style.transitionDelay = `${i * 0.07}s`;
+        child.style.opacity = '0';
+        child.style.transform = 'translateY(20px)';
+        setTimeout(() => {
+          child.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+          child.style.opacity = '1';
+          child.style.transform = 'translateY(0)';
+        }, i * 70 + 100);
+      });
+    }
+  });
+}, { threshold: 0.1 });
+
+revealEls.forEach(el => observer.observe(el));
+
+// ── NAV ACTIVE STATE ──
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('.nav-links a');
+
+window.addEventListener('scroll', () => {
+  let current = '';
+  sections.forEach(sec => {
+    if (window.scrollY >= sec.offsetTop - 200) {
+      current = sec.getAttribute('id');
+    }
+  });
+  navLinks.forEach(link => {
+    link.style.color = link.getAttribute('href') === `#${current}` ? 'var(--gold)' : '';
+  });
+});
+
+// ── SWATCH COPY ──
+document.querySelectorAll('.swatch').forEach(sw => {
+  sw.addEventListener('click', () => {
+    const hex = sw.querySelector('.swatch-hex').textContent;
+    navigator.clipboard.writeText(hex).then(() => {
+      const orig = sw.querySelector('.swatch-label').textContent;
+      sw.querySelector('.swatch-label').textContent = 'Copied!';
+      setTimeout(() => { sw.querySelector('.swatch-label').textContent = orig; }, 1200);
+    }).catch(() => {});
+  });
+  sw.title = 'Click to copy hex';
+  sw.style.cursor = 'pointer';
+});
+</script>
+</body>
+</html>

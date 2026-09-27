@@ -106,7 +106,7 @@ Repo/D: paths listed with topic + score. Vault entries as counts only (no titles
 - `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_Claude infrastructure and multi-agent system research.md` | business 4 | also: culture
 - `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_Comprehensive chat thread artifact extraction and system mapping.md` | cashflow 6 | also: business,nonprofit,marketing
 - `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_Council seat activation protocol.md` | business 5 | also: cashflow,marketing
-- `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_Creating a sacred space guide for Jeanie Leaf.md` | business 3 | also: marketing,culture
+- `(personal file — name redacted)` | business 3 | also: marketing,culture
 - `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_Crowdfunding portfolio strategy for SACREDSPACE.md` | business 14 | also: cashflow,nonprofit,marketing,branding
 - `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_Daily todo list with deck and library work.md` | nonprofit 5 | also: -
 - `D:\SacredSpace_OS\03_NEURAL_FOREST\_ingested_exports\CANON_Database schema design.md` | cashflow 3 | also: -
@@ -341,7 +341,7 @@ Repo/D: paths listed with topic + score. Vault entries as counts only (no titles
 - `D:\SacredSpace_OS\_INCOMING_FROM_C\07_SOCIAL_MOTHERSHIP\claude-imports\2026-03-31_Sacred_Space_Studios_social_media_setup.md` | business 3 | also: marketing,branding
 - `D:\SacredSpace_OS\_INCOMING_FROM_C\07_SOCIAL_MOTHERSHIP\claude-imports\2026-04-04_SacredSpace_social_media_progress_report.md` | cashflow 3 | also: marketing,branding
 - `D:\SacredSpace_OS\_INCOMING_FROM_C\07_SOCIAL_MOTHERSHIP\claude-imports\2026-04-06_Egregores_and_AI-native_knowledge_systems.md` | business 6 | also: -
-- `D:\SacredSpace_OS\_INCOMING_FROM_C\07_SOCIAL_MOTHERSHIP\claude-imports\2026-04-23_Creating_a_sacred_space_guide_for_Jeanie_Leaf.md` | business 3 | also: marketing,culture
+- `(personal file — name redacted)` | business 3 | also: marketing,culture
 - `D:\SacredSpace_OS\_INCOMING_FROM_C\07_SOCIAL_MOTHERSHIP\claude-imports\2026-06-02_sacred_progress_report._what_i....md` | business 9 | also: cashflow,marketing,branding
 - `D:\SacredSpace_OS\_INCOMING_FROM_C\08_LEARNING_PATH\chats\08_LEARNING_PATH_CHATGPT_2025-11-09_SACREDSPACE_FOUNDATION_IDEAS.md` | nonprofit 7 | also: -
 - `D:\SacredSpace_OS\_INCOMING_FROM_C\09_SACRED_MARKET\09_LEDGER.md` | business 5 | also: -
