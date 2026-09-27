@@ -8,6 +8,7 @@
 | `index.json` | The same data for agents (Claude, OpenCode, a future `/merchant/hub` route) | automatic |
 | `hub_config.json` | Which folders are scanned, and the keywords that define each topic | you |
 | `RESEARCH_LEXICON.md` | Keywords, terms, tools, funders and search strings for research | you + the loop |
+| `PROMPT_OPENCODE_INSTALL.md` | Paste-in prompt: OpenCode installs, checks and schedules the hub on the Legion | — |
 
 ## How it works
 - The hub **links** to documents where they live. It never copies or moves them, so each original stays the single source of truth and the hub can't go stale.

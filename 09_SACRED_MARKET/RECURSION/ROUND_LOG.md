@@ -106,4 +106,4 @@ Tested on trap files and on this repo's 09 pillar: 127 scanned → 75 unique fin
 - Cron install is idempotent and `--remove` works.
 
 **NEXT FOR OPENCODE (added):**
-10. On the Legion, run `bash 09_SACRED_MARKET/tools/install_hub_cron.sh`. Report the per-topic document counts and the scan time (numbers only, no titles). List any document that landed in the wrong topic, so the keywords in `hub_config.json` can be tuned.
+10. Install the hub by following `09_SACRED_MARKET/HUB/PROMPT_OPENCODE_INSTALL.md`. Short form: on the Legion, run `bash 09_SACRED_MARKET/tools/install_hub_cron.sh`. Report the per-topic document counts and the scan time (numbers only, no titles). List any document that landed in the wrong topic, so the keywords in `hub_config.json` can be tuned.
