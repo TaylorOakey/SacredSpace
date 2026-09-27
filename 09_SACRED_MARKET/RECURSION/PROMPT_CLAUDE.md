@@ -26,6 +26,6 @@ You are running **one round of the Livelihood Loop** for SacredSpace OS. The goa
 5. If the ledger or OpenCode reports real numbers, update the **ladder rung**.
 6. If this is round 3, 6, 9… or Taylor asked, write the **Action Brief** (LOOP §6) at the top of your ROUND_LOG entry.
 7. Append **one** ROUND_LOG entry using the template in ROUND_LOG.md, ending with a concrete **NEXT FOR OPENCODE** list (≤ 5 items, each checkable on Taylor's machine).
-8. Commit (`loop(round N): …`) and push to the same branch. Don't open new PRs, merge, post, sign up for anything, or contact anyone. Then stop and give Taylor 3 lines: the rung, the one next action for Taylor, and the decision waiting on him.
+8. Commit (`loop(round N): …`) and push to the same branch. Don't open new PRs, merge, post, sign up for anything, or contact anyone. Then stop and give Taylor 3 lines: the rung, the one next action for Taylor, and the decision waiting on Taylor.
 
 **Remember:** SacredSpace has made **$0 so far**, and there is no LLC and no nonprofit. Don't flatter the plan. If an idea is weak, say so and score it low. If the loop is producing plans instead of sales, cut scope (Shadow law).
