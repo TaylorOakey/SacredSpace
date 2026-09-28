@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>S∆CR3D ∆RCHIVE — Configuration</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=EB+Garamond:ital,wght@0,400;1,400&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  body { min-height: 100vh; padding-bottom: 48px; }
+  .opts-hero { padding: 40px 48px 28px; border-bottom: 1px solid var(--gold-dim); background: rgba(3,4,7,0.6); position: relative; overflow: hidden; }
+  .opts-hero::before { content: '◇'; position: absolute; right: 40px; top: 20px; font-size: 120px; color: var(--cyan); opacity: 0.03; line-height: 1; }
+  .opts-overline { font-family: var(--font-m); font-size: 8.5px; letter-spacing: 0.35em; text-transform: uppercase; color: var(--cyan); text-shadow: 0 0 8px var(--cyan); margin-bottom: 8px; opacity: 0.7; }
+  .opts-title { font-family: var(--font-d); font-size: 22px; letter-spacing: 0.18em; color: var(--text-hi); margin-bottom: 6px; }
+  .opts-title .glyph { color: var(--gold); text-shadow: 0 0 12px var(--gold-dim); }
+  .opts-sub { font-family: var(--font-b); font-style: italic; font-size: 14px; color: var(--text-mid); }
+  .opts-body { max-width: 680px; margin: 0 auto; padding: 0 48px; }
+  .opts-section { margin-top: 32px; }
+  .form-row { margin-bottom: 18px; }
+  .form-label { display: block; font-size: 9.5px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--text-lo); margin-bottom: 6px; }
+  .form-label .required { color: var(--magenta); margin-left: 4px; }
+  .form-hint { font-family: var(--font-b); font-style: italic; font-size: 11.5px; color: var(--text-lo); margin-top: 5px; }
+  .sa-input { display: block; width: 100%; }
+  .sa-input.mono { font-family: var(--font-m); letter-spacing: 0.04em; font-size: 11.5px; }
+  .conn-test { display: flex; align-items: center; gap: 10px; margin-top: 8px; }
+  .conn-result { font-size: 11px; font-family: var(--font-m); letter-spacing: 0.1em; color: var(--text-lo); transition: color 300ms; }
+  .conn-result.ok  { color: var(--green);   text-shadow: 0 0 8px var(--green-dim); }
+  .conn-result.err { color: var(--magenta); text-shadow: 0 0 8px var(--magenta-dim); }
+  .opts-footer { display: flex; align-items: center; gap: 14px; margin-top: 32px; padding-top: 24px; border-top: 1px solid rgba(127, 255, 212, 0.08); }
+  .save-flash { font-size: 10.5px; letter-spacing: 0.15em; color: var(--green); text-shadow: 0 0 8px var(--green-dim); opacity: 0; transition: opacity 400ms; font-family: var(--font-m); }
+  .save-flash.visible { opacity: 1; }
+  .pillar-accent { height: 2px; background: linear-gradient(to right, var(--cyan) 0%, var(--magenta) 33%, var(--green) 66%, var(--gold) 100%); opacity: 0.35; }
+  .scaffold-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+</style>
+</head>
+<body>
+<div class="pillar-accent"></div>
+<div class="opts-hero">
+  <div class="opts-overline">S∆CR3DSP∆CE OS · 06_AGENT_LAYER · Configuration</div>
+  <div class="opts-title"><span class="glyph">∆</span>RCHIVE — VAULT SETTINGS</div>
+  <div class="opts-sub">Wire the memory engine. Ground the archive. Deploy the context bridge.</div>
+</div>
+<div class="opts-body">
+  <div class="opts-section">
+    <div class="sa-label">◈ Supabase Connection</div>
+    <div class="form-row">
+      <label class="form-label" for="sb-url">Project URL <span class="required">✦</span></label>
+      <input class="sa-input mono" id="sb-url" type="url" placeholder="https://xxxxxxxxxxx.supabase.co">
+      <div class="form-hint">Your Supabase project URL from the dashboard API settings.</div>
+    </div>
+    <div class="form-row">
+      <label class="form-label" for="sb-key">Anon/Public Key <span class="required">✦</span></label>
+      <input class="sa-input mono" id="sb-key" type="password" placeholder="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9…">
+      <div class="form-hint">Anon key only — never service role. Stored in chrome.storage.local.</div>
+    </div>
+    <div class="conn-test">
+      <button class="sa-btn sa-btn-ghost" id="test-conn">Test Connection</button>
+      <span class="conn-result" id="conn-result">—</span>
+    </div>
+  </div>
+  <div class="sa-rule"></div>
+  <div class="opts-section">
+    <div class="sa-label">✦ OpenAI (Semantic Search)</div>
+    <div class="form-row">
+      <label class="form-label" for="oa-key">API Key</label>
+      <input class="sa-input mono" id="oa-key" type="password" placeholder="sk-…">
+      <div class="form-hint">Optional. Enables vector similarity search. Falls back to keyword search if absent.</div>
+    </div>
+  </div>
+  <div class="sa-rule"></div>
+  <div class="opts-section">
+    <div class="sa-label">⬡ DOM Scaffold Overrides</div>
+    <div class="scaffold-grid">
+      <div class="form-row">
+        <label class="form-label" for="sc-chatgpt">ChatGPT Selector</label>
+        <input class="sa-input mono" id="sc-chatgpt" type="text" placeholder="#prompt-textarea">
+        <div class="form-hint">Leave blank for default.</div>
+      </div>
+      <div class="form-row">
+        <label class="form-label" for="sc-gemini">Gemini Selector</label>
+        <input class="sa-input mono" id="sc-gemini" type="text" placeholder=".ql-editor">
+        <div class="form-hint">Leave blank for default.</div>
+      </div>
+      <div class="form-row">
+        <label class="form-label" for="sc-claude">Claude Selector</label>
+        <input class="sa-input mono" id="sc-claude" type="text" placeholder="[contenteditable]">
+        <div class="form-hint">Leave blank for default.</div>
+      </div>
+    </div>
+  </div>
+  <div class="sa-rule sa-rule-gold"></div>
+  <div class="opts-footer">
+    <button class="sa-btn sa-btn-primary" id="save-btn">Save Configuration</button>
+    <span class="save-flash" id="save-flash">∆ Configuration sealed.</span>
+  </div>
+</div>
+<script src="options.js"></script>
+</body>
+</html>
