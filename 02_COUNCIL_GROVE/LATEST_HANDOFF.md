@@ -1,5 +1,5 @@
 # S∆CR3DSP∆CE OS — AGENT HANDOFF CAPSULE
-**Generated:** 2026-09-28  
+**Generated:** 2026-09-30  
 **From:** Claude Code (claude-sonnet-4-6) · Session `session_01MyEmK4MckkS2VWnVv1ZPts`  
 **To:** OpenCode / Any Agent  
 **Repo:** `TaylorOakey/SacredSpace` · Branch: `claude/setup-design-import-CO2xP`  
@@ -52,20 +52,31 @@ All files live at: `06_AGENT_LAYER/ui_kits/web/`
 ```
 Branch:  claude/setup-design-import-CO2xP
 Remote:  origin/claude/setup-design-import-CO2xP (up to date)
-Latest:  b4081f7 — feat(game): add creative expression UI kit
+Latest:  85f3f0f — feat(design-sync): wire Sacred Codex Design System sync + complete portal index
 
 Recent commits (newest first):
+85f3f0f  feat(design-sync): wire Sacred Codex Design System sync + complete portal index
+0cee77f  docs: add OpenCode handoff capsule
 b4081f7  feat(game): add creative expression UI kit — VASHA · LYRA · GR∆M∆ · MUSE artboards
 ea579d8  feat(game): add UI kit portal index — 8 artboard gallery with filters
 444c422  feat(game): add Rules Card + Box Cover HTML kit (Design Brief §8)
 a8dbeef  feat(game): add Token Sheet HTML kit (Design Brief §7 artboard)
 d1a2f5b  feat(game): add Arcana Cards HTML kit (Design Brief §6)
-c5ba5ea  feat(game): add Arcana Board Face A & B HTML kit (Design Brief §3)
-5d3566f  feat(game): add Oracle Mat HTML kit (Design Brief §4)
-a01c068  feat(game): add Initiate Mat (Design Brief §5)
 
-PR #9 merged to main (squash ea579d8..b4081f7 pending — branch still has 4 unpushed-to-main commits)
-ACTION NEEDED: open a new PR for commits b4081f7 (creative expression layer)
+PR #9 merged to main.
+ACTION NEEDED: open a new PR for commits 0cee77f..85f3f0f (creative layer + design-sync)
+```
+
+## DESIGN SYNC STATE
+
+```
+Tool:          DesignSync (claude.ai/design)
+Project:       Sacred Codex Design System
+projectId:     019dee3c-cbc3-756e-a296-ca23d39e386e
+Config:        .design-sync/config.json  (committed 85f3f0f)
+Conventions:   .design-sync/conventions.md (committed 85f3f0f)
+Last sync:     2026-09-30 — all 13 artboards uploaded via write_files
+Shape:         off-script (HTML previews, @dsCard annotations, no storybook/dist)
 ```
 
 ---
@@ -181,8 +192,8 @@ ICARIS daemon           ✗ not accessible (systems/sski/ on D:)
 
 ## WHAT'S LEFT / SUGGESTED NEXT STEPS
 
-1. **Open PR** for the creative expression layer commits (`b4081f7`) — these are on the branch but no PR yet for main
-2. **Update `index.html` portal** — add the 4 new artboards (agent-profiles, creative-studio, pour-room, bodhilyra-orb) to the gallery
+1. **Open PR** for commits `0cee77f..85f3f0f` (creative layer + design-sync wiring) — these are on the branch but no PR yet for main
+2. ~~**Update `index.html` portal**~~ — DONE (85f3f0f): all 12 artboards now in gallery
 3. **Bodhilyra Orb** — DISTILLED v0.1, not yet canon — Taylor ruling needed to promote
 4. **V∆SH∆ cipher convention** — open ruling: which is canonical, 96→6 English ordinal or 15→6 Pythagorean?
 5. **Bleed Protocol ritual** — VASHA futures: Bleed Protocol ritual screen not yet built (would extend pour-room.html)
