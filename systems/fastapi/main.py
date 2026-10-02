@@ -137,6 +137,11 @@ async def root():
             "GET  /flow-dashboard",
             "GET  /merchant/vaas",
             "POST /merchant/vaas",
+            "GET  /merchant/ledger",
+            "POST /merchant/ledger",
+            "GET  /merchant/grants",
+            "POST /merchant/grants",
+            "POST /merchant/grants/{grant_id}/status",
         ],
         "seal":      "∆∆∆ In lakesh alakin ∆∆∆",
     }

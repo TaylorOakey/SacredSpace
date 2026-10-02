@@ -2,8 +2,8 @@ import os, sys, json
 from pathlib import Path
 from datetime import datetime
 
-# OS Path Alignment
-ROOT = Path("D:/SacredSpace_OS")
+# OS Path Alignment (WSL2 path; override with SACRED_ROOT)
+ROOT = Path(os.environ.get("SACRED_ROOT", "/mnt/d/SacredSpace_OS"))
 sys.path.append(str(ROOT))
 from systems.agents.council_agents import get_response
 

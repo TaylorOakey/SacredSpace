@@ -1,0 +1,6 @@
+# Generated on every run by tools/hub_build.py. On the Legion these list vault
+# note titles and first lines, so they stay local. Regenerate any time.
+INDEX.md
+index.json
+# Machine-only overrides (private skip_dirs, extra roots). Never committed.
+hub_config.local.json
