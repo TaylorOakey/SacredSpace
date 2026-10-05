@@ -11,6 +11,7 @@ Two agents writing at once therefore never produce a merge conflict.
   bridge.py inbox [--as NAME] [--all]
   bridge.py read  ID
   bridge.py ack   ID [--note "..."] [--push]
+  bridge.py lease acquire|release|check|list [PATH|GLOB ...] [--ttl MIN] [--note ..] [--push]
   bridge.py sync                      # fetch, rebase, push (retries on network error)
   bridge.py status
   bridge.py handoff [--task ..] [--done ..] [--next ..] [--to AGENT]
@@ -18,12 +19,12 @@ Two agents writing at once therefore never produce a merge conflict.
 Identity: --as NAME, else $BRIDGE_AGENT, else "claude".
 Branch:   --branch NAME, else $BRIDGE_BRANCH, else the current branch.
 """
-import argparse, os, re, subprocess, sys, time
-from datetime import datetime, timezone
+import argparse, fnmatch, hashlib, os, re, subprocess, sys, time
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
-MSGS, ACKS = HERE / "msgs", HERE / "acks"
+MSGS, ACKS, LEASES = HERE / "msgs", HERE / "acks", HERE / "leases"
 HANDOFF = HERE.parent / "LATEST_HANDOFF.md"
 
 
@@ -179,6 +180,75 @@ def cmd_handoff(a):
     print(f"wrote {HANDOFF}")
 
 
+# ── advisory file leases (so two agents don't edit the same paths at once) ─────
+# One immutable file per acquire; a release is a sibling .released file. Advisory
+# only: it tells the other agent "I'm working here", it does not block git.
+
+def norm(p):
+    return os.path.normpath(p).lstrip("./")
+
+
+def overlaps(a, b):
+    a, b = norm(a), norm(b)
+    return (fnmatch.fnmatch(a, b) or fnmatch.fnmatch(b, a)
+            or a.startswith(b.rstrip("*/") + "/") or b.startswith(a.rstrip("*/") + "/") or a == b)
+
+
+def active_leases():
+    now, out = datetime.now(timezone.utc), []
+    for p in sorted(LEASES.glob("*.lease")):
+        if p.with_suffix(".released").exists():
+            continue
+        m, _ = parse(p)
+        if datetime.strptime(m["expires"], "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=timezone.utc) > now:
+            out.append(m)
+    return out
+
+
+def cmd_lease(a):
+    LEASES.mkdir(exist_ok=True)
+    who = me(a)
+    if a.action == "list":
+        rows = active_leases()
+        for m in rows:
+            print(f"{m['id']}\n   {m['agent']} holds {m['path']} until {m['expires']}  {m.get('note', '')}")
+        return print("no active leases") if not rows else None
+    if not a.paths:
+        sys.exit("give at least one path or glob")
+    if a.action == "check":
+        hits = [(m, p) for p in a.paths for m in active_leases() if m["agent"] != who and overlaps(p, m["path"])]
+        for m, p in hits:
+            print(f"CONFLICT {p} <- {m['agent']} ({m['path']}, until {m['expires']})")
+        sys.exit(1 if hits else 0)
+    if a.action == "acquire":
+        clash = [(m, p) for p in a.paths for m in active_leases() if m["agent"] != who and overlaps(p, m["path"])]
+        if clash:
+            for m, p in clash:
+                print(f"held by {m['agent']}: {m['path']} until {m['expires']}", file=sys.stderr)
+            sys.exit("lease refused (run `sync` first if this looks stale)")
+        now = datetime.now(timezone.utc)
+        made = []
+        for p in a.paths:
+            lid = f"{now:%Y%m%dT%H%M%SZ}-{who}-{hashlib.sha1(norm(p).encode()).hexdigest()[:8]}"
+            exp = now + timedelta(minutes=a.ttl)
+            f = LEASES / f"{lid}.lease"
+            f.write_text(f"---\nagent: {who}\npath: {norm(p)}\nexpires: {exp:%Y-%m-%dT%H:%M:%SZ}\nnote: {a.note}\n---\n", encoding="utf-8")
+            made.append(f); print(lid)
+        commit(made, f"bridge: {who} lease {', '.join(norm(p) for p in a.paths)}")
+    else:  # release
+        done = []
+        for m in active_leases():
+            if m["agent"] == who and any(overlaps(p, m["path"]) for p in a.paths):
+                f = LEASES / f"{m['id']}.released"
+                f.write_text(f"{datetime.now(timezone.utc):%Y-%m-%dT%H:%M:%SZ}\n", encoding="utf-8")
+                done.append(f); print("released", m["id"])
+        if not done:
+            return print("nothing to release")
+        commit(done, f"bridge: {who} release leases")
+    if a.push:
+        sync(a)
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--as", dest="who")
@@ -190,6 +260,9 @@ def main():
     s.add_argument("--push", action="store_true"); s.set_defaults(f=cmd_ack)
     s = sub.add_parser("inbox"); s.add_argument("--all", action="store_true"); s.set_defaults(f=cmd_inbox)
     s = sub.add_parser("read"); s.add_argument("id"); s.set_defaults(f=cmd_read)
+    s = sub.add_parser("lease"); s.add_argument("action", choices=["acquire", "release", "check", "list"])
+    s.add_argument("paths", nargs="*"); s.add_argument("--ttl", type=int, default=120, help="minutes")
+    s.add_argument("--note", default=""); s.add_argument("--push", action="store_true"); s.set_defaults(f=cmd_lease)
     sub.add_parser("sync").set_defaults(f=sync)
     sub.add_parser("status").set_defaults(f=cmd_status)
     s = sub.add_parser("handoff"); [s.add_argument(f"--{k}") for k in ("task", "done", "next", "to")]
