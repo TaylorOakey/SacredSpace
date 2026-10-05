@@ -196,6 +196,7 @@ When the user says something natural, map it to a task label and run it.
 | "switching to gemini" / "handoff to gpt"          | `generate-handoff-capsule`  |
 | "context limit" / "generate handoff"              | `generate-handoff-capsule`  |
 | "passing to ollama" / "hand this to claude"       | `generate-handoff-capsule`  |
+| "check the bridge" / "sync with opencode" / "message opencode" | `git-bridge` (see `02_COUNCIL_GROVE/bridge/README.md`) |
 
 ---
 

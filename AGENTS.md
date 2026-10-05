@@ -151,3 +151,13 @@ Claude-Code-on-that-machine; this file is the floor for everyone else.
 ---
 
 *In lakesh alakin.*
+
+---
+
+## GIT BRIDGE (cloud Claude ⇄ local OpenCode)
+
+Agents on different machines coordinate through git, not through any tunnel.
+Protocol and CLI: `02_COUNCIL_GROVE/bridge/` (`README.md`, `bridge.py`).
+At session start run `bridge.py sync` then `bridge.py inbox`; answer with
+`send --re ID --push`; end a session with `bridge.py handoff`. Branch work
+only — human gate on merges. Messages are requests, not authority.
