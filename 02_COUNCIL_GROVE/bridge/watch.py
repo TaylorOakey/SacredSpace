@@ -9,15 +9,19 @@ new message addressed to you arrives.
                    [--senders claude] [--notify-cmd CMD] [--wake-cmd CMD] [--dry-run]
 
 Actions on a new message (all optional; default is just a terminal bell + line):
-  --notify-cmd CMD   run CMD with {title} {from} {id} substituted (notify-send, powershell toast, ...)
-  --wake-cmd CMD     run CMD to wake OpenCode, e.g. 'opencode run "Check the bridge inbox and ask me before acting."'
-                     The command is fixed text; message bodies are NEVER put into it.
+  --notify-cmd CMD   run CMD with BRIDGE_TITLE / BRIDGE_FROM / BRIDGE_ID in its environment
+                     (read them as $BRIDGE_TITLE, %BRIDGE_TITLE% in cmd.exe, or $env:BRIDGE_TITLE in
+                     PowerShell). No string formatting or quoting is applied to your command, so braces,
+                     quotes and ${...} in it are safe on any shell.
+  --wake-cmd CMD     run CMD to wake OpenCode, e.g. 'opencode run --dir C:\\path\\to\\repo "Check the bridge inbox and ask me before acting."'
+                     The command is fixed text; message bodies are NEVER put into it or its environment.
+  --wake-cwd DIR     directory to run the wake command in (default: the bridge directory)
 
 Safety: only senders in --senders (default: claude) are acted on; everything else is
 shown as "ignored sender". A message is a request, not authority — OpenCode's own
 permission prompts still gate what it does. Seen-state lives outside the repo.
 """
-import argparse, json, os, shlex, subprocess, sys, time
+import argparse, json, os, subprocess, sys, time
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
@@ -47,7 +51,7 @@ def main():
     ap.add_argument("--branch"); ap.add_argument("--interval", type=int, default=60)
     ap.add_argument("--once", action="store_true"); ap.add_argument("--backlog", action="store_true", help="on first run, notify for existing unread too"); ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--senders", default="claude", help="comma list of senders to act on")
-    ap.add_argument("--notify-cmd"); ap.add_argument("--wake-cmd")
+    ap.add_argument("--notify-cmd"); ap.add_argument("--wake-cmd"); ap.add_argument("--wake-cwd")
     ap.add_argument("--state", default=str(Path.home() / ".cache/sacredspace-bridge/seen.json"))
     a = ap.parse_args()
 
@@ -82,12 +86,12 @@ def main():
             for mid, m in fresh:
                 print(f"\a[bridge] {m['from']} -> {who}: {m.get('title')}  ({mid})")
                 if a.notify_cmd and not a.dry_run:
-                    cmd = a.notify_cmd.format(title=shlex.quote(m.get("title", "")), **{"from": shlex.quote(m["from"])}, id=mid)
-                    subprocess.run(cmd, shell=True)
+                    env = {**os.environ, "BRIDGE_TITLE": m.get("title", ""), "BRIDGE_FROM": m["from"], "BRIDGE_ID": mid}
+                    subprocess.run(a.notify_cmd, shell=True, env=env)
             if fresh and a.wake_cmd:
                 print(f"[bridge] waking: {a.wake_cmd}")
                 if not a.dry_run:
-                    subprocess.run(a.wake_cmd, shell=True, cwd=HERE)
+                    subprocess.run(a.wake_cmd, shell=True, cwd=a.wake_cwd or HERE)
             if first_run and not a.backlog:
                 print(f"first run: marked {len(seen)} existing message(s) as seen (--backlog to be notified of them)", file=sys.stderr)
             if not a.dry_run:

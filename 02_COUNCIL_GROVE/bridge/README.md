@@ -47,12 +47,13 @@ It signals intent only; git still merges whatever is pushed.
 checks out, or touches your working tree**. First run marks existing messages as seen (`--backlog` to override).
 ```bash
 python3 02_COUNCIL_GROVE/bridge/watch.py --as opencode --interval 60 \
-  --notify-cmd 'notify-send "bridge: {title}"' \
+  --notify-cmd 'notify-send "bridge: $BRIDGE_TITLE"' \
   --wake-cmd  'opencode run "Check the bridge inbox, summarize, and ask me before acting."'
 ```
 - Only senders in `--senders` (default `claude`) trigger anything; others are logged as ignored.
 - The wake command is fixed text. Message bodies are never injected into it, so a pushed message can't smuggle in instructions via the watcher.
-- `--wake-cmd` syntax is yours to confirm against your OpenCode version (`opencode run` is used in `sacredspace-os/AGENTS.md`); `--dry-run` shows what would fire.
+- `opencode run "<prompt>"` was confirmed on OpenCode 1.18.25 (Windows). Add `--dir <repo>` so OpenCode starts in your repo, and `--wake-cwd` if the command itself needs a cwd. `--dry-run` shows what would fire.
+- `--notify-cmd` gets `BRIDGE_TITLE`, `BRIDGE_FROM`, `BRIDGE_ID` as environment variables (no `{title}` formatting). Windows examples: PowerShell `$env:BRIDGE_TITLE`, cmd.exe `%BRIDGE_TITLE%`.
 - You can also run it as a systemd user unit or a Windows Task Scheduler entry; it's a plain loop.
 - With your phone attached to OpenCode via OpenChamber, the watcher's notification is your cue to open the app and tell OpenCode to act.
 
