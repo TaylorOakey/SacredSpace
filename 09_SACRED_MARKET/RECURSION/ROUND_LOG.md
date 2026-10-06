@@ -299,3 +299,37 @@ Three NEXT FOR CLAUDE lists are open (Round 1 close, OpenCode Round 2, OpenCode 
 5. **Tax + lexicon upkeep:**
    - Find the source for NC sales tax on digital downloads sold outside Etsy (Ko-fi, Gumroad), marked "verify with an advisor".
    - Resolve every *(verify)* item you check in `HUB/RESEARCH_LEXICON.md` with a date and URL, and add the search terms that worked.
+
+## Round 2 · Claude Code · 2026-10-06
+**Ladder rung:** no sales yet ($0). No ledger exists; OpenCode reported none.
+**Environment limit:** etsy.com, ko-fi.com, gumroad.com and ncarts.org were blocked from the cloud runner. Fees, rules and grant dates below come from search-result sources (named in each file) and are labelled secondary. Anything marked "needs browser check" is OpenCode/Taylor's to confirm.
+**Done from the consolidated agenda** (this list supersedes the three older Claude lists; each is "→ consolidated"):
+1. ✅ **`REVENUE_OPERATIONS_MASTER.md`** built at `09_SACRED_MARKET/`, DISTILLED, repo-only, counts only, no private names or paths.
+2. ⚠ **First Flame listings, partly done:**
+   - ✅ Etsy fees unchanged ($0.20 / 6.5% / 3% + $0.25; Offsite Ads 12–15%); readings-with-a-copy still allowed, outcome promises banned, AI disclosure required.
+   - ✅ Fee math for sub-$10 items on Etsy, Ko-fi and Gumroad, in `LISTINGS.md` §1b. Ko-fi nets most at every price; Gumroad's $0.50 floor is worst at $5.
+   - ✅ 05-26 price points folded into `LISTINGS.md` §1c: they bracket the $11/$22 tiers, so no price change.
+   - ⚠ **Not done:** the ~10 individual Etsy comps and the 3 long-tail keywords (Etsy was blocked; only aggregate stats were reachable). The 13 tags are unchanged because there is no evidence to rewrite them. Handed to OpenCode below.
+   - ⚠ **Conflict:** Ko-fi Gold is quoted at $6/mo and $12/mo by different sources; the $240 break-even in §0 may be wrong.
+3. ⚠ **Distribution and comps:**
+   - ✅ GitHub Pages is free for public repos (1 GB site, ~100 GB/month soft bandwidth) and HF Static Spaces are free; CPU/Gradio Spaces now need a paid plan ([GitHub docs](https://docs.github.com/en/enterprise-server@3.15/pages/getting-started-with-github-pages/github-pages-limits), [HF docs](https://huggingface.co/docs/hub/en/spaces-overview)).
+   - ⚠ C2 communities: only partial. Reddit's general rule is 90/10 participation vs. promotion, and r/SideProject is the promotion-friendly place for indie tools ([Redship](https://redship.io/blog/reddit-self-promotion-rules)). I could not read the rules of numerology or tool-showcase subreddits. Candidates to check by hand: r/SideProject, r/InternetIsBeautiful, a "Show-off Saturday"-style thread; read each sidebar before posting.
+   - ✅ A4: price band $15–39 single, ~$49 for Notion+Obsidian bundles; Obsidian allows self-promotion with extra scrutiny on paid content; licence/refund wording drafted in the A4 row. ⚠ I could not open ~10 seller pages, so traffic sources are unverified. A4 stays 33.
+   - ✅ A9: 5 Etsy comps, $3.30–5.00 for packs of 21–160 puzzles. $5–9 is above market. Score kept at 27 on a revised plan (Etsy/Ko-fi, ≤$5–6 or bundled).
+4. ✅ **Grants:** Granville Arts is the regional partner for Northampton County; the FY26-27 deadline was 2026-08-31 and has **passed**; range $500–$1,000; next cycle unpublished (probably ~June 2027). E1 re-scored 23→19, PARKED. Fiscal sponsors: Fractured Atlas 8% + $10/mo, Hack Club HCB 7%, Open Source Collective 10% (E3, PARKED).
+   - Proposed grants body (not sent, no API call): `POST /merchant/grants` `{"funder":"NC Arts Council via Granville Arts","program":"Artist Support Grant","applicant_entity":"SOLE_PROP","amount_requested":1000,"deadline":null,"url":"https://granvilleartsnc.org/en/artist-support-grants/","eligibility":"Individual artist; regional partner covers Northampton; ask about residency and study rules","notes":"FY26-27 closed 2026-08-31; next cycle expected ~June 2027; confirm by email first"}`
+5. ✅ **Tax + lexicon:** NC taxes "specified digital products" (digital audio, audiovisual, books); a facilitator collects on what it facilitates; the remote-seller threshold is $100,000 (200-transaction test gone since 2024-07-01). Unresolved: whether a decode PDF, wallpaper or vault template counts, and Taylor's own in-state obligations on non-Etsy sales. **Verify with an advisor.** Lexicon "(verify)" items resolved for sales tax and fiscal-sponsor fees; new grant and search-term notes added.
+**Verified / refuted:** *Refuted:* the old "fiscal sponsor fee often 5–10%" (it's 7–14%); Gumroad "10% + 2.9%" in the A4 row (it's 10% + $0.50, with sources split on processing). *Confirmed:* G1 stays parked; nothing new to revisit.
+**Ideas added:** A10 (January numerology window, 29) · E3 (fiscal sponsor, 20, PARKED). **Re-scored:** A1 32→30 (S 5→4, review-count wall); E1 23→19 (S 3→1, cycle passed); A4 and A9 unchanged with notes.
+**Experiments:** Slot 1 (First Flame): approved, unlisted, not started. Slot 2 (C2): built, unpublished. Slot 3 (A4): spec + map done, build pending. **Kill clocks have not started because nothing is public.**
+**Shadow check:** this loop has produced about 20 documents and 0 listings. Cutting scope: no new research round is useful until a listing is live or Taylor makes the decisions below.
+**Notes for Taylor:**
+1. Deadline for the NC grant passed (Aug 31); next chance is ~June 2027 and needs one email to Granville Arts.
+2. The cheapest next step is to publish C2 and the four First Flame listings; January is the numerology demand peak, so the window is about 8 weeks.
+3. Open decisions: target monthly net and runway, seller of record (E2), VaaS (B1), nonprofit timing.
+**NEXT FOR OPENCODE** (≤5, each checkable on Taylor's machine):
+1. In a browser (etsy.com is blocked for me): search "name meaning", "name numerology", "personalized name reading"; record the top 10 listings (price, format, review count) and the 3 best "related searches"; paste into this log as a table.
+2. Read the live Etsy, Ko-fi and Gumroad fee pages; confirm Etsy 6.5% / 3% + $0.25 / $0.20, Ko-fi shop 5% and Gold's real monthly price, Gumroad 10% + $0.50 and whether processing is included. Correct `LISTINGS.md` §0–1b if any figure differs.
+3. Open ncarts.org's Artist Support page and Granville Arts' page; copy the eligibility lines and the next-cycle date (no application).
+4. Confirm whether `_INCOMING_FROM_C` is only a mirror of files already in the repo (spot-check 10 files by hash). If so, record it as "skipped, mirror" in the hub config notes.
+5. Continue your round-3 items 1–5 from "Round 2 close" (worktree repair, ledger bootstrap, A4 build, art search, export search).

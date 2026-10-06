@@ -39,7 +39,7 @@ Outsiders don't search for the internal names. Use the right-hand column in list
 - **Tax & entity (US / NC):**
   - Schedule C · self-employment tax · quarterly estimated tax (1040-ES)
   - 1099-K thresholds *(verify; they have changed repeatedly)*
-  - NC sales tax on digital products · marketplace facilitator (Etsy collects) *(verify which platforms collect)*
+  - NC sales tax on digital products · marketplace facilitator (Etsy collects) · *resolved 2026-10-06, still verify with an advisor:* NC taxes "specified digital products" (digital audio works, audiovisual works and digital books); a marketplace facilitator collects on sales it facilitates and its sellers needn't separately collect; remote-seller trigger is $100,000 of NC sales (the 200-transaction test ended 2024-07-01) ([Quaderno](https://quaderno.io/guides/north-carolina-sales-tax-guide), [Kintsugi](https://trykintsugi.com/sales-tax-guides/usa/north-carolina)). Taylor is an in-state seller, so the remote-seller threshold may not apply to them. Whether PDFs, wallpapers or a template count as taxable is unresolved; sales outside Etsy (Ko-fi, own page) are Taylor's to collect unless the platform acts as merchant of record. Gumroad is reported to be merchant of record since 2025 ([source](https://conversionproplus.com/blog/gumroad-fees-in-2026-is-there-a-better-alternative)); Ko-fi is not confirmed
   - assumed business name (DBA) certificate at the county register of deeds · EIN
   - single-member vs multi-member LLC · general partnership default
   - beneficial ownership reporting *(verify current status)*
@@ -50,7 +50,7 @@ Outsiders don't search for the internal names. Use the right-hand column in list
 - **Structures:**
   - 501(c)(3) · Form 1023-EZ *(verify fee and eligibility cap)* · Form 990-N e-postcard
   - fiscal sponsorship: Model A (comprehensive) vs Model C (pre-approved grant relationship)
-  - fiscal sponsor fee (often 5–10%) *(verify)*
+  - fiscal sponsor fee: *resolved 2026-10-06:* typically 7–14%; HCB 7%, Fractured Atlas 8% + $10/mo membership, Open Source Collective 10% ([HCB comparison](https://help.hcb.hackclub.com/article/18-what-is-the-fiscal-sponsorship-fee-and-how-much-is-it-why-does-hcb-take-a-fiscal-sponsorship-fee-how-does-it-compare-to-other-fiscal-sponsors))
   - board of directors · conflict-of-interest policy · bylaws
 - **Money rules:** restricted vs unrestricted funds · general operating support · UBIT (unrelated business income tax) · in-kind donations · matching funds · private inurement (why owners can't take the profit)
 - **Grant writing:** letter of inquiry (LOI) · RFP · logic model · theory of change · outputs vs outcomes · needs statement · evaluation plan · budget narrative · sustainability plan · capacity building
@@ -96,7 +96,7 @@ Outsiders don't search for the internal names. Use the right-hand column in list
 | Curated lists | awesome-selfhosted, awesome-obsidian, awesome-indie | — |
 
 ## 8 · Funders and programs worth checking *(verify eligibility and cycles)*
-- **NC:** NC Arts Council (Artist Support Grants via county partners) · NC Humanities · county arts councils in the Halifax / Northampton region · Golden LEAF Foundation (rural NC; funds organizations, not individuals) · Z. Smith Reynolds Foundation (organizations)
+- **NC:** NC Arts Council (Artist Support Grants via regional partners; Northampton County's is Granville Arts, FY26-27 deadline 2026-08-31 passed, next cycle unpublished as of 2026-10-06) · NC Humanities · county arts councils in the Halifax / Northampton region · Golden LEAF Foundation (rural NC; funds organizations, not individuals) · Z. Smith Reynolds Foundation (organizations)
 - **Regional / national (artists):** South Arts (NC is a member state) · Creative Capital · Foundation for Contemporary Arts · Awesome Foundation (small $1k grants, local chapters)
 - **Open source / tech:** GitHub Sponsors · Open Collective (Open Source Collective as fiscal host) · NLnet / NGI Zero (open-source grants; check eligibility)
 - **Fiscal sponsors:** Fractured Atlas · local community foundations
@@ -127,3 +127,10 @@ github.com topic:obsidian-template
 6. Which open-source tool can import Etsy and Ko-fi CSVs into the `/merchant/ledger` format with the least glue code?
 7. What does it cost to print a 54-card deck on demand, and what does it sell for?
 8. Which three communities would welcome C2 as a free tool rather than treat it as spam?
+
+## 10 · Search terms that worked (round 2, 2026-10-06)
+- `Artist Support Grant Northampton County regional partner deadline` → named Granville Arts and the Aug 31 deadline.
+- `fiscal sponsor fees comparison Hack Club Open Collective Fractured Atlas` → fee table.
+- `Etsy numerology digital download price reviews` / `name meaning download` → listing-count and median-price aggregators.
+- `North Carolina sales tax digital products remote sellers marketplace facilitator` → threshold and facilitator rule.
+- Sandbox note: etsy.com, ko-fi.com, gumroad.com and ncarts.org are blocked from the cloud runner, so fees and grant dates there are secondary-sourced until someone checks them in a browser.

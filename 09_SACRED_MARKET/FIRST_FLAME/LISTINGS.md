@@ -13,6 +13,7 @@
 - **AI disclosure.** If AI tools helped make any artwork, say so plainly in the description. This also settles the old "zero AI-generated imagery" vs. "AI-enhanced" contradiction: **be accurate, not absolute.**
 - **Etsy fees (US):** $0.20 listing (it renews every 4 months, and again each time a sale uses up quantity), 6.5% transaction fee, and 3% + $0.25 payment processing. Offsite Ads take 15% of a sale they generate. It's optional below $10k/yr, so **opt out at launch.**
 - **Ko-fi (free plan):** 0% on tips, **5% on shop and commission sales**, plus about 2.9% + $0.30 processing. **Turn off the "Contributor" programme**; new accounts are opted in by default and it adds another 5%. Gold ($12/mo) only pays off above about $240/mo in Ko-fi sales.
+- **Re-checked 2026-10-06 (secondary sources; etsy.com, ko-fi.com and gumroad.com were unreachable from the research sandbox):** Etsy's $0.20 / 6.5% / 3% + $0.25 and Offsite Ads 12–15% ([Checkoutpage](https://checkoutpage.com/blog/etsy-fees)); Ko-fi free plan 5% on shop sales, Contributor on by default ([Ruzuku](https://www.ruzuku.com/learn/articles/ko-fi-pricing)). **Open conflict:** Ko-fi Gold is quoted at $6/mo by some sources and $12/mo by others, so read the live pricing page before relying on the $240 break-even. Nothing else moved.
 
 ## 1. Pricing and take-home per sale
 
@@ -26,6 +27,25 @@ The old docs disagreed ($11/$22/$33 vs. $111/$222). **Launch at $11/$22/$33.** I
 | Digital download | $7 | ≈ $5.89 | ≈ $6.15 | 0 (instant download) |
 
 Record the fees on each sale row so the ledger nets them out.
+
+## 1b. Sub-$10 fee math (added 2026-10-06; needs checking against live fee pages)
+
+Etsy = $0.20 listing (renews per sale) + 6.5% + 3% + $0.25. Ko-fi (free plan, Contributor off) = 5% + about 2.9% + $0.30. Gumroad direct = 10% + $0.50 ([Conversion Pro](https://conversionproplus.com/blog/gumroad-fees-in-2026-is-there-a-better-alternative)); sources disagree on whether card processing is already inside that figure, so both cases are shown.
+
+| Price | Etsy net | Ko-fi net | Gumroad net (10% + $0.50 only) | Gumroad net (+ 2.9% + $0.30) |
+|---|---|---|---|---|
+| $5 | $4.08 (81%) | $4.31 (86%) | $4.00 (80%) | $3.56 (71%) |
+| $7 | $5.89 (84%) | $6.15 (88%) | $5.80 (83%) | $5.30 (76%) |
+| $9 | $7.70 (86%) | $7.99 (89%) | $7.60 (84%) | $7.04 (78%) |
+
+**Read:** Ko-fi wins at every price; Gumroad's flat $0.50 hurts most at $5. Gumroad is also 30% on Discover sales. Its one advantage is acting as merchant of record for sales tax (see the NC tax note in the ROUND_LOG). Launch A9 on Ko-fi/Etsy, not Gumroad.
+
+## 1c. Market evidence for the Decode listing (2026-10-06)
+
+- Aggregator data ([ListifyAI "numerology"](https://www.listifyai.net/keyword/numerology), [Kupkaike "name meaning download"](https://kupkaike.com/niche/name-meaning-download)): "numerology" has about 18,300 listings with a median price near $9.50 and page-one shops holding a median of ~1,400 reviews; "name meaning download" has about 6,500 listings at $5–13, flagged as a crowded head market. Demand peaks in January.
+- **Implication:** the $11 Mini sits just above the median for plain name-meaning PDFs. It needs the sigil art and the visible differentiator in the first photo, and you have no reviews against incumbents holding 1,000+. Don't compete on the head term.
+- **05-26 price points** (from OpenCode's archive pass: $9–15 map, $15–25 custom decode, $7–12 rulebook) bracket the $11/$22 tiers, so no change is forced. The $33 Deep Skry has no market comp yet.
+- **Not done:** I could not open individual Etsy listings (etsy.com blocked), so there is no 10-listing comp table and no evidenced long-tail keywords. The 13 tags stay as drafted. OpenCode/Taylor: open Etsy search for "name meaning", "name numerology" and "personalized name reading" and record the top 10 (price, reviews, format) and the "related searches" suggestions.
 
 ---
 
