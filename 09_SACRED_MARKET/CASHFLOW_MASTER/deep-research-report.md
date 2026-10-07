@@ -6,11 +6,71 @@ keywords_found: [budget, earn, etsy, gumroad, income, pod, printify, profit, rev
 pillar: "04_SACRED_CODEX"
 date_indexed: "2026-05-21"
 cashflow_rank: 9
+status_check_date: "2026-09-25"
+status_check_result: "structurally valid, new compliance exposure in Strategies 1/2/5"
 ---
 
 # AI-Powered Passive Income Strategies (2026)
 
 Generative AI unlocks many avenues to build *passive* income (front-loaded effort yielding ongoing earnings). Below are **8 major methods**, each explained with examples, tools, and realistic outcomes. We also include a **Master Prompt** you can use with an AI assistant to generate personalized AI-income plans tailored to your skills and resources.
+
+## Current Status Check (2026-09-25)
+
+Verified against live sources four months after this report was indexed (2026-05-21).
+**Bottom line: all 8 strategies are still structurally valid — nothing here has shut down —
+but three sections now carry real compliance exposure that didn't exist when this was written.**
+
+**Compliance changes — read before publishing anything from this report:**
+- **FTC "double disclosure" rule (effective 2026):** AI-assisted affiliate content, reviews, or
+  sponsored posts now require *two separate* disclosures — the commercial relationship AND the
+  AI involvement — not one combined label. A dedicated FTC AI enforcement unit stood up January
+  2026; penalties run up to **$53,088 per violation**, counted per post. Directly affects
+  **Strategy #1 (Content), #2 (Affiliate), and #7 (Prompt Packs)** wherever AI-written reviews,
+  comparisons, or marketing carry affiliate links.
+- **Etsy AI tagging (2026):** sellers must now tag AI-generated *or AI-enhanced* images at
+  listing time — this covers AI-touched product photos and virtual models, not just full AI art.
+  Directly affects **Strategy #5 (POD)**; undisclosed AI imagery risks listing removal.
+- **Amazon:** no new disclosure mandate, but AI-generated listing copy is now explicitly treated
+  as fully seller-authored for liability — an exaggerated AI description is a compliance risk,
+  not a gray area.
+- **Google AdSense / Search:** still origin-agnostic (AI content itself isn't penalized), but the
+  August 2026 spam update sharpened enforcement against "scaled content abuse" (mass-produced,
+  low-oversight AI pages). Strategy #1's "publish far more content" approach needs genuine
+  editorial oversight to stay safe, more than it did in May.
+- **SEC (robo-advisors, Strategy #6):** no new rules, but "Emerging Financial Technology" is a
+  named 2026 exam priority, and the SEC has already brought enforcement for "AI-washing"
+  (claiming AI capabilities a platform doesn't actually have). Marketing claims about AI-driven
+  returns face more scrutiny than in May.
+
+**Platform/tool changes:**
+- **Printful + Printify are now sibling brands under one parent (Fyul, merged late 2025).** Still
+  separate accounts/catalogs/pricing as of mid-2026, no forced migration — but both raised prices
+  in Feb 2026 (Printify Premium $29→$39/mo; Printful raised several per-item shipping rates).
+- **Gumroad's POD pipeline is effectively dead:** Gumroad changed its platform to disallow
+  creating new physical/POD products, so a Gumroad→Printful flow no longer works for new listings
+  (existing synced orders still process, for now). Doesn't block Strategy #5 directly (this report
+  routes POD through Printful/Etsy/Shopify) but rules out Gumroad as a POD front-end if you were
+  considering it.
+- **PromptBase (Strategy #7) is active and expanding**, not stagnant: added "PromptBase Select"
+  (subscription revenue share, Feb 2026) plus prompt chains, custom-GPT system prompts, and full
+  prompt-based apps. The report's $197 one-time-pack framing is dated — the marketplace has moved
+  toward subscription pricing.
+
+**Unchanged:** the underlying tools (ChatGPT-class assistants, Midjourney-class image models,
+no-code builders, robo-advisors) all remain live and in the same competitive shape described
+below. The dollar figures throughout this report (e.g. "$3,674/month," "$2,074 monthly profit")
+were unverified single-source citations when originally written and remain unverifiable now —
+read them as illustrative anecdotes, not benchmarks to plan against.
+
+Sources: [Etsy AI Generated Content Policy Update 2026](https://www.rewarx.com/blogs/etsy-ai-generated-content-policy-update) ·
+[Google AdSense AI Content Policy 2026](https://adsenseaudit.net/guides/adsense-ai-content-policy-2026) ·
+[PromptBase Select for Creators](https://promptbase.com/blog/promptbase-select-creators) ·
+[FTC AI Disclosure Rules for Creators (2026 Guide)](https://blog.promise.legal/startup-central/ftc-ai-disclosure-rules-creators-2026/) ·
+[SEC 2026 Examination Priorities](https://www.wealthmanagement.com/regulation-compliance/sec-2026-examination-priorities-what-financial-services-firms-need-to-know) ·
+[Printify Pricing Changes 2026](https://mydesigns.io/blog/printify-pricing-changes-2026/) ·
+[Can I still use the Gumroad integration? – Printful Help Center](https://help.printful.com/hc/en-us/articles/21948476373532-Can-I-still-use-the-Gumroad-integration)
+
+---
 
 ## 1. AI-Generated Content and Digital Assets  
 Leverage AI (ChatGPT, DALL·E, Midjourney, etc.) to create content at scale and monetize it via ads, affiliate links, or sales. This includes: blogging, niche websites, YouTube channels, stock images, AI music, and more. For example, one creator used automated AI-written articles and affiliate links to grow a niche blog from $0 to **$3,674/month in 14 months**【6†L99-L107】. Key points:  

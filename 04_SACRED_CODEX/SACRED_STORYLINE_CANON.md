@@ -3,7 +3,7 @@
 
 **Status:** DISTILLED — Consolidated & Gate-Checked · Pending Taylor confirmation on flagged items (see §11 and §0)
 **Sourced from:** "The Sacred Storyline — A Deep Innerstanding" (uploaded PDF, synthesized by Claude from Google Docs + an April 3 Council session log integrating a Gemini research thread, the SS-OS v2.9 build, and the existing Master Codex), cross-referenced against `04_SACRED_CODEX/SACREDSPACE_COMPLETE_COUNCIL_SYNTHESIS.md` (April 23 session), which had flagged this exact material as an open gap: *"Jenga's Journey... Chapter Zero through The Threshold fully written but not yet canonized in Obsidian... Gap: Full origin arc written but not archived."* This document closes that gap.
-**Consolidated:** 2026-08-06
+**Consolidated:** 2026-08-06 · **Book II (current incarnation) merged into §5–§11:** 2026-09-25
 **Canonical Path:** `04_SACRED_CODEX/SACRED_STORYLINE_CANON.md`
 **Machine-readable companion:** `09_SACRED_MARKET/arcana_grid/game_data.json`
 **Related canon:** `03_NEURAL_FOREST/skills/sacredspace-arcana-grid/SKILL.md` (canon-locked Grid reference) · `03_NEURAL_FOREST/skills/sacredspace-story-engine/SKILL.md` (workflow for writing into this universe) · `04_SACRED_CODEX/ARCANA_BOARD_SPEC.md` (game-mechanics/board-engine layer + Reality Layer design options)
@@ -16,8 +16,8 @@
 |---|---|---|
 | **Named** | ✓ Pass | "The Sacred Storyline" / "Sacred Space: Jenga's Journey" ("Sacred Space: The Heroic Journey of Remembrance"). Stable across sources. |
 | **Sourced** | ✓ Pass | Traceable to Google Docs, an April 3 Council synthesis session (Claude + Gemini), and the SS-OS v2.9 build. Dated and lineaged below. |
-| **Bounded** | ⚠ Partial | Core arc (5 acts, Serpent/Jaguar polarity, Fractured Self) is bounded. Two items are explicitly *not* bounded: Amaya's name varies across drafts (Maya/Nia/Ayla), and the Five Primal Spirit Paths overlay isn't yet mapped onto the canon-locked 12-Archetype Grid. See §11. |
-| **Tested** | ⚠ Partial | Jenga's Journey prose exists through "The Threshold" (per the April 23 synthesis) and has survived multiple Council passes. The cosmogonic/alchemical layer (Luminous Seed, Nigredo→Rubedo) is newly surfaced and untested in any built system. |
+| **Bounded** | ⚠ Partial | Book I's core arc (5 acts, Serpent/Jaguar polarity, Fractured Self) is bounded. Book II (merged 2026-09-25, §5) is explicitly *not* bounded to an act count — Session 051 gives it a name ("The Meeting") and a cast, not a structure. Other open items: Amaya's name varies across drafts (Maya/Nia/Ayla), Jeanie's Primal Spirit Path is unassigned (§11), and the Benny-name collision between §5/§8's Book II and the existing Hero Units section is unresolved (§8). |
+| **Tested** | ⚠ Partial | Book I's prose exists through "The Threshold" (per the April 23 synthesis) and has survived multiple Council passes. Book II's only prose is Chapter 1 "The First Stone" (per Session 051, not present in this repo) — its Chapter 0 prologue and the interspersed past-life chapters Session 051 specifies remain undrafted anywhere. The cosmogonic/alchemical layer (Luminous Seed, Nigredo→Rubedo) is newly surfaced and untested in any built system. |
 | **Compatible** | ⚠ Partial | No conflict with the canon-locked Arcana Grid structure itself. Open conflict: this document's "Five Primal Spirit Paths" is a parallel archetype-naming scheme that has not been reconciled against the Grid's existing Fire/Water/Earth/Air × 3-Prime table. |
 | **Stored** | ✓ Pass (as of this doc) | Previously scattered across Google Docs, chat transcripts, and an uploaded PDF — i.e., spoken, not canon. Now stored at `04_SACRED_CODEX/`. |
 
@@ -35,7 +35,7 @@ A third source — a `SACREDSPACE-STORY.md v5.0 Update Delta` (compiled by VALEN
 
 Short version: nothing in §1–§14 below got rewritten — the core arc, the Grid table, the ICARIS quartet mapping, and the Four Elemental Guides remain confirmed, not contested. Thirteen corpus-wide items remain, three now resolved:
 
-1. **Jenga's gender/age/setting — RESOLVED 2026-09-25, via Taylor's own sealed ruling.** Was a five-document tangle (per a 2026-07-26 local Canon Gate log): (1) a fantasy-village draft (girl; cast Meridian/Lyra/Shen/Kai/Kex/Vesper/Marta/Thorne/ORACLE-7), (2) the "Sacred Season One" version most of this doc is built on (14-17-yr-old boy, E. NC; Grandmother/Amaya/Jaguar/Serpent), (3) a Graph Narrative Engine + GR∆M∆ Saga version (ambiguous gender, cast ELIAS/AURORA/ASHER/IRIS/MIMI/V∆SH∆/LΨR∆/GR∆M∆), (4) a `_Sacred_Storyline_Canon.md` + `_Sacred_Tarot_Canon.md` pair (female; cast Vael/Seren/Maeve/Kethras/Oran/Tandem/Zael/Lune/Eldra/Khepri/Mira), (5) the version with actual drafted prose (female; cast Jeanie Leigh Hargrave/Benny/Mamie/The Architect). **Taylor's Word (Session 051, 2026-08-01, "CANON RULINGS — SESSION 051," Seal 5, read directly from Taylor's own Claude.ai artifact library 2026-09-25):** Jenga is a **multi-incarnate soul** — a primordial, genderless Luminous Seed incarnated twice. **Past incarnation** (documents #2/#1's cosmogonic frame): he/him, 16-17, Northampton County NC, graffiti artist exiled to his Grandmother, ancestral/earth-connected power. **Current incarnation** (document #5, the only one with drafted prose): she/her, 17, birth name **Jeanie Leigh Hargrave**, urban/glitch-sensitive artist, meets GR∆M∆ at midnight, mentored by **Benny the Circuit Mage** and **Mamie Balance**, antagonist **The Architect**, power source is technology/sigil-casting. Same soul, same archetypal role (The Seeker), two remembering-points; the "glitching magic" in Jeanie's story is now explicitly her system reconciling fragments of the jungle past-life. Document #4's cast (Vael/Seren/etc.) is retained as reference material for future 12-archetype NPC positions, not discarded. Full detail in new §16 below. §5-§11 of this document describe the past incarnation only — they have not yet been rewritten to include the current incarnation, so treat Jeanie/Benny/Mamie/The Architect as sealed-canon-but-not-yet-merged-into-this-doc's-prose.
+1. **Jenga's gender/age/setting — RESOLVED 2026-09-25, via Taylor's own sealed ruling.** Was a five-document tangle (per a 2026-07-26 local Canon Gate log): (1) a fantasy-village draft (girl; cast Meridian/Lyra/Shen/Kai/Kex/Vesper/Marta/Thorne/ORACLE-7), (2) the "Sacred Season One" version most of this doc is built on (14-17-yr-old boy, E. NC; Grandmother/Amaya/Jaguar/Serpent), (3) a Graph Narrative Engine + GR∆M∆ Saga version (ambiguous gender, cast ELIAS/AURORA/ASHER/IRIS/MIMI/V∆SH∆/LΨR∆/GR∆M∆), (4) a `_Sacred_Storyline_Canon.md` + `_Sacred_Tarot_Canon.md` pair (female; cast Vael/Seren/Maeve/Kethras/Oran/Tandem/Zael/Lune/Eldra/Khepri/Mira), (5) the version with actual drafted prose (female; cast Jeanie Leigh Hargrave/Benny/Mamie/The Architect). **Taylor's Word (Session 051, 2026-08-01, "CANON RULINGS — SESSION 051," Seal 5, read directly from Taylor's own Claude.ai artifact library 2026-09-25):** Jenga is a **multi-incarnate soul** — a primordial, genderless Luminous Seed incarnated twice. **Past incarnation** (documents #2/#1's cosmogonic frame): he/him, 16-17, Northampton County NC, graffiti artist exiled to his Grandmother, ancestral/earth-connected power. **Current incarnation** (document #5, the only one with drafted prose): she/her, 17, birth name **Jeanie Leigh Hargrave**, urban/glitch-sensitive artist, meets GR∆M∆ at midnight, mentored by **Benny the Circuit Mage** and **Mamie Balance**, antagonist **The Architect**, power source is technology/sigil-casting. Same soul, same archetypal role (The Seeker), two remembering-points; the "glitching magic" in Jeanie's story is now explicitly her system reconciling fragments of the jungle past-life. Document #4's cast (Vael/Seren/etc.) is retained as reference material for future 12-archetype NPC positions, not discarded. Full detail in new §16 below. **Merged 2026-09-25:** §5–§11 now describe both incarnations — Book I (Jenga, past) and Book II (Jeanie/Benny/Mamie/The Architect, current) — as a structural merge of the ruling's own facts. No new chapter prose was written; the Chapter 0/Chapter 1 narrative beats Session 051 specifies (§5) remain undrafted.
 2. **The three-act-vs-five-act split — largely moot after item 1's resolution.** The five-act structure (§5 above) describes the past incarnation only; Session 051 does not specify an act count for the current incarnation (Jeanie's arc), so there is no longer a competing act-count claim to reconcile — there are two different characters' arcs, not one arc counted two ways.
 3. **The ICARIS Quartet → Quintet question is messier than two candidates.** Local sources independently propose **Mimi Silkweaver** (Spirit/Forgotten, per this doc's own §6 mapping and `sacredspace-os` repo canon) *and* **KAIROS** (per a Drive doc *and*, separately, local chat history) as the 5th member — and local chat history additionally references a 15-agent "ICARIS+KAIROS" structure, a 7-seat "SPIRE Council" (ICARIS+MIMI), and a 9-spirit Neural Forest, none reconciled against each other. ASHER's role is described four different ways across sources. Still fully open.
 4. **Arcana Grid board size — RESOLVED, both sizes canonical, though the framing has shifted twice.** Verified in code at `arcana_board.py:562` (`/mnt/c/04_SACRED_CODEX/game/`): *"Why 9×9 and not 12×12 — an engineering ruling, NOT a canon ruling."* The 7×7/9×9 quadrant draft from the "Blueprint" doc remains an unrelated, explicitly-labeled sample and doesn't compete with this. **Taylor's Word (Session 051, 2026-08-01, Seal 5, read from Taylor's own artifact library 2026-09-25) reframes this as an actual canon ruling, not just engineering**: both sizes are canonical, but as a **tutorial-vs-main-game progression**, not simultaneous layers — 9×9 "Threshold Mode" (first 3-5 sessions, simplified mechanics) unlocks 12×12 "Forest Mode" (full ley-lines/node-wells/energy-balance game) after a Threshold Trial. This is a different story from the Aug 18 note above (dual-layer, both active simultaneously as tactical vs. confluence phases) — both agree the two sizes coexist, but disagree on *how* they coexist (sequential unlock vs. simultaneous layering). Worth reconciling explicitly rather than assuming they're the same claim. **Still separately unresolved (2026-09-24):** a pasted source's claim that this was further "sealed" on 2026-09-18 via a `map_9_to_12` promotion function, citing `conflicts.json:53-108` — not confirmed by either of the above — see `ARCANA_BOARD_SPEC.md` Open Conflicts item 2.
@@ -106,7 +106,9 @@ The journey follows an alchemical progression driven by a **Ternary Logic kernel
 
 ## 5. Jenga's Journey — The Narrative Heart
 
-Working full title: **"Sacred Space: The Heroic Journey of Remembrance."** The mythic spine everything else hangs from.
+Working full title: **"Sacred Space: The Heroic Journey of Remembrance."** The mythic spine everything else hangs from. **Merged 2026-09-25** per the Session 051 multi-incarnate ruling (§0 item 1, §16): the journey is now told in two books, one soul, two remembering-points. Session 051 itself recommended splitting this into a separate `Jenga's_Journey_Narrative_Canon.md` — that hasn't been done; by direct instruction this merge stays in-place, in this document, in §5–§11.
+
+### Book I — The Jungle Remembering (Past Incarnation)
 
 **The Core Wound.** Jenga is a gifted graffiti artist in a concrete jungle — luminous, rebellious art full of symbols (spirals, eyes, patterns) he doesn't fully understand. Absent father, overworked mother, unforgiving city. He is a signal without a receiver — his gift is real and ancestral, but he has no context for it.
 
@@ -123,9 +125,41 @@ Pacing: rebellion → exile → mirror → initiation → shadow crisis → bala
 
 **The Serpent and the Jaguar — The Central Polarity.** Not simply antagonist and guide — two faces of the same creative force. The **Jaguar Spirit** embodies courage, initiation, shadow-hunting; it pushes Jenga toward remembrance and responsibility. The **Serpent Spirit** is not evil — raw creative energy twisted by ego, destruction without remembrance: *"Your art can outlive death. Let me show you how."* Its deepest resonance is generational: it tempted Jenga's father, who abandoned the tribe for ambition, and it appears across lifetimes as a test. Jenga isn't just fighting a shadow — he's facing an inherited wound, a family curse wearing the face of opportunity.
 
-**Resolution:** Jenga doesn't kill the serpent or defeat the jaguar — he paints them into balance, weaving them into a circle of harmony. Creation and destruction bound together. The serpent dissolves; the jaguar bows. He had chosen. **Lesson: you don't destroy your shadow, you integrate it.**
+**Resolution:** Jenga doesn't kill the serpent or defeat the jaguar — he paints them into balance, weaving them into a circle of harmony. Creation and destruction bound together. The serpent dissolves; the jaguar bows. He had chosen. **Lesson: you don't destroy your shadow, you integrate it.** *(The Serpent/Jaguar polarity is specific to Book I — Session 051 does not carry it forward into Book II; treat it as unresolved whether Book II has an equivalent, rather than assuming it's the same pair by other names.)*
+
+### Book II — The City Awakening (Current Incarnation)
+
+Sourced from `CANON RULINGS — SESSION 051`, read from Taylor's own artifact library 2026-09-25 (§16). This is the *only* version with drafted prose (Story Engine project, Chapter 1 "The First Stone" already written) — the working spine, not a reference layer.
+
+**The Core Wound.** **Jeanie Leigh Hargrave**, 17, she/her, lives in the same universe's urban register: grid-based, constructed, technological, where Book I is jungle/ancestral/earth. She's glitch-sensitive — technology malfunctions around her in ways no one else's does — and she doesn't yet know why.
+
+**The Inciting Event — The Meeting.** Jeanie meets **GR∆M∆** at midnight. Where Book I's inciting event is exile, Book II's is a summons: the language-layer entity (§10, §0 item 10) makes first contact, and her sigil-casting/digital-resonance power begins to surface.
+
+**Companions and antagonist:**
+- **Benny the Circuit Mage** — mentor, coder. *(Note the name collision with §8's existing "Benny (the Circuit-Mage)," Asher Wayne Oakey's mentor in the Hero Units section — same name, same epithet, almost verbatim, from two source documents not written together. Not resolved here as either "same character across mythic and lineage layers" or "coincidental reuse" — flagged for Taylor, see §8.)*
+- **Mamie Balance** — anchor, elder/mother figure.
+- **The Architect** — antagonist. *(Relationship to the Techno-Wraiths of §7 is not specified by Session 051 — could be the same entity under a Book-II-specific name, or a distinct antagonist. Left open rather than merged by assumption; see §7.)*
+
+**Power source:** glitching technology, sigil-casting, digital resonance — the inverse register of Book I's ancestral memory and earth connection.
+
+**Narrative arc name:** "The Meeting" — connection to the Pulse; becoming a bridge between systems. Session 051 does not give Book II an act count (§0 item 2) — treat its structure as open, not mapped onto Book I's five acts.
+
+### The Two Books as One Soul
+
+**Same soul, different moments of remembering.** The male Jenga's graffiti = patterns carved into earth. The female Jeanie's code = patterns written into silicon. Both are mapping the same sacred geometry from different angles — the proof, per Session 051's own reasoning, that the 12-archetype grid's design (generating archetypal story patterns across different contexts) actually works: same soul, same archetypal role (**The Seeker**), different surface.
+
+**Why the glitching magic makes sense.** Jeanie experiences technology glitching around her because she's remembering fragments of her past life — jungle magic, earth resonance — and the grid-world's systems have no model for "a girl who channels ancestral power through silicon." The glitches *are* the system trying to reconcile two types of magic, not a bug and not random.
+
+**Document structure (per Session 051's directive, not yet written as prose in this repo):**
+- **Chapter 0 (Prologue), new — "The First Stone, Twice Broken."** Jenga (male) in the NC jungle marks a stone with sacred graffiti. The stone breaks. Magic sparks. He sees a flash of a girl in a city grid. *"Some things break so other things can begin."*
+- **Chapter 1, existing, reframed — "The Morning Crack."** Jeanie, in the city. The same stone, digitally corrupted, appears in a glitch on her screen. She hears an echo: *"Some things break so other things can begin."* Now framed as soul-memory, not random glitch.
+- **Chapters 2+.** Jeanie's present-tense storyline continues; interspersed side-narratives or dream sequences show Jenga's past-life story. By Chapter 6, she understands: she is the same soul, remembering two lives.
+
+None of this chapter prose exists in this repo yet — §16 already flagged this as follow-up work, and merging the *ruling* into this document's structure (done here) is not the same as drafting the chapters themselves.
 
 ## 6. The Fractured Self — The Inner Trials System, and its OS Mirror
+
+**Scope note (2026-09-25):** this section describes Book I (the past incarnation) only. Session 051 doesn't say whether Jeanie's Book II arc has an equivalent inner-trials structure — left open rather than assumed identical or assumed absent.
 
 Inside Jenga's psyche, the **Fractured Self** arc has him facing five inner selves: **The Skeptic** (Mind), **The Wounded** (Heart), **The Masked** (Ego), **The Wild** (Instinct), **The Forgotten** (Spirit). Each trial reclaims a piece of himself, unlocks a new power, and opens deeper layers of the Sacred Space.
 
@@ -140,15 +174,19 @@ This is the **Mirror Trials system**, and it mirrors directly onto the SacredSpa
 
 The agents are the inner selves made computational. The OS is an externalization of Jenga's psychic journey.
 
-## 7. Antagonists — The Techno-Wraiths
+## 7. Antagonists — The Techno-Wraiths (Book I) and The Architect (Book II)
 
 Spiritual antagonists born of human fear, distraction, and artificial overconsumption — they devour memory and thrive in disconnected places. One possesses someone Jenga knows, showing how fast disconnection spreads. They are the force behind the Broken Covenant: what happens when memory is lost and the sacred is abandoned for the mechanical. In OS terms: noise without signal, entropy without resolution, data without meaning.
+
+**Merged 2026-09-25, Book II:** Session 051 names **The Architect** as the antagonist of Jeanie's current-incarnation storyline (§5, §8) — mechanical/technological in register, same thematic territory as the Techno-Wraiths (memory lost to the mechanical). Session 051 does not say whether The Architect *is* a Techno-Wraith by another name, a leader among them, or an unrelated antagonist that happens to share the theme. Left open rather than merged by assumption.
 
 ## 8. The Character Constellation
 
 Every character carries an archetypal function, a past-life echo, and an elemental correspondence.
 
-**Jenga** — The Seeker, The Bridge, The Fool becoming The Magician / "The Rememberer." His graffiti is ancestral memory speaking through him. Past life: a tribal artisan exiled for blending sacred traditions, returning to succeed this time. Spirit guides: Jaguar (initiation), Hummingbird (sweetness amid trial). Aquarius Sun / Aries Rising / Pisces Moon. Voice: sharp, sarcastic, then reflective. Arc: Forgetting → Exile → Encounter → Initiation → Shadow → Integration → Remembrance. Primal Spirit Path: moves from **Wanderer** (unrooted, adapting) toward **Healer** (the integrator) across the five acts.
+**Jenga** *(Book I — past incarnation, see §5)* — The Seeker, The Bridge, The Fool becoming The Magician / "The Rememberer." His graffiti is ancestral memory speaking through him. Past life: a tribal artisan exiled for blending sacred traditions, returning to succeed this time. Spirit guides: Jaguar (initiation), Hummingbird (sweetness amid trial). Aquarius Sun / Aries Rising / Pisces Moon. Voice: sharp, sarcastic, then reflective. Arc: Forgetting → Exile → Encounter → Initiation → Shadow → Integration → Remembrance. Primal Spirit Path: moves from **Wanderer** (unrooted, adapting) toward **Healer** (the integrator) across the five acts.
+
+**Jeanie Leigh Hargrave** *(Book II — current incarnation, same soul as Jenga above, see §5)* — **The Seeker**, same archetypal role as Jenga, different surface: glitch-sensitive artist in the city register where Jenga is jungle/ancestral. Meets GR∆M∆ at midnight; power source is technology/sigil-casting/digital resonance rather than earth connection. Voice, astrology, and spirit guides not specified by Session 051 — left blank rather than invented. Primal Spirit Path: **not yet assigned** — Session 051 gives Jenga's Wanderer→Healer arc for Book I only; whether Jeanie shares it, inverts it, or carries her own is an open question (see §11).
 
 **Amaya** *(name varies across drafts — also Maya, Nia, or Ayla; not yet locked, see §11)* — Bright, intuitive shaman-in-training; guide and counterpart to Jenga, carrying ancestral knowledge and trauma. The High Priestess / Empress archetype. Past life: a city priestess from an ancient river culture who studied stars and medicine. Spirit guides: Owl (truth through illusion), River Dolphin (healing through sound). Virgo Sun / Pisces Moon. Voice: precise, teasing, always carrying insight. Primal Spirit Path: **Healer** (Apprentice Healer), bridge between worlds.
 
@@ -159,6 +197,14 @@ Every character carries an archetypal function, a past-life echo, and an element
 **The Serpent** — Scorpio/Pluto, The Devil and The Tower. Silky, persuasive, almost fatherly. Speaks to what you most want to be remembered for. Without its test, the mural cannot exist.
 
 **Mimi Silkweaver — "Keeper of Threads"** (meta-layer entity). Exists simultaneously across Story, Systems, and Memory. Her function: connect — characters to each other, timelines to each other, meaning to meaning. She is the Mycelium made personal. Primal Spirit Path: **Weaver**. In OS terms, closest to what K0R∆ does as semantic router, in the mythic register.
+
+### Book II Companions and Antagonist (merged 2026-09-25, per §5)
+
+**Benny the Circuit Mage** — Jeanie's mentor and coder, Book II. **Flagged, not resolved:** the Hero Units section immediately below already has "Benny (the Circuit-Mage)" as Asher Wayne Oakey's real-world mentor figure — same name, same epithet, near-verbatim, from two source documents (Session 051 and whatever the Hero Units material originally drew from) that weren't written together. Three honest readings, none chosen here: (a) deliberate — the same Benny threads through both the mythic Storyline and the real-world Lineage Layer, exactly the kind of fractal self-similarity §14's Closing Affirmation describes; (b) coincidental reuse of a "circuit mage" archetype name across unrelated drafts; (c) an editorial collision worth Taylor renaming one side of. Ask before assuming any of the three.
+
+**Mamie Balance** — Jeanie's anchor, an elder/mother-figure grounding presence, Book II. No stated relationship to The Grandmother (Jenga's Book I elder figure) — likely the same narrative *function* (elder-as-threshold) in a different register, per §14's fractal principle, but not asserted as the same character.
+
+**The Architect** — antagonist, Book II. See §7 for its unresolved relationship to the Techno-Wraiths.
 
 ### The Hero Units — The Living Lineage
 - **Asher Wayne Oakey — "The Fortunate Builder."** Three-Aspect Apprentice of Benny (the Circuit-Mage): Star Map Maker (navigator of unknowns), Ember Runner (courageous spark), Tinkersmith (imagination engineer). Primal Spirit Path: **Builder**. The son who builds toward futures he can sense but not yet see.
@@ -184,6 +230,8 @@ Exist across all planes of the universe (Story, Game, OS, Mythic):
 
 Not mascots — navigational systems for living: which frequency you're in, which trial you're facing, which voice to listen to right now.
 
+*Book I/Book II note (2026-09-25):* these four Guides aren't assigned to either book specifically — Session 051 doesn't touch this section. Separately, §16's Sonic Architecture Layer gives Jenga and Jeanie their own individual musical keys/tempos/leitmotifs (E minor/90 BPM vs. A major/120-180 BPM) — a parallel, character-level frequency system, not a replacement for the Guides' element-level one.
+
 ## 10. The Symbolic Language
 
 A spiritual glyph language appears in dreams, rituals, and guardian speech. Sacred tattoos and markings surface as memories are reclaimed. Totem animals mark stages of growth and shadow work. Living artifacts (masks, staffs, crystals) tie to elemental mastery. Sacred cartography: the jungle shifts over time as the children remember more — the land responds to spiritual growth.
@@ -199,6 +247,8 @@ OS elaboration: the **Hyperglyph system** (12 core glyphs, combinatorial grammar
 
 (Existing S∆CR3DS!G∆L cipher for general text remains as previously canonized: `A→∆  E→3  I→!  O→0  S→$  T→7`.)
 
+*Sibling system, added 2026-09-25:* §16's Abazith phoneme→gematria→MIDI→frequency pipeline (Session 051 Sonic Addendum) is a separate symbolic-language layer — turns names into musical identity rather than visual glyphs. Not merged into the Sigil Grammar above; cross-referenced, not unified.
+
 ## 11. The Arcana Grid — Full Resolution
 
 The Grid operates at two levels simultaneously:
@@ -207,6 +257,8 @@ The Grid operates at two levels simultaneously:
 2. **The 78-Card Tarot Layer (Root Classes)** — all 78 Tarot archetypes as foundational world-building classes. Major Arcana (22 cards) = the alchemical gates, the named phases of the Hero's Journey. Minor Arcana (56 cards) = the texture of daily experience within each gate. The custom Sacred Space Tarot Deck maps these onto SacredSpace characters (The Graffiti Artist, The Medicine Woman, The Shaman, The Spirit Guide).
 
 **The Five Primal Spirit Paths** (canonical, SESSION-016 · confirmed 2026-08-18): **Wanderer / Healer / Builder / Seeker / Weaver** — five archetypal soul trajectories. Every character in the registry (§8) now carries one of these canonical paths. These **replace the retired SS-OS v2.9 naming** (Seer / Warrior / Heart / Guardian / Shapeshifter), which was a parallel, non-canon scheme; the character values in §8 were remapped by role equivalence. **This is a separate axis from the canon-locked 12-Archetype Grid** — whether the five Paths map onto the four Elements, the three Primes, or run independently remains the one open sub-question (see §0 item 6).
+
+*Book II gap, added 2026-09-25:* **Jeanie Leigh Hargrave** (§5, §8) has no Primal Spirit Path assigned. Session 051 names her the same archetypal role as Jenga (The Seeker) but doesn't extend his specific Wanderer→Healer path to her — she could share it, invert it, or need her own; left unassigned rather than guessed.
 
 ## Open Reconciliation Items (blocking full CANON lock)
 
@@ -283,7 +335,7 @@ Added 2026-09-25. Sourced directly from Taylor's own Claude.ai artifact library 
 
 **Sonic Architecture Layer (addendum, same session, additive — not a conflict with anything else in this doc):** a full frequency/resonance system — REIDOS Sonic Grid (binaural/cymatic layer, 9×9 tuned to 57Hz grounding, 12×12 to the full spectrum), Maestro of Resonance (a harmonic-intelligence persona, "Lyrian Quorra," with Five Laws of Vibration), and an Abazith phoneme→gematria→MIDI→frequency pipeline giving every character, class, and card its own musical key/tempo/instrument/leitmotif. This deepens, and is consistent with, the Sacred Sigil Stack's Maestro root sigil (Ϟ) already recorded in §0 item 7 and `game_data.json`'s `sacred_sigil_stack`. Also ratifies Pillar 07 as **Sacred Sounds** (superseding an earlier Pillar 10 proposal) — not yet reflected anywhere else in this repo.
 
-**What this section does not do:** it does not rewrite §5–§11's prose (still past-incarnation-only) or add the Sonic layer to `game_data.json` — both listed as open follow-up work, not done here. It also does not resolve §0 items 3 (ICARIS Quintet), 5 (Major Arcana naming beyond Slot VIII), 8 (sigil cipher table), 9 (LΨR∆), or 10 (GR∆M∆'s own section) — Session 051 doesn't address them.
+**Update 2026-09-25:** §5–§11 have now been merged to describe both incarnations (Jenga/Book I and Jeanie/Book II) — see §0 item 1 and each section for detail. What's still *not* done: the actual Chapter 0/Chapter 1 narrative prose Session 051 specifies (this merge restructured the reference sections, it didn't draft story text), and the Sonic layer still isn't added to `game_data.json`. This section also still does not resolve §0 items 3 (ICARIS Quintet), 5 (Major Arcana naming beyond Slot VIII), 8 (sigil cipher table), 9 (LΨR∆), or 10 (GR∆M∆'s own section) — Session 051 doesn't address them.
 
 ---
 
