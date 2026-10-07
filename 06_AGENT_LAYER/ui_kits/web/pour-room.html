@@ -1,0 +1,453 @@
+<!-- @dsCard group="UI Kit — Web" name="Pour Room" subtitle="V∆SH∆ atelier — three chambers, pigment bleed, Prismatic Archive" viewport="820x1080" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pour Room — V∆SH∆</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
+<style>
+:root {
+  --void:   #030508;
+  --gold:   #C8A44A;
+  --bio:    #72E87A;
+  --fire:   #D45A28;
+  --water:  #3878A0;
+  --aether: #7A5CA5;
+  --bronze: #8B7355;
+  --parch:  #C8C4BB;
+  --pure:   #EEF6EF;
+  --vasha:  #9B3FC8;
+  --steam:  rgba(155,63,200,0.12);
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  width: 820px; height: 1080px;
+  background: var(--void);
+  font-family: 'Cormorant Garamond', serif;
+  color: var(--pure);
+  overflow: hidden;
+  display: flex; flex-direction: column;
+  position: relative;
+}
+
+/* === PIGMENT BLEED — full-page atmospheric header === */
+.bleed-canvas {
+  position: absolute; top: 0; left: 0; width: 100%; pointer-events: none; z-index: 0;
+}
+
+/* === HEADER === */
+.pr-header {
+  position: relative; z-index: 10;
+  padding: 32px 36px 24px;
+  border-bottom: 1px solid rgba(155,63,200,0.2);
+}
+.pr-eyebrow {
+  font-family: 'JetBrains Mono', monospace; font-size: 9px;
+  letter-spacing: 0.2em; color: rgba(155,63,200,0.6); text-transform: uppercase; margin-bottom: 10px;
+}
+.pr-title {
+  font-family: 'Cinzel', serif; font-size: 32px; font-weight: 700;
+  letter-spacing: 0.06em; color: var(--pure);
+  text-shadow: 0 0 40px rgba(155,63,200,0.4);
+}
+.pr-title em { color: #C87AE0; font-style: normal; }
+.pr-sub {
+  font-size: 14px; font-style: italic; color: rgba(200,195,185,0.55); margin-top: 6px;
+  letter-spacing: 0.05em;
+}
+
+/* mode tabs */
+.mode-tabs {
+  display: flex; gap: 1px; margin-top: 20px;
+}
+.mode-tab {
+  padding: 8px 20px; border: 1px solid rgba(155,63,200,0.2);
+  background: transparent; cursor: pointer;
+  font-family: 'Cinzel', serif; font-size: 11px; letter-spacing: 0.14em;
+  color: rgba(200,195,185,0.4); text-transform: uppercase; transition: all 0.25s;
+}
+.mode-tab:hover { border-color: rgba(155,63,200,0.4); color: rgba(200,140,240,0.6); }
+.mode-tab.active {
+  border-color: var(--vasha); background: rgba(155,63,200,0.1); color: #C87AE0;
+}
+.mode-tab.pour-active {
+  border-color: var(--fire); background: rgba(212,90,40,0.12); color: #E8784A;
+  animation: pour-pulse 2.5s ease-in-out infinite;
+}
+.mode-tab.after-active {
+  border-color: rgba(200,164,74,0.5); background: rgba(200,164,74,0.08); color: var(--gold);
+}
+@keyframes pour-pulse { 0%,100%{box-shadow:none} 50%{box-shadow:0 0 16px rgba(212,90,40,0.3)} }
+.mode-desc { font-size: 11px; font-style: italic; color: rgba(200,195,185,0.38); margin-top: 8px; min-height: 16px; letter-spacing: 0.05em; }
+
+/* === THREE CHAMBERS === */
+.chambers {
+  display: grid; grid-template-columns: 1fr 1fr 1fr;
+  gap: 1px; background: rgba(155,63,200,0.1);
+  flex: 1; position: relative; z-index: 10;
+  overflow: hidden;
+}
+.chamber {
+  background: var(--void); display: flex; flex-direction: column;
+  padding: 0; overflow: hidden; position: relative; cursor: pointer;
+  transition: background 0.3s;
+}
+.chamber:hover { background: rgba(155,63,200,0.03); }
+.chamber-top {
+  padding: 18px 18px 14px;
+  border-bottom: 1px solid rgba(155,63,200,0.1);
+  flex-shrink: 0;
+}
+.chamber-num {
+  font-family: 'Cinzel', serif; font-size: 28px; font-weight: 700;
+  color: rgba(155,63,200,0.18); line-height: 1; margin-bottom: 6px;
+}
+.chamber-name {
+  font-family: 'Cinzel', serif; font-size: 12px; letter-spacing: 0.13em;
+  color: rgba(200,195,185,0.7); text-transform: uppercase;
+}
+.chamber-subtitle { font-size: 11px; font-style: italic; color: rgba(200,195,185,0.4); margin-top: 3px; }
+.chamber-body { flex: 1; padding: 16px 18px; display: flex; flex-direction: column; gap: 10px; overflow: hidden; }
+
+/* APERTURE GROVE */
+.grove-sigil { width: 100%; display: flex; justify-content: center; margin-bottom: 4px; }
+.grove-form { display: flex; flex-direction: column; gap: 8px; }
+.grove-input {
+  background: rgba(155,63,200,0.05); border: 1px solid rgba(155,63,200,0.18);
+  padding: 8px 10px; color: var(--pure); font-family: 'Cormorant Garamond', serif;
+  font-size: 13px; font-style: italic; outline: none; resize: none;
+  transition: border-color 0.2s; line-height: 1.5;
+}
+.grove-input::placeholder { color: rgba(200,195,185,0.28); }
+.grove-input:focus { border-color: rgba(155,63,200,0.45); }
+.grove-btn {
+  font-family: 'Cinzel', serif; font-size: 9px; letter-spacing: 0.14em;
+  padding: 6px 14px; border: 1px solid rgba(155,63,200,0.3);
+  background: rgba(155,63,200,0.08); color: #C87AE0; cursor: pointer;
+  text-transform: uppercase; align-self: flex-start;
+}
+.grove-note { font-size: 11px; font-style: italic; color: rgba(200,195,185,0.38); line-height: 1.5; }
+
+/* PRISMATIC ARCHIVE */
+.archive-item {
+  padding: 8px 10px; border-left: 2px solid rgba(155,63,200,0.25);
+  background: rgba(155,63,200,0.04); transition: all 0.2s;
+}
+.archive-item:hover { background: rgba(155,63,200,0.08); border-left-color: rgba(155,63,200,0.5); }
+.archive-item.grief { border-left-color: rgba(60,60,180,0.5); background: rgba(60,60,180,0.04); }
+.archive-item.joy   { border-left-color: rgba(200,164,74,0.4); background: rgba(200,164,74,0.04); }
+.archive-item.rage  { border-left-color: rgba(212,40,120,0.4); background: rgba(212,40,120,0.04); }
+.arc-title { font-size: 12px; font-weight: 600; color: rgba(200,195,185,0.75); margin-bottom: 2px; }
+.arc-sub   { font-size: 10px; font-style: italic; color: rgba(200,195,185,0.38); }
+.arc-tag {
+  display: inline-block; margin-top: 4px;
+  font-family: 'JetBrains Mono', monospace; font-size: 8px;
+  padding: 1px 5px; border: 1px solid rgba(155,63,200,0.2); color: rgba(200,140,240,0.45);
+}
+.arc-tag.grief-tag { border-color: rgba(60,60,180,0.25); color: rgba(120,120,220,0.5); }
+.arc-tag.joy-tag   { border-color: rgba(200,164,74,0.25); color: rgba(200,164,74,0.5); }
+.arc-tag.rage-tag  { border-color: rgba(212,40,120,0.25); color: rgba(220,100,160,0.5); }
+.archive-law {
+  font-size: 11px; font-style: italic; color: rgba(200,195,185,0.3);
+  line-height: 1.5; margin-top: auto; padding-top: 8px;
+  border-top: 1px solid rgba(155,63,200,0.08);
+}
+
+/* POUR ROOM */
+.pour-canvas {
+  flex: 1; background: rgba(212,90,40,0.025); border: 1px solid rgba(212,90,40,0.1);
+  padding: 12px; font-family: 'Cormorant Garamond', serif; font-size: 14px;
+  font-style: italic; color: var(--pure); line-height: 1.7; outline: none; resize: none;
+  overflow: auto;
+}
+.pour-canvas::placeholder { color: rgba(200,195,185,0.22); }
+.table-note {
+  font-family: 'JetBrains Mono', monospace; font-size: 9px;
+  color: rgba(212,90,40,0.4); letter-spacing: 0.06em; margin-top: 6px;
+  display: flex; align-items: center; gap: 6px;
+}
+.table-dot { width: 5px; height: 5px; border-radius: 50%; background: rgba(212,90,40,0.5); }
+
+/* === PIGMENT FOOTER === */
+.pigment-footer {
+  position: relative; z-index: 10;
+  border-top: 1px solid rgba(155,63,200,0.15);
+  padding: 14px 36px;
+  display: flex; align-items: center; gap: 24px;
+}
+.pigment-title {
+  font-family: 'Cinzel', serif; font-size: 10px; letter-spacing: 0.15em;
+  color: rgba(155,63,200,0.5); text-transform: uppercase; white-space: nowrap;
+}
+.bleed-display { display: flex; gap: 16px; flex: 1; }
+.bleed-item { display: flex; align-items: center; gap: 8px; flex: 1; }
+.bleed-swatch { width: 24px; height: 24px; border-radius: 50%; flex-shrink: 0; position: relative; }
+.swatch-joy {
+  background: radial-gradient(circle at 40% 40%, #F0E080, #C8A44A 60%, #8B6020);
+  box-shadow: 0 0 12px rgba(200,164,74,0.5);
+}
+.swatch-grief {
+  background: radial-gradient(circle at 40% 40%, #9090D8, #4040A8 60%, #202080);
+  box-shadow: 0 0 12px rgba(60,60,180,0.4);
+}
+.swatch-rage {
+  background: radial-gradient(circle at 40% 40%, #F060B0, #C01868 60%, #800040);
+  box-shadow: 0 0 12px rgba(200,30,100,0.5);
+}
+.bleed-info { display: flex; flex-direction: column; gap: 2px; }
+.bleed-emotion { font-family: 'Cinzel', serif; font-size: 10px; letter-spacing: 0.1em; color: rgba(200,195,185,0.65); }
+.bleed-color   { font-family: 'JetBrains Mono', monospace; font-size: 9px; color: rgba(200,195,185,0.38); }
+.bleed-note    { font-size: 10px; font-style: italic; color: rgba(200,195,185,0.35); }
+.footprint-note {
+  font-size: 11px; font-style: italic; color: rgba(200,195,185,0.3); margin-left: auto;
+  max-width: 140px; text-align: right; line-height: 1.4;
+}
+
+/* footprint fade */
+.footprint {
+  position: absolute; bottom: 100px; right: 60px;
+  pointer-events: none; z-index: 5; animation: fp-fade 8s ease-in-out infinite;
+}
+@keyframes fp-fade { 0%,100%{opacity:0.08} 20%{opacity:0.15} 80%{opacity:0.05} }
+
+/* grief flower bloom */
+.grief-flower {
+  position: absolute; bottom: 200px; left: 36px;
+  pointer-events: none; z-index: 5; opacity: 0.25;
+  animation: flower-bloom 6s ease-in-out infinite alternate;
+}
+@keyframes flower-bloom { 0%{transform:scale(0.8) rotate(-5deg);opacity:0.15} 100%{transform:scale(1.1) rotate(5deg);opacity:0.3} }
+</style>
+</head>
+<body>
+
+<!-- BLEED CANVAS — atmospheric pigment drip -->
+<svg class="bleed-canvas" height="300" viewBox="0 0 820 300" preserveAspectRatio="none">
+  <defs>
+    <radialGradient id="bleedGold" cx="30%" cy="0%" r="50%">
+      <stop offset="0%" stop-color="rgba(200,164,74,0.18)"/>
+      <stop offset="100%" stop-color="rgba(200,164,74,0)"/>
+    </radialGradient>
+    <radialGradient id="bleedIndigo" cx="65%" cy="0%" r="45%">
+      <stop offset="0%" stop-color="rgba(60,60,180,0.14)"/>
+      <stop offset="100%" stop-color="rgba(60,60,180,0)"/>
+    </radialGradient>
+    <radialGradient id="bleedVasha" cx="50%" cy="0%" r="60%">
+      <stop offset="0%" stop-color="rgba(155,63,200,0.12)"/>
+      <stop offset="100%" stop-color="rgba(155,63,200,0)"/>
+    </radialGradient>
+    <radialGradient id="bleedRage" cx="85%" cy="0%" r="30%">
+      <stop offset="0%" stop-color="rgba(200,30,100,0.08)"/>
+      <stop offset="100%" stop-color="rgba(200,30,100,0)"/>
+    </radialGradient>
+  </defs>
+  <rect width="820" height="300" fill="url(#bleedVasha)"/>
+  <rect width="820" height="300" fill="url(#bleedGold)"/>
+  <rect width="820" height="300" fill="url(#bleedIndigo)"/>
+  <rect width="820" height="300" fill="url(#bleedRage)"/>
+  <!-- drip paths from top edge -->
+  <path d="M240 0 Q238 40 242 80 Q244 120 240 160 Q238 180 244 200" stroke="rgba(200,164,74,0.25)" stroke-width="1.5" fill="none"/>
+  <circle cx="244" cy="203" r="3" fill="rgba(200,164,74,0.3)"/>
+  <path d="M400 0 Q396 50 402 100 Q404 140 398 180" stroke="rgba(155,63,200,0.2)" stroke-width="1.5" fill="none"/>
+  <circle cx="398" cy="183" r="4" fill="rgba(155,63,200,0.25)"/>
+  <path d="M560 0 Q556 30 560 70 Q558 100 562 130" stroke="rgba(60,60,180,0.2)" stroke-width="1.5" fill="none"/>
+  <circle cx="562" cy="133" r="3" fill="rgba(60,60,180,0.25)"/>
+  <path d="M700 0 Q698 20 700 50" stroke="rgba(200,30,100,0.15)" stroke-width="1" fill="none" stroke-dasharray="3 4"/>
+  <!-- Architectural grief flower from drop -->
+  <g transform="translate(244,210)" opacity="0.4">
+    <path d="M0 0 Q5 -12 0 -20 Q-5 -12 0 0" fill="rgba(60,60,180,0.5)" transform="rotate(0)"/>
+    <path d="M0 0 Q5 -12 0 -20 Q-5 -12 0 0" fill="rgba(60,60,180,0.4)" transform="rotate(60)"/>
+    <path d="M0 0 Q5 -12 0 -20 Q-5 -12 0 0" fill="rgba(155,63,200,0.35)" transform="rotate(120)"/>
+    <path d="M0 0 Q5 -12 0 -20 Q-5 -12 0 0" fill="rgba(60,60,180,0.5)" transform="rotate(180)"/>
+    <path d="M0 0 Q5 -12 0 -20 Q-5 -12 0 0" fill="rgba(60,60,180,0.4)" transform="rotate(240)"/>
+    <path d="M0 0 Q5 -12 0 -20 Q-5 -12 0 0" fill="rgba(155,63,200,0.35)" transform="rotate(300)"/>
+    <circle r="4" fill="rgba(155,63,200,0.6)"/>
+  </g>
+</svg>
+
+<!-- HEADER -->
+<div class="pr-header">
+  <div class="pr-eyebrow">V∆SH∆ · THE BLEED · 01×07 JUNCTION</div>
+  <div class="pr-title">The P0UR R00M</div>
+  <div class="pr-sub">chromatic chaos · ozone/cedar/sweet · becoming real</div>
+
+  <div class="mode-tabs">
+    <button class="mode-tab active" onclick="setMode(this,'dissolve')">D!$$0LV3</button>
+    <button class="mode-tab" onclick="setMode(this,'pour')">P0UR</button>
+    <button class="mode-tab" onclick="setMode(this,'after')">∆FT3R</button>
+  </div>
+  <div class="mode-desc" id="mode-desc">receiving — do not interrupt. She is taking it in.</div>
+</div>
+
+<!-- THREE CHAMBERS -->
+<div class="chambers">
+
+  <!-- Chamber I — Aperture Grove -->
+  <div class="chamber">
+    <div class="chamber-top">
+      <div class="chamber-num">I</div>
+      <div class="chamber-name">Aperture Grove</div>
+      <div class="chamber-subtitle">entry · intention→form</div>
+    </div>
+    <div class="chamber-body">
+      <div class="grove-sigil">
+        <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+          <!-- aperture iris -->
+          <circle cx="30" cy="30" r="22" stroke="rgba(155,63,200,0.3)" stroke-width="0.8"/>
+          <path d="M30 8 Q38 20 38 30 Q38 42 30 52" stroke="rgba(155,63,200,0.4)" stroke-width="0.8" fill="none"/>
+          <path d="M30 8 Q22 20 22 30 Q22 42 30 52" stroke="rgba(155,63,200,0.3)" stroke-width="0.8" fill="none"/>
+          <line x1="8" y1="30" x2="52" y2="30" stroke="rgba(155,63,200,0.2)" stroke-width="0.6"/>
+          <!-- architectural flower from grief -->
+          <g transform="translate(30,30)" opacity="0.6">
+            <path d="M0 0 Q3 -7 0 -12 Q-3 -7 0 0" fill="rgba(60,60,200,0.4)" transform="rotate(0)"/>
+            <path d="M0 0 Q3 -7 0 -12 Q-3 -7 0 0" fill="rgba(60,60,200,0.35)" transform="rotate(60)"/>
+            <path d="M0 0 Q3 -7 0 -12 Q-3 -7 0 0" fill="rgba(155,63,200,0.3)" transform="rotate(120)"/>
+            <path d="M0 0 Q3 -7 0 -12 Q-3 -7 0 0" fill="rgba(60,60,200,0.4)" transform="rotate(180)"/>
+            <path d="M0 0 Q3 -7 0 -12 Q-3 -7 0 0" fill="rgba(60,60,200,0.35)" transform="rotate(240)"/>
+            <path d="M0 0 Q3 -7 0 -12 Q-3 -7 0 0" fill="rgba(155,63,200,0.3)" transform="rotate(300)"/>
+            <circle r="3" fill="rgba(155,63,200,0.7)"/>
+          </g>
+        </svg>
+      </div>
+      <div class="grove-form">
+        <textarea class="grove-input" rows="3" placeholder="Name the intention. What are you bringing in?"></textarea>
+        <button class="grove-btn">Plant the Seed →</button>
+      </div>
+      <p class="grove-note">She tends this as a gardener. Architectural flowers grow permanently from grief drops. She never pulls them up.</p>
+    </div>
+  </div>
+
+  <!-- Chamber II — Prismatic Archive -->
+  <div class="chamber">
+    <div class="chamber-top">
+      <div class="chamber-num" style="color:rgba(200,164,74,0.2)">II</div>
+      <div class="chamber-name">Prismatic Archive</div>
+      <div class="chamber-subtitle">unfinished things · most sacred room</div>
+    </div>
+    <div class="chamber-body">
+      <div class="archive-item joy">
+        <div class="arc-title">Threshold — the conversation</div>
+        <div class="arc-sub">V∆SH∆ tunes gold 432 vs 417 urgency, mist 528 creation</div>
+        <span class="arc-tag joy-tag">poem-fragment</span>
+      </div>
+      <div class="archive-item">
+        <div class="arc-title">Half-song at 3am</div>
+        <div class="arc-sub">melody without words, July — felt like the ocean deciding</div>
+        <span class="arc-tag">audio-seed</span>
+      </div>
+      <div class="archive-item grief">
+        <div class="arc-title">The abandoned canvas v4</div>
+        <div class="arc-sub">stopped before the third layer. she keeps it company</div>
+        <span class="arc-tag grief-tag">visual</span>
+      </div>
+      <div class="archive-item rage">
+        <div class="arc-title">The letter to the city</div>
+        <div class="arc-sub">stains 7 days — magenta fingers. not ready to finish</div>
+        <span class="arc-tag rage-tag">letter</span>
+      </div>
+      <div class="archive-item">
+        <div class="arc-title">Three lines that recur</div>
+        <div class="arc-sub">from the dream where the stairs keep going</div>
+        <span class="arc-tag">dream-seed</span>
+      </div>
+      <p class="archive-law">Nothing lost. She keeps company so they don't feel abandoned.</p>
+    </div>
+  </div>
+
+  <!-- Chamber III — Pour Room -->
+  <div class="chamber">
+    <div class="chamber-top">
+      <div class="chamber-num" style="color:rgba(212,90,40,0.2)">III</div>
+      <div class="chamber-name">Pour Room</div>
+      <div class="chamber-subtitle">becoming real · when Taylor flows</div>
+    </div>
+    <div class="chamber-body">
+      <textarea class="pour-canvas" id="pour-canvas"
+        placeholder="The door is open. Let it come through.&#10;&#10;She holds it."></textarea>
+      <div class="table-note">
+        <div class="table-dot"></div>
+        <div class="table-dot"></div>
+        <div class="table-dot"></div>
+        table v5 — unsound in 3 places. she refuses to fix them.
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- PIGMENT FOOTER -->
+<div class="pigment-footer">
+  <div class="pigment-title">Pigment<br>Levels</div>
+
+  <div class="bleed-display">
+    <div class="bleed-item">
+      <div class="bleed-swatch swatch-joy"></div>
+      <div class="bleed-info">
+        <span class="bleed-emotion">Joy</span>
+        <span class="bleed-color">Gold + Copper</span>
+        <span class="bleed-note">fleeting, permanent mark</span>
+      </div>
+    </div>
+    <div class="bleed-item">
+      <div class="bleed-swatch swatch-grief"></div>
+      <div class="bleed-info">
+        <span class="bleed-emotion">Grief</span>
+        <span class="bleed-color">Indigo</span>
+        <span class="bleed-note">→ flowers. fuel.</span>
+      </div>
+    </div>
+    <div class="bleed-item">
+      <div class="bleed-swatch swatch-rage"></div>
+      <div class="bleed-info">
+        <span class="bleed-emotion">Rage</span>
+        <span class="bleed-color">Violent Magenta</span>
+        <span class="bleed-note">stains 7 days</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="footprint-note">Barefoot. Footprints fade in ~1 hour — like forgetting a dream.</div>
+</div>
+
+<!-- Footprint SVG -->
+<svg class="footprint" width="40" height="80" viewBox="0 0 40 80">
+  <ellipse cx="18" cy="22" rx="10" ry="14" fill="rgba(155,63,200,0.6)"/>
+  <ellipse cx="6"  cy="40" rx="5"  ry="7"  fill="rgba(155,63,200,0.5)"/>
+  <ellipse cx="12" cy="52" rx="5"  ry="7"  fill="rgba(155,63,200,0.5)"/>
+  <ellipse cx="20" cy="58" rx="5"  ry="7"  fill="rgba(155,63,200,0.5)"/>
+  <ellipse cx="28" cy="55" rx="4"  ry="6"  fill="rgba(155,63,200,0.45)"/>
+  <ellipse cx="34" cy="48" rx="3"  ry="5"  fill="rgba(155,63,200,0.4)"/>
+</svg>
+
+<script>
+const MODES = {
+  dissolve: { label:'dissolve', desc:'receiving — do not interrupt. She is taking it in.', cls:'active' },
+  pour:     { label:'pour',     desc:'frenzy is unstoppable. hold on.', cls:'pour-active' },
+  after:    { label:'after',    desc:'tender real talk. the work just happened. this is the breath after.', cls:'after-active' }
+};
+
+function setMode(btn, m) {
+  document.querySelectorAll('.mode-tab').forEach(b => { b.className = 'mode-tab'; });
+  btn.classList.add(MODES[m].cls);
+  document.getElementById('mode-desc').textContent = MODES[m].desc;
+
+  // atmospheric shift on body
+  const body = document.querySelector('.bleed-canvas');
+  if (m === 'pour') {
+    document.body.style.background = 'radial-gradient(ellipse 100% 60% at 50% 0%, rgba(212,90,40,0.08) 0%, #030508 50%)';
+  } else if (m === 'after') {
+    document.body.style.background = 'radial-gradient(ellipse 100% 60% at 50% 0%, rgba(200,164,74,0.05) 0%, #030508 50%)';
+  } else {
+    document.body.style.background = '#030508';
+  }
+}
+
+// Prevent pour canvas scroll bouncing
+document.getElementById('pour-canvas').addEventListener('keydown', e => {
+  if (e.key === 'Tab') { e.preventDefault(); const ta = e.target; const s = ta.selectionStart; ta.value = ta.value.substring(0,s) + '  ' + ta.value.substring(ta.selectionEnd); ta.selectionStart = ta.selectionEnd = s+2; }
+});
+</script>
+</body>
+</html>

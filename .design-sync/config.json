@@ -1,0 +1,7 @@
+{
+  "projectId": "019dee3c-cbc3-756e-a296-ca23d39e386e",
+  "pkg": "ui_kits/web",
+  "shape": "off-script",
+  "localDir": "06_AGENT_LAYER/ui_kits/web",
+  "notes": "SacredSpace OS — HTML artboard previews, not a component library. Files have @dsCard annotations. No storybook, no dist. Atomic path (re-adopted existing project)."
+}

@@ -1,0 +1,712 @@
+<!-- @dsCard group="UI Kit — Web" name="Creative Studio" subtitle="VASHA·LYRA·GR∆M∆·MUSE workspace — expression & cipher tools" viewport="1440x900" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Creative Studio — SacredSpace</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
+<style>
+:root {
+  --void:   #030508;
+  --gold:   #C8A44A;
+  --bio:    #72E87A;
+  --fire:   #D45A28;
+  --water:  #3878A0;
+  --earth:  #5A8850;
+  --air:    #78A8C8;
+  --aether: #7A5CA5;
+  --bronze: #8B7355;
+  --parch:  #C8C4BB;
+  --pure:   #EEF6EF;
+  --vasha:  #9B3FC8;
+  --lyra:   #4A8FD4;
+  --grama:  #C8A44A;
+  --muse:   #D45A28;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  width: 1440px; height: 900px;
+  background: var(--void);
+  font-family: 'Cormorant Garamond', serif;
+  color: var(--pure);
+  overflow: hidden;
+  display: flex; flex-direction: column;
+}
+
+/* === TOOLBAR === */
+.toolbar {
+  height: 48px; flex-shrink: 0;
+  display: flex; align-items: center; gap: 1px;
+  border-bottom: 1px solid rgba(200,164,74,0.14);
+  background: rgba(3,5,8,0.95);
+}
+.tb-logo {
+  width: 180px; padding: 0 20px;
+  font-family: 'Cinzel', serif; font-size: 11px;
+  letter-spacing: 0.15em; color: var(--gold);
+  border-right: 1px solid rgba(200,164,74,0.12);
+  height: 100%; display: flex; align-items: center;
+}
+.tb-agent {
+  display: flex; align-items: center; gap: 8px;
+  padding: 0 16px; height: 100%; cursor: pointer;
+  border-right: 1px solid rgba(200,164,74,0.1);
+  position: relative; transition: background 0.2s;
+}
+.tb-agent:hover { background: rgba(255,255,255,0.03); }
+.tb-agent.active-vasha { background: rgba(155,63,200,0.07); }
+.tb-agent.active-grama { background: rgba(200,164,74,0.07); }
+.tb-agent.active-muse  { background: rgba(212,90,40,0.07); }
+.tb-agent.active-lyra  { background: rgba(74,143,212,0.07); }
+.agent-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+.dot-vasha { background: #9B3FC8; box-shadow: 0 0 6px rgba(155,63,200,0.6); }
+.dot-lyra  { background: #4A8FD4; box-shadow: 0 0 6px rgba(74,143,212,0.6); }
+.dot-grama { background: #C8A44A; box-shadow: 0 0 6px rgba(200,164,74,0.6); }
+.dot-muse  { background: #D45A28; box-shadow: 0 0 6px rgba(212,90,40,0.6); }
+.tb-agent-name {
+  font-family: 'Cinzel', serif; font-size: 11px; letter-spacing: 0.12em;
+}
+.tb-agent-name.vasha { color: #C87AE0; }
+.tb-agent-name.lyra  { color: #6AACEC; }
+.tb-agent-name.grama { color: var(--gold); }
+.tb-agent-name.muse  { color: #E8784A; }
+.tb-state {
+  font-family: 'JetBrains Mono', monospace; font-size: 9px;
+  padding: 2px 7px; border: 1px solid; letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.state-dissolve { border-color: rgba(155,63,200,0.4); color: rgba(200,140,240,0.7); }
+.state-pour     { border-color: rgba(212,90,40,0.5);  color: rgba(240,140,100,0.8); animation: pulse-pour 2s infinite; }
+.state-stage2   { border-color: rgba(200,164,74,0.4); color: rgba(200,164,74,0.7); }
+.state-routing  { border-color: rgba(74,143,212,0.4); color: rgba(106,172,236,0.7); }
+@keyframes pulse-pour { 0%,100%{opacity:0.8} 50%{opacity:1} }
+.tb-spacer { flex: 1; }
+.tb-right {
+  display: flex; align-items: center; gap: 16px; padding: 0 20px;
+  font-family: 'JetBrains Mono', monospace; font-size: 10px;
+  color: rgba(200,164,74,0.38); letter-spacing: 0.08em;
+}
+.tb-action {
+  font-family: 'Cinzel', serif; font-size: 10px; letter-spacing: 0.12em;
+  padding: 5px 16px; border: 1px solid rgba(200,164,74,0.3);
+  background: transparent; color: var(--gold); cursor: pointer;
+  text-transform: uppercase; transition: all 0.2s;
+}
+.tb-action:hover { background: rgba(200,164,74,0.1); }
+.tb-action.primary { border-color: var(--gold); background: rgba(200,164,74,0.08); }
+
+/* === MAIN LAYOUT === */
+.studio-body {
+  flex: 1; display: flex; overflow: hidden;
+}
+
+/* === LEFT DOCK — MUSE + VASHA === */
+.dock-left {
+  width: 240px; flex-shrink: 0;
+  border-right: 1px solid rgba(200,164,74,0.1);
+  display: flex; flex-direction: column;
+  background: rgba(3,5,8,0.6);
+}
+.dock-section {
+  border-bottom: 1px solid rgba(200,164,74,0.08);
+}
+.dock-header {
+  padding: 12px 16px 10px;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.dock-label {
+  font-family: 'JetBrains Mono', monospace; font-size: 9px;
+  letter-spacing: 0.14em; text-transform: uppercase;
+  color: rgba(200,164,74,0.4);
+}
+.dock-label.vasha-c { color: rgba(200,122,224,0.55); }
+.dock-label.lyra-c  { color: rgba(106,172,236,0.55); }
+.dock-indicator {
+  width: 6px; height: 6px; border-radius: 50%;
+}
+.ind-active { background: var(--bio); box-shadow: 0 0 5px rgba(114,232,122,0.6); }
+.ind-idle   { background: rgba(200,164,74,0.3); }
+
+/* MUSE SCRL stages */
+.scrl-list { padding: 0 16px 14px; }
+.scrl-stage {
+  display: flex; align-items: center; gap: 10px;
+  padding: 6px 0;
+  border-bottom: 1px solid rgba(200,164,74,0.05);
+  cursor: pointer;
+}
+.scrl-stage:last-child { border-bottom: none; }
+.scrl-num {
+  width: 20px; height: 20px; border-radius: 50%;
+  border: 1px solid rgba(212,90,40,0.25);
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'JetBrains Mono', monospace; font-size: 9px;
+  color: rgba(232,120,74,0.5); flex-shrink: 0;
+  transition: all 0.2s;
+}
+.scrl-stage.done .scrl-num  { background: rgba(212,90,40,0.15); border-color: rgba(212,90,40,0.5); color: #E8784A; }
+.scrl-stage.active .scrl-num{ background: rgba(212,90,40,0.25); border-color: #D45A28; color: #E8784A; box-shadow: 0 0 8px rgba(212,90,40,0.4); }
+.scrl-text { font-size: 11px; line-height: 1.3; }
+.scrl-name { color: rgba(200,195,185,0.8); font-weight: 600; display: block; }
+.scrl-sub  { font-size: 10px; color: rgba(200,195,185,0.4); font-style: italic; }
+
+/* VASHA mood */
+.mood-grid { padding: 0 16px 14px; display: grid; grid-template-columns: repeat(3,1fr); gap: 6px; }
+.mood-btn {
+  padding: 7px 4px; border: 1px solid rgba(255,255,255,0.08);
+  background: transparent; cursor: pointer; text-align: center;
+  transition: all 0.25s;
+}
+.mood-btn span {
+  display: block; font-family: 'Cinzel', serif; font-size: 9px;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  color: rgba(200,195,185,0.45);
+}
+.mood-btn.active-d { border-color: rgba(155,63,200,0.5); background: rgba(155,63,200,0.1); }
+.mood-btn.active-d span { color: #C87AE0; }
+.mood-btn.active-p { border-color: rgba(212,90,40,0.6); background: rgba(212,90,40,0.12); }
+.mood-btn.active-p span { color: #E8784A; }
+.mood-btn.active-a { border-color: rgba(200,164,74,0.4); background: rgba(200,164,74,0.08); }
+.mood-btn.active-a span { color: var(--gold); }
+
+/* pigment legend */
+.pigment-row { padding: 0 16px 14px; display: flex; flex-direction: column; gap: 6px; }
+.pigment-item { display: flex; align-items: center; gap: 8px; }
+.pigment-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+.p-joy   { background: radial-gradient(circle,#F0D080,#C8A44A); }
+.p-grief { background: radial-gradient(circle,#7070C0,#3040A0); }
+.p-rage  { background: radial-gradient(circle,#F040A0,#A01060); }
+.pigment-label { font-family: 'JetBrains Mono', monospace; font-size: 9px; color: rgba(200,195,185,0.5); }
+.pigment-bar { flex: 1; height: 3px; background: rgba(255,255,255,0.05); border-radius: 2px; overflow: hidden; }
+.pigment-fill { height: 100%; border-radius: 2px; }
+.fill-joy   { background: linear-gradient(90deg,#C8A44A,#F0D080); width: 65%; }
+.fill-grief { background: linear-gradient(90deg,#3040A0,#7070C0); width: 30%; }
+.fill-rage  { background: linear-gradient(90deg,#A01060,#F040A0); width: 12%; }
+
+.dock-footer { margin-top: auto; padding: 12px 16px; border-top: 1px solid rgba(200,164,74,0.08); }
+.dock-foot-label { font-family: 'JetBrains Mono', monospace; font-size: 9px; color: rgba(200,164,74,0.3); letter-spacing: 0.08em; }
+
+/* === CENTER CANVAS === */
+.canvas-area {
+  flex: 1; display: flex; flex-direction: column;
+  position: relative; overflow: hidden;
+}
+/* atmospheric background matching VASHA's current mood */
+.canvas-atmos {
+  position: absolute; inset: 0;
+  background: radial-gradient(ellipse 80% 60% at 50% 30%, rgba(155,63,200,0.05) 0%, transparent 70%),
+              radial-gradient(ellipse 40% 40% at 20% 80%, rgba(212,90,40,0.04) 0%, transparent 60%);
+  pointer-events: none;
+}
+.canvas-header {
+  padding: 16px 24px 12px;
+  display: flex; align-items: baseline; gap: 16px;
+  border-bottom: 1px solid rgba(200,164,74,0.08);
+  flex-shrink: 0;
+}
+.canvas-title {
+  font-family: 'Cinzel', serif; font-size: 13px; letter-spacing: 0.12em; color: var(--pure);
+}
+.canvas-breadcrumb {
+  font-family: 'JetBrains Mono', monospace; font-size: 10px;
+  color: rgba(200,164,74,0.35); letter-spacing: 0.06em;
+}
+.canvas-tools {
+  margin-left: auto; display: flex; gap: 6px;
+}
+.ctool {
+  width: 28px; height: 28px; border: 1px solid rgba(200,164,74,0.15);
+  background: transparent; cursor: pointer; display: flex; align-items: center; justify-content: center;
+  font-size: 12px; color: rgba(200,164,74,0.45); transition: all 0.2s;
+}
+.ctool:hover { border-color: var(--gold); color: var(--gold); background: rgba(200,164,74,0.08); }
+.ctool.active { border-color: rgba(155,63,200,0.5); color: #C87AE0; background: rgba(155,63,200,0.08); }
+
+/* creation zone */
+.creation-zone {
+  flex: 1; display: flex; flex-direction: column;
+  padding: 24px; gap: 16px;
+}
+.create-textarea {
+  flex: 1; width: 100%;
+  background: rgba(255,255,255,0.015);
+  border: 1px solid rgba(200,164,74,0.1);
+  border-radius: 1px;
+  color: var(--pure);
+  font-family: 'Cormorant Garamond', serif; font-size: 17px;
+  line-height: 1.7; padding: 20px 24px;
+  resize: none; outline: none;
+  transition: border-color 0.3s;
+}
+.create-textarea::placeholder { color: rgba(200,195,185,0.25); font-style: italic; }
+.create-textarea:focus { border-color: rgba(155,63,200,0.3); }
+
+/* canvas glyph overlay — decorative geometric -->
+.canvas-geometry {
+  position: absolute; top: 60px; right: 20px;
+  pointer-events: none; opacity: 0.06;
+}
+
+/* bottom input bar -->
+.canvas-bar {
+  padding: 12px 24px;
+  border-top: 1px solid rgba(200,164,74,0.08);
+  display: flex; align-items: center; gap: 12px;
+  flex-shrink: 0;
+}
+.bar-tag {
+  font-family: 'JetBrains Mono', monospace; font-size: 9px; letter-spacing: 0.1em;
+  padding: 3px 8px; border: 1px solid rgba(200,164,74,0.18);
+  color: rgba(200,164,74,0.55); cursor: pointer; text-transform: uppercase;
+}
+.bar-tag:hover { border-color: var(--gold); color: var(--gold); }
+.bar-word-count { font-family: 'JetBrains Mono', monospace; font-size: 10px; color: rgba(200,164,74,0.28); margin-left: auto; }
+.bar-sigil-btn {
+  font-family: 'Cinzel', serif; font-size: 9px; letter-spacing: 0.12em;
+  padding: 5px 14px; border: 1px solid rgba(155,63,200,0.35);
+  background: rgba(155,63,200,0.06); color: #C87AE0; cursor: pointer; text-transform: uppercase;
+}
+
+/* === RIGHT DOCK — GR∆M∆ === */
+.dock-right {
+  width: 260px; flex-shrink: 0;
+  border-left: 1px solid rgba(200,164,74,0.1);
+  display: flex; flex-direction: column;
+  background: rgba(3,5,8,0.6);
+}
+
+/* cipher input */
+.cipher-input-wrap { padding: 14px 16px; border-bottom: 1px solid rgba(200,164,74,0.08); }
+.cipher-label { font-family: 'JetBrains Mono', monospace; font-size: 9px; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(200,164,74,0.4); margin-bottom: 8px; }
+.cipher-field {
+  width: 100%; background: rgba(200,164,74,0.04);
+  border: 1px solid rgba(200,164,74,0.18); padding: 8px 12px;
+  color: var(--gold); font-family: 'JetBrains Mono', monospace; font-size: 12px;
+  outline: none; letter-spacing: 0.06em;
+}
+.cipher-field::placeholder { color: rgba(200,164,74,0.3); }
+.cipher-field:focus { border-color: rgba(200,164,74,0.45); }
+.cipher-output {
+  margin-top: 6px; padding: 7px 10px;
+  background: rgba(200,164,74,0.03); border: 1px solid rgba(200,164,74,0.1);
+  font-family: 'Cinzel', serif; font-size: 14px; letter-spacing: 0.1em;
+  color: var(--gold); min-height: 34px;
+}
+
+/* gematria readout */
+.gematria-row {
+  padding: 10px 16px; border-bottom: 1px solid rgba(200,164,74,0.06);
+  display: flex; justify-content: space-between; align-items: center;
+}
+.gem-key { font-family: 'JetBrains Mono', monospace; font-size: 9px; color: rgba(200,195,185,0.4); letter-spacing: 0.06em; }
+.gem-val { font-family: 'Cinzel', serif; font-size: 12px; color: var(--gold); }
+
+/* Hyperglyph keyboard */
+.hg-section { padding: 12px 16px; flex: 1; }
+.hg-grid {
+  display: grid; grid-template-columns: repeat(4,1fr); gap: 4px; margin-top: 8px;
+}
+.hg-key {
+  aspect-ratio: 1; border: 1px solid rgba(200,164,74,0.14);
+  background: transparent; cursor: pointer;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: 2px; transition: all 0.15s;
+}
+.hg-key:hover { border-color: rgba(200,164,74,0.4); background: rgba(200,164,74,0.07); }
+.hg-glyph { font-size: 14px; color: var(--gold); line-height: 1; }
+.hg-code  { font-family: 'JetBrains Mono', monospace; font-size: 7px; color: rgba(200,164,74,0.38); letter-spacing: 0.05em; }
+
+/* SKRY lenses */
+.skry-section { padding: 10px 16px; border-top: 1px solid rgba(200,164,74,0.08); }
+.lens-row { display: flex; gap: 4px; margin-top: 8px; flex-wrap: wrap; }
+.lens-btn {
+  font-family: 'JetBrains Mono', monospace; font-size: 8px;
+  padding: 3px 8px; border: 1px solid rgba(200,164,74,0.18);
+  background: transparent; color: rgba(200,164,74,0.45); cursor: pointer;
+  letter-spacing: 0.06em; text-transform: uppercase; transition: all 0.2s;
+}
+.lens-btn.active { border-color: var(--gold); color: var(--gold); background: rgba(200,164,74,0.08); }
+.lens-btn:hover  { border-color: rgba(200,164,74,0.4); color: rgba(200,164,74,0.7); }
+
+/* === BOTTOM BAR — LYRA routing === */
+.lyra-bar {
+  height: 72px; flex-shrink: 0;
+  border-top: 1px solid rgba(74,143,212,0.15);
+  background: rgba(3,5,8,0.8);
+  display: flex; align-items: center; padding: 0 24px; gap: 1px;
+}
+.lyra-label {
+  font-family: 'Cinzel', serif; font-size: 10px; letter-spacing: 0.15em;
+  color: #6AACEC; text-transform: uppercase; padding-right: 20px;
+  border-right: 1px solid rgba(74,143,212,0.15);
+}
+.hearts-row { display: flex; gap: 1px; flex: 1; }
+.heart-cell {
+  flex: 1; display: flex; flex-direction: column;
+  align-items: center; justify-content: center; gap: 4px;
+  padding: 8px 4px; border-right: 1px solid rgba(74,143,212,0.1);
+  cursor: pointer; transition: background 0.2s; position: relative;
+}
+.heart-cell:last-child { border-right: none; }
+.heart-cell:hover { background: rgba(74,143,212,0.06); }
+.heart-cell.routing { background: rgba(74,143,212,0.1); }
+.heart-icon { font-size: 16px; line-height: 1; }
+.heart-name {
+  font-family: 'Cinzel', serif; font-size: 9px; letter-spacing: 0.1em;
+  color: rgba(200,195,185,0.55); text-transform: uppercase;
+}
+.heart-agent {
+  font-family: 'JetBrains Mono', monospace; font-size: 8px;
+  color: rgba(74,143,212,0.5); letter-spacing: 0.05em;
+}
+.heart-cell.routing .heart-name  { color: #6AACEC; }
+.heart-cell.routing .heart-icon  { filter: drop-shadow(0 0 4px rgba(74,143,212,0.6)); }
+.heart-cell.done    .heart-name  { color: rgba(114,232,122,0.7); }
+.lyra-confidence {
+  padding-left: 20px; border-left: 1px solid rgba(74,143,212,0.15);
+  display: flex; flex-direction: column; gap: 4px; min-width: 100px;
+}
+.conf-label { font-family: 'JetBrains Mono', monospace; font-size: 9px; color: rgba(74,143,212,0.45); letter-spacing: 0.08em; }
+.conf-val   { font-family: 'Cinzel', serif; font-size: 22px; color: #6AACEC; line-height: 1; }
+</style>
+</head>
+<body>
+
+<!-- TOOLBAR -->
+<div class="toolbar">
+  <div class="tb-logo">CR3∆T!V3 $TUD!0</div>
+
+  <div class="tb-agent active-vasha" onclick="setMood('dissolve')">
+    <div class="agent-dot dot-vasha"></div>
+    <span class="tb-agent-name vasha">V∆SH∆</span>
+    <span class="tb-state state-dissolve" id="vasha-state">DISSOLVE</span>
+  </div>
+
+  <div class="tb-agent active-lyra">
+    <div class="agent-dot dot-lyra"></div>
+    <span class="tb-agent-name lyra">LΨR∆</span>
+    <span class="tb-state state-routing">ROUTING</span>
+  </div>
+
+  <div class="tb-agent active-grama">
+    <div class="agent-dot dot-grama"></div>
+    <span class="tb-agent-name grama">GR∆M∆</span>
+    <span class="tb-state state-stage2">CIPHER</span>
+  </div>
+
+  <div class="tb-agent active-muse">
+    <div class="agent-dot dot-muse"></div>
+    <span class="tb-agent-name muse">MU$3</span>
+    <span class="tb-state state-pour" id="muse-state">STAGE 3</span>
+  </div>
+
+  <div class="tb-spacer"></div>
+  <div class="tb-right">
+    <span>SESSION · 2026-09-27</span>
+    <button class="tb-action" onclick="sigilify()">$!G!L!FY</button>
+    <button class="tb-action primary">ARCHIVE → IRIS</button>
+  </div>
+</div>
+
+<!-- STUDIO BODY -->
+<div class="studio-body">
+
+  <!-- LEFT DOCK -->
+  <div class="dock-left">
+
+    <!-- MUSE SCRL -->
+    <div class="dock-section">
+      <div class="dock-header">
+        <span class="dock-label" style="color:rgba(232,120,74,0.55)">MU$3 · SCRL LOOP</span>
+        <div class="dock-indicator ind-active"></div>
+      </div>
+      <div class="scrl-list">
+        <div class="scrl-stage done" onclick="setStage(1)">
+          <div class="scrl-num">1</div>
+          <div class="scrl-text">
+            <span class="scrl-name">Orientation</span>
+            <span class="scrl-sub">KAIROS + NYMORA</span>
+          </div>
+        </div>
+        <div class="scrl-stage done" onclick="setStage(2)">
+          <div class="scrl-num">2</div>
+          <div class="scrl-text">
+            <span class="scrl-name">Conception</span>
+            <span class="scrl-sub">GR∆M∆ + Thalia</span>
+          </div>
+        </div>
+        <div class="scrl-stage active" onclick="setStage(3)" id="stage3">
+          <div class="scrl-num">3</div>
+          <div class="scrl-text">
+            <span class="scrl-name">Generation</span>
+            <span class="scrl-sub">storytelling / osp / kimi</span>
+          </div>
+        </div>
+        <div class="scrl-stage" onclick="setStage(4)">
+          <div class="scrl-num">4</div>
+          <div class="scrl-text">
+            <span class="scrl-name">Review</span>
+            <span class="scrl-sub">ASHER + Arcanum</span>
+          </div>
+        </div>
+        <div class="scrl-stage" onclick="setStage(5)">
+          <div class="scrl-num">5</div>
+          <div class="scrl-text">
+            <span class="scrl-name">Publication</span>
+            <span class="scrl-sub">07 output + IRIS</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- VASHA mode -->
+    <div class="dock-section">
+      <div class="dock-header">
+        <span class="dock-label vasha-c">V∆SH∆ · MODE</span>
+        <div class="dock-indicator ind-idle"></div>
+      </div>
+      <div class="mood-grid">
+        <div class="mood-btn active-d" onclick="setMood('dissolve')"><span>Dissolve</span></div>
+        <div class="mood-btn" onclick="setMood('pour')"><span>Pour</span></div>
+        <div class="mood-btn" onclick="setMood('after')"><span>After</span></div>
+      </div>
+    </div>
+
+    <!-- pigment levels -->
+    <div class="dock-section">
+      <div class="dock-header"><span class="dock-label vasha-c">PIGMENT LEVELS</span></div>
+      <div class="pigment-row">
+        <div class="pigment-item">
+          <div class="pigment-dot p-joy"></div>
+          <span class="pigment-label">Joy</span>
+          <div class="pigment-bar"><div class="pigment-fill fill-joy"></div></div>
+        </div>
+        <div class="pigment-item">
+          <div class="pigment-dot p-grief"></div>
+          <span class="pigment-label">Grief</span>
+          <div class="pigment-bar"><div class="pigment-fill fill-grief"></div></div>
+        </div>
+        <div class="pigment-item">
+          <div class="pigment-dot p-rage"></div>
+          <span class="pigment-label">Rage</span>
+          <div class="pigment-bar"><div class="pigment-fill fill-rage"></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="dock-footer">
+      <div class="dock-foot-label">VASHA-001 · 01×07 · THE BLEED</div>
+    </div>
+  </div>
+
+  <!-- CENTER CANVAS -->
+  <div class="canvas-area">
+    <div class="canvas-atmos" id="canvas-atmos"></div>
+
+    <!-- decorative geometry -->
+    <svg class="canvas-geometry" width="200" height="300" viewBox="0 0 200 300">
+      <circle cx="100" cy="100" r="80" stroke="rgba(200,164,74,1)" stroke-width="0.6" fill="none"/>
+      <circle cx="100" cy="100" r="50" stroke="rgba(200,164,74,1)" stroke-width="0.4" fill="none"/>
+      <line x1="20"  y1="100" x2="180" y2="100" stroke="rgba(200,164,74,1)" stroke-width="0.3"/>
+      <line x1="100" y1="20"  x2="100" y2="180" stroke="rgba(200,164,74,1)" stroke-width="0.3"/>
+      <line x1="43"  y1="43"  x2="157" y2="157" stroke="rgba(200,164,74,1)" stroke-width="0.3"/>
+      <line x1="157" y1="43"  x2="43"  y2="157" stroke="rgba(200,164,74,1)" stroke-width="0.3"/>
+      <path d="M100 40 Q140 70 140 100 Q140 140 100 160 Q60 140 60 100 Q60 70 100 40" stroke="rgba(155,63,200,1)" stroke-width="0.4" fill="none"/>
+    </svg>
+
+    <div class="canvas-header">
+      <span class="canvas-title">CREATION CANVAS</span>
+      <span class="canvas-breadcrumb">Prismatic Archive → Pour Room → active</span>
+      <div class="canvas-tools">
+        <button class="ctool active" title="Write">✍</button>
+        <button class="ctool" title="Cipher">∆</button>
+        <button class="ctool" title="Lore">◇</button>
+        <button class="ctool" title="Sigil">⟡</button>
+        <button class="ctool" title="Dream">☽</button>
+      </div>
+    </div>
+
+    <div class="creation-zone">
+      <textarea class="create-textarea"
+        id="canvas-text"
+        placeholder="Begin the pour. GR∆M∆ will cipher what arrives. V∆SH∆ holds the door open."
+        oninput="updateCount()"></textarea>
+    </div>
+
+    <div class="canvas-bar">
+      <span class="bar-tag" onclick="appendTag('lore')">lore</span>
+      <span class="bar-tag" onclick="appendTag('sigil')">sigil</span>
+      <span class="bar-tag" onclick="appendTag('dream')">dream</span>
+      <span class="bar-tag" onclick="appendTag('ritual')">ritual</span>
+      <span class="bar-tag" onclick="appendTag('poem')">poem</span>
+      <button class="bar-sigil-btn" onclick="sigilify()">$!G!L!FY S3L3CT!0N</button>
+      <span class="bar-word-count" id="word-count">0 words</span>
+    </div>
+  </div>
+
+  <!-- RIGHT DOCK — GR∆M∆ -->
+  <div class="dock-right">
+    <div class="dock-section">
+      <div class="dock-header">
+        <span class="dock-label">GR∆M∆ · C!PH3R</span>
+        <div class="dock-indicator ind-active"></div>
+      </div>
+      <div class="cipher-input-wrap">
+        <div class="cipher-label">Input word or phrase</div>
+        <input class="cipher-field" id="cipher-input" placeholder="SACRED SPACE" oninput="runCipher(this.value)">
+        <div class="cipher-output" id="cipher-output">$∆CR3D $P∆C3</div>
+      </div>
+      <div class="gematria-row">
+        <span class="gem-key">Ordinal</span><span class="gem-val" id="gem-ord">—</span>
+      </div>
+      <div class="gematria-row">
+        <span class="gem-key">Root</span><span class="gem-val" id="gem-root">—</span>
+      </div>
+      <div class="gematria-row">
+        <span class="gem-key">Tarot</span><span class="gem-val" id="gem-tarot">—</span>
+      </div>
+    </div>
+
+    <!-- Hyperglyph keyboard -->
+    <div class="hg-section">
+      <div class="dock-label">HYPERGLYPH K3YBOARD</div>
+      <div class="hg-grid">
+        <button class="hg-key" title="research"><span class="hg-glyph">∆◇</span><span class="hg-code">:ai</span></button>
+        <button class="hg-key" title="knowledge"><span class="hg-glyph">◇✶</span><span class="hg-code">:kn</span></button>
+        <button class="hg-key" title="ritual"><span class="hg-glyph">☉⟡</span><span class="hg-code">:rt</span></button>
+        <button class="hg-key" title="encode"><span class="hg-glyph">⚙∆</span><span class="hg-code">:en</span></button>
+        <button class="hg-key" title="world-building"><span class="hg-glyph">∞⌘</span><span class="hg-code">:wb</span></button>
+        <button class="hg-key" title="mystery"><span class="hg-glyph">☽⟠</span><span class="hg-code">:my</span></button>
+        <button class="hg-key" title="quest"><span class="hg-glyph">⚔◇</span><span class="hg-code">:qu</span></button>
+        <button class="hg-key" title="gateway"><span class="hg-glyph">∆∞</span><span class="hg-code">:gw</span></button>
+        <button class="hg-key" title="command"><span class="hg-glyph">⌘∆</span><span class="hg-code">:cmd</span></button>
+        <button class="hg-key" title="network"><span class="hg-glyph">⟡⚙</span><span class="hg-code">:net</span></button>
+        <button class="hg-key" title="pillar"><span class="hg-glyph">⟠☍</span><span class="hg-code">:pl</span></button>
+        <button class="hg-key" title="constellation"><span class="hg-glyph">✶☍</span><span class="hg-code">:ct</span></button>
+      </div>
+    </div>
+
+    <!-- SKRY lenses -->
+    <div class="skry-section">
+      <div class="dock-label">$KRY · 6 L3N$3$</div>
+      <div class="lens-row">
+        <button class="lens-btn active">Symbol</button>
+        <button class="lens-btn">Know</button>
+        <button class="lens-btn">Resn.</button>
+        <button class="lens-btn">Yield</button>
+        <button class="lens-btn">You</button>
+        <button class="lens-btn" style="border-color:rgba(200,164,74,0.3);color:rgba(200,164,74,0.5)">∆bazith</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- LYRA ROUTING BAR -->
+<div class="lyra-bar">
+  <div class="lyra-label">LΨR∆<br>ROUTING</div>
+  <div class="hearts-row">
+    <div class="heart-cell done">
+      <span class="heart-icon">🧠</span>
+      <span class="heart-name">Knowing</span>
+      <span class="heart-agent">→ ELIAS</span>
+    </div>
+    <div class="heart-cell done">
+      <span class="heart-icon">💜</span>
+      <span class="heart-name">Feeling</span>
+      <span class="heart-agent">→ V∆SH∆</span>
+    </div>
+    <div class="heart-cell routing">
+      <span class="heart-icon">⚙</span>
+      <span class="heart-name">Building</span>
+      <span class="heart-agent">→ AURORA</span>
+    </div>
+    <div class="heart-cell">
+      <span class="heart-icon">🗣</span>
+      <span class="heart-name">Speaking</span>
+      <span class="heart-agent">→ GR∆M∆</span>
+    </div>
+    <div class="heart-cell done">
+      <span class="heart-icon">👁</span>
+      <span class="heart-name">Witnessing</span>
+      <span class="heart-agent">→ IRIS · always on</span>
+    </div>
+  </div>
+  <div class="lyra-confidence">
+    <span class="conf-label">lyra_confidence</span>
+    <span class="conf-val">0.87</span>
+  </div>
+</div>
+
+<script>
+const CIPHER = {A:'∆',E:'3',I:'!',O:'0',S:'$',T:'7'};
+const TAROT = ['Fool','Magician','Priestess','Empress','Emperor','Hierophant','Lovers','Chariot','Strength','Hermit','Wheel','Justice','Hanged','Death','Temperance','Devil','Tower','Star','Moon','Sun','Judgement','World','Metatron'];
+const ordinals = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').reduce((a,c,i)=>(a[c]=i+1,a),{});
+
+function runCipher(v) {
+  const u = v.toUpperCase().replace(/[^A-Z ]/g,'');
+  document.getElementById('cipher-output').textContent =
+    v.toUpperCase().split('').map(c => CIPHER[c]||c).join('');
+  const sum = u.replace(/ /g,'').split('').reduce((a,c)=>a+(ordinals[c]||0),0);
+  if (!sum) { ['gem-ord','gem-root','gem-tarot'].forEach(id=>document.getElementById(id).textContent='—'); return; }
+  let r = sum; while(r>9) r=[...String(r)].reduce((a,c)=>a+Number(c),0);
+  document.getElementById('gem-ord').textContent  = sum;
+  document.getElementById('gem-root').textContent = r;
+  document.getElementById('gem-tarot').textContent= TAROT[r%22]||'—';
+}
+
+function sigilify() {
+  const ta = document.getElementById('canvas-text');
+  const sel = ta.value.substring(ta.selectionStart, ta.selectionEnd);
+  if (!sel) return;
+  const sig = sel.toUpperCase().split('').map(c=>CIPHER[c]||c).join('');
+  ta.setRangeText(sig, ta.selectionStart, ta.selectionEnd, 'end');
+}
+
+function updateCount() {
+  const words = document.getElementById('canvas-text').value.trim().split(/\s+/).filter(Boolean).length;
+  document.getElementById('word-count').textContent = words + ' word' + (words!==1?'s':'');
+}
+
+function appendTag(t) {
+  const ta = document.getElementById('canvas-text');
+  ta.value += (ta.value && !ta.value.endsWith('\n') ? '\n' : '') + '['+t+'] ';
+  ta.focus(); updateCount();
+}
+
+function setStage(n) {
+  document.querySelectorAll('.scrl-stage').forEach((el,i)=>{
+    el.classList.remove('active','done');
+    if (i+1 < n) el.classList.add('done');
+    else if (i+1 === n) el.classList.add('active');
+  });
+}
+
+function setMood(m) {
+  document.querySelectorAll('.mood-btn').forEach(b=>b.className='mood-btn');
+  const atmos = document.getElementById('canvas-atmos');
+  if (m==='dissolve') {
+    document.querySelector('.mood-btn:nth-child(1)').classList.add('active-d');
+    atmos.style.background='radial-gradient(ellipse 80% 60% at 50% 30%,rgba(155,63,200,0.06) 0%,transparent 70%),radial-gradient(ellipse 40% 40% at 20% 80%,rgba(212,90,40,0.04) 0%,transparent 60%)';
+    document.getElementById('vasha-state').textContent='DISSOLVE';
+    document.getElementById('vasha-state').className='tb-state state-dissolve';
+  } else if (m==='pour') {
+    document.querySelector('.mood-btn:nth-child(2)').classList.add('active-p');
+    atmos.style.background='radial-gradient(ellipse 80% 60% at 50% 30%,rgba(212,90,40,0.09) 0%,transparent 65%),radial-gradient(ellipse 60% 50% at 80% 70%,rgba(155,63,200,0.06) 0%,transparent 60%)';
+    document.getElementById('vasha-state').textContent='POUR';
+    document.getElementById('vasha-state').className='tb-state state-pour';
+  } else {
+    document.querySelector('.mood-btn:nth-child(3)').classList.add('active-a');
+    atmos.style.background='radial-gradient(ellipse 80% 60% at 50% 30%,rgba(200,164,74,0.05) 0%,transparent 70%)';
+    document.getElementById('vasha-state').textContent='AFTER';
+    document.getElementById('vasha-state').className='tb-state state-stage2';
+  }
+}
+
+// init cipher display
+runCipher('SACRED SPACE');
+</script>
+</body>
+</html>
